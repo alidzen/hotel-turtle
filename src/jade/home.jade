@@ -1,4 +1,35 @@
-extends _layout
+extends _layout-home
 block title
     title Главная страница
 block content
+    .l-home.l-limit-wrap
+        section.l-home__header
+            .l-home__menu
+                .l-home-menu
+                    .l-home-menu__logo
+                        .b-menu-logo
+                            include blocks/_logo
+                            .b-menu-logo__txt boutique hotel
+
+                    .l-home-menu__nav
+                        include blocks/_nav
+
+                    .l-home-menu__contacts
+                        .b-menu-contacts
+                            a(href="tel: +78126708683").b-menu-contacts__tel +7&nbsp;(812)&nbsp;670&ndash;86&ndash;83
+                            .b-menu-contacts__txt
+                                | г.Санкт-Петербург
+                                | <br>ул.Достоевского, 19/21, лит.Б
+
+                    .l-home-menu__lang
+                        .b-menu-lang
+                            a(href="/").b-menu-lang__link.is-active ru
+                            a(href="/").b-menu-lang__link en
+
+                    .l-home-menu__reviews
+                        .b-menu-reviews
+                            .b-menu-reviews__rate
+                            .b-menu-reviews__txt по мнению tripadvisor.ru
+                            .b-menu-reviews__link Посмотреть отзывы
+            .l-home__gallery
+                include blocks/_gallery

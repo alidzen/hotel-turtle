@@ -1,16 +1,22 @@
 // COLORS
-$black: #000;
-$white: #fff;
-$base-font-color: $black;
+$black-2: #463f32;
+$black: #333333;
+$black-absolute: #000;
+$white: #fefefd;
+$white-2: #f0eeeb;
+$gold: #c8b385;
 $gray: #ccc;
+$red: #da3636;
+$base-font-color: $black;
 
 // TYPOGRAPHY
 // -----------------------------------
 // Fonts name
-$font: 'opensans', sans-serif;
-$font-bold: 'opensans-bold', sans-serif;
-$font-italic: 'opensans-italic', sans-serif;
-$font-ruble: 'ruble', sans-serif;
+$font: 'Geometria', sans-serif;
+$font-bold: 'Geometria-Bold', sans-serif;
+$font-bold-italic: 'ArnoPro-BoldItalic', sans-serif;
+$font-roman: 'AGOpusHR-Roman', sans-serif;
+
 
 // Vertical rhythm
 @import 'base/vertical_rhythm';
@@ -24,7 +30,7 @@ $vertical-rhythm-color-lines: #000;
 
 // Headings
 $headings:
-    (h1 24px 36px 48px),
+    (h1 24px 36px 50px),
     (h2 20px 30px 40px),
     (h3 19px 25px 31px),
     (h4 18px 21px 25px),
@@ -33,15 +39,6 @@ $headings:
 $headings-tt-uppercase: false;
 $headings-font-family: $font;
 $headings-margin-trailer: 1;
-
-// Blockquote
-$blockquote-color: #8a8a8a;
-$blockquote-border-size: 1px;
-$blockquote-border-color: #cacaca;
-$blockquote-font-family: $font;
-$blockquote-font-size: 16px;
-$blockquote-name-font-family: $font-italic;
-$blockquote-name-font-size: 14px;
 
 // Small
 $small-font-size: $base-font-size - 2;
@@ -65,8 +62,8 @@ $list-margin-bottom: $paragraph-margin-bottom; // rhythm unit
 // GRID
 // -----------------------------------
 $columns: 12;
-$column-width: 60px;
-$gutter-width: 20px;
+$column-width: 130px;
+$gutter-width: 30px;
 
 
 // BREAKPOINTS

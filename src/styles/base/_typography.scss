@@ -1,8 +1,8 @@
 // INCLUDE FONTS
-@include font(opensans, 'opensans_regular_cyrillic/OpenSans-Regular-webfont');
-@include font(opensans-bold, 'opensans_bold_cyrillic/OpenSans-Bold-webfont');
-@include font(opensans-italic, 'opensans_italic_cyrillic/OpenSans-Italic-webfont');
-@include font(ruble, 'ruble/ruble-webfont');
+@include font(opensans, 'Geometria/Geometria');
+@include font(Geometria-Bold, 'Geometria-Bold/Geometria-Bold');
+@include font(ArnoPro-BoldItalic, 'ArnoPro-BoldItalic/ArnoPro-BoldItalic');
+@include font(AGOpusHR-Roman, 'AGOpusHR-Roman/AGOpusHR-Roman');
 
 // HEADINGS
 $headings:
@@ -43,38 +43,7 @@ $headings-margin-trailer: 1 !default; //rhythm unit
 
 h1,
 h2 {
-    @include margin-trailer($headings-margin-trailer);
-}
-
-// BLOCKQUOTE
-$blockquote-color: #8a8a8a !default;
-$blockquote-border-size: 1px !default;
-$blockquote-border-color: #cacaca !default;
-$blockquote-font-family: $font !default;
-$blockquote-font-size: 16px !default;
-$blockquote-name-font-family: $font-italic !default;
-$blockquote-name-font-size: 14px !default;
-
-blockquote {
-    @include adjust-font-size-to($blockquote-font-size);
-    color: $blockquote-color;
-    padding: {
-        left: gutter(4);
-        top: rhythm(1);
-        bottom: rhythm(1);
-    };
-    border-left: $blockquote-border-size solid $blockquote-border-color;
-    font-family: $blockquote-font-family;
-}
-
-cite {
-    @include adjust-font-size-to($blockquote-name-font-size);
-    font-family: $blockquote-name-font-family;
-    display: block;
-
-    &:before {
-        content: '\2014 \0020';
-    }
+    font: $font-roman;
 }
 
 
@@ -173,11 +142,4 @@ b,
 strong {
     font-family: $font-bold;
     font-weight: 700;
-}
-
-// i, em
-i,
-em {
-    font-family: $font-italic;
-    font-style: italic;
 }

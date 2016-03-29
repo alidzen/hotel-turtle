@@ -63,10 +63,6 @@ body {
     font-family: $font-bold;
 }
 
-.type_font3 {
-    font-family: $font-italic;
-}
-
 //Сетка
 .l-row {
     @include container();
