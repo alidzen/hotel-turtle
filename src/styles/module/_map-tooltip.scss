@@ -1,0 +1,57 @@
+$map-tooltip-border: #ff0000;
+
+.b-map-tooltip {
+    border: 2px solid $map-tooltip-border;
+    padding: 10px;
+    display: inline-block;
+    background-color: $white;
+    position: relative;
+    color: $black;
+    text-align: center;
+    width: auto;
+
+    &:after {
+        $width: 10px;
+        $height: 11px;
+        width: 0;
+        height: 0;
+        border-left: $width solid transparent;
+        border-right: $width solid transparent;
+        border-top: $height solid $white;
+        content: '';
+        position: absolute;
+        bottom: - $height;
+        left: 50%;
+        margin-left: -12px;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5),
+        (min--moz-device-pixel-ratio: 1.5),
+        (-o-min-device-pixel-ratio: 3/2),
+        (min-device-pixel-ratio: 1.5) {
+            bottom: - $height + 1px;
+        }
+    }
+}
+
+.b-map-tooltip__title {
+    @include adjust-font-size-to(16px);
+    font-family: $font;
+}
+
+.b-map-tooltip__arrow {
+    $width: 12px;
+    $height: 13px;
+    width: 0;
+    height: 0;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+
+    border-top-width: $height;
+    border-top-style: solid;
+    border-top-color: inherit;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -14px;
+}

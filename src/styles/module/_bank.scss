@@ -1,0 +1,90 @@
+$bank-border-size: 1px !default;
+$bank-border-color: $gray !default;
+
+$bank-link-color: $gray !default;
+$bank-link-font-family: $font !default;
+$bank-link-font-size: 14px !default;
+
+$bank-key-color: $gray !default;
+$bank-key-font-family: $font-bold !default;
+$bank-key-font-size: 10px !default;
+$bank-key-line-height: 14px !default;
+$bank-key-text-transform: true !default;
+
+$bank-val-color: $black !default;
+$bank-val-font-family: $font-bold !default;
+$bank-val-font-size: 28px !default;
+$bank-val-text-transform: false !default;
+
+// LAYOUT
+@import '../layout/module/banks';
+
+// MODULE
+.b-bank {
+    border: $bank-border-size solid $bank-border-color;
+    background-color: $white;
+}
+
+.b-bank__row {
+    @include rhythm-padding(.5);
+    @include grid-clearfix();
+
+    @media #{$large-up} {
+        padding: rhythm(1) gutter(1);
+    }
+
+    &:first-child {
+        @include padding-leader(1.5);
+        @include padding-trailer(0);
+    }
+
+    &:last-child {
+        @include padding-trailer(1.5);
+    }
+}
+
+.b-bank__col {
+    @include span(full);
+
+    @media #{$large-up} {
+        @include span(6);
+    }
+}
+
+.b-bank__img-wrap {
+    min-height: 40px;
+}
+
+.b-bank__img {
+    max-width: 100%;
+}
+
+.b-bank__key {
+    font-size: $bank-key-font-size;
+    line-height: $bank-key-line-height;
+    font-family: $bank-key-font-family;
+    color: $bank-key-color;
+
+    @if ($bank-key-text-transform) {
+        @include text-transform();
+    }
+}
+
+.b-bank__val {
+    @include adjust-font-size-to($bank-val-font-size);
+    font-family: $bank-val-font-family;
+    color: $bank-val-color;
+
+    @if ($bank-val-text-transform) {
+        @include text-transform();
+    }
+}
+
+.b-bank__link {
+    @include adjust-font-size-to($bank-link-font-size);
+    color: $bank-link-color;
+    font-family: $bank-link-font-family;
+}
+
+//STATE
+@import '../state/bank';

@@ -1,0 +1,63 @@
+$tabs-color: #337ab7;
+$tabs-tab-background: $white;
+$tabs-font-size: 16px;
+$tabs-font-family: $font-bold;
+$tabs-border-radius: 4px;
+$tabs-border-size: 1px;
+$tabs-border-color: #eee;
+$tabs-horizontal-padding: 10px;
+$tabs-height: 1.5; //rhythm unit
+//active tab
+$tabs-color-active: #337ab7;
+$tabs-background-color-active: #e6e6e6;
+//disabled
+$tabs-color-disabled: #eee;
+$tabs-background-color-disabled: #ddd;
+//content
+$tabs-content-paddings: 20px;
+
+.b-tabs {
+    display: inline-block;
+}
+
+.b-tabs__triggers {
+    border: 1px solid $tabs-border-color;
+    border-radius: $tabs-border-radius;
+    overflow: hidden;
+}
+
+.b-tabs__item {
+    @include transition(color, background-color);
+    @include adjust-leading-to($tabs-height);
+    height: rhythm($tabs-height);
+    color: $tabs-color;
+    padding: {
+        left: $tabs-horizontal-padding;
+        right: $tabs-horizontal-padding;
+    };
+    border-right: $tabs-border-size solid $tabs-border-color;
+    background-color: $tabs-tab-background;
+    display: inline-block;
+    font-size: $tabs-font-size;
+    font-family: $tabs-font-family;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active {
+        color: darken($tabs-color, 5%);
+    }
+}
+
+.b-tabs__content {
+    display: none;
+    padding: $tabs-content-paddings;
+}
+
+// STATE
+@import '../state/tabs';
