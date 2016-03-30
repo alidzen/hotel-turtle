@@ -96,7 +96,7 @@ textarea {
   padding-right: 7.5px; }
 
 @font-face {
-  font-family: "opensans";
+  font-family: "Geometria";
   src: url("/fonts/Geometria/Geometria.eot");
   src: url("/fonts/Geometria/Geometria.eot?#iefix") format("embedded-opentype"), url("/fonts/Geometria/Geometria.ttf") format("truetype"), url("/fonts/Geometria/Geometria.woff") format("woff"); }
 
@@ -262,6 +262,20 @@ a[href^='tel:'], a[href^='mailto:'] {
 
 .show {
   display: block; }
+
+.b-menu-logo__txt {
+  position: relative;
+  padding-top: 12px; }
+  .b-menu-logo__txt:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #bca064; }
 
 .animated {
   -webkit-animation-duration: 0.5s;
@@ -2526,18 +2540,17 @@ a[href^='tel:'], a[href^='mailto:'] {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; }
 
-.l-home__header {
-  min-height: 100vh; }
-  .l-home__header:after {
-    content: '';
-    display: block;
-    clear: both; }
+.l-home__header:after {
+  content: '';
+  display: block;
+  clear: both; }
 
 .l-home__menu {
   width: 20.83333%;
   float: left;
   padding-left: 15px;
   padding-right: 15px;
+  height: 100vh;
   padding: 0; }
 
 .l-home__gallery {
@@ -2545,7 +2558,35 @@ a[href^='tel:'], a[href^='mailto:'] {
   float: left;
   padding-left: 15px;
   padding-right: 15px;
+  height: calc(100vh - 60px);
   padding: 0; }
+
+.l-home-menu {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.no-flexbox .l-home-menu__logo, .no-flexboxlegacy .l-home-menu__logo {
+  margin-top: 24px;
+  margin-bottom: 48px; }
+
+.no-flexbox .l-home-menu__nav, .no-flexboxlegacy .l-home-menu__nav {
+  margin-bottom: 48px; }
+
+.no-flexbox .l-home-menu__contacts, .no-flexboxlegacy .l-home-menu__contacts {
+  margin-bottom: 48px; }
+
+.no-flexbox .l-home-menu__lang, .no-flexboxlegacy .l-home-menu__lang {
+  margin-bottom: 48px; }
 
 .b-kelnik {
   text-decoration: none;
@@ -3290,7 +3331,7 @@ select {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  position: relative; }
+  text-align: center; }
 
 .b-nav__item {
   -webkit-flex: 0 0 auto;
@@ -3358,6 +3399,17 @@ select {
 .b-callback__lbl {
   margin-bottom: 12px;
   display: block; }
+
+.b-menu-logo {
+  text-align: center; }
+  .b-menu-logo .b-logo {
+    margin-bottom: 12px;
+    margin-right: auto;
+    margin-left: auto; }
+
+.b-menu-logo__txt {
+  font-size: 14px;
+  color: #463f32; }
 
 ol {
   list-style-type: decimal;

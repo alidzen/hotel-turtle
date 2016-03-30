@@ -1,0 +1,17 @@
+.b-menu-logo {
+    text-align: center;
+
+    .b-logo {
+        @include margin-trailer(.5);
+        margin: {
+            right: auto;
+            left: auto;
+        };
+    }
+}
+
+.b-menu-logo__txt {
+    @extend %b-top-dash;
+    font-size: 14px;
+    color: $black-2;
+}

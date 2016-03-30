@@ -24,3 +24,21 @@ a {
 .show {
     display: block;
 }
+
+%b-top-dash {
+    $dash-size: 40px;
+    position: relative;
+    padding-top: rhythm(.5);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: - $dash-size / 2;
+        display: block;
+        width: $dash-size;
+        height: 2px;
+        background-color: $gold-2;
+    }
+}

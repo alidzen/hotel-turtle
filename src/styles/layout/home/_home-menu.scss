@@ -1,0 +1,29 @@
+.l-home-menu {
+    @include padding-leader(1);
+    @include padding-trailer(.5);
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+// flex fallback
+.no-flexbox, .no-flexboxlegacy {
+    .l-home-menu__logo {
+        @include margin-leader(1);
+        @include margin-trailer(2);
+    }
+
+    .l-home-menu__nav {
+        @include margin-trailer(2);
+    }
+
+    .l-home-menu__contacts {
+        @include margin-trailer(2);
+    }
+
+    .l-home-menu__lang {
+        @include margin-trailer(2);
+    }
+}
+

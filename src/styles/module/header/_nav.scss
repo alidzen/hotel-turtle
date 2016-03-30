@@ -42,7 +42,7 @@ $nav-color-active: #ffa500 !default;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    position: relative; // Sublist position
+    text-align: center;
 }
 
 .b-nav__item {
@@ -108,3 +108,4 @@ $nav-color-active: #ffa500 !default;
         }
     }
 }
+

@@ -1,14 +1,15 @@
 .l-home__header {
     @include grid-clearfix();
-    min-height: 100vh;
 }
 
 .l-home__menu {
     @include span(2.5);
+    height: 100vh;
     padding: 0;
 }
 
 .l-home__gallery {
     @include span(9.5);
+    height: calc(100vh - 60px);
     padding: 0;
 }
