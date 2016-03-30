@@ -1,0 +1,17 @@
+.b-menu-contacts {
+    text-align: center;
+}
+
+.b-menu-contacts__tel {
+    @include margin-trailer(.5);
+    display: block;
+    font-family: $font-bold;
+    color: $black-2;
+}
+
+.b-menu-contacts__map {
+    @extend %b-top-dash;
+    display: block;
+    font-size: 14px;
+    color: $black-2;
+}

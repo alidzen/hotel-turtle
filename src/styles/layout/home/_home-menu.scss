@@ -1,13 +1,14 @@
 .l-home-menu {
     @include padding-leader(1);
     @include padding-trailer(.5);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
 }
 
 // flex fallback
+// scss-lint:disable SingleLinePerSelector
 .no-flexbox, .no-flexboxlegacy {
     .l-home-menu__logo {
         @include margin-leader(1);

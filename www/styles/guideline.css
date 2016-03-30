@@ -204,12 +204,16 @@ p {
   margin-bottom: 24px; }
 
 a {
-  color: #0000ff;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  color: #333333;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: none;
+    color: #bca064; }
   a:active {
-    color: #0000e6; }
+    color: #bca064; }
 
 .b-typo-reset ul ul,
 .b-typo-reset ol ol {
@@ -263,10 +267,10 @@ a[href^='tel:'], a[href^='mailto:'] {
 .show {
   display: block; }
 
-.b-menu-logo__txt {
+.b-menu-logo__txt, .b-menu-contacts__map {
   position: relative;
   padding-top: 12px; }
-  .b-menu-logo__txt:before {
+  .b-menu-logo__txt:before, .b-menu-contacts__map:before {
     content: '';
     position: absolute;
     top: 0;
@@ -2564,7 +2568,7 @@ a[href^='tel:'], a[href^='mailto:'] {
 .l-home-menu {
   padding-top: 24px;
   padding-bottom: 12px;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3301,85 +3305,63 @@ select {
   left: 50%;
   margin-left: -14px; }
 
-.b-nav__item, .b-nav__subitem {
-  float: left;
-  margin-right: 15px; }
-  .b-nav__item:last-child, .b-nav__subitem:last-child {
-    margin-right: 0; }
+.b-nav__list {
+  text-align: center; }
 
-.b-nav__link, .b-nav__sublink {
-  font-size: 17px;
+.b-nav__item {
+  display: block;
+  border-top: 1px solid #b5b1ab;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+  .b-nav__item:last-child {
+    border-bottom: 1px solid #b5b1ab; }
+
+.b-nav__link {
+  font-size: 16px;
   line-height: 24px;
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  position: relative;
   color: #333333;
   font-family: "Geometria", sans-serif;
   text-decoration: none; }
-  .is-active.b-nav__link, .is-active.b-nav__sublink {
-    color: #ffa500; }
-  .b-nav__link:hover, .b-nav__sublink:hover {
-    color: #ff0000; }
-
-.b-nav__list {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: center; }
-
-.b-nav__item {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto; }
-  @media only screen and (min-width: 641px) {
-    .b-nav__item {
-      -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1; } }
-
-.b-nav__sublist {
-  width: 100%;
-  position: absolute;
-  top: 24px;
-  left: 0;
-  display: none; }
-
-.b-nav__item:hover .b-nav__sublist {
-  display: block; }
-
-.b-nav__link_is_sublist .b-nav__link {
-  position: relative;
-  padding-right: 26px; }
-  .b-nav__link_is_sublist .b-nav__link:after {
-    background-image: url("/img/sprites.png");
-    background-position: -212px -80px;
-    width: 11px;
-    height: 6px;
+  .b-nav__link.is-active {
+    color: #bca064;
+    border-color: #bca064;
+    cursor: default;
+    text-decoration: none; }
+    .b-nav__link.is-active:after {
+      width: 40px;
+      left: 50%;
+      margin-left: -20px;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
+  .b-nav__link:hover {
+    color: #bca064;
+    border-color: #bca064;
+    text-decoration: none; }
+    .b-nav__link:hover:after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
+  .b-nav__link:after {
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform, -webkit-transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;
+    content: '';
     position: absolute;
-    top: 50%;
-    margin-top: -3px;
-    right: 0;
-    content: ''; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-      .b-nav__link_is_sublist .b-nav__link:after {
-        background-image: url("/img/sprites@2x.png");
-        background-size: 223px 192px; } }
-
-.b-nav__link_is_sublist:hover .b-nav__link:after {
-  -webkit-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  transform: rotate(-180deg); }
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: #bca064;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0); }
 
 @media only screen and (min-width: 641px) {
   .b-callback {
@@ -3408,6 +3390,20 @@ select {
     margin-left: auto; }
 
 .b-menu-logo__txt {
+  font-size: 14px;
+  color: #463f32; }
+
+.b-menu-contacts {
+  text-align: center; }
+
+.b-menu-contacts__tel {
+  margin-bottom: 12px;
+  display: block;
+  font-family: "Geometria-Bold", sans-serif;
+  color: #463f32; }
+
+.b-menu-contacts__map {
+  display: block;
   font-size: 14px;
   color: #463f32; }
 

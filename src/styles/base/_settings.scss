@@ -6,7 +6,7 @@ $white: #fefefd;
 $white-2: #f0eeeb;
 $gold: #c8b385;
 $gold-2: #bca064;
-$gray: #ccc;
+$gray: #b5b1ab;
 $red: #da3636;
 $base-font-color: $black;
 
@@ -48,10 +48,10 @@ $small-font-size: $base-font-size - 2;
 $paragraph-margin-bottom: 1; // rhythm unit
 
 // Links
-$link-color: #0000ff;
-$link-color-hover: lighten($link-color, 5%);
-$link-color-active: darken($link-color, 5%); // :active state
-$link-text-decoration: normal;
+$link-color: $black;
+$link-color-hover: $gold-2;
+$link-color-active: $gold-2; // :active state
+$link-text-decoration: 'reset';
 
 // Lists
 $list-color: $black;
@@ -186,14 +186,12 @@ $lr-sublist-pl: 4;
 
 // NAVIGATION
 $nav-color: $black;
-$nav-font-size: 17px;
+$nav-font-size: 16px;
 $nav-font-family: $font;
-$nav-text-transform: false;
-$nav-sublist-arrow: 'nav-sublist';
 //hover
-$nav-color-hover: #ff0000;
+$nav-color-hover: $gold-2;
 //active
-$nav-color-active: #ffa500;
+$nav-color-active: $gold-2;
 
 // GALLERY
 // Arrows
