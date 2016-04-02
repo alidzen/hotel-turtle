@@ -39,6 +39,7 @@ select {
         color: $select-color;
         height: $select-height-current;
         line-height: $select-height-current;
+        margin-left: gutter(1);
     }
 
     .button {

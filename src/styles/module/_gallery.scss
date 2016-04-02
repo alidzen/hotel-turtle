@@ -159,7 +159,7 @@ $gallery-dots-frame-height: 30px !default;
 
 .fotorama__nav-wrap {
     position: relative;
-    bottom: rhythm(1.5);
+    bottom: rhythm(1.5) + 60px; // booking
 }
 .fotorama__nav--dots .fotorama__nav__frame {
     width: $gallery-dots-frame-width;

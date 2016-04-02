@@ -105,24 +105,24 @@ $gl-letter-spacing: .2em;
 $logo: 'logo';
 
 // BUTTONS
-$btn-color: $white;
-$btn-bg-color: $black;
-$btn-bd-width: 1px;
-$btn-bd-color: transparent;
-$btn-border-radius: 3px;
-$btn-font-size: $base-font-size;
+$btn-color: $gold-2;
+$btn-bg-color: transparent;
+$btn-bd-width: 2px;
+$btn-bd-color: $gold-2;
+$btn-border-radius: 0;
+$btn-font-size: 11px;
 $btn-line-height: $base-line-height;
-$btn-font-family: $font;
-$btn-height: 2; //rhythm unit
-$btn-tt-uppercase: false;
+$btn-font-family: $font-roman;
+$btn-height: 1.5; //rhythm unit
+$btn-tt-uppercase: true;
 //hover
-$btn-color-hover: $black;
-$btn-bg-color-hover: $white;
-$btn-bd-color-hover: transparent;
+$btn-color-hover: $white;
+$btn-bg-color-hover: $gold-2;
+$btn-bd-color-hover: $gold-2;
 //disabled
-$btn-color-disabled: #ccc;
-$btn-bg-color-disabled: #eee;
-$btn-bd-color-disabled: transparent;
+$btn-color-disabled: rgba($gold-2, .5);
+$btn-bg-color-disabled: rgba($white, .5);
+$btn-bd-color-disabled: rgba($gold-2, .5);
 
 // POPUP
 $popup-color: $black;
@@ -146,22 +146,22 @@ $popup-btn-opacity: .5;
 
 // INPUTS
 // Fields
-$input-color: $black;
-$input-bg-color: $white;
-$input-bd-width: 1px;
-$input-bd-color: $black;
+$input-color: $white;
+$input-bg-color: #004457;
+$input-bd-width: 2px;
+$input-bd-color: #004356;
 $input-border-radius: 0;
-$input-font-size: 16px;
+$input-font-size: 12px;
 $input-font-family: $font;
-$input-height: 2; //rhythm unit
+$input-height: 1.5; //rhythm unit
 $textarea-min-height: 5; // rows
 //Placeholder
-$input-placeholder-color: #ccc;
-$input-placeholder-font-style: italic;
-$input-placeholder-font-size: $base-font-size;
+$input-placeholder-color: $white;
+$input-placeholder-font-style: normal;
+$input-placeholder-font-size: $input-font-size;
 $input-placeholder-opacity: 1;
 //Focus
-$input-bd-color-focus: #663399;
+$input-bd-color-focus: $red;
 
 // LABEL
 $label-font-family: $font-bold;
@@ -242,18 +242,16 @@ $anim-label-color: inherit;
 $anim-label-color-focus: inherit;
 
 // SELECT
-$select-font-size: 16px;
-$select-font-family: $font;
-$select-border-width: 1px;
-$select-border-color: #ccc;
-$select-border-radius: 4px;
-$select-color: $black;
+$select-font-size: $input-font-size;
+$input-font-family: $font;
+$select-border-width: $input-bd-width;
+$select-border-color: $input-bd-color;
+$select-border-radius: $input-border-radius;
+$select-color: $input-color;
 $select-item-color-hover: #999;
-$select-item-background-color: $white;
-$select-item-background-color-selected: #ccc;
+$select-item-background-color: $input-bg-color;
+$select-item-background-color-selected: $input-bg-color;
 $select-item-background-color-hover: lighten($select-item-background-color-selected, 15%);
-$select-item-border-width: 1px;
-$select-item-border-color: #eee;
+$select-item-border-width: 0;
+$select-item-border-color: red;
 $select-height: $btn-height; // rhythm unit
-
-// BANKS

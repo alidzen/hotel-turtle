@@ -8,8 +8,20 @@
     padding: 0;
 }
 
-.l-home__gallery {
-    @include span(9.5);
-    height: calc(100vh - 60px);
+.l-home__booking-info {
+    @include span(9.5 last);
+    position: relative;
+    height: 100vh;
     padding: 0;
+}
+
+.l-home__gallery {
+    position: relative;
+}
+
+.l-home__booking {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }

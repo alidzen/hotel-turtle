@@ -30,7 +30,9 @@ $input-natural-height: rhythm($input-height) - ($input-bd-width * 2);
     border-radius: $input-border-radius;
     padding: {
         top: 0;
+        right: gutter(1);
         bottom: 0;
+        left: gutter(1);
     };
 
     &::placeholder {

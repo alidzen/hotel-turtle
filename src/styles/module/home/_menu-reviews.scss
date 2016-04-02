@@ -13,9 +13,9 @@
 }
 
 .b-menu-reviews__link {
+    @extend %stretch-green-link;
     @include adjust-font-size-to(11px);
+    line-height: 19px;
     text-transform: uppercase;
     font-family: $font-roman;
-    color: $green;
-    border-bottom: 2px solid $green;
 }

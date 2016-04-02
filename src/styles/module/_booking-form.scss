@@ -1,0 +1,37 @@
+.b-booking-form {
+    background-color: rgba($green, .7);
+}
+
+.b-booking-form__form {
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.b-booking-form__info {
+    color: $gold-2;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.b-booking-form__info-ttl {
+    font-family: $font-bold;
+}
+
+.b-booking-form__txt {
+    font-family: $font-bold-italic;
+}
+
+.b-booking-form__inp {
+    flex-basis: 125px;
+}
+
+.b-booking-form__select {
+    flex-basis: 125px;
+
+    .selectric-wrapper {
+        width: 100%;
+    }
+}
+
