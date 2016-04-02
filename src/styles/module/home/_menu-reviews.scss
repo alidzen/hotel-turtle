@@ -1,0 +1,21 @@
+.b-menu-reviews {
+    color: $black-2;
+    text-align: center;
+}
+
+.b-menu-reviews__rate {
+    @include sprite('mark-rate');
+    display: inline-block;
+}
+
+.b-menu-reviews__txt {
+    @include adjust-font-size-to(14px);
+}
+
+.b-menu-reviews__link {
+    @include adjust-font-size-to(11px);
+    text-transform: uppercase;
+    font-family: $font-roman;
+    color: $green;
+    border-bottom: 2px solid $green;
+}

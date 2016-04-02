@@ -7,6 +7,8 @@ $white-2: #f0eeeb;
 $gold: #c8b385;
 $gold-2: #bca064;
 $gray: #b5b1ab;
+$gray-2: #bdbdbd;
+$green: #005870;
 $red: #da3636;
 $base-font-color: $black;
 
@@ -197,24 +199,27 @@ $nav-color-active: $gold-2;
 // Arrows
 $gallery-arrow-prev: 'gallery-prev';
 $gallery-arrow-next: 'gallery-next';
+$arrow-size: 50px;
 // Thumbs
 $gallery-thumbs-border-color: $black;
 $gallery-thumbs-bg-color: $black;
 $gallery-thumbs-bg-opacity: .2;
 $gallery-thumbs-position: center;
 //Image
-$gallery-image-bg-color: #eee;
+$gallery-image-bg-color: transparent;
 //Label
 $gallery-label-color: $black;
 $gallery-label-bg-color: $white;
-$gallery-label-position: top;
+$gallery-label-position: bottom;
 $gallery-label-font-size: 12px;
-$gallery-label-height: 1; //rhythm unit
+$gallery-label-height: 0; //rhythm unit
 $gallery-label-font-family: $font-bold;
 $gallery-image-container-bg-color: $gallery-image-bg-color;
 //Dots
-$gallery-dots-size: 6px;
-$gallery-dots-color: $black;
+$gallery-dots-frame-height: 30px;
+$gallery-dots-frame-width: 18px;
+$gallery-dots-size: 7px;
+$gallery-dots-color: #cbc7bf;
 $gallery-dots-color-hover: lighten($gallery-dots-color, 30%);
 $gallery-dots-position: center;
 $gallery-dots-horizontal-paddings: 0;

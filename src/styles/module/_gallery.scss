@@ -31,6 +31,9 @@ $gallery-caption-font-size: $base-font-size !default;
 $gallery-caption-font-family: $font-bold !default;
 $gallery-caption-text-align: left !default;
 $gallery-caption-inner-position: bottom !default;
+$arrow-size: 45px !default;
+$gallery-dots-frame-width: 18px !default;
+$gallery-dots-frame-height: 30px !default;
 
 // Because Fotorama
 // scss-lint:disable SelectorFormat
@@ -42,12 +45,22 @@ $gallery-caption-inner-position: bottom !default;
 // Arrows
 .b-gallery__arrow {
     @include squish-text;
-    @include transition(transform);
     position: absolute;
+    display: block;
+    width: $arrow-size;
+    height: $arrow-size;
     top: 50%;
+    background: rgba($white, .7);
+    border: 2px solid $gold-2;
 
-    &:hover {
-        transform: scale(1.1);
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: - (sprite-height($gallery-arrow-prev) / 2);
+        left: 50%;
+        margin-left: - (sprite-width($gallery-arrow-prev) / 2);
     }
 
     &.is-disabled {
@@ -56,15 +69,19 @@ $gallery-caption-inner-position: bottom !default;
 }
 
 .b-gallery__arrow_show_prev {
-    @include sprite($gallery-arrow-prev);
-    margin-top: - (sprite-height($gallery-arrow-prev) / 2);
     left: span(1);
+
+    &:before {
+        @include sprite($gallery-arrow-prev);
+    }
 }
 
 .b-gallery__arrow_show_next {
-    @include sprite($gallery-arrow-next);
-    margin-top: - (sprite-height($gallery-arrow-next) / 2);
     right: span(1);
+
+    &:after {
+        @include sprite($gallery-arrow-next);
+    }
 }
 
 
@@ -118,17 +135,20 @@ $gallery-caption-inner-position: bottom !default;
 // Dots
 .fotorama__dot {
     @include transition(border-color);
-    border: 1px solid $gallery-dots-color;
+    border-radius: 50%;
+    background-color: $gallery-dots-color;
     width: $gallery-dots-size;
     height: $gallery-dots-size;
-
-    &:hover {
-        border-color: $gallery-dots-color-hover;
-    }
+    border-width: 0;
 }
 
 .fotorama__nav__frame.fotorama__active .fotorama__dot {
-    border-width: ($gallery-dots-size / 2);
+    background-color: $green;
+    width: $gallery-dots-size + 2;
+    height: $gallery-dots-size + 2;
+    border-width: 0;
+    top: ($gallery-dots-frame-height - ($gallery-dots-size + 2)) / 2;
+    left: ($gallery-dots-frame-width - ($gallery-dots-size + 2)) / 2;
 }
 
 .fotorama__nav--dots {
@@ -137,6 +157,14 @@ $gallery-caption-inner-position: bottom !default;
     background-color: $gallery-dots-background-color;
 }
 
+.fotorama__nav-wrap {
+    position: relative;
+    bottom: rhythm(1.5);
+}
+.fotorama__nav--dots .fotorama__nav__frame {
+    width: $gallery-dots-frame-width;
+    height: $gallery-dots-frame-height;
+}
 
 // Image
 .fotorama__stage__frame {
@@ -160,3 +188,4 @@ $gallery-caption-inner-position: bottom !default;
     font-family: $gallery-caption-font-family;
     text-align: $gallery-caption-text-align;
 }
+
