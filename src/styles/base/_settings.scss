@@ -161,7 +161,7 @@ $input-placeholder-font-style: normal;
 $input-placeholder-font-size: $input-font-size;
 $input-placeholder-opacity: 1;
 //Focus
-$input-bd-color-focus: $red;
+$input-bd-color-focus: $input-bd-color;
 
 // LABEL
 $label-font-family: $font-bold;
@@ -253,5 +253,5 @@ $select-item-background-color: $input-bg-color;
 $select-item-background-color-selected: $input-bg-color;
 $select-item-background-color-hover: lighten($select-item-background-color-selected, 15%);
 $select-item-border-width: 0;
-$select-item-border-color: red;
+$select-item-border-color: $input-bd-color;
 $select-height: $btn-height; // rhythm unit

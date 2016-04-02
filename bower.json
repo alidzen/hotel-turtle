@@ -13,6 +13,7 @@
     "handlebars": "~3.0.0",
     "jquery": "~2.1.4",
     "jquery.maskedinput": "~1.4.1",
+    "jquery.ui": "~1.11.2",
     "magnific-popup": "~1.1.0",
     "modernizr": "~2.8.3",
     "requirejs": "latest",

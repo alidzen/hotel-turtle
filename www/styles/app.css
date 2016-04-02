@@ -2775,7 +2775,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
     font-size: 12px;
     opacity: 1; }
   input[type='text']:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
-    border-color: #da3636; }
+    border-color: #004356; }
 
 input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"] {
   line-height: 32px; }
@@ -2987,7 +2987,7 @@ select {
   border-top: 2px solid #004356;
   border-bottom: none; }
   .selectric-above.selectric-open .selectric-items li {
-    border-bottom: 0 solid red; }
+    border-bottom: 0 solid #004356; }
 
 .selectric-items {
   overflow: hidden;
@@ -2999,7 +2999,7 @@ select {
     font-size: 12px;
     background-color: #004457;
     color: #fefefd;
-    border-bottom: 0 solid red;
+    border-bottom: 0 solid #004356;
     border-top: none; }
     .selectric-items li:hover {
       background-color: #0080a4;

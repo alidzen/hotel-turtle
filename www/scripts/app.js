@@ -9,18 +9,6 @@ define('app', [
 
     FastClick.attach(document.body);
     
-    (function($substrate) {
-        if (!$substrate.length) {
-            return;
-        }
-
-        $(function() {
-            require(['apartments/app'], function(app) {
-                app.run(window.location.pathname);
-            });
-        });
-    })($('#substrate'));
-
     (function($forms) {
         if (!$forms.length) {
             return;
@@ -123,6 +111,17 @@ define('app', [
             });
         });
     })($('.j-map'));
+
+    // подключаем datepicker
+    (function($datepicker) {
+        if (!$datepicker.length) {
+            return;
+        }
+
+        require(['jquery-ui/i18n/datepicker-ru'], function() {
+            $datepicker.datepicker();
+        });
+    })($('.j-datepicker'));
 
     return {};
 });
