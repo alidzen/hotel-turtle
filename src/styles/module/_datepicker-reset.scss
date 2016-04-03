@@ -1,0 +1,83 @@
+.ui-datepicker {
+    background-color: $green-2;
+    border: 2px solid $green-3;
+    font-size: 14px;
+    color: $white;
+
+    a {
+        color: $white;
+        font-size: 11px;
+
+        &:hover {
+            color: $gold-2;
+        }
+    }
+
+    $header-height: 30px;
+    .ui-datepicker-header {
+        height: $header-height;
+        padding: 0;
+    }
+
+    .ui-datepicker-prev {
+        height: $header-height;
+        top: 0;
+        cursor: pointer;
+
+        &:after {
+            @include sprite($gallery-arrow-prev);
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: - (sprite-height($gallery-arrow-prev) / 2);
+            left: 50%;
+            margin-left: - (sprite-width($gallery-arrow-prev) / 2);
+        }
+
+        &.ui-datepicker-prev-hover {
+            top: 0;
+            left: 2px;
+        }
+    }
+
+    .ui-datepicker-next {
+        height: $header-height;
+        top: 0;
+        cursor: pointer;
+
+        &:after {
+            @include sprite($gallery-arrow-next);
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: - (sprite-height($gallery-arrow-next) / 2);
+            left: 50%;
+            margin-left: - (sprite-width($gallery-arrow-next) / 2);
+        }
+
+        &.ui-datepicker-next-hover {
+            right: 2px;
+            top: 0;
+        }
+    }
+
+    .ui-datepicker-title {
+        line-height: $header-height;
+        margin: 0;
+
+        .ui-datepicker-month {
+            //vertical-align: middle;
+        }
+    }
+}
+
+// disable default arrow
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    display: none;
+}
+
+.ui-datepicker-unselectable.ui-state-disabled {
+    span {
+        color: $gray;
+    }
+}

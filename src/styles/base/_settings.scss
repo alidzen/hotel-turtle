@@ -9,6 +9,8 @@ $gold-2: #bca064;
 $gray: #b5b1ab;
 $gray-2: #bdbdbd;
 $green: #005870;
+$green-2: #004457;
+$green-3: #004356;
 $red: #da3636;
 $base-font-color: $black;
 
@@ -147,9 +149,9 @@ $popup-btn-opacity: .5;
 // INPUTS
 // Fields
 $input-color: $white;
-$input-bg-color: #004457;
+$input-bg-color: $green-2;
 $input-bd-width: 2px;
-$input-bd-color: #004356;
+$input-bd-color: $green-3;
 $input-border-radius: 0;
 $input-font-size: 12px;
 $input-font-family: $font;
@@ -248,10 +250,10 @@ $select-border-width: $input-bd-width;
 $select-border-color: $input-bd-color;
 $select-border-radius: $input-border-radius;
 $select-color: $input-color;
-$select-item-color-hover: #999;
+$select-item-color-hover: $gold-2;
 $select-item-background-color: $input-bg-color;
 $select-item-background-color-selected: $input-bg-color;
-$select-item-background-color-hover: lighten($select-item-background-color-selected, 15%);
+$select-item-background-color-hover: $input-bg-color;
 $select-item-border-width: 0;
 $select-item-border-color: $input-bd-color;
 $select-height: $btn-height; // rhythm unit

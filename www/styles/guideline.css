@@ -2631,28 +2631,6 @@ a[href^='tel:'], a[href^='mailto:'] {
 .no-flexbox .l-home-menu__lang, .no-flexboxlegacy .l-home-menu__lang {
   margin-bottom: 48px; }
 
-.b-kelnik {
-  text-decoration: none;
-  color: #333333;
-  display: inline-block;
-  overflow: hidden;
-  text-align: left; }
-
-.b-kelnik__img {
-  transition-property: fill, fill-opacity;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  float: left;
-  width: 124px;
-  height: 36px;
-  fill: #333333;
-  margin-right: 15px;
-  fill-opacity: 1; }
-
-.b-kelnik__img:hover {
-  fill-opacity: 1;
-  fill: #808080; }
-
 .b-logo {
   background-image: url("/img/sprites.png");
   background-position: 0px 0px;
@@ -3002,11 +2980,11 @@ select {
     border-bottom: 0 solid #004356;
     border-top: none; }
     .selectric-items li:hover {
-      background-color: #0080a4;
-      color: #999; }
+      background-color: #004457;
+      color: #bca064; }
     .selectric-items li.selected {
       background-color: #004457;
-      color: #999; }
+      color: #bca064; }
     .selectric-items li.selected:hover {
       background-color: #004457; }
     .selectric-items li:first-child {
@@ -3481,6 +3459,73 @@ select {
   flex-basis: 125px; }
   .b-booking-form__select .selectric-wrapper {
     width: 100%; }
+
+.ui-datepicker {
+  background-color: #004457;
+  border: 2px solid #004356;
+  font-size: 14px;
+  color: #fefefd; }
+  .ui-datepicker a {
+    color: #fefefd;
+    font-size: 11px; }
+    .ui-datepicker a:hover {
+      color: #bca064; }
+  .ui-datepicker .ui-datepicker-header {
+    height: 30px;
+    padding: 0; }
+  .ui-datepicker .ui-datepicker-prev {
+    height: 30px;
+    top: 0;
+    cursor: pointer; }
+    .ui-datepicker .ui-datepicker-prev:after {
+      background-image: url("/img/sprites.png");
+      background-position: -154px -90px;
+      width: 8px;
+      height: 13px;
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -6.5px;
+      left: 50%;
+      margin-left: -4px; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+        .ui-datepicker .ui-datepicker-prev:after {
+          background-image: url("/img/sprites@2x.png");
+          background-size: 206px 175px; } }
+    .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
+      top: 0;
+      left: 2px; }
+  .ui-datepicker .ui-datepicker-next {
+    height: 30px;
+    top: 0;
+    cursor: pointer; }
+    .ui-datepicker .ui-datepicker-next:after {
+      background-image: url("/img/sprites.png");
+      background-position: 0px -162px;
+      width: 8px;
+      height: 13px;
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -6.5px;
+      left: 50%;
+      margin-left: -4px; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+        .ui-datepicker .ui-datepicker-next:after {
+          background-image: url("/img/sprites@2x.png");
+          background-size: 206px 175px; } }
+    .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
+      right: 2px;
+      top: 0; }
+  .ui-datepicker .ui-datepicker-title {
+    line-height: 30px;
+    margin: 0; }
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: none; }
+
+.ui-datepicker-unselectable.ui-state-disabled span {
+  color: #b5b1ab; }
 
 .b-menu-logo {
   text-align: center; }
