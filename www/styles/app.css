@@ -2974,11 +2974,16 @@ select {
   border: 2px solid #004356;
   border-top: none; }
   .selectric-items li {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
     font-size: 12px;
     background-color: #004457;
     color: #fefefd;
     border-bottom: 0 solid #004356;
-    border-top: none; }
+    border-top: none;
+    padding-right: 15px;
+    padding-left: 15px; }
     .selectric-items li:hover {
       background-color: #004457;
       color: #bca064; }
@@ -3113,6 +3118,7 @@ select {
   width: 50px;
   height: 50px;
   top: 50%;
+  margin-top: -25px;
   background: rgba(254, 254, 253, 0.7);
   border: 2px solid #bca064; }
   .b-gallery__arrow:before, .b-gallery__arrow:after {
@@ -3126,7 +3132,7 @@ select {
     display: none; }
 
 .b-gallery__arrow_show_prev {
-  left: 8.33333%; }
+  left: 30px; }
   .b-gallery__arrow_show_prev:before {
     background-image: url("/img/sprites.png");
     background-position: -154px -90px;
@@ -3138,7 +3144,7 @@ select {
         background-size: 206px 175px; } }
 
 .b-gallery__arrow_show_next {
-  right: 8.33333%; }
+  right: 30px; }
   .b-gallery__arrow_show_next:after {
     background-image: url("/img/sprites.png");
     background-position: 0px -162px;
@@ -3176,7 +3182,9 @@ select {
   background-color: transparent; }
 
 .fotorama__nav__shaft {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  height: 60px;
+  padding: 15px 0; }
 
 .fotorama__dot {
   transition-property: border-color;
@@ -3201,9 +3209,9 @@ select {
   padding: 0 0;
   background-color: transparent; }
 
-.fotorama__nav-wrap {
-  position: relative;
-  bottom: 96px; }
+.fotorama__nav {
+  position: absolute;
+  bottom: 0; }
 
 .fotorama__nav--dots .fotorama__nav__frame {
   width: 18px;
@@ -3423,7 +3431,8 @@ select {
   display: block; }
 
 .b-booking-form {
-  background-color: rgba(0, 88, 112, 0.7); }
+  background: url("/img/form-bg.jpg") #005870;
+  background-size: cover; }
 
 .b-booking-form__form {
   display: -webkit-flex;

@@ -8,7 +8,7 @@ define('app', [
     'use strict';
 
     FastClick.attach(document.body);
-    
+
     (function($forms) {
         if (!$forms.length) {
             return;
@@ -112,16 +112,45 @@ define('app', [
         });
     })($('.j-map'));
 
-    // подключаем datepicker
+    // подключаем datepicker для бронирования
+    // example: http://jsfiddle.net/SirDerpington/h3wGx/4/
     (function($datepicker) {
         if (!$datepicker.length) {
             return;
         }
 
+        var $startDate = $('#booking-from');
+        var $endDate = $('#booking-to');
+
         require(['jquery-ui/i18n/datepicker-ru'], function() {
-            $datepicker.datepicker();
+            $startDate.datepicker({
+                defaultDate: "+1w",
+                minDate: 0,
+                firstDay: 0,
+                dateFormat: 'dd-mm-yy',
+                numberOfMonths: 1,
+                onClose: function(selectedDate) {
+
+                    var minDate = $(this).datepicker('getDate');
+                    var newMin = new Date(minDate.setDate(minDate.getDate() + 1));
+                    $endDate.datepicker( "option", "minDate", newMin );
+                }
+            });
+
+            $endDate.datepicker({
+                defaultDate: "+1w",
+                minDate: '+2d',
+                firstDay: 0,
+                dateFormat: 'dd-mm-yy',
+                numberOfMonths: 1,
+                onClose: function(selectedDate) {
+                    var maxDate = $(this).datepicker('getDate');
+                    var newMax  = new Date(maxDate.setDate(maxDate.getDate() - 1));
+                    $startDate.datepicker( "option", "maxDate",  newMax);
+                }
+            });
         });
-    })($('.j-datepicker'));
+    })($('.j-date-booking'));
 
     return {};
 });

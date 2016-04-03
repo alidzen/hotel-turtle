@@ -108,11 +108,16 @@ select {
     border-top: none;
 
     li {
+        @include transition(color);
         font-size: $select-font-size;
         background-color: $select-item-background-color;
         color: $select-color;
         border-bottom: $select-item-border-width solid $select-item-border-color;
         border-top: none;
+        padding: {
+            right: gutter(1);
+            left: gutter(1);
+        };
 
         &:hover {
             background-color: $select-item-background-color-hover;

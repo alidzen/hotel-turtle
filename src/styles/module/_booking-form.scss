@@ -1,5 +1,6 @@
 .b-booking-form {
-    background-color: rgba($green, .7);
+    background: url('/img/form-bg.jpg') $green;
+    background-size: cover;
 }
 
 .b-booking-form__form {
