@@ -1,0 +1,8 @@
+.l-feature {
+    @include margin-trailer(3.5);
+    @include grid-clearfix();
+}
+
+.l-feature__cnt {
+    @include span(10 center);
+}

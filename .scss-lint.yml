@@ -9,6 +9,7 @@ exclude:
 - 'src/styles/guideline.scss'
 - 'src/styles/doc.scss'
 - 'src/styles/doc/pages/_layout.scss'
+- 'src/styles/module/_datepicker-reset.scss'
 #visual
 - 'src/styles/module/_range-slider.scss'
 - 'src/styles/apartments/module/_video.scss'

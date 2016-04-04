@@ -1,0 +1,18 @@
+
+$images: 'bed', 'window', 'fan', 'eat', 'wi-fi';
+@each $image in $images {
+    .b-feature__item-img_img_#{$image} {
+        position: relative;
+
+        &:after {
+            $img: 'i-#{$image}';
+            @include sprite($img);
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: - (sprite-height($img) / 2);
+            margin-left: - (sprite-width($img) / 2);
+        }
+    }
+}

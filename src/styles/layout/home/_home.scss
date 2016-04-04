@@ -25,3 +25,8 @@
     left: 0;
     width: 100%;
 }
+
+.l-home__cnt {
+    @include padding-leader(2.5);
+    background-color: $white-2;
+}

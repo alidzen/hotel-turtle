@@ -124,29 +124,36 @@ define('app', [
 
         require(['jquery-ui/i18n/datepicker-ru'], function() {
             $startDate.datepicker({
-                defaultDate: "+1w",
+                defaultDate: '+1w',
                 minDate: 0,
                 firstDay: 0,
                 dateFormat: 'dd-mm-yy',
                 numberOfMonths: 1,
-                onClose: function(selectedDate) {
-
+                onClose: function() {
                     var minDate = $(this).datepicker('getDate');
-                    var newMin = new Date(minDate.setDate(minDate.getDate() + 1));
-                    $endDate.datepicker( "option", "minDate", newMin );
+                    if (minDate === null) {
+                        return;
+                    }
+                    var newMin = new Date(minDate.setDate(minDate
+                            .getDate() + 1));
+                    $endDate.datepicker('option', 'minDate', newMin);
                 }
             });
 
             $endDate.datepicker({
-                defaultDate: "+1w",
+                defaultDate: '+1w',
                 minDate: '+2d',
                 firstDay: 0,
                 dateFormat: 'dd-mm-yy',
                 numberOfMonths: 1,
-                onClose: function(selectedDate) {
+                onClose: function() {
                     var maxDate = $(this).datepicker('getDate');
-                    var newMax  = new Date(maxDate.setDate(maxDate.getDate() - 1));
-                    $startDate.datepicker( "option", "maxDate",  newMax);
+                    if (maxDate === null) {
+                        return;
+                    }
+                    var newMax  = new Date(maxDate.setDate(maxDate
+                            .getDate() - 1));
+                    $startDate.datepicker('option', 'maxDate',  newMax);
                 }
             });
         });

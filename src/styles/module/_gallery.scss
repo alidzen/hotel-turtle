@@ -44,6 +44,7 @@ $gallery-dots-frame-height: 30px !default;
 
 // Arrows
 .b-gallery__arrow {
+    @include transition(background-color);
     @include squish-text;
     position: absolute;
     display: block;
@@ -51,8 +52,12 @@ $gallery-dots-frame-height: 30px !default;
     height: $arrow-size;
     top: 50%; // dots
     margin-top: - ($arrow-size / 2);
-    background: rgba($white, .7);
+    background: rgba($white, .3);
     border: 2px solid $gold-2;
+
+    &:hover {
+        background: rgba($white, .7);
+    }
 
     &:before,
     &:after {
@@ -160,6 +165,7 @@ $gallery-dots-frame-height: 30px !default;
     background-color: $gallery-dots-background-color;
 }
 
+// scss-lint:disable MergeableSelector
 .fotorama__nav {
     position: absolute;
     bottom: 0;
