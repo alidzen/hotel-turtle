@@ -43,6 +43,10 @@ a {
     }
 }
 
+.ruble {
+    text-decoration: line-through;
+}
+
 %stretch-green-link {
     @include transition(color);
     display: inline-block;

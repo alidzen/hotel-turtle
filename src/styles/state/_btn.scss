@@ -42,3 +42,7 @@ $btn-list-height:
         @include btn-vertical-paddings($height);
     }
 }
+
+.b-btn_bg_white {
+    background-color: $white;
+}

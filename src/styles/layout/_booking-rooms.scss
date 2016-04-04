@@ -1,0 +1,24 @@
+.l-booking-rooms {
+    @include margin-trailer(2);
+    @include grid-clearfix();
+}
+
+.l-booking-rooms__row {
+    @media #{$big-up} {
+        @include span(10 center);
+    }
+}
+
+.l-booking-rooms__item {
+    @media #{$medium-up} {
+        @include gallery(6);
+
+        &:nth-child(2n + 1) {
+            padding-left: 0;
+        }
+
+        &:nth-child(2n) {
+            padding-right: 0;
+        }
+    }
+}

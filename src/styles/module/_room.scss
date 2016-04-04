@@ -1,0 +1,116 @@
+$border-height: 2px;
+$margin-x: 30px;
+$margin-y: 40px;
+
+.b-room {
+    position: relative;
+    display: block;
+
+    &:hover {
+        .b-room__cnt {
+            color: $gold-2;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: $margin-y;
+        height: calc(100% - #{$margin-y * 2});
+        width: $border-height;
+        background-color: $gold-2;
+    }
+
+    &:before {
+        left: $margin-x;
+    }
+
+    &:after {
+        right: $margin-x;
+    }
+}
+
+.b-room__border {
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: $margin-x;
+        width: calc(100% - #{$margin-x * 2});
+        height: $border-height;
+        background-color: $gold-2;
+    }
+
+    &:before {
+        top: $margin-y;
+    }
+
+    &:after {
+        bottom: $margin-y;
+    }
+}
+
+.b-room__img {
+    height: 310px;
+    background: 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.b-room__cnt {
+    @include padding-leader(1.5);
+    overflow: hidden;
+    height: 240px;
+    background-color: $white;
+    text-align: center;
+    color: $black;
+}
+
+.b-room__ttl {
+    font-family: $font-roman-bold;
+    text-transform: uppercase;
+}
+
+.b-room__descr {
+    $dash-width: 90px;
+    @include margin-trailer(1);
+    @include padding-trailer(1);
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        margin-left: - $dash-width / 2;
+        width: $dash-width;
+        height: 2px;
+        background-color: $gold-2;
+    }
+}
+
+.b-room__booking {
+    margin-bottom: 23px; // for vertical align btn
+}
+
+.b-room__old-price {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    font-family: $font-roman-bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $gray-4;
+    text-decoration: line-through;
+}
+
+.b-room__price {
+    position: relative;
+    font-family: $font-roman-bold;
+    text-transform: uppercase;
+}
+
+.b-room__btn {
+    position: relative;
+    z-index: z('default');
+}
