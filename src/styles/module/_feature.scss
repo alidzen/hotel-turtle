@@ -1,65 +1,16 @@
-//.b-feature {
-//    @include rhythm-padding(2);
-//    padding: {
-//        right: span(1);
-//        left: span(1);
-//    };
-//    overflow: hidden;
-//}
-//
-//.b-feature__border {
-//    @include rhythm-padding(2);
-//    position: relative;
-//    z-index: 0;
-//    border: {
-//        top: 2px solid $green;
-//        right: 2px solid $green;
-//    };
-//
-//    &:before,
-//    &:after {
-//        content: '';
-//        position: absolute;
-//        background-color: $green;
-//    }
-//
-//    &:before {
-//        top: 0;
-//        left: 0;
-//        width: 2px;
-//        height: 200px;
-//    }
-//
-//    &:after {
-//        bottom: 0;
-//        height: 2px;
-//        width: 50%;
-//        right: 0;
-//    }
-//}
-//
-//.b-feature__border-wrap {
-//    @include grid-clearfix();
-//}
-//
-//.b-feature__img-wrap {
-//    position: absolute;
-//    top: rhythm(2);
-//    right: 50%;
-//    z-index: 1;
-//}
-//
-//.b-feature__cnt {
-//    @include span(4.5 of 10 last);
-//    @include post(.5);
-//}
-//
+$img-size: 85px;
 
 .b-feature {
     position: relative;
     overflow: hidden;
     background-color: $white;
-    padding: rhythm(2);
+
+    padding: rhythm(2) gutter(1);
+
+
+    @media #{$big-up} {
+        padding: rhythm(2);
+    }
 }
 
 .b-feature__img-wrap {
@@ -67,6 +18,16 @@
     top: -60px;
     right: -10px;
     z-index: z('default');
+
+    img {
+        opacity: .4;
+    }
+
+    @media #{$medium-up} {
+        img {
+            opacity: 1;
+        }
+    }
 }
 
 .b-feature__cnt {
@@ -78,26 +39,28 @@
         left: gutter(1);
     };
 
-    &:before,
-    &:after {
-        content: '';
-        position: absolute;
-        background-color: $white;
-        z-index: z('zero');
-    }
+    @media #{$medium-up} {
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: $white;
+            z-index: z('zero');
+        }
 
-    &:before {
-        top: -2px;
-        right: -2px;
-        width: 2px;
-        height: 102px;
-    }
+        &:before {
+            top: -2px;
+            right: -2px;
+            width: 2px;
+            height: 102px;
+        }
 
-    &:after {
-        top: -2px;
-        height: 2px;
-        width: 225px;
-        right: 0;
+        &:after {
+            top: -2px;
+            height: 2px;
+            width: 225px;
+            right: 0;
+        }
     }
 
 }
@@ -107,10 +70,20 @@
 }
 
 .b-feature__ttl-note {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 19px;
+    line-height: 19px;
     font-family: $font-bold-italic;
     color: $green;
+
+    @media #{$medium-up} {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    @media #{$big-up} {
+        font-size: 35px;
+        line-height: 35px;
+    }
 }
 
 .b-feature__ttl {
@@ -118,28 +91,36 @@
     line-height: 50px;
     color: $green;
     position: relative;
-    //
-    //&:after {
-    //    content: '';
-    //    position: absolute;
-    //    bottom: 0;
-    //    left: 0;
-    //    width: 100px;
-    //    height: 4px;
-    //    background-color: $green;
-    //}
 }
 
 .b-feature__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media #{$big-up} {
+        flex-wrap: nowrap;
+    }
 }
 
 .b-feature__item {
-    flex: 0 1 (100% / 6);
-}
+    @include margin-trailer(1);
+    flex: 0 1 100%;
 
-$img-size: 85px;
+    @media #{$small-only} {
+        position: relative;
+        height: $img-size;
+    }
+
+    @media #{$medium-up} {
+        flex: 0 1 50%;
+    }
+
+    @media #{$big-up} {
+        @include margin-trailer(0);
+        flex: 0 1 (100% / 6);
+    }
+}
 
 .b-feature__item-img {
     @include margin-trailer(.25);
@@ -151,12 +132,27 @@ $img-size: 85px;
     height: $img-size;
     background-color: $gray-3;
     border-radius: 50%;
+
+    @media #{$small-only} {
+        position: absolute;
+        left: 50%;
+        margin-left: - $img-size / 2;
+        z-index: z('zero');
+        opacity: .4;
+    }
 }
 
 .b-feature__item-txt {
     font-size: 14px;
     line-height: 21px;
     text-align: center;
+
+    @media #{$small-only} {
+        position: relative;
+        z-index: z('default');
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 @import '../state/feature';

@@ -1,10 +1,13 @@
-.l-feature {
+.l-article {
     @include margin-trailer(3.5);
     @include grid-clearfix();
+    overflow: hidden;
 }
 
-.l-feature__cnt {
+.l-article__cnt {
+
     @media #{$big-up} {
         @include span(10 center);
+        padding: 0;
     }
 }

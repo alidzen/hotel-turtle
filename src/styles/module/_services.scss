@@ -1,0 +1,58 @@
+.b-service {
+    position: relative;
+    padding: rhythm(2) gutter(2);
+}
+
+.b-service__header {
+    @include padding-trailer(1);
+    @include margin-trailer(1);
+    color: $green;
+    position: relative;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 4px;
+        background-color: $green;
+    }
+}
+
+.b-service__ttl-note {
+    font-size: 19px;
+    line-height: 19px;
+    font-family: $font-bold-italic;
+    
+    @media #{$medium-up} {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    
+    @media #{$big-up} {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+.b-service__ttl {
+    font-family: $font-roman-bold;
+    line-height: 50px;
+}
+
+.b-service__border {
+    padding: rhythm(1) gutter(2);
+}
+
+.b-service__col {
+    @include span(6);
+
+    &:nth-child(2n + 1) {
+        padding-left: 0;
+    }
+
+    &:nth-child(2n) {
+        padding-right: 0;
+    }
+}

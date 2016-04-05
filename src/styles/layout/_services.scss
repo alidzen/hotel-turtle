@@ -1,0 +1,39 @@
+.l-services__header {
+    @include grid-clearfix();
+
+    .b-article {
+        padding: 0;
+    }
+}
+
+.l-services__row {
+    @media #{$medium-up} {
+        @include span(10 center);
+    }
+}
+
+.l-services__tiles {
+    @include grid-clearfix();
+}
+
+// TILES
+.l-services__tile_numb_1 {
+    @include span(9);
+    height: 225px;
+    background: url('/img/services/service-1.png') no-repeat 100% 0 #ded1b4;
+    padding: 0;
+
+    .b-service {
+        @include span(9);
+        padding-left: 0;
+    }
+
+}
+
+.l-services__tile_numb_2 {
+
+    .b-service__col:last-child {
+        background: url('/img/services/service-1.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
+}

@@ -6,6 +6,7 @@
     @include span(2.5);
     height: 100vh;
     padding: 0;
+    overflow-y: auto;
 }
 
 .l-home__booking-info {

@@ -17,5 +17,17 @@
 }
 
 .l-limit-wrap {
+    padding: {
+        right: gutter(1);
+        left: gutter(1);
+    };
+
+    @media #{$large-up} {
+        @extend %l-row;
+        padding: 0;
+    }
+}
+
+.l-limit-wrap-full {
     @extend %l-row;
 }

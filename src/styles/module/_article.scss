@@ -1,0 +1,130 @@
+.b-article {
+    @include rhythm-padding(2);
+}
+
+.b-article__border {
+    @include rhythm-padding(2);
+    @include grid-clearfix();
+    position: relative;
+    z-index: z('zero');
+    border: 2px solid $green;
+}
+
+.b-article__img-wrap {
+    position: absolute;
+    top: rhythm(2);
+    width: 100%;
+    z-index: z('default');
+    left: 0;
+    opacity: .4;
+
+    img {
+        max-width: none;
+        min-width: 100%;
+    }
+
+    @media #{$big-up} {
+        right: 50%;
+        left: auto;
+        opacity: 1;
+        width: auto;
+
+        img {
+            min-width: inherit;
+        }
+    }
+}
+
+.b-article__cnt {
+    position: relative;
+    padding: {
+        right: gutter(1);
+        left: gutter(1);
+    };
+    z-index: z('default');
+
+    @media #{$big-up} {
+        @include span(4.5 of 10 last);
+        @include post(.5);
+    }
+}
+
+.b-article__header {
+    @include padding-trailer(1.5);
+    @include margin-trailer(1.5);
+    color: $green;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 4px;
+        background-color: $green;
+    }
+}
+
+.b-article__ttl-note {
+    font-size: 19px;
+    line-height: 19px;
+    font-family: $font-bold-italic;
+
+    @media #{$medium-up} {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    @media #{$big-up} {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+.b-article__ttl {
+    font-family: $font-roman-bold;
+    line-height: 50px;
+}
+
+.b-article__feature {
+    @include margin-trailer(.5);
+}
+
+.b-article__txt-ttl {
+    @include margin-trailer(.5);
+    text-transform: uppercase;
+    letter-spacing: $gl-letter-spacing;
+    font-family: $font-roman-bold;
+}
+
+// STATE
+.b-article_theme_gold {
+
+    .b-article__img-wrap {
+
+        @media #{$big-up} {
+            left: 50%;
+        }
+    }
+
+    .b-article__cnt {
+
+        @media #{$big-up} {
+            @include span(4.5 of 10);
+            @include push(.5);
+        }
+    }
+
+    .b-article__header {
+        color: $gold-2;
+
+        &:after {
+            background-color: $gold-2;
+        }
+    }
+    
+    .b-article__border {
+        border-color: $gold-2;
+    }
+}

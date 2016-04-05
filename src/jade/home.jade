@@ -2,7 +2,7 @@ extends _layout-home
 block title
     title Главная страница
 block content
-    .l-home.l-limit-wrap
+    .l-home
         section.l-home__header
             .l-home__menu
                 .l-home-menu
@@ -59,26 +59,26 @@ block content
 
 
         .l-home__cnt
-            section.l-feature.hide
-                .l-feature__cnt
-                    .b-feature
-                        .b-feature__border
-                            .b-feature__border-wrap
-                                .b-feature__img-wrap
-                                    img(src="/img/feature-1.png" alt="Зарисовка дома Ф.М. Достоевского")
-                                .b-feature__cnt
-                                    .b-feature__ttl-note В каждой детали
-                                    h1.b-feature__ttl Дух Петербурга
-                                    p Бутик-отель «Ахиллес и Черепаха» находится в
-                                        | историческом центре Санкт-Петербурга рядом с известным домом Ф.М. Достоевского,
-                                        | который сейчас занимает литературно-мемориальный музей писателя. Расположенный
-                                        | в здании доходного дома XIX века, отель наполнен духом непарадного Петербурга – им
-                                        | пронизана каждая деталь: от натуральных материалов в дизайне до открывающегося
-                                        | из окон вида на мятежное петербургское небо.
-                                    .b-feature__btn
-                                        a(href="#").b-btn.b-btn_width_auto Ощутить вдохновение
+            section.l-article.l-limit-wrap
+                .l-article__cnt
+                    .b-article
+                        .b-article__border
+                            .b-article__img-wrap
+                                img(src="/img/feature-1.png" alt="Зарисовка дома Ф.М. Достоевского")
+                            article.b-article__cnt
+                                .b-article__header
+                                    .b-article__ttl-note В каждой детали
+                                    h1.b-article__ttl Дух Петербурга
+                                p Бутик-отель «Ахиллес и Черепаха» находится в
+                                    | историческом центре Санкт-Петербурга рядом с известным домом Ф.М. Достоевского,
+                                    | который сейчас занимает литературно-мемориальный музей писателя. Расположенный
+                                    | в здании доходного дома XIX века, отель наполнен духом непарадного Петербурга – им
+                                    | пронизана каждая деталь: от натуральных материалов в дизайне до открывающегося
+                                    | из окон вида на мятежное петербургское небо.
+                                .b-article__btn
+                                    a(href="#").b-btn.b-btn_width_auto Ощутить вдохновение
 
-            section.l-feature
+            section.l-feature.l-limit-wrap
                 .l-feature__cnt
                     .b-feature
                         .b-feature__img-wrap
@@ -107,7 +107,7 @@ block content
                                     .b-feature__item-img.b-feature__item-img_img_wi-fi
                                     .b-feature__item-txt Высокоскоростной Wi-Fi
 
-            section.l-booking-rooms
+            section.l-booking-rooms.l-limit-wrap
                 .l-booking-rooms__row
                     .l-booking-rooms__item
                         .b-room
@@ -167,4 +167,64 @@ block content
                                         .b-room__descr идеально для молодоженов
                                         .b-room__booking
                                             .b-room__message Нет доступных номеров в указанные даты
+
+            section.l-article.l-limit-wrap
+                .l-article__cnt
+                    .b-article.b-article_theme_gold
+                        .b-article__border
+                            .b-article__img-wrap
+                                img(src="/img/feature-3.png" alt="Зарисовка дома Ф.М. Достоевского")
+                            article.b-article__cnt
+                                .b-article__header
+                                    h1.b-article__ttl Нашим гостям
+                                    .b-article__ttl-note особенно нравяться:
+                                ul.b-article__features
+                                    li.b-article__feature
+                                        .b-article__txt-ttl Приветливый персонал
+                                        p Готовы прийти на помощь в любое время суток и решить любую проблему или исполнить пожелание!
+                                    li.b-article__feature
+                                        .b-article__txt-ttl Атмосфера отеля
+                                        p Будто переносишься в 19 век и действительно оказываешься в старинном непарадном Петербурге.
+                                    li.b-article__feature
+                                        .b-article__txt-ttl Прекрасные завтраки
+                                        p Разнообразие вкусных, привычных для завтрака блюд в сочетании с крепким кофе делает утро невероятно уютным и приятным!
+                                .b-article__btn
+                                    a(href="#").b-btn.b-btn_width_auto Ощутить вдохновение
+
+            section.l-services
+                .l-services__header.l-limit-wrap
+                    .l-services__row
+                        .b-article
+                            .b-feature__header
+                                h1.b-feature__ttl Дополнительный услуги
+                                .b-feature__ttl-note для гостей отеля
+
+                .l-services__tiles.l-limit-wrap-full
+                    .l-services__tile.l-services__tile_numb_1
+                        .b-service
+                            .b-service__header
+                                .b-service__ttl-note Ранний заезд и поздний выезд
+                            p В ритме современного мира не всегда удается следовать
+                                | строгим правилам заселения в отель. У нас вы можете
+                                | воспользоваться услугой, которая решит проблему – ранний
+                                | заезд доступен с шести часов утра, а поздний выезд – до шести часов вечера.
+                    .l-services__tile.l-services__tile_numb_2
+                        .b-service.has-lines
+                            .b-service__border
+                                .b-service__col
+                                    .b-service__cnt
+                                        .b-service__header
+                                            .b-service__ttl-note Завтрак в номер
+                                        p Завтрак в номере создает по-настоящему домашнюю атмосферу.
+                                .b-service__col
+
+                    .l-services__tiles
+                        .l-services__tile
+                            .b-service
+                                .b-service__header
+                                    .b-service__ttl-note Трансфер
+                                p В ритме современного мира не всегда удается успеть продумать все детали поездки, в том числе и аренду транспорта.
+                                p Мы всегда готовы встретить вас и помочь с комфортом добраться до отеля или пункта вашего отправления.
+
+
 
