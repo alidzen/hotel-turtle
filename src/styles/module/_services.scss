@@ -1,11 +1,54 @@
+$border-height: 2px;
+$margin-x: 15px;
+$margin-x-desk: 30px;
+$margin-y: 20px;
+$margin-y-desk: 30px;
+
 .b-service {
+    @include grid-clearfix();
+    @include adjust-font-size-to(14px);;
     position: relative;
-    padding: rhythm(2) gutter(2);
+    overflow: hidden;
+    padding: rhythm(1) gutter(2);
+
+    &.has-lines {
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: $margin-y;
+            height: calc(100% - #{$margin-y * 2});
+            width: $border-height;
+            background-color: $gray-3;
+            z-index: z('default');
+
+            @media #{$medium-up} {
+                top: $margin-y-desk;
+                height: calc(100% - #{$margin-y-desk * 2});
+            }
+        }
+
+        &:before {
+            left: $margin-x;
+
+            @media #{$medium-up} {
+                left: $margin-x-desk;
+            }
+        }
+
+        &:after {
+            right: $margin-x;
+
+            @media #{$medium-up} {
+                right: $margin-x-desk;
+            }
+        }
+    }
 }
 
 .b-service__header {
-    @include padding-trailer(1);
-    @include margin-trailer(1);
+    @include padding-trailer(.5);
+    @include margin-trailer(.5);
     color: $green;
     position: relative;
     
@@ -14,7 +57,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 100px;
+        width: 60px;
         height: 4px;
         background-color: $green;
     }
@@ -43,16 +86,42 @@
 
 .b-service__border {
     padding: rhythm(1) gutter(2);
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: $margin-x;
+        width: calc(100% - #{$margin-x * 2});
+        height: $border-height;
+        background-color: $gray-3;
+        z-index: z('default');
+
+        @media #{$medium-up} {
+            left: $margin-x-desk;
+            width: calc(100% - #{$margin-x-desk * 2});
+        }
+    }
+
+    &:before {
+        top: $margin-y;
+
+        @media #{$medium-up} {
+            top: $margin-y-desk;
+        }
+    }
+
+    &:after {
+        bottom: $margin-y;
+
+        @media #{$medium-up} {
+            bottom: $margin-y-desk;
+        }
+    }
 }
 
-.b-service__col {
-    @include span(6);
-
-    &:nth-child(2n + 1) {
-        padding-left: 0;
-    }
-
-    &:nth-child(2n) {
-        padding-right: 0;
-    }
+.b-service__img {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
