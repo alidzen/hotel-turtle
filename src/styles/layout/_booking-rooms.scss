@@ -10,8 +10,11 @@
 }
 
 .l-booking-rooms__item {
+    @include margin-trailer(2);
+
     @media #{$medium-up} {
         @include gallery(6);
+        margin-bottom: 30px;
 
         &:nth-child(2n + 1) {
             padding-left: 0;
