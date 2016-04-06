@@ -91,3 +91,9 @@ img {
         display: none;
     }
 }
+
+.hide-on-tablet {
+    @media #{$medium-only} {
+        display: none;
+    }
+}
