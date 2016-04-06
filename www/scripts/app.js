@@ -7,6 +7,10 @@ define('app', [
 ) {
     'use strict';
 
+    // Глобальные переменные
+    var ACTIVE = ('is-active');
+    var WIDTH = ($(window).width < 1025);
+
     FastClick.attach(document.body);
 
     (function($forms) {
@@ -158,6 +162,43 @@ define('app', [
             });
         });
     })($('.j-date-booking'));
+
+    //Sticky nav
+    (function($nav) {
+        if (!$nav.length || WIDTH) {
+            return;
+        }
+
+        var $cntHeight = $(window).height(); // высота блока
+        // меняется в зависимотси от высоты экрана
+
+        // show/hide sticky nav
+        $(window).scroll(function() {
+            var scrollPosition = $(window).scrollTop();
+
+            if (scrollPosition >= $cntHeight) {
+                if ($nav.hasClass(ACTIVE) === false) {
+                    $nav.addClass(ACTIVE);
+                }
+            } else {
+                $nav.removeClass(ACTIVE);
+            }
+        });
+
+        // smooth scroll
+        $('.b-object-nav a[href^="#"]').bind('click.smoothscroll', function(e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                    scrollTop: $target.offset().top - $nav.height()}, 500, 'swing',
+                function() {
+                    window.location.hash = target;
+                });
+        });
+    })($('.j-stick-menu'));
 
     return {};
 });

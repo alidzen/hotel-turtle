@@ -54,7 +54,10 @@
 
     @media #{$medium-up} {
         flex-flow: row nowrap;
-        padding: gutter(2);
+        padding: {
+            right: gutter(2);
+            left: gutter(2);
+        };
     }
 }
 

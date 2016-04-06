@@ -1,0 +1,30 @@
+.l-stick-menu {
+    @include transition(transform);
+    background: url('/img/form-bg.jpg') $green;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: z('fixed');
+    transform: translateY(-60px);
+
+    @media #{$big-up} {
+        display: block;
+    }
+
+    &.is-active {
+        transform: translateY(0);
+    }
+}
+
+.l-stick-menu__cnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l-stick-menu__btn {
+    padding-left: gutter(1);
+}

@@ -1,0 +1,63 @@
+$btn-size: 50px;
+$btn-line-width: 22px;
+$btn-line-height: 2px;
+$btn-line-margin: 7px;
+
+.b-closed-btn {
+    @include transition(background-color);
+    position: relative;
+    display: block;
+    width: $btn-size;
+    height: $btn-size;
+    background-color: transparent;
+    border: 1px solid $gold-2;
+
+    &:hover {
+        background-color: $gold-2;
+
+        .b-closed-btn__line {
+            background-color: $white;
+        }
+    }
+
+    &.is-active {
+        .b-closed-btn__line_numb_1 {
+            transform: translate3d(0, 0, 0) rotate(45deg);
+        }
+
+        .b-closed-btn__line_numb_2 {
+            transform: translate3d(0, 0, 0) scale(.1, 1);
+        }
+
+        .b-closed-btn__line_numb_3 {
+            transform: translate3d(0, 0, 0) rotate(-45deg);
+        }
+    }
+}
+
+.b-closed-btn__line {
+    @include transition(transform, background-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: $btn-line-width;
+    height: $btn-line-height;
+    background-color: $gold-2;
+    margin: {
+        top: - $btn-line-height / 2;
+        left: - $btn-line-width / 2;
+    };
+}
+
+.b-closed-btn__line_numb_1 {
+    transform: translate3d(0, -$btn-line-margin, 0);
+}
+
+.b-closed-btn__line_numb_2 {
+    transform: translate3d(0, 0, 0);
+}
+
+.b-closed-btn__line_numb_3 {
+    transform: translate3d(0, $btn-line-margin, 0);
+}

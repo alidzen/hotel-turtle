@@ -3,6 +3,30 @@ block title
     title Главная страница
 block content
     .l-home
+        .l-stick-menu.j-stick-menu
+            .l-limit-wrap-full
+                .l-stick-menu__cnt
+                    .l-stick-menu__btn
+                        include blocks/_close-btn
+                    .l-stick-menu__form
+                        .b-booking-form.b-booking-form_theme_stick
+                            form.b-booking-form__form(action='/test/ajax/request.php'
+                            data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
+                                input.b-booking-form__inp.j-date-booking(
+                                id="booking-from"
+                                type="text"
+                                placeholder="Дата заезда")
+                                input.b-booking-form__inp.j-date-booking(
+                                id="booking-to"
+                                type="text"
+                                placeholder="Дата отъезда")
+                                .b-booking-form__select
+                                    select
+                                        option(value="empty") Кол-во гостей
+                                        -for (var i = 1; i < 5; i++ )
+                                        option(value="#{i}") #{i}
+                                button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Выбрать номер
+
         section.l-home__header.l-limit-wrap-full
             .l-home__menu
                 .l-home-menu

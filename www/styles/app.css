@@ -2628,7 +2628,8 @@ img {
       -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-      padding: 30px; } }
+      padding-right: 30px;
+      padding-left: 30px; } }
 
 .l-footer__col {
   margin-bottom: 36px; }
@@ -2998,6 +2999,45 @@ img {
       .l-services__tile_numb_8 .b-service__img {
         height: 100%;
         width: 33.33333%; } }
+
+.l-stick-menu {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  background: url("/img/form-bg.jpg") #005870;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 3;
+  -webkit-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  transform: translateY(-60px); }
+  @media only screen and (min-width: 1025px) {
+    .l-stick-menu {
+      display: block; } }
+  .l-stick-menu.is-active {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+.l-stick-menu__cnt {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.l-stick-menu__btn {
+  padding-left: 15px; }
 
 .l-home__header:after {
   content: '';
@@ -3828,8 +3868,8 @@ select {
 
 .b-nav__item {
   display: block;
-  padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-top: 4px;
+  padding-bottom: 4px; }
 
 .b-nav__link {
   font-size: 14px;
@@ -3935,6 +3975,9 @@ select {
   flex-basis: 125px; }
   .b-booking-form__select .selectric-wrapper {
     width: 100%; }
+
+.b-booking-form_theme_stick {
+  background: none; }
 
 .ui-datepicker {
   background-color: #004457;
@@ -4659,6 +4702,58 @@ select {
     .b-olimpia__logo {
       background-image: url("/img/sprites@2x.png");
       background-size: 303px 231px; } }
+
+.b-closed-btn {
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #bca064; }
+  .b-closed-btn:hover {
+    background-color: #bca064; }
+    .b-closed-btn:hover .b-closed-btn__line {
+      background-color: #fefefd; }
+  .b-closed-btn.is-active .b-closed-btn__line_numb_1 {
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+    transform: translate3d(0, 0, 0) rotate(45deg); }
+  .b-closed-btn.is-active .b-closed-btn__line_numb_2 {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+    transform: translate3d(0, 0, 0) scale(0.1, 1); }
+  .b-closed-btn.is-active .b-closed-btn__line_numb_3 {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+    transform: translate3d(0, 0, 0) rotate(-45deg); }
+
+.b-closed-btn__line {
+  transition-property: background-color, -webkit-transform;
+  transition-property: transform, background-color;
+  transition-property: transform, background-color, -webkit-transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #bca064;
+  margin-top: -1px;
+  margin-left: -11px; }
+
+.b-closed-btn__line_numb_1 {
+  -webkit-transform: translate3d(0, -7px, 0);
+  transform: translate3d(0, -7px, 0); }
+
+.b-closed-btn__line_numb_2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.b-closed-btn__line_numb_3 {
+  -webkit-transform: translate3d(0, 7px, 0);
+  transform: translate3d(0, 7px, 0); }
 
 .b-menu-logo {
   text-align: center; }
