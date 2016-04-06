@@ -5,3 +5,9 @@ $logo: 'logo' !default;
     @include squish-text;
     display: block;
 }
+
+.b-mind-games {
+    @include sprite('mind-games');
+    @include squish-text;
+    display: block;
+}

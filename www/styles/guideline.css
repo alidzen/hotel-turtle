@@ -2599,9 +2599,44 @@ img {
 .l-limit-wrap {
   padding-right: 15px;
   padding-left: 15px; }
-  @media only screen and (min-width: 1201px) {
+  @media only screen and (min-width: 1960px) {
     .l-limit-wrap {
       padding: 0; } }
+
+.l-footer__cnt {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background: url("/img/footer-bg.png") no-repeat 50% 50%;
+  background-size: cover; }
+
+.l-footer__row {
+  color: #fefefd;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+  @media only screen and (min-width: 641px) {
+    .l-footer__row {
+      -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      padding: 30px; } }
+
+.l-footer__col {
+  margin-bottom: 36px; }
+  .l-footer__col:last-child {
+    margin-bottom: 0px; }
+  @media only screen and (min-width: 641px) {
+    .l-footer__col {
+      margin-bottom: 0px; } }
 
 .l-feature {
   margin-bottom: 84px; }
@@ -2998,7 +3033,8 @@ img {
 
 .l-home__cnt {
   padding-top: 60px;
-  background-color: #f0eeeb; }
+  background: url("/img/home-bg.svg") 50% 50% #f0eeeb;
+  background-size: cover; }
 
 .l-home-menu {
   padding-top: 24px;
@@ -3013,6 +3049,22 @@ img {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+@media only screen and (min-width: 1025px) {
+  .l-home-menu__logo {
+    margin-bottom: 24px; } }
+
+@media only screen and (min-width: 1441px) {
+  .l-home-menu__logo {
+    margin-top: 48px; } }
+
+@media only screen and (min-width: 1025px) {
+  .l-home-menu__nav {
+    margin-bottom: 24px; } }
+
+@media only screen and (min-width: 1025px) {
+  .l-home-menu__contacts {
+    margin-bottom: 24px; } }
 
 .no-flexbox .l-home-menu__logo, .no-flexboxlegacy .l-home-menu__logo {
   margin-top: 24px;
@@ -3039,7 +3091,21 @@ img {
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-logo {
       background-image: url("/img/sprites@2x.png");
-      background-size: 257px 197px; } }
+      background-size: 303px 231px; } }
+
+.b-mind-games {
+  background-image: url("/img/sprites.png");
+  background-position: 0px -90px;
+  width: 102px;
+  height: 60px;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  display: block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+    .b-mind-games {
+      background-image: url("/img/sprites@2x.png");
+      background-size: 303px 231px; } }
 
 .b-btn {
   transition-property: color, background-color, border-color;
@@ -3203,7 +3269,7 @@ label {
     padding-left: 35px; }
     .b-form__checkbox label:after {
       background-image: url("/img/sprites.png");
-      background-position: -235px -69px;
+      background-position: -281px -116px;
       width: 20px;
       height: 20px;
       position: absolute;
@@ -3214,26 +3280,26 @@ label {
       @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
         .b-form__checkbox label:after {
           background-image: url("/img/sprites@2x.png");
-          background-size: 257px 197px; } }
+          background-size: 303px 231px; } }
   .b-form__checkbox input:checked + label:after {
     background-image: url("/img/sprites.png");
-    background-position: -214px -69px;
+    background-position: -260px -137px;
     width: 20px;
     height: 20px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-form__checkbox input:checked + label:after {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .b-form__checkbox:hover label:after {
   background-image: url("/img/sprites.png");
-  background-position: -214px -90px;
+  background-position: -260px -116px;
   width: 20px;
   height: 20px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__checkbox:hover label:after {
       background-image: url("/img/sprites@2x.png");
-      background-size: 257px 197px; } }
+      background-size: 303px 231px; } }
 
 .b-form__checkbox:hover input:checked + label:after {
   opacity: .75; }
@@ -3245,14 +3311,14 @@ label {
 .b-form__checkbox input:disabled + label:after,
 .b-form__checkbox input[readonly="readonly"] + label:after {
   background-image: url("/img/sprites.png");
-  background-position: -235px -90px;
+  background-position: -281px -137px;
   width: 20px;
   height: 20px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__checkbox input:disabled + label:after,
     .b-form__checkbox input[readonly="readonly"] + label:after {
       background-image: url("/img/sprites@2x.png");
-      background-size: 257px 197px; } }
+      background-size: 303px 231px; } }
 
 .b-form__radio {
   display: inline-block; }
@@ -3264,7 +3330,7 @@ label {
     padding-left: 31px; }
     .b-form__radio label:after {
       background-image: url("/img/sprites.png");
-      background-position: -231px -144px;
+      background-position: -277px -209px;
       width: 16px;
       height: 17px;
       position: absolute;
@@ -3275,26 +3341,26 @@ label {
       @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
         .b-form__radio label:after {
           background-image: url("/img/sprites@2x.png");
-          background-size: 257px 197px; } }
+          background-size: 303px 231px; } }
   .b-form__radio input:checked + label:after {
     background-image: url("/img/sprites.png");
-    background-position: -214px -144px;
+    background-position: -277px -191px;
     width: 16px;
     height: 17px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-form__radio input:checked + label:after {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .b-form__radio:hover label:after {
   background-image: url("/img/sprites.png");
-  background-position: -214px -162px;
+  background-position: -260px -191px;
   width: 16px;
   height: 17px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__radio:hover label:after {
       background-image: url("/img/sprites@2x.png");
-      background-size: 257px 197px; } }
+      background-size: 303px 231px; } }
 
 .b-form__radio:hover input:checked + label:after {
   opacity: .75; }
@@ -3306,14 +3372,14 @@ label {
 .b-form__radio input:disabled + label:after,
 .b-form__radio input[readonly="readonly"] + label:after {
   background-image: url("/img/sprites.png");
-  background-position: -231px -162px;
+  background-position: -260px -209px;
   width: 16px;
   height: 17px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__radio input:disabled + label:after,
     .b-form__radio input[readonly="readonly"] + label:after {
       background-image: url("/img/sprites@2x.png");
-      background-size: 257px 197px; } }
+      background-size: 303px 231px; } }
 
 select {
   opacity: 0; }
@@ -3425,7 +3491,7 @@ select {
 @media only screen and (min-width: 641px) {
   .b-popup__close {
     background-image: url("/img/sprites.png");
-    background-position: -214px 0px;
+    background-position: -260px -47px;
     width: 43px;
     height: 44px;
     transition-property: opacity;
@@ -3443,7 +3509,7 @@ select {
   @media only screen and (min-width: 641px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 641px) and (min-device-pixel-ratio: 1.5) {
     .b-popup__close {
       background-image: url("/img/sprites@2x.png");
-      background-size: 257px 197px; } }
+      background-size: 303px 231px; } }
 
 @media only screen and (min-width: 641px) {
   .b-popup__close:active {
@@ -3539,25 +3605,25 @@ select {
   left: 30px; }
   .b-gallery__arrow_show_prev:before {
     background-image: url("/img/sprites.png");
-    background-position: -248px -144px;
+    background-position: -294px -191px;
     width: 8px;
     height: 13px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-gallery__arrow_show_prev:before {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .b-gallery__arrow_show_next {
   right: 30px; }
   .b-gallery__arrow_show_next:after {
     background-image: url("/img/sprites.png");
-    background-position: -248px -162px;
+    background-position: -294px -209px;
     width: 8px;
     height: 13px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-gallery__arrow_show_next:after {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .fotorama__nav--thumbs {
   text-align: center; }
@@ -3762,11 +3828,8 @@ select {
 
 .b-nav__item {
   display: block;
-  border-top: 1px solid #b5b1ab;
   padding-top: 6px;
   padding-bottom: 6px; }
-  .b-nav__item:last-child {
-    border-bottom: 1px solid #b5b1ab; }
 
 .b-nav__link {
   font-size: 14px;
@@ -3892,7 +3955,7 @@ select {
     cursor: pointer; }
     .ui-datepicker .ui-datepicker-prev:after {
       background-image: url("/img/sprites.png");
-      background-position: -248px -144px;
+      background-position: -294px -191px;
       width: 8px;
       height: 13px;
       content: '';
@@ -3904,7 +3967,7 @@ select {
       @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
         .ui-datepicker .ui-datepicker-prev:after {
           background-image: url("/img/sprites@2x.png");
-          background-size: 257px 197px; } }
+          background-size: 303px 231px; } }
     .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
       top: 0;
       left: 2px; }
@@ -3914,7 +3977,7 @@ select {
     cursor: pointer; }
     .ui-datepicker .ui-datepicker-next:after {
       background-image: url("/img/sprites.png");
-      background-position: -248px -162px;
+      background-position: -294px -209px;
       width: 8px;
       height: 13px;
       content: '';
@@ -3926,7 +3989,7 @@ select {
       @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
         .ui-datepicker .ui-datepicker-next:after {
           background-image: url("/img/sprites@2x.png");
-          background-size: 257px 197px; } }
+          background-size: 303px 231px; } }
     .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
       right: 2px;
       top: 0; }
@@ -4080,7 +4143,7 @@ select {
       position: absolute; } }
   .b-feature__item-img_img_bed:after {
     background-image: url("/img/sprites.png");
-    background-position: -62px -90px;
+    background-position: 0px -151px;
     width: 60px;
     height: 45px;
     content: '';
@@ -4092,7 +4155,7 @@ select {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-feature__item-img_img_bed:after {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .b-feature__item-img_img_window {
   position: relative; }
@@ -4101,7 +4164,7 @@ select {
       position: absolute; } }
   .b-feature__item-img_img_window:after {
     background-image: url("/img/sprites.png");
-    background-position: -163px -53px;
+    background-position: -260px 0px;
     width: 43px;
     height: 46px;
     content: '';
@@ -4113,7 +4176,7 @@ select {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-feature__item-img_img_window:after {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .b-feature__item-img_img_fan {
   position: relative; }
@@ -4122,7 +4185,7 @@ select {
       position: absolute; } }
   .b-feature__item-img_img_fan:after {
     background-image: url("/img/sprites.png");
-    background-position: 0px -159px;
+    background-position: -163px -109px;
     width: 58px;
     height: 38px;
     content: '';
@@ -4134,7 +4197,7 @@ select {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-feature__item-img_img_fan:after {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .b-feature__item-img_img_eat {
   position: relative; }
@@ -4143,7 +4206,7 @@ select {
       position: absolute; } }
   .b-feature__item-img_img_eat:after {
     background-image: url("/img/sprites.png");
-    background-position: -163px 0px;
+    background-position: -103px -90px;
     width: 50px;
     height: 52px;
     content: '';
@@ -4155,7 +4218,7 @@ select {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-feature__item-img_img_eat:after {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .b-feature__item-img_img_wi-fi {
   position: relative; }
@@ -4164,7 +4227,7 @@ select {
       position: absolute; } }
   .b-feature__item-img_img_wi-fi:after {
     background-image: url("/img/sprites.png");
-    background-position: 0px -90px;
+    background-position: -163px -61px;
     width: 61px;
     height: 47px;
     content: '';
@@ -4176,7 +4239,7 @@ select {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
       .b-feature__item-img_img_wi-fi:after {
         background-image: url("/img/sprites@2x.png");
-        background-size: 257px 197px; } }
+        background-size: 303px 231px; } }
 
 .b-room {
   position: relative;
@@ -4565,6 +4628,38 @@ select {
   background: no-repeat 50% 50%;
   background-size: cover; }
 
+.b-olimpia {
+  color: #fefefd;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .b-olimpia:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.b-olimpia__txt {
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 5px; }
+
+.b-olimpia__logo {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  background-image: url("/img/sprites.png");
+  background-position: -163px 0px;
+  width: 96px;
+  height: 60px;
+  display: inline-block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+    .b-olimpia__logo {
+      background-image: url("/img/sprites@2x.png");
+      background-size: 303px 231px; } }
+
 .b-menu-logo {
   text-align: center; }
   .b-menu-logo .b-logo {
@@ -4590,6 +4685,18 @@ select {
   font-size: 14px;
   color: #463f32; }
 
+.b-menu-contacts_theme_footer .b-menu-contacts__tel {
+  color: #fefefd; }
+  .b-menu-contacts_theme_footer .b-menu-contacts__tel:hover {
+    color: #bca064; }
+
+.b-menu-contacts_theme_footer .b-menu-contacts__map {
+  color: #fefefd; }
+  .b-menu-contacts_theme_footer .b-menu-contacts__map:hover {
+    color: #bca064; }
+  .b-menu-contacts_theme_footer .b-menu-contacts__map:before {
+    background-color: #fefefd; }
+
 .b-menu-lang {
   text-align: center; }
 
@@ -4608,14 +4715,14 @@ select {
 
 .b-menu-reviews__rate {
   background-image: url("/img/sprites.png");
-  background-position: 0px -138px;
+  background-position: -61px -151px;
   width: 119px;
   height: 20px;
   display: inline-block; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-menu-reviews__rate {
       background-image: url("/img/sprites@2x.png");
-      background-size: 257px 197px; } }
+      background-size: 303px 231px; } }
 
 .b-menu-reviews__txt {
   font-size: 14px;

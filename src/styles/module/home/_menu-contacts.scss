@@ -15,3 +15,26 @@
     font-size: 14px;
     color: $black-2;
 }
+
+// STATE
+.b-menu-contacts_theme_footer {
+    .b-menu-contacts__tel {
+        color: $white;
+
+        &:hover {
+            color: $gold-2;
+        }
+    }
+
+    .b-menu-contacts__map {
+        color: $white;
+
+        &:hover {
+            color: $gold-2;
+        }
+
+        &:before {
+            background-color: $white;
+        }
+    }
+}

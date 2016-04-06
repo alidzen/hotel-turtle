@@ -7,6 +7,29 @@
     justify-content: space-between;
 }
 
+.l-home-menu__logo {
+    @media #{$big-up} {
+        @include margin-trailer(1);
+    }
+
+    @media #{$xlarge-up} {
+        @include margin-leader(2);
+    }
+}
+
+.l-home-menu__nav {
+    @media #{$big-up} {
+        @include margin-trailer(1);
+    }
+}
+
+.l-home-menu__contacts {
+    @media #{$big-up} {
+        @include margin-trailer(1);
+    }
+}
+
+
 // flex fallback
 // scss-lint:disable SingleLinePerSelector
 .no-flexbox, .no-flexboxlegacy {

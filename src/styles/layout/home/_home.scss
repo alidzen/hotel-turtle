@@ -29,5 +29,6 @@
 
 .l-home__cnt {
     @include padding-leader(2.5);
-    background-color: $white-2;
+    background: url('/img/home-bg.svg') 50% 50% $white-2;
+    background-size: cover;
 }

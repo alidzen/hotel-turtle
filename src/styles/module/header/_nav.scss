@@ -16,15 +16,10 @@ $item-height: 36px;
 
 .b-nav__item {
     display: block;
-    border-top: 1px solid $gray;
     padding: {
         top: ($item-height - $base-line-height) / 2;
         bottom: ($item-height - $base-line-height) / 2;
     };
-
-    &:last-child {
-        border-bottom: 1px solid $gray;
-    }
 }
 
 .b-nav__link {

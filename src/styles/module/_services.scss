@@ -65,7 +65,7 @@ $margin-y-desk: 30px;
     @include margin-trailer(.5);
     color: $green;
     position: relative;
-    
+
     &:after {
         content: '';
         position: absolute;

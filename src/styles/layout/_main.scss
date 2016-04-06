@@ -22,12 +22,50 @@
         left: gutter(1);
     };
 
-    @media #{$large-up} {
+    @media #{$xlarge-up} {
         @extend %l-row;
+    }
+
+    @media #{$custom-1960-up} {
         padding: 0;
     }
 }
 
 .l-limit-wrap-full {
-    @extend %l-row;
+
+    @media #{$xlarge-up} {
+        @extend %l-row;
+    }
+}
+
+.l-footer__cnt {
+    @include rhythm-padding(1.5);
+    background: url('/img/footer-bg.png') no-repeat 50% 50%;
+    background-size: cover;
+
+}
+
+.l-footer__row {
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    @media #{$medium-up} {
+        flex-flow: row nowrap;
+        padding: gutter(2);
+    }
+}
+
+.l-footer__col {
+    @include margin-trailer(1.5);
+
+    &:last-child {
+        @include margin-trailer(0);
+    }
+
+    @media #{$medium-up} {
+        @include margin-trailer(0);
+    }
 }

@@ -30,6 +30,8 @@ $xlarge-up: '#{$screen} and (min-width:#{lower-bound($xlarge-range)})';
 $landscape: '#{$screen} and (orientation: landscape)';
 $portrait: '#{$screen} and (orientation: portrait)';
 
+$custom-1960-up: '#{$screen} and (min-width: 1960px)';
+
 $hidpi: '#{$screen} and (-webkit-min-device-pixel-ratio: 1.5),
     #{screen} and (min-device-pixel-ratio: 1.5),
     #{screen} and (min-resolution: 1.5dppx)';
