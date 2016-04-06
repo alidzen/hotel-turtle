@@ -22,44 +22,100 @@ $tile-height-big: $tile-height-small * 2;
 $tile-height-large: $tile-height-small * 3;
 
 .l-services__tile_numb_1 {
-    @include span(8);
-    height: $tile-height-small;
+    @include span(full);
+    height: $tile-height-big;
     background: url('/img/services/service-1.png') no-repeat 100% 0 $gold-3;
     padding: 0;
 
     .b-service {
-        @include span(8);
-        height: $tile-height-small;
+        @include span(full);
+        height: $tile-height-big;
         padding-left: gutter(2);
+    }
+
+    @media #{$medium-up} {
+        height: $tile-height-small;
+
+        .b-service {
+            height: $tile-height-small;
+        }
+    }
+
+    @media #{$big-up} {
+        @include span(8);
+        padding: 0;
+
+        .b-service {
+            @include span(8);
+            padding: 0;
+        }
     }
 }
 
 .l-services__tile_numb_2 {
-    @include span(8);
-    height: $tile-height-small;
+    @include span(full);
+    height: $tile-height-big;
     padding: 0;
     background-color: $white;
 
     .b-service {
-        height: $tile-height-small;
+        height: $tile-height-big;
     }
 
     .b-service__cnt {
-        @include span(6);
+        @include span(full);
+        padding: 0;
+    }
+
+    .b-service__img {
+        height: $tile-height-small;
+        top: $tile-height-small;
+        left: 0;
+        background: url('/img/services/service-1.jpg') no-repeat 50% 50%;
+        background-size: cover;
+        width: 100%;
+    }
+
+    @media #{$medium-up} {
+        height: $tile-height-small;
+
+        .b-service {
+            height: $tile-height-small;
+        }
+
+        .b-service__cnt {
+            @include span(6);
+            padding: 0;
+        }
+
+        .b-service__img {
+            height: $tile-height-small;
+            top: 0;
+            left: 50%;
+            width: 50%;
+        }
+    }
+
+    @media #{$big-up} {
+        @include span(8);
         padding: 0;
     }
 }
 
 .l-services__tile_numb_3 {
-    @include span(4 last);
+    @include span(8);
     height: $tile-height-big;
     background: url('/img/services/service-2.png') no-repeat 50% 100% $white;
     background-size: contain;
     padding: 0;
+
+    @media #{$big-up} {
+        @include span(4 last);
+    }
 }
 
 .l-services__tile_numb_4 {
-    @include span(4);
+    @include span(6);
     height: $tile-height-large;
     padding: 0;
     background-color: $white;
@@ -72,37 +128,47 @@ $tile-height-large: $tile-height-small * 3;
     .b-service__img {
         height: $tile-height-small;
         width: 100%;
+        background-image: url('/img/services/service-2.jpg');
+    }
 
-        img  {
-            height: 100%;
-            min-width: 100%;
-            max-width: none;
-        }
+    @media #{$big-up} {
+        @include span(4);
+        padding: 0;
     }
 }
 
 .l-services__tile_numb_5 {
-    @include span(4);
+    @include span(6);
     height: $tile-height-large;
     padding: 0;
-    background-color: $gold-3;
+    background-color: $white;
 
     .b-service {
         height: $tile-height-large;
     }
 
     .b-service__img {
-        top: auto;
-        bottom: 0;
         height: $tile-height-small;
+        top: $tile-height-big;
         width: 100%;
-
-        img  {
-            height: 100%;
-            min-width: 100%;
-            max-width: none;
-        }
+        background-image: url('/img/services/service-3.jpg');
     }
+
+    @media #{$big-up} {
+        @include span(4);
+        padding: 0;
+
+        .b-service {
+            height: $tile-height-large;
+            padding-top: $tile-height-small + rhythm(.5);
+        }
+        .b-service__img {
+            top: 0;
+        }
+
+    }
+
+
 }
 
 .l-services__tile_numb_6 {
@@ -119,25 +185,30 @@ $tile-height-large: $tile-height-small * 3;
         top: auto;
         bottom: 0;
         height: $tile-height-small;
-        width: 100%;
-
-        img  {
-            height: 100%;
-            min-width: 100%;
-            max-width: none;
-        }
+        background-image: url('/img/services/service-4.jpg');
     }
 }
 
 .l-services__tile_numb_7 {
     @include span(4);
-    height: $tile-height-small;
-    background: url('/img/services/service-3.png') no-repeat 100% -10% $white-2;
+    height: $tile-height-big;
+    background: url('/img/services/service-3.png') no-repeat 100% 100% $white-2;
     padding: 0;
 
     .b-service {
-        height: $tile-height-small;
         padding-left: gutter(2);
+    }
+
+    @media #{$big-up} {
+        @include span(4);
+        height: $tile-height-small;
+        background: url('/img/services/service-3.png') no-repeat 100% -10% $white-2;
+        padding: 0;
+
+        .b-service {
+            height: $tile-height-small;
+            padding-left: gutter(2);
+        }
     }
 }
 
@@ -157,7 +228,10 @@ $tile-height-large: $tile-height-small * 3;
     }
 
     .b-service__img {
+        height: $tile-height-small;
         left: 0;
         right: auto;
+        background-image: url('/img/services/service-5.jpg');
+        width: 33.33333%;
     }
 }

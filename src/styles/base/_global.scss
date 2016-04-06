@@ -78,3 +78,16 @@ img {
         background-color: $green;
     }
 }
+
+.show-on-touch {
+
+    @media #{$big-up} {
+        display: none;
+    }
+}
+
+.show-on-desktop {
+    @media #{$medium-down} {
+        display: none;
+    }
+}
