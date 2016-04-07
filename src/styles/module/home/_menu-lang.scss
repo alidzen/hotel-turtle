@@ -4,6 +4,7 @@
 
 .b-menu-lang__link {
     text-transform: uppercase;
+    letter-spacing: $gl-letter-spacing;
     font-family: $font-roman;
     color: $gray-2;
     margin: {
@@ -16,3 +17,9 @@
     }
 }
 
+.b-menu-lang_theme_popup {
+    .b-menu-lang__link {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}

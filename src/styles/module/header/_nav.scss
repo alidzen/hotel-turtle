@@ -13,6 +13,7 @@ $nav-color-active: #ffa500 !default;
 }
 
 $item-height: 32px;
+$item-height-popup: 56px;
 
 .b-nav__item {
     display: block;
@@ -65,5 +66,21 @@ $item-height: 32px;
         height: 2px;
         background-color: $gold-2;
         transform: scaleX(0);
+    }
+}
+
+// STATE
+.b-nav_theme_popup {
+
+    .b-nav__item {
+        display: block;
+        padding: {
+            top: ($item-height-popup - $base-line-height) / 2;
+            bottom: ($item-height-popup - $base-line-height) / 2;
+        };
+    }
+
+    .b-nav__link {
+        font-size: 28px;
     }
 }

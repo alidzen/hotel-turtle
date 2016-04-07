@@ -27,24 +27,50 @@
         <div class="l-wrap">
             <main class="l-main">
                 <div class="l-home">
-                    <div class="l-stick-menu j-stick-menu">
-                        <div class="l-limit-wrap-full">
-                            <div class="l-stick-menu__cnt">
-                                <div class="l-stick-menu__btn">
-                                    <a href="javascript:;" class="b-closed-btn j-close-menu">
-                                        <div class="b-closed-btn__line b-closed-btn__line_numb_1"></div>
-                                        <div class="b-closed-btn__line b-closed-btn__line_numb_2"></div>
-                                        <div class="b-closed-btn__line b-closed-btn__line_numb_3"></div>
-                                    </a>
-                                </div>
-                                <div class="l-stick-menu__form">
-                                    <div class="b-booking-form b-booking-form_theme_stick">
-                                        <form action="/test/ajax/request.php" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form"> <input id="booking-from" type="text" placeholder="Дата заезда" class="b-booking-form__inp j-date-booking"> <input id="booking-to" type="text" placeholder="Дата отъезда" class="b-booking-form__inp j-date-booking">
-                                            <div class="b-booking-form__select"> <select>
-                          <option value="empty">Кол-во гостей</option>
-                          <option value="5">5</option>
-                        </select> </div> <button type="submit" value="Номер" class="b-btn b-btn_width_auto b-booking-form__btn">Выбрать номер</button> </form>
+                    <div class="l-stick-menu">
+                        <div class="l-stick-menu__nav j-menu-nav">
+                            <div class="l-limit-wrap-full">
+                                <div class="l-stick-menu__cnt">
+                                    <div class="l-stick-menu__btn">
+                                        <a href="javascript:;" class="b-closed-btn j-menu-btn">
+                                            <div class="b-closed-btn__line b-closed-btn__line_numb_1"></div>
+                                            <div class="b-closed-btn__line b-closed-btn__line_numb_2"></div>
+                                            <div class="b-closed-btn__line b-closed-btn__line_numb_3"></div>
+                                        </a>
                                     </div>
+                                    <div class="l-stick-menu__form">
+                                        <div class="b-booking-form b-booking-form_theme_stick">
+                                            <form action="/test/ajax/request.php" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form"> <input id="booking-from" type="text" placeholder="Дата заезда" class="b-booking-form__inp j-date-booking"> <input id="booking-to" type="text" placeholder="Дата отъезда" class="b-booking-form__inp j-date-booking">
+                                                <div class="b-booking-form__select"> <select>
+                            <option value="empty">Кол-во гостей</option>
+                            <option value="5">5</option>
+                          </select> </div> <button type="submit" value="Номер" class="b-btn b-btn_width_auto b-booking-form__btn">Выбрать номер</button> </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-stick-menu__popup j-menu">
+                            <div class="l-stick-menu__popup-cnt">
+                                <div class="l-stick-menu__popup-nav">
+                                    <nav class="b-nav b-nav_theme_popup">
+                                        <ul class="b-nav__list">
+                                            <li class="b-nav__item"><a href="/" class="b-nav__link is-active">Атмосфера</a></li>
+                                            <li class="b-nav__item"><a href="#" class="b-nav__link">Номера</a></li>
+                                            <li class="b-nav__item"><a href="#" class="b-nav__link">Спецпредложения</a></li>
+                                            <li class="b-nav__item"><a href="#" class="b-nav__link">Дополнительные услуги</a></li>
+                                            <li class="b-nav__item"><a href="#" class="b-nav__link">Ресторан</a></li>
+                                            <li class="b-nav__item"><a href="#" class="b-nav__link">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="l-stick-menu__popup-lang">
+                                    <div class="b-menu-lang b-menu-lang_theme_popup"><a href="/" class="b-menu-lang__link is-active">ru</a><a href="/" class="b-menu-lang__link">en</a></div>
+                                </div>
+                                <div class="l-stick-menu__popup_contacts">
+                                    <div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7 (812) 670–86–83</a><a href="javascript:;" class="b-menu-contacts__map">
+                      г. Санкт-Петербург
+                      <br>ул.Достоевского, 19/21, лит.Б</a></div>
                                 </div>
                             </div>
                         </div>

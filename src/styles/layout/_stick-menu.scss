@@ -1,4 +1,11 @@
+$sticky-menu-height: 60px;
+
 .l-stick-menu {
+    position: fixed;
+    z-index: z('fixed');
+}
+
+.l-stick-menu__nav {
     @include transition(transform);
     background: url('/img/form-bg.jpg') $green;
     background-size: cover;
@@ -6,9 +13,9 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: $sticky-menu-height;
     z-index: z('fixed');
-    transform: translateY(-60px);
+    transform: translateY(- $sticky-menu-height);
 
     @media #{$big-up} {
         display: block;
@@ -16,6 +23,13 @@
 
     &.is-active {
         transform: translateY(0);
+    }
+
+    // if page with scroll
+    &.add-padding {
+        @media #{$big-up} {
+            padding-right: 15px; // place for scroll
+        }
     }
 }
 
@@ -27,4 +41,41 @@
 
 .l-stick-menu__btn {
     padding-left: gutter(1);
+}
+
+.l-stick-menu__popup {
+    @include transition(transform);
+    @include rhythm-padding(2);
+    background: url('/img/menu-popup-bg.png') 50% 50% no-repeat $white;
+    transform: translateY(-100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+
+    &.is-active {
+        transform: translateY(0);
+    }
+}
+
+.l-stick-menu__popup-cnt {
+    @include padding-trailer(1);
+    padding-top: rhythm(1) + $sticky-menu-height;
+
+    @media #{$large-up} {
+        padding-top: rhythm(1) + $sticky-menu-height;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        left: 50%;
+    }
+}
+
+.l-stick-menu__popup-nav {
+    @include margin-trailer(2);
+}
+
+.l-stick-menu__popup-lang {
+    @include margin-trailer(2);
 }

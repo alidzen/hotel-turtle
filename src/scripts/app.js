@@ -9,7 +9,79 @@ define('app', [
 
     // Глобальные переменные
     var ACTIVE = ('is-active');
-    var WIDTH = ($(window).width < 1025);
+
+    // MENU
+    var $menu = $('.j-menu');
+    var $navMenu = $('.j-menu-nav');
+    var $burgerBtn = $('.j-menu-btn');
+    var $container = $('body, html');
+
+    //find out page param
+    var windowHeight = $(window).height();
+    var body = document.body;
+    var html = document.documentElement;
+    var height = Math.max(body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var longPage = (windowHeight >= height);
+    var pos;
+
+    $burgerBtn.click(function() {
+        var $self = $(this);
+        var isActive = $self.hasClass(ACTIVE);
+
+        if (isActive) {
+            // move cnt only on desktop
+            $self.removeClass(ACTIVE);
+            $container.removeClass(ACTIVE);
+            $menu.removeClass(ACTIVE);
+            $('body').css({
+                top : ''
+            });
+            $(window).scrollTop(pos);
+
+            if (!longPage) {
+                $('body').removeClass('add-padding');
+                $navMenu.removeClass('add-padding');
+            }
+
+        } else {
+            pos = $(window).scrollTop();
+            $self.addClass(ACTIVE);
+            $menu.addClass(ACTIVE);
+            $container.addClass(ACTIVE);
+            $('body').css({
+                top : -pos
+            });
+
+            // if page height less than viewport disable padding for menu
+            if (!longPage) {
+                $('body').addClass('add-padding');
+                $navMenu.addClass('add-padding');
+            }
+        }
+    });
+
+    //Sticky nav
+    var $cntHeight = $(window).height(); // высота блока
+    // меняется в зависимотси от высоты экрана
+
+    // show/hide sticky nav
+    $(window).scroll(function() {
+        var scrollPosition = $(window).scrollTop();
+
+        if (scrollPosition >= $cntHeight) {
+            if ($navMenu.hasClass(ACTIVE) === false) {
+                $navMenu.addClass(ACTIVE);
+            }
+        } else {
+            if ($burgerBtn.hasClass(ACTIVE)) {
+                return;
+            } else {
+                $navMenu.removeClass(ACTIVE);
+            }
+
+        }
+    });
 
     FastClick.attach(document.body);
 
@@ -162,43 +234,6 @@ define('app', [
             });
         });
     })($('.j-date-booking'));
-
-    //Sticky nav
-    (function($nav) {
-        if (!$nav.length || WIDTH) {
-            return;
-        }
-
-        var $cntHeight = $(window).height(); // высота блока
-        // меняется в зависимотси от высоты экрана
-
-        // show/hide sticky nav
-        $(window).scroll(function() {
-            var scrollPosition = $(window).scrollTop();
-
-            if (scrollPosition >= $cntHeight) {
-                if ($nav.hasClass(ACTIVE) === false) {
-                    $nav.addClass(ACTIVE);
-                }
-            } else {
-                $nav.removeClass(ACTIVE);
-            }
-        });
-
-        // smooth scroll
-        $('.b-object-nav a[href^="#"]').bind('click.smoothscroll', function(e) {
-            e.preventDefault();
-
-            var target = this.hash;
-            var $target = $(target);
-
-            $('html, body').stop().animate({
-                    scrollTop: $target.offset().top - $nav.height()}, 500, 'swing',
-                function() {
-                    window.location.hash = target;
-                });
-        });
-    })($('.j-stick-menu'));
 
     return {};
 });
