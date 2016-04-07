@@ -3,6 +3,7 @@ $sticky-menu-height: 60px;
 .l-stick-menu {
     position: fixed;
     z-index: z('fixed');
+    width: 100%;
 }
 
 .l-stick-menu__nav {
@@ -15,14 +16,17 @@ $sticky-menu-height: 60px;
     right: 0;
     height: $sticky-menu-height;
     z-index: z('fixed');
-    transform: translateY(- $sticky-menu-height);
 
     @media #{$big-up} {
-        display: block;
+        transform: translateY(- $sticky-menu-height);
     }
 
     &.is-active {
-        transform: translateY(0);
+        position: fixed;
+
+        @media #{$big-up} {
+            transform: translateY(0);
+        }
     }
 
     // if page with scroll
@@ -34,13 +38,15 @@ $sticky-menu-height: 60px;
 }
 
 .l-stick-menu__cnt {
+    height: $sticky-menu-height;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.l-stick-menu__btn {
-    padding-left: gutter(1);
+    padding: {
+        right: gutter(1);
+        left: gutter(1);
+    };
 }
 
 .l-stick-menu__popup {

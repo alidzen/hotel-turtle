@@ -1,5 +1,9 @@
 .l-home__header {
     @include grid-clearfix();
+
+    @media #{$small-only} {
+        margin-top: 60px; // menu height
+    }
 }
 
 .l-home__menu {
@@ -7,13 +11,25 @@
     height: 100vh;
     padding: 0;
     overflow-y: auto;
+
+    @media #{$medium-down} {
+        display: none;
+    }
 }
 
 .l-home__booking-info {
-    @include span(9.5 last);
     position: relative;
-    height: 100vh;
-    padding: 0;
+
+    @media #{$medium-up} {
+        height: 100vh;
+    }
+
+    @media #{$big-up} {
+        @include span(9.5 last);
+        position: relative;
+        height: 100vh;
+        padding: 0;
+    }
 }
 
 .l-home__gallery {

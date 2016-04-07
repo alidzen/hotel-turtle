@@ -65,6 +65,10 @@ define('app', [
     var $cntHeight = $(window).height(); // высота блока
     // меняется в зависимотси от высоты экрана
 
+    $(window).resize( function() {
+        $cntHeight = $(window).height();
+    });
+
     // show/hide sticky nav
     $(window).scroll(function() {
         var scrollPosition = $(window).scrollTop();

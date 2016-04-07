@@ -100,8 +100,19 @@ img {
 }
 
 .show-on-touch {
-
     @media #{$big-up} {
+        display: none;
+    }
+}
+
+.show-on-mobile {
+    @media #{$medium-up} {
+        display: none;
+    }
+}
+
+.hide-on-mobile {
+    @media #{$small-only} {
         display: none;
     }
 }

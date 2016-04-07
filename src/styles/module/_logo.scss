@@ -11,3 +11,7 @@ $logo: 'logo' !default;
     @include squish-text;
     display: block;
 }
+
+.b-mobile-logo {
+    width: 50px;
+}

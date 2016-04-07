@@ -14,6 +14,10 @@
     color: $gold-2;
     font-size: 14px;
     line-height: 16px;
+
+    @media #{$small-only} {
+        display: none;
+    }
 }
 
 .b-booking-form__info-ttl {

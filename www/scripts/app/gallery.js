@@ -25,7 +25,7 @@ define('app/gallery', [
         this.eventShow();
         this.eventReady();
         this.initGallery();
-        //this.fullImg();
+        //this.resize();
     };
 
     /**
@@ -130,11 +130,9 @@ define('app/gallery', [
         }
     };
 
-    //Gallery.prototype.fullImg = function() {
-    //    this.$imgContainer = this.$gallery.find('.fotorama__stage');
-    //    var height = $(window).height();
-    //    this.$imgContainer.css({
-    //        'height' : height
+    //Gallery.prototype.resize = function() {
+    //    this.$gallery.resize({
+    //        heigh: '450'
     //    });
     //}
 
