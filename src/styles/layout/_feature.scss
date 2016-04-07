@@ -1,6 +1,15 @@
 .l-feature {
-    @include margin-trailer(3.5);
+    @include margin-trailer(1.5);
     @include grid-clearfix();
+
+    @media #{$medium-up} {
+        @include margin-trailer(2.5);
+    }
+
+    @media #{$big-up} {
+        @include margin-trailer(3.5);
+    }
+
 }
 
 .l-feature__cnt {

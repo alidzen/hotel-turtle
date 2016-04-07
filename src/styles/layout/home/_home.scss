@@ -44,7 +44,15 @@
 }
 
 .l-home__cnt {
-    @include padding-leader(2.5);
+    @include rhythm-padding(1.5);
     background: url('/img/home-bg.svg') 50% 50% $white-2;
     background-size: cover;
+
+    @media #{$medium-up} {
+        @include rhythm-padding(2.5);
+    }
+
+    @media #{$big-up} {
+        @include rhythm-padding(3.5);
+    }
 }
