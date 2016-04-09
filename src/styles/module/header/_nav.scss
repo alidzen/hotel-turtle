@@ -17,19 +17,18 @@ $item-height-popup: 56px;
 
 .b-nav__item {
     display: block;
-    padding: {
-        top: ($item-height - $base-line-height) / 2;
-        bottom: ($item-height - $base-line-height) / 2;
-    };
+    //padding: {
+    //    top: ($item-height - $base-line-height) / 2;
+    //    bottom: ($item-height - $base-line-height) / 2;
+    //};
 }
 
 .b-nav__link {
     $dash-size: 40px;
-    @include adjust-font-size-to($nav-font-size);
+    @extend %f-nav-link;
     @include transition(color);
     position: relative;
     color: $nav-color;
-    font-family: $nav-font-family;
     text-decoration: none;
 
     &.is-active {

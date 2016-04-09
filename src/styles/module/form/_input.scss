@@ -19,12 +19,12 @@ $input-bd-color-focus: #663399 !default;
 $input-natural-height: rhythm($input-height) - ($input-bd-width * 2);
 
 %input {
+    @extend %f-input;
     @include transition(border-color);
     font-family: $input-font-family;
     color: $input-color;
     background-color: $input-bg-color;
     border: $input-bd-width solid $input-bd-color;
-    font-size: $input-font-size;
     outline: none;
     width: 100%;
     border-radius: $input-border-radius;
@@ -36,9 +36,9 @@ $input-natural-height: rhythm($input-height) - ($input-bd-width * 2);
     };
 
     &::placeholder {
+        @extend %f-input;
         color: $input-placeholder-color;
         font-style: $input-placeholder-font-style;
-        font-size: $input-placeholder-font-size;
         opacity: $input-placeholder-opacity;
     }
 

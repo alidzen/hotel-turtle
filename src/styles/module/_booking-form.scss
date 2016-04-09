@@ -13,7 +13,11 @@
 }
 
 .b-booking-form__col {
-    flex: 0 1 125px;
+    flex: 0 1 150px;
+
+    @media #{$large-up} {
+        flex-basis: 200px;
+    }
 
     .selectric-wrapper {
         width: 100%;
@@ -21,9 +25,8 @@
 }
 
 .b-booking-form__info {
+    @extend %f-base;
     color: $gold-2;
-    font-size: 14px;
-    line-height: 16px;
 
     @media #{$small-only} {
         display: none;
@@ -32,10 +35,12 @@
 
 .b-booking-form__info-ttl {
     font-family: $font-bold;
+    line-height: 24px;
 }
 
 .b-booking-form__txt {
     font-family: $font-bold-italic;
+    line-height: 24px;
 }
 
 // STATE

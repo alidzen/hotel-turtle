@@ -35,7 +35,7 @@ select {
     background-color: $select-item-background-color;
 
     .label {
-        font-size: $select-font-size;
+        @extend %f-input;
         color: $select-color;
         height: $select-height-current;
         line-height: $select-height-current;
@@ -108,8 +108,8 @@ select {
     border-top: none;
 
     li {
+        @extend %f-input;
         @include transition(color);
-        font-size: $select-font-size;
         background-color: $select-item-background-color;
         color: $select-color;
         border-bottom: $select-item-border-width solid $select-item-border-color;

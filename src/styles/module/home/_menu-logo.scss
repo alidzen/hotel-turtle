@@ -12,6 +12,6 @@
 
 .b-menu-logo__txt {
     @extend %b-top-dash;
-    font-size: 14px;
+    @extend %f-nav-link;
     color: $black-2;
 }

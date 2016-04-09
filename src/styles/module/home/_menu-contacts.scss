@@ -3,16 +3,16 @@
 }
 
 .b-menu-contacts__tel {
+    @extend %f-menu-tel;
     @include margin-trailer(.5);
     display: block;
-    font-family: $font-bold;
     color: $black-2;
 }
 
 .b-menu-contacts__map {
     @extend %b-top-dash;
+    @extend %f-nav-link;
     display: block;
-    font-size: 14px;
     color: $black-2;
 }
 
@@ -37,8 +37,4 @@
             background-color: $white;
         }
     }
-}
-
-.b-menu-contacts_theme_popup {
-
 }

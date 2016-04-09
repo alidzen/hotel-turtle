@@ -10,8 +10,9 @@ $anim-label-color-focus: inherit !default;
     position: relative;
 
     label {
-        @include adjust-font-size-to($anim-label-font-size, $input-height);
+        @extend %f-input;
         @include transition(top, font-size, text-transform, letter-spacing, color);
+        line-height: $input-height;
         display: block;
         position: absolute;
         top: rhythm($input-height);

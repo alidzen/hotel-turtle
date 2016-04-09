@@ -79,9 +79,8 @@ $gutter-width: 20px;
 // -----------------------------------
 $small-upper-bound: 640px;
 $medium-upper-bound: 1024px;
-$big-upper-bound: 1200px;
-$large-upper-bound: 1440px;
-$xlarge-upper-bound: 1920px;
+$big-upper-bound: 1440px;
+$large-upper-bound: 1920px;
 
 
 // Z-INDEX MANAGEMENT
@@ -159,14 +158,12 @@ $input-bg-color: $green-2;
 $input-bd-width: 2px;
 $input-bd-color: $green-3;
 $input-border-radius: 0;
-$input-font-size: 12px;
 $input-font-family: $font;
 $input-height: 1.5; //rhythm unit
 $textarea-min-height: 5; // rows
 //Placeholder
 $input-placeholder-color: $white;
 $input-placeholder-font-style: normal;
-$input-placeholder-font-size: $input-font-size;
 $input-placeholder-opacity: 1;
 //Focus
 $input-bd-color-focus: $input-bd-color;
@@ -196,8 +193,6 @@ $lr-sublist-pl: 4;
 
 // NAVIGATION
 $nav-color: $black;
-$nav-font-size: 14px;
-$nav-font-family: $font;
 //hover
 $nav-color-hover: $gold-2;
 //active
@@ -242,7 +237,6 @@ $gallery-caption-text-align: left;
 $gallery-caption-inner-position: bottom;
 
 // ANIMATED LABEL
-$anim-label-font-size: $input-font-size;
 $anim-label-font-size-focus: 10px;
 $anim-label-tt-uppercase: false;
 $anim-label-tt-uppercase-focus: true;
@@ -250,7 +244,6 @@ $anim-label-color: inherit;
 $anim-label-color-focus: inherit;
 
 // SELECT
-$select-font-size: $input-font-size;
 $input-font-family: $font;
 $select-border-width: $input-bd-width;
 $select-border-color: $input-bd-color;

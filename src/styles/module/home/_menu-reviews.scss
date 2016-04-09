@@ -9,13 +9,10 @@
 }
 
 .b-menu-reviews__txt {
-    @include adjust-font-size-to(14px);
+    @extend %f-nav-link;
 }
 
 .b-menu-reviews__link {
     @extend %stretch-green-link;
-    @include adjust-font-size-to(11px);
-    line-height: 19px;
-    text-transform: uppercase;
-    font-family: $font-roman;
+    @extend %f-menu-reviews;
 }

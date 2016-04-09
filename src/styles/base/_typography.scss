@@ -47,6 +47,128 @@ h2 {
     font: $font-roman;
 }
 
+// FONTS
+%f-base,
+.f-base {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $font;
+
+    @media #{$large-up} {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    @media #{$xlarge-up} {
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+
+%f-input,
+.f-input {
+    font-size: 12px;
+    font-family: $font;
+
+    @media #{$large-up} {
+        font-size: 16px;
+    }
+
+    @media #{$xlarge-up} {
+        font-size: 20px;
+    }
+}
+
+%f-nav-link,
+.f-nav-link {
+    font-size: 14px;
+    line-height: 36px;
+    font-family: $font;
+
+    @media #{$large-up} {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    @media #{$xlarge-up} {
+        font-size: 22px;
+        line-height: 44px;
+    }
+}
+
+%f-menu-tel,
+.f-menu-tel {
+    font-size: 14px;
+    line-height: 36px;
+    font-family: $font-bold;
+
+    @media #{$large-up} {
+        @media #{$large-up} {
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+
+    @media #{$xlarge-up} {
+        font-size: 22px;
+        line-height: 44px;
+    }
+}
+
+%f-menu-reviews,
+.f-menu-reviews {
+    font-size: 11px;
+    line-height: 19px;
+    font-family: $font-roman;
+    text-transform: uppercase;
+    letter-spacing: $gl-letter-spacing;
+
+    @media #{$large-up} {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    @media #{$xlarge-up} {
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+
+%f-menu-lang,
+.f-menu-lang {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $font-roman;
+    text-transform: uppercase;
+    letter-spacing: $gl-letter-spacing;
+
+    @media #{$large-up} {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    @media #{$xlarge-up} {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+%f-service-note,
+.f-service-note {
+    font-size: 19px;
+    line-height: 19px;
+    font-family: $font-bold-italic;
+
+    @media #{$medium-up} {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    @media #{$big-up} {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
 
 // SMALL
 $small-font-size: $base-font-size - 2 !default;

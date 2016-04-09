@@ -202,6 +202,153 @@ h1,
 h2 {
   font: "AGOpusHR-Roman", sans-serif; }
 
+.b-booking-form__info,
+.f-base {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Geometria", sans-serif; }
+  @media only screen and (min-width: 1441px) {
+    .b-booking-form__info,
+    .f-base {
+      font-size: 20px;
+      line-height: 30px; } }
+  @media only screen and (min-width: 1921px) {
+    .b-booking-form__info,
+    .f-base {
+      font-size: 22px;
+      line-height: 34px; } }
+
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+.f-input {
+  font-size: 12px;
+  font-family: "Geometria", sans-serif; }
+
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+.f-input {
+  font-size: 12px;
+  font-family: "Geometria", sans-serif; }
+
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+.f-input {
+  font-size: 12px;
+  font-family: "Geometria", sans-serif; }
+
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+.f-input {
+  font-size: 12px;
+  font-family: "Geometria", sans-serif; }
+  @media only screen and (min-width: 1441px) {
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    .f-input {
+      font-size: 16px; }
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    .f-input {
+      font-size: 16px; }
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    .f-input {
+      font-size: 16px; }
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    .f-input {
+      font-size: 16px; } }
+  @media only screen and (min-width: 1921px) {
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    .f-input {
+      font-size: 20px; }
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    .f-input {
+      font-size: 20px; }
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    .f-input {
+      font-size: 20px; }
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    .f-input {
+      font-size: 20px; } }
+
+.b-nav__link, .b-menu-logo__txt, .b-menu-contacts__map, .b-menu-reviews__txt,
+.f-nav-link {
+  font-size: 14px;
+  line-height: 36px;
+  font-family: "Geometria", sans-serif; }
+  @media only screen and (min-width: 1441px) {
+    .b-nav__link, .b-menu-logo__txt, .b-menu-contacts__map, .b-menu-reviews__txt,
+    .f-nav-link {
+      font-size: 18px;
+      line-height: 40px; } }
+  @media only screen and (min-width: 1921px) {
+    .b-nav__link, .b-menu-logo__txt, .b-menu-contacts__map, .b-menu-reviews__txt,
+    .f-nav-link {
+      font-size: 22px;
+      line-height: 44px; } }
+
+.b-menu-contacts__tel,
+.f-menu-tel {
+  font-size: 14px;
+  line-height: 36px;
+  font-family: "Geometria-Bold", sans-serif; }
+
+@media only screen and (min-width: 1441px) and (min-width: 1441px) {
+  .b-menu-contacts__tel,
+  .f-menu-tel {
+    font-size: 18px;
+    line-height: 40px; } }
+  @media only screen and (min-width: 1921px) {
+    .b-menu-contacts__tel,
+    .f-menu-tel {
+      font-size: 22px;
+      line-height: 44px; } }
+
+.b-menu-reviews__link,
+.f-menu-reviews {
+  font-size: 11px;
+  line-height: 19px;
+  font-family: "AGOpusHR-Roman", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
+  @media only screen and (min-width: 1441px) {
+    .b-menu-reviews__link,
+    .f-menu-reviews {
+      font-size: 14px;
+      line-height: 23px; } }
+  @media only screen and (min-width: 1921px) {
+    .b-menu-reviews__link,
+    .f-menu-reviews {
+      font-size: 17px;
+      line-height: 25px; } }
+
+.b-menu-lang__link,
+.f-menu-lang {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "AGOpusHR-Roman", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
+  @media only screen and (min-width: 1441px) {
+    .b-menu-lang__link,
+    .f-menu-lang {
+      font-size: 19px;
+      line-height: 30px; } }
+  @media only screen and (min-width: 1921px) {
+    .b-menu-lang__link,
+    .f-menu-lang {
+      font-size: 22px;
+      line-height: 32px; } }
+
+.b-service__ttl-note,
+.f-service-note {
+  font-size: 19px;
+  line-height: 19px;
+  font-family: "ArnoPro-BoldItalic", sans-serif; }
+  @media only screen and (min-width: 641px) {
+    .b-service__ttl-note,
+    .f-service-note {
+      font-size: 25px;
+      line-height: 25px; } }
+  @media only screen and (min-width: 1025px) {
+    .b-service__ttl-note,
+    .f-service-note {
+      font-size: 35px;
+      line-height: 35px; } }
+
 small {
   font-size: 14px; }
 
@@ -2624,7 +2771,7 @@ img {
     padding: 0; }
 
 .l-limit-wrap-full {
-  max-width: 1920px;
+  max-width: 2560px;
   margin-left: auto;
   margin-right: auto; }
   .l-limit-wrap-full:after {
@@ -3134,7 +3281,7 @@ img {
 .l-stick-menu__popup-cnt {
   padding-bottom: 24px;
   padding-top: 84px; }
-  @media only screen and (min-width: 1201px) {
+  @media only screen and (min-width: 1441px) {
     .l-stick-menu__popup-cnt {
       padding-top: 84px;
       position: absolute;
@@ -3221,13 +3368,15 @@ img {
   flex-flow: column wrap;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px; }
 
 @media only screen and (min-width: 1025px) {
   .l-home-menu__logo {
     margin-bottom: 24px; } }
 
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1921px) {
   .l-home-menu__logo {
     margin-top: 48px; } }
 
@@ -3365,7 +3514,6 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   color: #fefefd;
   background-color: #004457;
   border: 2px solid #004356;
-  font-size: 12px;
   outline: none;
   width: 100%;
   border-radius: 0;
@@ -3376,22 +3524,18 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #fefefd;
     font-style: normal;
-    font-size: 12px;
     opacity: 1; }
   input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder {
     color: #fefefd;
     font-style: normal;
-    font-size: 12px;
     opacity: 1; }
   input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
     color: #fefefd;
     font-style: normal;
-    font-size: 12px;
     opacity: 1; }
   input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="url"]::placeholder, textarea::placeholder {
     color: #fefefd;
     font-style: normal;
-    font-size: 12px;
     opacity: 1; }
   input[type='text']:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
     border-color: #004356; }
@@ -3415,11 +3559,10 @@ label {
   padding-top: 36px;
   position: relative; }
   .b-anim-label label {
-    font-size: 12px;
-    line-height: 36px;
     transition-property: top, font-size, text-transform, letter-spacing, color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
+    line-height: 1.5;
     display: block;
     position: absolute;
     top: 36px;
@@ -3568,7 +3711,6 @@ select {
   border-radius: 0;
   background-color: #004457; }
   .selectric .label {
-    font-size: 12px;
     color: #fefefd;
     height: 32px;
     line-height: 32px;
@@ -3618,7 +3760,6 @@ select {
     transition-property: color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-    font-size: 12px;
     background-color: #004457;
     color: #fefefd;
     border-bottom: 0 solid #004356;
@@ -4003,19 +4144,14 @@ select {
   text-align: center; }
 
 .b-nav__item {
-  display: block;
-  padding-top: 4px;
-  padding-bottom: 4px; }
+  display: block; }
 
 .b-nav__link {
-  font-size: 14px;
-  line-height: 24px;
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
   position: relative;
   color: #333333;
-  font-family: "Geometria", sans-serif;
   text-decoration: none; }
   .b-nav__link.is-active {
     color: #bca064;
@@ -4100,25 +4236,30 @@ select {
   margin-left: auto; }
 
 .b-booking-form__col {
-  -webkit-flex: 0 1 125px;
-  -ms-flex: 0 1 125px;
-  flex: 0 1 125px; }
+  -webkit-flex: 0 1 150px;
+  -ms-flex: 0 1 150px;
+  flex: 0 1 150px; }
+  @media only screen and (min-width: 1441px) {
+    .b-booking-form__col {
+      -webkit-flex-basis: 200px;
+      -ms-flex-preferred-size: 200px;
+      flex-basis: 200px; } }
   .b-booking-form__col .selectric-wrapper {
     width: 100%; }
 
 .b-booking-form__info {
-  color: #bca064;
-  font-size: 14px;
-  line-height: 16px; }
+  color: #bca064; }
   @media only screen and (max-width: 640px) {
     .b-booking-form__info {
       display: none; } }
 
 .b-booking-form__info-ttl {
-  font-family: "Geometria-Bold", sans-serif; }
+  font-family: "Geometria-Bold", sans-serif;
+  line-height: 24px; }
 
 .b-booking-form__txt {
-  font-family: "ArnoPro-BoldItalic", sans-serif; }
+  font-family: "ArnoPro-BoldItalic", sans-serif;
+  line-height: 24px; }
 
 .b-booking-form_theme_stick {
   background: none; }
@@ -4768,19 +4909,6 @@ select {
     height: 4px;
     background-color: #005870; }
 
-.b-service__ttl-note {
-  font-size: 19px;
-  line-height: 19px;
-  font-family: "ArnoPro-BoldItalic", sans-serif; }
-  @media only screen and (min-width: 641px) {
-    .b-service__ttl-note {
-      font-size: 25px;
-      line-height: 25px; } }
-  @media only screen and (min-width: 1025px) {
-    .b-service__ttl-note {
-      font-size: 35px;
-      line-height: 35px; } }
-
 .b-service__ttl {
   font-family: "AGOpusHR-Bold", sans-serif;
   line-height: 50px; }
@@ -4910,7 +5038,6 @@ select {
     margin-left: auto; }
 
 .b-menu-logo__txt {
-  font-size: 14px;
   color: #463f32; }
 
 .b-menu-contacts {
@@ -4919,12 +5046,10 @@ select {
 .b-menu-contacts__tel {
   margin-bottom: 12px;
   display: block;
-  font-family: "Geometria-Bold", sans-serif;
   color: #463f32; }
 
 .b-menu-contacts__map {
   display: block;
-  font-size: 14px;
   color: #463f32; }
 
 .b-menu-contacts_theme_footer .b-menu-contacts__tel {
@@ -4943,14 +5068,12 @@ select {
   text-align: center; }
 
 .b-menu-lang__link {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-family: "AGOpusHR-Roman", sans-serif;
-  color: #bdbdbd;
+  color: #463f32;
   margin-right: 5px;
   margin-left: 5px; }
   .b-menu-lang__link.is-active {
-    color: #463f32; }
+    color: #bdbdbd;
+    cursor: default; }
 
 .b-menu-lang_theme_popup .b-menu-lang__link {
   font-size: 24px;
@@ -4970,17 +5093,6 @@ select {
     .b-menu-reviews__rate {
       background-image: url("/img/sprites@2x.png");
       background-size: 303px 231px; } }
-
-.b-menu-reviews__txt {
-  font-size: 14px;
-  line-height: 24px; }
-
-.b-menu-reviews__link {
-  font-size: 11px;
-  line-height: 24px;
-  line-height: 19px;
-  text-transform: uppercase;
-  font-family: "AGOpusHR-Roman", sans-serif; }
 
 ol {
   list-style-type: decimal;

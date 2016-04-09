@@ -3,17 +3,16 @@
 }
 
 .b-menu-lang__link {
-    text-transform: uppercase;
-    letter-spacing: $gl-letter-spacing;
-    font-family: $font-roman;
-    color: $gray-2;
+    @extend %f-menu-lang;
+    color: $black-2;
     margin: {
         right: gutter(.5);
         left: gutter(.5);
     };
 
     &.is-active {
-        color: $black-2;
+        color: $gray-2;
+        cursor: default;
     }
 }
 
