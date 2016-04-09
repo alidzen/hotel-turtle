@@ -58,8 +58,14 @@ $img-size: 85px;
         &:after {
             top: -2px;
             height: 2px;
-            width: 225px;
+            width: 257px;
             right: 0;
+        }
+    }
+
+    @media #{$big-up} {
+        &:after {
+            width: 225px;
         }
     }
 

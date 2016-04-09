@@ -22,20 +22,24 @@
         left: gutter(1);
     };
 
-    @media #{$xlarge-up} {
+    @media #{$large-up} {
         @extend %l-row;
     }
 
-    @media #{$custom-1960-up} {
+    @media #{$custom-1240-up} {
+        padding: 0;
+    }
+
+    &.no-padding {
         padding: 0;
     }
 }
 
 .l-limit-wrap-full {
-
-    @media #{$xlarge-up} {
-        @extend %l-row;
-    }
+    @include grid-clearfix();
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .l-footer__cnt {

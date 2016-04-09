@@ -71,8 +71,8 @@ $list-margin-bottom: $paragraph-margin-bottom; // rhythm unit
 // GRID
 // -----------------------------------
 $columns: 12;
-$column-width: 130px;
-$gutter-width: 30px;
+$column-width: 80px;
+$gutter-width: 20px;
 
 
 // BREAKPOINTS
@@ -81,7 +81,7 @@ $small-upper-bound: 640px;
 $medium-upper-bound: 1024px;
 $big-upper-bound: 1200px;
 $large-upper-bound: 1440px;
-$xlarge-upper-bound: 1960px;
+$xlarge-upper-bound: 1920px;
 
 
 // Z-INDEX MANAGEMENT
