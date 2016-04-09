@@ -6,23 +6,21 @@
                     include _close-btn
                 .l-stick-menu__form.show-on-desktop
                     .b-booking-form.b-booking-form_theme_stick
-                        form.b-booking-form__form(action='/test/ajax/request.php'
+                        form.b-booking-form__form.j-date-booking(action='/test/ajax/request.php'
                         data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
                             .b-booking-form__col
-                                input.b-booking-form__inp.j-date-booking(
-                                id="booking-from"
+                                input.b-booking-form__inp.j-date-inp.j-date-from(
                                 type="text"
                                 placeholder="Дата заезда")
                             .b-booking-form__col
-                                input.b-booking-form__inp.j-date-booking(
-                                id="booking-to"
+                                input.b-booking-form__inp.j-date-inp.j-date-to(
                                 type="text"
                                 placeholder="Дата отъезда")
                             .b-booking-form__col
                                 select
                                     option(value="empty") Кол-во гостей
-                                    -for (var i = 1; i < 5; i++ )
-                                    option(value="#{i}") #{i}
+                                    -for (var i = 1; i < 11; i++ )
+                                        option(value="#{i}") #{i}
                             button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Выбрать номер
                 .l-stick-menu__form__logo.hide
                     include _mobile-logo

@@ -1,4 +1,4 @@
-section.l-home__header.l-limit-wrap-full
+section.l-home__header.l-limit-wrap-full.j-header
     .l-home__menu
         .l-home-menu
             .l-home-menu__logo
@@ -32,25 +32,23 @@ section.l-home__header.l-limit-wrap-full
 
         .l-home__booking
             .b-booking-form.hide-on-mobile
-                form.b-booking-form__form(action='/test/ajax/request.php'
+                form.b-booking-form__form.j-date-booking(action='/test/ajax/request.php'
                 data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
                     .b-booking-form__info
                         .b-booking-form__info-ttl 14 номеров
                         .b-booking-form__txt забронировали сегодня
                     .b-booking-form__col
-                        input.b-booking-form__inp.j-date-booking(
-                        id="booking-from"
+                        input.b-booking-form__inp.j-date-inp.j-date-from(
                         type="text"
                         placeholder="Дата заезда")
                     .b-booking-form__col
-                        input.b-booking-form__inp.j-date-booking(
-                        id="booking-to"
+                        input.b-booking-form__inp.j-date-inp.j-date-to(
                         type="text"
                         placeholder="Дата отъезда")
                     .b-booking-form__col
                         .b-booking-form__select
                             select
                                 option(value="empty") Кол-во гостей
-                                -for (var i = 1; i < 5; i++ )
-                                option(value="#{i}") #{i}
+                                -for (var i = 1; i < 11; i++ )
+                                    option(value="#{i}") #{i}
                     button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Выбрать номер

@@ -202,18 +202,18 @@ h1,
 h2 {
   font: "AGOpusHR-Roman", sans-serif; }
 
-.b-booking-form__info,
+
 .f-base {
   font-size: 16px;
   line-height: 24px;
   font-family: "Geometria", sans-serif; }
   @media only screen and (min-width: 1441px) {
-    .b-booking-form__info,
+    
     .f-base {
       font-size: 20px;
       line-height: 30px; } }
   @media only screen and (min-width: 1921px) {
-    .b-booking-form__info,
+    
     .f-base {
       font-size: 22px;
       line-height: 34px; } }
@@ -3588,7 +3588,7 @@ label {
     padding-left: 30px; }
     .b-form__checkbox label:after {
       background-image: url("/img/sprites.png");
-      background-position: -281px -116px;
+      background-position: -260px -116px;
       width: 20px;
       height: 20px;
       position: absolute;
@@ -3612,7 +3612,7 @@ label {
 
 .b-form__checkbox:hover label:after {
   background-image: url("/img/sprites.png");
-  background-position: -260px -116px;
+  background-position: -281px -116px;
   width: 20px;
   height: 20px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -3649,7 +3649,7 @@ label {
     padding-left: 26px; }
     .b-form__radio label:after {
       background-image: url("/img/sprites.png");
-      background-position: -277px -209px;
+      background-position: -260px -209px;
       width: 16px;
       height: 17px;
       position: absolute;
@@ -3663,7 +3663,7 @@ label {
           background-size: 303px 231px; } }
   .b-form__radio input:checked + label:after {
     background-image: url("/img/sprites.png");
-    background-position: -277px -191px;
+    background-position: -260px -191px;
     width: 16px;
     height: 17px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -3673,7 +3673,7 @@ label {
 
 .b-form__radio:hover label:after {
   background-image: url("/img/sprites.png");
-  background-position: -260px -191px;
+  background-position: -277px -209px;
   width: 16px;
   height: 17px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -3691,7 +3691,7 @@ label {
 .b-form__radio input:disabled + label:after,
 .b-form__radio input[readonly="readonly"] + label:after {
   background-image: url("/img/sprites.png");
-  background-position: -260px -209px;
+  background-position: -277px -191px;
   width: 16px;
   height: 17px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -3717,9 +3717,12 @@ select {
     margin-left: 10px; }
   .selectric .button {
     width: 32px;
-    height: 32px; }
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    color: #fefefd; }
     .selectric .button:after {
-      border-top-color: #004356; }
+      display: none; }
 
 .selectric-open .selectric {
   border-bottom-left-radius: 0;
@@ -3731,8 +3734,8 @@ select {
 
 .selectric-hover .selectric {
   border-color: #004356; }
-  .selectric-hover .selectric .button:after {
-    border-top-color: #004356; }
+  .selectric-hover .selectric .button {
+    color: #fefefd; }
 
 .selectric-above.selectric-open .selectric {
   border-bottom-left-radius: 0;
@@ -4245,9 +4248,13 @@ select {
       -ms-flex-preferred-size: 200px;
       flex-basis: 200px; } }
   .b-booking-form__col .selectric-wrapper {
-    width: 100%; }
+    width: 150px; }
+    @media only screen and (min-width: 1441px) {
+      .b-booking-form__col .selectric-wrapper {
+        width: 200px; } }
 
 .b-booking-form__info {
+  font-size: 14px;
   color: #bca064; }
   @media only screen and (max-width: 640px) {
     .b-booking-form__info {
@@ -4255,11 +4262,11 @@ select {
 
 .b-booking-form__info-ttl {
   font-family: "Geometria-Bold", sans-serif;
-  line-height: 24px; }
+  line-height: 16px; }
 
 .b-booking-form__txt {
   font-family: "ArnoPro-BoldItalic", sans-serif;
-  line-height: 24px; }
+  line-height: 16px; }
 
 .b-booking-form_theme_stick {
   background: none; }

@@ -45,9 +45,12 @@ select {
     .button {
         width: $select-height-current;
         height: $select-height-current;
+        font-size: 12px;
+        line-height: 32px;
+        color: $white;
 
         &:after {
-            border-top-color: $select-border-color;
+            display: none;
         }
     }
 }
@@ -71,8 +74,8 @@ select {
     .selectric {
         border-color: $select-border-color;
 
-        .button:after {
-            border-top-color: $select-border-color;
+        .button {
+            color: $white;
         }
     }
 }

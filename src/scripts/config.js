@@ -15,7 +15,7 @@ require.config({
         fotorama        : 'fotorama/fotorama',
         'masked-inputs'  : 'jquery.maskedinput/dist/jquery.maskedinput.min',
         'magnific-popup' : 'magnific-popup/dist/jquery.magnific-popup.min',
-        select : 'jquery-selectric/public/jquery.selectric.min',
+        select           : 'jquery-selectric/public/jquery.selectric.min',
         'jquery-ui'     : 'jquery.ui/ui',
 
         'google-maps'    : 'async!https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry&signed_in=true',
@@ -49,6 +49,10 @@ require.config({
         infobox: {
             exports: 'InfoBox',
             deps   : ['app/google-map']
+        },
+        select: {
+            exports: 'selectric',
+            deps: ['jquery']
         }
     },
     /* Launch app.js after config */

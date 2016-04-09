@@ -1,6 +1,8 @@
 define('app', [
     'jquery',
-    'fastclick'
+    'fastclick',
+    'jquery-ui/i18n/datepicker-ru',
+    'select'
 ], function(
     $,
     FastClick
@@ -15,6 +17,13 @@ define('app', [
     var $navMenu = $('.j-menu-nav');
     var $burgerBtn = $('.j-menu-btn');
     var $container = $('body, html');
+    var $header = $('.j-header');
+
+    // inputs in for booking
+    var $datepickerMenu = $navMenu.find('.j-date-inp');
+    var $selectMenu = $navMenu.find('select');
+    var $datepickerHeader = $header.find('.j-date-inp');
+    var $selectHeader = $header.find('select');
 
     //find out page param
     var windowHeight = $(window).height();
@@ -43,7 +52,6 @@ define('app', [
                 $('body').removeClass('add-padding');
                 $navMenu.removeClass('add-padding');
             }
-
         } else {
             pos = $(window).scrollTop();
             $self.addClass(ACTIVE);
@@ -65,7 +73,7 @@ define('app', [
     var $cntHeight = $(window).height(); // высота блока
     // меняется в зависимотси от высоты экрана
 
-    $(window).resize( function() {
+    $(window).resize(function() {
         $cntHeight = $(window).height();
     });
 
@@ -76,14 +84,17 @@ define('app', [
         if (scrollPosition >= $cntHeight) {
             if ($navMenu.hasClass(ACTIVE) === false) {
                 $navMenu.addClass(ACTIVE);
+                $datepickerHeader.datepicker('hide');
+                $selectHeader.selectric('close');
             }
         } else {
             if ($burgerBtn.hasClass(ACTIVE)) {
                 return;
             } else {
                 $navMenu.removeClass(ACTIVE);
+                $datepickerMenu.datepicker('hide');
+                $selectMenu.selectric('close');
             }
-
         }
     });
 
@@ -157,12 +168,11 @@ define('app', [
             return;
         }
 
-        require(['select'], function() {
-            $selects.each(function() {
-                var $select = $(this);
-                $select.selectric({
-                    disableOnMobile: false
-                });
+        $selects.each(function() {
+            var $select = $(this);
+            $select.selectric({
+                disableOnMobile: false,
+                maxHeight: 240
             });
         });
     })($('select'));
@@ -199,10 +209,11 @@ define('app', [
             return;
         }
 
-        var $startDate = $('#booking-from');
-        var $endDate = $('#booking-to');
+        $datepicker.each(function() {
+            var $self = $(this);
+            var $startDate = $self.find('.j-date-from');
+            var $endDate = $self.find('.j-date-to');
 
-        require(['jquery-ui/i18n/datepicker-ru'], function() {
             $startDate.datepicker({
                 defaultDate: '+1w',
                 minDate: 0,

@@ -20,12 +20,16 @@
     }
 
     .selectric-wrapper {
-        width: 100%;
+        width: 150px;
+
+        @media #{$large-up} {
+            width: 200px;
+        }
     }
 }
 
 .b-booking-form__info {
-    @extend %f-base;
+    font-size: 14px;
     color: $gold-2;
 
     @media #{$small-only} {
@@ -35,12 +39,12 @@
 
 .b-booking-form__info-ttl {
     font-family: $font-bold;
-    line-height: 24px;
+    line-height: 16px;
 }
 
 .b-booking-form__txt {
     font-family: $font-bold-italic;
-    line-height: 24px;
+    line-height: 16px;
 }
 
 // STATE
