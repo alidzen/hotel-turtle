@@ -3,117 +3,8 @@ block title
     title Главная страница
 block content
     .l-home
-        .l-stick-menu
-            .l-stick-menu__nav.j-menu-nav
-                .l-limit-wrap-full
-                    .l-stick-menu__cnt
-                        .l-stick-menu__btn
-                            include blocks/_close-btn
-                        .l-stick-menu__form.show-on-desktop
-                            .b-booking-form.b-booking-form_theme_stick
-                                form.b-booking-form__form(action='/test/ajax/request.php'
-                                data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
-                                    input.b-booking-form__inp.j-date-booking(
-                                    id="booking-from"
-                                    type="text"
-                                    placeholder="Дата заезда")
-                                    input.b-booking-form__inp.j-date-booking(
-                                    id="booking-to"
-                                    type="text"
-                                    placeholder="Дата отъезда")
-                                    .b-booking-form__select
-                                        select
-                                            option(value="empty") Кол-во гостей
-                                            -for (var i = 1; i < 5; i++ )
-                                            option(value="#{i}") #{i}
-                                    button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Выбрать номер
-                        .l-stick-menu__form__logo.hide
-                            include blocks/_mobile-logo
-                        .l-stick-menu__btn.show-on-touch
-                            a(href="#").b-btn.b-btn_width_auto Выбрать номер
-            .l-stick-menu__popup.j-menu
-                .l-stick-menu__popup-cnt
-                    .l-stick-menu__popup-nav
-                        nav.b-nav.b-nav_theme_popup
-                            ul.b-nav__list
-                                li.b-nav__item
-                                    a(href="/").b-nav__link.is-active Атмосфера
-                                li.b-nav__item
-                                    a(href="#").b-nav__link Номера
-                                li.b-nav__item
-                                    a(href="#").b-nav__link Спецпредложения
-                                li.b-nav__item
-                                    a(href="#").b-nav__link Дополнительные услуги
-                                li.b-nav__item
-                                    a(href="#").b-nav__link Ресторан
-                                li.b-nav__item
-                                    a(href="#").b-nav__link Контакты
-
-                    .l-stick-menu__popup-lang
-                        .b-menu-lang.b-menu-lang_theme_popup
-                            a(href="/").b-menu-lang__link.is-active ru
-                            a(href="/").b-menu-lang__link en
-
-                    .l-stick-menu__popup_contacts
-                        .b-menu-contacts
-                            a(href="tel: +78126708683").b-menu-contacts__tel +7&nbsp;(812)&nbsp;670&ndash;86&ndash;83
-                            a(href="javascript:;").b-menu-contacts__map
-                                | г.Санкт-Петербург
-                                | <br>ул.Достоевского, 19/21, лит.Б
-        section.l-home__header.l-limit-wrap-full
-            .l-home__menu
-                .l-home-menu
-                    .l-home-menu__logo
-                        .b-menu-logo
-                            include blocks/_logo
-                            .b-menu-logo__txt boutique hotel
-
-                    .l-home-menu__nav
-                        include blocks/_nav
-
-                    .l-home-menu__contacts
-                        .b-menu-contacts
-                            a(href="tel: +78126708683").b-menu-contacts__tel +7&nbsp;(812)&nbsp;670&ndash;86&ndash;83
-                            a(href="javascript:;").b-menu-contacts__map
-                                | г.Санкт-Петербург
-                                | <br>ул.Достоевского, 19/21, лит.Б
-
-                    .l-home-menu__lang
-                        .b-menu-lang
-                            a(href="/").b-menu-lang__link.is-active ru
-                            a(href="/").b-menu-lang__link en
-
-                    .l-home-menu__reviews
-                        .b-menu-reviews
-                            .b-menu-reviews__rate
-                            .b-menu-reviews__txt по мнению tripadvisor.ru
-                            a(href="#").b-menu-reviews__link Посмотреть отзывы
-            .l-home__booking-info
-                .l-home__gallery
-                    include blocks/_gallery
-
-                .l-home__booking
-                    .b-booking-form.hide-on-mobile
-                        form.b-booking-form__form(action='/test/ajax/request.php'
-                            data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
-                            .b-booking-form__info
-                                .b-booking-form__info-ttl 14 номеров
-                                .b-booking-form__txt забронировали сегодня
-                            input.b-booking-form__inp.j-date-booking(
-                                id="booking-from"
-                                type="text"
-                                placeholder="Дата заезда")
-                            input.b-booking-form__inp.j-date-booking(
-                                id="booking-to"
-                                type="text"
-                                placeholder="Дата отъезда")
-                            .b-booking-form__select
-                                select
-                                    option(value="empty") Кол-во гостей
-                                    -for (var i = 1; i < 5; i++ )
-                                        option(value="#{i}") #{i}
-                            button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Выбрать номер
-
+        include blocks/_stick-menu
+        include blocks/_home-header
 
         .l-home__cnt
             section.l-article.l-limit-wrap
@@ -234,7 +125,7 @@ block content
                             article.b-article__cnt
                                 .b-article__header
                                     h1.b-article__ttl Нашим гостям
-                                    .b-article__ttl-note особенно нравяться:
+                                    .b-article__ttl-note особенно нравится:
                                 ul.b-article__features
                                     li.b-article__feature
                                         .b-article__txt-ttl Приветливый персонал

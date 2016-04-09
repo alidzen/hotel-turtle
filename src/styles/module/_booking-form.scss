@@ -10,6 +10,14 @@
     align-items: center;
 }
 
+.b-booking-form__col {
+    flex: 0 1 125px;
+
+    .selectric-wrapper {
+        width: 100%;
+    }
+}
+
 .b-booking-form__info {
     color: $gold-2;
     font-size: 14px;
@@ -28,17 +36,7 @@
     font-family: $font-bold-italic;
 }
 
-.b-booking-form__inp {
-    flex-basis: 125px;
-}
-
-.b-booking-form__select {
-    flex-basis: 125px;
-
-    .selectric-wrapper {
-        width: 100%;
-    }
-}
+// STATE
 
 .b-booking-form_theme_stick {
     background: none;

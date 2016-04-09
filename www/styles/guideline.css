@@ -4086,6 +4086,13 @@ select {
   -ms-flex-align: center;
   align-items: center; }
 
+.b-booking-form__col {
+  -webkit-flex: 0 1 125px;
+  -ms-flex: 0 1 125px;
+  flex: 0 1 125px; }
+  .b-booking-form__col .selectric-wrapper {
+    width: 100%; }
+
 .b-booking-form__info {
   color: #bca064;
   font-size: 14px;
@@ -4099,18 +4106,6 @@ select {
 
 .b-booking-form__txt {
   font-family: "ArnoPro-BoldItalic", sans-serif; }
-
-.b-booking-form__inp {
-  -webkit-flex-basis: 125px;
-  -ms-flex-preferred-size: 125px;
-  flex-basis: 125px; }
-
-.b-booking-form__select {
-  -webkit-flex-basis: 125px;
-  -ms-flex-preferred-size: 125px;
-  flex-basis: 125px; }
-  .b-booking-form__select .selectric-wrapper {
-    width: 100%; }
 
 .b-booking-form_theme_stick {
   background: none; }
