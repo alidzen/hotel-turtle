@@ -365,6 +365,22 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
       font-size: 22px;
       line-height: 29px; } }
 
+.b-nav_theme_popup .b-nav__link, .b-menu-lang_theme_popup .b-menu-lang__link,
+.f-nav-link-stick {
+  font-size: 22px;
+  line-height: 44px;
+  font-family: "Geometria", sans-serif; }
+  @media only screen and (min-width: 1441px) {
+    .b-nav_theme_popup .b-nav__link, .b-menu-lang_theme_popup .b-menu-lang__link,
+    .f-nav-link-stick {
+      font-size: 28px;
+      line-height: 46px; } }
+  @media only screen and (min-width: 1921px) {
+    .b-nav_theme_popup .b-nav__link, .b-menu-lang_theme_popup .b-menu-lang__link,
+    .f-nav-link-stick {
+      font-size: 28px;
+      line-height: 46px; } }
+
 small {
   font-size: 14px; }
 
@@ -4207,19 +4223,6 @@ select {
     -ms-transform: scaleX(0);
     transform: scaleX(0); }
 
-.b-nav_theme_popup .b-nav__item {
-  display: block; }
-  @media only screen and (min-width: 1441px) {
-    .b-nav_theme_popup .b-nav__item {
-      padding-top: 16px;
-      padding-bottom: 16px; } }
-
-.b-nav_theme_popup .b-nav__link {
-  font-size: 22px; }
-  @media only screen and (min-width: 1441px) {
-    .b-nav_theme_popup .b-nav__link {
-      font-size: 28px; } }
-
 @media only screen and (min-width: 641px) {
   .b-callback {
     min-width: 580px; } }
@@ -5102,8 +5105,7 @@ select {
     cursor: default; }
 
 .b-menu-lang_theme_popup .b-menu-lang__link {
-  font-size: 24px;
-  line-height: 30px; }
+  font-family: "AGOpusHR-Roman", sans-serif; }
 
 .b-menu-reviews {
   color: #463f32;

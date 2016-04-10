@@ -71,21 +71,11 @@ $item-height-popup: 56px;
 // STATE
 .b-nav_theme_popup {
 
-    .b-nav__item {
-        display: block;
-        @media #{$large-up} {
-            padding: {
-                top: ($item-height-popup - $base-line-height) / 2;
-                bottom: ($item-height-popup - $base-line-height) / 2;
-            };
-        }
-    }
+    //.b-nav__item {
+    //    display: block;
+    //}
 
     .b-nav__link {
-        font-size: 22px;
-
-        @media #{$large-up} {
-            font-size: 28px;
-        }
+        @extend %f-nav-link-stick;
     }
 }
