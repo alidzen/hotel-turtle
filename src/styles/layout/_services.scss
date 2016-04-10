@@ -81,9 +81,16 @@ $tile-height-large: $tile-height-small * 3;
         padding-bottom: $tile-height-small;
     }
 
-    .b-service__img {
+    .b-service__img-wrap {
         height: $tile-height-small;
         top: $tile-height-small;
+        left: 0;
+        width: 100%;
+    }
+
+    .b-service__img {
+        height: $tile-height-small;
+        top: 0;
         left: 0;
         background: url('/img/services/service-1.jpg') no-repeat 50% 50%;
         background-size: cover;
@@ -105,11 +112,18 @@ $tile-height-large: $tile-height-small * 3;
             padding: 0;
         }
 
-        .b-service__img {
+        .b-service__img-wrap {
             height: $tile-height-small;
             top: 0;
             left: 50%;
             width: 50%;
+        }
+
+        .b-service__img {
+            height: $tile-height-small;
+            top: 0;
+            left: 0;
+            width: 100%;
         }
     }
 
@@ -165,6 +179,13 @@ $tile-height-large: $tile-height-small * 3;
         padding-top: $tile-height-small + rhythm(.5);
     }
 
+    .b-service__img-wrap {
+        top: 0;
+        left: 0;
+        height: $tile-height-small;
+        width: 100%;
+    }
+
     .b-service__img {
         height: $tile-height-small;
         width: 100%;
@@ -195,11 +216,16 @@ $tile-height-large: $tile-height-small * 3;
         padding-bottom: $tile-height-small;
     }
 
-    .b-service__img {
+    .b-service__img-wrap {
         height: $tile-height-small;
         width: 100%;
         bottom: 0;
-        top: auto;
+        left: 0;
+    }
+
+    .b-service__img {
+        height: $tile-height-small;
+        width: 100%;
         background-image: url('/img/services/service-3.jpg');
     }
 
@@ -212,9 +238,12 @@ $tile-height-large: $tile-height-small * 3;
             height: $tile-height-large;
         }
 
-        .b-service__img {
+        .b-service__img-wrap {
             top: $tile-height-big;
-            bottom: auto;
+        }
+
+        .b-service__img {
+            top: 0;
         }
     }
 
@@ -226,7 +255,7 @@ $tile-height-large: $tile-height-small * 3;
             height: $tile-height-large;
         }
 
-        .b-service__img {
+        .b-service__img-wrap {
             top: $tile-height-big;
         }
 
@@ -240,9 +269,15 @@ $tile-height-large: $tile-height-small * 3;
         padding-bottom: $tile-height-small;
     }
 
-    .b-service__img {
-        top: auto;
+    .b-service__img-wrap {
+        height: $tile-height-small;
         bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .b-service__img {
+        top: 0;
         height: $tile-height-small;
         background-image: url('/img/services/service-4.jpg');
     }
@@ -256,8 +291,7 @@ $tile-height-large: $tile-height-small * 3;
             height: $tile-height-big;
         }
 
-        .b-service__img {
-            top: auto;
+        .b-service__img-wrap {
             bottom: 0;
             height: $tile-height-small;
         }
@@ -324,10 +358,16 @@ $tile-height-large: $tile-height-small * 3;
         padding-bottom: $tile-height-small;
     }
 
-    .b-service__img {
-        top: auto;
-        height: $tile-height-small;
+    .b-service__img-wrap {
         bottom: 0;
+        left: 0;
+        height: $tile-height-small;
+        width: 100%;
+    }
+
+    .b-service__img {
+        top: 0;
+        height: $tile-height-small;
         left: 0;
         right: auto;
         background-image: url('/img/services/service-5.jpg');
@@ -347,9 +387,13 @@ $tile-height-large: $tile-height-small * 3;
             padding: 0;
         }
 
-        .b-service__img {
+        .b-service__img-wrap {
             height: 100%;
             width: 33.33333%;
+        }
+
+        .b-service__img {
+            height: 100%;
         }
     }
 }

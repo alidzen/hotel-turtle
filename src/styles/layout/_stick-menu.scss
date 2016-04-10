@@ -70,6 +70,7 @@ $sticky-menu-height: 60px;
     background: url('/img/menu-popup-bg.png') 50% 50% no-repeat $white;
     position: absolute;
     width: 100%;
+    min-height: calc(100vh - #{$sticky-menu-height});
 }
 
 .l-stick-menu__popup-cnt {

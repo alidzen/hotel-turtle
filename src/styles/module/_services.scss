@@ -6,7 +6,8 @@ $margin-y-desk: 30px;
 
 .b-service {
     @include grid-clearfix();
-    @include adjust-font-size-to(14px);;
+    @include adjust-font-size-to(14px);
+    color: inherit;
     display: block;
     position: relative;
     overflow: hidden;
@@ -16,6 +17,22 @@ $margin-y-desk: 30px;
         left: gutter(1);
         bottom: rhythm(.5);
     };
+
+    &:hover {
+        color: inherit;
+
+        .b-service__ttl-note {
+            color: $gold-2;
+        }
+
+        .b-service__img {
+            transform: scale(1.1);
+        }
+
+        .b-service__header:after {
+            background-color: $gold-2;
+        }
+    }
 
     @media #{$medium-up} {
         padding: {
@@ -68,6 +85,7 @@ $margin-y-desk: 30px;
     position: relative;
 
     &:after {
+        @include transition(background-color);
         content: '';
         position: absolute;
         bottom: 0;
@@ -80,6 +98,7 @@ $margin-y-desk: 30px;
 
 .b-service__ttl-note {
     @extend %f-service-note;
+    @include transition(color);
 }
 
 .b-service__ttl {
@@ -123,7 +142,13 @@ $margin-y-desk: 30px;
     }
 }
 
+.b-service__img-wrap {
+    position: absolute;
+    overflow: hidden;
+}
+
 .b-service__img {
+    @include transition(transform);
     position: absolute;
     width: 100%;
     right: 0;
