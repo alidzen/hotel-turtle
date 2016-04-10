@@ -170,6 +170,23 @@ h2 {
     }
 }
 
+%f-menu-contact,
+.f-menu-contact {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $font;
+
+    @media #{$large-up} {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    @media #{$xlarge-up} {
+        font-size: 22px;
+        line-height: 29px;
+    }
+}
+
 // SMALL
 $small-font-size: $base-font-size - 2 !default;
 

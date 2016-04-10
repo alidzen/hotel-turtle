@@ -264,18 +264,18 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
     .f-input {
       font-size: 20px; } }
 
-.b-nav__link, .b-menu-logo__txt, .b-menu-contacts__map, .b-menu-reviews__txt,
+.b-nav__link, .b-menu-logo__txt,
 .f-nav-link {
   font-size: 14px;
   line-height: 36px;
   font-family: "Geometria", sans-serif; }
   @media only screen and (min-width: 1441px) {
-    .b-nav__link, .b-menu-logo__txt, .b-menu-contacts__map, .b-menu-reviews__txt,
+    .b-nav__link, .b-menu-logo__txt,
     .f-nav-link {
       font-size: 18px;
       line-height: 40px; } }
   @media only screen and (min-width: 1921px) {
-    .b-nav__link, .b-menu-logo__txt, .b-menu-contacts__map, .b-menu-reviews__txt,
+    .b-nav__link, .b-menu-logo__txt,
     .f-nav-link {
       font-size: 22px;
       line-height: 44px; } }
@@ -348,6 +348,22 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
     .f-service-note {
       font-size: 35px;
       line-height: 35px; } }
+
+.b-menu-contacts__map, .b-menu-reviews__txt,
+.f-menu-contact {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Geometria", sans-serif; }
+  @media only screen and (min-width: 1441px) {
+    .b-menu-contacts__map, .b-menu-reviews__txt,
+    .f-menu-contact {
+      font-size: 18px;
+      line-height: 25px; } }
+  @media only screen and (min-width: 1921px) {
+    .b-menu-contacts__map, .b-menu-reviews__txt,
+    .f-menu-contact {
+      font-size: 22px;
+      line-height: 29px; } }
 
 small {
   font-size: 14px; }
@@ -5051,7 +5067,6 @@ select {
   text-align: center; }
 
 .b-menu-contacts__tel {
-  margin-bottom: 12px;
   display: block;
   color: #463f32; }
 

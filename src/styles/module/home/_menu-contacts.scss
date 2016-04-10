@@ -4,14 +4,13 @@
 
 .b-menu-contacts__tel {
     @extend %f-menu-tel;
-    @include margin-trailer(.5);
     display: block;
     color: $black-2;
 }
 
 .b-menu-contacts__map {
     @extend %b-top-dash;
-    @extend %f-nav-link;
+    @extend %f-menu-contact;
     display: block;
     color: $black-2;
 }
