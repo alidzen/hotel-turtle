@@ -1,13 +1,31 @@
 #popup.mfp-hide.b-popup
    a(href="javascript:;" title="Закрыть").b-popup__close Закрыть попап
    .b-popup__cnt
-      h1 Заголовок
-      p.
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus lectus in odio placerat, vitae egestas libero vehicula. Vestibulum vestibulum purus at gravida efficitur. Donec quis condimentum sem, id aliquam ante. Quisque semper quis erat at viverra. Suspendisse vitae luctus massa. Nam imperdiet mi maximus metus tincidunt posuere. Pellentesque mattis viverra enim vitae vehicula. Praesent consequat mi a magna convallis, aliquam venenatis eros commodo. Aenean pharetra dui vitae magna lobortis, ac cursus dolor tincidunt. Cras efficitur vitae felis nec tempor. Proin non fringilla nunc, eget efficitur urna. Vestibulum ornare, tortor ac varius efficitur, eros diam rutrum est, blandit dapibus augue lorem vitae augue. Etiam eleifend semper sapien, in euismod nibh tempus vel. Pellentesque tempor magna et eros placerat molestie. Mauris malesuada blandit ante, ut tristique ligula. Vivamus dignissim mattis arcu a sodales.
+      .l-stick-menu__popup-cnt
+         .l-stick-menu__popup-nav
+            nav.b-nav.b-nav_theme_popup
+               ul.b-nav__list
+                  li.b-nav__item
+                     a(href="/").b-nav__link.is-active Атмосфера
+                  li.b-nav__item
+                     a(href="#").b-nav__link Номера
+                  li.b-nav__item
+                     a(href="#").b-nav__link Спецпредложения
+                  li.b-nav__item
+                     a(href="#").b-nav__link Дополнительные услуги
+                  li.b-nav__item
+                     a(href="#").b-nav__link Ресторан
+                  li.b-nav__item
+                     a(href="#").b-nav__link Контакты
 
-#popup2.mfp-hide.b-popup
-   a(href="javascript:;" title="Закрыть").b-popup__close Закрыть попап
-   .b-popup__cnt
-      h1 Заголовок 234
-      p.
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus lectus in odio placerat, vitae egestas libero vehicula. Vestibulum vestibulum purus at gravida efficitur. Donec quis condimentum sem, id aliquam ante. Quisque semper quis erat at viverra. Suspendisse vitae luctus massa. Nam imperdiet mi maximus metus tincidunt posuere. Pellentesque mattis viverra enim vitae vehicula. Praesent consequat mi a magna convallis, aliquam venenatis eros commodo. Aenean pharetra dui vitae magna lobortis, ac cursus dolor tincidunt. Cras efficitur vitae felis nec tempor. Proin non fringilla nunc, eget efficitur urna. Vestibulum ornare, tortor ac varius efficitur, eros diam rutrum est, blandit dapibus augue lorem vitae augue. Etiam eleifend semper sapien, in euismod nibh tempus vel. Pellentesque tempor magna et eros placerat molestie. Mauris malesuada blandit ante, ut tristique ligula. Vivamus dignissim mattis arcu a sodales.
+         .l-stick-menu__popup-lang
+            .b-menu-lang.b-menu-lang_theme_popup
+               a(href="/").b-menu-lang__link.is-active ru
+               a(href="/").b-menu-lang__link en
+
+         .l-stick-menu__popup_contacts
+            .b-menu-contacts
+               a(href="tel: +78126708683").b-menu-contacts__tel +7&nbsp;(812)&nbsp;670&ndash;86&ndash;83
+               a(href="javascript:;").b-menu-contacts__map
+                  | г.Санкт-Петербург
+                  | <br>ул.Достоевского, 19/21, лит.Б

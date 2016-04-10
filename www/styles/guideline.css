@@ -3418,18 +3418,10 @@ img {
   margin-bottom: 48px; }
 
 .b-logo {
-  background-image: url("/img/sprites.png");
-  background-position: 0px 0px;
-  width: 162px;
-  height: 89px;
-  font: 0/0 serif;
-  text-shadow: none;
-  color: transparent;
   display: block; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-    .b-logo {
-      background-image: url("/img/sprites@2x.png");
-      background-size: 303px 231px; } }
+
+.b-logo__img {
+  width: 162px; }
 
 .b-mind-games {
   background-image: url("/img/sprites.png");
@@ -4879,6 +4871,7 @@ select {
 .b-service {
   font-size: 14px;
   line-height: 24px;
+  display: block;
   position: relative;
   overflow: hidden;
   padding-top: 36px;

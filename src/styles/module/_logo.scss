@@ -1,9 +1,11 @@
 $logo: 'logo' !default;
 
 .b-logo {
-    @include sprite($logo);
-    @include squish-text;
     display: block;
+}
+
+.b-logo__img {
+    width: 162px;
 }
 
 .b-mind-games {
