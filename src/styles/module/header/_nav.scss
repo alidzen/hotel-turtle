@@ -73,13 +73,19 @@ $item-height-popup: 56px;
 
     .b-nav__item {
         display: block;
-        padding: {
-            top: ($item-height-popup - $base-line-height) / 2;
-            bottom: ($item-height-popup - $base-line-height) / 2;
-        };
+        @media #{$large-up} {
+            padding: {
+                top: ($item-height-popup - $base-line-height) / 2;
+                bottom: ($item-height-popup - $base-line-height) / 2;
+            };
+        }
     }
 
     .b-nav__link {
-        font-size: 28px;
+        font-size: 22px;
+
+        @media #{$large-up} {
+            font-size: 28px;
+        }
     }
 }

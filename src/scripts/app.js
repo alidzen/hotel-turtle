@@ -14,6 +14,7 @@ define('app', [
 
     // MENU
     var $menu = $('.j-menu');
+    var $menuCnt = $('.j-menu__cnt');
     var $navMenu = $('.j-menu-nav');
     var $burgerBtn = $('.j-menu-btn');
     var $container = $('body, html');
@@ -25,13 +26,6 @@ define('app', [
     var $datepickerHeader = $header.find('.j-date-inp');
     var $selectHeader = $header.find('select');
 
-    //find out page param
-    var windowHeight = $(window).height();
-    var body = document.body;
-    var html = document.documentElement;
-    var height = Math.max(body.scrollHeight, body.offsetHeight,
-        html.clientHeight, html.scrollHeight, html.offsetHeight);
-    var longPage = (windowHeight >= height);
     var pos;
 
     $burgerBtn.click(function() {
@@ -40,32 +34,31 @@ define('app', [
 
         if (isActive) {
             // move cnt only on desktop
-            $self.removeClass(ACTIVE);
-            $container.removeClass(ACTIVE);
-            $menu.removeClass(ACTIVE);
-            $('body').css({
-                top : ''
-            });
-            $(window).scrollTop(pos);
-
-            if (!longPage) {
-                $('body').removeClass('add-padding');
+            $menuCnt.fadeOut();
+            setTimeout(function() {
+                $self.removeClass(ACTIVE);
+                $menu.removeClass(ACTIVE);
+                $container.removeClass(ACTIVE);
                 $navMenu.removeClass('add-padding');
-            }
+                $('body').removeClass('add-padding')
+                    .css({
+                        top : ''
+                    });
+                $(window).scrollTop(pos);
+            }, 300);
         } else {
             pos = $(window).scrollTop();
             $self.addClass(ACTIVE);
             $menu.addClass(ACTIVE);
             $container.addClass(ACTIVE);
-            $('body').css({
-                top : -pos
-            });
+            $menuCnt.fadeIn();
+            $navMenu.addClass('add-padding');
+            $('body').addClass('add-padding')
+                .css({
+                    top : -pos
+                });
 
-            // if page height less than viewport disable padding for menu
-            if (!longPage) {
-                $('body').addClass('add-padding');
-                $navMenu.addClass('add-padding');
-            }
+
         }
     });
 

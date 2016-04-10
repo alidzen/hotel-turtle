@@ -3234,8 +3234,7 @@ img {
   transition-property: transform, -webkit-transform;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  background: url("/img/form-bg.jpg") #005870;
-  background-size: cover;
+  background-color: #005870;
   position: fixed;
   top: 0;
   left: 0;
@@ -3260,6 +3259,8 @@ img {
 
 .l-stick-menu__cnt {
   height: 60px;
+  background: url("/img/form-bg.jpg") #005870;
+  background-size: cover;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3280,7 +3281,7 @@ img {
   transition-timing-function: ease;
   padding-top: 48px;
   padding-bottom: 48px;
-  background: url("/img/menu-popup-bg.png") 50% 50% no-repeat #fefefd;
+  background-color: #fefefd;
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -3293,6 +3294,11 @@ img {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
+
+.l-stick-menu__popup-cnt-wrap {
+  background: url("/img/menu-popup-bg.png") 50% 50% no-repeat #fefefd;
+  position: absolute;
+  width: 100%; }
 
 .l-stick-menu__popup-cnt {
   padding-bottom: 24px;
@@ -4202,12 +4208,17 @@ select {
     transform: scaleX(0); }
 
 .b-nav_theme_popup .b-nav__item {
-  display: block;
-  padding-top: 16px;
-  padding-bottom: 16px; }
+  display: block; }
+  @media only screen and (min-width: 1441px) {
+    .b-nav_theme_popup .b-nav__item {
+      padding-top: 16px;
+      padding-bottom: 16px; } }
 
 .b-nav_theme_popup .b-nav__link {
-  font-size: 28px; }
+  font-size: 22px; }
+  @media only screen and (min-width: 1441px) {
+    .b-nav_theme_popup .b-nav__link {
+      font-size: 28px; } }
 
 @media only screen and (min-width: 641px) {
   .b-callback {
