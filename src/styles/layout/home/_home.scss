@@ -53,6 +53,7 @@
     }
 
     @media #{$big-up} {
-        @include rhythm-padding(3.5);
+        @include padding-leader(3.5);
+        @include padding-trailer(2);
     }
 }
