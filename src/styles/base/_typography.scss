@@ -4,6 +4,7 @@
 @include font(ArnoPro-BoldItalic, 'ArnoPro-BoldItalic/ArnoPro-BoldItalic');
 @include font(AGOpusHR-Roman, 'AGOpusHR-Roman/AGOpusHR-Roman');
 @include font(AGOpusHR-Bold, 'AGOpusHR-Bold/AGOpusHR-Bold');
+@include font(ruble, 'ruble/ruble-webfont');
 
 // HEADINGS
 $headings:
@@ -63,6 +64,15 @@ h2 {
         font-size: 22px;
         line-height: 34px;
     }
+}
+
+%f-btn,
+.f-btn {
+    font-size: 11px;
+    line-height: 21px;
+    font-family: $font-roman-bold;
+    text-transform: uppercase;
+    letter-spacing: $gl-letter-spacing * 1.5;
 }
 
 %f-input,

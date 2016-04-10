@@ -12,6 +12,9 @@ $margin-y-desk: 40px;
         .b-room__cnt {
             color: $gold-2;
         }
+        .b-room__img {
+            transform: scale(1.2);
+        }
     }
 
     &:before,
@@ -90,7 +93,12 @@ $margin-y-desk: 40px;
     }
 }
 
+.b-room__img-wrap {
+    overflow: hidden;
+}
+
 .b-room__img {
+    @include transition(transform);
     height: 310px;
     background: 50% 50% no-repeat;
     background-size: cover;

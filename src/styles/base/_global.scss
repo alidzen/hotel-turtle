@@ -67,8 +67,9 @@ img {
     }
 }
 
-.ruble {
-    text-decoration: line-through;
+.b-ruble {
+    font-family: $font-ruble;
+    text-transform: lowercase;
 }
 
 %stretch-green-link {
