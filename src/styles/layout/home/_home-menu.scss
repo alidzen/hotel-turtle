@@ -1,4 +1,5 @@
 .l-home-menu {
+    @include transition(opacity);
     @include padding-leader(1);
     @include padding-trailer(.5);
     min-height: 100vh;
@@ -9,6 +10,32 @@
         right: gutter(1);
         left: gutter(1);
     };
+
+    @media #{$big-up} {
+        opacity: 0;
+
+        &.is-transformed {
+            opacity: 1;
+        }
+
+        &.is-smaller {
+            .l-home-menu__contacts {
+                @include margin-trailer(.5);
+            }
+
+            .l-home-menu__logo {
+                @include margin-trailer(.5);
+            }
+
+            .l-home-menu__nav {
+                @include margin-trailer(.5);
+            }
+
+            .b-nav__link {
+                line-height: 28px;
+            }
+        }
+    }
 }
 
 .l-home-menu__logo {
@@ -33,25 +60,8 @@
     }
 }
 
-
-// flex fallback
-// scss-lint:disable SingleLinePerSelector
-.no-flexbox, .no-flexboxlegacy {
-    .l-home-menu__logo {
-        @include margin-leader(1);
-        @include margin-trailer(2);
-    }
-
-    .l-home-menu__nav {
-        @include margin-trailer(2);
-    }
-
-    .l-home-menu__contacts {
-        @include margin-trailer(2);
-    }
-
-    .l-home-menu__lang {
-        @include margin-trailer(2);
+.l-home-menu__reviews {
+    @media #{$big-up} {
+        display: none;
     }
 }
-

@@ -9,8 +9,11 @@ define('app', [
 ) {
     'use strict';
 
+    FastClick.attach(document.body);
+
     // Глобальные переменные
     var ACTIVE = ('is-active');
+    var touchWIDTH = ($(window).width() < 1025);
 
     // MENU
     var $menu = $('.j-menu');
@@ -90,8 +93,6 @@ define('app', [
             }
         }
     });
-
-    FastClick.attach(document.body);
 
     (function($forms) {
         if (!$forms.length) {
@@ -242,6 +243,46 @@ define('app', [
             });
         });
     })($('.j-date-booking'));
+
+    (function($headerMenu) {
+        if (!$headerMenu.length || touchWIDTH) {
+            return;
+        }
+
+        var transformMenu = function() {
+            var cntHeight = $headerMenu.outerHeight(true);
+            var screenHeight = $(window).height();
+            var $reviewsBlock = $headerMenu.find('.l-home-menu__reviews');
+            var reviewHeight = $reviewsBlock.outerHeight(true);
+            // Помещается все меню
+            var isFullHeightCnt = screenHeight >= 800;
+
+            if (isFullHeightCnt) {
+                $reviewsBlock.show();
+                $headerMenu.removeClass('is-smaller');
+            } else {
+                // del block, resize cnt
+                if (cntHeight > screenHeight) {
+                    $reviewsBlock.hide();
+                    $headerMenu.addClass('is-smaller');
+                // del block
+                } else {
+                    $reviewsBlock.hide();
+                    $headerMenu.removeClass('is-smaller');
+                }
+            }
+
+            // set opacity to 1, after show / hide  block
+            $headerMenu.addClass('is-transformed');
+        };
+
+        transformMenu();
+
+        $(window).on('resize', function() {
+            transformMenu();
+        })
+
+    })($('.j-header-menu'));
 
     return {};
 });

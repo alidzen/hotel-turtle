@@ -1,6 +1,6 @@
 /* jshint ignore:start */
 require.config({
-    baseUrl: '/scripts/lib',
+    baseUrl: '../scripts/lib',
 
     paths : {
         app             : '../app',
