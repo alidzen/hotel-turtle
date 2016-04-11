@@ -2,11 +2,12 @@ extends _layout-home
 block title
     title Главная страница
 block content
-    .l-home
-        include blocks/_stick-menu
-        include blocks/_home-header
+    include blocks/_stick-menu
+    .l-home.j-full-page
+        section.l-home__header.l-limit-wrap-full.j-header.section
+            include blocks/_home-header
 
-        .l-home__cnt
+        section.l-home__cnt.section
             section.l-article.l-limit-wrap
                 .l-article__cnt
                     .b-article

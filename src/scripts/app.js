@@ -2,7 +2,8 @@ define('app', [
     'jquery',
     'fastclick',
     'jquery-ui/i18n/datepicker-ru',
-    'select'
+    'select',
+    'slimScroll'
 ], function(
     $,
     FastClick
@@ -282,6 +283,34 @@ define('app', [
         })
 
     })($('.j-header-menu'));
+
+    // Стилизация селекта
+    (function($selects) {
+        if (!$selects.length) {
+            return;
+        }
+
+        require(['select'], function() {
+            $selects.each(function() {
+                $(this).selectric({
+                    disableOnMobile: false
+                });
+            });
+        });
+    })($('select'));
+    
+    (function($fullPage) {
+        if (!$fullPage.length || touchWIDTH) {
+            return;
+        }
+            
+        require(['fullPage'], function() {
+            $fullPage.fullpage({
+                navigation: false,
+                scrollOverflow: true
+            });
+        })
+    })($('.j-full-page'));
 
     return {};
 });

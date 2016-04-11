@@ -27,7 +27,9 @@ require.config({
         sammy                   : 'sammy/lib/min/sammy-latest.min',
         scaleraphael            : 'scaleraphael/scaleraphael',
         eve                     : 'eve-adobe/eve.min',
-        raphael                 : 'raphael/raphael-min'
+        raphael                 : 'raphael/raphael-min',
+        slimScroll                 : 'fullpage.js/vendors/jquery.slimscroll.min',
+        fullPage                 : 'fullpage.js/jquery.fullPage.min'
     },
     shim : {
         'jquery.cookie' : {
@@ -53,6 +55,12 @@ require.config({
         select: {
             exports: 'selectric',
             deps: ['jquery']
+        },
+        'slimScroll' : {
+            deps   : ['jquery']
+        },
+        'fullPage' : {
+            deps   : ['jquery']
         }
     },
     /* Launch app.js after config */
