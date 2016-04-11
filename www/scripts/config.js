@@ -1,6 +1,6 @@
 /* jshint ignore:start */
 require.config({
-    baseUrl: '../scripts/lib',
+    baseUrl: '/scripts/lib',
 
     paths : {
         app             : '../app',
@@ -27,7 +27,8 @@ require.config({
         sammy                   : 'sammy/lib/min/sammy-latest.min',
         scaleraphael            : 'scaleraphael/scaleraphael',
         eve                     : 'eve-adobe/eve.min',
-        raphael                 : 'raphael/raphael-min'
+        raphael                 : 'raphael/raphael-min',
+        pagePiling                 : 'pagePiling.js/jquery.pagepiling.min'
     },
     shim : {
         'jquery.cookie' : {
@@ -53,6 +54,9 @@ require.config({
         select: {
             exports: 'selectric',
             deps: ['jquery']
+        },
+        pagePiling : {
+            deps   : ['jquery']
         }
     },
     /* Launch app.js after config */

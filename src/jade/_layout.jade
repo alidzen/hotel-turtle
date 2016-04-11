@@ -19,6 +19,7 @@ html(lang='ru')
         link(rel='stylesheet' href="/scripts/lib/magnific-popup/dist/magnific-popup.css")
         link(rel='stylesheet' href="/scripts/lib/fotorama/fotorama.css")
         link(rel='stylesheet' href="/scripts/lib/jquery.ui/themes/base/datepicker.css")
+        link(rel='stylesheet' href="/scripts/lib/pagePiling.js/jquery.pagepiling.css")
         link(rel='stylesheet' href="/styles/app.css")
 
         block title
@@ -27,13 +28,15 @@ html(lang='ru')
         link(rel='stylesheet' href="/styles/ie.css")
         <![endif]-->
     body
-        .l-wrap
-            header.l-header
+        include blocks/_stick-menu
+        .l-wrap.j-full-page
+            section.l-home__header.l-limit-wrap-full.j-header.section
+                include blocks/_home-header
+            section.section.pp-scrollable
+                main.l-main
+                    block content
 
-            main.l-main
-                block content
-
-            footer.l-footer
-                include blocks/_footer
+                footer.l-footer
+                    include blocks/_footer
 
         script(src="/scripts/lib/requirejs/require.min.js" data-main="/scripts/config.js")

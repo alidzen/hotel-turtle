@@ -27,6 +27,7 @@
     "scaleraphael": "*",
     "raphael": "~2.1.2",
     "eve-adobe": "~0.2.4",
-    "jquery-cookie": "~1.4.1"
+    "jquery-cookie": "~1.4.1",
+    "pagePiling.js": "pagepiling.js#~1.5.3"
   }
 }

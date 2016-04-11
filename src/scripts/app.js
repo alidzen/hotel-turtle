@@ -42,11 +42,6 @@ define('app', [
                 $self.removeClass(ACTIVE);
                 $menu.removeClass(ACTIVE);
                 $container.removeClass(ACTIVE);
-                $navMenu.removeClass('add-padding');
-                $('body').removeClass('add-padding')
-                    .css({
-                        top : ''
-                    });
                 $(window).scrollTop(pos);
             }, 300);
         } else {
@@ -55,13 +50,6 @@ define('app', [
             $menu.addClass(ACTIVE);
             $container.addClass(ACTIVE);
             $menuCnt.fadeIn();
-            $navMenu.addClass('add-padding');
-            $('body').addClass('add-padding')
-                .css({
-                    top : -pos
-                });
-
-
         }
     });
 
@@ -279,9 +267,36 @@ define('app', [
 
         $(window).on('resize', function() {
             transformMenu();
-        })
+        });
 
     })($('.j-header-menu'));
+
+    (function($fullPage) {
+        if (!$fullPage.length) {
+            return;
+        }
+
+        require(['pagePiling'], function() {
+            $fullPage.pagepiling({
+                navigation: false,
+                verticalCentered: false,
+                css3: false,
+                onLeave: function (index, nextIndex, direction) {
+                    //reaching our last section? The one with our normal site?
+                    if (nextIndex == 2) {
+                        setTimeout(function() {
+                            $navMenu.addClass(ACTIVE);
+                        }, 900)
+                    }
+
+                    //leaving our last section? The one with our normal site?
+                    if (index == 2) {
+                        $navMenu.removeClass(ACTIVE);
+                    }
+                }
+            });
+        });
+    })($('.j-full-page'));
 
     return {};
 });

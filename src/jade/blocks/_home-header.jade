@@ -1,54 +1,53 @@
-section.l-home__header.l-limit-wrap-full.j-header
-    .l-home__menu
-        .l-home-menu.j-header-menu
-            .l-home-menu__logo
-                .b-menu-logo
-                    include _logo
-                    .b-menu-logo__txt boutique hotel
+.l-home__menu
+    .l-home-menu.j-header-menu
+        .l-home-menu__logo
+            .b-menu-logo
+                include _logo
+                .b-menu-logo__txt boutique hotel
 
-            .l-home-menu__nav
-                include _nav
+        .l-home-menu__nav
+            include _nav
 
-            .l-home-menu__contacts
-                .b-menu-contacts
-                    a(href="tel: +78126708683").b-menu-contacts__tel +7&nbsp;(812)&nbsp;670&ndash;86&ndash;83
-                    a(href="#").b-menu-contacts__map
-                        | г.Санкт-Петербург
-                        | <br>ул.Достоевского, 19/21, лит.Б
+        .l-home-menu__contacts
+            .b-menu-contacts
+                a(href="tel: +78126708683").b-menu-contacts__tel +7&nbsp;(812)&nbsp;670&ndash;86&ndash;83
+                a(href="#").b-menu-contacts__map
+                    | г.Санкт-Петербург
+                    | <br>ул.Достоевского, 19/21, лит.Б
 
-            .l-home-menu__lang
-                .b-menu-lang
-                    a(href="/").b-menu-lang__link.is-active ru
-                    a(href="/").b-menu-lang__link en
+        .l-home-menu__lang
+            .b-menu-lang
+                a(href="/").b-menu-lang__link.is-active ru
+                a(href="/").b-menu-lang__link en
 
-            .l-home-menu__reviews
-                .b-menu-reviews
-                    .b-menu-reviews__rate
-                    .b-menu-reviews__txt по мнению tripadvisor.ru
-                    a(href="#").b-menu-reviews__link Посмотреть отзывы
-    .l-home__booking-info
-        .l-home__gallery
-            include _gallery
+        .l-home-menu__reviews
+            .b-menu-reviews
+                .b-menu-reviews__rate
+                .b-menu-reviews__txt по мнению tripadvisor.ru
+                a(href="#").b-menu-reviews__link Посмотреть отзывы
+.l-home__booking-info
+    .l-home__gallery
+        include _gallery
 
-        .l-home__booking
-            .b-booking-form.hide-on-mobile
-                form.b-booking-form__form.j-date-booking(action='/test/ajax/request.php'
-                data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
-                    .b-booking-form__info
-                        .b-booking-form__info-ttl 14 номеров
-                        .b-booking-form__txt забронировали сегодня
-                    .b-booking-form__col
-                        input.b-booking-form__inp.j-date-inp.j-date-from(
-                        type="text"
-                        placeholder="Дата заезда")
-                    .b-booking-form__col
-                        input.b-booking-form__inp.j-date-inp.j-date-to(
-                        type="text"
-                        placeholder="Дата отъезда")
-                    .b-booking-form__col
-                        .b-booking-form__select
-                            select
-                                option(value="empty") Кол-во гостей
-                                -for (var i = 1; i < 11; i++ )
-                                    option(value="#{i}") #{i}
-                    button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Выбрать номер
+    .l-home__booking
+        .b-booking-form.hide-on-mobile
+            form.b-booking-form__form.j-date-booking(action='/test/ajax/request.php'
+            data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
+                .b-booking-form__info
+                    .b-booking-form__info-ttl 14 номеров
+                    .b-booking-form__txt забронировали сегодня
+                .b-booking-form__col
+                    input.b-booking-form__inp.j-date-inp.j-date-from(
+                    type="text"
+                    placeholder="Дата заезда")
+                .b-booking-form__col
+                    input.b-booking-form__inp.j-date-inp.j-date-to(
+                    type="text"
+                    placeholder="Дата отъезда")
+                .b-booking-form__col
+                    .b-booking-form__select
+                        select
+                            option(value="empty") Кол-во гостей
+                            -for (var i = 1; i < 11; i++ )
+                                option(value="#{i}") #{i}
+                button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Выбрать номер
