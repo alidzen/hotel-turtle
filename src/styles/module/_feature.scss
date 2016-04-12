@@ -76,25 +76,12 @@ $img-size: 85px;
 }
 
 .b-feature__ttl-note {
-    font-size: 19px;
-    line-height: 19px;
-    font-family: $font-bold-italic;
+    @extend %f-ttl-note;
     color: $green;
-
-    @media #{$medium-up} {
-        font-size: 25px;
-        line-height: 25px;
-    }
-
-    @media #{$big-up} {
-        font-size: 35px;
-        line-height: 35px;
-    }
 }
 
 .b-feature__ttl {
-    font-family: $font-roman-bold;
-    line-height: 50px;
+    @extend %f-ttl;
     color: $green;
     position: relative;
 }

@@ -1,6 +1,5 @@
 html {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+     @extend %f-base;
 
     // Убираем скроллинг при открытом мобильном меню. Для ios.
     &.is-active {
@@ -9,7 +8,7 @@ html {
 }
 
 body {
-    font-family: $font;
+    @extend %f-base;
     color: $base-font-color;
     text-size-adjust: 100%;
 

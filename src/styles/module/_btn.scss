@@ -35,8 +35,8 @@ $btn-bg-color-disabled: #eee !default;
     cursor: pointer;
     outline: none;
     padding: {
-        left: gutter(1);
-        right: gutter(1);
+        left: gutter(2);
+        right: gutter(2);
     };
 
     &:hover,

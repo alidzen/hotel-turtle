@@ -207,29 +207,19 @@ h1,
 h2 {
   font: "AGOpusHR-Roman", sans-serif; }
 
-
+html, body,
 .f-base {
   font-size: 16px;
   line-height: 24px;
   font-family: "Geometria", sans-serif; }
-  @media only screen and (min-width: 1441px) {
-    
-    .f-base {
-      font-size: 20px;
-      line-height: 30px; } }
-  @media only screen and (min-width: 1921px) {
-    
-    .f-base {
-      font-size: 22px;
-      line-height: 34px; } }
 
 .b-btn,
 .f-btn {
   font-size: 11px;
-  line-height: 21px;
+  line-height: 24px;
   font-family: "AGOpusHR-Bold", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.075em; }
+  letter-spacing: 0.15em; }
 
 input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
 .f-input {
@@ -348,19 +338,9 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
 
 .b-service__ttl-note,
 .f-service-note {
-  font-size: 19px;
-  line-height: 19px;
+  font-size: 35px;
+  line-height: 35px;
   font-family: "ArnoPro-BoldItalic", sans-serif; }
-  @media only screen and (min-width: 641px) {
-    .b-service__ttl-note,
-    .f-service-note {
-      font-size: 25px;
-      line-height: 25px; } }
-  @media only screen and (min-width: 1025px) {
-    .b-service__ttl-note,
-    .f-service-note {
-      font-size: 35px;
-      line-height: 35px; } }
 
 .b-menu-contacts__map, .b-menu-reviews__txt,
 .f-menu-contact {
@@ -408,11 +388,21 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   font-family: "ArnoPro-BoldItalic", sans-serif;
   letter-spacing: 0.05em; }
 
+.b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note {
+  font-size: 35px;
+  line-height: 45px;
+  font-family: "ArnoPro-BoldItalic", sans-serif; }
+
+.b-feature__ttl, .b-article__ttl, .b-card__ttl {
+  font-size: 50px;
+  line-height: 45px;
+  font-family: "AGOpusHR-Bold", sans-serif; }
+
 small {
   font-size: 14px; }
 
 p {
-  margin-bottom: 24px; }
+  margin-bottom: 72px; }
 
 a {
   transition-property: color;
@@ -432,7 +422,7 @@ a {
 
 .b-typo-reset ul,
 .b-typo-reset ol {
-  margin-bottom: 24px; }
+  margin-bottom: 72px; }
   .b-typo-reset ul li,
   .b-typo-reset ol li {
     font-size: 16px;
@@ -458,14 +448,10 @@ strong {
   font-family: "Geometria-Bold", sans-serif;
   font-weight: 700; }
 
-html {
-  font-size: 16px;
-  line-height: 24px; }
-  html.is-active {
-    overflow: hidden; }
+html.is-active {
+  overflow: hidden; }
 
 body {
-  font-family: "Geometria", sans-serif;
   color: #333333;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -3392,6 +3378,9 @@ img {
 .l-stick-menu__popup-lang {
   margin-bottom: 48px; }
 
+.l-stick-menu__form {
+  min-width: 80%; }
+
 .l-home__header:after {
   content: '';
   display: block;
@@ -3546,8 +3535,8 @@ img {
   text-align: center;
   cursor: pointer;
   outline: none;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 20px;
+  padding-right: 20px; }
   .b-btn:hover, .b-btn:focus {
     color: #fefefd;
     background-color: #bca064;
@@ -3566,8 +3555,8 @@ img {
 
 .b-btn_width_auto {
   width: auto;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .b-btn_tt_uppercase {
   text-transform: uppercase;
@@ -4399,6 +4388,7 @@ select {
   background: none; }
 
 .ui-datepicker {
+  height: 260px;
   background-color: #004457;
   border: 2px solid #004356;
   font-size: 14px;
@@ -4465,6 +4455,9 @@ select {
 .ui-datepicker-unselectable.ui-state-disabled span {
   color: #b5b1ab; }
 
+.ui-datepicker td span, .ui-datepicker td a {
+  text-align: center; }
+
 .b-feature {
   position: relative;
   overflow: hidden;
@@ -4516,22 +4509,9 @@ select {
   margin-bottom: 36px; }
 
 .b-feature__ttl-note {
-  font-size: 19px;
-  line-height: 19px;
-  font-family: "ArnoPro-BoldItalic", sans-serif;
   color: #005870; }
-  @media only screen and (min-width: 641px) {
-    .b-feature__ttl-note {
-      font-size: 25px;
-      line-height: 25px; } }
-  @media only screen and (min-width: 1025px) {
-    .b-feature__ttl-note {
-      font-size: 35px;
-      line-height: 35px; } }
 
 .b-feature__ttl {
-  font-family: "AGOpusHR-Bold", sans-serif;
-  line-height: 50px;
   color: #005870;
   position: relative; }
 
@@ -4953,23 +4933,6 @@ select {
     height: 4px;
     background-color: #005870; }
 
-.b-article__ttl-note {
-  font-size: 19px;
-  line-height: 19px;
-  font-family: "ArnoPro-BoldItalic", sans-serif; }
-  @media only screen and (min-width: 641px) {
-    .b-article__ttl-note {
-      font-size: 25px;
-      line-height: 25px; } }
-  @media only screen and (min-width: 1025px) {
-    .b-article__ttl-note {
-      font-size: 35px;
-      line-height: 35px; } }
-
-.b-article__ttl {
-  font-family: "AGOpusHR-Bold", sans-serif;
-  line-height: 50px; }
-
 .b-article__feature {
   margin-bottom: 12px; }
 
@@ -5296,23 +5259,6 @@ select {
 @media only screen and (min-width: 641px) {
   .b-card__descr {
     padding-right: 150px; } }
-
-.b-card__ttl-note {
-  font-size: 19px;
-  line-height: 19px;
-  font-family: "ArnoPro-BoldItalic", sans-serif; }
-  @media only screen and (min-width: 641px) {
-    .b-card__ttl-note {
-      font-size: 25px;
-      line-height: 25px; } }
-  @media only screen and (min-width: 1025px) {
-    .b-card__ttl-note {
-      font-size: 35px;
-      line-height: 35px; } }
-
-.b-card__ttl {
-  font-family: "AGOpusHR-Bold", sans-serif;
-  line-height: 50px; }
 
 .b-card__gallery {
   height: 250px;

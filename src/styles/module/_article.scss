@@ -67,24 +67,11 @@
 }
 
 .b-article__ttl-note {
-    font-size: 19px;
-    line-height: 19px;
-    font-family: $font-bold-italic;
-
-    @media #{$medium-up} {
-        font-size: 25px;
-        line-height: 25px;
-    }
-
-    @media #{$big-up} {
-        font-size: 35px;
-        line-height: 35px;
-    }
+    @extend %f-ttl-note;
 }
 
 .b-article__ttl {
-    font-family: $font-roman-bold;
-    line-height: 50px;
+    @extend %f-ttl;
 }
 
 .b-article__feature {

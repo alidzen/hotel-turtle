@@ -1,4 +1,5 @@
 .ui-datepicker {
+    height: 260px;
     background-color: $green-2;
     border: 2px solid $green-3;
     font-size: 14px;
@@ -81,4 +82,8 @@
     span {
         color: $gray;
     }
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    text-align: center;
 }

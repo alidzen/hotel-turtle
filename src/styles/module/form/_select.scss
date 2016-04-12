@@ -37,8 +37,8 @@ select {
     .label {
         @extend %f-input;
         color: $select-color;
-        height: $select-height-current;
-        line-height: $select-height-current;
+        height: 32px;
+        line-height: 32px;
         margin-left: gutter(1);
     }
 

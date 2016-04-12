@@ -125,7 +125,7 @@ define('app', [
             var $select = $(this);
             $select.selectric({
                 disableOnMobile: false,
-                maxHeight: 240
+                maxHeight: 260
             });
         });
     })($('select'));
