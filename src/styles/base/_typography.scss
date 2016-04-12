@@ -221,6 +221,36 @@ h2 {
     font-family: $font-roman-bold;
 }
 
+%f-room-ttl,
+.f-room-ttl {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $font-roman-bold;
+    text-transform: uppercase;
+    letter-spacing: $gl-letter-spacing;
+}
+
+%f-price-txt,
+.f-price-txt {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $font-roman-bold;
+}
+
+%f-price,
+.f-price {
+    font-size: 26px;
+    line-height: 24px;
+    font-family: $font-roman-bold;
+}
+
+%f-service-txt,
+.f-service-txt {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $font;
+}
+
 
 // SMALL
 $small-font-size: $base-font-size - 2 !default;

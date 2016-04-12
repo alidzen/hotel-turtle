@@ -1,12 +1,6 @@
-$border-height: 2px;
-$margin-x: 15px;
-$margin-x-desk: 30px;
-$margin-y: 20px;
-$margin-y-desk: 30px;
-
 .b-service {
+    @extend %f-service-txt;
     @include grid-clearfix();
-    @include adjust-font-size-to(14px);
     color: inherit;
     display: block;
     position: relative;
@@ -36,9 +30,9 @@ $margin-y-desk: 30px;
 
     @media #{$medium-up} {
         padding: {
-            top: rhythm(1.5);
-            right: gutter(2);
-            left: gutter(2);
+            top: rhythm(1.25);
+            right: gutter(3);
+            left: gutter(3);
             bottom: rhythm(.5);
         };
     }
@@ -107,7 +101,8 @@ $margin-y-desk: 30px;
 }
 
 .b-service__border {
-    padding: rhythm(1) gutter(2);
+    @include grid-clearfix();
+    padding: rhythm(1.25) gutter(4);
 
     &:before,
     &:after {

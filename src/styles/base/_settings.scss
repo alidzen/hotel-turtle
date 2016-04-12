@@ -104,7 +104,7 @@ $gl-trs-duration: .5s;
 $gl-trs-function: ease;
 
 // Text transform letterspacing
-$gl-letter-spacing: .05em;
+$gl-letter-spacing: .05em; // 50va
 
 // BLOCKS
 // -----------------------------------
@@ -257,3 +257,11 @@ $select-item-background-color-hover: $input-bg-color;
 $select-item-border-width: 0;
 $select-item-border-color: $input-bd-color;
 $select-height: $btn-height; // rhythm unit
+
+
+// BORDER around element
+$border-height: 2px;
+$margin-x: 15px;
+$margin-x-desk: 30px;
+$margin-y: 20px;
+$margin-y-desk: 40px;

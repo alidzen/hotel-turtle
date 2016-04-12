@@ -22,6 +22,7 @@
 .l-services__row {
     @media #{$medium-up} {
         @include span(10 center);
+        padding: 0;
     }
 }
 
@@ -54,12 +55,10 @@ $tile-height-large: $tile-height-small * 3;
         .b-service {
             @include span(full);
             height: $tile-height-small;
-            padding-left: gutter(2);
         }
 
         .b-service__cnt {
             @include span(9);
-            padding-left: 0;
         }
 
         .b-service__img {
@@ -70,7 +69,6 @@ $tile-height-large: $tile-height-small * 3;
 
     @media #{$big-up} {
         @include span(8);
-        padding: 0;
     }
 }
 
@@ -100,7 +98,6 @@ $tile-height-large: $tile-height-small * 3;
     @media #{$medium-up} {
         @include span(full);
         height: $tile-height-small;
-        padding: 0;
 
         .b-service {
             height: $tile-height-small;
@@ -109,7 +106,6 @@ $tile-height-large: $tile-height-small * 3;
 
         .b-service__cnt {
             @include span(6);
-            padding: 0;
         }
 
         .b-service__img-wrap {
@@ -129,7 +125,6 @@ $tile-height-large: $tile-height-small * 3;
 
     @media #{$big-up} {
         @include span(8);
-        padding: 0;
     }
 }
 
@@ -195,7 +190,6 @@ $tile-height-large: $tile-height-small * 3;
     @media #{$medium-up} {
         @include span(6);
         height: $tile-height-large;
-        padding: 0;
 
         .b-service {
             height: $tile-height-large;
@@ -205,7 +199,6 @@ $tile-height-large: $tile-height-small * 3;
 
     @media #{$big-up} {
         @include span(4);
-        padding: 0;
     }
 }
 
@@ -220,7 +213,6 @@ $tile-height-large: $tile-height-small * 3;
         height: $tile-height-small;
         width: 100%;
         bottom: 0;
-        left: 0;
     }
 
     .b-service__img {
@@ -249,7 +241,6 @@ $tile-height-large: $tile-height-small * 3;
 
     @media #{$big-up} {
         @include span(4);
-        padding: 0;
 
         .b-service {
             height: $tile-height-large;
@@ -257,6 +248,7 @@ $tile-height-large: $tile-height-small * 3;
 
         .b-service__img-wrap {
             top: $tile-height-big;
+            left: 0;
         }
 
     }
@@ -285,7 +277,6 @@ $tile-height-large: $tile-height-small * 3;
     @media #{$big-up} {
         @include span(4);
         height: $tile-height-big;
-        padding: 0;
 
         .b-service {
             height: $tile-height-big;
@@ -321,7 +312,6 @@ $tile-height-large: $tile-height-small * 3;
     @media #{$medium-up} {
         @include span(4);
         height: $tile-height-big;
-        padding: 0;
 
         .b-service {
             height: $tile-height-big;
@@ -337,7 +327,6 @@ $tile-height-large: $tile-height-small * 3;
     @media #{$big-up} {
         @include span(4);
         height: $tile-height-small;
-        padding: 0;
 
         .b-service {
             height: $tile-height-small;
@@ -376,7 +365,6 @@ $tile-height-large: $tile-height-small * 3;
 
     @media #{$medium-up} {
         @include span(full);
-        padding: 0;
 
         .b-service {
             height: $tile-height-small;
@@ -384,7 +372,6 @@ $tile-height-large: $tile-height-small * 3;
 
         .b-service__cnt {
             @include span(8 last);
-            padding: 0;
         }
 
         .b-service__img-wrap {

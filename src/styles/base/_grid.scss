@@ -61,7 +61,7 @@ $grid-container-width: ($columns * $column-width) + ($columns * $gutter-width); 
     };
 }
 
-@mixin span($column) {
+@mixin span($column, $gutter: 'false') {
     $length: length($column);
 
     @if $length > 1 {
@@ -99,10 +99,13 @@ $grid-container-width: ($columns * $column-width) + ($columns * $gutter-width); 
         float: left;
     }
 
-    padding: {
-        left: gutter(1);
-        right: gutter(1);
-    };
+    @if ($gutter == 'true') {
+        padding: {
+            left: gutter(1);
+            right: gutter(1);
+        };
+    }
+
 }
 
 @mixin push($column: 1) {

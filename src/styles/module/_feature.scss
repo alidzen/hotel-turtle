@@ -5,7 +5,7 @@ $img-size: 85px;
     overflow: hidden;
     background-color: $white;
 
-    padding: rhythm(2) gutter(1);
+    padding: rhythm(2) gutter(2);
 
 
     @media #{$big-up} {
@@ -40,6 +40,11 @@ $img-size: 85px;
     };
 
     @media #{$medium-up} {
+        padding: {
+            right: gutter(4);
+            left: gutter(4);
+        };
+
         &:before,
         &:after {
             content: '';
