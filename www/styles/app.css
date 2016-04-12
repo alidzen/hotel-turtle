@@ -394,6 +394,20 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
       font-size: 28px;
       line-height: 46px; } }
 
+.b-gallery__ttl,
+.f-special {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "AGOpusHR-Bold", sans-serif;
+  letter-spacing: 0.05em; }
+
+.b-gallery__txt,
+.f-special-txt {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "ArnoPro-BoldItalic", sans-serif;
+  letter-spacing: 0.05em; }
+
 small {
   font-size: 14px; }
 
@@ -3383,10 +3397,6 @@ img {
   display: block;
   clear: both; }
 
-@media only screen and (max-width: 640px) {
-  .l-home__header {
-    margin-top: 60px; } }
-
 .l-home__menu {
   width: 20.83333%;
   float: left;
@@ -3416,13 +3426,20 @@ img {
       padding: 0; } }
 
 .l-home__gallery {
-  position: relative; }
+  position: relative;
+  background-color: #fefefd; }
+  @media only screen and (max-width: 1024px) {
+    .l-home__gallery {
+      margin-top: 60px; } }
 
 .l-home__booking {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%; }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .l-home__booking {
+      bottom: 60px; } }
 
 .l-home__cnt {
   padding-top: 36px;
@@ -4019,6 +4036,44 @@ select {
         background-image: url("/img/sprites@2x.png");
         background-size: 303px 231px; } }
 
+.b-gallery__cnt-wrap {
+  position: relative;
+  height: 100%; }
+
+.b-gallery__cnt {
+  position: absolute;
+  padding: 15px 20px;
+  top: 0;
+  right: 50%;
+  margin-right: -120px;
+  width: 240px;
+  background: url("/img/propose-bg-1.png") no-repeat 50% 50% rgba(254, 254, 253, 0.95); }
+  @media only screen and (min-width: 641px) {
+    .b-gallery__cnt {
+      right: 70px;
+      margin-right: 0; } }
+
+.b-gallery__propose {
+  padding: 30px 15px 20px;
+  border: 2px solid #bca064;
+  text-align: center;
+  color: #bca064; }
+
+.b-gallery__btn {
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #da3636;
+  border-color: #da3636;
+  color: #fefefd; }
+  .b-gallery__btn:hover {
+    background-color: #da3636;
+    border-color: #da3636; }
+
 .fotorama__nav--thumbs {
   text-align: center; }
 
@@ -4060,6 +4115,9 @@ select {
   height: 7px;
   border-width: 0; }
 
+.fotorama__nav__frame--dot:nth-child(5) .fotorama__dot {
+  background-color: rgba(218, 54, 54, 0.6); }
+
 .fotorama__nav__frame.fotorama__active .fotorama__dot {
   background-color: #005870;
   width: 9px;
@@ -4076,6 +4134,9 @@ select {
 .fotorama__nav {
   position: absolute;
   bottom: 0; }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .fotorama__nav {
+      bottom: 60px; } }
 
 .fotorama__nav--dots .fotorama__nav__frame {
   width: 18px;
@@ -4322,7 +4383,7 @@ select {
 .b-booking-form__info {
   font-size: 14px;
   color: #bca064; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 1024px) {
     .b-booking-form__info {
       display: none; } }
 
@@ -4817,7 +4878,7 @@ select {
     border-color: #da3636; }
   @media only screen and (min-width: 641px) {
     .b-room__specials {
-      top: 22px; } }
+      top: 24.5px; } }
 
 .b-room__message {
   font-family: "AGOpusHR-Bold", sans-serif;

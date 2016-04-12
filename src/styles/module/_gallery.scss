@@ -90,6 +90,57 @@ $gallery-dots-frame-height: 30px !default;
     }
 }
 
+.b-gallery__cnt-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.b-gallery__cnt {
+    position: absolute;
+    padding: 15px 20px;
+    top: 0;
+    right: 50%;
+    margin-right: - 240px / 2;
+    width: 240px;
+    background: url('/img/propose-bg-1.png') no-repeat 50% 50% rgba($white, .95);
+
+    @media #{$medium-up} {
+        right: 20px + 50px;
+        margin-right: 0;
+    }
+}
+
+.b-gallery__propose {
+    padding: 30px 15px 20px;
+    border: 2px solid $gold-2;
+    text-align: center;
+    color: $gold-2;
+}
+
+.b-gallery__btn {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $red;
+    border-color: $red;
+    color: $white;
+
+    &:hover {
+        background-color: $red;
+        border-color: $red;
+    }
+}
+
+.b-gallery__ttl {
+    @extend %f-special;
+}
+
+.b-gallery__txt {
+    @extend %f-special-txt;
+}
+
 
 // Thumbs
 .fotorama__nav--thumbs {
@@ -150,6 +201,13 @@ $gallery-dots-frame-height: 30px !default;
     border-width: 0;
 }
 
+// Custom style for slide with special propose
+.fotorama__nav__frame--dot:nth-child(5) {
+    .fotorama__dot {
+        background-color: rgba($red, .6);
+    }
+}
+
 .fotorama__nav__frame.fotorama__active .fotorama__dot {
     background-color: $green;
     width: $gallery-dots-size + 2;
@@ -169,6 +227,10 @@ $gallery-dots-frame-height: 30px !default;
 .fotorama__nav {
     position: absolute;
     bottom: 0;
+
+    @media #{$medium-only} {
+        bottom: 60px;
+    }
 }
 
 .fotorama__nav--dots .fotorama__nav__frame {

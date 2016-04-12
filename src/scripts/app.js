@@ -53,35 +53,6 @@ define('app', [
         }
     });
 
-    //Sticky nav
-    var $cntHeight = $(window).height(); // высота блока
-    // меняется в зависимотси от высоты экрана
-
-    $(window).resize(function() {
-        $cntHeight = $(window).height();
-    });
-
-    // show/hide sticky nav
-    $(window).scroll(function() {
-        var scrollPosition = $(window).scrollTop();
-
-        if (scrollPosition >= $cntHeight) {
-            if ($navMenu.hasClass(ACTIVE) === false) {
-                $navMenu.addClass(ACTIVE);
-                $datepickerHeader.datepicker('hide');
-                $selectHeader.selectric('close');
-            }
-        } else {
-            if ($burgerBtn.hasClass(ACTIVE)) {
-                return;
-            } else {
-                $navMenu.removeClass(ACTIVE);
-                $datepickerMenu.datepicker('hide');
-                $selectMenu.selectric('close');
-            }
-        }
-    });
-
     (function($forms) {
         if (!$forms.length) {
             return;
@@ -215,7 +186,7 @@ define('app', [
 
             $endDate.datepicker({
                 defaultDate: '+1w',
-                minDate: '+2d',
+                minDate: '+1d',
                 firstDay: 0,
                 dateFormat: 'dd-mm-yy',
                 numberOfMonths: 1,
@@ -271,6 +242,9 @@ define('app', [
 
     })($('.j-header-menu'));
 
+    // doc: https://github.com/alvarotrigo/pagePiling.js
+    // example: http://www.onextrapixel.com/2015/04/09/how-to-create-a-
+    // beautiful-fullscreen-single-scrolling-page-like-huge-inc/
     (function($fullPage) {
         if (!$fullPage.length) {
             return;
@@ -284,6 +258,8 @@ define('app', [
                 onLeave: function (index, nextIndex, direction) {
                     //reaching our last section? The one with our normal site?
                     if (nextIndex == 2) {
+                        $datepickerHeader.datepicker('hide');
+                        $selectHeader.selectric('close');
                         setTimeout(function() {
                             $navMenu.addClass(ACTIVE);
                         }, 900)
@@ -292,6 +268,8 @@ define('app', [
                     //leaving our last section? The one with our normal site?
                     if (index == 2) {
                         $navMenu.removeClass(ACTIVE);
+                        $datepickerMenu.datepicker('hide');
+                        $selectMenu.selectric('close');
                     }
                 }
             });

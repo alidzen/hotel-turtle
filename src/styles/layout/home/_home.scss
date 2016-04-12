@@ -1,9 +1,5 @@
 .l-home__header {
     @include grid-clearfix();
-
-    @media #{$small-only} {
-        margin-top: 60px; // menu height
-    }
 }
 
 .l-home__menu {
@@ -35,6 +31,11 @@
 
 .l-home__gallery {
     position: relative;
+    background-color: $white;
+
+    @media #{$medium-down} {
+        margin-top: 60px; // menu height
+    }
 }
 
 .l-home__booking {
@@ -42,6 +43,10 @@
     bottom: 0;
     left: 0;
     width: 100%;
+
+    @media #{$medium-only} {
+        bottom: 60px;
+    }
 }
 
 .l-home__cnt {

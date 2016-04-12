@@ -213,6 +213,22 @@ h2 {
     }
 }
 
+%f-special,
+.f-special {
+    font-size: 18px;
+    line-height: 27px;
+    font-family: $font-roman-bold;
+    letter-spacing: $gl-letter-spacing;
+}
+
+%f-special-txt,
+.f-special-txt {
+    font-size: 18px;
+    line-height: 27px;
+    font-family: $font-bold-italic;
+    letter-spacing: $gl-letter-spacing;
+}
+
 
 // SMALL
 $small-font-size: $base-font-size - 2 !default;
