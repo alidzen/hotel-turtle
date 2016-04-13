@@ -29,8 +29,8 @@ html(lang='ru')
         <![endif]-->
     body
         include blocks/_stick-menu
-        .l-wrap.j-full-page
-            section.l-header.l-limit-wrap-full.j-header.section
+        .l-wrap.l-limit-wrap-full.j-full-page
+            section.l-header.section.l-limit-wrap-full.j-header
                 .l-header__menu
                     include blocks/_menu
                 .l-header__booking-info
@@ -38,7 +38,7 @@ html(lang='ru')
                         block gallery
                     .l-header__booking
                         include blocks/_header-booking
-            section.section.pp-scrollable
+            section.section.pp-scrollable.l-limit-wrap-full
                 main.l-main
                     block content
 

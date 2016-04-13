@@ -105,6 +105,12 @@ img {
     }
 }
 
+.hide-on-touch {
+    @media #{$medium-down} {
+        display: none;
+    }
+}
+
 .show-on-mobile {
     @media #{$medium-up} {
         display: none;

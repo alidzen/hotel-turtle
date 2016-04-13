@@ -5,10 +5,9 @@
 
 .b-booking-form__form {
     display: flex;
-    height: 60px;
+    height: $booking-height;
     justify-content: space-around;
     align-items: center;
-    max-width: 1280px;
     margin-left: auto;
 }
 

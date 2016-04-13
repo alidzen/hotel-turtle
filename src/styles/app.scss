@@ -25,11 +25,16 @@
 @import 'module/tabs';
 @import 'module/map';
 @import 'module/map-tooltip';
+@import 'module/borders';
 
 //header
 @import 'module/header/nav';
 
 //blocks
+@import 'module/menu-logo';
+@import 'module/menu-contacts';
+@import 'module/menu-lang';
+@import 'module/menu-reviews';
 @import 'module/callback';
 @import 'module/booking-form';
 @import 'module/datepicker-reset';
@@ -41,9 +46,6 @@
 @import 'module/close-btn';
 @import 'module/card';
 
-// home
-@import 'module/home/menu-logo';
-@import 'module/home/menu-contacts';
-@import 'module/home/menu-lang';
-@import 'module/home/menu-reviews';
 
+// page
+@import 'module/cafe-gallery';

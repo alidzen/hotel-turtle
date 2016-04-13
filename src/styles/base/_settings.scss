@@ -54,7 +54,7 @@ $headings-margin-trailer: 1;
 $small-font-size: $base-font-size - 2;
 
 // Paragraph
-$paragraph-margin-bottom: 3; // rhythm unit
+$paragraph-margin-bottom: 1; // rhythm unit
 
 // Links
 $link-color: $black;
@@ -265,3 +265,6 @@ $margin-x: 15px;
 $margin-x-desk: 30px;
 $margin-y: 20px;
 $margin-y-desk: 40px;
+
+// Common vars
+$booking-height: 60px;
