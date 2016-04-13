@@ -66,6 +66,24 @@ img {
     }
 }
 
+%b-top-dash-100 {
+    $dash-size: 100px;
+    position: relative;
+    padding-top: rhythm(1);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: - $dash-size / 2;
+        display: block;
+        width: $dash-size;
+        height: 4px;
+        background-color: $gold-2;
+    }
+}
+
 .b-ruble {
     font-family: $font-ruble;
     text-transform: lowercase;

@@ -1,8 +1,11 @@
 .l-showcase {
+    @extend %l-row;
     @include grid-clearfix();
+    @include margin-trailer(2);
     background-color: $gold;
 
     @media #{$big-up} {
+        @include margin-trailer(3);
         height: 600px;
     }
 }
