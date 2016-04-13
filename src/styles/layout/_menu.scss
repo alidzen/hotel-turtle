@@ -1,4 +1,4 @@
-.l-home-menu {
+.l-menu {
     @include transition(opacity);
     @include padding-leader(1);
     @include padding-trailer(.5);
@@ -19,15 +19,15 @@
         }
 
         &.is-smaller {
-            .l-home-menu__contacts {
+            .l-menu__contacts {
                 @include margin-trailer(.5);
             }
 
-            .l-home-menu__logo {
+            .l-menu__logo {
                 @include margin-trailer(.5);
             }
 
-            .l-home-menu__nav {
+            .l-menu__nav {
                 @include margin-trailer(.5);
             }
 
@@ -38,7 +38,7 @@
     }
 }
 
-.l-home-menu__logo {
+.l-menu__logo {
     @media #{$big-up} {
         @include margin-trailer(1);
     }
@@ -48,19 +48,19 @@
     }
 }
 
-.l-home-menu__nav {
+.l-menu__nav {
     @media #{$big-up} {
         @include margin-trailer(1);
     }
 }
 
-.l-home-menu__contacts {
+.l-menu__contacts {
     @media #{$big-up} {
         @include margin-trailer(1);
     }
 }
 
-.l-home-menu__reviews {
+.l-menu__reviews {
     @media #{$big-up} {
         display: none;
     }

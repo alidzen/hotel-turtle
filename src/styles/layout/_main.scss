@@ -4,10 +4,6 @@
     min-height: 100vh;
 }
 
-.l-header {
-    flex: 0 0 auto;
-}
-
 .l-main {
     flex: 1 0 auto;
 }
@@ -74,5 +70,20 @@
 
     @media #{$medium-up} {
         @include margin-trailer(0);
+    }
+}
+
+.l-main-wrap {
+    @include rhythm-padding(1.5);
+    background: url('/img/home-bg.svg') 50% 50% $white-2;
+    background-size: cover;
+
+    @media #{$medium-up} {
+        @include rhythm-padding(2.5);
+    }
+
+    @media #{$big-up} {
+        @include padding-leader(3.5);
+        @include padding-trailer(2);
     }
 }

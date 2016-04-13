@@ -3,15 +3,11 @@
 }
 
 @import 'main';
+@import 'header';
+@import 'menu';
+@import 'stick-menu';
 @import 'feature';
 @import 'booking-rooms';
 @import 'article';
 @import 'services';
-@import 'stick-menu';
-
-// PAGES
-// home
-@import 'home/home';
-@import 'home/home-menu';
-
 

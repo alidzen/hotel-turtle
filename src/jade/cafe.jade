@@ -1,0 +1,245 @@
+extends _layout
+block title
+    title Ресторан
+block gallery
+
+block content
+    .l-home
+        .l-home__cnt
+            section.l-article.l-limit-wrap
+                .l-article__cnt
+                    .b-article
+                        .b-article__border
+                            .b-article__img-wrap
+                                img(src="/img/feature-1.png" alt="Зарисовка дома Ф.М. Достоевского")
+                            article.b-article__cnt
+                                .b-article__header
+                                    .b-article__ttl-note В каждой детали
+                                    h1.b-article__ttl Дух Петербурга
+                                p Бутик-отель «Ахиллес и Черепаха» находится в историческом центре Санкт-Петербурга рядом с известным домом Ф.М. Достоевского, который сейчас занимает литературно-мемориальный музей писателя. Расположенный в здании доходного дома XIX века, отель наполнен истинным духом Петербурга – им пронизана каждая деталь: от натуральных материалов в дизайне до открывающегося из окон вида на мятежное петербургское небо. Классические интерьеры номеров, каждый из которых обладает своим характером и историей, погружают в атмосферу культурной столицы России, а мансардные окна и небольшой уютный дворик напоминают о романтике камерных отелей Франции и Италии.
+                                .b-article__btn
+                                    a(href="#").b-btn.b-btn_width_auto Ощутить вдохновение
+
+            section.l-feature
+                .l-feature__cnt
+                    .b-feature
+                        .b-feature__img-wrap
+                            img(src="/img/feature-2.png" alt="Морская черепаха")
+                        .b-feature__cnt
+                            .b-feature__header
+                                h1.b-feature__ttl 10 уютных номеров
+                                .b-feature__ttl-note для любого типа поездки
+                            ul.b-feature__list
+                                li.b-feature__item
+                                    .b-feature__item-img.b-feature__item-img_img_bed
+                                    .b-feature__item-txt Комфортные спальные места
+                                li.b-feature__item
+                                    .b-feature__item-img.b-feature__item-img_img_window
+                                    .b-feature__item-txt Мансардные окна
+                                li.b-feature__item
+                                    .b-feature__item-img.b-feature__item-img_img_fan
+                                    .b-feature__item-txt Кондиционер
+                                li.b-feature__item
+                                    .b-feature__item-img.b-feature__item-img_img_eat
+                                    .b-feature__item-txt Вместительный шкаф
+                                li.b-feature__item
+                                    .b-feature__item-img.b-feature__item-img_img_wi-fi
+                                    .b-feature__item-txt Высокоскоростной Wi-Fi
+
+            section.l-booking-rooms
+                .l-booking-rooms__row
+                    .l-booking-rooms__item
+                        .b-room
+                            a(href="#").b-room__cnt-link
+                            .b-room__border
+                                .b-room__specials.b-btn.b-btn_width_auto Спецпредложение
+                                .b-room__img-wrap
+                                    .b-room__img(style="background-image: url('/img/room-1.jpg')")
+                                .b-room__cnt
+                                    .b-room__cnt-wrap
+                                        .b-room__ttl Стандартный одноместный номер
+                                        .b-room__descr Идеально для путешественников
+                                        .b-room__booking
+                                            span.b-room__price 6 400 <span class="b-ruble">a</span> <span class="b-room__old-price">7 900 <span class="b-ruble">a</span></span>
+                                            span.b-room__time &nbsp;за 3 ночи
+                                        .b-room__btn
+                                            a(href="#").b-btn.b-btn_width_auto.b-btn_bg_white Забронировать
+
+                    .l-booking-rooms__item
+                        .b-room
+                            a(href="#").b-room__cnt-link
+                            .b-room__border
+                                .b-room__specials.b-room__specials_bg-color_blue.b-btn.b-btn_width_auto Популярно
+                                .b-room__img-wrap
+                                    .b-room__img(style="background-image: url('/img/room-1.jpg')")
+                                .b-room__cnt
+                                    .b-room__cnt-wrap
+                                        .b-room__ttl Стандартный двухместный номер
+                                        .b-room__descr идеально для семейной пары
+                                        .b-room__booking
+                                            span.b-room__price 7 900 <span class="b-ruble">a</span> <span class="b-room__old-price">7 900 <span class="b-ruble">a</span></span>
+                                            span.b-room__time &nbsp;за 3 ночи
+                                        .b-room__btn
+                                            a(href="#").b-btn.b-btn_width_auto.b-btn_bg_white Забронировать
+
+                    .l-booking-rooms__item
+                        .b-room
+                            a(href="#").b-room__cnt-link
+                            .b-room__border
+                                .b-room__img-wrap
+                                    .b-room__img(style="background-image: url('/img/room-1.jpg')")
+                                .b-room__cnt
+                                    .b-room__cnt-wrap
+                                        .b-room__ttl Одноместный номер Комфорт
+                                        .b-room__descr идеально для бизнес-гостя
+                                        .b-room__booking <span class="b-room__time">от</span>&nbsp;
+                                            | <span class="b-room__price">5400 <span class="b-ruble">a</span></span>&nbsp;<span class="b-room__time">
+                                            | до</span>&nbsp;<span class="b-room__price">7400 <span class="b-ruble">a</span></span>
+                                        .b-room__btn
+                                            a(href="#").b-btn.b-btn_width_auto.b-btn_bg_white Забронировать
+
+                    .l-booking-rooms__item
+                        .b-room
+                            a(href="#").b-room__cnt-link
+                            .b-room__border
+                                .b-room__img-wrap
+                                    .b-room__img(style="background-image: url('/img/room-1.jpg')")
+                                .b-room__cnt
+                                    .b-room__cnt-wrap
+                                        .b-room__ttl Двухместный номер Делюкс
+                                        .b-room__descr идеально для молодоженов
+                                        .b-room__booking
+                                            .b-room__message Нет доступных номеров в указанные даты
+
+            section.l-article.l-limit-wrap
+                .l-article__cnt
+                    .b-article.b-article_theme_gold
+                        .b-article__border
+                            .b-article__img-wrap
+                                img(src="/img/feature-3.png" alt="Зарисовка дома Ф.М. Достоевского")
+                            article.b-article__cnt
+                                .b-article__header
+                                    h1.b-article__ttl Нашим гостям
+                                    .b-article__ttl-note особенно нравится:
+                                ul.b-article__features
+                                    li.b-article__feature
+                                        .b-article__txt-ttl Приветливый персонал
+                                        p Мы не просто поможем с заселением в отель, но и будем все время на связи, чтобы ответить на ваши вопросы и решить любую проблему.
+                                    li.b-article__feature
+                                        .b-article__txt-ttl Атмосфера отеля
+                                        p Мы гордимся созданным уютом и с уверенностью можем сказать, что остановившись в нашем бутик-отеле, вы проникнитесь духом настоящего Петербурга.
+                                    li.b-article__feature
+                                        .b-article__txt-ttl Прекрасные завтраки
+                                        p Наш шеф-повар готовит вкусные и разнообразные блюда в лучших европейских традициях, которые непременно создадут хорошее настроение, поэтому их так ценят наши гости.
+
+                                .b-article__btn
+                                    a(href="#").b-btn.b-btn_width_auto Ощутить вдохновение
+
+            section.l-services
+                .l-services__header.l-limit-wrap
+                    .l-services__row
+                        .b-article
+                            .b-feature__header
+                                h1.b-feature__ttl Дополнительный услуги
+                                .b-feature__ttl-note для гостей отеля
+
+                .l-services__tiles.l-limit-wrap.no-padding
+                    .l-services__tile.l-services__tile_numb_1
+                        a(href="#").b-service
+                            .b-service__cnt
+                                .b-service__header
+                                    .b-service__ttl-note Ранний заезд и поздний выезд
+                                p В ритме современного мира не всегда удается следовать
+                                    | строгим правилам заселения в отель. У нас вы можете
+                                    | воспользоваться услугой, которая решит проблему – ранний
+                                    | заезд доступен с шести часов утра, а поздний выезд – до шести часов вечера.
+                            .b-service__img
+
+                    .l-services__tile.l-services__tile_numb_3
+                        a(href="#").b-service
+                            .b-service__cnt
+                                .b-service__header
+                                    .b-service__ttl-note Трансфер
+                                p Планируя поездку, оставьте дорожные хлопоты нам: мы всегда готовы встретить вас и помочь с комфортом добраться до отеля или пункта вашего отправления.
+                            .b-service__img
+
+                    .l-services__tile.l-services__tile_numb_7.show-on-touch
+                        a(href="#").b-service
+                            .b-service__cnt
+                                .b-service__header
+                                    .b-service__ttl-note Оперативная полиграфия
+                                p В здании отеля располагается типография «Трактат», где бизнес-гости
+                                    | могут оперативно воплотить в жизнь идеи в области дизайна и полиграфии.
+                            .b-service__img
+
+                    .l-services__tile.l-services__tile_numb_2
+                        a(href="#").b-service.has-lines
+                            .b-service__border
+                                .b-service__cnt
+                                    .b-service__header
+                                        .b-service__ttl-note Завтрак в номер
+                                    p Насладитесь вкусными европейскими блюдами от нашего шеф-повара не выходя из номера.
+                            .b-service__img-wrap
+                                .b-service__img
+
+                    .l-services__tile.l-services__tile_numb_4
+                        a(href="#").b-service.has-lines
+                            .b-service__border
+                                .b-service__header
+                                    .b-service__ttl-note Бизнес центр
+                                p В деловых поездках просто необходимо тихое место, где можно спокойно и комфортно поработать. В нашем отеле для деловых путешественников доступен зал, оборудованный доступом в интернет по WiFi, компьютером и принтером, для работы и проведения переговоров.
+                            .b-service__img-wrap
+                                .b-service__img
+
+                    .l-services__tile.l-services__tile_numb_5
+                        a(href="#").b-service.has-lines
+                            .b-service__border
+                                .b-service__header
+                                    .b-service__ttl-note Залы для мероприятий
+                                p Для деловых гостей города мы предлагаем возможность арендовать один из пяти
+                                    | залов с вместимостью до 130 человек. Здесь вы можете реализовать любые
+                                    | типы мероприятий – от деловых переговоров до крупных конференций.
+                            .b-service__img-wrap
+                                .b-service__img
+
+                    .l-services__tile.l-services__tile_numb_6.hide-on-tablet
+                        a(href="#").b-service.has-lines
+                            .b-service__border
+                                .b-service__header
+                                    .b-service__ttl-note Вызов такси
+                                p По вашей просьбе персонал отеля бесплатно вызовет такси из отеля в любую точку города.
+                            .b-service__img-wrap
+                                .b-service__img
+
+                    .l-services__tile.l-services__tile_numb_7.show-on-desktop
+                        a(href="#").b-service
+                            .b-service__cnt
+                                .b-service__header
+                                    .b-service__ttl-note Типография «Трактат»
+                                p В здании отеля располагается типография, специалисты которой оперативно изготовят визитки, свадебные приглашения и другую полиграфическую продукцию.
+                            .b-service__img
+
+                    .l-services__tile.l-services__tile_numb_8
+                        a(href="#").b-service.has-lines
+                            .b-service__border
+                                .b-service__cnt
+                                    .b-service__header
+                                        .b-service__ttl-note Студия красоты
+                                    p Гостям отеля предоставляется скидка 15% на все услуги студии, профессионалы которой помогут подготовиться к важной встрече или просто насладиться отдыхом.
+                            .b-service__img-wrap
+                                .b-service__img
+
+            section.l-article.l-limit-wrap
+                .l-article__cnt
+                    .b-card
+                        .b-card__border
+                            .b-card__bg-img
+                                img(src="/img/card/card-1.png" alt="Кувшин")
+                            .b-card__cnt
+                                .b-card__header
+                                    .b-card__ttl-note Ресторан
+                                    h1.b-card__ttl &laquo;Симпозиум&raquo;
+                                .b-card__descr
+                                    p Весной 2016 года ожидается открытие ресторанного комплекса, где разместятся кафе, ресторан, закрытый сигарный клуб и небольшой банкетный зал. Меню ресторана, в котором безупречно сочетаются блюда европейской кухни и авторские задумки шеф-повара, придется по вкусу даже самому искушенному гурману. Уже сейчас для гостей отеля готовит вкусные завтраки шеф-повар ресторана Алексей Ермаков.
+                                a(href="#").b-card__link Подробнее
+                            .b-card__gallery

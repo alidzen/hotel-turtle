@@ -30,8 +30,14 @@ html(lang='ru')
     body
         include blocks/_stick-menu
         .l-wrap.j-full-page
-            section.l-home__header.l-limit-wrap-full.j-header.section
-                include blocks/_home-header
+            section.l-header.l-limit-wrap-full.j-header.section
+                .l-header__menu
+                    include blocks/_menu
+                .l-header__booking-info
+                    .l-header__gallery
+                        block gallery
+                    .l-header__booking
+                        include blocks/_header-booking
             section.section.pp-scrollable
                 main.l-main
                     block content

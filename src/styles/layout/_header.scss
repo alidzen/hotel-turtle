@@ -1,8 +1,8 @@
-.l-home__header {
+.l-header {
     @include grid-clearfix();
 }
 
-.l-home__menu {
+.l-header__menu {
     @include span(2.5);
     background-color: $white;
     height: 100vh;
@@ -14,7 +14,7 @@
     }
 }
 
-.l-home__booking-info {
+.l-header__booking-info {
     position: relative;
 
     @media #{$medium-up} {
@@ -29,7 +29,7 @@
     }
 }
 
-.l-home__gallery {
+.l-header__gallery {
     position: relative;
     background-color: $white;
 
@@ -38,7 +38,7 @@
     }
 }
 
-.l-home__booking {
+.l-header__booking {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -46,20 +46,5 @@
 
     @media #{$medium-only} {
         bottom: 60px;
-    }
-}
-
-.l-home__cnt {
-    @include rhythm-padding(1.5);
-    background: url('/img/home-bg.svg') 50% 50% $white-2;
-    background-size: cover;
-
-    @media #{$medium-up} {
-        @include rhythm-padding(2.5);
-    }
-
-    @media #{$big-up} {
-        @include padding-leader(3.5);
-        @include padding-trailer(2);
     }
 }
