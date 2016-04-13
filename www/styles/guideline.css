@@ -2963,7 +2963,7 @@ img {
 .l-header__menu {
   width: 20.83333%;
   float: left;
-  background-color: #fefefd;
+  background: url("/img/menu-bg.png") 100% 100% no-repeat #fefefd;
   height: 100vh;
   padding: 0;
   overflow-y: auto; }
