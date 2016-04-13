@@ -1,0 +1,22 @@
+.l-showcase {
+    @include grid-clearfix();
+    background-color: $gold;
+
+    @media #{$big-up} {
+        height: 600px;
+    }
+}
+
+.l-showcase__gallery {
+    @media #{$big-up} {
+        @include span(7.5);
+    }
+}
+
+.l-showcase__descr {
+
+    @media #{$big-up} {
+        @include span(4.5 last);
+        height: 100%;
+    }
+}

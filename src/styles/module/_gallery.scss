@@ -47,7 +47,7 @@ $gallery-dots-frame-height: 30px !default;
     @include transition(background-color);
     @include squish-text;
     position: absolute;
-    display: block;
+    display: none;
     width: $arrow-size;
     height: $arrow-size;
     top: 50%; // dots
@@ -71,6 +71,10 @@ $gallery-dots-frame-height: 30px !default;
 
     &.is-disabled {
         display: none;
+    }
+
+    @media #{$big-up} {
+        display: block;
     }
 }
 
@@ -186,7 +190,6 @@ $gallery-dots-frame-height: 30px !default;
     } @else if ($gallery-label-position == 'top') {
         margin-top: rhythm($gallery-label-height);
     }
-    height: 60px; // place for form block
     padding: 15px 0;
 }
 

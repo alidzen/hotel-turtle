@@ -276,5 +276,20 @@ define('app', [
         });
     })($('.j-full-page'));
 
+    // Change gallery param
+    (function($gallery) {
+        if (!$gallery.length) {
+            return;
+        }
+
+        var $param = $gallery.children('.b-gallery__base');
+
+        if (matchMedia('only screen and (max-width: 640px)').matches) {
+            // calculate height for block
+
+            $param.data('height', 400);
+        }
+    })($('.j-gallery_theme_mobile'));
+
     return {};
 });

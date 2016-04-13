@@ -39,9 +39,13 @@
 }
 
 .l-footer__cnt {
-    @include rhythm-padding(1.5);
+    @include rhythm-padding(.5);
     background: url('/img/footer-bg.png') no-repeat 50% 50%;
     background-size: cover;
+
+    @media #{$big-up} {
+        @include rhythm-padding(1.5);
+    }
 
 }
 
@@ -85,5 +89,11 @@
     @media #{$big-up} {
         @include padding-leader(3.5);
         @include padding-trailer(2);
+    }
+
+    &.is-stick {
+        @media #{$big-up} {
+            padding-top: 60px;
+        }
     }
 }

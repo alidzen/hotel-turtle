@@ -1,0 +1,49 @@
+// LAYOUT
+@import '../layout/module/showcase';
+
+.b-showcase {
+    @include padding-leader(2);
+    padding: {
+        right: 20px;
+        left: 20px;
+    };
+
+    @media #{$medium-up} {
+        padding: {
+            right: 40px;
+            left: 40px;
+        };
+    }
+
+    @media #{$big-up} {
+        @include padding-leader(3.5);
+    }
+}
+
+.b-showcase__cnt {
+    color: $white;
+}
+
+.b-showcase__header {
+    @include padding-trailer(1.5);
+    @include margin-trailer(1.5);
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 4px;
+        background-color: $white;
+    }
+}
+
+.b-showcase__ttl-note {
+    @extend %f-ttl-note;
+}
+
+.b-showcase__ttl {
+    @extend %f-ttl;
+}
