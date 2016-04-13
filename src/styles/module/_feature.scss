@@ -20,7 +20,7 @@ $img-size: 85px;
     z-index: z('default');
 
     img {
-        opacity: .4;
+        opacity: .2;
     }
 
     @media #{$medium-up} {
@@ -32,6 +32,7 @@ $img-size: 85px;
 
 .b-feature__cnt {
     @include rhythm-padding(1.5);
+    text-align: center;
     position: relative;
     border: 2px solid $gold-2;
     padding: {
@@ -39,32 +40,41 @@ $img-size: 85px;
         left: gutter(1);
     };
 
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: $white;
+        z-index: z('zero');
+    }
+
+    &:before {
+        top: -2px;
+        right: -2px;
+        width: 2px;
+        height: 113px;
+    }
+
+    &:after {
+        top: -2px;
+        height: 2px;
+        width: 251px;
+        right: 0;
+    }
+
     @media #{$medium-up} {
+        text-align: left;
         padding: {
             right: gutter(4);
             left: gutter(4);
         };
 
-        &:before,
-        &:after {
-            content: '';
-            position: absolute;
-            background-color: $white;
-            z-index: z('zero');
-        }
-
         &:before {
-            top: -2px;
-            right: -2px;
-            width: 2px;
             height: 102px;
         }
 
         &:after {
-            top: -2px;
-            height: 2px;
             width: 257px;
-            right: 0;
         }
     }
 
@@ -87,6 +97,7 @@ $img-size: 85px;
 
 .b-feature__ttl {
     @extend %f-ttl;
+    @include margin-trailer(.25);
     color: $green;
     position: relative;
 }

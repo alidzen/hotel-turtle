@@ -16,7 +16,7 @@
     width: 100%;
     z-index: z('default');
     left: 0;
-    opacity: .4;
+    opacity: .2;
 
     img {
         max-width: none;
@@ -38,8 +38,8 @@
 .b-article__cnt {
     position: relative;
     padding: {
-        right: gutter(1);
-        left: gutter(1);
+        right: gutter(2);
+        left: gutter(2);
     };
     z-index: z('default');
 

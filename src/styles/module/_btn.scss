@@ -23,7 +23,6 @@ $btn-bg-color-disabled: #eee !default;
 .b-btn {
     @extend %f-btn;
     @include transition(color, background-color, border-color);
-    @include btn-vertical-paddings($btn-height);
     color: $btn-color;
     background-color: $btn-bg-color;
     border: $btn-bd-width solid $btn-bd-color;
@@ -35,8 +34,10 @@ $btn-bg-color-disabled: #eee !default;
     cursor: pointer;
     outline: none;
     padding: {
-        left: gutter(2);
-        right: gutter(2);
+        top: 3px;
+        right: gutter(1.5);
+        bottom: 5px;
+        left: gutter(1.5);
     };
 
     &:hover,
