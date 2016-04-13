@@ -1,3 +1,10 @@
+// BORDER around element, only room
+$border-height: 2px;
+$margin-y-room: 30px;
+$margin-y-desk-room: 40px;
+$btns-pos: 13.5px;
+$btns-pos-desk: 23.5px;
+
 .b-room {
     position: relative;
     display: block;
@@ -15,15 +22,15 @@
     &:after {
         content: '';
         position: absolute;
-        top: $margin-y;
-        height: calc(100% - #{$margin-y * 2});
+        top: $margin-y-room;
+        height: calc(100% - #{$margin-y-room * 2});
         width: $border-height;
         background-color: $gold-2;
         z-index: z('default');
 
         @media #{$medium-up} {
-            top: $margin-y-desk;
-            height: calc(100% - #{$margin-y-desk * 2});
+            top: $margin-y-desk-room;
+            height: calc(100% - #{$margin-y-desk-room * 2});
         }
     }
 
@@ -71,18 +78,18 @@
     }
 
     &:before {
-        top: $margin-y;
+        top: $margin-y-room;
 
         @media #{$medium-up} {
-            top: $margin-y-desk;
+            top: $margin-y-desk-room;
         }
     }
 
     &:after {
-        bottom: $margin-y;
+        bottom: $margin-y-room;
 
         @media #{$medium-up} {
-            bottom: $margin-y-desk;
+            bottom: $margin-y-desk-room;
         }
     }
 }
@@ -169,16 +176,16 @@
     transform: translateX(-50%);
     position: absolute;
     z-index: z('absolute-border');
-    bottom: $margin-y / 2 + $border-height;
+    bottom: $btns-pos;
 
     @media #{$medium-up} {
-        bottom: $margin-y-desk / 2 + $border-height;
+        bottom: $btns-pos-desk;
     }
 }
 
 .b-room__specials {
     position: absolute;
-    top: $margin-y / 2 + $border-height;
+    top: $btns-pos;
     left: 50%;
      transform: translateX(-50%);
     width: 185px;
@@ -196,7 +203,7 @@
     }
 
     @media #{$medium-up} {
-        top: 22.5px;
+        top: $btns-pos-desk;
     }
 }
 

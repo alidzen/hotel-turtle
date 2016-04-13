@@ -213,6 +213,7 @@ $tile-height-large: $tile-height-small * 3;
         height: $tile-height-small;
         width: 100%;
         bottom: 0;
+        left: 0;
     }
 
     .b-service__img {
@@ -232,6 +233,7 @@ $tile-height-large: $tile-height-small * 3;
 
         .b-service__img-wrap {
             top: $tile-height-big;
+            left: 0;
         }
 
         .b-service__img {

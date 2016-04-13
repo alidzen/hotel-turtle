@@ -7,8 +7,8 @@
     overflow: hidden;
     padding: {
         top: rhythm(1.5);
-        right: gutter(1);
-        left: gutter(1);
+        right: gutter(2);
+        left: gutter(2);
         bottom: rhythm(.5);
     };
 
@@ -31,8 +31,8 @@
     @media #{$medium-up} {
         padding: {
             top: rhythm(1.25);
-            right: gutter(3);
-            left: gutter(3);
+            right: gutter(2);
+            left: gutter(2);
             bottom: rhythm(.5);
         };
     }
@@ -102,7 +102,7 @@
 
 .b-service__border {
     @include grid-clearfix();
-    padding: rhythm(1.25) gutter(4);
+    padding: rhythm(1.25) gutter(2);
 
     &:before,
     &:after {
