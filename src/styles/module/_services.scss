@@ -144,6 +144,7 @@
 
 .b-service__img {
     @include transition(transform);
+    transition-duration: .75s;
     position: absolute;
     width: 100%;
     right: 0;

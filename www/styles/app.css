@@ -4841,9 +4841,9 @@ select {
   .b-room:hover .b-room__cnt {
     color: #bca064; }
   .b-room:hover .b-room__img {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2); }
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
   .b-room:before, .b-room:after {
     content: '';
     position: absolute;
@@ -4909,6 +4909,7 @@ select {
   transition-property: transform, -webkit-transform;
   transition-duration: 0.5s;
   transition-timing-function: ease;
+  transition-duration: .75s;
   height: 310px;
   background: 50% 50% no-repeat;
   background-size: cover; }
@@ -5213,6 +5214,7 @@ select {
   transition-property: transform, -webkit-transform;
   transition-duration: 0.5s;
   transition-timing-function: ease;
+  transition-duration: .75s;
   position: absolute;
   width: 100%;
   right: 0;

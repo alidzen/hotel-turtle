@@ -14,7 +14,7 @@ $btns-pos-desk: 23.5px;
             color: $gold-2;
         }
         .b-room__img {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
 
@@ -100,6 +100,7 @@ $btns-pos-desk: 23.5px;
 
 .b-room__img {
     @include transition(transform);
+    transition-duration: .75s;
     height: 310px;
     background: 50% 50% no-repeat;
     background-size: cover;
