@@ -22,6 +22,9 @@ define('app', [
     var $burgerBtn = $('.j-menu-btn');
     var $container = $('body, html');
     var $header = $('.j-header');
+    var $bookingPopup = $('.j-booking-popup');
+    var $bookingPopupCnt = $('.j-booking-popup__cnt');
+    var $bookBtn = $('.j-booking-btn');
 
     // inputs in for booking
     var $datepickerMenu = $navMenu.find('.j-date-inp');
@@ -36,7 +39,6 @@ define('app', [
         var isActive = $self.hasClass(ACTIVE);
 
         if (isActive) {
-            // move cnt only on desktop
             $menuCnt.fadeOut();
             setTimeout(function() {
                 $self.removeClass(ACTIVE);
@@ -45,11 +47,69 @@ define('app', [
                 $(window).scrollTop(pos);
             }, 300);
         } else {
-            pos = $(window).scrollTop();
-            $self.addClass(ACTIVE);
-            $menu.addClass(ACTIVE);
-            $container.addClass(ACTIVE);
-            $menuCnt.fadeIn();
+            // first remove booking popup
+            if ($bookBtn.hasClass(ACTIVE)) {
+                $bookBtn.removeClass(ACTIVE);
+                $bookBtn.text('Выбрать номер');
+                $bookingPopupCnt.fadeOut();
+
+                setTimeout(function() {
+                    $bookingPopup.removeClass(ACTIVE);
+                }, 300);
+
+                setTimeout(function() {
+                    $self.addClass(ACTIVE);
+                    $menu.addClass(ACTIVE);
+                    $menuCnt.fadeIn();
+                }, 600)
+            } else {
+                pos = $(window).scrollTop();
+                $self.addClass(ACTIVE);
+                $menu.addClass(ACTIVE);
+                $container.addClass(ACTIVE);
+                $menuCnt.fadeIn();
+            }
+        }
+    });
+
+    $bookBtn.click(function() {
+        var $self = $(this);
+        var isActive = $self.hasClass(ACTIVE);
+        var text = isActive ? 'Выбрать номер' : 'Закрыть';
+
+        if (isActive) {
+            $bookingPopupCnt.fadeOut();
+            setTimeout(function() {
+                $self.removeClass(ACTIVE);
+                $self.text(text);
+                $bookingPopup.removeClass(ACTIVE);
+                $container.removeClass(ACTIVE);
+                $(window).scrollTop(pos);
+            }, 300);
+        } else {
+            // first remove booking popup
+            if ($burgerBtn.hasClass(ACTIVE)) {
+                $burgerBtn.removeClass(ACTIVE);
+                $menuCnt.fadeOut();
+
+                setTimeout(function() {
+                    $menu.removeClass(ACTIVE);
+                }, 300);
+
+                setTimeout(function() {
+                    $self.addClass(ACTIVE);
+                    $self.text(text);
+                    $bookingPopup.addClass(ACTIVE);
+                    $bookingPopupCnt.fadeIn();
+                }, 600)
+            } else {
+                pos = $(window).scrollTop();
+                $self.addClass(ACTIVE);
+                $self.text(text)
+                $bookingPopup.addClass(ACTIVE);
+                $container.addClass(ACTIVE);
+                $bookingPopupCnt.fadeIn();
+            }
         }
     });
 

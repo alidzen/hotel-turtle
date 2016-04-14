@@ -3122,9 +3122,9 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #fefefd;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
   position: fixed;
   width: 100%;
   top: 0;
