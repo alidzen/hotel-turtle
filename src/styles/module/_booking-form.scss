@@ -1,25 +1,36 @@
 .b-booking-form {
-    background: url('/img/form-bg.jpg') $green;
+    background: url('/img/form-bg.jpg') no-repeat 50% 50% $green;
     background-size: cover;
 }
 
 .b-booking-form__form {
     display: flex;
-    height: $booking-height;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
+    flex-flow: column nowrap;
+
+    @media #{$big-up} {
+        height: $booking-height;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+    }
 }
 
 .b-booking-form__col {
-    flex: 0 1 150px;
+    @media #{$big-up} {
+        flex: 0 1 150px;
+    }
 
     @media #{$large-up} {
         flex-basis: 200px;
     }
 
     .selectric-wrapper {
-        width: 150px;
+        width: 200px;
+
+        @media #{$big-up} {
+            width: 150px;
+        }
 
         @media #{$large-up} {
             width: 200px;
@@ -47,8 +58,37 @@
 }
 
 // STATE
+.b-booking-form_theme_popup {
+    $btn-size: 200px;
+    background-color: transparent;
 
-.b-booking-form_theme_stick {
-    background: none;
+    .b-booking-form__col {
+        @include margin-trailer(1);
+        width: $btn-size;
+
+        &:nth-child(3) {
+            @include margin-trailer(1.5);
+        }
+    }
+
+    .b-booking-form__btn {
+        width: $btn-size;
+        background-color: $green;
+        //border: 2px solid $gold-2;
+    }
+
+    .selectric-wrapper {
+        width: $btn-size;
+    }
+
+    .b-booking-form__inp {
+        background-color: $white;
+        color: $gold-2;
+        border-color: $gold-2;
+
+        &::placeholder {
+            color: $gold-2;
+        }
+    }
 }
 

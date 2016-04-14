@@ -10,7 +10,7 @@
                     </a>
                 </div>
                 <div class="l-stick-menu__form show-on-desktop">
-                    <div class="b-booking-form b-booking-form_theme_stick">
+                    <div class="b-booking-form">
                         <form action="/test/ajax/request.php" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form j-date-booking">
                             <div class="b-booking-form__col"> <input type="text" placeholder="Дата заезда" class="b-booking-form__inp j-date-inp j-date-from" /> </div>
                             <div class="b-booking-form__col"> <input type="text" placeholder="Дата отъезда" class="b-booking-form__inp j-date-inp j-date-to" /> </div>
@@ -58,7 +58,8 @@
               <path d="M412.6 80.4c-5.2 2.3-9.6 6.1-12.6 11-.4.7 1 1.3 1.4.7 2.9-4.7 7-8.3 12.1-10.6.9-.4-.2-1.4-.9-1.1z"></path>
             </g>
           </svg> </div>
-                <div class="l-stick-menu__btn show-on-touch"><a href="#" class="b-btn b-btn_width_auto">Выбрать номер</a></div>
+                <!-- show booking popup on click-->
+                <div class="l-stick-menu__btn show-on-touch"><a href="javascript:;" class="b-btn b-btn_width_auto">Выбрать номер</a></div>
             </div>
         </div>
     </div>
@@ -84,6 +85,18 @@
                     <div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7 (812) 670–86–83</a><a href="javascript:;" class="b-menu-contacts__map">
               г. Санкт-Петербург,
               ул. Достоевского, 19/21, лит.Б</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="l-stick-menu__popup j-booking-popup">
+        <div class="l-stick-menu__popup-cnt-wrap j-booking-popup__cnt">
+            <div class="l-stick-menu__popup-cnt">
+                <div style="background-image: url('/img/booking-popup-bg.png');" class="b-booking-form b-booking-form_theme_popup">
+                    <form action="/test/ajax/request.php" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form">
+                        <div class="b-booking-form__col"> <input type="text" placeholder="Дата заезда" class="b-booking-form__inp" /> </div>
+                        <div class="b-booking-form__col"> <input type="text" placeholder="Дата отъезда" class="b-booking-form__inp" /> </div>
+                        <div class="b-booking-form__col"> <input type="text" placeholder="Кол-во гостей" class="b-booking-form__inp" /> </div> <button type="submit" value="Номер" class="b-btn b-btn_width_auto b-booking-form__btn">Продолжить</button> </form>
                 </div>
             </div>
         </div>

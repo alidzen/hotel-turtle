@@ -5,7 +5,7 @@
                 .l-stick-menu__btn
                     include _close-btn
                 .l-stick-menu__form.show-on-desktop
-                    .b-booking-form.b-booking-form_theme_stick
+                    .b-booking-form
                         form.b-booking-form__form.j-date-booking(action='/test/ajax/request.php'
                         data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
                             .b-booking-form__col
@@ -24,8 +24,9 @@
                             button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Выбрать номер
                 .l-stick-menu__form__logo.hide
                     include _mobile-logo
+                // show booking popup on click
                 .l-stick-menu__btn.show-on-touch
-                    a(href="#").b-btn.b-btn_width_auto Выбрать номер
+                    a(href="javascript:;").b-btn.b-btn_width_auto Выбрать номер
     .l-stick-menu__popup.j-menu
         .l-stick-menu__popup-cnt-wrap.j-menu__cnt
             .l-stick-menu__popup-cnt
@@ -56,3 +57,23 @@
                         a(href="javascript:;").b-menu-contacts__map
                             | г.Санкт-Петербург,
                             | ул.Достоевского, 19/21, лит.Б
+
+    .l-stick-menu__popup.j-booking-popup
+        .l-stick-menu__popup-cnt-wrap.j-booking-popup__cnt
+            .l-stick-menu__popup-cnt
+                .b-booking-form.b-booking-form_theme_popup(style="background-image: url('/img/booking-popup-bg.png');")
+                    form.b-booking-form__form(action='/test/ajax/request.php'
+                    data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
+                        .b-booking-form__col
+                            input.b-booking-form__inp(
+                            type="text"
+                            placeholder="Дата заезда")
+                        .b-booking-form__col
+                            input.b-booking-form__inp(
+                            type="text"
+                            placeholder="Дата отъезда")
+                        .b-booking-form__col
+                            input.b-booking-form__inp(
+                            type="text"
+                            placeholder="Кол-во гостей")
+                        button.b-btn.b-btn_width_auto.b-booking-form__btn(type="submit" value="Номер") Продолжить

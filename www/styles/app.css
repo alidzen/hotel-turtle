@@ -221,49 +221,49 @@ html, body,
   text-transform: uppercase;
   letter-spacing: 0.15em; }
 
-input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
 .f-input {
   font-size: 12px;
   font-family: "Geometria", sans-serif; }
 
-input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
 .f-input {
   font-size: 12px;
   font-family: "Geometria", sans-serif; }
 
-input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
 .f-input {
   font-size: 12px;
   font-family: "Geometria", sans-serif; }
 
-input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="date"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
 .f-input {
   font-size: 12px;
   font-family: "Geometria", sans-serif; }
   @media only screen and (min-width: 1441px) {
-    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
     .f-input {
       font-size: 16px; }
-    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
     .f-input {
       font-size: 16px; }
-    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
     .f-input {
       font-size: 16px; }
-    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="date"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
     .f-input {
       font-size: 16px; } }
   @media only screen and (min-width: 1921px) {
-    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
     .f-input {
       font-size: 20px; }
-    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
     .f-input {
       font-size: 20px; }
-    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
     .f-input {
       font-size: 20px; }
-    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
+    input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea, input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="date"]::placeholder, input[type="url"]::placeholder, textarea::placeholder, .b-anim-label label, .selectric .label, .selectric-items li,
     .f-input {
       font-size: 20px; } }
 
@@ -2900,8 +2900,8 @@ img {
     padding-left: 10px; }
     @media only screen and (min-width: 641px) {
       .l-limit-wrap.has-border {
-        right: 20px;
-        left: 20px; } }
+        padding-right: 20px;
+        padding-left: 20px; } }
 
 .l-limit-wrap-full {
   max-width: 2560px;
@@ -3122,9 +3122,9 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #fefefd;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   position: fixed;
   width: 100%;
   top: 0;
@@ -3143,16 +3143,13 @@ img {
 
 .l-stick-menu__popup-cnt {
   padding-bottom: 24px;
-  padding-top: 84px; }
-  @media only screen and (min-width: 1441px) {
-    .l-stick-menu__popup-cnt {
-      padding-top: 84px;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%) translateX(-50%);
-      -ms-transform: translateY(-50%) translateX(-50%);
-      transform: translateY(-50%) translateX(-50%);
-      left: 50%; } }
+  padding-top: 84px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%; }
 
 .l-stick-menu__popup-nav {
   margin-bottom: 48px; }
@@ -3684,7 +3681,7 @@ img {
 .b-btn_bg_white {
   background-color: #fefefd; }
 
-input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"], textarea {
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea {
   transition-property: border-color;
   transition-duration: 0.5s;
   transition-timing-function: ease;
@@ -3699,26 +3696,26 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   padding-right: 15px;
   padding-bottom: 0;
   padding-left: 15px; }
-  input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #fefefd;
     font-style: normal;
     opacity: 1; }
-  input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder {
+  input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder {
     color: #fefefd;
     font-style: normal;
     opacity: 1; }
-  input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
     color: #fefefd;
     font-style: normal;
     opacity: 1; }
-  input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="url"]::placeholder, textarea::placeholder {
+  input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="date"]::placeholder, input[type="url"]::placeholder, textarea::placeholder {
     color: #fefefd;
     font-style: normal;
     opacity: 1; }
-  input[type='text']:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
+  input[type='text']:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="date"]:focus, input[type="url"]:focus, textarea:focus {
     border-color: #004356; }
 
-input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="url"] {
+input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"] {
   line-height: 32px; }
 
 textarea {
@@ -4546,36 +4543,51 @@ select {
   display: block; }
 
 .b-booking-form {
-  background: url("/img/form-bg.jpg") #005870;
+  background: url("/img/form-bg.jpg") no-repeat 50% 50% #005870;
   background-size: cover; }
 
 .b-booking-form__form {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: auto; }
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+  @media only screen and (min-width: 1025px) {
+    .b-booking-form__form {
+      height: 60px;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+      margin-left: auto; } }
 
-.b-booking-form__col {
-  -webkit-flex: 0 1 150px;
-  -ms-flex: 0 1 150px;
-  flex: 0 1 150px; }
+@media only screen and (min-width: 1025px) {
+  .b-booking-form__col {
+    -webkit-flex: 0 1 150px;
+    -ms-flex: 0 1 150px;
+    flex: 0 1 150px; } }
+
+@media only screen and (min-width: 1441px) {
+  .b-booking-form__col {
+    -webkit-flex-basis: 200px;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px; } }
+
+.b-booking-form__col .selectric-wrapper {
+  width: 200px; }
+  @media only screen and (min-width: 1025px) {
+    .b-booking-form__col .selectric-wrapper {
+      width: 150px; } }
   @media only screen and (min-width: 1441px) {
-    .b-booking-form__col {
-      -webkit-flex-basis: 200px;
-      -ms-flex-preferred-size: 200px;
-      flex-basis: 200px; } }
-  .b-booking-form__col .selectric-wrapper {
-    width: 150px; }
-    @media only screen and (min-width: 1441px) {
-      .b-booking-form__col .selectric-wrapper {
-        width: 200px; } }
+    .b-booking-form__col .selectric-wrapper {
+      width: 200px; } }
 
 .b-booking-form__info {
   font-size: 14px;
@@ -4592,8 +4604,30 @@ select {
   font-family: "ArnoPro-BoldItalic", sans-serif;
   line-height: 16px; }
 
-.b-booking-form_theme_stick {
-  background: none; }
+.b-booking-form_theme_popup {
+  background-color: transparent; }
+  .b-booking-form_theme_popup .b-booking-form__col {
+    margin-bottom: 24px;
+    width: 200px; }
+    .b-booking-form_theme_popup .b-booking-form__col:nth-child(3) {
+      margin-bottom: 36px; }
+  .b-booking-form_theme_popup .b-booking-form__btn {
+    width: 200px;
+    background-color: #005870; }
+  .b-booking-form_theme_popup .selectric-wrapper {
+    width: 200px; }
+  .b-booking-form_theme_popup .b-booking-form__inp {
+    background-color: #fefefd;
+    color: #bca064;
+    border-color: #bca064; }
+    .b-booking-form_theme_popup .b-booking-form__inp::-webkit-input-placeholder {
+      color: #bca064; }
+    .b-booking-form_theme_popup .b-booking-form__inp::-moz-placeholder {
+      color: #bca064; }
+    .b-booking-form_theme_popup .b-booking-form__inp:-ms-input-placeholder {
+      color: #bca064; }
+    .b-booking-form_theme_popup .b-booking-form__inp::placeholder {
+      color: #bca064; }
 
 .ui-datepicker {
   height: 260px;

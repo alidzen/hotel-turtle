@@ -37,8 +37,10 @@
         };
 
         @media #{$medium-up} {
-            right: gutter(2);
-            left: gutter(2);
+            padding: {
+                right: gutter(2);
+                left: gutter(2);
+            };
         }
     }
 }

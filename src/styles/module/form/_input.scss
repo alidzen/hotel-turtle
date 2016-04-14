@@ -53,6 +53,7 @@ input {
     &[type="tel"],
     &[type="email"],
     &[type="search"],
+    &[type="date"],
     &[type="url"] {
         @extend %input;
         line-height: $input-natural-height;
