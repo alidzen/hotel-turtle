@@ -273,9 +273,11 @@ define('app', [
         var transformMenu = function() {
             var cntHeight = $headerMenu.outerHeight(true);
             var screenHeight = $(window).height();
-            var $reviewsBlock = $headerMenu.find('.l-home-menu__reviews');
+            var $reviewsBlock = $headerMenu.find('.j-reviews');
             // Помещается все меню
             var isFullHeightCnt = screenHeight >= 800;
+            console.log($reviewsBlock);
+            console.log(isFullHeightCnt);
 
             if (isFullHeightCnt) {
                 $reviewsBlock.show();

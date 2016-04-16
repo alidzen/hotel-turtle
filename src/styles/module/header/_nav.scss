@@ -47,14 +47,12 @@ $item-height-popup: 56px;
         height: 2px;
         background-color: $gold-2;
         transform: scaleX(0);
+        backface-visibility: hidden;
     }
 
     &.is-active {
         color: $nav-color-active;
-        border-color: $gold-2;
         cursor: default;
-        text-decoration: none;
-        transform: scaleX(1);
         z-index: z('default');
 
         &:after {
@@ -68,7 +66,19 @@ $item-height-popup: 56px;
 
     &.is-animated {
         &:after {
-            width: calc(100% + 200px);
+            width: calc(100% + 15vw);
+        }
+
+        @media #{$large-up} {
+            &:after {
+                width: calc(100% + 12vw);
+            }
+        }
+
+        @media #{$xlarge-up} {
+            &:after {
+                width: 400px;
+            }
         }
     }
 }

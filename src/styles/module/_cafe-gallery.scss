@@ -9,6 +9,7 @@
 
 .b-cafe-gallery__border {
     @extend %border-vertical;
+    @include grid-clearfix();
 }
 
 .b-cafe-gallery__cnt {

@@ -4638,15 +4638,12 @@ select {
     background-color: #bca064;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
-    transform: scaleX(0); }
+    transform: scaleX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
   .b-nav__link.is-active {
     color: #bca064;
-    border-color: #bca064;
     cursor: default;
-    text-decoration: none;
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1);
     z-index: 1; }
     .b-nav__link.is-active:after {
       transition-property: width;
@@ -4659,7 +4656,13 @@ select {
       width: 0;
       left: 0; }
   .b-nav__link.is-animated:after {
-    width: calc(100% + 200px); }
+    width: calc(100% + 15vw); }
+  @media only screen and (min-width: 1441px) {
+    .b-nav__link.is-animated:after {
+      width: calc(100% + 12vw); } }
+  @media only screen and (min-width: 1921px) {
+    .b-nav__link.is-animated:after {
+      width: 400px; } }
 
 .b-menu-logo {
   text-align: center; }
@@ -5792,6 +5795,11 @@ select {
   width: 100%;
   background: url("/img/cafe-bg-1.jpg") no-repeat 50% 50% #fefefd;
   background-size: cover; }
+
+.b-cafe-gallery__border:after {
+  content: '';
+  display: block;
+  clear: both; }
 
 .b-cafe-gallery__cnt {
   text-align: center;
