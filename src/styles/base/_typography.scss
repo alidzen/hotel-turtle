@@ -51,9 +51,14 @@ h2 {
 // FONTS
 %f-base,
 .f-base {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 21px;
     font-family: $font;
+
+    @media #{$medium-up} {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 %f-btn,
@@ -214,7 +219,7 @@ h2 {
     line-height: 30px;
     font-family: $font-bold-italic;
 
-    @media #{$big-up} {
+    @media #{$medium-up} {
         font-size: 35px;
         line-height: 45px;
     }
@@ -225,7 +230,7 @@ h2 {
     line-height: 36px;
     font-family: $font-roman-bold;
 
-    @media #{$big-up} {
+    @media #{$medium-up} {
         font-size: 50px;
         line-height: 50px;
     }
@@ -286,9 +291,14 @@ h2 {
 
 %f-adaptive-txt,
 .f-adaptive-txt {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 21px;
     font-family: $font;
+
+    @media #{$medium-up} {
+        font-size: 16px;
+        line-height: 24px;
+    }
 
     @media #{$large-up} {
         font-size: 30px;

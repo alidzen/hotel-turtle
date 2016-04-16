@@ -17,6 +17,7 @@
 }
 
 .l-showcase__descr {
+    @include padding-trailer(1);
 
     @media #{$big-up} {
         @include span(4.5 last);

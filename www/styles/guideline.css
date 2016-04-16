@@ -209,9 +209,14 @@ h2 {
 
 html, body,
 .f-base {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 21px;
   font-family: "Geometria", sans-serif; }
+  @media only screen and (min-width: 641px) {
+    html, body,
+    .f-base {
+      font-size: 16px;
+      line-height: 24px; } }
 
 .b-btn,
 .f-btn {
@@ -392,7 +397,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   font-size: 24px;
   line-height: 30px;
   font-family: "ArnoPro-BoldItalic", sans-serif; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 641px) {
     .l-cafe-feature__headings > h2, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note {
       font-size: 35px;
       line-height: 45px; } }
@@ -401,7 +406,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   font-size: 36px;
   line-height: 36px;
   font-family: "AGOpusHR-Bold", sans-serif; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 641px) {
     .b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl {
       font-size: 50px;
       line-height: 50px; } }
@@ -456,9 +461,14 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
 
 .b-cafe-gallery__txt,
 .f-adaptive-txt {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 21px;
   font-family: "Geometria", sans-serif; }
+  @media only screen and (min-width: 641px) {
+    .b-cafe-gallery__txt,
+    .f-adaptive-txt {
+      font-size: 16px;
+      line-height: 24px; } }
   @media only screen and (min-width: 1441px) {
     .b-cafe-gallery__txt,
     .f-adaptive-txt {
@@ -3542,8 +3552,8 @@ img {
     clear: both; }
   @media only screen and (min-width: 641px) {
     .l-cafe-feature {
-      padding-right: 20%;
-      padding-left: 20%; } }
+      padding-right: 5%;
+      padding-left: 5%; } }
   @media only screen and (min-width: 1025px) {
     .l-cafe-feature {
       margin-bottom: 144px;
@@ -3571,6 +3581,10 @@ img {
     .l-cafe-feature__border {
       padding-right: 10px;
       padding-left: 10px; } }
+  @media only screen and (min-width: 641px) {
+    .l-cafe-feature__border {
+      padding-top: 72px;
+      padding-bottom: 72px; } }
   @media only screen and (min-width: 1025px) {
     .l-cafe-feature__border {
       padding-top: 96px;
@@ -3586,9 +3600,9 @@ img {
   text-align: center; }
   @media only screen and (min-width: 641px) {
     .l-cafe-feature__cnt {
-      width: 66.66667%;
-      margin-left: 16.66667%;
-      margin-right: 16.66667%;
+      width: 75%;
+      margin-left: 12.5%;
+      margin-right: 12.5%;
       float: left; } }
 
 .b-logo {
@@ -5545,11 +5559,13 @@ select {
     width: 62.5%;
     float: left; } }
 
-@media only screen and (min-width: 1025px) {
-  .l-showcase__descr {
-    width: 37.5%;
-    float: right;
-    height: 100%; } }
+.l-showcase__descr {
+  padding-bottom: 24px; }
+  @media only screen and (min-width: 1025px) {
+    .l-showcase__descr {
+      width: 37.5%;
+      float: right;
+      height: 100%; } }
 
 .b-showcase {
   padding-top: 48px;

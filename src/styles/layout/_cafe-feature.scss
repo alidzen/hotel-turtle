@@ -9,8 +9,8 @@
 
     @media #{$medium-up} {
         padding: {
-            right: 20%;
-            left: 20%;
+            right: 5%;
+            left: 5%;
         };
     }
     
@@ -47,6 +47,10 @@
         };
     }
 
+    @media #{$medium-up} {
+        @include rhythm-padding(3);
+    }
+
     @media #{$big-up} {
         @include rhythm-padding(4);
         @include span(10 center);
@@ -59,7 +63,7 @@
     text-align: center;
 
     @media #{$medium-up} {
-        @include span(8 center);
+        @include span(9 center);
     }
 }
 
