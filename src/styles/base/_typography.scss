@@ -306,6 +306,18 @@ h2 {
     }
 }
 
+%f-article-special,
+.f-article-special {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $font-roman-bold;
+
+    @media #{$medium-up} {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 
 // SMALL
 $small-font-size: $base-font-size - 2 !default;
@@ -372,7 +384,7 @@ $list-margin-bottom: $paragraph-margin-bottom !default; // rhythm unit
         @include margin-trailer($list-margin-bottom);
 
         li {
-            @include adjust-font-size-to($list-font-size);
+            @extend %f-base;
         }
     }
 
@@ -395,6 +407,7 @@ $list-margin-bottom: $paragraph-margin-bottom !default; // rhythm unit
             color: $list-color;
             padding-right: gutter(1);
             float: left;
+            transform: scale(2) translate(1.5px, 1.5px); // centered
         }
     }
 }

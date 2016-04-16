@@ -1,6 +1,6 @@
 extends _layout
 block title
-    title Ресторан
+    title Номера
 block gallery
      .b-cafe-gallery(style="background-image: url('/img/room-bg-1.jpg');")
          .b-cafe-gallery__border
@@ -35,12 +35,74 @@ block content
                             .b-article__special
                                 | Для вашей безопасности – доступ на этаж отеля только для гостей. Для безопасности ваших вещей – сейф в каждом номере.
 
-        section.l-cafe-feature
-            .l-cafe-feature__img-wrap
-                img(src="/img/card/card-2.png" alt="Кувшин")
-            .l-cafe-feature__border
-                .l-cafe-feature__cnt
-                    .l-cafe-feature__txt
-                        p В меню ресторана будут представлены как традиционные блюда европейской кухни, так и авторские задумки шеф-повара Алексея Ермакова. Помимо этого, гости комплекса смогут познакомиться с «книжным меню»: пока вы отдыхаете в ресторане, мы напечатаем для вас выбранную книгу.
-                    .l-cafe-feature__headings
-                        h2 Мы создаем клубную атмосферу интеллектуальной элитарности и творческой открытости для встреч с друзьями и новых знакомств!
+        section.l-room-feature.border-vertical
+            .l-room-feature__border.border-horizontal
+                .l-room-feature__cnt
+                    h2 Чистота и порядок занимают важное место в нашем отеле
+                    p Каждый день в номерах производится текущая уборка со сменой полотенец, а каждые два дня – смена постельного белья. Мы бережно относимся к здоровью наших гостей: при уборке используется только органическая бытовая химия, не вызывающая аллергической реакции. Кроме этого, при создании интерьера отеля использовались только натуральные материалы.
+
+        section.l-booking-rooms.has-no-margin
+            .l-booking-rooms__row
+                .l-booking-rooms__item
+                    .b-room
+                        a(href="#").b-room__cnt-link
+                        .b-room__border
+                            .b-room__img-wrap
+                                .b-room__img(style="background-image: url('/img/room-1.jpg')")
+                            .b-room__cnt
+                                .b-room__cnt-wrap
+                                    .b-room__ttl Стандартный одноместный номер
+                                    .b-room__descr идеально для путешественников
+                                    .b-room__booking <span class="b-room__time">от</span>&nbsp;
+                                        | <span class="b-room__price">5 400 <span class="b-ruble">a</span></span>&nbsp;<span class="b-room__time">
+                                        | до</span>&nbsp;<span class="b-room__price">7 400 <span class="b-ruble">a</span></span>
+                                    .b-room__btn
+                                        a(href="#").b-btn.b-btn_width_auto.b-btn_bg_white Забронировать
+
+                .l-booking-rooms__item
+                    .b-room
+                        a(href="#").b-room__cnt-link
+                        .b-room__border
+                            .b-room__img-wrap
+                                .b-room__img(style="background-image: url('/img/room-1.jpg')")
+                            .b-room__cnt
+                                .b-room__cnt-wrap
+                                    .b-room__ttl Стандартный двухместный номер
+                                    .b-room__descr идеально для семейной пары
+                                    .b-room__booking <span class="b-room__time">от</span>&nbsp;
+                                        | <span class="b-room__price">5 400 <span class="b-ruble">a</span></span>&nbsp;<span class="b-room__time">
+                                        | до</span>&nbsp;<span class="b-room__price">7 400 <span class="b-ruble">a</span></span>
+                                    .b-room__btn
+                                        a(href="#").b-btn.b-btn_width_auto.b-btn_bg_white Забронировать
+
+                .l-booking-rooms__item
+                    .b-room
+                        a(href="#").b-room__cnt-link
+                        .b-room__border
+                            .b-room__img-wrap
+                                .b-room__img(style="background-image: url('/img/room-1.jpg')")
+                            .b-room__cnt
+                                .b-room__cnt-wrap
+                                    .b-room__ttl Одноместный номер Комфорт
+                                    .b-room__descr идеально для бизнес-гостя
+                                    .b-room__booking <span class="b-room__time">от</span>&nbsp;
+                                        | <span class="b-room__price">5 400 <span class="b-ruble">a</span></span>&nbsp;<span class="b-room__time">
+                                        | до</span>&nbsp;<span class="b-room__price">7 400 <span class="b-ruble">a</span></span>
+                                    .b-room__btn
+                                        a(href="#").b-btn.b-btn_width_auto.b-btn_bg_white Забронировать
+
+                .l-booking-rooms__item
+                    .b-room
+                        a(href="#").b-room__cnt-link
+                        .b-room__border
+                            .b-room__img-wrap
+                                .b-room__img(style="background-image: url('/img/room-1.jpg')")
+                            .b-room__cnt
+                                .b-room__cnt-wrap
+                                    .b-room__ttl Двухместный номер Делюкс
+                                    .b-room__descr идеально для молодоженов
+                                    .b-room__booking <span class="b-room__time">от</span>&nbsp;
+                                        | <span class="b-room__price">5 400 <span class="b-ruble">a</span></span>&nbsp;<span class="b-room__time">
+                                        | до</span>&nbsp;<span class="b-room__price">7 400 <span class="b-ruble">a</span></span>
+                                    .b-room__btn
+                                        a(href="#").b-btn.b-btn_width_auto.b-btn_bg_white Забронировать

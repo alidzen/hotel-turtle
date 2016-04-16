@@ -1,4 +1,5 @@
-%border-vertical {
+%border-vertical,
+.border-vertical {
 
     &:before,
     &:after {
@@ -33,7 +34,8 @@
     }
 }
 
-%border-horizontal {
+%border-horizontal,
+.border-horizontal {
 
     &:before,
     &:after {

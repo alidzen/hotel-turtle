@@ -1,0 +1,69 @@
+.l-room-feature {
+    @extend %l-row;
+    @include margin-trailer(2);
+    position: relative;
+    background: url('/img/room-bg-2.jpg') 50% 50% no-repeat;
+    background-size: cover;
+
+    @media #{$medium-up} {
+        @include margin-trailer(3);
+    }
+
+    @media #{$big-up} {
+        @include margin-trailer(5);
+        height: 700px;
+    }
+}
+
+.l-room-feature__cnt {
+    @include rhythm-padding(2);
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
+    };
+    text-align: center;
+    color: $white;
+
+    @media #{$medium-up} {
+        @include rhythm-padding(3);
+        padding: {
+            right: 10%;
+            left: 10%;
+        };
+    }
+
+    @media #{$big-up} {
+        @include padding-leader(5);
+        padding: {
+            right: 20%;
+            left: 20%;
+        };
+    }
+
+    >h2 {
+        @extend %f-ttl-note;
+        @extend %b-bottom-dash-100;
+        @include padding-trailer(1.5);
+        @include margin-trailer(1.5);
+
+        @media #{$medium-up} {
+            width: 80%;
+            margin: {
+                right: auto;
+                left: auto;
+            };
+        }
+
+        @media #{$big-up} {
+            width: 70%;
+            margin: {
+                right: auto;
+                left: auto;
+            };
+        }
+
+        &:after {
+            background-color: $white;
+        }
+    }
+}

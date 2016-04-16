@@ -84,6 +84,40 @@ img {
     }
 }
 
+%b-bottom-dash-100 {
+    $dash-size: 100px;
+    position: relative;
+    padding-bottom: rhythm(1);
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: - $dash-size / 2;
+        display: block;
+        width: $dash-size;
+        height: 4px;
+        background-color: $gold-2;
+    }
+}
+
+%b-bottom-dash-pos-left {
+    @include padding-trailer(1.5);
+    @include margin-trailer(1.5);
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 4px;
+        background-color: $gold-2;
+    }
+}
+
 .b-ruble {
     font-family: $font-ruble;
     text-transform: lowercase;

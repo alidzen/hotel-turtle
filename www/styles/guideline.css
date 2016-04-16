@@ -207,13 +207,15 @@ h1,
 h2 {
   font: "AGOpusHR-Roman", sans-serif; }
 
-html, body,
+.b-typo-reset ul li,
+.b-typo-reset ol li, html, body,
 .f-base {
   font-size: 14px;
   line-height: 21px;
   font-family: "Geometria", sans-serif; }
   @media only screen and (min-width: 641px) {
-    html, body,
+    .b-typo-reset ul li,
+    .b-typo-reset ol li, html, body,
     .f-base {
       font-size: 16px;
       line-height: 24px; } }
@@ -393,12 +395,12 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   font-family: "ArnoPro-BoldItalic", sans-serif;
   letter-spacing: 0.05em; }
 
-.l-cafe-feature__headings > h2, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note {
+.l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note {
   font-size: 24px;
   line-height: 30px;
   font-family: "ArnoPro-BoldItalic", sans-serif; }
   @media only screen and (min-width: 641px) {
-    .l-cafe-feature__headings > h2, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note {
+    .l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note {
       font-size: 35px;
       line-height: 45px; } }
 
@@ -475,6 +477,17 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
       font-size: 30px;
       line-height: 45px; } }
 
+.b-article__special,
+.f-article-special {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "AGOpusHR-Bold", sans-serif; }
+  @media only screen and (min-width: 641px) {
+    .b-article__special,
+    .f-article-special {
+      font-size: 16px;
+      line-height: 24px; } }
+
 small {
   font-size: 14px; }
 
@@ -500,25 +513,24 @@ a {
 .b-typo-reset ul,
 .b-typo-reset ol {
   margin-bottom: 24px; }
-  .b-typo-reset ul li,
-  .b-typo-reset ol li {
-    font-size: 16px;
-    line-height: 24px; }
 
 .b-typo-reset ol {
   counter-reset: list; }
   .b-typo-reset ol li:before {
     counter-increment: list;
     content: counter(list);
-    color: #333333;
+    color: #bca064;
     padding-right: 10px;
     float: left; }
 
 .b-typo-reset ul li:before {
   content: '•';
-  color: #333333;
+  color: #bca064;
   padding-right: 10px;
-  float: left; }
+  float: left;
+  -webkit-transform: scale(2) translate(1.5px, 1.5px);
+  -ms-transform: scale(2) translate(1.5px, 1.5px);
+  transform: scale(2) translate(1.5px, 1.5px); }
 
 b,
 strong {
@@ -578,6 +590,33 @@ img {
     left: 50%;
     margin-left: -50px;
     display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #bca064; }
+
+.l-room-feature__cnt > h2 {
+  position: relative;
+  padding-bottom: 24px; }
+  .l-room-feature__cnt > h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #bca064; }
+
+.b-article__features_theme_list {
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  position: relative; }
+  .b-article__features_theme_list:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100px;
     height: 4px;
     background-color: #bca064; }
@@ -2869,11 +2908,11 @@ img {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.l-limit-wrap, .l-feature, .l-booking-rooms, .l-cafe-feature, .l-showcase {
+.l-limit-wrap, .l-feature, .l-booking-rooms, .l-cafe-feature, .l-room-feature, .l-showcase {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  .l-limit-wrap:after, .l-feature:after, .l-booking-rooms:after, .l-cafe-feature:after, .l-showcase:after {
+  .l-limit-wrap:after, .l-feature:after, .l-booking-rooms:after, .l-cafe-feature:after, .l-room-feature:after, .l-showcase:after {
     content: '';
     display: block;
     clear: both; }
@@ -3203,6 +3242,8 @@ img {
   @media only screen and (min-width: 1025px) {
     .l-booking-rooms {
       margin-bottom: 84px; } }
+  .l-booking-rooms.has-no-margin {
+    margin-bottom: 0px; }
 
 @media only screen and (min-width: 1025px) {
   .l-booking-rooms__row {
@@ -3604,6 +3645,53 @@ img {
       margin-left: 12.5%;
       margin-right: 12.5%;
       float: left; } }
+
+.l-room-feature {
+  margin-bottom: 48px;
+  position: relative;
+  background: url("/img/room-bg-2.jpg") 50% 50% no-repeat;
+  background-size: cover; }
+  @media only screen and (min-width: 641px) {
+    .l-room-feature {
+      margin-bottom: 72px; } }
+  @media only screen and (min-width: 1025px) {
+    .l-room-feature {
+      margin-bottom: 120px;
+      height: 700px; } }
+
+.l-room-feature__cnt {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  color: #fefefd; }
+  @media only screen and (min-width: 641px) {
+    .l-room-feature__cnt {
+      padding-top: 72px;
+      padding-bottom: 72px;
+      padding-right: 10%;
+      padding-left: 10%; } }
+  @media only screen and (min-width: 1025px) {
+    .l-room-feature__cnt {
+      padding-top: 120px;
+      padding-right: 20%;
+      padding-left: 20%; } }
+  .l-room-feature__cnt > h2 {
+    padding-bottom: 36px;
+    margin-bottom: 36px; }
+    @media only screen and (min-width: 641px) {
+      .l-room-feature__cnt > h2 {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto; } }
+    @media only screen and (min-width: 1025px) {
+      .l-room-feature__cnt > h2 {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto; } }
+    .l-room-feature__cnt > h2:after {
+      background-color: #fefefd; }
 
 .b-logo {
   display: block; }
@@ -4375,7 +4463,9 @@ select {
   left: 50%;
   margin-left: -14px; }
 
-.b-cafe-gallery__border:before, .b-cafe-gallery__border:after {
+.b-cafe-gallery__border:before, .b-cafe-gallery__border:after,
+.border-vertical:before,
+.border-vertical:after {
   content: '';
   position: absolute;
   top: 10px;
@@ -4384,23 +4474,31 @@ select {
   background-color: #bca064;
   z-index: 1; }
   @media only screen and (min-width: 641px) {
-    .b-cafe-gallery__border:before, .b-cafe-gallery__border:after {
+    .b-cafe-gallery__border:before, .b-cafe-gallery__border:after,
+    .border-vertical:before,
+    .border-vertical:after {
       top: 20px;
       height: calc(100% - 40px); } }
 
-.b-cafe-gallery__border:before {
+.b-cafe-gallery__border:before,
+.border-vertical:before {
   left: 10px; }
   @media only screen and (min-width: 641px) {
-    .b-cafe-gallery__border:before {
+    .b-cafe-gallery__border:before,
+    .border-vertical:before {
       left: 20px; } }
 
-.b-cafe-gallery__border:after {
+.b-cafe-gallery__border:after,
+.border-vertical:after {
   right: 10px; }
   @media only screen and (min-width: 641px) {
-    .b-cafe-gallery__border:after {
+    .b-cafe-gallery__border:after,
+    .border-vertical:after {
       right: 20px; } }
 
-.b-cafe-gallery:before, .b-cafe-gallery:after {
+.b-cafe-gallery:before, .b-cafe-gallery:after,
+.border-horizontal:before,
+.border-horizontal:after {
   content: '';
   position: absolute;
   left: 10px;
@@ -4409,20 +4507,26 @@ select {
   background-color: #bca064;
   z-index: 1; }
   @media only screen and (min-width: 641px) {
-    .b-cafe-gallery:before, .b-cafe-gallery:after {
+    .b-cafe-gallery:before, .b-cafe-gallery:after,
+    .border-horizontal:before,
+    .border-horizontal:after {
       left: 20px;
       width: calc(100% - 40px); } }
 
-.b-cafe-gallery:before {
+.b-cafe-gallery:before,
+.border-horizontal:before {
   top: 10px; }
   @media only screen and (min-width: 641px) {
-    .b-cafe-gallery:before {
+    .b-cafe-gallery:before,
+    .border-horizontal:before {
       top: 20px; } }
 
-.b-cafe-gallery:after {
+.b-cafe-gallery:after,
+.border-horizontal:after {
   bottom: 10px; }
   @media only screen and (min-width: 641px) {
-    .b-cafe-gallery:after {
+    .b-cafe-gallery:after,
+    .border-horizontal:after {
       bottom: 20px; } }
 
 .b-nav__list {
@@ -5217,6 +5321,11 @@ select {
 
 .b-article_theme_gold .b-article__border {
   border-color: #bca064; }
+
+.b-article__features_theme_list {
+  padding-bottom: 24px; }
+  .b-article__features_theme_list .b-article__feature {
+    margin-bottom: 6px; }
 
 .b-service {
   color: inherit;

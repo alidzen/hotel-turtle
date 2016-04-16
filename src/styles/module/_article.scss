@@ -115,3 +115,17 @@
         border-color: $gold-2;
     }
 }
+
+.b-article__special {
+    @extend %f-article-special;
+}
+
+// STATE
+.b-article__features_theme_list {
+    @extend %b-bottom-dash-pos-left;
+    @include padding-trailer(1);
+
+    .b-article__feature {
+        @include margin-trailer(.25);
+    }
+}
