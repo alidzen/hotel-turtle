@@ -62,7 +62,7 @@ define('app', [
                     $self.addClass(ACTIVE);
                     $menu.addClass(ACTIVE);
                     $menuCnt.fadeIn();
-                }, 600)
+                }, 600);
             } else {
                 pos = $(window).scrollTop();
                 $self.addClass(ACTIVE);
@@ -102,11 +102,11 @@ define('app', [
                     $self.text(text);
                     $bookingPopup.addClass(ACTIVE);
                     $bookingPopupCnt.fadeIn();
-                }, 600)
+                }, 600);
             } else {
                 pos = $(window).scrollTop();
                 $self.addClass(ACTIVE);
-                $self.text(text)
+                $self.text(text);
                 $bookingPopup.addClass(ACTIVE);
                 $container.addClass(ACTIVE);
                 $bookingPopupCnt.fadeIn();
@@ -316,18 +316,18 @@ define('app', [
                 navigation: false,
                 verticalCentered: false,
                 css3: false,
-                onLeave: function (index, nextIndex, direction) {
+                onLeave: function (index, nextIndex) {
                     //reaching our last section? The one with our normal site?
-                    if (nextIndex == 2) {
+                    if (nextIndex === 2) {
                         $datepickerHeader.datepicker('hide');
                         $selectHeader.selectric('close');
                         setTimeout(function() {
                             $navMenu.addClass(ACTIVE);
-                        }, 900)
+                        }, 900);
                     }
 
                     //leaving our last section? The one with our normal site?
-                    if (index == 2) {
+                    if (index === 2) {
                         $navMenu.removeClass(ACTIVE);
                         $datepickerMenu.datepicker('hide');
                         $selectMenu.selectric('close');
