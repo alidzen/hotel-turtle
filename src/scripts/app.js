@@ -264,6 +264,7 @@ define('app', [
         });
     })($('.j-date-booking'));
 
+    // resize header-menu
     (function($headerMenu) {
         if (!$headerMenu.length || touchWIDTH) {
             return;
@@ -312,6 +313,9 @@ define('app', [
         }
 
         require(['pagePiling'], function() {
+            var $activeLink = $header.find('.b-nav__link.is-active');
+            console.log($activeLink);
+
             $fullPage.pagepiling({
                 navigation: false,
                 verticalCentered: false,
@@ -340,6 +344,10 @@ define('app', [
                     setTimeout(function() {
                         $loader.hide();
                     }, 600);
+                    setTimeout(function() {
+                        $activeLink.addClass('is-animated');
+                    }, 600);
+
                 }
             });
         });

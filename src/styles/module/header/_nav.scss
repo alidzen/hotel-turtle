@@ -17,10 +17,6 @@ $item-height-popup: 56px;
 
 .b-nav__item {
     display: block;
-    //padding: {
-    //    top: ($item-height - $base-line-height) / 2;
-    //    bottom: ($item-height - $base-line-height) / 2;
-    //};
 }
 
 .b-nav__link {
@@ -30,20 +26,6 @@ $item-height-popup: 56px;
     position: relative;
     color: $nav-color;
     text-decoration: none;
-
-    &.is-active {
-        color: $nav-color-active;
-        border-color: $gold-2;
-        cursor: default;
-        text-decoration: none;
-
-        &:after {
-            width: $dash-size;
-            left: 50%;
-            margin-left: - $dash-size / 2;
-            transform: scaleX(1);
-        }
-    }
 
     &:hover {
         color: $nav-color-hover;
@@ -66,14 +48,33 @@ $item-height-popup: 56px;
         background-color: $gold-2;
         transform: scaleX(0);
     }
+
+    &.is-active {
+        color: $nav-color-active;
+        border-color: $gold-2;
+        cursor: default;
+        text-decoration: none;
+        transform: scaleX(1);
+        z-index: z('default');
+
+        &:after {
+            @include transition(width);
+            transition-duration: .45s;
+            transform: scaleX(1);
+            width: 0;
+            left: 0;
+        }
+    }
+
+    &.is-animated {
+        &:after {
+            width: calc(100% + 200px);
+        }
+    }
 }
 
 // STATE
 .b-nav_theme_popup {
-
-    //.b-nav__item {
-    //    display: block;
-    //}
 
     .b-nav__link {
         @extend %f-nav-link-stick;

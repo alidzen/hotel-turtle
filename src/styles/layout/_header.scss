@@ -7,7 +7,6 @@
     background: url('/img/menu-bg.png') 100% 100% no-repeat $white;
     height: 100vh;
     padding: 0;
-    overflow-y: auto;
 
     @media #{$medium-down} {
         display: none;
