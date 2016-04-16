@@ -1,6 +1,10 @@
 // LAYOUT
 .l-map {
+    @extend %l-row;
     position: relative;
+    min-height: 600px;
+
+    height: calc(100vh - 108px); // desktop variant
 }
 
 //MODULE

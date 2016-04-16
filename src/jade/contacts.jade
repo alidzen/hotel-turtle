@@ -1,0 +1,54 @@
+extends _layout
+block vars
+    -var activePage = 'contacts'
+block title
+    title Контакты
+block gallery
+    .b-cafe-gallery(style="background-image: url('/img/contacts-bg-1.jpg');")
+         .b-cafe-gallery__border
+             .b-cafe-gallery__cnt
+                 a(href="tel: +78126702575").b-cafe-gallery__tel +7 (812) 670-25-75
+                 .b-cafe-gallery__ttl г. Санкт-Петербург, <br>ул. Достоевского, 19/21
+                 a(href="mailto: info@at-hotel.ru").b-cafe-gallery__mail info@at-hotel.ru
+                 .b-cafe-gallery__txt Вы можете связаться с нами круглосуточно, позвонив по указанному телефону или написав нам на почту, или же вы можете заполнить форму обратной связи на странице ниже.
+
+block content
+    .l-main-wrap
+        include blocks/_map
+
+    .l-callback
+        .l-callback__border
+            .l-callback__cnt
+            .b-callback
+                .b-callback__cnt
+                    .b-callback__header
+                        h2.b-callback__ttl Обратная связь
+                        .b-callback__caption задайте нам интересующий вас вопрос
+                    .b-callback__form
+                        .b-callback
+                            form(action="#" method="POST")
+                                .b-callback__row
+                                    input(type="text"
+                                    data-errormessage="Укажите ваше имя"
+                                    placeholder="Ваше имя"
+                                    required).b-callback__input
+                                .b-callback__row
+                                    .b-callback__col
+                                        input(type="tel"
+                                        pattern="^[0-9-()+\\s]+$"
+                                        data-errormessage="Вы забыли оставить нам номер телефона"
+                                        placeholder="Ваш телефон"
+                                        autocomplete="tel" required).b-callback__input
+                                    .b-callback__col
+                                        input(type="email"
+                                        name="email"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                        data-errormessage="Вы забыли указать почту"
+                                        placeholder="Ваш e-mail"
+                                        autocomplete="email" required).b-callback__input
+                                .b-callback__row
+                                    .b-callback__descr
+                                        textarea(placeholder="Ваш вопрос" required).b-callback__textarea
+                                .b-callback__row
+                                    input(type="submit"
+                                    value="Перезвоните мне").b-btn

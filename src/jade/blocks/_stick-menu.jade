@@ -30,21 +30,24 @@
     .l-stick-menu__popup.j-menu
         .l-stick-menu__popup-cnt-wrap.j-menu__cnt
             .l-stick-menu__popup-cnt
+                .l-stick-menu__logo
+                    .b-menu-logo
+                        include _logo
                 .l-stick-menu__popup-nav
                     nav.b-nav.b-nav_theme_popup
                         ul.b-nav__list
                             li.b-nav__item
-                                a(href="/").b-nav__link.is-active Атмосфера
+                                a(href="#").b-nav__link Атмосфера
                             li.b-nav__item
-                                a(href="#").b-nav__link Номера
+                                a(href="/html/room.html" class=(activePage == 'room' ? 'b-nav__link is-active' : 'b-nav__link')) Номера
                             li.b-nav__item
                                 a(href="#").b-nav__link Спецпредложения
                             li.b-nav__item
                                 a(href="#").b-nav__link Дополнительные услуги
                             li.b-nav__item
-                                a(href="#").b-nav__link Ресторан
+                                a(href="/html/cafe.html" class=(activePage == 'cafe' ? 'b-nav__link is-active' : 'b-nav__link')) Ресторан
                             li.b-nav__item
-                                a(href="#").b-nav__link Контакты
+                                a(href="/html/contacts.html" class=(activePage == 'contacts' ? 'b-nav__link is-active': 'b-nav__link'))  Контакты
 
                 .l-stick-menu__popup-lang
                     .b-menu-lang.b-menu-lang_theme_popup

@@ -33,21 +33,22 @@ $item-height-popup: 56px;
         text-decoration: none;
 
         &:after {
-            transform: scaleX(1);
+            width: 100%;
+            left: 0;
         }
     }
 
     &:after {
-        @include transition(transform);
+        @include transition(width, left);
+        transition-property: all;
         content: '';
         position: absolute;
         top: 100%;
-        width: 100%;
-        left: 0;
+        width: 0;
+        left: 50%;
         height: 2px;
         background-color: $gold-2;
-        transform: scaleX(0);
-        backface-visibility: hidden;
+        margin-left: 0;
     }
 
     &.is-active {
@@ -56,9 +57,7 @@ $item-height-popup: 56px;
         z-index: z('default');
 
         &:after {
-            @include transition(width);
             transition-duration: .45s;
-            transform: scaleX(1);
             width: 0;
             left: 0;
         }

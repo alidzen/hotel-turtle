@@ -33,8 +33,8 @@ define([
 
         this.options = {
             center: {
-                lat: 59.939552,
-                lng: 30.423428
+                lat: 59.923325,
+                lng: 30.346303
             },
             zoom: 12,
             zoomControlOptions: {
@@ -42,7 +42,44 @@ define([
             },
             streetViewControl: false,
             mapTypeControl: false,
-            styles: false
+            styles:[
+                {
+                    featureType: 'landscape',
+                    stylers: [
+                        {saturation: -100},
+                        {lightness: 13}
+                    ]
+                },
+                {
+                    featureType: 'poi',
+                    stylers: [
+                        {visibility: 'on'},
+                        {saturation: -100},
+                        {gamma: 0.92},
+                        {lightness: 34}
+                    ]
+                },
+                {
+                    featureType: 'road',
+                    stylers: [
+                        {lightness: 11},
+                        {saturation: -100}
+                    ]
+                },
+                {
+                    featureType: 'transit',
+                    stylers: [
+                        {saturation: -100}
+                    ]
+                },
+                {
+                    featureType: 'water',
+                    stylers: [
+                        {saturation: -65},
+                        {lightness: -9}
+                    ]
+                }
+            ]
         };
 
         this.options = $.extend(this.options, this.data);

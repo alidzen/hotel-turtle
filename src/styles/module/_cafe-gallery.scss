@@ -63,6 +63,40 @@
     }
 }
 
+.b-cafe-gallery__tel {
+    @extend %f-adaptive-ttl;
+    @include margin-trailer(1);
+    color: $white;
+    display: block;
+    position: relative;
+    padding-bottom: rhythm(.5);
+    cursor: default;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100px;
+        height: 4px;
+        margin-left: -50px;
+        background-color: $white;
+
+        @media #{$big-up} {
+            left: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+.b-cafe-gallery__mail {
+    @extend %f-adaptive-ttl;
+    @include margin-trailer(1);
+    display: block;
+    color: $white;
+}
+
 .b-cafe-gallery__txt {
     @extend %f-adaptive-txt;
 }
+

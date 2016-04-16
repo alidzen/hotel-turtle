@@ -276,8 +276,6 @@ define('app', [
             var $reviewsBlock = $headerMenu.find('.j-reviews');
             // Помещается все меню
             var isFullHeightCnt = screenHeight >= 800;
-            console.log($reviewsBlock);
-            console.log(isFullHeightCnt);
 
             if (isFullHeightCnt) {
                 $reviewsBlock.show();
@@ -316,7 +314,6 @@ define('app', [
 
         require(['pagePiling'], function() {
             var $activeLink = $header.find('.b-nav__link.is-active');
-            console.log($activeLink);
 
             $fullPage.pagepiling({
                 navigation: false,

@@ -1,28 +1,12 @@
 .l-map
     #map.j-map.b-map(data-zoom="15" data-scrollwheel="false")
-    a(href="javascript:;").b-map__zoom.b-map__zoom-in +
-    a(href="javascript:;").b-map__zoom.b-map__zoom-out -
 script.
     window.map = {}
     window.map['map'] = {
-        imageBounds: {
-            north: 59.94013265261781,
-            west : 30.421067476272583,
-            south: 59.93848275563834,
-            east : 30.425067476272583,
-            image: '/img/groundOverlay.png'
-        },
         markers: [
             {
-                coords            : [59.939552, 30.423428],
-                image             : '/img/markers/marker.png',
-                title             : 'Заголовок',
-                text: 'Маленький текст'
-            },
-            {
-                coords            : [59.935552, 30.428428],
-                image             : '/img/markers/marker.png',
-                url: 'http://kelnik.ru'
+                coords      : [59.923325, 30.346303],
+                image             : '/img/markers/here.svg'
             }
         ]
     }
