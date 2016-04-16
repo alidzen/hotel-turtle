@@ -14,6 +14,7 @@ define('app', [
     // Глобальные переменные
     var ACTIVE = ('is-active');
     var touchWIDTH = ($(window).width() < 1025);
+    var $loader = $('.j-loader');
 
     // MENU
     var $menu = $('.j-menu');
@@ -331,6 +332,14 @@ define('app', [
                         $datepickerMenu.datepicker('hide');
                         $selectMenu.selectric('close');
                     }
+                },
+                afterRender: function() {
+                    setTimeout(function() {
+                        $loader.addClass('is-hide');
+                    }, 300);
+                    setTimeout(function() {
+                        $loader.hide();
+                    }, 600);
                 }
             });
         });
