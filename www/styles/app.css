@@ -4688,13 +4688,17 @@ select {
       width: 0;
       left: 0; }
   .b-nav__link.is-animated:after {
-    width: calc(100% + 15vw); }
+    left: 50%;
+    width: 17vw; }
   @media only screen and (min-width: 1441px) {
     .b-nav__link.is-animated:after {
-      width: calc(100% + 12vw); } }
+      width: 15vw; } }
   @media only screen and (min-width: 1921px) {
     .b-nav__link.is-animated:after {
-      width: 400px; } }
+      width: 14vw; } }
+  @media only screen and (min-width: 2560px) {
+    .b-nav__link.is-animated:after {
+      width: 350px; } }
 
 .b-menu-logo {
   text-align: center; }

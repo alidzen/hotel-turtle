@@ -65,18 +65,25 @@ $item-height-popup: 56px;
 
     &.is-animated {
         &:after {
-            width: calc(100% + 15vw);
+            left: 50%;
+            width: 17vw;
         }
 
         @media #{$large-up} {
             &:after {
-                width: calc(100% + 12vw);
+                width: 15vw;
             }
         }
 
         @media #{$xlarge-up} {
             &:after {
-                width: 400px;
+                width: 14vw;
+            }
+        }
+
+        @media #{$custom-2560-up} {
+            &:after {
+                width: 350px;
             }
         }
     }
