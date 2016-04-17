@@ -1,7 +1,6 @@
 .l-article {
     @include margin-trailer(1.5);
     @include grid-clearfix();
-    overflow: hidden;
 
     @media #{$medium-up} {
         @include margin-trailer(2.5);

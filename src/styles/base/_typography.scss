@@ -79,10 +79,6 @@ h2 {
     @media #{$large-up} {
         font-size: 16px;
     }
-
-    @media #{$xlarge-up} {
-        font-size: 20px;
-    }
 }
 
 %f-nav-link,
@@ -125,9 +121,9 @@ h2 {
 .f-menu-reviews {
     font-size: 11px;
     line-height: 19px;
-    font-family: $font-roman;
+    font-family: $font-roman-bold;
     text-transform: uppercase;
-    letter-spacing: $gl-letter-spacing;
+    letter-spacing: $gl-letter-spacing * 2;
 
     @media #{$large-up} {
         font-size: 14px;
