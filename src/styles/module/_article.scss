@@ -92,6 +92,13 @@
 
         @media #{$big-up} {
             left: 50%;
+            height: 100%;
+            width: 100%;
+            max-width: none;
+
+            img {
+                height: 100%;
+            }
         }
     }
 

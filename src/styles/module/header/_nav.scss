@@ -91,6 +91,12 @@ $item-height-popup: 56px;
 
 // STATE
 .b-nav_theme_popup {
+    .b-nav__item {
+        padding: {
+            top: 5px;
+            bottom: 5px;
+        };
+    }
 
     .b-nav__link {
         @extend %f-nav-link-stick;

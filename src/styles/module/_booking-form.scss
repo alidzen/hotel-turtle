@@ -4,25 +4,34 @@
 }
 
 .b-booking-form__form {
-    display: flex;
-    flex-flow: column nowrap;
+    @include grid-clearfix();
+    //display: flex;
+    //flex-flow: column nowrap;
 
     @media #{$big-up} {
         height: $booking-height;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: auto;
+        padding: {
+            top: ($booking-height - 36px) / 2;
+            right: gutter(2);
+            left: gutter(2);
+        };
+        //flex-flow: row wrap;
+        //justify-content: flex-end;
+        //align-items: center;
     }
 }
 
 .b-booking-form__col {
     @media #{$big-up} {
         flex: 0 1 150px;
+        margin-right: 40px;
+        width: 150px;
+        float: right;
     }
 
     @media #{$large-up} {
         flex-basis: 200px;
+        width: 200px;
     }
 
     .selectric-wrapper {
@@ -44,6 +53,16 @@
 
     @media #{$medium-down} {
         display: none;
+    }
+
+    @media #{$big-up} {
+        float: left;
+    }
+}
+
+.b-booking-form__btn {
+    @media #{$big-up} {
+        float: right;
     }
 }
 
@@ -74,7 +93,6 @@
     .b-booking-form__btn {
         width: $btn-size;
         background-color: $green;
-        //border: 2px solid $gold-2;
     }
 
     .selectric-wrapper {

@@ -9,7 +9,7 @@ $line-margin: 2px;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('/img/menu-popup-bg.png') 50% 50% no-repeat $white;
+    background-color: $white;
     z-index: z('preloader');
 
     &.is-hide {
