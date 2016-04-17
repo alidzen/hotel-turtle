@@ -1,0 +1,42 @@
+extends _layout
+block vars
+    -var activePage = 'actions'
+block title
+    title Спецпредложения
+block gallery
+    .b-cafe-gallery(style="background-image: url('/img/actions-bg-1.jpg');")
+         .b-cafe-gallery__border
+             .b-cafe-gallery__cnt
+                 .b-cafe-gallery__ttl Мы всегда стараемся радовать наших гостей приятными предолжениями от нашего отеля
+                 .b-cafe-gallery__txt Включающего в себя литературный ресторан, философское кафе, сигарный клуб и банкетный зал с открытой террасой на крыше
+
+block content
+    .l-main-wrap.is-stick
+        section.l-actions-showcase
+            .l-actions-showcase__row
+                .l-actions-showcase__cnt
+                    .b-actions-showcase
+                        .b-actions-showcase__cnt
+                            .b-actions-showcase__header
+                                .b-actions-showcase__ttl Особенное утро –
+                                .b-actions-showcase__ttl-note особенное место
+                            .b-actions-showcase__descr
+                                p День свадьбы должен состоять только из приятных моментов с раннего утра – когда невеста и жених начинают сборы на торжество – и до вечера, наполненного романтикой и приятными воспоминаниями.
+                                p Доверяя подготовку к свадьбе нашему отелю, молодые люди могут быть уверены, что мы продумаем каждую деталь этого важного дня.
+                            a(href="#").b-actions-showcase__link Подробнее
+                .l-actions-showcase__img
+                    img(src="/img/actions-1.jpg" alt="Свадебный букет")
+
+        section.l-actions-showcase
+            .l-actions-showcase__row
+                .l-actions-showcase__img
+                    img(src="/img/actions-2.jpg" alt="Свадебный букет")
+                .l-actions-showcase__cnt
+                    .b-actions-showcase
+                        .b-actions-showcase__cnt
+                            .b-actions-showcase__header
+                                .b-actions-showcase__ttl СПА-выходные:
+                                .b-actions-showcase__ttl-note путь к гармонии
+                            .b-actions-showcase__descr
+                                p Для любителей спокойного отдыха мы предлагаем услугу «СПА-выходные» – два дня, наполненных отдыхом и заботой о себе. Настроение создадут классические интерьеры отеля с мансардными окнами и большими дизайнерскими ваннами, а также доставленный в номер завтрак от нашего шеф-повара.
+                            a(href="#").b-actions-showcase__link Подробнее

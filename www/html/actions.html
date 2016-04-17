@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="/scripts/lib/jquery.ui/themes/base/datepicker.css">
         <link rel="stylesheet" href="/scripts/lib/pagePiling.js/jquery.pagepiling.css">
         <link rel="stylesheet" href="/styles/app.css">
-        <title>Заголовок по умолчанию</title>
+        <title>Спецпредложения</title>
         <!--[if lte IE 9]>
     <link rel="stylesheet" href="/styles/ie.css"><![endif]-->
     </head>
@@ -133,7 +133,7 @@
                                 <ul class="b-nav__list">
                                     <li class="b-nav__item"><a href="#" class="b-nav__link">Атмосфера</a></li>
                                     <li class="b-nav__item"><a href="/html/room.html" class="b-nav__link">Номера</a></li>
-                                    <li class="b-nav__item"><a href="/html/actions.html" class="b-nav__link"> Спецпредложения</a></li>
+                                    <li class="b-nav__item"><a href="/html/actions.html" class="b-nav__link is-active"> Спецпредложения</a></li>
                                     <li class="b-nav__item"><a href="#" class="b-nav__link">Дополнительные услуги</a></li>
                                     <li class="b-nav__item"><a href="/html/cafe.html" class="b-nav__link">Ресторан</a></li>
                                     <li class="b-nav__item"><a href="/html/contacts.html" class="b-nav__link"> Контакты</a></li>
@@ -209,7 +209,7 @@
                                 <ul class="b-nav__list">
                                     <li class="b-nav__item"><a href="/" class="b-nav__link">Атмосфера</a></li>
                                     <li class="b-nav__item"><a href="/html/room.html" class="b-nav__link">Номера</a></li>
-                                    <li class="b-nav__item"><a href="/html/actions.html" class="b-nav__link"> Спецпредложения</a></li>
+                                    <li class="b-nav__item"><a href="/html/actions.html" class="b-nav__link is-active"> Спецпредложения</a></li>
                                     <li class="b-nav__item"><a href="#" class="b-nav__link">Дополнительные услуги</a></li>
                                     <li class="b-nav__item"><a href="/html/cafe.html" class="b-nav__link">Ресторан</a></li>
                                     <li class="b-nav__item"><a href="/html/contacts.html" class="b-nav__link"> Контакты</a></li>
@@ -232,7 +232,16 @@
                     </div>
                 </div>
                 <div class="l-header__booking-info">
-                    <div class="l-header__gallery"> </div>
+                    <div class="l-header__gallery">
+                        <div style="background-image: url('/img/actions-bg-1.jpg');" class="b-cafe-gallery">
+                            <div class="b-cafe-gallery__border">
+                                <div class="b-cafe-gallery__cnt">
+                                    <div class="b-cafe-gallery__ttl">Мы всегда стараемся радовать наших гостей приятными предолжениями от нашего отеля</div>
+                                    <div class="b-cafe-gallery__txt">Включающего в себя литературный ресторан, философское кафе, сигарный клуб и банкетный зал с открытой террасой на крыше</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="l-header__booking">
                         <div class="b-booking-form hide-on-touch">
                             <form action="/test/ajax/request.php" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form j-date-booking">
@@ -253,7 +262,46 @@
                 </div>
             </section>
             <section class="section pp-scrollable l-limit-wrap-full l-content">
-                <main class="l-main"> </main>
+                <main class="l-main">
+                    <div class="l-main-wrap is-stick">
+                        <section class="l-actions-showcase">
+                            <div class="l-actions-showcase__row">
+                                <div class="l-actions-showcase__cnt">
+                                    <div class="b-actions-showcase">
+                                        <div class="b-actions-showcase__cnt">
+                                            <div class="b-actions-showcase__header">
+                                                <div class="b-actions-showcase__ttl">Особенное утро –</div>
+                                                <div class="b-actions-showcase__ttl-note">особенное место</div>
+                                            </div>
+                                            <div class="b-actions-showcase__descr">
+                                                <p>День свадьбы должен состоять только из приятных моментов с раннего утра — когда невеста и жених начинают сборы на торжество — и до вечера, наполненного романтикой и приятными воспоминаниями.</p>
+                                                <p>Доверяя подготовку к свадьбе нашему отелю, молодые люди могут быть уверены, что мы продумаем каждую деталь этого важного дня.</p>
+                                            </div><a href="#" class="b-actions-showcase__link">Подробнее</a> </div>
+                                    </div>
+                                </div>
+                                <div class="l-actions-showcase__img"><img src="/img/actions-1.jpg" alt="Свадебный букет"></div>
+                            </div>
+                        </section>
+                        <section class="l-actions-showcase">
+                            <div class="l-actions-showcase__row">
+                                <div class="l-actions-showcase__img"><img src="/img/actions-2.jpg" alt="Свадебный букет"></div>
+                                <div class="l-actions-showcase__cnt">
+                                    <div class="b-actions-showcase">
+                                        <div class="b-actions-showcase__cnt">
+                                            <div class="b-actions-showcase__header">
+                                                <div class="b-actions-showcase__ttl">СПА-выходные:</div>
+                                                <div class="b-actions-showcase__ttl-note">путь к гармонии</div>
+                                            </div>
+                                            <div class="b-actions-showcase__descr">
+                                                <p>Для любителей спокойного отдыха мы предлагаем услугу «СПА-выходные» — два дня, наполненных отдыхом и заботой о себе. Настроение создадут классические интерьеры отеля с мансардными окнами и большими дизайнерскими
+                                                    ваннами, а также доставленный в номер завтрак от нашего шеф-повара.</p>
+                                            </div><a href="#" class="b-actions-showcase__link">Подробнее</a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
                 <footer class="l-footer">
                     <div class="l-footer__cnt">
                         <div class="l-limit-wrap">

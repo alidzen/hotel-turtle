@@ -1,0 +1,54 @@
+// LAYOUT
+@import '../layout/module/actions-showcase';
+
+.b-actions-showcase {
+    @include rhythm-padding(2);
+
+    @media #{$medium-up} {
+        @include padding-leader(5);
+        @include padding-trailer(3);
+    }
+}
+
+.b-actions-showcase__cnt {
+    color: $white;
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
+    };
+
+    @media #{$big-up} {
+        padding: {
+            right: gutter(4);
+            left: gutter(4);
+        };
+    }
+}
+
+.b-actions-showcase__header {
+    @extend %b-bottom-dash-pos-left;
+    @include padding-trailer(.5);
+    @include margin-trailer(1);
+
+    &:after {
+        background-color: $white;
+    }
+
+    @media #{$medium-up} {
+        @include padding-trailer(1.5);
+        @include margin-trailer(2);
+    }
+}
+
+.b-actions-showcase__ttl {
+    @extend %f-ttl;
+}
+
+.b-actions-showcase__ttl-note {
+    @extend %f-ttl-note;
+}
+
+.b-actions-showcase__link {
+    @extend %stretch-green-link;
+    @extend %f-menu-reviews;
+}

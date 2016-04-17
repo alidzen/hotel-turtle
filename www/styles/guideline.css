@@ -307,7 +307,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
       font-size: 22px;
       line-height: 44px; } }
 
-.b-menu-reviews__link, .b-card__link,
+.b-menu-reviews__link, .b-card__link, .b-actions-showcase__link,
 .f-menu-reviews {
   font-size: 11px;
   line-height: 19px;
@@ -315,12 +315,12 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   text-transform: uppercase;
   letter-spacing: 0.05em; }
   @media only screen and (min-width: 1441px) {
-    .b-menu-reviews__link, .b-card__link,
+    .b-menu-reviews__link, .b-card__link, .b-actions-showcase__link,
     .f-menu-reviews {
       font-size: 14px;
       line-height: 23px; } }
   @media only screen and (min-width: 1921px) {
-    .b-menu-reviews__link, .b-card__link,
+    .b-menu-reviews__link, .b-card__link, .b-actions-showcase__link,
     .f-menu-reviews {
       font-size: 17px;
       line-height: 25px; } }
@@ -395,23 +395,23 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   font-family: "ArnoPro-BoldItalic", sans-serif;
   letter-spacing: 0.05em; }
 
-.l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-callback__caption, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note,
+.l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-callback__caption, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note, .b-actions-showcase__ttl-note,
 .f-ttl-note {
   font-size: 24px;
   line-height: 30px;
   font-family: "ArnoPro-BoldItalic", sans-serif; }
   @media only screen and (min-width: 641px) {
-    .l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-callback__caption, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note,
+    .l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-callback__caption, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note, .b-actions-showcase__ttl-note,
     .f-ttl-note {
       font-size: 35px;
       line-height: 45px; } }
 
-.b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl {
+.b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl {
   font-size: 36px;
   line-height: 36px;
   font-family: "AGOpusHR-Bold", sans-serif; }
   @media only screen and (min-width: 641px) {
-    .b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl {
+    .b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl {
       font-size: 50px;
       line-height: 50px; } }
 
@@ -610,11 +610,11 @@ img {
     height: 4px;
     background-color: #bca064; }
 
-.b-article__features_theme_list {
+.b-article__features_theme_list, .b-actions-showcase__header {
   padding-bottom: 36px;
   margin-bottom: 36px;
   position: relative; }
-  .b-article__features_theme_list:after {
+  .b-article__features_theme_list:after, .b-actions-showcase__header:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -627,21 +627,21 @@ img {
   font-family: "ruble", sans-serif;
   text-transform: lowercase; }
 
-.b-menu-reviews__link, .b-card__link {
+.b-menu-reviews__link, .b-card__link, .b-actions-showcase__link {
   transition-property: color;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   display: inline-block;
   color: #005870;
   position: relative; }
-  .b-menu-reviews__link:hover, .b-card__link:hover {
+  .b-menu-reviews__link:hover, .b-card__link:hover, .b-actions-showcase__link:hover {
     color: #bca064; }
-    .b-menu-reviews__link:hover:after, .b-card__link:hover:after {
+    .b-menu-reviews__link:hover:after, .b-card__link:hover:after, .b-actions-showcase__link:hover:after {
       -webkit-transform: scaleX(0.3);
       -ms-transform: scaleX(0.3);
       transform: scaleX(0.3);
       background-color: #bca064; }
-  .b-menu-reviews__link:after, .b-card__link:after {
+  .b-menu-reviews__link:after, .b-card__link:after, .b-actions-showcase__link:after {
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform, -webkit-transform;
@@ -2910,16 +2910,25 @@ img {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.l-limit-wrap, .l-feature, .l-booking-rooms, .l-cafe-feature, .l-room-feature, .l-map, .l-callback, .l-showcase {
+.l-limit-wrap, .l-feature, .l-booking-rooms, .l-cafe-feature, .l-room-feature, .l-map, .l-callback, .l-showcase, .l-actions-showcase {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto; }
-  .l-limit-wrap:after, .l-feature:after, .l-booking-rooms:after, .l-cafe-feature:after, .l-room-feature:after, .l-map:after, .l-callback:after, .l-showcase:after {
+  .l-limit-wrap:after, .l-feature:after, .l-booking-rooms:after, .l-cafe-feature:after, .l-room-feature:after, .l-map:after, .l-callback:after, .l-showcase:after, .l-actions-showcase:after {
     content: '';
     display: block;
     clear: both; }
 
 .l-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  min-height: 100vh; }
+
+.l-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -5907,6 +5916,106 @@ select {
     width: 100px;
     height: 4px;
     background-color: #fefefd; }
+
+.l-actions-showcase {
+  margin-bottom: 36px; }
+  .l-actions-showcase:after {
+    content: '';
+    display: block;
+    clear: both; }
+  @media only screen and (min-width: 641px) {
+    .l-actions-showcase {
+      margin-bottom: 60px; } }
+  @media only screen and (min-width: 1025px) {
+    .l-actions-showcase {
+      margin-bottom: 48px; } }
+  .l-actions-showcase:last-child {
+    margin-bottom: 0px; }
+
+.l-actions-showcase__row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  background-color: #bca064; }
+  @media only screen and (min-width: 641px) {
+    .l-actions-showcase__row {
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; } }
+  @media only screen and (min-width: 1025px) {
+    .l-actions-showcase__row {
+      width: 83.33333%;
+      margin-left: 8.33333%;
+      margin-right: 8.33333%;
+      float: left; } }
+
+.l-actions-showcase__cnt {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
+  @media only screen and (min-width: 641px) {
+    .l-actions-showcase__cnt {
+      -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%; } }
+
+.l-actions-showcase__img {
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (max-width: 640px) {
+    .l-actions-showcase__img {
+      height: 400px;
+      -webkit-order: 2;
+      -ms-flex-order: 2;
+      order: 2; } }
+  @media only screen and (min-width: 641px) {
+    .l-actions-showcase__img {
+      -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%; } }
+  .l-actions-showcase__img img {
+    height: 100%;
+    max-width: none;
+    min-width: 100%; }
+    @media only screen and (min-width: 641px) {
+      .l-actions-showcase__img img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        min-height: 100%; } }
+
+.b-actions-showcase {
+  padding-top: 48px;
+  padding-bottom: 48px; }
+  @media only screen and (min-width: 641px) {
+    .b-actions-showcase {
+      padding-top: 120px;
+      padding-bottom: 72px; } }
+
+.b-actions-showcase__cnt {
+  color: #fefefd;
+  padding-right: 20px;
+  padding-left: 20px; }
+  @media only screen and (min-width: 1025px) {
+    .b-actions-showcase__cnt {
+      padding-right: 40px;
+      padding-left: 40px; } }
+
+.b-actions-showcase__header {
+  padding-bottom: 12px;
+  margin-bottom: 24px; }
+  .b-actions-showcase__header:after {
+    background-color: #fefefd; }
+  @media only screen and (min-width: 641px) {
+    .b-actions-showcase__header {
+      padding-bottom: 36px;
+      margin-bottom: 48px; } }
 
 .b-cafe-gallery {
   position: relative;

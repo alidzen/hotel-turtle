@@ -4,6 +4,13 @@
     min-height: 100vh;
 }
 
+.l-content {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+
 .l-main {
     flex: 1 0 auto;
     background-color: $white-2;
