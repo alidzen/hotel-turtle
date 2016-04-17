@@ -1,24 +1,102 @@
+// LAYOUT
+@import '../layout/module/callback';
+
 .b-callback {
+    padding: $margin-y $margin-x;
+    background-color: $white;
+
     @media #{$medium-up} {
-        min-width: 580px;
+        padding: $margin-y-desk $margin-x-desk;
     }
 }
 
-.b-callback__ttl {
-    @include adjust-font-size-to(24px);
-    color: $black;
-    font-family: $font-bold;
+.b-callback__border {
+    @include grid-clearfix();
+    border: 2px solid $gold-2;
+}
+
+.b-callback__cnt {
+    @include grid-clearfix();
+    @include rhythm-padding(1);
+    @include span(full);
+
+    @media #{$medium-up} {
+        @include rhythm-padding(2);
+    }
+
+    @media #{$big-up} {
+        @include span(10 center);
+    }
+}
+
+.b-callback__header {
+    @extend %b-bottom-dash-100;
+    @include margin-trailer(1);
+    color: $gold-2;
+    text-align: center;
+}
+
+.b-callback__caption {
+    @extend %f-ttl-note;
 }
 
 .b-callback__row {
-    @include margin-trailer();
+    @include margin-trailer(1);
+    @include grid-clearfix();
+}
 
-    &:last-child {
-        @include margin-trailer(0);
+.b-callback__col {
+
+    @media #{$medium-up} {
+        @include span(6, true);
+
+        &:nth-child(2n+1) {
+            padding-left: 0;
+        }
+
+        &:nth-child(2n) {
+            padding-right: 0;
+        }
     }
 }
 
-.b-callback__lbl {
-    @include margin-trailer(.5);
-    display: block;
+.b-callback__form {
+    @include span(full, true);
+
+    @media #{$medium-up} {
+        @include span(6 of 10 center);
+    }
+
+    input {
+        &[type='text'],
+        &[type="password"],
+        &[type="tel"],
+        &[type="email"],
+        &[type="search"],
+        &[type="date"],
+        &[type="url"] {
+            background-color: $gray-3;
+            border-color: $gray-3;
+            color: $black;
+
+            &::placeholder {
+                color: $black;
+            }
+        }
+    }
+
+    textarea {
+        background-color: $gray-3;
+        border-color: $gray-3;
+        color: $black;
+
+        &::placeholder {
+            color: $black;
+        }
+    }
 }
+
+.b-callback__btn {
+    text-align: center;
+}
+

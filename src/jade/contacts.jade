@@ -16,17 +16,16 @@ block content
     .l-main-wrap
         include blocks/_map
 
-    .l-callback
-        .l-callback__border
+        .l-callback
             .l-callback__cnt
-            .b-callback
-                .b-callback__cnt
-                    .b-callback__header
-                        h2.b-callback__ttl Обратная связь
-                        .b-callback__caption задайте нам интересующий вас вопрос
-                    .b-callback__form
-                        .b-callback
-                            form(action="#" method="POST")
+                .b-callback
+                    .b-callback__border
+                        .b-callback__cnt
+                            .b-callback__header
+                                h2.b-callback__ttl Обратная связь
+                                .b-callback__caption задайте нам интересующий вас вопрос
+                            form.b-callback__form(action='/test/ajax/request.php'
+                            data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время.")
                                 .b-callback__row
                                     input(type="text"
                                     data-errormessage="Укажите ваше имя"
@@ -50,5 +49,6 @@ block content
                                     .b-callback__descr
                                         textarea(placeholder="Ваш вопрос" required).b-callback__textarea
                                 .b-callback__row
-                                    input(type="submit"
-                                    value="Перезвоните мне").b-btn
+                                    .b-callback__btn
+                                        input(type="submit"
+                                        value="Отправить").b-btn.b-btn_width_auto

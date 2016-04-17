@@ -1,0 +1,15 @@
+.l-callback {
+    @extend %l-row;
+    @include grid-clearfix();
+}
+
+.l-callback__cnt {
+
+    @media #{$medium-up} {
+        @include span(10 center);
+    }
+
+    @media #{$big-up} {
+        @include span(8 center);
+    }
+}

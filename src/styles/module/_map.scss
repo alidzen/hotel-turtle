@@ -1,16 +1,24 @@
 // LAYOUT
 .l-map {
     @extend %l-row;
+    @include margin-trailer(1.5);
     position: relative;
-    min-height: 600px;
 
-    height: calc(100vh - 108px); // desktop variant
+    @media #{$medium-up} {
+        @include margin-trailer(2.5);
+    }
+
+    @media #{$big-up} {
+        @include margin-trailer(3.5);
+    }
 }
 
 //MODULE
 .b-map {
     width: 100%;
-    height: 500px;
+    min-height: 400px;
+    max-height: 650px;
+    height: calc(100vh - 164px); // desktop variant
 }
 
 .b-map__zoom {

@@ -214,7 +214,8 @@ h2 {
     letter-spacing: $gl-letter-spacing;
 }
 
-%f-ttl-note {
+%f-ttl-note,
+.f-ttl-note {
     font-size: 24px;
     line-height: 30px;
     font-family: $font-bold-italic;

@@ -277,19 +277,16 @@
                                 }]
                             }
                         </script>
-                    </div>
-                    <div class="l-callback">
-                        <div class="l-callback__border">
-                            <div class="l-callback__cnt"></div>
-                            <div class="b-callback">
-                                <div class="b-callback__cnt">
-                                    <div class="b-callback__header">
-                                        <h2 class="b-callback__ttl">Обратная связь</h2>
-                                        <div class="b-callback__caption">задайте нам интересующий вас вопрос</div>
-                                    </div>
-                                    <div class="b-callback__form">
-                                        <div class="b-callback">
-                                            <form action="#" method="POST">
+                        <div class="l-callback">
+                            <div class="l-callback__cnt">
+                                <div class="b-callback">
+                                    <div class="b-callback__border">
+                                        <div class="b-callback__cnt">
+                                            <div class="b-callback__header">
+                                                <h2 class="b-callback__ttl">Обратная связь</h2>
+                                                <div class="b-callback__caption">задайте нам интересующий вас вопрос</div>
+                                            </div>
+                                            <form action="/test/ajax/request.php" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-callback__form">
                                                 <div class="b-callback__row"> <input type="text" data-errormessage="Укажите ваше имя" placeholder="Ваше имя" required class="b-callback__input"> </div>
                                                 <div class="b-callback__row">
                                                     <div class="b-callback__col"> <input type="tel" pattern="^[0-9-()+\s]+$" data-errormessage="Вы забыли оставить нам номер телефона" placeholder="Ваш телефон" autocomplete="tel" required class="b-callback__input"> </div>
@@ -299,7 +296,9 @@
                                                 <div class="b-callback__row">
                                                     <div class="b-callback__descr"> <textarea placeholder="Ваш вопрос" required class="b-callback__textarea"></textarea> </div>
                                                 </div>
-                                                <div class="b-callback__row"> <input type="submit" value="Перезвоните мне" class="b-btn"> </div>
+                                                <div class="b-callback__row">
+                                                    <div class="b-callback__btn"> <input type="submit" value="Отправить" class="b-btn b-btn_width_auto"> </div>
+                                                </div>
                                             </form>
                                         </div>
                                     </div>

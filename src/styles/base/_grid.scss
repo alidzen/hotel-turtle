@@ -99,7 +99,7 @@ $grid-container-width: ($columns * $column-width) + ($columns * $gutter-width); 
         float: left;
     }
 
-    @if ($gutter == 'true') {
+    @if ($gutter == true) {
         padding: {
             left: gutter(1);
             right: gutter(1);
