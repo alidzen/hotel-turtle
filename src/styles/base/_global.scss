@@ -102,7 +102,8 @@ img {
     }
 }
 
-%b-bottom-dash-pos-left {
+%b-bottom-dash-pos-left,
+.b-bottom-dash-pos-left {
     @include padding-trailer(1.5);
     @include margin-trailer(1.5);
     position: relative;

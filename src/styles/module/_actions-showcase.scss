@@ -5,8 +5,7 @@
     @include rhythm-padding(2);
 
     @media #{$medium-up} {
-        @include padding-leader(3);
-        @include padding-trailer(3);
+        @include rhythm-padding(3);
     }
 
     @media #{$big-up} {
