@@ -81,14 +81,17 @@
 
 .l-footer__col {
     @include margin-trailer(1.5);
+    @include grid-clearfix();
+
+    @media #{$medium-up} {
+        @include margin-trailer(0);
+        flex: 0 1 200px; //set all elem one width for centering
+    }
 
     &:last-child {
         @include margin-trailer(0);
     }
 
-    @media #{$medium-up} {
-        @include margin-trailer(0);
-    }
 }
 
 .l-main-wrap {

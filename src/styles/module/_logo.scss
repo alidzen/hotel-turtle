@@ -12,6 +12,10 @@ $logo: 'logo' !default;
     @include sprite('mind-games');
     @include squish-text;
     display: block;
+
+    @media #{$medium-up} {
+        float: right;
+    }
 }
 
 .b-mobile-logo {

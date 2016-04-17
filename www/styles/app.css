@@ -2997,11 +2997,18 @@ img {
 
 .l-footer__col {
   margin-bottom: 36px; }
-  .l-footer__col:last-child {
-    margin-bottom: 0px; }
+  .l-footer__col:after {
+    content: '';
+    display: block;
+    clear: both; }
   @media only screen and (min-width: 641px) {
     .l-footer__col {
-      margin-bottom: 0px; } }
+      margin-bottom: 0px;
+      -webkit-flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+      flex: 0 1 200px; } }
+  .l-footer__col:last-child {
+    margin-bottom: 0px; }
 
 .l-main-wrap {
   padding-bottom: 36px;
@@ -3786,6 +3793,9 @@ img {
     .b-mind-games {
       background-image: url("/img/sprites@2x.png");
       background-size: 303px 231px; } }
+  @media only screen and (min-width: 641px) {
+    .b-mind-games {
+      float: right; } }
 
 .b-mobile-logo {
   width: 50px; }
