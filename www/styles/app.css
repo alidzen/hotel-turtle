@@ -5964,7 +5964,7 @@ select {
   overflow: hidden;
   background-color: #fefefd;
   padding-top: 48px; }
-  @media only screen and (min-width: 641px) {
+  @media only screen and (min-width: 1024px) {
     .b-card {
       padding-top: 100px;
       padding-left: 70px;
@@ -6025,6 +6025,10 @@ select {
   padding-left: 30px; }
   @media only screen and (min-width: 641px) {
     .b-card__cnt {
+      padding-right: 50px;
+      padding-left: 50px; } }
+  @media only screen and (min-width: 1024px) {
+    .b-card__cnt {
       width: 50%;
       padding: 0; } }
 
@@ -6046,7 +6050,7 @@ select {
       padding-bottom: 36px;
       margin-bottom: 48px; } }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 1024px) {
   .b-card__descr {
     padding-right: 150px; } }
 
@@ -6055,6 +6059,9 @@ select {
   background: url("/img/card/card-1.jpg") no-repeat 50% 50%;
   background-size: cover; }
   @media only screen and (min-width: 641px) {
+    .b-card__gallery {
+      height: 400px; } }
+  @media only screen and (min-width: 1024px) {
     .b-card__gallery {
       position: absolute;
       left: 50%;
@@ -6097,6 +6104,10 @@ select {
       width: 37.5%;
       float: right;
       height: 100%; } }
+
+.l-showcase_theme_img-bg {
+  background: url("/img/atmosphere-bg.png") 100% 100% no-repeat #005870;
+  background-size: contain; }
 
 .b-showcase {
   padding-top: 48px;
@@ -6235,6 +6246,9 @@ select {
     .b-actions-showcase__header {
       padding-bottom: 36px;
       margin-bottom: 48px; } }
+
+.b-actions-showcase__ttl > span {
+  white-space: nowrap; }
 
 .b-actions-showcase__link:hover {
   color: #fefefd; }

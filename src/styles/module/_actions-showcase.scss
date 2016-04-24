@@ -45,6 +45,10 @@
 
 .b-actions-showcase__ttl {
     @extend %f-ttl;
+
+    >span {
+        white-space: nowrap;
+    }
 }
 
 .b-actions-showcase__ttl-note {

@@ -7,7 +7,7 @@
         top: rhythm(2);
     };
 
-    @media #{$medium-up} {
+    @media #{$custom-1024-up} {
         padding: {
             top: 100px;
             left: 70px;
@@ -92,6 +92,13 @@
     };
 
     @media #{$medium-up} {
+        padding: {
+            right: gutter(5);
+            left: gutter(5);
+        };
+    }
+
+    @media #{$custom-1024-up} {
         width: 50%;
         padding: 0;
     }
@@ -120,7 +127,8 @@
 }
 
 .b-card__descr {
-    @media #{$medium-up} {
+
+    @media #{$custom-1024-up} {
         padding-right: 150px;
     }
 }
@@ -139,6 +147,10 @@
     background-size: cover;
 
     @media #{$medium-up} {
+        height: 400px;
+    }
+
+    @media #{$custom-1024-up} {
         position: absolute;
         left: 50%;
         top: 0;

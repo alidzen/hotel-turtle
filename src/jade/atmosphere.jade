@@ -1,0 +1,54 @@
+extends _layout
+block vars
+    -var activePage = 'atmosphere'
+block title
+    title Ресторан
+block gallery
+    .b-cafe-gallery(style="background-image: url('/img/atmosphere-bg-1.jpg');")
+         .b-cafe-gallery__border
+             .b-cafe-gallery__cnt
+                 h1.b-cafe-gallery__ttl Дух Петербурга <br>в каждой детали
+                 .b-cafe-gallery__txt Атмосфера складывается из многих деталей: внешнее окружение отеля, внутренние интерьеры и дизайн номеров, отношение персонала. Каждая из этих составляющих бутик-отеля наполнена духом Санкт-Петербурга, а все вместе они погружают гостей в петербургский мир.
+
+block content
+    .l-main-wrap.is-stick
+        section.l-article.l-limit-wrap
+            .l-article__cnt
+                .b-card
+                    .b-card__border
+                        .b-card__cnt
+                            .b-card__header
+                            .b-card__descr
+                                p Отель "Ахиллес и Черепаха" расположен в историческом центре Петербурга, полном своих историй и легенд. Улица Достоевского –  одно из тихих мест центрального района города – берет свое начало у Владимирского собора, являющегося архитектурным памятником второй половины XVIII века. На собор выходят окна квартиры Ф.М. Достоевского – именно тут было написано последнее произведение автора – роман "Братья Карамазовы". Сейчас в этом здании находится литературно-мемориальный музей писателя.
+                                p На улице Достоевского можно увидеть множество старинных домов, построенных еще в XIX веке. В одном из них и разместился бутик-отель "Ахиллес и Черепаха".
+                        .b-card__gallery(style="background-image: url('/img/atmosphere-bg-2.jpg');")
+        section.l-showcase.l-showcase_theme_img-bg
+            .l-showcase__descr
+                .b-showcase.b-showcase_theme_atmosphere
+                    .b-showcase__cnt
+                        .b-showcase__header
+                            h1.b-showcase__ttl Уютное
+                            .b-showcase__ttl-note пространство отеля
+                        p Уютное пространство отеля не позволит чувству настоящего Петербурга покинуть вас. Каждый из номеров обладает своим характером и историей, но объединяет их общая атмосфера – которой пронизана каждая деталь.
+                        .b-typo-reset
+                            ul
+                                li Авторские интерьеры, выполненные в классическом стиле.
+                                li Мансардные окна с видом на петербургское небо.
+                                li Натуральные материалы и необычные архитектурные элементы в дизайне.
+            .l-showcase__gallery
+                .b-gallery.j-gallery.j-gallery_theme_mobile
+                    .b-gallery__base(
+                    data-height="600"
+                    data-width="100%"
+                    data-arrows="false"
+                    data-nav="dots"
+                    data-fit="cover"
+                    data-loop="true"
+                    data-autoplay="false"
+                    data-margin="-1")
+                        a(href="/img/card/card-1.jpg")
+                        a(href="/img/card/card-1.jpg")
+                        a(href="/img/card/card-1.jpg")
+
+                    a(href="javascript:;").j-gallery__prev.b-gallery__arrow.b-gallery__arrow_show_prev Показать предыдущий слайд
+                    a(href="javascript:;").j-gallery__next.b-gallery__arrow.b-gallery__arrow_show_next Показать следущий слайд

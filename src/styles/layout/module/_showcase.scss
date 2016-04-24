@@ -24,3 +24,9 @@
         height: 100%;
     }
 }
+
+//STATE
+.l-showcase_theme_img-bg {
+    background: url('/img/atmosphere-bg.png') 100% 100% no-repeat $green;
+    background-size: contain;
+}
