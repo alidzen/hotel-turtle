@@ -129,7 +129,11 @@ define([
             map      : this.map,
             position : coords,
             animation: google.maps.Animation.DROP,
-            icon     : data.image
+            icon     : {
+                url: data.image,
+                size : new google.maps.Size(213, 244),
+                anchor: new google.maps.Point(0, 244)
+            }
         };
 
         var marker = new google.maps.Marker(options);

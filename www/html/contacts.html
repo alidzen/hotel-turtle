@@ -13,11 +13,11 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicons/apple-touch-icon-152x152-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/favicons/apple-touch-icon-180x180-precomposed.png">
         <link rel="icon" sizes="192x192" href="/favicons/touch-icon-192x192.png">
-        <link rel="stylesheet" href="/scripts/lib/jquery-selectric/public/selectric.css">
-        <link rel="stylesheet" href="/scripts/lib/magnific-popup/dist/magnific-popup.css">
-        <link rel="stylesheet" href="/scripts/lib/fotorama/fotorama.css">
-        <link rel="stylesheet" href="/scripts/lib/jquery.ui/themes/base/datepicker.css">
-        <link rel="stylesheet" href="/scripts/lib/pagePiling.js/jquery.pagepiling.css">
+        <link rel="stylesheet" href="../scripts/lib/jquery-selectric/public/selectric.css">
+        <link rel="stylesheet" href="../scripts/lib/magnific-popup/dist/magnific-popup.css">
+        <link rel="stylesheet" href="../scripts/lib/fotorama/fotorama.css">
+        <link rel="stylesheet" href="../scripts/lib/jquery.ui/themes/base/datepicker.css">
+        <link rel="stylesheet" href="../scripts/lib/pagePiling.js/jquery.pagepiling.css">
         <link rel="stylesheet" href="/styles/app.css">
         <title>Контакты</title>
         <!--[if lte IE 9]>
@@ -285,8 +285,9 @@
                             window.map['map'] = {
                                 markers: [
                                 {
-                                    coords: [59.923325, 30.346303],
-                                    image: '/img/markers/here.svg'
+                                    coords: [59.923350, 30.346303],
+                                    image: '/img/markers/here.svg',
+                                    size: [213, 244]
                                 }]
                             }
                         </script>
@@ -347,7 +348,7 @@
         <div class="l-preloader j-loader">
             <div id="loader"></div>
         </div>
-        <script src="/scripts/lib/requirejs/require.min.js" data-main="/scripts/config.js"></script>
+        <script src="../scripts/lib/requirejs/require.min.js" data-main="../scripts/config.js"></script>
     </body>
 
 </html>

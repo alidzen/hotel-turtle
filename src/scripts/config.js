@@ -22,7 +22,6 @@ require.config({
         infobox          : 'google-infobox/google-infobox',
         async            : 'requirejs-plugins/src/async',
 
-        CanvasLoader            : 'CanvasLoader/js/heartcode-canvasloader-min',
         videojs                 : 'videojs/dist/video-js/video',
         sammy                   : 'sammy/lib/min/sammy-latest.min',
         scaleraphael            : 'scaleraphael/scaleraphael',

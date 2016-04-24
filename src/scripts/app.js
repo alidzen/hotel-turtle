@@ -114,6 +114,54 @@ define('app', [
         }
     });
 
+    // doc: https://github.com/alvarotrigo/pagePiling.js
+    // example: http://www.onextrapixel.com/2015/04/09/how-to-create-a-
+    // beautiful-fullscreen-single-scrolling-page-like-huge-inc/
+    (function($fullPage) {
+        if (!$fullPage.length) {
+            return;
+        }
+
+        require(['pagePiling'], function() {
+            var $activeLink = $header.find('.b-nav__link.is-active');
+
+            $fullPage.pagepiling({
+                navigation: false,
+                verticalCentered: false,
+                css3: false,
+                onLeave: function (index, nextIndex) {
+                    //reaching our last section? The one with our normal site?
+                    if (nextIndex === 2) {
+                        $datepickerHeader.datepicker('hide');
+                        $selectHeader.selectric('close');
+                        setTimeout(function() {
+                            $navMenu.addClass(ACTIVE);
+                        }, 900);
+                    }
+
+                    //leaving our last section? The one with our normal site?
+                    if (index === 2) {
+                        $navMenu.removeClass(ACTIVE);
+                        $datepickerMenu.datepicker('hide');
+                        $selectMenu.selectric('close');
+                    }
+                },
+                afterRender: function() {
+                    setTimeout(function() {
+                        $loader.addClass('is-hide');
+                    }, 300);
+                    setTimeout(function() {
+                        $loader.hide();
+                    }, 600);
+                    setTimeout(function() {
+                        $activeLink.addClass('is-animated');
+                    }, 600);
+
+                }
+            });
+        });
+    })($('.j-full-page'));
+
     (function($forms) {
         if (!$forms.length) {
             return;
@@ -161,20 +209,6 @@ define('app', [
             });
         });
     })($('.j-gallery'));
-
-    //Анимированный label
-    (function($animLabels) {
-        if (!$animLabels.length) {
-            return;
-        }
-
-        require(['app/animated-label'], function(AnimatedLabel) {
-            $animLabels.each(function() {
-                var label = new AnimatedLabel($(this));
-                label.init();
-            });
-        });
-    })($('.j-anim-label'));
 
     // Стилизация селекта
     (function($selects) {
@@ -303,54 +337,6 @@ define('app', [
         });
 
     })($('.j-header-menu'));
-
-    // doc: https://github.com/alvarotrigo/pagePiling.js
-    // example: http://www.onextrapixel.com/2015/04/09/how-to-create-a-
-    // beautiful-fullscreen-single-scrolling-page-like-huge-inc/
-    (function($fullPage) {
-        if (!$fullPage.length) {
-            return;
-        }
-
-        require(['pagePiling'], function() {
-            var $activeLink = $header.find('.b-nav__link.is-active');
-
-            $fullPage.pagepiling({
-                navigation: false,
-                verticalCentered: false,
-                css3: false,
-                onLeave: function (index, nextIndex) {
-                    //reaching our last section? The one with our normal site?
-                    if (nextIndex === 2) {
-                        $datepickerHeader.datepicker('hide');
-                        $selectHeader.selectric('close');
-                        setTimeout(function() {
-                            $navMenu.addClass(ACTIVE);
-                        }, 900);
-                    }
-
-                    //leaving our last section? The one with our normal site?
-                    if (index === 2) {
-                        $navMenu.removeClass(ACTIVE);
-                        $datepickerMenu.datepicker('hide');
-                        $selectMenu.selectric('close');
-                    }
-                },
-                afterRender: function() {
-                    setTimeout(function() {
-                        $loader.addClass('is-hide');
-                    }, 300);
-                    setTimeout(function() {
-                        $loader.hide();
-                    }, 600);
-                    setTimeout(function() {
-                        $activeLink.addClass('is-animated');
-                    }, 600);
-
-                }
-            });
-        });
-    })($('.j-full-page'));
 
     // Change gallery param
     (function($gallery) {

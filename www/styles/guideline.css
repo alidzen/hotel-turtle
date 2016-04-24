@@ -187,7 +187,7 @@ img {
 
 .b-menu-reviews__link, .b-card__link, .b-actions-showcase__link {
   transition-property: color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   display: inline-block;
   color: #005870;
@@ -203,7 +203,7 @@ img {
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform, -webkit-transform;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
     content: '';
     position: absolute;
@@ -658,7 +658,7 @@ p {
 
 a {
   transition-property: color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   color: #333333;
   text-decoration: none; }
@@ -3191,7 +3191,7 @@ blockquote {
 
 .l-menu {
   transition-property: opacity;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   padding-top: 24px;
   padding-bottom: 12px;
@@ -3243,7 +3243,7 @@ blockquote {
 
 .l-preloader {
   transition-property: opacity;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-duration: .6s;
   position: fixed;
@@ -3323,7 +3323,7 @@ blockquote {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   background-color: #005870;
   position: fixed;
@@ -3366,7 +3366,7 @@ blockquote {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -4021,7 +4021,7 @@ blockquote {
 
 .b-btn {
   transition-property: color, background-color, border-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   color: #bca064;
   background-color: transparent;
@@ -4088,7 +4088,7 @@ blockquote {
 
 input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea {
   transition-property: border-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   font-family: "Geometria", sans-serif;
   color: #fefefd;
@@ -4140,7 +4140,7 @@ label {
   position: relative; }
   .b-anim-label label {
     transition-property: top, font-size, text-transform, letter-spacing, color;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
     line-height: 1.5;
     display: block;
@@ -4341,7 +4341,7 @@ select {
   border-top: none; }
   .selectric-items li {
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
     background-color: #004457;
     color: #fefefd;
@@ -4395,7 +4395,7 @@ select {
     width: 43px;
     height: 44px;
     transition-property: opacity;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
     font: 0/0 serif;
     text-shadow: none;
@@ -4476,7 +4476,7 @@ select {
 
 .b-gallery__arrow {
   transition-property: background-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   font: 0/0 serif;
   text-shadow: none;
@@ -4598,7 +4598,7 @@ select {
 
 .fotorama__dot {
   transition-property: border-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   border-radius: 50%;
   background-color: #cbc7bf;
@@ -4651,7 +4651,7 @@ select {
 
 .b-tabs__item {
   transition-property: color, background-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   line-height: 36px;
   height: 36px;
@@ -4707,7 +4707,7 @@ select {
 
 .b-map__zoom {
   transition-property: box-shadow;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   background-color: #fefefd;
   text-align: center;
@@ -4849,7 +4849,7 @@ select {
 
 .b-nav__link {
   transition-property: color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   position: relative;
   color: #333333;
@@ -4863,7 +4863,7 @@ select {
       left: 0; }
   .b-nav__link:after {
     transition-property: width, left;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-property: all;
     content: '';
@@ -5549,7 +5549,7 @@ select {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-duration: .75s;
   height: 310px;
@@ -5558,7 +5558,7 @@ select {
 
 .b-room__cnt {
   transition-property: color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   padding-top: 36px;
   overflow: hidden;
@@ -5808,7 +5808,7 @@ select {
   position: relative; }
   .b-service__header:after {
     transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
     content: '';
     position: absolute;
@@ -5820,7 +5820,7 @@ select {
 
 .b-service__ttl-note {
   transition-property: color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease; }
 
 .b-service__ttl {
@@ -5864,7 +5864,7 @@ select {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-duration: .75s;
   position: absolute;
@@ -5908,7 +5908,7 @@ select {
 
 .b-closed-btn {
   transition-property: background-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   position: relative;
   display: block;
@@ -5934,7 +5934,7 @@ select {
   transition-property: background-color, -webkit-transform;
   transition-property: transform, background-color;
   transition-property: transform, background-color, -webkit-transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   position: absolute;
   top: 50%;
@@ -6425,7 +6425,7 @@ body {
 
 .link {
   transition-property: color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
   margin-right: 10px;
   color: blue;
