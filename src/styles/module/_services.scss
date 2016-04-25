@@ -12,22 +12,6 @@
         bottom: rhythm(.5);
     };
 
-    &:hover {
-        color: inherit;
-
-        .b-service__ttl-note {
-            color: $gold-2;
-        }
-
-        .b-service__img {
-            transform: scale(1.1);
-        }
-
-        .b-service__header:after {
-            background-color: $gold-2;
-        }
-    }
-
     @media #{$medium-up} {
         padding: {
             top: rhythm(1.25);
@@ -35,6 +19,24 @@
             left: gutter(2);
             bottom: rhythm(.5);
         };
+    }
+
+    @media #{$big-up} {
+        &:hover {
+            color: inherit;
+
+            .b-service__ttl-note {
+                color: $gold-2;
+            }
+
+            .b-service__img {
+                transform: scale(1.1);
+            }
+
+            .b-service__header:after {
+                background-color: $gold-2;
+            }
+        }
     }
 
     &.has-lines {
