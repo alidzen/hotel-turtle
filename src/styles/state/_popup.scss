@@ -1,3 +1,4 @@
+$popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popup-btn-mobile-line-height;
 // Fullsize popup
 .b-popup_full_size {
 
@@ -40,5 +41,15 @@
         &.mfp-removing {
             opacity: 0;
         }
+    }
+}
+
+.b-popup_theme_map {
+    .b-popup__cnt {
+        padding: 0;
+    }
+
+    .b-map__base {
+        height: calc(100vh - #{$popup-btn-height});
     }
 }

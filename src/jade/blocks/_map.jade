@@ -1,13 +1,26 @@
 .l-map
-    #map.j-map.b-map(data-zoom="15" data-scrollwheel="false")
+    .b-map
+        // если на мобилке карту нужно показывать в попапе, то ничего не меняем
+        // если карту нужно показывать всегда выпиливаем .b-map__mobile и все внутренности
+        // с .b-btn убираем data-noinit
+        .b-map__mobile
+            .b-map__img
+            .b-map__btn
+                a(href="#popup-map" data-target="#map" data-theme="map").b-btn.b-btn_bg_white.j-popup Развернуть карту
+        .b-map__cnt
+            #map.j-map.b-map__base(data-noinit data-zoom="15" data-scrollwheel="false")
+
+#popup-map.mfp-hide.b-popup
+    a(href="javascript:;" title="Закрыть").b-popup__close Свернуть карту
+    .b-popup__cnt
+
 script.
     window.map = {}
     window.map['map'] = {
         markers: [
             {
                 coords      : [59.923350, 30.346303],
-                image       : '/img/markers/here.svg',
-                size        : [213, 244]
+                image       : '/img/markers/here.svg'
             }
         ]
     }

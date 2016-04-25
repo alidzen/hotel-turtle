@@ -191,7 +191,7 @@ define('app', [
                 popup.initPopup();
 
                 if ($(this).attr('href') === hash) {
-                    popup.openPopup($(this));
+                    popup.showPopup($(this));
                 }
             });
         });

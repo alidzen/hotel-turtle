@@ -18,16 +18,19 @@ $popup-btn-mobile-font-family: $btn-font-family !default;
 $popup-btn-close-image: 'popup-close' !default; //image
 $popup-btn-opacity: .5 !default;
 
+$popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popup-btn-mobile-line-height;
+
 // Magnific reset
 // scss-lint:disable ImportantRule
 
 .b-popup {
     color: $popup-color;
     background-color: $popup-bg-color;
-    min-height: 100vh;
+    min-height: 100%;
     border-radius: $popup-border-radius;
 
     @media #{$medium-up} {
+        position: static;
         height: auto;
         width: auto;
         min-height: inherit;
@@ -68,8 +71,8 @@ $popup-btn-opacity: .5 !default;
         @include squish-text;
         background-color: transparent;
         position: fixed;
-        top: rhythm(1);
-        right: rhythm(1);
+        top: 50px;
+        right: 50px;
         opacity: $popup-btn-opacity;
         padding: 0;
     }
@@ -100,10 +103,36 @@ $popup-btn-opacity: .5 !default;
 
 // Popup content
 .b-popup__cnt {
-    padding: rhythm(1) gutter(1);
+    @include padding-leader(3);
+    background-color: $gray-4;
+
+    // Если мало контента, то он будет прижиматься к низу
+    @media #{$small-only} {
+        min-height: calc(100vh - 50px);
+        display: flex;
+        flex-flow: column nowrap;
+    }
 
     @media #{$medium-up} {
-        padding: rhythm(2);
+        @include padding-leader(9);
+        width: 700px;
+        margin: {
+            right: auto;
+            left: auto;
+        };
+    }
+}
+
+.b-popup__ttl {
+    color: $gray-3;
+    text-align: center;
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
+    };
+
+    @media #{$medium-up} {
+        @include margin-trailer(4);
     }
 }
 
@@ -119,6 +148,7 @@ $popup-btn-opacity: .5 !default;
 // Magnific reset
 .mfp-wrap {
     opacity: 1; // theme style
+    -webkit-overflow-scrolling: touch;
 }
 
 .mfp-bg {
@@ -128,6 +158,14 @@ $popup-btn-opacity: .5 !default;
 
 .mfp-container {
     padding: 0;
+}
+
+.mfp-content {
+    height: 100%;
+
+    @media #{$medium-up} {
+        height: auto;
+    }
 }
 
 //STATE

@@ -14,43 +14,51 @@
 }
 
 //MODULE
-.b-map {
+.b-map__base {
     width: 100%;
-    min-height: 400px;
-    max-height: 650px;
-    height: calc(100vh - 108px); // desktop variant
+
+    @media #{$medium-up} {
+        width: 100%;
+        min-height: 400px;
+        max-height: 650px;
+        height: calc(100vh - 108px); // desktop variant
+    }
 }
 
-.b-map__zoom {
-    @include transition(box-shadow);
-    background-color: $white;
-    text-align: center;
-    font-size: 25px;
-    line-height: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.b-map__base[data-noinit] {
+    display: none;
+
+    @media #{$medium-up} {
+        display: block;
+    }
+}
+
+.b-map__cnt {
+    position: relative;
+}
+
+.b-map__mobile {
+    position: relative;
+
+    @media #{$medium-up} {
+        display: none;
+    }
+}
+
+.b-map__img {
+    width: 100%;
+    height: rhythm(8);
+    background: url('/img/map-bg.jpg');
+    background-size: cover;
+}
+
+.b-map__btn {
+    @include span(full);
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
+    };
     position: absolute;
-    z-index: 1;
-    right: gutter(1);
-    display: block;
-    box-shadow: 2px 2px 25px rgba($black, .2);
-
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        box-shadow: 2px 2px 25px rgba($black, .3);
-    }
-
-    &:active {
-        box-shadow: 2px 2px 25px rgba($black, .4);
-    }
-}
-
-.b-map__zoom-in {
-    top: 43%;
-}
-
-.b-map__zoom-out {
-    top: 55%;
+    top: 50%;
+    transform: translateY(-50%);
 }

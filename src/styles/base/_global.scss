@@ -11,6 +11,7 @@ body {
     @extend %f-base;
     color: $base-font-color;
     text-size-adjust: 100%;
+    width: 100%;
 
     // Убираем скроллинг при открытом мобильном меню.
     &.is-active {
@@ -28,23 +29,27 @@ body {
     }
 
     // Custom scroll ie11
-    scrollbar-base-color: $green-3;
-    scrollbar-highlight-color: $gray;
-    scrollbar-arrow-color: $green-3;
+    @media #{$big-up} {
+        scrollbar-base-color: $green-3;
+        scrollbar-highlight-color: $gray;
+        scrollbar-arrow-color: $green-3;
+    }
 }
 
 // Custom scroll webkit
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
+@media #{$big-up} {
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
 
-::-webkit-scrollbar-thumb {
-    background: $green-3;
-}
+    ::-webkit-scrollbar-thumb {
+        background: $green-3;
+    }
 
-::-webkit-scrollbar-track {
-    background: $gray;
+    ::-webkit-scrollbar-track {
+        background: $gray;
+    }
 }
 
 a {
