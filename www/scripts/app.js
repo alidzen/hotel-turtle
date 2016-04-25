@@ -13,7 +13,7 @@ define('app', [
 
     // Глобальные переменные
     var ACTIVE = ('is-active');
-    var touchWIDTH = ($(window).width() < 1025);
+    var mobileWidth = ($(window).width() < 641);
     var $loader = $('.j-loader');
 
     // MENU
@@ -300,7 +300,7 @@ define('app', [
 
     // resize header-menu
     (function($headerMenu) {
-        if (!$headerMenu.length || touchWIDTH) {
+        if (!$headerMenu.length || mobileWidth) {
             return;
         }
 

@@ -15,14 +15,14 @@ $sticky-menu-height: 60px;
     height: $sticky-menu-height;
     z-index: z('fixed');
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         transform: translateY(- $sticky-menu-height);
     }
 
     &.is-active {
         position: fixed;
 
-        @media #{$big-up} {
+        @media #{$custom-1024-up} {
             transform: translateY(0);
         }
     }

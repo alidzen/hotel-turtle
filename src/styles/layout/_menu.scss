@@ -11,7 +11,7 @@
         left: gutter(1);
     };
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         opacity: 0;
 
         &.is-transformed {
@@ -39,7 +39,7 @@
 }
 
 .l-menu__logo {
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include margin-trailer(1);
     }
 
@@ -49,19 +49,19 @@
 }
 
 .l-menu__nav {
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include margin-trailer(1);
     }
 }
 
 .l-menu__contacts {
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include margin-trailer(1);
     }
 }
 
 .l-menu__reviews {
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         display: none;
     }
 }

@@ -3157,10 +3157,8 @@ blockquote {
   position: relative;
   height: 100vh;
   padding: 0;
-  z-index: 1; }
-  @media only screen and (max-width: 1024px) {
-    .l-header__menu {
-      display: none; } }
+  z-index: 1;
+  display: none; }
   .l-header__menu:before {
     content: '';
     position: absolute;
@@ -3171,35 +3169,40 @@ blockquote {
     width: 100%;
     height: 80%;
     z-index: -1; }
+  @media only screen and (min-width: 1024px) {
+    .l-header__menu {
+      display: block; } }
 
 .l-header__booking-info {
   position: relative; }
   @media only screen and (min-width: 641px) {
     .l-header__booking-info {
       height: 100vh; } }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1024px) {
     .l-header__booking-info {
       width: 79.16667%;
       float: right;
       position: relative;
-      height: 100vh;
       padding: 0; } }
 
 .l-header__gallery {
   position: relative;
-  background-color: #fefefd; }
-  @media only screen and (max-width: 1024px) {
+  background-color: #fefefd;
+  margin-top: 60px; }
+  @media only screen and (min-width: 1024px) {
     .l-header__gallery {
-      margin-top: 60px; } }
+      margin-top: 0; } }
 
 .l-header__booking {
   position: absolute;
-  bottom: 0;
   left: 0;
-  width: 100%; }
-  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+  width: 100%;
+  bottom: 60px;
+  display: none; }
+  @media only screen and (min-width: 1024px) {
     .l-header__booking {
-      bottom: 60px; } }
+      bottom: 0;
+      display: block; } }
 
 .l-menu {
   transition-property: opacity;
@@ -3219,7 +3222,7 @@ blockquote {
   justify-content: space-between;
   padding-right: 10px;
   padding-left: 10px; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1024px) {
     .l-menu {
       opacity: 0; }
       .l-menu.is-transformed {
@@ -3233,7 +3236,7 @@ blockquote {
       .l-menu.is-smaller .b-nav__link {
         line-height: 28px; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .l-menu__logo {
     margin-bottom: 24px; } }
 
@@ -3241,15 +3244,15 @@ blockquote {
   .l-menu__logo {
     margin-top: 48px; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .l-menu__nav {
     margin-bottom: 24px; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .l-menu__contacts {
     margin-bottom: 24px; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .l-menu__reviews {
     display: none; } }
 
@@ -3344,14 +3347,14 @@ blockquote {
   right: 0;
   height: 60px;
   z-index: 3; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1024px) {
     .l-stick-menu__nav {
       -webkit-transform: translateY(-60px);
       -ms-transform: translateY(-60px);
       transform: translateY(-60px); } }
   .l-stick-menu__nav.is-active {
     position: fixed; }
-    @media only screen and (min-width: 1025px) {
+    @media only screen and (min-width: 1024px) {
       .l-stick-menu__nav.is-active {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -5097,14 +5100,14 @@ select {
   display: block;
   clear: both; }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .b-booking-form__form {
     height: 60px;
     padding-top: 12px;
     padding-right: 20px;
     padding-left: 20px; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .b-booking-form__col {
     -webkit-flex: 0 1 150px;
     -ms-flex: 0 1 150px;
@@ -5122,7 +5125,7 @@ select {
 
 .b-booking-form__col .selectric-wrapper {
   width: 200px; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1024px) {
     .b-booking-form__col .selectric-wrapper {
       width: 150px; } }
   @media only screen and (min-width: 1441px) {
@@ -5139,7 +5142,7 @@ select {
     .b-booking-form__info {
       float: left; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .b-booking-form__btn {
     float: right; } }
 

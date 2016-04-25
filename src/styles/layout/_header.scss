@@ -9,10 +9,7 @@
     height: 100vh;
     padding: 0;
     z-index: z('default');
-
-    @media #{$medium-down} {
-        display: none;
-    }
+    display: none;
 
     &:before {
         content: '';
@@ -25,6 +22,10 @@
         height: 80%;
         z-index: z('hide');
     }
+
+    @media #{$custom-1024-up} {
+        display: block;
+    }
 }
 
 .l-header__booking-info {
@@ -34,10 +35,9 @@
         height: 100vh;
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(9.5 last);
         position: relative;
-        height: 100vh;
         padding: 0;
     }
 }
@@ -45,19 +45,22 @@
 .l-header__gallery {
     position: relative;
     background-color: $white;
+    margin-top: 60px; // menu height
 
-    @media #{$medium-down} {
-        margin-top: 60px; // menu height
+    @media #{$custom-1024-up} {
+        margin-top: 0;
     }
 }
 
 .l-header__booking {
     position: absolute;
-    bottom: 0;
     left: 0;
     width: 100%;
+    bottom: 60px; // menu height
+    display: none;
 
-    @media #{$medium-only} {
-        bottom: 60px;
+    @media #{$custom-1024-up} {
+        bottom: 0;
+        display: block;
     }
 }

@@ -8,7 +8,7 @@
     //display: flex;
     //flex-flow: column nowrap;
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         height: $booking-height;
         padding: {
             top: ($booking-height - 36px) / 2;
@@ -22,7 +22,7 @@
 }
 
 .b-booking-form__col {
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         flex: 0 1 150px;
         margin-right: 40px;
         width: 150px;
@@ -37,7 +37,7 @@
     .selectric-wrapper {
         width: 200px;
 
-        @media #{$big-up} {
+        @media #{$custom-1024-up} {
             width: 150px;
         }
 
@@ -61,7 +61,7 @@
 }
 
 .b-booking-form__btn {
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         float: right;
     }
 }
