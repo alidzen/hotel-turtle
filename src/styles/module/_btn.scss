@@ -40,11 +40,13 @@ $btn-bg-color-disabled: #eee !default;
         left: gutter(1.5);
     };
 
-    &:hover,
-    &:focus {
-        color: $btn-color-hover;
-        background-color: $btn-bg-color-hover;
-        border-color: $btn-bd-color-hover;
+    @media #{$big-up} {
+        &:hover,
+        &:focus {
+            color: $btn-color-hover;
+            background-color: $btn-bg-color-hover;
+            border-color: $btn-bd-color-hover;
+        }
     }
 }
 

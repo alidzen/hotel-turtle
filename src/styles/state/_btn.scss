@@ -5,9 +5,11 @@
     border-color: $btn-bd-color-disabled;
     cursor: default;
 
-    &:hover,
-    &:focus {
-        border-color: $btn-bd-color-disabled;
+    @media #{$big-up} {
+        &:hover,
+        &:focus {
+            border-color: $btn-bd-color-disabled;
+        }
     }
 }
 

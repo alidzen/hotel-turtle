@@ -9,12 +9,14 @@ $btns-pos-desk: 23.5px;
     position: relative;
     display: block;
 
-    &:hover {
-        .b-room__cnt {
-            color: $gold-2;
-        }
-        .b-room__img {
-            transform: scale(1.1);
+    @media #{$big-up} {
+        &:hover {
+            .b-room__cnt {
+                color: $gold-2;
+            }
+            .b-room__img {
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -219,8 +221,10 @@ $btns-pos-desk: 23.5px;
     background-color: $green;
     border-color: $green;
 
-    &:hover {
-        background-color: $green;
-        border-color: $green;
+    @media #{$big-up} {
+        &:hover {
+            background-color: $green;
+            border-color: $green;
+        }
     }
 }

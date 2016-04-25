@@ -27,14 +27,16 @@ $item-height-popup: 56px;
     color: $nav-color;
     text-decoration: none;
 
-    &:hover {
-        color: $nav-color-hover;
-        border-color: $gold-2;
-        text-decoration: none;
+    @media #{$big-up} {
+        &:hover {
+            color: $nav-color-hover;
+            border-color: $gold-2;
+            text-decoration: none;
 
-        &:after {
-            width: 100%;
-            left: 0;
+            &:after {
+                width: 100%;
+                left: 0;
+            }
         }
     }
 

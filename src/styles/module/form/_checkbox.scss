@@ -37,14 +37,16 @@ $checkbox-disabled: 'checkbox-disabled' !default;
 // Hover
 .b-form__checkbox:hover {
 
-    label:after {
-        @include sprite($checkbox-hover);
-    }
+    @media #{$big-up} {
+        label:after {
+            @include sprite($checkbox-hover);
+        }
 
-    input:checked {
+        input:checked {
 
-        + label:after {
-            opacity: .75;
+            + label:after {
+                opacity: .75;
+            }
         }
     }
 }

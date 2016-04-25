@@ -37,14 +37,16 @@ $radio-disabled: 'radio-disabled' !default;
 // Hover
 .b-form__radio:hover {
 
-    label:after {
-        @include sprite($radio-hover);
-    }
+    @media #{$big-up} {
+        label:after {
+            @include sprite($radio-hover);
+        }
 
-    input:checked {
+        input:checked {
 
-        + label:after {
-            opacity: .75;
+            + label:after {
+                opacity: .75;
+            }
         }
     }
 }

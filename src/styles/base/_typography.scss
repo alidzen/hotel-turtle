@@ -378,19 +378,21 @@ a {
         text-decoration: none;
     }
 
-    &:hover {
-        @if ($link-text-decoration == 'normal') {
-            text-decoration: underline;
-        } @else if ($link-text-decoration == 'invert'){
-            text-decoration: none;
-        } @else if ($link-text-decoration == 'reset'){
-            text-decoration: none;
+    @media #{$big-up} {
+        &:hover {
+            @if ($link-text-decoration == 'normal') {
+                text-decoration: underline;
+            } @else if ($link-text-decoration == 'invert'){
+                text-decoration: none;
+            } @else if ($link-text-decoration == 'reset'){
+                text-decoration: none;
+            }
+            color: $link-color-hover;
         }
-        color: $link-color-hover;
-    }
 
-    &:active {
-        color: $link-color-active;
+        &:active {
+            color: $link-color-active;
+        }
     }
 }
 

@@ -54,11 +54,6 @@
     }
 }
 
-.b-actions-showcase__ttl + .b-actions-showcase__ttl-note {
-    //@include rhythm-padding(.5);
-    //@include padding-trailer(1);
-}
-
 .b-actions-showcase__ttl-note {
     @extend %f-ttl-note;
 }
@@ -67,11 +62,13 @@
     @extend %stretch-green-link;
     @extend %f-menu-reviews;
 
-    &:hover {
-        color: $white;
+    @media #{$big-up} {
+        &:hover {
+            color: $white;
 
-        &:after {
-            background-color: $white;
+            &:after {
+                background-color: $white;
+            }
         }
     }
 }

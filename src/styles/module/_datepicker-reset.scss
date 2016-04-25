@@ -9,8 +9,10 @@
         color: $white;
         font-size: 11px;
 
-        &:hover {
-            color: $gold-2;
+        @media #{$big-up} {
+            &:hover {
+                color: $gold-2;
+            }
         }
     }
 

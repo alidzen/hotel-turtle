@@ -55,8 +55,10 @@ $gallery-dots-frame-height: 30px !default;
     background: rgba($white, .3);
     border: 2px solid $gold-2;
 
-    &:hover {
-        background: rgba($white, .7);
+    @media #{$big-up} {
+        &:hover {
+            background: rgba($white, .7);
+        }
     }
 
     &:before,

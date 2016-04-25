@@ -13,6 +13,10 @@
     @extend %f-menu-contact;
     display: block;
     color: $black-2;
+
+    .no-wrap {
+        white-space: nowrap;
+    }
 }
 
 // STATE
@@ -20,16 +24,20 @@
     .b-menu-contacts__tel {
         color: $white;
 
-        &:hover {
-            color: $gold-2;
+        @media #{$big-up} {
+            &:hover {
+                color: $gold-2;
+            }
         }
     }
 
     .b-menu-contacts__map {
         color: $white;
 
-        &:hover {
-            color: $gold-2;
+        @media #{$big-up} {
+            &:hover {
+                color: $gold-2;
+            }
         }
 
         &:before {

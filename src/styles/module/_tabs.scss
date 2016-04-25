@@ -45,12 +45,14 @@ $tabs-content-paddings: 20px;
         border-right: none;
     }
 
-    &:hover {
-        text-decoration: none;
-    }
+    @media #{$big-up} {
+        &:hover {
+            text-decoration: none;
+        }
 
-    &:active {
-        color: darken($tabs-color, 5%);
+        &:active {
+            color: darken($tabs-color, 5%);
+        }
     }
 }
 
