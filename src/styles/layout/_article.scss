@@ -13,7 +13,7 @@
 
 .l-article__cnt {
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(10 center);
         padding: 0;
     }
