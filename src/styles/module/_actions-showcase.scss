@@ -46,9 +46,17 @@
 .b-actions-showcase__ttl {
     @extend %f-ttl;
 
+    // Оставляем перенос вместе со словом
     >span {
+        @extend %f-ttl;
         white-space: nowrap;
+        display: inline-block;
     }
+}
+
+.b-actions-showcase__ttl + .b-actions-showcase__ttl-note {
+    //@include rhythm-padding(.5);
+    //@include padding-trailer(1);
 }
 
 .b-actions-showcase__ttl-note {

@@ -81,14 +81,15 @@ $tile-height-large: $tile-height-small * 3;
 
     .b-service__img-wrap {
         height: $tile-height-small;
-        top: $tile-height-small;
         left: 0;
         width: 100%;
+        bottom: 0;
     }
 
     .b-service__img {
         height: $tile-height-small;
         top: 0;
+        bottom: auto;
         left: 0;
         background: url('/img/services/service-1.jpg') no-repeat 50% 50%;
         background-size: cover;

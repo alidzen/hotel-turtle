@@ -219,7 +219,7 @@ h2 {
 %f-ttl-note,
 .f-ttl-note {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 34px;
     font-family: $font-bold-italic;
 
     @media #{$medium-up} {
@@ -231,12 +231,12 @@ h2 {
 %f-ttl,
 .f-ttl {
     font-size: 36px;
-    line-height: 36px;
+    line-height: 30px;
     font-family: $font-roman-bold;
 
     @media #{$medium-up} {
         font-size: 50px;
-        line-height: 50px;
+        line-height: 45px;
     }
 }
 

@@ -549,7 +549,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
 .l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-callback__caption, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note, .b-actions-showcase__ttl-note, .b-showcase-full__quotes, .b-propose__ttl,
 .f-ttl-note {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 34px;
   font-family: "ArnoPro-BoldItalic", sans-serif; }
   @media only screen and (min-width: 641px) {
     .l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-callback__caption, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note, .b-actions-showcase__ttl-note, .b-showcase-full__quotes, .b-propose__ttl,
@@ -557,16 +557,16 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
       font-size: 35px;
       line-height: 45px; } }
 
-.b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl,
+.b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl, .b-actions-showcase__ttl > span,
 .f-ttl {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 30px;
   font-family: "AGOpusHR-Bold", sans-serif; }
   @media only screen and (min-width: 641px) {
-    .b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl,
+    .b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl, .b-actions-showcase__ttl > span,
     .f-ttl {
       font-size: 50px;
-      line-height: 50px; } }
+      line-height: 45px; } }
 
 .b-room__ttl,
 .f-room-ttl {
@@ -3607,12 +3607,13 @@ blockquote {
     padding-bottom: 225px; }
   .l-services__tile_numb_2 .b-service__img-wrap {
     height: 225px;
-    top: 225px;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    bottom: 0; }
   .l-services__tile_numb_2 .b-service__img {
     height: 225px;
     top: 0;
+    bottom: auto;
     left: 0;
     background: url("/img/services/service-1.jpg") no-repeat 50% 50%;
     background-size: cover;
@@ -6379,7 +6380,8 @@ select {
       margin-bottom: 48px; } }
 
 .b-actions-showcase__ttl > span {
-  white-space: nowrap; }
+  white-space: nowrap;
+  display: inline-block; }
 
 .b-actions-showcase__link:hover {
   color: #fefefd; }
@@ -6435,8 +6437,15 @@ select {
   background-color: #fefefd; }
 
 .l-propose {
+  margin-bottom: 24px;
   padding-right: 20px;
   padding-left: 20px; }
+  @media only screen and (min-width: 641px) {
+    .l-propose {
+      margin-bottom: 72px; } }
+  @media only screen and (min-width: 1025px) {
+    .l-propose {
+      margin-bottom: 108px; } }
 
 .b-propose {
   text-align: center; }
