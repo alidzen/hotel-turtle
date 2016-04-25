@@ -414,10 +414,8 @@ $list-margin-bottom: $paragraph-margin-bottom !default; // rhythm unit
         li {
             @extend %f-base;
             @include margin-trailer(.5);
-
-            @media #{$medium-up} {
-                @include margin-trailer(1);
-            }
+            position: relative;
+            padding-left: gutter(3.5);
         }
     }
 
@@ -426,22 +424,22 @@ $list-margin-bottom: $paragraph-margin-bottom !default; // rhythm unit
 
         li:before {
             @extend %f-ol-list;
+            position: absolute;
             counter-increment: list;
             content: counter(list) '.';
             color: $list-color;
-            padding-right: gutter(1);
-            float: left;
+            left: 0;
         }
     }
 
     ul {
 
         li:before {
+            position: absolute;
+            left: gutter(1);
             content: '•';
             color: $list-color;
-            padding-right: gutter(1);
-            float: left;
-            transform: scale(2) translate(1.5px, 1.5px); // centered
+            transform: scale(2) translateY(1.5px); // centered
         }
     }
 
