@@ -102,7 +102,10 @@ body {
   color: #333333;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  text-size-adjust: 100%;
+  scrollbar-base-color: #004356;
+  scrollbar-highlight-color: #b5b1ab;
+  scrollbar-arrow-color: #004356; }
   body.is-active {
     overflow: hidden;
     position: fixed;
@@ -111,6 +114,16 @@ body {
   @media only screen and (min-width: 1025px) {
     body.add-padding {
       padding-right: 15px; } }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #004356; }
+
+::-webkit-scrollbar-track {
+  background: #b5b1ab; }
 
 a[href^='tel:'], a[href^='mailto:'] {
   white-space: nowrap; }
