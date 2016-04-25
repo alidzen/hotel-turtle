@@ -64,3 +64,35 @@
         display: block;
     }
 }
+
+.l-header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: z('default');
+    padding: {
+        top: 60px + rhythm(1);
+        bottom: rhythm(1);
+    };
+    background-color: rgba($white, .6);
+    text-align: center;
+
+    @media #{$small-only} {
+        @include padding-leader(.5);
+        @include padding-trailer(0);
+        background-color: rgba($white, .8);
+
+        .b-logo__img {
+            width: 100px;
+        }
+
+        .b-menu-logo__txt {
+            display: none;
+        }
+    }
+
+    @media #{$custom-1024-up} {
+        display: none;
+    }
+}

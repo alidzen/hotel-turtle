@@ -3219,6 +3219,29 @@ blockquote {
       bottom: 0;
       display: block; } }
 
+.l-header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding-top: 84px;
+  padding-bottom: 24px;
+  background-color: rgba(254, 254, 253, 0.6);
+  text-align: center; }
+  @media only screen and (max-width: 640px) {
+    .l-header__logo {
+      padding-top: 12px;
+      padding-bottom: 0px;
+      background-color: rgba(254, 254, 253, 0.8); }
+      .l-header__logo .b-logo__img {
+        width: 100px; }
+      .l-header__logo .b-menu-logo__txt {
+        display: none; } }
+  @media only screen and (min-width: 1024px) {
+    .l-header__logo {
+      display: none; } }
+
 .l-menu {
   transition-property: opacity;
   transition-duration: 0.3s;
@@ -4609,13 +4632,16 @@ select {
 .b-gallery__cnt {
   position: absolute;
   padding: 15px 20px;
-  top: 0;
-  right: 50%;
-  margin-right: -120px;
   width: 240px;
-  background: url("/img/propose-bg-1.png") no-repeat 50% 50% rgba(254, 254, 253, 0.95); }
-  @media only screen and (min-width: 641px) {
+  background: url("/img/propose-bg-1.png") no-repeat 50% 50% rgba(254, 254, 253, 0.95);
+  bottom: 84px;
+  top: auto;
+  right: 0;
+  margin-right: 0; }
+  @media only screen and (min-width: 1024px) {
     .b-gallery__cnt {
+      top: 0;
+      bottom: auto;
       right: 70px;
       margin-right: 0; } }
 

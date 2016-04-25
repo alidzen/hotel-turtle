@@ -104,13 +104,16 @@ $gallery-dots-frame-height: 30px !default;
 .b-gallery__cnt {
     position: absolute;
     padding: 15px 20px;
-    top: 0;
-    right: 50%;
-    margin-right: - 240px / 2;
     width: 240px;
     background: url('/img/propose-bg-1.png') no-repeat 50% 50% rgba($white, .95);
+    bottom: 60px + rhythm(1);
+    top: auto;
+    right: 0;
+    margin-right: 0;
 
-    @media #{$medium-up} {
+    @media #{$custom-1024-up} {
+        top: 0;
+        bottom: auto;
         right: 20px + 50px;
         margin-right: 0;
     }
