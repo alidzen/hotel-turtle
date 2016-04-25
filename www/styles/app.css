@@ -557,13 +557,13 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
       font-size: 35px;
       line-height: 45px; } }
 
-.b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl, .b-actions-showcase__ttl > span,
+.b-callback__ttl, .b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl, .b-actions-showcase__ttl > span,
 .f-ttl {
   font-size: 36px;
   line-height: 30px;
   font-family: "AGOpusHR-Bold", sans-serif; }
   @media only screen and (min-width: 641px) {
-    .b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl, .b-actions-showcase__ttl > span,
+    .b-callback__ttl, .b-feature__ttl, .b-article__ttl, .b-card__ttl, .b-showcase__ttl, .b-actions-showcase__ttl, .b-actions-showcase__ttl > span,
     .f-ttl {
       font-size: 50px;
       line-height: 45px; } }
@@ -4062,9 +4062,9 @@ blockquote {
   text-align: center;
   cursor: pointer;
   outline: none;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-right: 15px;
-  padding-bottom: 3px;
+  padding-bottom: 1px;
   padding-left: 15px; }
   .b-btn:hover, .b-btn:focus {
     color: #fefefd;
@@ -4150,7 +4150,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
     border-color: #004356; }
 
 input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"] {
-  line-height: 32px; }
+  line-height: 28px; }
 
 textarea {
   line-height: 24px;
@@ -4165,16 +4165,16 @@ label {
   display: inline-block; }
 
 .b-anim-label {
-  padding-top: 36px;
+  padding-top: 32px;
   position: relative; }
   .b-anim-label label {
     transition-property: top, font-size, text-transform, letter-spacing, color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-    line-height: 1.5;
+    line-height: 1.35;
     display: block;
     position: absolute;
-    top: 36px;
+    top: 32px;
     left: 5px;
     pointer-events: none;
     cursor: text;
@@ -4321,7 +4321,7 @@ select {
   background-color: #004457; }
   .selectric .label {
     color: #fefefd;
-    height: 32px;
+    height: 28px;
     line-height: 32px;
     margin-left: 15px; }
   .selectric .button {
@@ -5160,7 +5160,7 @@ select {
 @media only screen and (min-width: 1024px) {
   .b-booking-form__form {
     height: 60px;
-    padding-top: 12px;
+    padding-top: 14px;
     padding-right: 20px;
     padding-left: 20px; } }
 
@@ -6013,8 +6013,8 @@ select {
   transition-timing-function: ease;
   position: relative;
   display: block;
-  width: 42px;
-  height: 36px;
+  width: 38px;
+  height: 32px;
   background-color: transparent;
   border: 2px solid #bca064; }
   .b-closed-btn:hover {

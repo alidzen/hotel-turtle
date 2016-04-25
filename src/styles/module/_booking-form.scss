@@ -5,19 +5,14 @@
 
 .b-booking-form__form {
     @include grid-clearfix();
-    //display: flex;
-    //flex-flow: column nowrap;
 
     @media #{$custom-1024-up} {
         height: $booking-height;
         padding: {
-            top: ($booking-height - 36px) / 2;
+            top: ($booking-height - 32px) / 2;
             right: gutter(2);
             left: gutter(2);
         };
-        //flex-flow: row wrap;
-        //justify-content: flex-end;
-        //align-items: center;
     }
 }
 
