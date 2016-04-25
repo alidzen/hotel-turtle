@@ -3153,12 +3153,24 @@ blockquote {
 .l-header__menu {
   width: 20.83333%;
   float: left;
-  background: url("/img/menu-bg.png") 100% 100% no-repeat #fefefd;
+  background-color: #fefefd;
+  position: relative;
   height: 100vh;
-  padding: 0; }
+  padding: 0;
+  z-index: 1; }
   @media only screen and (max-width: 1024px) {
     .l-header__menu {
       display: none; } }
+  .l-header__menu:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("/img/menu-bg.svg") 50% 100% no-repeat #fefefd;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    z-index: -1; }
 
 .l-header__booking-info {
   position: relative; }
@@ -3194,7 +3206,7 @@ blockquote {
   transition-duration: 0.3s;
   transition-timing-function: ease;
   padding-top: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
   min-height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5661,8 +5673,7 @@ select {
   padding-top: 48px;
   padding-bottom: 48px;
   position: relative;
-  z-index: 0;
-  border: 2px solid #005870; }
+  z-index: 0; }
   .b-article__border:after {
     content: '';
     display: block;
@@ -5740,9 +5751,6 @@ select {
   color: #bca064; }
   .b-article_theme_gold .b-article__header:after {
     background-color: #bca064; }
-
-.b-article_theme_gold .b-article__border {
-  border-color: #bca064; }
 
 .b-article__features_theme_list {
   padding-bottom: 24px; }

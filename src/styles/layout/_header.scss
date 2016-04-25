@@ -4,12 +4,26 @@
 
 .l-header__menu {
     @include span(2.5);
-    background: url('/img/menu-bg.png') 100% 100% no-repeat $white;
+    background-color: $white;
+    position: relative;
     height: 100vh;
     padding: 0;
+    z-index: z('default');
 
     @media #{$medium-down} {
         display: none;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url('/img/menu-bg.svg') 50% 100% no-repeat $white;
+        background-size: cover;
+        width: 100%;
+        height: 80%;
+        z-index: z('hide');
     }
 }
 

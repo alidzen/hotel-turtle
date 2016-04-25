@@ -1,7 +1,7 @@
 .l-menu {
     @include transition(opacity);
     @include padding-leader(1);
-    @include padding-trailer(.5);
+    @include padding-trailer(1);
     min-height: 100vh;
     display: flex;
     flex-flow: column wrap;

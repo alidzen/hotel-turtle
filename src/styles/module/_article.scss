@@ -7,7 +7,6 @@
     @include grid-clearfix();
     position: relative;
     z-index: z('zero');
-    border: 2px solid $green;
 }
 
 .b-article__img-wrap {
@@ -116,10 +115,6 @@
         &:after {
             background-color: $gold-2;
         }
-    }
-
-    .b-article__border {
-        border-color: $gold-2;
     }
 }
 
