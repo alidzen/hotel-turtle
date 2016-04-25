@@ -1,0 +1,19 @@
+// LAYOUT
+@import '../layout/module/showcase-full';
+
+.b-showcase-full {
+    color: $white;
+}
+
+.b-showcase-full__quotes {
+    @extend %b-bottom-dash-pos-left;
+    @extend %f-ttl-note;
+
+    &:after {
+        background-color: $white;
+    }
+}
+
+.b-showcase-full__author {
+
+}

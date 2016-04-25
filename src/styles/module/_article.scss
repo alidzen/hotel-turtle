@@ -136,3 +136,46 @@
         @include margin-trailer(.25);
     }
 }
+
+.b-article__theme_atmosphere-page {
+
+    .b-article__border {
+        border-color: $gold;
+
+        @media #{$big-up} {
+            @include rhythm-padding(3);
+        }
+    }
+
+    .b-article__cnt {
+        @media #{$big-up} {
+            @include span(5 of 10);
+            @include push(5);
+            padding: 0;
+        }
+    }
+
+    .b-article__img-wrap {
+        width: auto;
+
+
+        @media #{$big-up} {
+            right: 62%;
+            left: auto;
+            opacity: 1;
+            width: auto;
+        }
+    }
+
+    .b-article__header {
+        @media #{$big-up} {
+            @include padding-leader(2);
+            @include padding-trailer(.5);
+            @include margin-trailer(1);
+        }
+
+        &:after {
+            background-color: $gold;
+        }
+    }
+}

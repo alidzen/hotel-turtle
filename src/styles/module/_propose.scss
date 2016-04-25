@@ -1,0 +1,14 @@
+// LAYOUT
+@import '../layout/module/propose';
+
+.b-propose {
+    text-align: center;
+}
+
+.b-propose__ttl {
+    @extend %b-bottom-dash-100;
+    @extend %f-ttl-note;
+    @include margin-trailer(1);
+    color: $black;
+}
+

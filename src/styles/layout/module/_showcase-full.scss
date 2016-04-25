@@ -1,0 +1,57 @@
+.l-showcase-full {
+    @extend %l-row;
+    @extend %border-vertical;
+    @include margin-trailer(2);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media #{$big-up} {
+        @include margin-trailer(3);
+        height: 600px;
+    }
+
+    &:before,
+    &:after {
+        background-color: $white;
+    }
+}
+
+.l-showcase-full__border {
+    @extend  %border-horizontal;
+    @include grid-clearfix();
+
+    &:before,
+    &:after {
+        background-color: $white;
+    }
+}
+
+.l-showcase-full__row {
+
+    @media #{$big-up} {
+        @include push(1);
+        @include span(7);
+    }
+}
+
+.l-showcase-full__cnt {
+    @include rhythm-padding(2);
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
+    };
+
+    @media #{$medium-up} {
+        @include rhythm-padding(4);
+        padding: {
+            right: gutter(5);
+            left: gutter(5);
+        };
+    }
+
+    @media #{$big-up} {
+        @include padding-leader(7);
+        @include padding-trailer(0);
+    }
+}
