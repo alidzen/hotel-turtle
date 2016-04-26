@@ -637,16 +637,13 @@ $spectile-height-small: 350px;
     }
 
     .b-service__img {
-        background: url('/img/services/service-2.svg') no-repeat 100% 0;
+        background: url('/img/services/service-2.svg') no-repeat 100% 100%;
         background-size: contain;
         opacity: .2;
-
-        @media #{$medium-up} {
-            top: auto;
-            right: 0;
-            bottom: 0;
-            height: 210px;
-        }
+        height: 210px;
+        top: auto;
+        right: 0;
+        bottom: 0;
 
         @media #{$custom-1024-up} {
             opacity: 1;
