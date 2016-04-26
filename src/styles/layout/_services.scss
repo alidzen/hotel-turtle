@@ -387,3 +387,110 @@ $tile-height-large: $tile-height-small * 3;
         }
     }
 }
+
+// Blocks from services page
+.l-services__tile_numb_9 {
+    background-color: $gray-3;
+
+    .b-service {
+        padding-bottom: $tile-height-small;
+    }
+
+    .b-service__img-wrap {
+        height: $tile-height-small;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .b-service__img {
+        top: 0;
+        height: $tile-height-small;
+        background-image: url('/img/services/service-4.jpg');
+    }
+
+    @media #{$big-up} {
+        @include span(4);
+        height: $tile-height-big;
+
+        .b-service {
+            height: $tile-height-big;
+        }
+
+        .b-service__img-wrap {
+            bottom: 0;
+            height: $tile-height-small;
+        }
+    }
+}
+
+.l-services__tile_numb_10 {
+    background-color: $gold-2;
+
+    .b-service {
+        padding-bottom: $tile-height-small;
+    }
+
+    .b-service__img-wrap {
+        height: $tile-height-small;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .b-service__img {
+        top: 0;
+        height: $tile-height-small;
+        background-image: url('/img/services/service-6.jpg');
+    }
+
+    @media #{$big-up} {
+        @include span(4);
+        height: $tile-height-big;
+
+        .b-service {
+            height: $tile-height-big;
+            padding-top: $tile-height-small;
+        }
+
+        .b-service__img-wrap {
+            top: 0;
+            height: $tile-height-small;
+        }
+    }
+}
+
+.l-services__tile_numb_11 {
+    background-color: $white;
+
+    .b-service {
+        padding-bottom: $tile-height-small;
+    }
+
+    .b-service__img-wrap {
+        height: $tile-height-small;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .b-service__img {
+        top: 0;
+        height: $tile-height-small;
+        background-image: url('/img/services/service-1.jpg');
+    }
+
+    @media #{$big-up} {
+        @include span(4);
+        height: $tile-height-big;
+
+        .b-service {
+            height: $tile-height-big;
+        }
+
+        .b-service__img-wrap {
+            bottom: 0;
+            height: $tile-height-small;
+        }
+    }
+}

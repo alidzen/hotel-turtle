@@ -36,7 +36,6 @@ var gulpif       = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var spritesmith  = require('gulp.spritesmith');
 var prettify     = require('gulp-prettify');
-var typograf = require('gulp-typograf');
 
 /**
  * Error function for plumber
@@ -223,10 +222,6 @@ gulp.task('jade', function() {
         .pipe(jadeInh({basedir: paths.src.jadeBase}))
         .pipe(jade({
             pretty: true
-        }))
-        .pipe(typograf({
-            lang: 'ru',
-            disable: ['ru/nbsp/centuries', 'common/number/fraction']
         }))
         .on('error', notify.onError({
             message : 'Failed to compile html',

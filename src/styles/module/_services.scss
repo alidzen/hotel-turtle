@@ -72,6 +72,26 @@
             }
         }
     }
+
+    &.no-hover {
+        @media #{$big-up} {
+            &:hover {
+                color: inherit;
+
+                .b-service__ttl-note {
+                    color: $green;
+                }
+
+                .b-service__img {
+                    transform: scale(1);
+                }
+
+                .b-service__header:after {
+                    background-color: $green;
+                }
+            }
+        }
+    }
 }
 
 .b-service__header {
@@ -104,7 +124,7 @@
 
 .b-service__border {
     @include grid-clearfix();
-    padding: rhythm(1.25) gutter(2);
+    padding: rhythm(1.25) $margin-y-desk;
 
     &:before,
     &:after {

@@ -1,0 +1,44 @@
+extends _layout
+block vars
+    -var activePage = 'services'
+block title
+    title Номера
+block gallery
+     .b-cafe-gallery(style="background-image: url('/img/services-bg-1.jpg');")
+         .b-cafe-gallery__border
+             .b-cafe-gallery__cnt.b-cafe-gallery__cnt_text_black
+                 h2.b-cafe-gallery__ttl Мы всегда стараемся радовать наших гостей приятными предолжениями от нашего отеля
+                 .b-cafe-gallery__txt Включающего в себя литературный ресторан, философское кафе, сигарный клуб и банкетный зал с открытой террасой на крыше
+
+block content
+    .l-main-wrap
+        section.l-services
+            .l-services__header.l-limit-wrap
+                .l-services__row
+                    .b-article
+                        .b-feature__header
+                            h1.b-feature__ttl Чем мы готовы вам помочь?
+
+            .l-services__tiles.l-limit-wrap.no-padding
+                .l-services__tile.l-services__tile_numb_9
+                    .b-service.no-hover
+                        .b-service__header
+                            .b-service__ttl-note Вызов такси
+                        p По вашей просьбе персонал отеля бесплатно вызовет такси из отеля в любую точку города.
+                        .b-service__img-wrap
+                            .b-service__img
+                .l-services__tile.l-services__tile_numb_10
+                    .b-service.no-hover.has-lines
+                        .b-service__border
+                            .b-service__header
+                                .b-service__ttl-note Чай/кофе в номер
+                            p По вашей просьбе персонал отеля принесет в номер горячий чай или кофе.
+                        .b-service__img-wrap
+                            .b-service__img
+                .l-services__tile.l-services__tile_numb_11
+                    .b-service.no-hover
+                        .b-service__header
+                            .b-service__ttl-note Завтрак в номер
+                        p Мы можем доставить континентальный завтрак от нашего шеф-повара прямо в номере и в удобное для вас время.
+                        .b-service__img-wrap
+                            .b-service__img
