@@ -3,7 +3,8 @@ html {
 
     // Убираем скроллинг при открытом мобильном меню. Для ios.
     &.is-active {
-        overflow: hidden;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
@@ -15,7 +16,7 @@ body {
 
     // Убираем скроллинг при открытом мобильном меню.
     &.is-active {
-        overflow: hidden;
+        overflow: auto;
         position: fixed;
         right: 0;
         left: 0;

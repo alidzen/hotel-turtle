@@ -96,7 +96,8 @@ textarea {
   padding-right: 5px; }
 
 html.is-active {
-  overflow: hidden; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 body {
   color: #333333;
@@ -105,7 +106,7 @@ body {
   text-size-adjust: 100%;
   width: 100%; }
   body.is-active {
-    overflow: hidden;
+    overflow: auto;
     position: fixed;
     right: 0;
     left: 0; }
