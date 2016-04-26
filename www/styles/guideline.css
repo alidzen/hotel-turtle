@@ -3949,33 +3949,37 @@ blockquote {
 
 .l-services__tile_numb_12 {
   background-color: #fefefd; }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_12 {
+      height: 350px; } }
+  @media only screen and (min-width: 1024px) {
+    .l-services__tile_numb_12 {
+      width: 50%;
+      float: left; } }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_12 .b-service {
+      width: 100%;
+      float: left;
+      height: 350px; } }
+  @media only screen and (min-width: 1024px) {
+    .l-services__tile_numb_12 .b-service {
+      padding-top: 48px; } }
   .l-services__tile_numb_12 .b-service__cnt {
     position: relative;
     z-index: 1; }
+    @media only screen and (min-width: 1024px) {
+      .l-services__tile_numb_12 .b-service__cnt p {
+        width: 50%;
+        float: left; } }
   .l-services__tile_numb_12 .b-service__img {
     height: 100%;
     opacity: .2;
     background-image: none; }
-  @media only screen and (min-width: 641px) {
-    .l-services__tile_numb_12 {
-      height: 350px; }
-      .l-services__tile_numb_12 .b-service {
-        width: 100%;
-        float: left;
-        height: 350px; }
+    @media only screen and (min-width: 641px) {
       .l-services__tile_numb_12 .b-service__img {
         right: -55%;
         opacity: 1; } }
-  @media only screen and (min-width: 1024px) {
-    .l-services__tile_numb_12 {
-      width: 50%;
-      float: left; }
-      .l-services__tile_numb_12 .b-service {
-        overflow: visible;
-        padding-top: 48px; }
-      .l-services__tile_numb_12 .b-service__cnt p {
-        width: 50%;
-        float: left; }
+    @media only screen and (min-width: 1024px) {
       .l-services__tile_numb_12 .b-service__img img {
         position: absolute;
         top: 50px;
@@ -4014,13 +4018,32 @@ blockquote {
 
 .l-services__tile_numb_14 {
   background-color: #fefefd; }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_14 {
+      width: 100%;
+      float: left; } }
   .l-services__tile_numb_14 .b-service {
     padding-bottom: 225px; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_14 .b-service {
+        height: 350px; } }
+  @media only screen and (max-width: 640px) {
+    .l-services__tile_numb_14 .b-service__border {
+      padding-right: 10px;
+      padding-left: 10px; } }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_14 .b-service__cnt {
+      width: 66.66667%;
+      float: right; } }
   .l-services__tile_numb_14 .b-service__img-wrap {
     bottom: 0;
     left: 0;
     height: 225px;
     width: 100%; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_14 .b-service__img-wrap {
+        height: 100%;
+        width: 33.33333%; } }
   .l-services__tile_numb_14 .b-service__img {
     top: 0;
     height: 225px;
@@ -4028,30 +4051,38 @@ blockquote {
     right: auto;
     background-image: url("/img/services/service-5.jpg");
     width: 100%; }
-  @media only screen and (min-width: 641px) {
-    .l-services__tile_numb_14 {
-      width: 100%;
-      float: left; }
-      .l-services__tile_numb_14 .b-service {
-        height: 350px; }
-      .l-services__tile_numb_14 .b-service__cnt {
-        width: 66.66667%;
-        float: right; }
-      .l-services__tile_numb_14 .b-service__img-wrap {
-        height: 100%;
-        width: 33.33333%; }
+    @media only screen and (min-width: 641px) {
       .l-services__tile_numb_14 .b-service__img {
         height: 100%; } }
 
 .l-services__tile_numb_15 {
   background-color: #ded1b4; }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_15 {
+      width: 100%;
+      float: left; } }
   .l-services__tile_numb_15 .b-service {
     padding-bottom: 225px; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_15 .b-service {
+        height: 350px; } }
+  @media only screen and (max-width: 640px) {
+    .l-services__tile_numb_15 .b-service__border {
+      padding-right: 10px;
+      padding-left: 10px; } }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_15 .b-service__cnt {
+      width: 66.66667%;
+      float: right; } }
   .l-services__tile_numb_15 .b-service__img-wrap {
     bottom: 0;
     left: 0;
     height: 225px;
     width: 100%; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_15 .b-service__img-wrap {
+        height: 100%;
+        width: 485px; } }
   .l-services__tile_numb_15 .b-service__img {
     top: 0;
     height: 225px;
@@ -4059,34 +4090,40 @@ blockquote {
     right: auto;
     background-image: url("/img/services/service-3.svg");
     width: 100%; }
-  @media only screen and (min-width: 641px) {
-    .l-services__tile_numb_15 {
-      width: 100%;
-      float: left; }
-      .l-services__tile_numb_15 .b-service {
-        height: 350px; }
-      .l-services__tile_numb_15 .b-service__cnt {
-        width: 66.66667%;
-        float: left; }
-      .l-services__tile_numb_15 .b-service__img-wrap {
-        height: 100%;
-        right: 0;
-        left: auto;
-        width: 485px; }
+    @media only screen and (min-width: 641px) {
       .l-services__tile_numb_15 .b-service__img {
         height: 341px; } }
 
 .l-services__tile_numb_16 {
   background-color: #e8e8e6; }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_16 {
+      width: 100%;
+      float: left; } }
   .l-services__tile_numb_16 .b-service {
     padding-bottom: 225px; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_16 .b-service {
+        height: 350px; } }
+  .l-services__tile_numb_16 .b-service__border:before, .l-services__tile_numb_16 .b-service__border:after {
+    display: none; }
+  @media only screen and (max-width: 640px) {
+    .l-services__tile_numb_16 .b-service__border {
+      padding-right: 0px;
+      padding-left: 0px; } }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_16 .b-service__cnt {
+      width: 66.66667%;
+      float: right; } }
   .l-services__tile_numb_16 .b-service__img-wrap {
     bottom: 0;
     left: 0;
     height: 225px;
     width: 100%; }
-  .l-services__tile_numb_16 .b-service__border:before, .l-services__tile_numb_16 .b-service__border:after {
-    display: none; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_16 .b-service__img-wrap {
+        height: 100%;
+        width: 33.33333%; } }
   .l-services__tile_numb_16 .b-service__img {
     top: 0;
     height: 225px;
@@ -4094,30 +4131,38 @@ blockquote {
     right: auto;
     background-image: url("/img/services/service-2.jpg");
     width: 100%; }
-  @media only screen and (min-width: 641px) {
-    .l-services__tile_numb_16 {
-      width: 100%;
-      float: left; }
-      .l-services__tile_numb_16 .b-service {
-        height: 350px; }
-      .l-services__tile_numb_16 .b-service__cnt {
-        width: 66.66667%;
-        float: right; }
-      .l-services__tile_numb_16 .b-service__img-wrap {
-        height: 100%;
-        width: 33.33333%; }
+    @media only screen and (min-width: 641px) {
       .l-services__tile_numb_16 .b-service__img {
         height: 100%; } }
 
 .l-services__tile_numb_17 {
   background-color: #fefefd; }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_17 {
+      width: 100%;
+      float: left; } }
   .l-services__tile_numb_17 .b-service {
     padding-bottom: 225px; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_17 .b-service {
+        height: 350px; } }
+  @media only screen and (max-width: 640px) {
+    .l-services__tile_numb_17 .b-service__border {
+      padding-right: 10px;
+      padding-left: 10px; } }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_17 .b-service__cnt {
+      width: 66.66667%;
+      float: right; } }
   .l-services__tile_numb_17 .b-service__img-wrap {
     bottom: 0;
     left: 0;
     height: 225px;
     width: 100%; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_17 .b-service__img-wrap {
+        height: 100%;
+        width: 33.33333%; } }
   .l-services__tile_numb_17 .b-service__img {
     top: 0;
     height: 225px;
@@ -4125,18 +4170,7 @@ blockquote {
     right: auto;
     background-image: url("/img/services/service-3.jpg");
     width: 100%; }
-  @media only screen and (min-width: 641px) {
-    .l-services__tile_numb_17 {
-      width: 100%;
-      float: left; }
-      .l-services__tile_numb_17 .b-service {
-        height: 350px; }
-      .l-services__tile_numb_17 .b-service__cnt {
-        width: 66.66667%;
-        float: right; }
-      .l-services__tile_numb_17 .b-service__img-wrap {
-        height: 100%;
-        width: 33.33333%; }
+    @media only screen and (min-width: 641px) {
       .l-services__tile_numb_17 .b-service__img {
         height: 100%; } }
 
@@ -6873,8 +6907,10 @@ select {
   display: block;
   color: #fefefd; }
 
-.b-cafe-gallery__cnt_text_black {
+.b-cafe-gallery__cnt_theme_black {
   color: #333333; }
+  .b-cafe-gallery__cnt_theme_black .b-cafe-gallery__ttl:after {
+    background-color: #333333; }
 
 ol {
   list-style-type: decimal;

@@ -102,6 +102,12 @@
 
 
 // STATE
-.b-cafe-gallery__cnt_text_black {
+.b-cafe-gallery__cnt_theme_black {
     color: $black;
+
+    .b-cafe-gallery__ttl {
+        &:after {
+            background-color: $black;
+        }
+    }
 }

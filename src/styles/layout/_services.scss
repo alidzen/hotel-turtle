@@ -515,50 +515,47 @@ $spectile-height-small: 350px;
 .l-services__tile_numb_12 {
     background-color: $white;
 
+    @media #{$medium-up} {
+        height: $spectile-height-small;
+    }
+
+    @media #{$custom-1024-up} {
+        @include span(6);
+    }
+
+    .b-service {
+        @media #{$medium-up} {
+            @include span(full);
+            height: $spectile-height-small;
+        }
+
+        @media #{$custom-1024-up} {
+            padding-top: rhythm(2);
+        }
+    }
+
     .b-service__cnt {
         position: relative;
         z-index: z('default');
+
+        @media #{$custom-1024-up} {
+            p {
+                @include span(6);
+            }
+        }
     }
 
     .b-service__img {
         height: 100%;
         opacity: .2;
         background-image: none;
-    }
 
-    @media #{$medium-up} {
-        height: $spectile-height-small;
-
-        .b-service {
-            @include span(full);
-            height: $spectile-height-small;
-        }
-
-        .b-service__cnt {
-            //@include span(6);
-        }
-
-        .b-service__img {
+        @media #{$medium-up} {
             right: -55%;
             opacity: 1;
         }
-    }
 
-    @media #{$custom-1024-up} {
-        @include span(6);
-
-        .b-service {
-            overflow: visible;
-            padding-top: rhythm(2);
-        }
-
-        .b-service__cnt {
-            p {
-                @include span(6);
-            }
-        }
-
-        .b-service__img {
+        @media #{$custom-1024-up} {
             img {
                 position: absolute;
                 top: 50px;
@@ -622,8 +619,31 @@ $spectile-height-small: 350px;
 .l-services__tile_numb_14 {
     background-color: $white;
 
+    @media #{$medium-up} {
+        @include span(full);
+    }
+
     .b-service {
         padding-bottom: $tile-height-small;
+
+        @media #{$medium-up} {
+            height: $spectile-height-small;
+        }
+    }
+
+    .b-service__border {
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
+    }
+
+    .b-service__cnt {
+        @media #{$medium-up} {
+            @include span(8 last);
+        }
     }
 
     .b-service__img-wrap {
@@ -631,6 +651,11 @@ $spectile-height-small: 350px;
         left: 0;
         height: $tile-height-small;
         width: 100%;
+
+        @media #{$medium-up} {
+            height: 100%;
+            width: 33.33333%;
+        }
     }
 
     .b-service__img {
@@ -640,25 +665,8 @@ $spectile-height-small: 350px;
         right: auto;
         background-image: url('/img/services/service-5.jpg');
         width: 100%;
-    }
 
-    @media #{$medium-up} {
-        @include span(full);
-
-        .b-service {
-            height: $spectile-height-small;
-        }
-
-        .b-service__cnt {
-            @include span(8 last);
-        }
-
-        .b-service__img-wrap {
-            height: 100%;
-            width: 33.33333%;
-        }
-
-        .b-service__img {
+        @media #{$medium-up} {
             height: 100%;
         }
     }
@@ -667,8 +675,31 @@ $spectile-height-small: 350px;
 .l-services__tile_numb_15 {
     background-color: $gold-3;
 
+    @media #{$medium-up} {
+        @include span(full);
+    }
+
     .b-service {
         padding-bottom: $tile-height-small;
+
+        @media #{$medium-up} {
+            height: $spectile-height-small;
+        }
+    }
+
+    .b-service__border {
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
+    }
+
+    .b-service__cnt {
+        @media #{$medium-up} {
+            @include span(8 last);
+        }
     }
 
     .b-service__img-wrap {
@@ -676,6 +707,11 @@ $spectile-height-small: 350px;
         left: 0;
         height: $tile-height-small;
         width: 100%;
+
+        @media #{$medium-up} {
+            height: 100%;
+            width: 485px;
+        }
     }
 
     .b-service__img {
@@ -685,27 +721,8 @@ $spectile-height-small: 350px;
         right: auto;
         background-image: url('/img/services/service-3.svg');
         width: 100%;
-    }
 
-    @media #{$medium-up} {
-        @include span(full);
-
-        .b-service {
-            height: $spectile-height-small;
-        }
-
-        .b-service__cnt {
-            @include span(8);
-        }
-
-        .b-service__img-wrap {
-            height: 100%;
-            right: 0;
-            left: auto;
-            width: 485px;
-        }
-
-        .b-service__img {
+        @media #{$medium-up} {
             height: 341px;
         }
     }
@@ -714,15 +731,16 @@ $spectile-height-small: 350px;
 .l-services__tile_numb_16 {
     background-color: $gray-3;
 
-    .b-service {
-        padding-bottom: $tile-height-small;
+    @media #{$medium-up} {
+        @include span(full);
     }
 
-    .b-service__img-wrap {
-        bottom: 0;
-        left: 0;
-        height: $tile-height-small;
-        width: 100%;
+    .b-service {
+        padding-bottom: $tile-height-small;
+
+        @media #{$medium-up} {
+            height: $spectile-height-small;
+        }
     }
 
     .b-service__border {
@@ -730,8 +748,32 @@ $spectile-height-small: 350px;
         &:after {
             display: none;
         }
+
+        @media #{$small-only} {
+            padding: {
+                right: gutter(0);
+                left: gutter(0);
+            };
+        }
     }
 
+    .b-service__cnt {
+        @media #{$medium-up} {
+            @include span(8 last);
+        }
+    }
+
+    .b-service__img-wrap {
+        bottom: 0;
+        left: 0;
+        height: $tile-height-small;
+        width: 100%;
+
+        @media #{$medium-up} {
+            height: 100%;
+            width: 33.33333%;
+        }
+    }
 
     .b-service__img {
         top: 0;
@@ -740,25 +782,8 @@ $spectile-height-small: 350px;
         right: auto;
         background-image: url('/img/services/service-2.jpg');
         width: 100%;
-    }
 
-    @media #{$medium-up} {
-        @include span(full);
-
-        .b-service {
-            height: $spectile-height-small;
-        }
-
-        .b-service__cnt {
-            @include span(8 last);
-        }
-
-        .b-service__img-wrap {
-            height: 100%;
-            width: 33.33333%;
-        }
-
-        .b-service__img {
+        @media #{$medium-up} {
             height: 100%;
         }
     }
@@ -767,8 +792,32 @@ $spectile-height-small: 350px;
 .l-services__tile_numb_17 {
     background-color: $white;
 
+    @media #{$medium-up} {
+        @include span(full);
+    }
+
     .b-service {
         padding-bottom: $tile-height-small;
+
+        @media #{$medium-up} {
+            height: $spectile-height-small;
+        }
+    }
+
+    .b-service__border {
+
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
+    }
+
+    .b-service__cnt {
+        @media #{$medium-up} {
+            @include span(8 last);
+        }
     }
 
     .b-service__img-wrap {
@@ -776,6 +825,11 @@ $spectile-height-small: 350px;
         left: 0;
         height: $tile-height-small;
         width: 100%;
+
+        @media #{$medium-up} {
+            height: 100%;
+            width: 33.33333%;
+        }
     }
 
     .b-service__img {
@@ -785,25 +839,8 @@ $spectile-height-small: 350px;
         right: auto;
         background-image: url('/img/services/service-3.jpg');
         width: 100%;
-    }
 
-    @media #{$medium-up} {
-        @include span(full);
-
-        .b-service {
-            height: $spectile-height-small;
-        }
-
-        .b-service__cnt {
-            @include span(8 last);
-        }
-
-        .b-service__img-wrap {
-            height: 100%;
-            width: 33.33333%;
-        }
-
-        .b-service__img {
+        @media #{$medium-up} {
             height: 100%;
         }
     }
