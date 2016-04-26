@@ -535,17 +535,27 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
 
 .b-gallery__ttl,
 .f-special {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 20px;
   font-family: "AGOpusHR-Bold", sans-serif;
   letter-spacing: 0.05em; }
+  @media only screen and (min-width: 641px) {
+    .b-gallery__ttl,
+    .f-special {
+      font-size: 18px;
+      line-height: 27px; } }
 
 .b-gallery__txt,
 .f-special-txt {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 20px;
   font-family: "ArnoPro-BoldItalic", sans-serif;
   letter-spacing: 0.05em; }
+  @media only screen and (min-width: 641px) {
+    .b-gallery__txt,
+    .f-special-txt {
+      font-size: 18px;
+      line-height: 27px; } }
 
 .l-cafe-feature__headings > h2, .l-room-feature__cnt > h2, .b-callback__caption, .b-feature__ttl-note, .b-article__ttl-note, .b-card__ttl-note, .b-showcase__ttl-note, .b-actions-showcase__ttl-note, .b-showcase-full__quotes, .b-propose__ttl,
 .f-ttl-note {
@@ -3225,7 +3235,7 @@ blockquote {
   left: 0;
   width: 100%;
   z-index: 1;
-  padding-top: 84px;
+  padding-top: 36px;
   padding-bottom: 24px;
   background-color: rgba(254, 254, 253, 0.6);
   text-align: center; }
@@ -4631,13 +4641,18 @@ select {
 
 .b-gallery__cnt {
   position: absolute;
-  padding: 15px 20px;
-  width: 240px;
-  background: url("/img/propose-bg-1.png") no-repeat 50% 50% rgba(254, 254, 253, 0.95);
-  bottom: 84px;
-  top: auto;
+  padding: 10px;
+  width: 170px;
+  background: url("/img/propose-bg-1.png") no-repeat 50% 50% rgba(254, 254, 253, 0.8);
+  bottom: 60px;
   right: 0;
   margin-right: 0; }
+  @media only screen and (min-width: 641px) {
+    .b-gallery__cnt {
+      padding: 15px 20px;
+      bottom: 84px;
+      width: 240px;
+      background-color: rgba(254, 254, 253, 0.95); } }
   @media only screen and (min-width: 1024px) {
     .b-gallery__cnt {
       top: 0;
@@ -4646,10 +4661,13 @@ select {
       margin-right: 0; } }
 
 .b-gallery__propose {
-  padding: 30px 15px 20px;
-  border: 2px solid #bca064;
+  padding: 35px 10px 5px;
   text-align: center;
   color: #bca064; }
+  @media only screen and (min-width: 641px) {
+    .b-gallery__propose {
+      padding: 30px 15px 20px;
+      border: 2px solid #bca064; } }
 
 .b-gallery__btn {
   width: auto;
@@ -4662,9 +4680,10 @@ select {
   background-color: #da3636;
   border-color: #da3636;
   color: #fefefd; }
-  .b-gallery__btn:hover {
-    background-color: #da3636;
-    border-color: #da3636; }
+  @media only screen and (min-width: 1025px) {
+    .b-gallery__btn:hover {
+      background-color: #da3636;
+      border-color: #da3636; } }
 
 .fotorama__nav--thumbs {
   text-align: center; }

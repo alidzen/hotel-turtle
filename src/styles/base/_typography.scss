@@ -202,18 +202,28 @@ h2 {
 
 %f-special,
 .f-special {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 20px;
     font-family: $font-roman-bold;
     letter-spacing: $gl-letter-spacing;
+
+    @media #{$medium-up} {
+        font-size: 18px;
+        line-height: 27px;
+    }
 }
 
 %f-special-txt,
 .f-special-txt {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 20px;
     font-family: $font-bold-italic;
     letter-spacing: $gl-letter-spacing;
+
+    @media #{$medium-up} {
+        font-size: 18px;
+        line-height: 27px;
+    }
 }
 
 %f-ttl-note,

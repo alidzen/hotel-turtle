@@ -103,13 +103,19 @@ $gallery-dots-frame-height: 30px !default;
 
 .b-gallery__cnt {
     position: absolute;
-    padding: 15px 20px;
-    width: 240px;
-    background: url('/img/propose-bg-1.png') no-repeat 50% 50% rgba($white, .95);
-    bottom: 60px + rhythm(1);
-    top: auto;
+    padding: 10px;
+    width: 170px;
+    background: url('/img/propose-bg-1.png') no-repeat 50% 50% rgba($white, .8);
+    bottom: 60px;
     right: 0;
     margin-right: 0;
+
+    @media #{$medium-up} {
+        padding: 15px 20px;
+        bottom: 60px + rhythm(1);
+        width: 240px;
+        background-color: rgba($white, .95);
+    }
 
     @media #{$custom-1024-up} {
         top: 0;
@@ -120,10 +126,14 @@ $gallery-dots-frame-height: 30px !default;
 }
 
 .b-gallery__propose {
-    padding: 30px 15px 20px;
-    border: 2px solid $gold-2;
+    padding: 35px 10px 5px;
     text-align: center;
     color: $gold-2;
+
+    @media #{$medium-up} {
+        padding: 30px 15px 20px;
+        border: 2px solid $gold-2;
+    }
 }
 
 .b-gallery__btn {
@@ -136,9 +146,11 @@ $gallery-dots-frame-height: 30px !default;
     border-color: $red;
     color: $white;
 
-    &:hover {
-        background-color: $red;
-        border-color: $red;
+    @media #{$big-up} {
+        &:hover {
+            background-color: $red;
+            border-color: $red;
+        }
     }
 }
 
