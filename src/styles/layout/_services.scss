@@ -51,7 +51,7 @@ $spectile-height-small: 350px;
     .b-service__img {
         background: url('/img/services/service-1.png') no-repeat 50% 50%;
         height: 100%;
-        opacity: .4;
+        opacity: .2;
     }
 
     @media #{$medium-up} {
@@ -72,7 +72,7 @@ $spectile-height-small: 350px;
         }
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(8);
     }
 }
@@ -129,7 +129,7 @@ $spectile-height-small: 350px;
         }
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(8);
     }
 }
@@ -146,7 +146,7 @@ $spectile-height-small: 350px;
         background: url('/img/services/service-2.png') no-repeat 50% 50%;
         background-size: contain;
         height: 100%;
-        opacity: .4;
+        opacity: .2;
     }
 
     @media #{$medium-up} {
@@ -164,7 +164,7 @@ $spectile-height-small: 350px;
 
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(4 last);
 
         .b-service__img {
@@ -203,7 +203,7 @@ $spectile-height-small: 350px;
         }
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(4);
     }
 }
@@ -247,7 +247,7 @@ $spectile-height-small: 350px;
         }
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(4);
 
         .b-service {
@@ -282,7 +282,7 @@ $spectile-height-small: 350px;
         background-image: url('/img/services/service-4.jpg');
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(4);
         height: $tile-height-big;
 
@@ -314,7 +314,7 @@ $spectile-height-small: 350px;
         background-size: contain;
         top: 10%;
         height: 100%;
-        opacity: .4;
+        opacity: .2;
     }
 
     @media #{$medium-up} {
@@ -332,7 +332,7 @@ $spectile-height-small: 350px;
         }
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(4);
         height: $tile-height-small;
 
@@ -414,12 +414,13 @@ $spectile-height-small: 350px;
         background-image: url('/img/services/service-4.jpg');
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(4);
         height: $tile-height-big;
 
         .b-service {
             height: $tile-height-big;
+            padding-top: rhythm(2);
         }
 
         .b-service__img-wrap {
@@ -432,8 +433,27 @@ $spectile-height-small: 350px;
 .l-services__tile_numb_10 {
     background-color: $gold-2;
 
+    @media #{$custom-1024-up} {
+        @include span(4);
+        height: $tile-height-big;
+    }
+
     .b-service {
         padding-bottom: $tile-height-small;
+
+        @media #{$custom-1024-up} {
+            height: $tile-height-big;
+            padding-top: $tile-height-small;
+        }
+    }
+
+    .b-service__border {
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
     }
 
     .b-service__img-wrap {
@@ -441,27 +461,17 @@ $spectile-height-small: 350px;
         bottom: 0;
         width: 100%;
         left: 0;
+
+        @media #{$custom-1024-up} {
+            top: 0;
+            height: $tile-height-small;
+        }
     }
 
     .b-service__img {
         top: 0;
         height: $tile-height-small;
         background-image: url('/img/services/service-6.jpg');
-    }
-
-    @media #{$big-up} {
-        @include span(4);
-        height: $tile-height-big;
-
-        .b-service {
-            height: $tile-height-big;
-            padding-top: $tile-height-small;
-        }
-
-        .b-service__img-wrap {
-            top: 0;
-            height: $tile-height-small;
-        }
     }
 }
 
@@ -485,12 +495,14 @@ $spectile-height-small: 350px;
         background-image: url('/img/services/service-1.jpg');
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(4);
         height: $tile-height-big;
 
         .b-service {
             height: $tile-height-big;
+            padding-top: rhythm(2);
+
         }
 
         .b-service__img-wrap {
@@ -510,7 +522,7 @@ $spectile-height-small: 350px;
 
     .b-service__img {
         height: 100%;
-        opacity: .4;
+        opacity: .2;
         background-image: none;
     }
 
@@ -532,11 +544,12 @@ $spectile-height-small: 350px;
         }
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(6);
 
         .b-service {
             overflow: visible;
+            padding-top: rhythm(2);
         }
 
         .b-service__cnt {
@@ -566,7 +579,7 @@ $spectile-height-small: 350px;
     .b-service__img {
         background: url('/img/services/service-2.svg') no-repeat 100% 0;
         background-size: contain;
-        opacity: .4;
+        opacity: .2;
     }
 
     @media #{$medium-up} {
@@ -589,11 +602,12 @@ $spectile-height-small: 350px;
         }
     }
 
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
         @include span(6);
 
         .b-service {
             overflow: visible;
+            padding-top: rhythm(2);
         }
 
         .b-service__cnt {
@@ -601,6 +615,196 @@ $spectile-height-small: 350px;
 
         .b-service__img {
             height: 210px;
+        }
+    }
+}
+
+.l-services__tile_numb_14 {
+    background-color: $white;
+
+    .b-service {
+        padding-bottom: $tile-height-small;
+    }
+
+    .b-service__img-wrap {
+        bottom: 0;
+        left: 0;
+        height: $tile-height-small;
+        width: 100%;
+    }
+
+    .b-service__img {
+        top: 0;
+        height: $tile-height-small;
+        left: 0;
+        right: auto;
+        background-image: url('/img/services/service-5.jpg');
+        width: 100%;
+    }
+
+    @media #{$medium-up} {
+        @include span(full);
+
+        .b-service {
+            height: $spectile-height-small;
+        }
+
+        .b-service__cnt {
+            @include span(8 last);
+        }
+
+        .b-service__img-wrap {
+            height: 100%;
+            width: 33.33333%;
+        }
+
+        .b-service__img {
+            height: 100%;
+        }
+    }
+}
+
+.l-services__tile_numb_15 {
+    background-color: $gold-3;
+
+    .b-service {
+        padding-bottom: $tile-height-small;
+    }
+
+    .b-service__img-wrap {
+        bottom: 0;
+        left: 0;
+        height: $tile-height-small;
+        width: 100%;
+    }
+
+    .b-service__img {
+        top: 0;
+        height: $tile-height-small;
+        left: 0;
+        right: auto;
+        background-image: url('/img/services/service-3.svg');
+        width: 100%;
+    }
+
+    @media #{$medium-up} {
+        @include span(full);
+
+        .b-service {
+            height: $spectile-height-small;
+        }
+
+        .b-service__cnt {
+            @include span(8);
+        }
+
+        .b-service__img-wrap {
+            height: 100%;
+            right: 0;
+            left: auto;
+            width: 485px;
+        }
+
+        .b-service__img {
+            height: 341px;
+        }
+    }
+}
+
+.l-services__tile_numb_16 {
+    background-color: $gray-3;
+
+    .b-service {
+        padding-bottom: $tile-height-small;
+    }
+
+    .b-service__img-wrap {
+        bottom: 0;
+        left: 0;
+        height: $tile-height-small;
+        width: 100%;
+    }
+
+    .b-service__border {
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+
+    .b-service__img {
+        top: 0;
+        height: $tile-height-small;
+        left: 0;
+        right: auto;
+        background-image: url('/img/services/service-2.jpg');
+        width: 100%;
+    }
+
+    @media #{$medium-up} {
+        @include span(full);
+
+        .b-service {
+            height: $spectile-height-small;
+        }
+
+        .b-service__cnt {
+            @include span(8 last);
+        }
+
+        .b-service__img-wrap {
+            height: 100%;
+            width: 33.33333%;
+        }
+
+        .b-service__img {
+            height: 100%;
+        }
+    }
+}
+
+.l-services__tile_numb_17 {
+    background-color: $white;
+
+    .b-service {
+        padding-bottom: $tile-height-small;
+    }
+
+    .b-service__img-wrap {
+        bottom: 0;
+        left: 0;
+        height: $tile-height-small;
+        width: 100%;
+    }
+
+    .b-service__img {
+        top: 0;
+        height: $tile-height-small;
+        left: 0;
+        right: auto;
+        background-image: url('/img/services/service-3.jpg');
+        width: 100%;
+    }
+
+    @media #{$medium-up} {
+        @include span(full);
+
+        .b-service {
+            height: $spectile-height-small;
+        }
+
+        .b-service__cnt {
+            @include span(8 last);
+        }
+
+        .b-service__img-wrap {
+            height: 100%;
+            width: 33.33333%;
+        }
+
+        .b-service__img {
+            height: 100%;
         }
     }
 }

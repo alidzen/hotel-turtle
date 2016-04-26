@@ -106,23 +106,24 @@
     @include padding-trailer(1.5);
     overflow: hidden;
     position: relative;
-    padding-top: $booking-height;
+    padding-top: $booking-height + rhythm(1);
     z-index: z('default');
     background: url('/img/logo-bg.svg') repeat-y 0 0;
 
     @media #{$medium-up} {
         @include padding-trailer(2.5);
+        padding-top: $booking-height + rhythm(2);
     }
 
     @media #{$big-up} {
-        @include padding-leader(3.5);
+        padding-top: $booking-height + rhythm(3);
         @include padding-trailer(2);
     }
 
     // Прилипает к меню на десктопах
     &.is-stick {
         @media #{$big-up} {
-            padding-top: 60px;
+            padding-top: $booking-height;
         }
     }
 }
