@@ -18,7 +18,6 @@
 
 .b-booking-form__col {
     @media #{$custom-1024-up} {
-        flex: 0 1 150px;
         margin-right: 40px;
         width: 150px;
         float: right;
@@ -74,18 +73,22 @@
 // STATE
 .b-booking-form_theme_popup {
     $btn-size: 200px;
-    background-color: transparent;
+    height: auto;
+    background: none;
+
+    .b-booking-form__form {
+        height: auto;
+    }
 
     .b-booking-form__col {
         @include margin-trailer(1);
         width: $btn-size;
+        float: none;
 
-        @media #{$small-only} {
-            margin: {
-                right: auto;
-                left: auto;
-            };
-        }
+        margin: {
+            right: auto;
+            left: auto;
+        };
 
         &:nth-last-child(2) {
             @include margin-trailer(1.5);
