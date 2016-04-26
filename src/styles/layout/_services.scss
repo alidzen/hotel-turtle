@@ -49,9 +49,18 @@ $spectile-height-small: 350px;
     }
 
     .b-service__img {
-        background: url('/img/services/service-1.png') no-repeat 50% 50%;
+        background: url('/img/services/service-1.svg') no-repeat 50% 50%;
         height: 100%;
         opacity: .2;
+
+        @media #{$medium-up} {
+            right: -35%;
+            opacity: 1;
+        }
+
+        @media #{$custom-1024-up} {
+            height: 130%;
+        }
     }
 
     @media #{$medium-up} {
@@ -64,11 +73,6 @@ $spectile-height-small: 350px;
 
         .b-service__cnt {
             @include span(9);
-        }
-
-        .b-service__img {
-            right: -50%;
-            opacity: 1;
         }
     }
 
@@ -143,7 +147,7 @@ $spectile-height-small: 350px;
     }
 
     .b-service__img {
-        background: url('/img/services/service-2.png') no-repeat 50% 50%;
+        background: url('/img/services/service-2.svg') no-repeat 50% 50%;
         background-size: contain;
         height: 100%;
         opacity: .2;
@@ -310,7 +314,7 @@ $spectile-height-small: 350px;
     }
 
     .b-service__img {
-        background: url('/img/services/service-3.png') no-repeat 100% 50%;
+        background: url('/img/services/service-3.svg') no-repeat 100% 50%;
         background-size: contain;
         top: 10%;
         height: 100%;
@@ -328,7 +332,6 @@ $spectile-height-small: 350px;
         .b-service__img {
             right: 0;
             top: 30%;
-            opacity: 1;
         }
     }
 
@@ -342,8 +345,7 @@ $spectile-height-small: 350px;
         }
 
         .b-service__img {
-            right: -30%;
-            top: -20%;
+            right: -20%;
         }
     }
 }

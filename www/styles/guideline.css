@@ -231,13 +231,21 @@ img {
     height: 2px;
     background-color: #005870; }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .show-on-touch {
+    display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  .hide-on-1024-up {
     display: none; } }
 
 @media only screen and (max-width: 1024px) {
   .hide-on-touch {
     display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  .hide-on-touch {
+    display: block; } }
 
 @media only screen and (min-width: 641px) {
   .show-on-mobile {
@@ -251,9 +259,17 @@ img {
   .show-on-desktop {
     display: none; } }
 
+@media only screen and (min-width: 1024px) {
+  .show-on-desktop {
+    display: block; } }
+
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   .hide-on-tablet {
     display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  .hide-on-tablet {
+    display: block; } }
 
 @font-face {
   font-family: "Geometria";
@@ -3109,7 +3125,7 @@ blockquote {
 .l-footer__cnt {
   padding-top: 12px;
   padding-bottom: 12px;
-  background: url("/img/footer-bg.png") no-repeat 50% 50%;
+  background: url("/img/footer-bg.svg") no-repeat 50% 90% #005870;
   background-size: cover; }
   @media only screen and (min-width: 1025px) {
     .l-footer__cnt {
@@ -3622,9 +3638,16 @@ blockquote {
     position: relative;
     z-index: 1; }
   .l-services__tile_numb_1 .b-service__img {
-    background: url("/img/services/service-1.png") no-repeat 50% 50%;
+    background: url("/img/services/service-1.svg") no-repeat 50% 50%;
     height: 100%;
     opacity: .2; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_1 .b-service__img {
+        right: -35%;
+        opacity: 1; } }
+    @media only screen and (min-width: 1024px) {
+      .l-services__tile_numb_1 .b-service__img {
+        height: 130%; } }
   @media only screen and (min-width: 641px) {
     .l-services__tile_numb_1 {
       height: 225px; }
@@ -3634,10 +3657,7 @@ blockquote {
         height: 225px; }
       .l-services__tile_numb_1 .b-service__cnt {
         width: 75%;
-        float: left; }
-      .l-services__tile_numb_1 .b-service__img {
-        right: -50%;
-        opacity: 1; } }
+        float: left; } }
   @media only screen and (min-width: 1024px) {
     .l-services__tile_numb_1 {
       width: 66.66667%;
@@ -3692,7 +3712,7 @@ blockquote {
     position: relative;
     z-index: 1; }
   .l-services__tile_numb_3 .b-service__img {
-    background: url("/img/services/service-2.png") no-repeat 50% 50%;
+    background: url("/img/services/service-2.svg") no-repeat 50% 50%;
     background-size: contain;
     height: 100%;
     opacity: .2; }
@@ -3807,7 +3827,7 @@ blockquote {
     position: relative;
     z-index: 1; }
   .l-services__tile_numb_7 .b-service__img {
-    background: url("/img/services/service-3.png") no-repeat 100% 50%;
+    background: url("/img/services/service-3.svg") no-repeat 100% 50%;
     background-size: contain;
     top: 10%;
     height: 100%;
@@ -3821,8 +3841,7 @@ blockquote {
         height: 450px; }
       .l-services__tile_numb_7 .b-service__img {
         right: 0;
-        top: 30%;
-        opacity: 1; } }
+        top: 30%; } }
   @media only screen and (min-width: 1024px) {
     .l-services__tile_numb_7 {
       width: 33.33333%;
@@ -3832,8 +3851,7 @@ blockquote {
         height: 225px;
         padding-left: 20px; }
       .l-services__tile_numb_7 .b-service__img {
-        right: -30%;
-        top: -20%; } }
+        right: -20%; } }
 
 .l-services__tile_numb_8 {
   background-color: #fefefd; }
@@ -4547,6 +4565,9 @@ blockquote {
 
 .b-btn_width_146 {
   width: 146px; }
+
+.b-btn_bg_gray {
+  background-color: #f0eeeb; }
 
 input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea {
   transition-property: border-color;
@@ -6217,10 +6238,10 @@ select {
     min-width: 100%; }
   @media only screen and (min-width: 1025px) {
     .b-article__img-wrap {
+      width: 60%;
       right: 50%;
       left: auto;
-      opacity: 1;
-      width: auto; }
+      opacity: 1; }
       .b-article__img-wrap img {
         min-width: inherit; } }
 
@@ -6262,9 +6283,9 @@ select {
   .b-article_theme_gold .b-article__img-wrap {
     left: 50%;
     height: 100%;
-    width: 100%;
-    max-width: none; }
+    width: 66%; }
     .b-article_theme_gold .b-article__img-wrap img {
+      max-width: 100%;
       height: 100%; } }
 
 @media only screen and (min-width: 1025px) {
@@ -6290,6 +6311,13 @@ select {
       padding-top: 72px;
       padding-bottom: 72px; } }
 
+@media only screen and (min-width: 641px) {
+  .b-article__theme_atmosphere-page .b-article__cnt {
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    margin-right: 16.66667%;
+    float: left; } }
+
 @media only screen and (min-width: 1025px) {
   .b-article__theme_atmosphere-page .b-article__cnt {
     width: 50%;
@@ -6298,13 +6326,19 @@ select {
     padding: 0; } }
 
 .b-article__theme_atmosphere-page .b-article__img-wrap {
-  width: auto; }
+  height: 100%; }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .b-article__theme_atmosphere-page .b-article__img-wrap {
+      left: 0;
+      width: 50%; } }
   @media only screen and (min-width: 1025px) {
     .b-article__theme_atmosphere-page .b-article__img-wrap {
       right: 62%;
       left: auto;
       opacity: 1;
-      width: auto; } }
+      width: 40%; } }
+  .b-article__theme_atmosphere-page .b-article__img-wrap img {
+    max-height: 100%; }
 
 @media only screen and (min-width: 1025px) {
   .b-article__theme_atmosphere-page .b-article__header {
@@ -6633,14 +6667,19 @@ select {
 
 .b-card__bg-img {
   position: absolute;
-  bottom: -10px;
-  left: -130px;
-  z-index: 0; }
+  bottom: 0;
+  left: 25%;
+  z-index: 0;
+  width: 430px;
+  display: none; }
   .b-card__bg-img img {
     opacity: .4; }
   @media only screen and (min-width: 641px) {
     .b-card__bg-img img {
       opacity: 1; } }
+  @media only screen and (min-width: 1024px) {
+    .b-card__bg-img {
+      display: block; } }
 
 .l-showcase {
   margin-bottom: 48px;

@@ -180,7 +180,13 @@ img {
 }
 
 .show-on-touch {
-    @media #{$big-up} {
+    @media #{$custom-1024-up} {
+        display: none;
+    }
+}
+
+.hide-on-1024-up {
+    @media #{$custom-1024-up} {
         display: none;
     }
 }
@@ -188,6 +194,10 @@ img {
 .hide-on-touch {
     @media #{$medium-down} {
         display: none;
+    }
+
+    @media #{$custom-1024-up} {
+        display: block;
     }
 }
 
@@ -207,10 +217,18 @@ img {
     @media #{$medium-down} {
         display: none;
     }
+
+    @media #{$custom-1024-up} {
+        display: block;
+    }
 }
 
 .hide-on-tablet {
     @media #{$medium-only} {
         display: none;
+    }
+
+    @media #{$custom-1024-up} {
+        display: block;
     }
 }

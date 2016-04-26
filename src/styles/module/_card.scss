@@ -182,9 +182,11 @@
 
 .b-card__bg-img {
     position: absolute;
-    bottom: -10px;
-    left: -130px;
+    bottom: 0;
+    left: 25%;
     z-index: z('zero');
+    width: 430px;
+    display: none;
 
     img {
         opacity: .4;
@@ -194,5 +196,9 @@
         img {
             opacity: 1;
         }
+    }
+
+    @media #{$custom-1024-up} {
+        display: block;
     }
 }

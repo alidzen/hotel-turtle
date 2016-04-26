@@ -62,7 +62,7 @@
 
 .l-footer__cnt {
     @include rhythm-padding(.5);
-    background: url('/img/footer-bg.png') no-repeat 50% 50%;
+    background: url('/img/footer-bg.svg') no-repeat 50% 90% $green;
     background-size: cover;
 
     @media #{$big-up} {
