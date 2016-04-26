@@ -744,9 +744,12 @@ $spectile-height-small: 350px;
     }
 
     .b-service__cnt {
-
         @media #{$custom-1024-up} {
             @include span(6);
+        }
+
+        @media #{$large-up} {
+            @include span(8);
         }
     }
 
@@ -755,13 +758,14 @@ $spectile-height-small: 350px;
         left: 0;
         height: $tile-height-small;
         width: 100%;
-        opacity: .2;
+        opacity: 1;
 
         @media #{$medium-up} {
             height: 100%;
             right: 0;
             left: auto;
             width: 485px;
+            opacity: .2;
         }
 
         @media #{$custom-1024-up} {
