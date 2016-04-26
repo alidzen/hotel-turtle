@@ -30,10 +30,15 @@
     @include grid-clearfix();
 }
 
+.l-services__tile {
+    @include grid-clearfix();
+}
+
 // TILES
 $tile-height-small: 225px;
 $tile-height-big: $tile-height-small * 2;
 $tile-height-large: $tile-height-small * 3;
+$spectile-height-small: 350px;
 
 .l-services__tile_numb_1 {
     background-color: $gold-3;
@@ -491,6 +496,111 @@ $tile-height-large: $tile-height-small * 3;
         .b-service__img-wrap {
             bottom: 0;
             height: $tile-height-small;
+        }
+    }
+}
+
+.l-services__tile_numb_12 {
+    background-color: $white;
+
+    .b-service__cnt {
+        position: relative;
+        z-index: z('default');
+    }
+
+    .b-service__img {
+        height: 100%;
+        opacity: .4;
+        background-image: none;
+    }
+
+    @media #{$medium-up} {
+        height: $spectile-height-small;
+
+        .b-service {
+            @include span(full);
+            height: $spectile-height-small;
+        }
+
+        .b-service__cnt {
+            //@include span(6);
+        }
+
+        .b-service__img {
+            right: -55%;
+            opacity: 1;
+        }
+    }
+
+    @media #{$big-up} {
+        @include span(6);
+
+        .b-service {
+            overflow: visible;
+        }
+
+        .b-service__cnt {
+            p {
+                @include span(6);
+            }
+        }
+
+        .b-service__img {
+            img {
+                position: absolute;
+                top: 50px;
+                width: 299px;
+            }
+        }
+    }
+}
+
+.l-services__tile_numb_13 {
+    background-color: $gray-3;
+
+    .b-service__cnt {
+        position: relative;
+        z-index: z('default');
+    }
+
+    .b-service__img {
+        background: url('/img/services/service-2.svg') no-repeat 100% 0;
+        background-size: contain;
+        opacity: .4;
+    }
+
+    @media #{$medium-up} {
+        height: $spectile-height-small;
+
+        .b-service {
+            @include span(full);
+            height: $spectile-height-small;
+        }
+
+        .b-service__cnt {
+            //@include span(6);
+        }
+
+        .b-service__img {
+            top: auto;
+            right: 0;
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
+    @media #{$big-up} {
+        @include span(6);
+
+        .b-service {
+            overflow: visible;
+        }
+
+        .b-service__cnt {
+        }
+
+        .b-service__img {
+            height: 210px;
         }
     }
 }

@@ -3610,6 +3610,11 @@ blockquote {
   display: block;
   clear: both; }
 
+.l-services__tile:after {
+  content: '';
+  display: block;
+  clear: both; }
+
 .l-services__tile_numb_1 {
   background-color: #ded1b4; }
   .l-services__tile_numb_1 .b-service__cnt {
@@ -3932,6 +3937,69 @@ blockquote {
       .l-services__tile_numb_11 .b-service__img-wrap {
         bottom: 0;
         height: 225px; } }
+
+.l-services__tile_numb_12 {
+  background-color: #fefefd; }
+  .l-services__tile_numb_12 .b-service__cnt {
+    position: relative;
+    z-index: 1; }
+  .l-services__tile_numb_12 .b-service__img {
+    height: 100%;
+    opacity: .4;
+    background-image: none; }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_12 {
+      height: 350px; }
+      .l-services__tile_numb_12 .b-service {
+        width: 100%;
+        float: left;
+        height: 350px; }
+      .l-services__tile_numb_12 .b-service__img {
+        right: -55%;
+        opacity: 1; } }
+  @media only screen and (min-width: 1025px) {
+    .l-services__tile_numb_12 {
+      width: 50%;
+      float: left; }
+      .l-services__tile_numb_12 .b-service {
+        overflow: visible; }
+      .l-services__tile_numb_12 .b-service__cnt p {
+        width: 50%;
+        float: left; }
+      .l-services__tile_numb_12 .b-service__img img {
+        position: absolute;
+        top: 50px;
+        width: 299px; } }
+
+.l-services__tile_numb_13 {
+  background-color: #e8e8e6; }
+  .l-services__tile_numb_13 .b-service__cnt {
+    position: relative;
+    z-index: 1; }
+  .l-services__tile_numb_13 .b-service__img {
+    background: url("/img/services/service-2.svg") no-repeat 100% 0;
+    background-size: contain;
+    opacity: .4; }
+  @media only screen and (min-width: 641px) {
+    .l-services__tile_numb_13 {
+      height: 350px; }
+      .l-services__tile_numb_13 .b-service {
+        width: 100%;
+        float: left;
+        height: 350px; }
+      .l-services__tile_numb_13 .b-service__img {
+        top: auto;
+        right: 0;
+        bottom: 0;
+        opacity: 1; } }
+  @media only screen and (min-width: 1025px) {
+    .l-services__tile_numb_13 {
+      width: 50%;
+      float: left; }
+      .l-services__tile_numb_13 .b-service {
+        overflow: visible; }
+      .l-services__tile_numb_13 .b-service__img {
+        height: 210px; } }
 
 .l-cafe-feature {
   position: relative;
@@ -4440,13 +4508,13 @@ select {
   .selectric .label {
     color: #fefefd;
     height: 28px;
-    line-height: 32px;
+    line-height: 31px;
     margin-left: 15px; }
   .selectric .button {
     width: 32px;
     height: 32px;
     font-size: 12px;
-    line-height: 32px;
+    line-height: 28px;
     color: #fefefd; }
     .selectric .button:after {
       display: none; }
@@ -6015,17 +6083,6 @@ select {
       padding-right: 20px;
       padding-left: 20px;
       padding-bottom: 12px; } }
-  @media only screen and (min-width: 1025px) {
-    .b-service:hover {
-      color: inherit; }
-      .b-service:hover .b-service__ttl-note {
-        color: #bca064; }
-      .b-service:hover .b-service__img {
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-      .b-service:hover .b-service__header:after {
-        background-color: #bca064; } }
   .b-service.has-lines:before, .b-service.has-lines:after {
     content: '';
     position: absolute;
@@ -6048,17 +6105,6 @@ select {
     @media only screen and (min-width: 641px) {
       .b-service.has-lines:after {
         right: 30px; } }
-  @media only screen and (min-width: 1025px) {
-    .b-service.no-hover:hover {
-      color: inherit; }
-      .b-service.no-hover:hover .b-service__ttl-note {
-        color: #005870; }
-      .b-service.no-hover:hover .b-service__img {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1); }
-      .b-service.no-hover:hover .b-service__header:after {
-        background-color: #005870; } }
 
 .b-service__header {
   padding-bottom: 12px;
@@ -6076,11 +6122,6 @@ select {
     width: 60px;
     height: 4px;
     background-color: #005870; }
-
-.b-service__ttl-note {
-  transition-property: color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease; }
 
 .b-service__ttl {
   font-family: "AGOpusHR-Bold", sans-serif;
@@ -6120,12 +6161,6 @@ select {
   overflow: hidden; }
 
 .b-service__img {
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-duration: .75s;
   position: absolute;
   width: 100%;
   right: 0;

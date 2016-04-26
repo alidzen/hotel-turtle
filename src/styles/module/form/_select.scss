@@ -38,7 +38,7 @@ select {
         @extend %f-input;
         color: $select-color;
         height: 28px;
-        line-height: 32px;
+        line-height: 31px;
         margin-left: gutter(1.5);
     }
 
@@ -46,7 +46,7 @@ select {
         width: $select-height-current;
         height: $select-height-current;
         font-size: 12px;
-        line-height: 32px;
+        line-height: 28px;
         color: $white;
 
         &:after {
