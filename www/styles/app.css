@@ -4719,7 +4719,7 @@ select {
   padding: 15px 0; }
 
 .fotorama__dot {
-  transition-property: border-color;
+  transition-property: border-color, background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
   border-radius: 50%;

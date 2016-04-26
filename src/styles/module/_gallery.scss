@@ -213,7 +213,7 @@ $gallery-dots-frame-height: 30px !default;
 
 // Dots
 .fotorama__dot {
-    @include transition(border-color);
+    @include transition(border-color, background-color);
     border-radius: 50%;
     background-color: $gallery-dots-color;
     width: $gallery-dots-size;
