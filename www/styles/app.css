@@ -4152,6 +4152,9 @@ blockquote {
 .b-btn_bg_white {
   background-color: #fefefd; }
 
+.b-btn_width_146 {
+  width: 146px; }
+
 input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"], textarea {
   transition-property: border-color;
   transition-duration: 0.3s;
@@ -5158,6 +5161,10 @@ select {
     display: block;
     clear: both; }
 
+@media only screen and (max-width: 640px) {
+  .b-callback__col:first-child {
+    margin-bottom: 24px; } }
+
 @media only screen and (min-width: 641px) {
   .b-callback__col {
     width: 50%;
@@ -5276,25 +5283,29 @@ select {
   .b-booking-form_theme_popup .b-booking-form__col {
     margin-bottom: 24px;
     width: 200px; }
-    .b-booking-form_theme_popup .b-booking-form__col:nth-child(3) {
+    @media only screen and (max-width: 640px) {
+      .b-booking-form_theme_popup .b-booking-form__col {
+        margin-right: auto;
+        margin-left: auto; } }
+    .b-booking-form_theme_popup .b-booking-form__col:nth-last-child(2) {
       margin-bottom: 36px; }
   .b-booking-form_theme_popup .b-booking-form__btn {
     width: 200px;
     background-color: #005870; }
   .b-booking-form_theme_popup .selectric-wrapper {
     width: 200px; }
-  .b-booking-form_theme_popup .b-booking-form__inp {
-    background-color: #fefefd;
-    color: #bca064;
-    border-color: #bca064; }
-    .b-booking-form_theme_popup .b-booking-form__inp::-webkit-input-placeholder {
-      color: #bca064; }
-    .b-booking-form_theme_popup .b-booking-form__inp::-moz-placeholder {
-      color: #bca064; }
-    .b-booking-form_theme_popup .b-booking-form__inp:-ms-input-placeholder {
-      color: #bca064; }
-    .b-booking-form_theme_popup .b-booking-form__inp::placeholder {
-      color: #bca064; }
+  .b-booking-form_theme_popup input[type='text'], .b-booking-form_theme_popup input[type="password"], .b-booking-form_theme_popup input[type="tel"], .b-booking-form_theme_popup input[type="email"], .b-booking-form_theme_popup input[type="search"], .b-booking-form_theme_popup input[type="date"], .b-booking-form_theme_popup input[type="url"] {
+    background-color: #e8e8e6;
+    border-color: #e8e8e6;
+    color: #333333; }
+    .b-booking-form_theme_popup input[type='text']::-webkit-input-placeholder, .b-booking-form_theme_popup input[type="password"]::-webkit-input-placeholder, .b-booking-form_theme_popup input[type="tel"]::-webkit-input-placeholder, .b-booking-form_theme_popup input[type="email"]::-webkit-input-placeholder, .b-booking-form_theme_popup input[type="search"]::-webkit-input-placeholder, .b-booking-form_theme_popup input[type="date"]::-webkit-input-placeholder, .b-booking-form_theme_popup input[type="url"]::-webkit-input-placeholder {
+      color: #333333; }
+    .b-booking-form_theme_popup input[type='text']::-moz-placeholder, .b-booking-form_theme_popup input[type="password"]::-moz-placeholder, .b-booking-form_theme_popup input[type="tel"]::-moz-placeholder, .b-booking-form_theme_popup input[type="email"]::-moz-placeholder, .b-booking-form_theme_popup input[type="search"]::-moz-placeholder, .b-booking-form_theme_popup input[type="date"]::-moz-placeholder, .b-booking-form_theme_popup input[type="url"]::-moz-placeholder {
+      color: #333333; }
+    .b-booking-form_theme_popup input[type='text']:-ms-input-placeholder, .b-booking-form_theme_popup input[type="password"]:-ms-input-placeholder, .b-booking-form_theme_popup input[type="tel"]:-ms-input-placeholder, .b-booking-form_theme_popup input[type="email"]:-ms-input-placeholder, .b-booking-form_theme_popup input[type="search"]:-ms-input-placeholder, .b-booking-form_theme_popup input[type="date"]:-ms-input-placeholder, .b-booking-form_theme_popup input[type="url"]:-ms-input-placeholder {
+      color: #333333; }
+    .b-booking-form_theme_popup input[type='text']::placeholder, .b-booking-form_theme_popup input[type="password"]::placeholder, .b-booking-form_theme_popup input[type="tel"]::placeholder, .b-booking-form_theme_popup input[type="email"]::placeholder, .b-booking-form_theme_popup input[type="search"]::placeholder, .b-booking-form_theme_popup input[type="date"]::placeholder, .b-booking-form_theme_popup input[type="url"]::placeholder {
+      color: #333333; }
 
 .ui-datepicker {
   height: 260px;

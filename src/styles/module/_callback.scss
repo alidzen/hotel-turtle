@@ -50,6 +50,11 @@
 }
 
 .b-callback__col {
+    @media #{$small-only} {
+        &:first-child {
+            @include margin-trailer(1);
+        }
+    }
 
     @media #{$medium-up} {
         @include span(6, true);

@@ -35,7 +35,7 @@ html(lang='ru')
                 .l-header__menu
                     include blocks/_menu
                 .l-header__booking-info
-                    .l-header__logo
+                    div(class=(activePage == 'home' ? 'l-header__logo' : 'l-header__logo hide'))
                         .b-menu-logo
                             include blocks/_logo
                             .b-menu-logo__txt boutique hotel

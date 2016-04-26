@@ -80,7 +80,14 @@
         @include margin-trailer(1);
         width: $btn-size;
 
-        &:nth-child(3) {
+        @media #{$small-only} {
+            margin: {
+                right: auto;
+                left: auto;
+            };
+        }
+
+        &:nth-last-child(2) {
             @include margin-trailer(1.5);
         }
     }
@@ -94,13 +101,21 @@
         width: $btn-size;
     }
 
-    .b-booking-form__inp {
-        background-color: $white;
-        color: $gold-2;
-        border-color: $gold-2;
+    input {
+        &[type='text'],
+        &[type="password"],
+        &[type="tel"],
+        &[type="email"],
+        &[type="search"],
+        &[type="date"],
+        &[type="url"] {
+            background-color: $gray-3;
+            border-color: $gray-3;
+            color: $black;
 
-        &::placeholder {
-            color: $gold-2;
+            &::placeholder {
+                color: $black;
+            }
         }
     }
 }

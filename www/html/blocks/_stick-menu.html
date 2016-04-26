@@ -11,7 +11,7 @@
                 </div>
                 <div class="l-stick-menu__form show-on-desktop">
                     <div class="b-booking-form">
-                        <form action="/test/ajax/request.php" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form j-date-booking">
+                        <form action="" data-noinit="data-noinit" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form j-date-booking">
                             <div class="b-booking-form__btn"> <button type="submit" value="Номер" class="b-btn b-btn_width_auto">Выбрать номер</button> </div>
                             <div class="b-booking-form__col"> <select>
                   <option value="empty">Кол-во гостей</option>
@@ -61,7 +61,7 @@
             </g>
           </svg> </div>
                 <!-- show booking popup on click-->
-                <div class="l-stick-menu__btn show-on-touch"><a href="javascript:;" class="b-btn b-btn_width_auto j-booking-btn">Выбрать номер</a></div>
+                <div class="l-stick-menu__btn show-on-touch"><a href="javascript:;" class="b-btn b-btn_width_146 j-booking-btn">Выбрать номер</a></div>
             </div>
         </div>
     </div>
@@ -130,10 +130,12 @@
         <div class="l-stick-menu__popup-cnt-wrap j-booking-popup__cnt">
             <div class="l-stick-menu__popup-cnt">
                 <div style="background-image: url('/img/booking-popup-bg.png');" class="b-booking-form b-booking-form_theme_popup">
-                    <form action="/test/ajax/request.php" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form">
+                    <form action="" data-noinit="data-noinit" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form">
                         <div class="b-booking-form__col"> <input type="text" placeholder="Дата заезда" class="b-booking-form__inp" /> </div>
                         <div class="b-booking-form__col"> <input type="text" placeholder="Дата отъезда" class="b-booking-form__inp" /> </div>
-                        <div class="b-booking-form__col"> <input type="text" placeholder="Кол-во гостей" class="b-booking-form__inp" /> </div> <button type="submit" value="Номер" class="b-btn b-btn_width_auto b-booking-form__btn">Продолжить</button> </form>
+                        <div class="b-booking-form__col"> <input type="text" placeholder="Количество гостей" class="b-booking-form__inp" /> </div>
+                        <div class="b-booking-form__col"> <button type="submit" value="Номер" class="b-btn b-btn_bg_white">Продолжить</button> </div>
+                    </form>
                 </div>
             </div>
         </div>
