@@ -3350,6 +3350,9 @@ blockquote {
   left: 0;
   background-color: #fefefd;
   z-index: 9999; }
+  @media only screen and (max-width: 640px) {
+    .l-preloader {
+      display: none; } }
   .l-preloader.is-hide {
     opacity: 0; }
 

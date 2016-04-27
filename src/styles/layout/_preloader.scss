@@ -12,6 +12,10 @@ $line-margin: 2px;
     background-color: $white;
     z-index: z('preloader');
 
+    @media #{$small-only} {
+        display: none;
+    }
+
     &.is-hide {
         opacity: 0;
     }

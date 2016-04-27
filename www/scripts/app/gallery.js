@@ -25,7 +25,6 @@ define('app/gallery', [
         this.eventShow();
         this.eventReady();
         this.initGallery();
-        //this.resize();
     };
 
     /**
@@ -129,12 +128,6 @@ define('app/gallery', [
             $container.append(tplLabels(data));
         }
     };
-
-    //Gallery.prototype.resize = function() {
-    //    this.$gallery.resize({
-    //        heigh: '450'
-    //    });
-    //}
 
     return Gallery;
 });

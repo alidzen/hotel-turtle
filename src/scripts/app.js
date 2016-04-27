@@ -34,6 +34,8 @@ define('app', [
     var $selectHeader = $header.find('select');
 
     var pos;
+    // animated link after loading
+    var $activeLink = $header.find('.b-nav__link.is-active');
 
     $burgerBtn.click(function() {
         var $self = $(this);
@@ -134,6 +136,20 @@ define('app', [
         }
     });
 
+    // smooth hide preloader, show link
+    var hidePreloader = function() {
+        // hide loader
+        setTimeout(function() {
+            $loader.addClass('is-hide');
+        }, 300);
+        setTimeout(function() {
+            $loader.hide();
+        }, 600);
+        setTimeout(function() {
+            $activeLink.addClass('is-animated');
+        }, 600);
+    };
+
     //Sticky nav
     var $cntHeight = $(window).height(); // высота блока
     // меняется в зависимотси от высоты экрана
@@ -162,54 +178,6 @@ define('app', [
             }
         }
     });
-
-    // doc: https://github.com/alvarotrigo/pagePiling.js
-    // example: http://www.onextrapixel.com/2015/04/09/how-to-create-a-
-    // beautiful-fullscreen-single-scrolling-page-like-huge-inc/
-    //(function($fullPage) {
-    //    if (!$fullPage.length) {
-    //        return;
-    //    }
-    //
-    //    require(['pagePiling'], function() {
-    //        var $activeLink = $header.find('.b-nav__link.is-active');
-    //
-    //        $fullPage.pagepiling({
-    //            navigation: false,
-    //            verticalCentered: false,
-    //            css3: false,
-    //            onLeave: function (index, nextIndex) {
-    //                //reaching our last section? The one with our normal site?
-    //                if (nextIndex === 2) {
-    //                    $datepickerHeader.datepicker('hide');
-    //                    $selectHeader.selectric('close');
-    //                    setTimeout(function() {
-    //                        $navMenu.addClass(ACTIVE);
-    //                    }, 900);
-    //                }
-    //
-    //                //leaving our last section? The one with our normal site?
-    //                if (index === 2) {
-    //                    $navMenu.removeClass(ACTIVE);
-    //                    $datepickerMenu.datepicker('hide');
-    //                    $selectMenu.selectric('close');
-    //                }
-    //            },
-    //            afterRender: function() {
-    //                setTimeout(function() {
-    //                    $loader.addClass('is-hide');
-    //                }, 300);
-    //                setTimeout(function() {
-    //                    $loader.hide();
-    //                }, 600);
-    //                setTimeout(function() {
-    //                    $activeLink.addClass('is-animated');
-    //                }, 600);
-    //
-    //            }
-    //        });
-    //    });
-    //})($('.j-full-page'));
 
     (function($forms) {
         if (!$forms.length) {
@@ -353,9 +321,6 @@ define('app', [
             return;
         }
 
-        // animated link after loading
-        var $activeLink = $header.find('.b-nav__link.is-active');
-
         var transformMenu = function() {
             var cntHeight = $headerMenu.outerHeight(true);
             var screenHeight = $(window).height();
@@ -383,17 +348,7 @@ define('app', [
         };
 
         transformMenu();
-
-        // hide loader
-        setTimeout(function() {
-            $loader.addClass('is-hide');
-        }, 300);
-        setTimeout(function() {
-            $loader.hide();
-        }, 600);
-        setTimeout(function() {
-            $activeLink.addClass('is-animated');
-        }, 600);
+        hidePreloader();
 
         $(window).on('resize', function() {
             transformMenu();
