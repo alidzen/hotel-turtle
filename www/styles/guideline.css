@@ -5480,18 +5480,19 @@ select {
       transition-duration: .45s;
       width: 0;
       left: 0; }
-  .b-nav__link.is-animated:after {
-    left: 50%;
-    width: 17vw; }
-  @media only screen and (min-width: 1441px) {
-    .b-nav__link.is-animated:after {
-      width: 15vw; } }
-  @media only screen and (min-width: 1921px) {
-    .b-nav__link.is-animated:after {
-      width: 14vw; } }
-  @media only screen and (min-width: 2560px) {
-    .b-nav__link.is-animated:after {
-      width: 350px; } }
+
+.b-nav__link-line {
+  transition-property: width, left;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  left: 0;
+  height: 2px;
+  background-color: #bca064;
+  margin-left: 0; }
 
 .b-nav_theme_popup .b-nav__item {
   padding-top: 5px;

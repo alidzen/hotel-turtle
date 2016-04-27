@@ -63,31 +63,18 @@ $item-height-popup: 56px;
             left: 0;
         }
     }
+}
 
-    &.is-animated {
-        &:after {
-            left: 50%;
-            width: 17vw;
-        }
-
-        @media #{$large-up} {
-            &:after {
-                width: 15vw;
-            }
-        }
-
-        @media #{$xlarge-up} {
-            &:after {
-                width: 14vw;
-            }
-        }
-
-        @media #{$custom-2560-up} {
-            &:after {
-                width: 350px;
-            }
-        }
-    }
+.b-nav__link-line {
+    @include transition(width, left);
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    left: 0;
+    height: 2px;
+    background-color: $gold-2;
+    margin-left: 0;
 }
 
 // STATE
