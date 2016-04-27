@@ -20,7 +20,6 @@ html(lang='ru')
         link(rel='stylesheet' href="../scripts/lib/magnific-popup/dist/magnific-popup.css")
         link(rel='stylesheet' href="../scripts/lib/fotorama/fotorama.css")
         link(rel='stylesheet' href="../scripts/lib/jquery.ui/themes/base/datepicker.css")
-        link(rel='stylesheet' href="../scripts/lib/pagePiling.js/jquery.pagepiling.css")
         link(rel='stylesheet' href="/styles/app.css")
 
         block title
@@ -30,8 +29,8 @@ html(lang='ru')
         <![endif]-->
     body
         include blocks/_stick-menu
-        .l-wrap.l-limit-wrap-full.j-full-page
-            section.l-header.section.l-limit-wrap-full.j-header
+        .l-wrap.l-limit-wrap-full
+            section.l-header.j-header
                 .l-header__menu
                     include blocks/_menu
                 .l-header__booking-info
@@ -43,7 +42,7 @@ html(lang='ru')
                         block gallery
                     .l-header__booking
                         include blocks/_header-booking
-            section.section.pp-scrollable.l-limit-wrap-full.l-content
+            section.l-content
                 main.l-main
                     block content
 

@@ -45,6 +45,11 @@ define('app', [
                 $self.removeClass(ACTIVE);
                 $menu.removeClass(ACTIVE);
                 $container.removeClass(ACTIVE);
+                $navMenu.removeClass('add-padding');
+                $('body').removeClass('add-padding')
+                    .css({
+                        top : ''
+                    });
                 $(window).scrollTop(pos);
             }, 300);
         } else {
@@ -69,6 +74,11 @@ define('app', [
                 $menu.addClass(ACTIVE);
                 $container.addClass(ACTIVE);
                 $menuCnt.fadeIn();
+                $navMenu.addClass('add-padding');
+                $('body').addClass('add-padding')
+                    .css({
+                        top : -pos
+                    });
             }
         }
     });
@@ -85,6 +95,11 @@ define('app', [
                 $self.text(text);
                 $bookingPopup.removeClass(ACTIVE);
                 $container.removeClass(ACTIVE);
+                $navMenu.removeClass('add-padding');
+                $('body').removeClass('add-padding')
+                    .css({
+                        top : ''
+                    });
                 $(window).scrollTop(pos);
             }, 300);
         } else {
@@ -110,6 +125,40 @@ define('app', [
                 $bookingPopup.addClass(ACTIVE);
                 $container.addClass(ACTIVE);
                 $bookingPopupCnt.fadeIn();
+                $navMenu.addClass('add-padding');
+                $('body').addClass('add-padding')
+                    .css({
+                        top : -pos
+                    });
+            }
+        }
+    });
+
+    //Sticky nav
+    var $cntHeight = $(window).height(); // высота блока
+    // меняется в зависимотси от высоты экрана
+
+    $(window).resize(function() {
+        $cntHeight = $(window).height();
+    });
+
+    // show/hide sticky nav
+    $(window).scroll(function() {
+        var scrollPosition = $(window).scrollTop();
+
+        if (scrollPosition >= $cntHeight) {
+            if ($navMenu.hasClass(ACTIVE) === false) {
+                $navMenu.addClass(ACTIVE);
+                $datepickerHeader.datepicker('hide');
+                $selectHeader.selectric('close');
+            }
+        } else {
+            if ($burgerBtn.hasClass(ACTIVE)) {
+                return;
+            } else {
+                $navMenu.removeClass(ACTIVE);
+                $datepickerMenu.datepicker('hide');
+                $selectMenu.selectric('close');
             }
         }
     });
@@ -117,50 +166,50 @@ define('app', [
     // doc: https://github.com/alvarotrigo/pagePiling.js
     // example: http://www.onextrapixel.com/2015/04/09/how-to-create-a-
     // beautiful-fullscreen-single-scrolling-page-like-huge-inc/
-    (function($fullPage) {
-        if (!$fullPage.length) {
-            return;
-        }
-
-        require(['pagePiling'], function() {
-            var $activeLink = $header.find('.b-nav__link.is-active');
-
-            $fullPage.pagepiling({
-                navigation: false,
-                verticalCentered: false,
-                css3: false,
-                onLeave: function (index, nextIndex) {
-                    //reaching our last section? The one with our normal site?
-                    if (nextIndex === 2) {
-                        $datepickerHeader.datepicker('hide');
-                        $selectHeader.selectric('close');
-                        setTimeout(function() {
-                            $navMenu.addClass(ACTIVE);
-                        }, 900);
-                    }
-
-                    //leaving our last section? The one with our normal site?
-                    if (index === 2) {
-                        $navMenu.removeClass(ACTIVE);
-                        $datepickerMenu.datepicker('hide');
-                        $selectMenu.selectric('close');
-                    }
-                },
-                afterRender: function() {
-                    setTimeout(function() {
-                        $loader.addClass('is-hide');
-                    }, 300);
-                    setTimeout(function() {
-                        $loader.hide();
-                    }, 600);
-                    setTimeout(function() {
-                        $activeLink.addClass('is-animated');
-                    }, 600);
-
-                }
-            });
-        });
-    })($('.j-full-page'));
+    //(function($fullPage) {
+    //    if (!$fullPage.length) {
+    //        return;
+    //    }
+    //
+    //    require(['pagePiling'], function() {
+    //        var $activeLink = $header.find('.b-nav__link.is-active');
+    //
+    //        $fullPage.pagepiling({
+    //            navigation: false,
+    //            verticalCentered: false,
+    //            css3: false,
+    //            onLeave: function (index, nextIndex) {
+    //                //reaching our last section? The one with our normal site?
+    //                if (nextIndex === 2) {
+    //                    $datepickerHeader.datepicker('hide');
+    //                    $selectHeader.selectric('close');
+    //                    setTimeout(function() {
+    //                        $navMenu.addClass(ACTIVE);
+    //                    }, 900);
+    //                }
+    //
+    //                //leaving our last section? The one with our normal site?
+    //                if (index === 2) {
+    //                    $navMenu.removeClass(ACTIVE);
+    //                    $datepickerMenu.datepicker('hide');
+    //                    $selectMenu.selectric('close');
+    //                }
+    //            },
+    //            afterRender: function() {
+    //                setTimeout(function() {
+    //                    $loader.addClass('is-hide');
+    //                }, 300);
+    //                setTimeout(function() {
+    //                    $loader.hide();
+    //                }, 600);
+    //                setTimeout(function() {
+    //                    $activeLink.addClass('is-animated');
+    //                }, 600);
+    //
+    //            }
+    //        });
+    //    });
+    //})($('.j-full-page'));
 
     (function($forms) {
         if (!$forms.length) {
@@ -304,6 +353,9 @@ define('app', [
             return;
         }
 
+        // animated link after loading
+        var $activeLink = $header.find('.b-nav__link.is-active');
+
         var transformMenu = function() {
             var cntHeight = $headerMenu.outerHeight(true);
             var screenHeight = $(window).height();
@@ -331,6 +383,17 @@ define('app', [
         };
 
         transformMenu();
+
+        // hide loader
+        setTimeout(function() {
+            $loader.addClass('is-hide');
+        }, 300);
+        setTimeout(function() {
+            $loader.hide();
+        }, 600);
+        setTimeout(function() {
+            $activeLink.addClass('is-animated');
+        }, 600);
 
         $(window).on('resize', function() {
             transformMenu();

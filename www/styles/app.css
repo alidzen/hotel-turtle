@@ -95,11 +95,13 @@ textarea {
   padding-left: 5px;
   padding-right: 5px; }
 
-html.is-active {
-  overflow: auto;
+html {
   -webkit-overflow-scrolling: touch; }
+  html.is-active {
+    overflow: auto; }
 
 body {
+  -webkit-overflow-scrolling: touch;
   color: #333333;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -121,7 +123,7 @@ body {
 
 @media only screen and (min-width: 1025px) {
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
     height: 10px; }
   ::-webkit-scrollbar-thumb {
     background: #005870; }
@@ -3089,15 +3091,6 @@ blockquote {
     content: '';
     display: block;
     clear: both; }
-
-.l-wrap {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  min-height: 100vh; }
 
 .l-content {
   display: -webkit-flex;

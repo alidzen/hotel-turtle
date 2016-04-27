@@ -26,8 +26,7 @@ require.config({
         sammy                   : 'sammy/lib/min/sammy-latest.min',
         scaleraphael            : 'scaleraphael/scaleraphael',
         eve                     : 'eve-adobe/eve.min',
-        raphael                 : 'raphael/raphael-min',
-        pagePiling                 : 'pagePiling.js/jquery.pagepiling.min'
+        raphael                 : 'raphael/raphael-min'
     },
     shim : {
         'jquery.cookie' : {
@@ -53,9 +52,6 @@ require.config({
         select: {
             exports: 'selectric',
             deps: ['jquery']
-        },
-        pagePiling : {
-            deps   : ['jquery']
         }
     },
     /* Launch app.js after config */

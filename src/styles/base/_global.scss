@@ -1,15 +1,16 @@
 html {
      @extend %f-base;
+    -webkit-overflow-scrolling: touch;
 
     // Убираем скроллинг при открытом мобильном меню. Для ios.
     &.is-active {
         overflow: auto;
-        -webkit-overflow-scrolling: touch;
     }
 }
 
 body {
     @extend %f-base;
+    -webkit-overflow-scrolling: touch;
     color: $base-font-color;
     text-size-adjust: 100%;
     width: 100%;
@@ -40,7 +41,7 @@ body {
 // Custom scroll webkit
 @media #{$big-up} {
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 15px;
         height: 10px;
     }
 
