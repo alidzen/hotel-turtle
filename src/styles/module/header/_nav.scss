@@ -42,7 +42,6 @@ $item-height-popup: 56px;
 
     &:after {
         @include transition(width, left);
-        transition-property: all;
         content: '';
         position: absolute;
         top: 100%;
