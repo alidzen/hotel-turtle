@@ -31,9 +31,9 @@ body {
 
     // Custom scroll ie11
     @media #{$big-up} {
-        scrollbar-base-color: $green-3;
+        scrollbar-base-color: $green;
         scrollbar-highlight-color: $gray;
-        scrollbar-arrow-color: $green-3;
+        scrollbar-arrow-color: $green;
     }
 }
 
@@ -45,7 +45,7 @@ body {
     }
 
     ::-webkit-scrollbar-thumb {
-        background: $green-3;
+        background: $green;
     }
 
     ::-webkit-scrollbar-track {
@@ -112,7 +112,7 @@ img {
 %b-bottom-dash-100 {
     $dash-size: 100px;
     position: relative;
-    padding-bottom: rhythm(1);
+    padding-bottom: rhythm(.5);
 
     &:after {
         content: '';
@@ -129,7 +129,7 @@ img {
 
 %b-bottom-dash-pos-left,
 .b-bottom-dash-pos-left {
-    @include padding-trailer(1.5);
+    @include padding-trailer(.5);
     @include margin-trailer(1.5);
     position: relative;
 

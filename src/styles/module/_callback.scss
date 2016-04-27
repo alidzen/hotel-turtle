@@ -37,11 +37,11 @@
 }
 
 .b-callback__ttl {
-    @extend %f-ttl;
+    @extend %f-callback-ttl;
 }
 
 .b-callback__caption {
-    @extend %f-ttl-note;
+    @extend %f-callback-note;
 }
 
 .b-callback__row {

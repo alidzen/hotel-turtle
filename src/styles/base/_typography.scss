@@ -356,6 +356,30 @@ h2 {
     }
 }
 
+%f-callback-ttl,
+.f-callback-ttl {
+    font-size: 36px;
+    line-height: 45px;
+    font-family: $font-roman-bold;
+
+    @media #{$medium-up} {
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+
+%f-callback-note,
+.f-callback-note {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $font-bold-italic;
+
+    @media #{$medium-up} {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
 
 // SMALL
 $small-font-size: $base-font-size - 2 !default;
@@ -493,7 +517,7 @@ strong {
     @extend %f-headlines-text;
     @include padding-leader(1.5);
     @include padding-trailer(1);
-    background-color: $gold;
+    background-color: $gold-2;
     color: $white;
     padding: {
         right: gutter(2);

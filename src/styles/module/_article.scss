@@ -1,5 +1,7 @@
 .b-article {
-    @include rhythm-padding(2);
+    @media #{$custom-1024-up} {
+        @include rhythm-padding(2);
+    }
 }
 
 .b-article__border {

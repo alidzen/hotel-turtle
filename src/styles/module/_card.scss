@@ -105,7 +105,7 @@
 }
 
 .b-card__header {
-    @include padding-trailer(.5);
+    @include padding-trailer(1);
     @include margin-trailer(1);
     color: $gold-2;
     position: relative;

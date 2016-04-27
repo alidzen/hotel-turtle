@@ -39,12 +39,10 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
 
 // Close button mobile
 .b-popup__close {
+    @extend %f-btn;
     @include btn-vertical-paddings($popop-btn-mobile-height);
-    font-family: $popup-btn-mobile-font-family;
     color: $popup-btn-mobile-color;
     background-color: $popup-btn-mobile-bg-color;
-    font-size: $popup-btn-mobile-font-size;
-    line-height: $popup-btn-mobile-line-height;
     text-decoration: none;
     display: block;
     text-align: center;

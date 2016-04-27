@@ -22,15 +22,17 @@
 
 .l-cafe-feature__img-wrap {
     position: absolute;
-    bottom: -40px;
     z-index: z('zero');
     opacity: .2;
+    width: 100%;
 
     @media #{$medium-up} {
+        left: 0;
+        bottom: 0;
     }
 
-    @media #{$big-up} {
-        left: -4%;
+    @media #{$custom-1024-up} {
+        width: 35vw;
         opacity: 1;
     }
 }
@@ -38,7 +40,6 @@
 .l-cafe-feature__border {
     @include grid-clearfix();
     @include rhythm-padding(2);
-    border: 2px solid $gold-2;
 
     @media #{$small-only} {
         padding: {
@@ -48,7 +49,8 @@
     }
 
     @media #{$medium-up} {
-        @include rhythm-padding(3);
+        @include padding-leader(3);
+        @include padding-trailer(5);
     }
 
     @media #{$big-up} {

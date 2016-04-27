@@ -88,6 +88,15 @@ $spectile-height-small: 350px;
         padding-bottom: $tile-height-small;
     }
 
+    .b-service__border {
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
+    }
+
     .b-service__img-wrap {
         height: $tile-height-small;
         left: 0;
@@ -184,6 +193,15 @@ $spectile-height-small: 350px;
         padding-top: $tile-height-small + rhythm(.5);
     }
 
+    .b-service__border {
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
+    }
+
     .b-service__img-wrap {
         top: 0;
         left: 0;
@@ -217,6 +235,15 @@ $spectile-height-small: 350px;
 
     .b-service {
         padding-bottom: $tile-height-small;
+    }
+
+    .b-service__border {
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
     }
 
     .b-service__img-wrap {
@@ -273,6 +300,15 @@ $spectile-height-small: 350px;
         padding-bottom: $tile-height-small;
     }
 
+    .b-service__border {
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
+    }
+
     .b-service__img-wrap {
         height: $tile-height-small;
         bottom: 0;
@@ -319,6 +355,17 @@ $spectile-height-small: 350px;
         top: 10%;
         height: 100%;
         opacity: .2;
+
+        @media #{$medium-up} {
+            right: 0;
+            top: 30%;
+            opacity: 1;
+        }
+
+        @media #{$custom-1024-up} {
+            right: -20%;
+            opacity: .2;
+        }
     }
 
     @media #{$medium-up} {
@@ -327,11 +374,6 @@ $spectile-height-small: 350px;
 
         .b-service {
             height: $tile-height-big;
-        }
-
-        .b-service__img {
-            right: 0;
-            top: 30%;
         }
     }
 
@@ -343,10 +385,6 @@ $spectile-height-small: 350px;
             height: $tile-height-small;
             padding-left: gutter(2);
         }
-
-        .b-service__img {
-            right: -20%;
-        }
     }
 }
 
@@ -356,6 +394,16 @@ $spectile-height-small: 350px;
     .b-service {
         padding-bottom: $tile-height-small;
     }
+
+    .b-service__border {
+        @media #{$small-only} {
+            padding: {
+                right: gutter(1);
+                left: gutter(1);
+            };
+        }
+    }
+
 
     .b-service__img-wrap {
         bottom: 0;

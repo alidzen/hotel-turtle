@@ -44,7 +44,7 @@
         @extend %f-ttl-note;
         @extend %b-bottom-dash-100;
         @include padding-trailer(1.5);
-        @include margin-trailer(1.5);
+        @include margin-trailer(2);
 
         @media #{$medium-up} {
             width: 80%;
