@@ -159,18 +159,18 @@ define('app', [
     };
 
     //Sticky nav
-    var $cntHeight = $(window).height(); // высота блока
+    var cntHeight = $(window).height(); // высота блока
     // меняется в зависимотси от высоты экрана
 
     $(window).resize(function() {
-        $cntHeight = $(window).height();
+        cntHeight = $(window).height();
     });
 
     // show/hide sticky nav
     $(window).scroll(function() {
         var scrollPosition = $(window).scrollTop();
 
-        if (scrollPosition >= $cntHeight) {
+        if (scrollPosition >= cntHeight) {
             if ($navMenu.hasClass(ACTIVE) === false) {
                 $navMenu.addClass(ACTIVE);
                 $datepickerHeader.datepicker('hide');
@@ -378,6 +378,17 @@ define('app', [
             $param.data('height', 400);
         }
     })($('.j-gallery_theme_mobile'));
+
+    // Плавный скроллинг
+    (function($slowScroll) {
+        if (!$slowScroll.length) {
+            return;
+        }
+
+        $slowScroll.click(function() {
+            $('body, html').animate({scrollTop: cntHeight}, 'slow');
+        });
+    })($('.j-scroll-down'));
 
     return {};
 });

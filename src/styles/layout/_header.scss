@@ -96,3 +96,10 @@
         display: none;
     }
 }
+
+.l-header__arrow-down {
+    position: absolute;
+    bottom: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+}

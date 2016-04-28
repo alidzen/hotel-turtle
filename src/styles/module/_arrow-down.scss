@@ -1,0 +1,64 @@
+$animation-speed: 1.5s;
+$animation-delay: .45s;
+$arrow-down-width: 20px;
+
+.b-arrow-down {
+    display: block;
+    width: $arrow-down-width * 3;
+    height: $arrow-down-width * 3;
+}
+
+.b-arrow-down__arrow {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: - $arrow-down-width / 2;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    &:before,
+    &:after {
+        @include transition(opacity);
+        background: $white;
+        content: '';
+        display: block;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $arrow-down-width;
+    }
+
+    &:before {
+        transform: rotate(45deg) translateX(-19%);
+        transform-origin: top left;
+    }
+
+    &:after {
+        transform: rotate(-45deg) translateX(19%);
+        transform-origin: top right;
+    }
+}
+
+// STATE
+.b-arrow-down__arrow_numb_1 {
+    animation: arrow-movement $animation-speed ease-in-out infinite;
+}
+.b-arrow-down__arrow_numb_2 {
+    animation: arrow-movement $animation-speed $animation-delay ease-in-out infinite;
+}
+
+// Animation
+@keyframes arrow-movement {
+    0%   {
+        opacity: 0;
+        top: - $arrow-down-width / 4;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
