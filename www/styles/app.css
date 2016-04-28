@@ -4681,26 +4681,60 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   padding-bottom: 0;
   padding-left: 15px; }
   input[type='text']::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
     color: #fefefd;
     font-style: normal;
     opacity: 1; }
   input[type='text']::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="url"]::-moz-placeholder, textarea::-moz-placeholder {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
     color: #fefefd;
     font-style: normal;
     opacity: 1; }
   input[type='text']:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
     color: #fefefd;
     font-style: normal;
     opacity: 1; }
   input[type='text']::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder, input[type="date"]::placeholder, input[type="url"]::placeholder, textarea::placeholder {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
     color: #fefefd;
     font-style: normal;
     opacity: 1; }
   input[type='text']:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="date"]:focus, input[type="url"]:focus, textarea:focus {
     border-color: #004356; }
+    input[type='text']:focus::-webkit-input-placeholder, input[type="password"]:focus::-webkit-input-placeholder, input[type="tel"]:focus::-webkit-input-placeholder, input[type="email"]:focus::-webkit-input-placeholder, input[type="search"]:focus::-webkit-input-placeholder, input[type="date"]:focus::-webkit-input-placeholder, input[type="url"]:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+      color: transparent; }
+    input[type='text']:focus::-moz-placeholder, input[type="password"]:focus::-moz-placeholder, input[type="tel"]:focus::-moz-placeholder, input[type="email"]:focus::-moz-placeholder, input[type="search"]:focus::-moz-placeholder, input[type="date"]:focus::-moz-placeholder, input[type="url"]:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+      color: transparent; }
+    input[type='text']:focus:-ms-input-placeholder, input[type="password"]:focus:-ms-input-placeholder, input[type="tel"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-input-placeholder, input[type="search"]:focus:-ms-input-placeholder, input[type="date"]:focus:-ms-input-placeholder, input[type="url"]:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+      color: transparent; }
+    input[type='text']:focus::placeholder, input[type="password"]:focus::placeholder, input[type="tel"]:focus::placeholder, input[type="email"]:focus::placeholder, input[type="search"]:focus::placeholder, input[type="date"]:focus::placeholder, input[type="url"]:focus::placeholder, textarea:focus::placeholder {
+      color: transparent; }
 
 input[type='text'], input[type="password"], input[type="tel"], input[type="email"], input[type="search"], input[type="date"], input[type="url"] {
   line-height: 28px; }
+
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus:-moz-placeholder {
+  color: transparent; }
+
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+/* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent; }
 
 textarea {
   line-height: 24px;
@@ -5698,25 +5732,65 @@ select {
     background-color: #e8e8e6;
     border-color: #e8e8e6;
     color: #333333; }
+    .b-callback__form input[type='text']:focus::-webkit-input-placeholder, .b-callback__form input[type="password"]:focus::-webkit-input-placeholder, .b-callback__form input[type="tel"]:focus::-webkit-input-placeholder, .b-callback__form input[type="email"]:focus::-webkit-input-placeholder, .b-callback__form input[type="search"]:focus::-webkit-input-placeholder, .b-callback__form input[type="date"]:focus::-webkit-input-placeholder, .b-callback__form input[type="url"]:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-callback__form input[type='text']:focus::-moz-placeholder, .b-callback__form input[type="password"]:focus::-moz-placeholder, .b-callback__form input[type="tel"]:focus::-moz-placeholder, .b-callback__form input[type="email"]:focus::-moz-placeholder, .b-callback__form input[type="search"]:focus::-moz-placeholder, .b-callback__form input[type="date"]:focus::-moz-placeholder, .b-callback__form input[type="url"]:focus::-moz-placeholder {
+      color: transparent; }
+    .b-callback__form input[type='text']:focus:-ms-input-placeholder, .b-callback__form input[type="password"]:focus:-ms-input-placeholder, .b-callback__form input[type="tel"]:focus:-ms-input-placeholder, .b-callback__form input[type="email"]:focus:-ms-input-placeholder, .b-callback__form input[type="search"]:focus:-ms-input-placeholder, .b-callback__form input[type="date"]:focus:-ms-input-placeholder, .b-callback__form input[type="url"]:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-callback__form input[type='text']:focus::placeholder, .b-callback__form input[type="password"]:focus::placeholder, .b-callback__form input[type="tel"]:focus::placeholder, .b-callback__form input[type="email"]:focus::placeholder, .b-callback__form input[type="search"]:focus::placeholder, .b-callback__form input[type="date"]:focus::placeholder, .b-callback__form input[type="url"]:focus::placeholder {
+      color: transparent; }
     .b-callback__form input[type='text']::-webkit-input-placeholder, .b-callback__form input[type="password"]::-webkit-input-placeholder, .b-callback__form input[type="tel"]::-webkit-input-placeholder, .b-callback__form input[type="email"]::-webkit-input-placeholder, .b-callback__form input[type="search"]::-webkit-input-placeholder, .b-callback__form input[type="date"]::-webkit-input-placeholder, .b-callback__form input[type="url"]::-webkit-input-placeholder {
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
       color: #333333; }
     .b-callback__form input[type='text']::-moz-placeholder, .b-callback__form input[type="password"]::-moz-placeholder, .b-callback__form input[type="tel"]::-moz-placeholder, .b-callback__form input[type="email"]::-moz-placeholder, .b-callback__form input[type="search"]::-moz-placeholder, .b-callback__form input[type="date"]::-moz-placeholder, .b-callback__form input[type="url"]::-moz-placeholder {
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
       color: #333333; }
     .b-callback__form input[type='text']:-ms-input-placeholder, .b-callback__form input[type="password"]:-ms-input-placeholder, .b-callback__form input[type="tel"]:-ms-input-placeholder, .b-callback__form input[type="email"]:-ms-input-placeholder, .b-callback__form input[type="search"]:-ms-input-placeholder, .b-callback__form input[type="date"]:-ms-input-placeholder, .b-callback__form input[type="url"]:-ms-input-placeholder {
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
       color: #333333; }
     .b-callback__form input[type='text']::placeholder, .b-callback__form input[type="password"]::placeholder, .b-callback__form input[type="tel"]::placeholder, .b-callback__form input[type="email"]::placeholder, .b-callback__form input[type="search"]::placeholder, .b-callback__form input[type="date"]::placeholder, .b-callback__form input[type="url"]::placeholder {
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
       color: #333333; }
   .b-callback__form textarea {
     background-color: #e8e8e6;
     border-color: #e8e8e6;
     color: #333333; }
+    .b-callback__form textarea:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-callback__form textarea:focus::-moz-placeholder {
+      color: transparent; }
+    .b-callback__form textarea:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-callback__form textarea:focus::placeholder {
+      color: transparent; }
     .b-callback__form textarea::-webkit-input-placeholder {
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
       color: #333333; }
     .b-callback__form textarea::-moz-placeholder {
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
       color: #333333; }
     .b-callback__form textarea:-ms-input-placeholder {
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
       color: #333333; }
     .b-callback__form textarea::placeholder {
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
       color: #333333; }
 
 .b-callback__btn {
