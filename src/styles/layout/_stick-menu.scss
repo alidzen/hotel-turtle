@@ -30,7 +30,7 @@ $sticky-menu-height: 60px;
     // if page with scroll
     &.add-padding {
         @media #{$big-up} {
-            padding-right: 15px; // place for scroll
+            padding-right: 13px; // place for scroll
         }
     }
 }
