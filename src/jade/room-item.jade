@@ -1,0 +1,52 @@
+extends _layout
+block vars
+    -var activePage = 'room'
+block title
+    title Номера
+block gallery
+     .b-cafe-gallery(style="background-image: url('/img/room-bg-3.jpg');")
+         .b-cafe-gallery__border
+             .b-cafe-gallery__cnt
+                 h2.b-cafe-gallery__ttl Стандартный одноместный номер
+                 .b-cafe-gallery__txt Если вы предпочитаете наслаждаться видами Санкт-Петербурга в одиночестве – этот номер для вас. Удобная кровать с ортопедическими подушками и матрацем поможет отдохнуть после долгой дороги, а наш персонал разбудит вовремя, чтобы вы не опоздали на экскурсию.
+
+block content
+    .l-main-wrap.is-stick
+        section.l-action
+            .l-action__row
+                .l-action__border
+                    .l-action__cnt
+                        .l-action__ttl.b-bottom-dash-pos-left
+                            div.f-ttl-note Идеально для путешественника
+
+                        .l-room-item
+                            .l-room-item__param
+                                .b-room-param
+                                    .b-room-param__txt
+                                    .b-room-param__data
+                            .l-room__feature
+                                ul.b-feature__list
+                                    li.b-feature__item
+                                        .b-feature__item-img.b-feature__item-img_img_bed
+                                        .b-feature__item-txt Мансардные окна
+                                    li.b-feature__item
+                                        .b-feature__item-img.b-feature__item-img_img_window
+                                        .b-feature__item-txt Кондиционер
+                                    li.b-feature__item
+                                        .b-feature__item-img.b-feature__item-img_img_fan
+                                        .b-feature__item-txt Бесплатный Wi-Fi
+                        .l-room-item__list-row
+                            .l-room-item__list-col.b-typo-reset
+                                ul.l-room-item__list
+                                    li Мини-бар
+                                    li Тапочки,халат и полотенце
+                                    li Сейф
+                                ul.l-room-item__list
+                                    li Фен
+                                    li Телефон
+                                    li Услуга «звонок-будильник»
+
+                        .l-room-item__gallery
+                            include blocks/_gallery-room
+
+

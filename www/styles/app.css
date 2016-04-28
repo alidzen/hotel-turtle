@@ -3294,7 +3294,8 @@ blockquote {
   left: 0;
   width: 100%;
   bottom: 60px;
-  display: none; }
+  display: none;
+  background-color: #005870; }
   @media only screen and (min-width: 1024px) {
     .l-header__booking {
       bottom: 0;

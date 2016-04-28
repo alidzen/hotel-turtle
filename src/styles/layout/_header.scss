@@ -58,6 +58,7 @@
     width: 100%;
     bottom: 60px; // menu height
     display: none;
+    background-color: $green;
 
     @media #{$custom-1024-up} {
         bottom: 0;
