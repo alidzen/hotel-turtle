@@ -180,6 +180,36 @@ img {
     }
 }
 
+%stretch-black-link {
+    @include transition(color);
+    display: inline-block;
+    color: $black;
+    position: relative;
+
+    @media #{$big-up} {
+        &:hover {
+            color: $white;
+
+            &:after {
+                transform: scaleX(.3);
+                background-color: $white;
+            }
+        }
+    }
+
+    &:after {
+        @include transition(transform);
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $black;
+    }
+}
+
 .show-on-touch {
     @media #{$custom-1024-up} {
         display: none;

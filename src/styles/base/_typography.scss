@@ -380,6 +380,15 @@ h2 {
     }
 }
 
+%f-card-link,
+.f-card-link {
+    font-size: 11px;
+    line-height: 19px;
+    font-family: $font-roman-bold;
+    text-transform: uppercase;
+    letter-spacing: $gl-letter-spacing * 2;
+}
+
 
 // SMALL
 $small-font-size: $base-font-size - 2 !default;

@@ -203,7 +203,7 @@ img {
   font-family: "ruble", sans-serif;
   text-transform: lowercase; }
 
-.b-menu-reviews__link, .b-card__link, .b-actions-showcase__link {
+.b-menu-reviews__link, .b-card__link {
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -211,14 +211,14 @@ img {
   color: #005870;
   position: relative; }
   @media only screen and (min-width: 1025px) {
-    .b-menu-reviews__link:hover, .b-card__link:hover, .b-actions-showcase__link:hover {
+    .b-menu-reviews__link:hover, .b-card__link:hover {
       color: #bca064; }
-      .b-menu-reviews__link:hover:after, .b-card__link:hover:after, .b-actions-showcase__link:hover:after {
+      .b-menu-reviews__link:hover:after, .b-card__link:hover:after {
         -webkit-transform: scaleX(0.3);
         -ms-transform: scaleX(0.3);
         transform: scaleX(0.3);
         background-color: #bca064; } }
-  .b-menu-reviews__link:after, .b-card__link:after, .b-actions-showcase__link:after {
+  .b-menu-reviews__link:after, .b-card__link:after {
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform, -webkit-transform;
@@ -232,6 +232,36 @@ img {
     width: 100%;
     height: 2px;
     background-color: #005870; }
+
+.b-actions-showcase__link {
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  display: inline-block;
+  color: #333333;
+  position: relative; }
+  @media only screen and (min-width: 1025px) {
+    .b-actions-showcase__link:hover {
+      color: #fefefd; }
+      .b-actions-showcase__link:hover:after {
+        -webkit-transform: scaleX(0.3);
+        -ms-transform: scaleX(0.3);
+        transform: scaleX(0.3);
+        background-color: #fefefd; } }
+  .b-actions-showcase__link:after {
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333333; }
 
 @media only screen and (min-width: 1024px) {
   .show-on-touch {
@@ -473,7 +503,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
       font-size: 22px;
       line-height: 44px; } }
 
-.b-menu-reviews__link, .b-card__link, .b-actions-showcase__link,
+.b-menu-reviews__link, .b-card__link,
 .f-menu-reviews {
   font-size: 11px;
   line-height: 19px;
@@ -481,12 +511,12 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   text-transform: uppercase;
   letter-spacing: 0.1em; }
   @media only screen and (min-width: 1441px) {
-    .b-menu-reviews__link, .b-card__link, .b-actions-showcase__link,
+    .b-menu-reviews__link, .b-card__link,
     .f-menu-reviews {
       font-size: 14px;
       line-height: 23px; } }
   @media only screen and (min-width: 1921px) {
-    .b-menu-reviews__link, .b-card__link, .b-actions-showcase__link,
+    .b-menu-reviews__link, .b-card__link,
     .f-menu-reviews {
       font-size: 17px;
       line-height: 25px; } }
@@ -716,6 +746,14 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
     .f-callback-note {
       font-size: 35px;
       line-height: 40px; } }
+
+.b-actions-showcase__link,
+.f-card-link {
+  font-size: 11px;
+  line-height: 19px;
+  font-family: "AGOpusHR-Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
 
 small {
   font-size: 14px; }
@@ -4226,7 +4264,8 @@ blockquote {
     width: 100%; }
     @media only screen and (min-width: 641px) {
       .l-services__tile_numb_15 .b-service__img {
-        height: 341px; } }
+        height: 341px;
+        margin-left: 30px; } }
 
 .l-services__tile_numb_16 {
   background-color: #e8e8e6; }
@@ -6943,12 +6982,6 @@ select {
 .b-actions-showcase__ttl > span {
   white-space: nowrap;
   display: inline-block; }
-
-@media only screen and (min-width: 1025px) {
-  .b-actions-showcase__link:hover {
-    color: #fefefd; }
-    .b-actions-showcase__link:hover:after {
-      background-color: #fefefd; } }
 
 .l-showcase-full {
   margin-bottom: 36px;

@@ -59,16 +59,6 @@
 }
 
 .b-actions-showcase__link {
-    @extend %stretch-green-link;
-    @extend %f-menu-reviews;
-
-    @media #{$big-up} {
-        &:hover {
-            color: $white;
-
-            &:after {
-                background-color: $white;
-            }
-        }
-    }
+    @extend %stretch-black-link;
+    @extend %f-card-link;
 }
