@@ -1,0 +1,22 @@
+.b-olympia {
+    @include grid-clearfix();
+    color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.b-olympia__txt {
+    @include margin-trailer(.5);
+    font-size: 10px;
+    line-height: 12px;
+    margin-right: 5px;
+}
+
+.b-olympia__logo-wrap {
+    display: block;
+}
+
+.b-olympia__logo {
+    display: block;
+    width: 90px;
+}

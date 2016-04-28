@@ -3193,9 +3193,9 @@ blockquote {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap; }
@@ -6643,37 +6643,31 @@ select {
   background: no-repeat 50% 50%;
   background-size: cover; }
 
-.b-olimpia {
+.b-olympia {
   color: #fefefd;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end; }
-  .b-olimpia:after {
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+  .b-olympia:after {
     content: '';
     display: block;
     clear: both; }
 
-.b-olimpia__txt {
-  font-size: 12px;
+.b-olympia__txt {
+  margin-bottom: 12px;
+  font-size: 10px;
   line-height: 12px;
   margin-right: 5px; }
 
-.b-olimpia__logo {
-  font: 0/0 serif;
-  text-shadow: none;
-  color: transparent;
-  background-image: url("/img/sprites.png");
-  background-position: -163px -61px;
-  width: 96px;
-  height: 60px;
-  display: inline-block; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-    .b-olimpia__logo {
-      background-image: url("/img/sprites@2x.png");
-      background-size: 324px 272px; } }
+.b-olympia__logo-wrap {
+  display: block; }
+
+.b-olympia__logo {
+  display: block;
+  width: 90px; }
 
 .b-closed-btn {
   transition-property: background-color;
