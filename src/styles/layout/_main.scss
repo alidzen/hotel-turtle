@@ -71,11 +71,12 @@
 .l-footer__row {
     color: $white;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     flex-flow: column nowrap;
+    align-items: center;
 
     @media #{$medium-up} {
+        justify-content: space-between;
+        align-items: flex-end;
         flex-flow: row nowrap;
         padding: {
             right: gutter(2);
