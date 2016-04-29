@@ -1,0 +1,62 @@
+.l-room-item__gallery {
+    margin: {
+        right: - gutter(2);
+        left: - gutter(2);
+    };
+
+    @media #{$big-up} {
+        margin: {
+            right: - 41px; // small fix,  right side have space
+            left: - gutter(4);
+        };
+    }
+}
+
+.l-room-item__footer {
+    position: relative;
+
+    @media #{$custom-1024-up} {
+        height: 470px;
+    }
+}
+
+.l-room-item__img-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: z('default');
+
+    @media #{$big-up} {
+        bottom: -72px;
+        right: -80px;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        display: block;
+        z-index: z('hide');
+    }
+
+    &:before {
+        bottom: 170px;
+        right: 38px;
+        width: 2px;
+        height: 90px;
+    }
+
+    &:after {
+        height: 2px;
+        width: 400px;
+        bottom: 70px;
+        right: 100px;
+    }
+}
+
+.l-room-item__footer-propose {
+    @media #{$custom-1024-up} {
+        padding-top: 180px;
+    }
+}

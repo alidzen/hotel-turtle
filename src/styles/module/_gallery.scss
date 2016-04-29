@@ -207,7 +207,6 @@ $gallery-dots-frame-height: 30px !default;
     } @else if ($gallery-label-position == 'top') {
         margin-top: rhythm($gallery-label-height);
     }
-    padding: 15px 0;
 }
 
 
@@ -246,7 +245,7 @@ $gallery-dots-frame-height: 30px !default;
 // scss-lint:disable MergeableSelector
 .fotorama__nav {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
 }
 
 .fotorama__nav--dots .fotorama__nav__frame {
@@ -275,4 +274,29 @@ $gallery-dots-frame-height: 30px !default;
     font-size: $gallery-caption-font-size;
     font-family: $gallery-caption-font-family;
     text-align: $gallery-caption-text-align;
+}
+
+// Wrapper
+.fotorama__wrap {
+    height: 100%;
+}
+
+.fotorama--fullscreen {
+    .fotorama__nav {
+        bottom: 0;
+    }
+
+    .fotorama__nav__shaft {
+        margin: {
+            top: 15px;
+            bottom: 15px;
+        };
+    }
+}
+
+// STATE
+.b-gallery_theme_room {
+    .fotorama__nav {
+        bottom: 10px;
+    }
 }

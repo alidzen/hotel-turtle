@@ -14,6 +14,7 @@ define('app', [
     // Глобальные переменные
     var ACTIVE = ('is-active');
     var mobileWidth = ($(window).width() < 641);
+    var touchWidth = ($(window).width() < 1024);
     var $loader = $('.j-loader');
 
     // MENU
@@ -168,6 +169,10 @@ define('app', [
 
     // show/hide sticky nav
     $(window).scroll(function() {
+        if (touchWidth) {
+            return;
+        }
+
         var scrollPosition = $(window).scrollTop();
 
         if (scrollPosition >= cntHeight) {

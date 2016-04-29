@@ -17,6 +17,7 @@
 }
 
 .l-action__row {
+    overflow: hidden;
 
     @media #{$big-up} {
         @include span(10 center);
@@ -84,5 +85,12 @@
     @extend %b-bottom-dash-pos-left;
     @media #{$big-up} {
         @include margin-trailer(2);
+    }
+}
+
+// STATE
+.l-action_theme_room-item {
+    .l-action__cnt {
+        @include padding-trailer(0);
     }
 }

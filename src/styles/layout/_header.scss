@@ -103,4 +103,9 @@
     bottom: 20vh;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
+
+    @media #{$big-up} {
+        display: block;
+    }
 }

@@ -12,7 +12,7 @@ block gallery
 
 block content
     .l-main-wrap.is-stick
-        section.l-action
+        section.l-action.l-action_theme_room-item
             .l-action__row
                 .l-action__border
                     .l-action__cnt
@@ -35,18 +35,27 @@ block content
                                     li.b-feature__item
                                         .b-feature__item-img.b-feature__item-img_img_fan
                                         .b-feature__item-txt Бесплатный Wi-Fi
-                        .l-room-item__list-row
-                            .l-room-item__list-col.b-typo-reset
-                                ul.l-room-item__list
-                                    li Мини-бар
-                                    li Тапочки,халат и полотенце
-                                    li Сейф
-                                ul.l-room-item__list
-                                    li Фен
-                                    li Телефон
-                                    li Услуга «звонок-будильник»
+                            .l-room-item__list-row
+                                .l-room-item__list-col.b-typo-reset
+                                    ul.l-room-item__list
+                                        li Мини-бар
+                                        li Тапочки,халат и полотенце
+                                        li Сейф
+                                    ul.l-room-item__list
+                                        li Фен
+                                        li Телефон
+                                        li Услуга «звонок-будильник»
 
-                        .l-room-item__gallery
-                            include blocks/_gallery-room
+                            .l-room-item__gallery
+                                include blocks/_gallery-room
+                            .l-room-item__footer
+                                .l-room-item__img-wrap
+                                    img(src="/img/room-item-1.png" alt="Книги и бокал вина")
+                                .l-room-item__footer-propose
+                                    .b-propose
+                                        .b-propose__ttl Вы готовы приехать к нам?
+                                        .b-propose__btn
+                                            a(href="#").b-btn.b-btn_width_auto Выбрать номер
+
 
 
