@@ -391,9 +391,14 @@ h2 {
 
 %f-param-data,
 .f-param-data {
-    font-size: 35px;
-    line-height: 35px;
     font-family: $font-bold-italic;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media #{$medium-up} {
+        font-size: 35px;
+        line-height: 35px;
+    }
 }
 
 %f-room-list,

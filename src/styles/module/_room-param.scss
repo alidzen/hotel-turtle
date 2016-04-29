@@ -3,9 +3,13 @@
     color: $white;
     position: relative;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: baseline;
+
+    @media #{$medium-up} {
+        flex-wrap: nowrap;
+    }
 
     &:not(:last-child) {
         @include margin-trailer(.5);
@@ -13,10 +17,14 @@
 
     &:after {
         position: absolute;
-        bottom: 10px;
+        bottom: 7px;
         left: 0;
         width: 100%;
         border-bottom: 1px dotted;
+
+        @media #{$medium-up} {
+            bottom: 10px;
+        }
     }
 }
 

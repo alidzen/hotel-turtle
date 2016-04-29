@@ -56,7 +56,18 @@
 }
 
 .l-room-item__list-col {
-    @include span(6);
+
+    @media #{$small-only} {
+        &:first-child {
+            ul {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media #{$medium-up} {
+        @include span(6);
+    }
 }
 
 .l-room-item__gallery {
@@ -75,6 +86,7 @@
 
 .l-room-item__footer {
     position: relative;
+    height: 280px;
 
     @media #{$medium-up} {
         height: 470px;
@@ -86,10 +98,12 @@
     right: 0;
     bottom: 0;
     z-index: z('default');
+    opacity: .2;
 
     @media #{$medium-up} {
         bottom: -72px;
         right: -55px;
+        opacity: 1;
     }
 
     @media #{$big-up} {
@@ -101,8 +115,12 @@
         content: '';
         position: absolute;
         background-color: white;
-        display: block;
+        display: none;
         z-index: z('hide');
+
+        @media #{$medium-up} {
+            display: block;
+        }
     }
 
     &:before {
@@ -131,6 +149,8 @@
 }
 
 .l-room-item__footer-propose {
+    padding-top: 50px;
+
     @media #{$medium-up} {
         padding-top: 130px;
     }
