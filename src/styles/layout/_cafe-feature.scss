@@ -32,14 +32,17 @@
     }
 
     @media #{$custom-1024-up} {
-        width: 35vw;
+        width: 420px;
         opacity: 1;
+        left: -40px;
     }
 }
 
 .l-cafe-feature__border {
     @include grid-clearfix();
     @include rhythm-padding(2);
+    position: relative;
+    border: 2px solid $gold-2;
 
     @media #{$small-only} {
         padding: {
@@ -56,6 +59,19 @@
     @media #{$big-up} {
         @include rhythm-padding(4);
         @include span(10 center);
+        border-left-width: 0;
+    }
+
+    &:before {
+        @media #{$big-up} {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            width: 2px;
+            height: 50px;
+            background-color: $gold-2;
+        }
     }
 }
 

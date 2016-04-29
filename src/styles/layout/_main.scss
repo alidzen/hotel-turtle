@@ -115,6 +115,7 @@
         @include padding-trailer(2);
         padding-top: $booking-height + rhythm(3);
         background: url('/img/logo-bg.svg') repeat-y 0 0;
+        background-size: cover;
     }
 
     // Прилипает к меню на десктопах

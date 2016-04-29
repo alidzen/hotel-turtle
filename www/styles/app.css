@@ -3259,7 +3259,8 @@ blockquote {
     .l-main-wrap {
       padding-bottom: 48px;
       padding-top: 132px;
-      background: url("/img/logo-bg.svg") repeat-y 0 0; } }
+      background: url("/img/logo-bg.svg") repeat-y 0 0;
+      background-size: cover; } }
   @media only screen and (min-width: 1025px) {
     .l-main-wrap.is-stick {
       padding-top: 60px; } }
@@ -4346,7 +4347,7 @@ blockquote {
     height: 225px;
     left: 0;
     right: auto;
-    background-image: url("/img/services/service-2.jpg");
+    background-image: url("/img/services/service-3.jpg");
     width: 100%; }
     @media only screen and (min-width: 641px) {
       .l-services__tile_numb_16 .b-service__img {
@@ -4393,7 +4394,7 @@ blockquote {
     height: 225px;
     left: 0;
     right: auto;
-    background-image: url("/img/services/service-3.jpg");
+    background-image: url("/img/services/service-2.jpg");
     width: 100%; }
     @media only screen and (min-width: 641px) {
       .l-services__tile_numb_17 .b-service__img {
@@ -4427,12 +4428,15 @@ blockquote {
       bottom: 0; } }
   @media only screen and (min-width: 1024px) {
     .l-cafe-feature__img-wrap {
-      width: 35vw;
-      opacity: 1; } }
+      width: 420px;
+      opacity: 1;
+      left: -40px; } }
 
 .l-cafe-feature__border {
   padding-top: 48px;
-  padding-bottom: 48px; }
+  padding-bottom: 48px;
+  position: relative;
+  border: 2px solid #bca064; }
   .l-cafe-feature__border:after {
     content: '';
     display: block;
@@ -4452,7 +4456,17 @@ blockquote {
       width: 83.33333%;
       margin-left: 8.33333%;
       margin-right: 8.33333%;
-      float: left; } }
+      float: left;
+      border-left-width: 0; } }
+  @media only screen and (min-width: 1025px) {
+    .l-cafe-feature__border:before {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      width: 2px;
+      height: 50px;
+      background-color: #bca064; } }
 
 .l-cafe-feature__cnt {
   position: relative;
