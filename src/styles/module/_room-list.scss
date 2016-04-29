@@ -1,10 +1,10 @@
 .b-room-list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .b-room-list__item {
-    flex: 0 1 33.3333%;
     display: flex;
     margin-right: gutter(4);
     align-items: center;

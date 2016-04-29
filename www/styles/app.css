@@ -7243,12 +7243,14 @@ select {
     opacity: 0; } }
 
 .l-room-item__params {
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   padding-top: 24px;
   padding-bottom: 12px;
   background-color: #bca064;
   margin-right: -20px;
-  margin-left: -20px; }
+  margin-left: -20px;
+  padding-right: 20px;
+  padding-left: 20px; }
   @media only screen and (min-width: 1025px) {
     .l-room-item__params {
       margin-bottom: 84px;
@@ -7261,7 +7263,9 @@ select {
   margin-bottom: 24px; }
   @media only screen and (min-width: 1025px) {
     .l-room__feature {
-      margin-bottom: 48px;
+      margin-bottom: 48px; } }
+  @media only screen and (min-width: 1025px) {
+    .l-room__feature {
       margin-right: 40px;
       margin-left: 40px; } }
 
@@ -7291,7 +7295,7 @@ select {
 
 .l-room-item__footer {
   position: relative; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 641px) {
     .l-room-item__footer {
       height: 470px; } }
 
@@ -7300,10 +7304,13 @@ select {
   right: 0;
   bottom: 0;
   z-index: 1; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 641px) {
     .l-room-item__img-wrap {
       bottom: -72px;
-      right: -80px; } }
+      right: -55px; } }
+  @media only screen and (min-width: 1025px) {
+    .l-room-item__img-wrap {
+      right: 80px; } }
   .l-room-item__img-wrap:before, .l-room-item__img-wrap:after {
     content: '';
     position: absolute;
@@ -7311,17 +7318,29 @@ select {
     display: block;
     z-index: -1; }
   .l-room-item__img-wrap:before {
-    bottom: 170px;
-    right: 38px;
     width: 2px;
-    height: 90px; }
+    height: 90px;
+    right: 33px;
+    bottom: 170px; }
+    @media only screen and (min-width: 1025px) {
+      .l-room-item__img-wrap:before {
+        bottom: 170px;
+        right: 38px; } }
   .l-room-item__img-wrap:after {
     height: 2px;
     width: 400px;
-    bottom: 70px;
-    right: 100px; }
+    right: 100px;
+    bottom: 70px; }
+    @media only screen and (min-width: 1025px) {
+      .l-room-item__img-wrap:after {
+        bottom: 70px;
+        right: 100px; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 641px) {
+  .l-room-item__footer-propose {
+    padding-top: 130px; } }
+
+@media only screen and (min-width: 1025px) {
   .l-room-item__footer-propose {
     padding-top: 180px; } }
 
@@ -7370,12 +7389,12 @@ select {
   display: flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .b-room-list__item {
-  -webkit-flex: 0 1 33.3333%;
-  -ms-flex: 0 1 33.3333%;
-  flex: 0 1 33.3333%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;

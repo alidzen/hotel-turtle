@@ -1,5 +1,5 @@
 .l-room-item__params {
-    @include margin-trailer(1);
+    @include margin-trailer(2);
     @include padding-leader(1);
     @include padding-trailer(.5);
     background-color: $gold-2;
@@ -7,6 +7,11 @@
     margin: {
         right: - gutter(2);
         left: - gutter(2);
+    };
+
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
     };
 
     @media #{$big-up} {
@@ -27,6 +32,9 @@
 
     @media #{$big-up} {
         @include margin-trailer(2);
+    }
+
+    @media #{$big-up} {
         margin: {
             right: gutter(4);
             left: gutter(4);
@@ -53,8 +61,8 @@
 
 .l-room-item__gallery {
     margin: {
-        right: - gutter(2);
-        left: - gutter(2);
+        right: - 20px;
+        left: - 20px;
     };
 
     @media #{$big-up} {
@@ -68,7 +76,7 @@
 .l-room-item__footer {
     position: relative;
 
-    @media #{$custom-1024-up} {
+    @media #{$medium-up} {
         height: 470px;
     }
 }
@@ -79,9 +87,13 @@
     bottom: 0;
     z-index: z('default');
 
-    @media #{$big-up} {
+    @media #{$medium-up} {
         bottom: -72px;
-        right: -80px;
+        right: -55px;
+    }
+
+    @media #{$big-up} {
+        right: 80px;
     }
 
     &:before,
@@ -94,22 +106,36 @@
     }
 
     &:before {
-        bottom: 170px;
-        right: 38px;
         width: 2px;
         height: 90px;
+        right: 33px;
+        bottom: 170px;
+
+        @media #{$big-up} {
+            bottom: 170px;
+            right: 38px;
+        }
     }
 
     &:after {
         height: 2px;
         width: 400px;
-        bottom: 70px;
         right: 100px;
+        bottom: 70px;
+
+        @media #{$big-up} {
+            bottom: 70px;
+            right: 100px;
+        }
     }
 }
 
 .l-room-item__footer-propose {
-    @media #{$custom-1024-up} {
+    @media #{$medium-up} {
+        padding-top: 130px;
+    }
+
+    @media #{$big-up} {
         padding-top: 180px;
     }
 }
