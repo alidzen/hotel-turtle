@@ -1,0 +1,35 @@
+.b-room-param {
+    @include grid-clearfix();
+    color: $white;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    &:not(:last-child) {
+        @include margin-trailer(.5);
+    }
+
+    &:after {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px dotted;
+    }
+}
+
+.b-room-param__txt {
+    position: relative;
+    z-index: z('default');
+    background-color: $gold-2;
+}
+
+.b-room-param__data {
+    @extend %f-param-data;
+    margin-left: auto;
+    position: relative;
+    z-index: z('default');
+    background-color: $gold-2;
+}

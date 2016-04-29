@@ -1,3 +1,25 @@
+.l-room-item__params {
+    @include padding-leader(1);
+    @include padding-trailer(.5);
+    background-color: $gold-2;
+
+    margin: {
+        right: - gutter(2);
+        left: - gutter(2);
+    };
+
+    @media #{$big-up} {
+        margin: {
+            right: - gutter(4); // small fix,  right side have space
+            left: - gutter(4);
+        };
+        padding: {
+            right: gutter(8);
+            left: gutter(8);
+        };
+    }
+}
+
 .l-room-item__gallery {
     margin: {
         right: - gutter(2);

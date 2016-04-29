@@ -389,6 +389,12 @@ h2 {
     letter-spacing: $gl-letter-spacing * 2;
 }
 
+%f-param-data,
+.f-param-data {
+    font-size: 35px;
+    line-height: 35px;
+    font-family: $font-bold-italic;
+}
 
 // SMALL
 $small-font-size: $base-font-size - 2 !default;

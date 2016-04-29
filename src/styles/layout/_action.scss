@@ -90,6 +90,15 @@
 
 // STATE
 .l-action_theme_room-item {
+    .l-action__ttl {
+        @media #{$big-up} {
+            margin: {
+                right: gutter(4);
+                left: gutter(4);
+            };
+        }
+    }
+
     .l-action__cnt {
         @include padding-trailer(0);
     }

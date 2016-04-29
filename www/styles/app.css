@@ -755,6 +755,12 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
+.b-room-param__data,
+.f-param-data {
+  font-size: 35px;
+  line-height: 35px;
+  font-family: "ArnoPro-BoldItalic", sans-serif; }
+
 small {
   font-size: 14px; }
 
@@ -4579,6 +4585,11 @@ blockquote {
   .l-action__ttl {
     margin-bottom: 48px; } }
 
+@media only screen and (min-width: 1025px) {
+  .l-action_theme_room-item .l-action__ttl {
+    margin-right: 40px;
+    margin-left: 40px; } }
+
 .l-action_theme_room-item .l-action__cnt {
   padding-bottom: 0px; }
 
@@ -7219,6 +7230,19 @@ select {
   100% {
     opacity: 0; } }
 
+.l-room-item__params {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  background-color: #bca064;
+  margin-right: -20px;
+  margin-left: -20px; }
+  @media only screen and (min-width: 1025px) {
+    .l-room-item__params {
+      margin-right: -40px;
+      margin-left: -40px;
+      padding-right: 80px;
+      padding-left: 80px; } }
+
 .l-room-item__gallery {
   margin-right: -20px;
   margin-left: -20px; }
@@ -7262,6 +7286,45 @@ select {
 @media only screen and (min-width: 1024px) {
   .l-room-item__footer-propose {
     padding-top: 180px; } }
+
+.b-room-param {
+  color: #fefefd;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+  .b-room-param:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .b-room-param:not(:last-child) {
+    margin-bottom: 12px; }
+  .b-room-param:after {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dotted; }
+
+.b-room-param__txt {
+  position: relative;
+  z-index: 1;
+  background-color: #bca064; }
+
+.b-room-param__data {
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  background-color: #bca064; }
 
 .b-cafe-gallery {
   position: relative;
