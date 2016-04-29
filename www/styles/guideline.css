@@ -772,7 +772,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   line-height: 21px;
   font-family: "Geometria-Bold", sans-serif;
   letter-spacing: 0.1em; }
-  @media only screen and (min-width: 641px) {
+  @media only screen and (min-width: 1025px) {
     .b-room-list__item-txt,
     .f-room-list {
       font-size: 16px;
@@ -7323,7 +7323,8 @@ select {
       opacity: 1; } }
   @media only screen and (min-width: 1025px) {
     .l-room-item__img-wrap {
-      right: 80px; } }
+      right: -80px;
+      bottom: -88px; } }
   .l-room-item__img-wrap:before, .l-room-item__img-wrap:after {
     content: '';
     position: absolute;
@@ -7340,17 +7341,20 @@ select {
     bottom: 170px; }
     @media only screen and (min-width: 1025px) {
       .l-room-item__img-wrap:before {
-        bottom: 170px;
+        bottom: 175px;
         right: 38px; } }
   .l-room-item__img-wrap:after {
     height: 2px;
     width: 400px;
     right: 100px;
     bottom: 70px; }
+    @media only screen and (min-width: 641px) {
+      .l-room-item__img-wrap:after {
+        bottom: 86px; } }
     @media only screen and (min-width: 1025px) {
       .l-room-item__img-wrap:after {
-        bottom: 70px;
-        right: 100px; } }
+        right: 85px;
+        width: 420px; } }
 
 .l-room-item__footer-propose {
   padding-top: 50px; }
@@ -7426,11 +7430,12 @@ select {
       -ms-flex-align: center;
       -ms-grid-row-align: center;
       align-items: center;
-      -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap; } }
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; } }
 
 .b-room-list__item {
+  margin-bottom: 24px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7439,9 +7444,16 @@ select {
   align-items: center; }
   @media only screen and (min-width: 641px) {
     .b-room-list__item {
+      margin-right: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .b-room-list__item {
+      margin-bottom: 0px;
       margin-right: 40px; } }
 
 .b-room-list__item-img {
+  -webkit-flex: 0 1 60px;
+  -ms-flex: 0 1 60px;
+  flex: 0 1 60px;
   width: 60px;
   height: 60px;
   background-color: #e8e8e6;
@@ -7450,9 +7462,6 @@ select {
 
 .b-room-list__item-img_img_window {
   position: relative; }
-  @media only screen and (max-width: 640px) {
-    .b-room-list__item-img_img_window {
-      position: absolute; } }
   .b-room-list__item-img_img_window:after {
     background-image: url("/img/sprites.png");
     background-position: -266px 0px;
@@ -7471,9 +7480,6 @@ select {
 
 .b-room-list__item-img_img_fan {
   position: relative; }
-  @media only screen and (max-width: 640px) {
-    .b-room-list__item-img_img_fan {
-      position: absolute; } }
   .b-room-list__item-img_img_fan:after {
     background-image: url("/img/sprites.png");
     background-position: -163px -122px;
@@ -7492,9 +7498,6 @@ select {
 
 .b-room-list__item-img_img_wi-fi {
   position: relative; }
-  @media only screen and (max-width: 640px) {
-    .b-room-list__item-img_img_wi-fi {
-      position: absolute; } }
   .b-room-list__item-img_img_wi-fi:after {
     background-image: url("/img/sprites.png");
     background-position: -266px -64px;

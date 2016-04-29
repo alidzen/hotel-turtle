@@ -107,7 +107,8 @@
     }
 
     @media #{$big-up} {
-        right: 80px;
+        right: -80px;
+        bottom: -88px;
     }
 
     &:before,
@@ -130,7 +131,7 @@
         bottom: 170px;
 
         @media #{$big-up} {
-            bottom: 170px;
+            bottom: 175px;
             right: 38px;
         }
     }
@@ -141,9 +142,13 @@
         right: 100px;
         bottom: 70px;
 
+        @media #{$medium-up} {
+            bottom: 86px;
+        }
+
         @media #{$big-up} {
-            bottom: 70px;
-            right: 100px;
+            right: 85px;
+            width: 420px;
         }
     }
 }

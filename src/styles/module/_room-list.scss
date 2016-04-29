@@ -8,21 +8,28 @@
 
     @media #{$medium-up} {
         align-items: center;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
     }
 }
 
 .b-room-list__item {
+    @include margin-trailer(1);
     display: flex;
     align-items: center;
 
     @media #{$medium-up} {
+        margin-right: gutter(2);
+    }
+
+    @media #{$custom-1024-up} {
+        @include margin-trailer(0);
         margin-right: gutter(4);
     }
 }
 
 .b-room-list__item-img {
     $img-size: 60px;
+    flex: 0 1 $img-size;
     width: $img-size;
     height: $img-size;
     background-color: $gray-3;
@@ -39,10 +46,6 @@ $images: 'window', 'fan', 'wi-fi';
 @each $image in $images {
     .b-room-list__item-img_img_#{$image} {
         position: relative;
-
-        @media #{$small-only} {
-            position: absolute;
-        }
 
         &:after {
             $img: 'i-#{$image}-small';
