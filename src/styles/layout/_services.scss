@@ -320,6 +320,7 @@ $spectile-height-small: 350px;
         top: 0;
         height: $tile-height-small;
         background-image: url('/img/services/service-4.jpg');
+        background-position: 50% 75%;
     }
 
     @media #{$custom-1024-up} {
@@ -660,6 +661,7 @@ $spectile-height-small: 350px;
 
 .l-services__tile_numb_13 {
     @include span(full);
+    overflow: hidden;
     background-color: $gray-3;
 
     @media #{$custom-1024-up} {
@@ -684,19 +686,38 @@ $spectile-height-small: 350px;
     .b-service__cnt {
         position: relative;
         z-index: z('default');
+
+        @media #{$custom-1024-up} {
+            p {
+                @include span(6);
+            }
+        }
     }
 
     .b-service__img {
-        background: url('/img/services/service-2.svg') no-repeat 100% 100%;
-        background-size: contain;
+        height: 100%;
         opacity: .2;
-        height: 210px;
-        top: auto;
-        right: 0;
-        bottom: 0;
+        background-image: none;
+
+        @media #{$medium-up} {
+            right: -35%;
+            opacity: 1;
+
+            img {
+                position: absolute;
+                top: 50%;
+                width: 299px;
+            }
+        }
 
         @media #{$custom-1024-up} {
-            opacity: 1;
+            right: -55%;
+
+            img {
+                position: absolute;
+                top: 70px;
+                width: 600px;
+            }
         }
     }
 }

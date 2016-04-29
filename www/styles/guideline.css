@@ -3928,7 +3928,8 @@ blockquote {
   .l-services__tile_numb_6 .b-service__img {
     top: 0;
     height: 225px;
-    background-image: url("/img/services/service-4.jpg"); }
+    background-image: url("/img/services/service-4.jpg");
+    background-position: 50% 75%; }
   @media only screen and (min-width: 1024px) {
     .l-services__tile_numb_6 {
       width: 33.33333%;
@@ -4177,6 +4178,7 @@ blockquote {
 .l-services__tile_numb_13 {
   width: 100%;
   float: left;
+  overflow: hidden;
   background-color: #e8e8e6; }
   @media only screen and (min-width: 1024px) {
     .l-services__tile_numb_13 {
@@ -4194,17 +4196,29 @@ blockquote {
   .l-services__tile_numb_13 .b-service__cnt {
     position: relative;
     z-index: 1; }
+    @media only screen and (min-width: 1024px) {
+      .l-services__tile_numb_13 .b-service__cnt p {
+        width: 50%;
+        float: left; } }
   .l-services__tile_numb_13 .b-service__img {
-    background: url("/img/services/service-2.svg") no-repeat 100% 100%;
-    background-size: contain;
+    height: 100%;
     opacity: .2;
-    height: 210px;
-    top: auto;
-    right: 0;
-    bottom: 0; }
+    background-image: none; }
+    @media only screen and (min-width: 641px) {
+      .l-services__tile_numb_13 .b-service__img {
+        right: -35%;
+        opacity: 1; }
+        .l-services__tile_numb_13 .b-service__img img {
+          position: absolute;
+          top: 50%;
+          width: 299px; } }
     @media only screen and (min-width: 1024px) {
       .l-services__tile_numb_13 .b-service__img {
-        opacity: 1; } }
+        right: -55%; }
+        .l-services__tile_numb_13 .b-service__img img {
+          position: absolute;
+          top: 70px;
+          width: 600px; } }
 
 .l-services__tile_numb_14 {
   background-color: #fefefd; }
