@@ -9,6 +9,7 @@
     @include grid-clearfix();
     position: relative;
     z-index: z('zero');
+    border: 2px solid $green;
 }
 
 .b-article__img-wrap {
@@ -101,6 +102,10 @@
                 height: 100%;
             }
         }
+    }
+
+    .b-article__border {
+        border-color: $gold-2;
     }
 
     .b-article__cnt {

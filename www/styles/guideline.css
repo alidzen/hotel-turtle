@@ -6446,7 +6446,8 @@ select {
   padding-top: 48px;
   padding-bottom: 48px;
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  border: 2px solid #005870; }
   .b-article__border:after {
     content: '';
     display: block;
@@ -6513,6 +6514,9 @@ select {
     .b-article_theme_gold .b-article__img-wrap img {
       max-width: 100%;
       height: 100%; } }
+
+.b-article_theme_gold .b-article__border {
+  border-color: #bca064; }
 
 @media only screen and (min-width: 1025px) {
   .b-article_theme_gold .b-article__cnt {
