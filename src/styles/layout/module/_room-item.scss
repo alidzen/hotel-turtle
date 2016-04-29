@@ -1,4 +1,5 @@
 .l-room-item__params {
+    @include margin-trailer(1);
     @include padding-leader(1);
     @include padding-trailer(.5);
     background-color: $gold-2;
@@ -9,8 +10,9 @@
     };
 
     @media #{$big-up} {
+        @include margin-trailer(3.5);
         margin: {
-            right: - gutter(4); // small fix,  right side have space
+            right: - gutter(4);
             left: - gutter(4);
         };
         padding: {
@@ -18,6 +20,35 @@
             left: gutter(8);
         };
     }
+}
+
+.l-room__feature {
+    @include margin-trailer(1);
+
+    @media #{$big-up} {
+        @include margin-trailer(2);
+        margin: {
+            right: gutter(4);
+            left: gutter(4);
+        };
+    }
+}
+
+.l-room-item__list-row {
+    @include margin-trailer(1);
+    @include grid-clearfix();
+
+    @media #{$big-up} {
+        @include margin-trailer(3.5);
+        margin: {
+            right: gutter(4);
+            left: gutter(4);
+        };
+    }
+}
+
+.l-room-item__list-col {
+    @include span(6);
 }
 
 .l-room-item__gallery {

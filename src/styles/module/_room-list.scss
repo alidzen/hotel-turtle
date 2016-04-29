@@ -1,0 +1,47 @@
+.b-room-list {
+    display: flex;
+    align-items: center;
+}
+
+.b-room-list__item {
+    flex: 0 1 33.3333%;
+    display: flex;
+    margin-right: gutter(4);
+    align-items: center;
+}
+
+.b-room-list__item-img {
+    $img-size: 60px;
+    width: $img-size;
+    height: $img-size;
+    background-color: $gray-3;
+    border-radius: 50%;
+    margin-right: gutter(1);
+}
+
+.b-room-list__item-txt {
+    @extend %f-room-list;
+}
+
+// STATE
+$images: 'window', 'fan', 'wi-fi';
+@each $image in $images {
+    .b-room-list__item-img_img_#{$image} {
+        position: relative;
+
+        @media #{$small-only} {
+            position: absolute;
+        }
+
+        &:after {
+            $img: 'i-#{$image}-small';
+            @include sprite($img);
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: - (sprite-height($img) / 2);
+            margin-left: - (sprite-width($img) / 2);
+        }
+    }
+}
