@@ -406,7 +406,7 @@ h2 {
     font-size: 14px;
     line-height: 21px;
     font-family: $font-bold;
-    letter-spacing: $gl-letter-spacing * 2;
+    letter-spacing: $gl-letter-spacing / 2;
 
     @media #{$big-up} {
         font-size: 16px;

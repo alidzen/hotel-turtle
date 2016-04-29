@@ -104,10 +104,6 @@
         }
     }
 
-    .b-article__border {
-        border-color: $gold-2;
-    }
-
     .b-article__cnt {
 
         @media #{$big-up} {
@@ -129,6 +125,10 @@
     @extend %f-article-special;
 }
 
+.b-article__btn {
+    @include padding-leader(1);
+}
+
 // STATE
 .b-article__features_theme_list {
     @extend %b-bottom-dash-pos-left;
@@ -142,8 +142,6 @@
 .b-article__theme_atmosphere-page {
 
     .b-article__border {
-        border-color: $gold;
-
         @media #{$big-up} {
             @include rhythm-padding(3);
         }
@@ -171,7 +169,8 @@
         }
 
         @media #{$big-up} {
-            right: 62%;
+            top: 0;
+            right: 66%;
             left: auto;
             opacity: 1;
             width: 40%;
@@ -188,9 +187,89 @@
             @include padding-trailer(.5);
             @include margin-trailer(1);
         }
+    }
+}
 
-        &:after {
+.b-article__border_scheme_1 {
+    border-color: $green;
+
+    @media #{$big-up} {
+        border-right-width: 0;
+    }
+
+    &:before {
+        @media #{$big-up} {
+            content: '';
+            position: absolute;
+            top: - 2px;
+            right: - 2px;
+            background-color: $green;
+            width: 2px;
+            height: 100px;
+        }
+    }
+}
+
+.b-article__border_scheme_2 {
+    border-color: $gold;
+
+    @media #{$big-up} {
+        border-left-width: 0;
+    }
+
+    &:before {
+        @media #{$big-up} {
+            content: '';
+            position: absolute;
+            top: - 2px;
+            left: - 2px;
             background-color: $gold;
+            width: 2px;
+            height: 130px;
+        }
+    }
+}
+
+.b-article__border_scheme_3 {
+    border-color: $gold-2;
+
+    @media #{$big-up} {
+        border-left-width: 0;
+    }
+}
+
+.b-article_theme_border-scheme_4 {
+    position: relative;
+    &:after {
+        @media #{$big-up} {
+            content: '';
+            position: absolute;
+            bottom: rhythm(2) - 2px;
+            left: 0;
+            background-color: $green;
+            width: 55%;
+            height: 2px;
+        }
+    }
+
+    .b-article__border {
+        border-color: $green;
+
+        @media #{$big-up} {
+            border-right-width: 0;
+            border-bottom-width: 0;
+        }
+
+        &:before {
+            @media #{$big-up} {
+                content: '';
+                position: absolute;
+                top: - 2px;
+                right: - 2px;
+                background-color: $green;
+                width: 2px;
+                height: 35px;
+            }
         }
     }
 }
