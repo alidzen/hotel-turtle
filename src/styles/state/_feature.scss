@@ -1,12 +1,8 @@
 
-$images: 'bed', 'window', 'fan', 'eat', 'wi-fi';
+$images: 'bed', 'window', 'fan', 'eat', 'wi-fi', 'eco';
 @each $image in $images {
     .b-feature__item-img_img_#{$image} {
         position: relative;
-
-        @media #{$small-only} {
-            position: absolute;
-        }
 
         &:after {
             $img: 'i-#{$image}';

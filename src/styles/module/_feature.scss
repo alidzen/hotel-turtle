@@ -110,6 +110,7 @@ $img-size: 85px;
 }
 
 .b-feature__list {
+    @include padding-leader(1);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -124,8 +125,7 @@ $img-size: 85px;
     flex: 0 1 100%;
 
     @media #{$small-only} {
-        position: relative;
-        height: $img-size;
+        flex-flow: column nowrap;
     }
 
     @media #{$medium-up} {
@@ -150,11 +150,7 @@ $img-size: 85px;
     border-radius: 50%;
 
     @media #{$small-only} {
-        position: absolute;
-        left: 50%;
-        margin-left: - $img-size / 2;
-        z-index: z('zero');
-        opacity: .4;
+        @include margin-trailer(.75);
     }
 }
 
