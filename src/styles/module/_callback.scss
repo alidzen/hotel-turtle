@@ -31,13 +31,23 @@
 
 .b-callback__header {
     @extend %b-bottom-dash-100;
-    @include margin-trailer(1);
+    @include padding-trailer(1);
+    @include margin-trailer(2);
     color: $gold-2;
     text-align: center;
+    padding: {
+        right: gutter(1);
+        left: gutter(1);
+    };
+
 }
 
 .b-callback__ttl {
     @extend %f-callback-ttl;
+
+    @media #{$small-only} {
+        @include margin-trailer(.5);
+    }
 }
 
 .b-callback__caption {

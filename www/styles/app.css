@@ -824,9 +824,9 @@ a {
   left: 10px;
   content: '•';
   color: #bca064;
-  -webkit-transform: scale(2) translateY(1.5px);
-  -ms-transform: scale(2) translateY(1.5px);
-  transform: scale(2) translateY(1.5px); }
+  -webkit-transform: scale(2) translateY(1px);
+  -ms-transform: scale(2) translateY(1px);
+  transform: scale(2) translateY(1px); }
 
 .b-typo-reset img {
   margin-bottom: 12px; }
@@ -5763,9 +5763,16 @@ select {
       float: left; } }
 
 .b-callback__header {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 48px;
   color: #bca064;
-  text-align: center; }
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+@media only screen and (max-width: 640px) {
+  .b-callback__ttl {
+    margin-bottom: 12px; } }
 
 .b-callback__row {
   margin-bottom: 24px; }

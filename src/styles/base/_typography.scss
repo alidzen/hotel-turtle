@@ -508,7 +508,7 @@ $list-margin-bottom: $paragraph-margin-bottom !default; // rhythm unit
             left: gutter(1);
             content: '•';
             color: $list-color;
-            transform: scale(2) translateY(1.5px); // centered
+            transform: scale(2) translateY(1px); // centered
         }
     }
 
