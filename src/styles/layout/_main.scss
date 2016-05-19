@@ -18,14 +18,11 @@
 }
 
 .l-limit-wrap {
+    @extend %l-row;
     padding: {
         right: gutter(2);
         left: gutter(2);
     };
-
-    @media #{$large-up} {
-        @extend %l-row;
-    }
 
     @media #{$custom-1360-up} {
         padding: 0;
