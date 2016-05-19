@@ -53,7 +53,8 @@
                 .l-stick-menu__popup_contacts
                     .b-menu-contacts
                         a(href="tel: +78126708683").b-menu-contacts__tel +7&nbsp;(812)&nbsp;670&ndash;86&ndash;83
-                        a(href=(activePage == 'contacts' ? '#map-content' : '/html/contacts.html#map-target')).b-menu-contacts__map
+                        // Программисту: На странице контактов меняется href на #map-content
+                        a(href=(activePage == 'contacts' ? '#map-content' : '/html/contacts.html#map-target')).b-menu-contacts__map.j-stick-map-anchor
                             | г. Санкт-Петербург,
                             | ул. Достоевского, 19/21, лит. Б
 
@@ -71,9 +72,5 @@
                             input.b-booking-form__inp(
                             type="text"
                             placeholder="Дата отъезда")
-                        .b-booking-form__col
-                            input.b-booking-form__inp(
-                            type="text"
-                            placeholder="Количество гостей")
                         .b-booking-form__col
                             button.b-btn.b-btn_bg_white(type="submit" value="Номер") Продолжить

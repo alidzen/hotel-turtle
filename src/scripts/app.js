@@ -145,6 +145,7 @@ define('app', [
         var insidePart = ($('.j-header-menu').outerWidth() - linkWidth) / 2;
         var fullLinkWidth = linkWidth + insidePart + bulgingPart;
         var $activeLine = $activeLink.children('.b-nav__link-line');
+
         // hide loader
         setTimeout(function() {
             $loader.addClass('is-hide');
@@ -332,7 +333,7 @@ define('app', [
 
     // resize header-menu
     (function($headerMenu) {
-        if (!$headerMenu.length || mobileWidth) {
+        if (!$headerMenu.length) {
             return;
         }
 
@@ -402,7 +403,25 @@ define('app', [
     // void some browsers issue
     setTimeout( function() { scroll(0,0); }, 1);
 
+    (function($mapAnchor) {
+        if (!$mapAnchor.length) {
+            return;
+        }
 
+        $mapAnchor.click(function(e) {
+            if ($mapAnchor.attr('href') === '#map-content') {
+                e.preventDefault();
+                $burgerBtn.click();
+
+                // после скрытия меню
+                setTimeout(function () {
+                    $('html, body').animate({
+                        scrollTop: $('#map-content').offset().top - 80
+                    }, 500, 'swing');
+                }, 300);
+            }
+        });
+    })($('.j-stick-map-anchor'));
 
     // Плавный скролл к карте, если приходим по ссылке
     if(window.location.hash === '#map-target') {
