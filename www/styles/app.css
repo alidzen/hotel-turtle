@@ -5591,6 +5591,12 @@ select {
     .border-horizontal:after {
       bottom: 30px; } }
 
+.b-form-answer {
+  text-align: center; }
+
+.b-form-answer__ttl {
+  color: #005870; }
+
 .b-nav__list {
   text-align: center; }
 

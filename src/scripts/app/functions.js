@@ -3,6 +3,7 @@ define('app/functions', ['jquery', 'modernizr'], function($, Modernizr) {
 
     $.fn.swapContent = function(html, callback) {
         var $el = this;
+        console.log(html);
 
         if (!Modernizr.cssanimations) {
             return $el.hide().html(html).fadeIn(200, callback);
