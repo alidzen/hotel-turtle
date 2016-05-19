@@ -159,7 +159,6 @@ define('app', [
             // создать кастомное событие.
             $(window).triggerHandler('scrollTotMap');
         }, 600);
-        console.log(123);
     };
 
     //Sticky nav
@@ -271,7 +270,7 @@ define('app', [
 
     //Инициализация карты
     (function($maps) {
-        if (!$maps.length) {
+        if (!$maps.length || window.location.hash === '#map-target') {
             return;
         }
 
@@ -398,40 +397,54 @@ define('app', [
         });
     })($('.j-scroll-down'));
 
-    //// to top right away
-    if ( window.location.hash) scroll(0,0);
+    // to top right away
+    if (window.location.hash) scroll(0,0);
     // void some browsers issue
     setTimeout( function() { scroll(0,0); }, 1);
 
-    //$(function() {
-    //    // your current click function
-    //    $('.j-anchor-scroll').on('click', function(e) {
-    //        e.preventDefault();
-    //        $('html, body').animate({
-    //            scrollTop: $($(this).attr('href')).offset().top + 'px'
-    //        }, 1000, 'swing');
-    //    });
-    //
-    //    // *only* if we have anchor on the url
-    //    if(window.location.hash) {
-    //
-    //        // smooth scroll to the anchor id
-    //        $('html, body').animate({
-    //            scrollTop: $('#map-content').offset().top + 'px'
-    //        }, 1000, 'swing');
-    //    }
-    //
-    //});
+    // Плавный скролл к карте, если приходим по ссылке
+    if(window.location.hash === '#map-target') {
+        $(window).one('scrollTotMap', function() {
 
-    $(window).one('scrollTotMap', function() {
-        if (!$('#map-content').length) {
-            console.log('no link');
-            return false;
-        }
-        // smooth scroll to the anchor id
-        $('html, body').animate({
-            scrollTop: $('#map-content').offset().top - 100 + 'px'
-        }, 1000, 'swing');
+            $('html, body').animate({
+                scrollTop: $('#map-content').offset().top - 80
+            }, 500, 'swing');
+
+            // Загрузка карты после скролла к ней (уменьшаем нагрузку)
+            setTimeout(function() {
+                $(window).triggerHandler('mapInitiate');
+            }, 300);
+        });
+
+        $(window).one('mapInitiate', function() {
+
+            //Инициализация карты
+            (function($maps) {
+                if (!$maps.length) {
+                    return;
+                }
+
+                require(['app/map'], function(Map) {
+                    $maps.each(function() {
+                        var $map = $(this);
+                        return new Map($map);
+                    });
+                });
+            })($('.j-map'));
+        });
+    }
+
+    // плавный скролл у якорей
+    $('a[href^="#"]').bind('click.smoothscroll', function(e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({scrollTop: $target.offset().top - 100
+        }, 500, 'swing', function() {
+            window.location.hash = target;
+        });
     });
 
     return {};
