@@ -64,6 +64,14 @@
         bottom: 0;
         display: block;
     }
+
+    .b-booking-form__form {
+        @media #{$custom-1024-up} {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+        }
+    }
 }
 
 .l-header__logo {

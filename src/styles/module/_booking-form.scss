@@ -27,18 +27,6 @@
         flex-basis: 200px;
         width: 200px;
     }
-
-    .selectric-wrapper {
-        width: 200px;
-
-        @media #{$custom-1024-up} {
-            width: 150px;
-        }
-
-        @media #{$large-up} {
-            width: 200px;
-        }
-    }
 }
 
 .b-booking-form__info {
