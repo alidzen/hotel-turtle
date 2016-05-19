@@ -5702,11 +5702,11 @@ select {
   text-align: center; }
 
 .b-menu-lang__link {
-  color: #463f32;
+  color: #bdbdbd;
   margin-right: 5px;
   margin-left: 5px; }
   .b-menu-lang__link.is-active {
-    color: #bdbdbd;
+    color: #463f32;
     cursor: default; }
 
 .b-menu-lang_theme_popup .b-menu-lang__link {

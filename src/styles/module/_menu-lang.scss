@@ -4,14 +4,14 @@
 
 .b-menu-lang__link {
     @extend %f-menu-lang;
-    color: $black-2;
+    color: $gray-2;
     margin: {
         right: gutter(.5);
         left: gutter(.5);
     };
 
     &.is-active {
-        color: $gray-2;
+        color: $black-2;
         cursor: default;
     }
 }
