@@ -108,6 +108,16 @@ $sticky-menu-height: 60px;
 
 .l-stick-menu__logo {
     @include margin-trailer(1);
+
+    @media #{$large-up} {
+        @include margin-trailer(2);
+    }
+
+    .b-logo__img {
+        @media #{$large-up} {
+            width: 300px;
+        }
+    }
 }
 
 .l-stick-menu__popup-cnt_theme_booking {

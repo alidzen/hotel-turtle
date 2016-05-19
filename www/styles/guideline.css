@@ -3602,6 +3602,12 @@ blockquote {
 
 .l-stick-menu__logo {
   margin-bottom: 24px; }
+  @media only screen and (min-width: 1441px) {
+    .l-stick-menu__logo {
+      margin-bottom: 48px; } }
+  @media only screen and (min-width: 1441px) {
+    .l-stick-menu__logo .b-logo__img {
+      width: 300px; } }
 
 @media only screen and (max-width: 640px) {
   .l-stick-menu__popup-cnt_theme_booking {
