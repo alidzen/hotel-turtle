@@ -402,6 +402,8 @@ define('app', [
     // void some browsers issue
     setTimeout( function() { scroll(0,0); }, 1);
 
+
+
     // Плавный скролл к карте, если приходим по ссылке
     if(window.location.hash === '#map-target') {
         $(window).one('scrollTotMap', function() {

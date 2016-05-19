@@ -3446,30 +3446,36 @@ blockquote {
   .l-preloader.is-hide {
     opacity: 0; }
 
-#loader {
+.b-loader {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -70px;
-  margin-left: -70px;
-  width: 140px;
-  height: 140px; }
+  margin-top: -40.5px;
+  margin-left: -40.5px;
+  width: 81px;
+  height: 81px;
+  border: 7px double;
+  border-radius: 50%;
+  border-color: transparent #b17d0c #737373;
+  -webkit-animation: cssload-spin 1410ms infinite linear;
+  animation: cssload-spin 1410ms infinite linear; }
   @media only screen and (min-width: 1441px) {
-    #loader {
-      margin-top: -50px;
-      margin-left: -50px;
-      width: 100px;
-      height: 100px; } }
+    .b-loader {
+      margin-top: -81px;
+      margin-left: -81px;
+      width: 162px;
+      height: 162px; } }
 
-@-webkit-keyframes arrow-spin {
-  50% {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg); } }
+@keyframes cssload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
-@keyframes arrow-spin {
-  50% {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg); } }
+@-webkit-keyframes cssload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 .l-stick-menu {
   position: fixed;
