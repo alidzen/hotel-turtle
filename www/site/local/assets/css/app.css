@@ -6221,113 +6221,49 @@ select {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); } }
 
-.b-feature__item-img_img_bed {
+.b-feature__item-img_img_fan, .b-feature__item-img_img_eco, .b-feature__item-img_img_bed, .b-feature__item-img_img_window, .b-feature__item-img_img_eat, .b-feature__item-img_img_wi-fi {
   position: relative; }
-.b-feature__item-img_img_bed:after {
-  background-image: url("../img/sprites.png");
-  background-position: -106px -146px;
-  width: 52px;
-  height: 57px;
+.b-feature__item-img_img_fan:after, .b-feature__item-img_img_eco:after, .b-feature__item-img_img_bed:after, .b-feature__item-img_img_window:after, .b-feature__item-img_img_eat:after, .b-feature__item-img_img_wi-fi:after {
   content: '';
   position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   top: 50%;
   left: 50%;
-  margin-top: -28.5px;
-  margin-left: -26px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-feature__item-img_img_bed:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
-.b-feature__item-img_img_window {
-  position: relative; }
-.b-feature__item-img_img_window:after {
-  background-image: url("../img/sprites.png");
-  background-position: -163px -122px;
-  width: 71px;
-  height: 66px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -33px;
-  margin-left: -35.5px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-feature__item-img_img_window:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
-
-.b-feature__item-img_img_fan {
-  position: relative; }
 .b-feature__item-img_img_fan:after {
-  background-image: url("../img/sprites.png");
-  background-position: 0px -270px;
   width: 59px;
   height: 41px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -20.5px;
-  margin-left: -29.5px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-feature__item-img_img_fan:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
+  background-image: url("../img/icons/fan.svg"); }
 
-.b-feature__item-img_img_eat {
-  position: relative; }
-.b-feature__item-img_img_eat:after {
-  background-image: url("../img/sprites.png");
-  background-position: -106px -90px;
-  width: 54px;
-  height: 55px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -27.5px;
-  margin-left: -27px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-feature__item-img_img_eat:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
-
-.b-feature__item-img_img_wi-fi {
-  position: relative; }
-.b-feature__item-img_img_wi-fi:after {
-  background-image: url("../img/sprites.png");
-  background-position: 0px -217px;
-  width: 62px;
-  height: 52px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -26px;
-  margin-left: -31px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-feature__item-img_img_wi-fi:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
-
-.b-feature__item-img_img_eco {
-  position: relative; }
 .b-feature__item-img_img_eco:after {
-  background-image: url("../img/sprites.png");
-  background-position: -331px 0px;
   width: 45px;
   height: 61px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -30.5px;
-  margin-left: -22.5px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-feature__item-img_img_eco:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
+  background-image: url("../img/icons/eco.svg"); }
+
+.b-feature__item-img_img_bed:after {
+  width: 52px;
+  height: 57px;
+  background-image: url("../img/icons/bed.svg"); }
+
+.b-feature__item-img_img_window:after {
+  width: 71px;
+  height: 66px;
+  background-image: url("../img/icons/window.svg"); }
+
+.b-feature__item-img_img_eat:after {
+  width: 54px;
+  height: 55px;
+  background-image: url("../img/icons/eat.svg"); }
+
+.b-feature__item-img_img_wi-fi:after {
+  width: 62px;
+  height: 52px;
+  background-image: url("../img/icons/wi-fi.svg"); }
 
 .b-room {
   position: relative;

@@ -1,18 +1,74 @@
+%b-feature-icons {
+    position: relative;
 
-$images: 'bed', 'window', 'fan', 'eat', 'wi-fi', 'eco';
-@each $image in $images {
-    .b-feature__item-img_img_#{$image} {
-        position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
-        &:after {
-            $img: 'i-#{$image}';
-            @include sprite($img);
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-top: - (sprite-height($img) / 2);
-            margin-left: - (sprite-width($img) / 2);
-        }
+.b-feature__item-img_img_fan {
+    @extend %b-feature-icons;
+
+    &:after {
+        width: 59px;
+        height: 41px;
+        background-image: url('/img/icons/fan.svg');
+    }
+}
+
+.b-feature__item-img_img_eco {
+    @extend %b-feature-icons;
+
+    &:after {
+        width: 45px;
+        height: 61px;
+        background-image: url('/img/icons/eco.svg');
+    }
+}
+
+.b-feature__item-img_img_bed {
+    @extend %b-feature-icons;
+
+    &:after {
+        width: 52px;
+        height: 57px;
+        background-image: url('/img/icons/bed.svg');
+    }
+}
+
+.b-feature__item-img_img_window {
+    @extend %b-feature-icons;
+
+    &:after {
+        width: 71px;
+        height: 66px;
+        background-image: url('/img/icons/window.svg');
+    }
+}
+
+.b-feature__item-img_img_eat {
+    @extend %b-feature-icons;
+
+    &:after {
+        width: 54px;
+        height: 55px;
+        background-image: url('/img/icons/eat.svg');
+    }
+}
+
+.b-feature__item-img_img_wi-fi {
+    @extend %b-feature-icons;
+
+    &:after {
+        width: 62px;
+        height: 52px;
+        background-image: url('/img/icons/wi-fi.svg');
     }
 }
