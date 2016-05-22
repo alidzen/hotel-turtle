@@ -575,12 +575,12 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   .b-nav_theme_popup .b-nav__link, .b-menu-lang_theme_popup .b-menu-lang__link,
   .f-nav-link-stick {
     font-size: 28px;
-    line-height: 36px; } }
+    line-height: 44px; } }
 @media only screen and (min-width: 1921px) {
   .b-nav_theme_popup .b-nav__link, .b-menu-lang_theme_popup .b-menu-lang__link,
   .f-nav-link-stick {
-    font-size: 28px;
-    line-height: 38px; } }
+    font-size: 30px;
+    line-height: 48px; } }
 
 .b-gallery__ttl,
 .f-special {
@@ -5698,6 +5698,9 @@ select {
 .b-nav_theme_popup .b-nav__item {
   padding-top: 5px;
   padding-bottom: 5px; }
+
+.b-nav_theme_popup .b-nav__link {
+  display: inline-block; }
 
 .b-menu-logo {
   text-align: center; }

@@ -88,5 +88,6 @@ $item-height-popup: 56px;
 
     .b-nav__link {
         @extend %f-nav-link-stick;
+        display: inline-block;
     }
 }
