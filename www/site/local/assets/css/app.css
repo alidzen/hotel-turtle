@@ -703,13 +703,13 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
     font-size: 16px;
     line-height: 24px; } }
 
-.headlines, .b-service__ttl-note_font-size_small,
+.headlines,
 .f-headlines-text {
   font-size: 21px;
   line-height: 30px;
   font-family: "ArnoPro-BoldItalic", sans-serif; }
 @media only screen and (min-width: 1025px) {
-  .headlines, .b-service__ttl-note_font-size_small,
+  .headlines,
   .f-headlines-text {
     font-size: 24px;
     line-height: 32px; } }
@@ -776,6 +776,22 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   .b-room-list__item-txt,
   .f-room-list {
     font-size: 16px;
+    line-height: 24px; } }
+
+.b-service__ttl-note_font-size_small,
+.f-cite-note {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "ArnoPro-BoldItalic", sans-serif; }
+@media only screen and (min-width: 1025px) {
+  .b-service__ttl-note_font-size_small,
+  .f-cite-note {
+    font-size: 18px;
+    line-height: 24px; } }
+@media only screen and (min-width: 1441px) {
+  .b-service__ttl-note_font-size_small,
+  .f-cite-note {
+    font-size: 22px;
     line-height: 24px; } }
 
 small {
