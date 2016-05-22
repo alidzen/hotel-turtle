@@ -220,13 +220,6 @@ $gallery-dots-frame-height: 30px !default;
     border-width: 0;
 }
 
-// Custom style for slide with special propose
-.fotorama__nav__frame--dot:nth-child(5) {
-    .fotorama__dot {
-        background-color: rgba($red, .6);
-    }
-}
-
 .fotorama__nav__frame.fotorama__active .fotorama__dot {
     background-color: $green;
     width: $gallery-dots-size + 2;
@@ -298,5 +291,14 @@ $gallery-dots-frame-height: 30px !default;
 .b-gallery_theme_room {
     .fotorama__nav {
         bottom: 10px;
+    }
+}
+
+.b-gallery_theme_home {
+    // Custom style for slide with special propose
+    .fotorama__nav__frame--dot:nth-child(5) {
+        .fotorama__dot {
+            background-color: rgba($red, .6);
+        }
     }
 }

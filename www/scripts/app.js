@@ -415,9 +415,12 @@ define('app', [
         var $param = $gallery.children('.b-gallery__base');
 
         if (matchMedia('only screen and (max-width: 640px)').matches) {
-            // calculate height for block
 
             $param.data('height', 400);
+        } else if ($gallery.hasClass('j-gallery_theme_tablet') &&
+            matchMedia('only screen and (max-width: 1024px)').matches)
+        {
+            $param.data('height', 600);
         }
     })($('.j-gallery_theme_mobile'));
 

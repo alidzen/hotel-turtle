@@ -14,7 +14,7 @@ block content
     .l-main-wrap
         section.l-article.l-limit-wrap.no-padding
             .l-article__cnt
-                .b-card
+                .b-card.b-card_theme_gallery
                     .b-card__border
                         .b-card__cnt
                             .b-card__header
@@ -22,8 +22,27 @@ block content
                             .b-card__descr
                                 p Отель "Ахиллес и Черепаха" расположен в историческом центре Петербурга, полном своих историй и легенд. Улица Достоевского –  одно из тихих мест центрального района города – берет свое начало у Владимирского собора, являющегося архитектурным памятником второй половины XVIII века. На собор выходят окна квартиры Ф.М. Достоевского – именно тут было написано последнее произведение автора – роман "Братья Карамазовы". Сейчас в этом здании находится литературно-мемориальный музей писателя.
                                 p На улице Достоевского можно увидеть множество старинных домов, построенных еще в XIX веке. В одном из них и разместился бутик-отель "Ахиллес и Черепаха".
-                        a(href="/html/cafe.html").b-card__gallery
-                            .b-card__gallery-img(style="background-image: url('/img/atmosphere-bg-2.jpg');")
+                        .b-card__gallery
+                            .b-gallery.j-gallery.j-gallery_theme_mobile.j-gallery_theme_tablet
+                                .b-gallery__base(
+                                data-height="800"
+                                data-width="100%"
+                                data-arrows="false"
+                                data-nav="dots"
+                                data-fit="cover"
+                                data-loop="true"
+                                data-autoplay="false"
+                                data-transition="dissolve"
+                                data-transitionduration="600"
+                                data-margin="-1")
+                                    a(href="/img/card/card-2.jpg")
+                                    a(href="/img/card/card-3.jpg")
+                                    a(href="/img/card/card-4.jpg")
+                                    a(href="/img/card/card-5.jpg")
+                                    a(href="/img/card/card-6.jpg")
+
+                                a(href="javascript:;").j-gallery__prev.b-gallery__arrow.b-gallery__arrow_show_prev Показать предыдущий слайд
+                                a(href="javascript:;").j-gallery__next.b-gallery__arrow.b-gallery__arrow_show_next Показать следущий слайд
         section.l-services
             .l-services__tiles.l-limit-wrap.no-padding
                 .l-services__tile.l-services__tile_numb_9

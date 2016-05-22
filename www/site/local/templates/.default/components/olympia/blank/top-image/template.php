@@ -1,7 +1,7 @@
 <?if($arResult['ITEMS'] !== NULL):?>
 <div class="l-header__gallery">
 	<?if(count($arResult['ITEMS'])>1):?>
-	<div class="b-gallery j-gallery">
+	<div class="b-gallery b-gallery_theme_home j-gallery">
 		<div data-height="100%" data-width="100%" data-arrows="false" data-nav="dots" data-fit="cover" data-loop="true" data-autoplay="false" data-transition="dissolve" data-transitionduration="600" data-margin="-1" class="b-gallery__base">
 			<?foreach($arResult['ITEMS'] as $arItem):?>
 				<?if($arItem['ACTION'] !== NULL):?>
