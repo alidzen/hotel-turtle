@@ -163,7 +163,7 @@ $APPLICATION->SetTitle("Номера");
 	<div class="l-article__cnt">
 		<div class="b-article b-article_theme_gold b-article_theme_border-scheme_4">
 			<div class="b-article__border">
-				<div class="b-article__img-wrap"><img src="/local/assets/img/feature-2.svg" alt="Зарисовка дома Ф.М. Достоевского"></div>
+				<div class="b-article__img-wrap"><img src="/local/assets/img/feature-3.svg" alt="Зарисовка дома Ф.М. Достоевского"></div>
 				<div class="b-article__cnt b-typo-reset">
 					<?$APPLICATION->IncludeFile(
 						'/local/area/' . LANGUAGE_ID . '/rooms-about_rooms-txt.php',

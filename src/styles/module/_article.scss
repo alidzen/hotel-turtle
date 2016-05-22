@@ -248,14 +248,14 @@
             position: absolute;
             bottom: rhythm(2) - 2px;
             left: 0;
-            background-color: $green;
+            background-color: $gold;
             width: 55%;
             height: 2px;
         }
     }
 
     .b-article__border {
-        border-color: $green;
+        border-color: $gold;
 
         @media #{$big-up} {
             border-right-width: 0;
@@ -268,7 +268,7 @@
                 position: absolute;
                 top: - 2px;
                 right: - 2px;
-                background-color: $green;
+                background-color: $gold;
                 width: 2px;
                 height: 35px;
             }

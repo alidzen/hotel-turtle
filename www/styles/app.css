@@ -6691,11 +6691,11 @@ select {
       position: absolute;
       bottom: 46px;
       left: 0;
-      background-color: #005870;
+      background-color: #b17d0c;
       width: 55%;
       height: 2px; } }
   .b-article_theme_border-scheme_4 .b-article__border {
-    border-color: #005870; }
+    border-color: #b17d0c; }
     @media only screen and (min-width: 1025px) {
       .b-article_theme_border-scheme_4 .b-article__border {
         border-right-width: 0;
@@ -6706,7 +6706,7 @@ select {
         position: absolute;
         top: -2px;
         right: -2px;
-        background-color: #005870;
+        background-color: #b17d0c;
         width: 2px;
         height: 35px; } }
 
