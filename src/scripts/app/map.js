@@ -131,8 +131,8 @@ define([
             animation: google.maps.Animation.DROP,
             icon     : {
                 url: data.image,
-                size : new google.maps.Size(150, 130),
-                anchor: new google.maps.Point(75, 130)
+                size : new google.maps.Size(60, 90),
+                anchor: new google.maps.Point(30, 90)
             }
         };
 
