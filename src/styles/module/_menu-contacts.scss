@@ -11,6 +11,7 @@
 .b-menu-contacts__map {
     @extend %b-top-dash;
     @extend %f-menu-contact;
+    @include margin-trailer(.5);
     display: block;
     color: $black-2;
 

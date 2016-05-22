@@ -157,8 +157,6 @@ define('app', [
             $activeLine.css({
                 width: fullLinkWidth
             });
-            // создать кастомное событие.
-            $(window).triggerHandler('scrollTotMap');
         }, 600);
     };
 
@@ -398,63 +396,6 @@ define('app', [
         });
     })($('.j-scroll-down'));
 
-    // to top right away
-    if (window.location.hash) scroll(0,0);
-    // void some browsers issue
-    setTimeout( function() { scroll(0,0); }, 1);
-
-    (function($mapAnchor) {
-        if (!$mapAnchor.length) {
-            return;
-        }
-
-        $mapAnchor.click(function(e) {
-            if ($mapAnchor.attr('href') === '#map-content') {
-                e.preventDefault();
-                $burgerBtn.click();
-
-                // после скрытия меню
-                setTimeout(function () {
-                    $('html, body').animate({
-                        scrollTop: $('#map-content').offset().top - 80
-                    }, 500, 'swing');
-                }, 300);
-            }
-        });
-    })($('.j-stick-map-anchor'));
-
-    // Плавный скролл к карте, если приходим по ссылке
-    if(window.location.hash === '#map-target') {
-        $(window).one('scrollTotMap', function() {
-
-            $('html, body').animate({
-                scrollTop: $('#map-content').offset().top - 80
-            }, 500, 'swing');
-
-            // Загрузка карты после скролла к ней (уменьшаем нагрузку)
-            setTimeout(function() {
-                $(window).triggerHandler('mapInitiate');
-            }, 300);
-        });
-
-        $(window).one('mapInitiate', function() {
-
-            //Инициализация карты
-            (function($maps) {
-                if (!$maps.length) {
-                    return;
-                }
-
-                require(['app/map'], function(Map) {
-                    $maps.each(function() {
-                        var $map = $(this);
-                        return new Map($map);
-                    });
-                });
-            })($('.j-map'));
-        });
-    }
-
     // плавный скролл у якорей
     $('a[href^="#"]').bind('click.smoothscroll', function(e) {
         e.preventDefault();
@@ -467,6 +408,47 @@ define('app', [
             window.location.hash = target;
         });
     });
+
+    //Подключение попапа с картой
+    //Инициализация карты при открытие попапа
+    (function($popup) {
+        if (!$popup.length) {
+            return;
+        }
+
+        require(['magnific-popup'], function() {
+            $popup.each(function() {
+                var $popup = $(this);
+                var isOpened = 0;
+
+                $popup.magnificPopup({
+                    type: 'inline',
+                    callbacks: {
+                        beforeOpen: function() {
+                            if (isOpened > 0) {
+                                return;
+                            }
+                            require(['app/map'], function(Map) {
+                                var $map = $('.j-map');
+                                var id   = $map.attr('id');
+
+                                var data =
+                                    (id &&
+                                    window.map &&
+                                    window.map[id]) ?
+                                        window.map[id] :
+                                    {};
+
+                                return new Map($map, data);
+                            });
+                            // Каждый раз карта не будет инициализироваться.
+                            isOpened = 1;
+                        }
+                    }
+                });
+            });
+        });
+    })($('.j-map-popup'));
 
     return {};
 });

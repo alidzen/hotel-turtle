@@ -133,9 +133,8 @@
                         </div>
                         <div class="l-stick-menu__popup_contacts">
                             <div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a>
-                                <!-- Программисту: На странице контактов меняется href на #map-content--><a href="/html/contacts.html#map-target" class="b-menu-contacts__map j-stick-map-anchor">
-                  г. Санкт-Петербург,
-                  ул. Достоевского, 19/21, лит. Б</a> </div>
+                                <!-- Программисту: На странице контактов меняется href на #map-content-->
+                                <div class="b-menu-contacts__map"> г. Санкт-Петербург, ул. Достоевского, 19/21, лит. Б </div><a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a> </div>
                         </div>
                     </div>
                 </div>
@@ -214,9 +213,8 @@
                         </div>
                         <div class="l-menu__contacts">
                             <div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a>
-                                <!-- на странице контактов у адреса подменяется ссылка--><a href="/html/contacts.html#map-target" class="b-menu-contacts__map">
-                  г. Санкт-Петербург
-                  <br>ул. Достоевского, 19/21, лит. Б</a> </div>
+                                <!-- на странице контактов у адреса подменяется ссылка-->
+                                <div class="b-menu-contacts__map"> г. Санкт-Петербург <br>ул. Достоевского, 19/21, лит. Б </div><a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a> </div>
                         </div>
                         <div class="l-menu__lang">
                             <div class="b-menu-lang"><a href="/" class="b-menu-lang__link is-active">ru</a><a href="/" class="b-menu-lang__link">en</a></div>
@@ -301,9 +299,8 @@
                                     </div>
                                 </div>
                                 <div class="l-footer__col">
-                                    <div class="b-menu-contacts b-menu-contacts_theme_footer"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a><a href="/html/contacts.html#map-target" class="b-menu-contacts__map">
-                      г. Санкт-Петербург
-                      <br><span class="no-wrap">ул. Достоевского, 19/21, лит. Б</span></a></div>
+                                    <div class="b-menu-contacts b-menu-contacts_theme_footer"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a>
+                                        <div class="b-menu-contacts__map"> г. Санкт-Петербург <br><span class="no-wrap">ул. Достоевского, 19/21, лит. Б</span> </div><a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a> </div>
                                 </div>
                                 <div class="l-footer__col">
                                     <a href="#" title="Игры Разума" class="b-mind-games"></a>
@@ -316,6 +313,20 @@
         </div>
         <div class="l-preloader j-loader">
             <div class="b-loader"></div>
+        </div>
+        <div id="popup-map-common" class="b-place-popup mfp-hide">
+            <div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-place-popup__map j-map">
+                <script>
+                    window.map = {}
+                    window.map['map'] = {
+                        markers: [
+                        {
+                            coords: [59.923350, 30.346303],
+                            image: '/img/markers/here.svg'
+                        }]
+                    }
+                </script>
+            </div>
         </div>
         <script src="../scripts/lib/requirejs/require.min.js" data-main="../scripts/config.js"></script>
     </body>

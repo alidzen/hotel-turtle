@@ -41,8 +41,7 @@ $btn-bg-color-disabled: #eee !default;
     };
 
     @media #{$big-up} {
-        &:hover,
-        &:focus {
+        &:hover {
             color: $btn-color-hover;
             background-color: $btn-bg-color-hover;
             border-color: $btn-bd-color-hover;
