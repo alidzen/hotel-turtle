@@ -41,9 +41,6 @@
 			</footer>
 		</section>
 	</div>
-	<div class="l-preloader j-loader">
-		<div id="loader"></div>
-	</div>
 	<div id="popup-map-common" class="b-place-popup mfp-hide">
 		<div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-place-popup__map j-map">
 			<script>
@@ -57,6 +54,9 @@
 				}
 			</script>
 		</div>
+	</div>
+	<div class="l-preloader j-loader">
+		<div id="loader"></div>
 	</div>
 	<?$APPLICATION->IncludeFile(
 			"/local/area/counters.php",
