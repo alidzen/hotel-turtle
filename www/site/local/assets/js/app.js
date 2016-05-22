@@ -432,16 +432,57 @@ define('app', [
         });
     })($('.j-scroll-down'));
 
-	window.onload = function() {
-		if (window.location.hash != '') {
-			setTimeout(function () {
-				window.scrollTo(0, 0);
+    window.onload = function() {
+        if (window.location.hash != '') {
+            setTimeout(function () {
+                window.scrollTo(0, 0);
 
-			if(window.location.hash == '#content')
-				$('.j-scroll-down').trigger('click');
-			}, 1);
-		}
-	}
+                if(window.location.hash == '#content')
+                    $('.j-scroll-down').trigger('click');
+            }, 1);
+        }
+    };
+
+    //Подключение попапа с картой
+    //Инициализация карты при открытие попапа
+    (function($popup) {
+        if (!$popup.length) {
+            return;
+        }
+
+        require(['magnific-popup'], function() {
+            $popup.each(function() {
+                var $popup = $(this);
+                var isOpened = 0;
+
+                $popup.magnificPopup({
+                    type: 'inline',
+                    callbacks: {
+                        beforeOpen: function() {
+                            if (isOpened > 0) {
+                                return;
+                            }
+                            require(['app/map'], function(Map) {
+                                var $map = $('.j-map');
+                                var id   = $map.attr('id');
+
+                                var data =
+                                    (id &&
+                                    window.map &&
+                                    window.map[id]) ?
+                                        window.map[id] :
+                                    {};
+
+                                return new Map($map, data);
+                            });
+                            // Каждый раз карта не будет инициализироваться.
+                            isOpened = 1;
+                        }
+                    }
+                });
+            });
+        });
+    })($('.j-map-popup'));
 
     return {};
 });

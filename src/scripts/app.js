@@ -33,10 +33,35 @@ define('app', [
     var $selectMenu = $navMenu.find('select');
     var $datepickerHeader = $header.find('.j-date-inp');
     var $selectHeader = $header.find('select');
+	var $bookingForm = $('.b-booking-form__form');
 
     var pos;
     // animated link after loading
     var $activeLink = $header.find('.b-nav__link.is-active');
+
+	$bookingForm.submit(function(e){
+		var BookingDfrom = $(this).find('.b-booking-form__inp').val() || null,
+			BookingDto = $(this).find('.b-booking-to__inp').val() || null;
+
+		if(BookingDfrom != null && BookingDto != null)
+		{
+			var url = 'https://wubook.net/wbkd/wbk/?lcode=1442495155&dfrom='+BookingDfrom+'&dto='+BookingDto,
+				w = 800,
+			    h = 600,
+			    left = Number((screen.width/2)-(w/2)),
+			    tops = Number((screen.height/2)-(h/2));
+
+			var newwindow = window.open(url, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+tops+', left='+left);
+
+			if (window.focus)
+			{
+				newwindow.focus()
+			}
+
+		};
+
+		e.preventDefault();
+	});
 
     $burgerBtn.click(function() {
         var $self = $(this);
@@ -137,15 +162,26 @@ define('app', [
         }
     });
 
+    var scrollToBlock = function(el, offset) {
+        if (offset === undefined)
+        	offset = 0;
+
+        var duration = 600,
+            element = $(el).offset(),
+            pos = element.top + offset;
+
+        $('html, body').animate({scrollTop: pos}, duration);
+    }
+
     // smooth hide preloader, show link
     var hidePreloader = function() {
+
         // calculate animated line after loading page
         var bulgingPart = 80;
         var linkWidth = $activeLink.width();
         var insidePart = ($('.j-header-menu').outerWidth() - linkWidth) / 2;
         var fullLinkWidth = linkWidth + insidePart + bulgingPart;
         var $activeLine = $activeLink.children('.b-nav__link-line');
-
         // hide loader
         setTimeout(function() {
             $loader.addClass('is-hide');
@@ -269,7 +305,7 @@ define('app', [
 
     //Инициализация карты
     (function($maps) {
-        if (!$maps.length || window.location.hash === '#map-target') {
+        if (!$maps.length) {
             return;
         }
 
@@ -297,9 +333,9 @@ define('app', [
                 defaultDate: '+1w',
                 minDate: 0,
                 firstDay: 0,
-                dateFormat: 'dd-mm-yy',
+                dateFormat: 'dd/mm/yy',
                 numberOfMonths: 1,
-                onClose: function() {
+                /*onClose: function() {
                     var minDate = $(this).datepicker('getDate');
                     if (minDate === null) {
                         return;
@@ -307,16 +343,16 @@ define('app', [
                     var newMin = new Date(minDate.setDate(minDate
                             .getDate() + 1));
                     $endDate.datepicker('option', 'minDate', newMin);
-                }
+                }*/
             });
 
             $endDate.datepicker({
                 defaultDate: '+1w',
                 minDate: '+1d',
                 firstDay: 0,
-                dateFormat: 'dd-mm-yy',
+                dateFormat: 'dd/mm/yy',
                 numberOfMonths: 1,
-                onClose: function() {
+                /*onClose: function() {
                     var maxDate = $(this).datepicker('getDate');
                     if (maxDate === null) {
                         return;
@@ -324,14 +360,14 @@ define('app', [
                     var newMax  = new Date(maxDate.setDate(maxDate
                             .getDate() - 1));
                     $startDate.datepicker('option', 'maxDate',  newMax);
-                }
+                }*/
             });
         });
     })($('.j-date-booking'));
 
     // resize header-menu
     (function($headerMenu) {
-        if (!$headerMenu.length) {
+        if (!$headerMenu.length || mobileWidth) {
             return;
         }
 
@@ -396,18 +432,16 @@ define('app', [
         });
     })($('.j-scroll-down'));
 
-    // плавный скролл у якорей
-    $('a[href^="#"]').bind('click.smoothscroll', function(e) {
-        e.preventDefault();
+    window.onload = function() {
+        if (window.location.hash != '') {
+            setTimeout(function () {
+                window.scrollTo(0, 0);
 
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({scrollTop: $target.offset().top - 80
-        }, 500, 'swing', function() {
-            window.location.hash = target;
-        });
-    });
+                if(window.location.hash == '#content')
+                    $('.j-scroll-down').trigger('click');
+            }, 1);
+        }
+    };
 
     //Подключение попапа с картой
     //Инициализация карты при открытие попапа
