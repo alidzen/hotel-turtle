@@ -154,3 +154,8 @@
     background: no-repeat 50% 50%;
     background-size: cover;
 }
+
+// STATE
+.b-service__ttl-note_font-size_small {
+    @extend %f-headlines-text;
+}
