@@ -2,6 +2,7 @@
     @extend %l-row;
     @include grid-clearfix();
     @include margin-trailer(2);
+    position: relative;
     background-color: $gold;
 
     @media #{$big-up} {
@@ -29,4 +30,16 @@
 .l-showcase_theme_img-bg {
     background: url('/img/atmosphere-bg.png') 100% 100% no-repeat $green;
     background-size: contain;
+
+    &:before,
+    &:after {
+        background-color: $white;
+    }
+
+    .border-horizontal {
+        &:before,
+        &:after {
+            background-color: $white;
+        }
+    }
 }

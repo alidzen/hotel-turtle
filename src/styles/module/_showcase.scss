@@ -3,6 +3,7 @@
 
 .b-showcase {
     @include padding-leader(2);
+    position: relative;
     padding: {
         right: 20px;
         left: 20px;

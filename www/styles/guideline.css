@@ -7060,6 +7060,7 @@ select {
 
 .l-showcase {
   margin-bottom: 48px;
+  position: relative;
   background-color: #b17d0c; }
   .l-showcase:after {
     content: '';
@@ -7086,9 +7087,14 @@ select {
 .l-showcase_theme_img-bg {
   background: url("/img/atmosphere-bg.png") 100% 100% no-repeat #005870;
   background-size: contain; }
+  .l-showcase_theme_img-bg:before, .l-showcase_theme_img-bg:after {
+    background-color: #fefefd; }
+  .l-showcase_theme_img-bg .border-horizontal:before, .l-showcase_theme_img-bg .border-horizontal:after {
+    background-color: #fefefd; }
 
 .b-showcase {
   padding-top: 48px;
+  position: relative;
   padding-right: 20px;
   padding-left: 20px; }
   @media only screen and (min-width: 641px) {

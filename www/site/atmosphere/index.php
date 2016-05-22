@@ -94,8 +94,8 @@ $APPLICATION->SetTitle("Атмосфера");
 		</div>
 	</div>
 </section>
-<section class="l-showcase l-showcase_theme_img-bg">
-<div class="l-showcase__descr">
+<section class="l-showcase l-showcase_theme_img-bg border-vertical">
+<div class="l-showcase__descr border-horizontal">
 	<div class="b-showcase b-showcase_theme_atmosphere">
 		<div class="b-showcase__cnt">
 			<div class="b-showcase__header">
