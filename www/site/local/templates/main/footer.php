@@ -40,19 +40,19 @@
 				</div>
 			</footer>
 		</section>
-	</div>
-	<div id="popup-map-common" class="b-place-popup mfp-hide">
-		<div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-place-popup__map j-map">
-			<script>
-				window.map = {}
-				window.map['map'] = {
-					markers: [
-						{
-							coords: [59.923350, 30.346303],
-							image: '/img/markers/here.svg'
-						}]
-				}
-			</script>
+		<div id="popup-map-common" class="b-place-popup mfp-hide">
+			<div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-place-popup__map j-map">
+				<script>
+					window.map = {}
+					window.map['map'] = {
+						markers: [
+							{
+								coords: [59.923350, 30.346303],
+								image: '/img/markers/here.svg'
+							}]
+					}
+				</script>
+			</div>
 		</div>
 	</div>
 	<div class="l-preloader j-loader">
