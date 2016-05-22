@@ -81,7 +81,7 @@ $APPLICATION->SetTitle("Атмосфера");
 				</div>
 			</div>
 		</div>
-		<div class="l-services__tile l-services__tile_numb_11">
+		<div class="l-services__tile l-services__tile_numb_11 hide-on-tablet">
 			<div class="b-service">
 				<div class="b-service__header">
 					<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Чего ловить в Петербурге — не очень  понятно. Это не скажешь словами. Это либо чувствуешь всей кожей, либо никогда не объяснишь, о чем речь.</div>
