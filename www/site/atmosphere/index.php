@@ -60,9 +60,9 @@ $APPLICATION->SetTitle("Атмосфера");
 		<div class="l-services__tile l-services__tile_numb_9">
 			<div class="b-service">
 				<div class="b-service__header">
-					<div class="b-service__ttl-note">Вызов такси</div>
+					<div class="b-service__ttl-note">Петербург уже давно<br/> описан, а что не описано,<br/> то надо видеть самому.</div>
 				</div>
-				<p>По вашей просьбе персонал отеля бесплатно вызовет такси из отеля в любую точку города.</p>
+				<p>И. Гончаров</p>
 				<div class="b-service__img-wrap">
 					<div style="background-image: url('/local/assets/img/services/service-7.jpg');" class="b-service__img"></div>
 				</div>
@@ -72,9 +72,9 @@ $APPLICATION->SetTitle("Атмосфера");
 			<div class="b-service has-lines">
 				<div class="b-service__border">
 					<div class="b-service__header">
-						<div class="b-service__ttl-note">Чай/кофе в номер</div>
+						<div class="b-service__ttl-note">Пушкин. Тютчев. Некрасов. Блок.<br/>Ахматова. Мандельштам…<br/>Это всё — псевдонимы. <br/> Автор — Петербург..</div>
 					</div>
-					<p>По вашей просьбе персонал отеля принесет в номер горячий чай или кофе.</p>
+					<p>Л. Чуковская</p>
 				</div>
 				<div class="b-service__img-wrap">
 					<div style="background-image: url('/local/assets/img/services/service-8.jpg');" class="b-service__img"></div>
@@ -84,9 +84,9 @@ $APPLICATION->SetTitle("Атмосфера");
 		<div class="l-services__tile l-services__tile_numb_11">
 			<div class="b-service">
 				<div class="b-service__header">
-					<div class="b-service__ttl-note">Завтрак в номер</div>
+					<div class="b-service__ttl-note">Чего ловить в Петербурге — не очень  понятно. Это не скажешь словами. Это либо чувствуешь всей кожей, либо никогда не объяснишь, о чем речь.</div>
 				</div>
-				<p>Мы можем доставить континентальный завтрак от нашего шеф-повара прямо в номере и в удобное для вас время.</p>
+				<p>И. Стогoff</p>
 				<div class="b-service__img-wrap">
 					<div style="background-image: url('/local/assets/img/services/service-9.jpg');" class="b-service__img"></div>
 				</div>
