@@ -29,7 +29,9 @@ $APPLICATION->SetTitle("Атмосфера");
 		</div>
 	</div>
 </div>
- </section> <section style="background-image: url('/local/assets/img/atmosphere-bg-3.jpg');" class="l-showcase-full">
+ </section>
+<!-- old variant-->
+<!--<section style="background-image: url('/local/assets/img/atmosphere-bg-3.jpg');" class="l-showcase-full">
 <div class="l-showcase-full__border">
 	<div class="l-showcase-full__row">
 		<div class="l-showcase-full__cnt">
@@ -52,7 +54,46 @@ $APPLICATION->SetTitle("Атмосфера");
 		</div>
 	</div>
 </div>
- </section> 
+ </section>-->
+<section class="l-services">
+	<div class="l-services__tiles l-limit-wrap no-padding">
+		<div class="l-services__tile l-services__tile_numb_9">
+			<div class="b-service">
+				<div class="b-service__header">
+					<div class="b-service__ttl-note">Вызов такси</div>
+				</div>
+				<p>По вашей просьбе персонал отеля бесплатно вызовет такси из отеля в любую точку города.</p>
+				<div class="b-service__img-wrap">
+					<div style="background-image: url('/local/assets/img/services/service-7.jpg');" class="b-service__img"></div>
+				</div>
+			</div>
+		</div>
+		<div class="l-services__tile l-services__tile_numb_10">
+			<div class="b-service has-lines">
+				<div class="b-service__border">
+					<div class="b-service__header">
+						<div class="b-service__ttl-note">Чай/кофе в номер</div>
+					</div>
+					<p>По вашей просьбе персонал отеля принесет в номер горячий чай или кофе.</p>
+				</div>
+				<div class="b-service__img-wrap">
+					<div style="background-image: url('/local/assets/img/services/service-8.jpg');" class="b-service__img"></div>
+				</div>
+			</div>
+		</div>
+		<div class="l-services__tile l-services__tile_numb_11">
+			<div class="b-service">
+				<div class="b-service__header">
+					<div class="b-service__ttl-note">Завтрак в номер</div>
+				</div>
+				<p>Мы можем доставить континентальный завтрак от нашего шеф-повара прямо в номере и в удобное для вас время.</p>
+				<div class="b-service__img-wrap">
+					<div style="background-image: url('/local/assets/img/services/service-9.jpg');" class="b-service__img"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <section class="l-showcase l-showcase_theme_img-bg">
 <div class="l-showcase__descr">
 	<div class="b-showcase b-showcase_theme_atmosphere">
