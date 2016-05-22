@@ -18,7 +18,10 @@ $this->setFrameMode(true);
 		<?if($i%2):?>
 		<section class="l-actions-showcase">
 			<div style="background-color: #b17d0c;" class="l-actions-showcase__row l-actions-showcase__row_theme_big-img">
-				<a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="l-actions-showcase__img"><img src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>" alt="<?=$arItem['NAME'];?>"></a>
+				<a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="l-actions-showcase__img border-vertical">
+					<img src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>" alt="<?=$arItem['NAME'];?>">
+					<div class="l-actions-showcase__img-wrap border-horizontal"></div>
+				</a>
 				<div class="l-actions-showcase__cnt">
 					<div class="b-actions-showcase">
 						<div class="b-actions-showcase__cnt">
@@ -50,7 +53,10 @@ $this->setFrameMode(true);
 						</div>
 					</div>
 				</div>
-				<a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="l-actions-showcase__img"><img src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>" alt="<?=$arItem['NAME'];?>"></a>
+				<a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="l-actions-showcase__img border-vertical">
+					<img src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>" alt="<?=$arItem['NAME'];?>">
+					<div class="l-actions-showcase__img-wrap border-horizontal"></div>
+				</a>
 			</div>
 		</section>
 		<?endif;?>
