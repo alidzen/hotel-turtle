@@ -1,0 +1,84 @@
+.bx-core-window *, .bx-core-window *:before, .bx-core-window *:after, #bx-panel *, #bx-panel *:before, #bx-panel *:after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: border-box;
+	box-sizing: content-box;
+}
+
+.bx-core-window img, .bx-core-window object, .bx-core-window embed {
+	max-width: inherit;
+}
+
+.bx-core-adm-dialog textarea {
+	line-height: normal !important;
+}
+
+#bx-panel a {
+	color: inherit;
+	-moz-transition: inherit;
+	-webkit-transition: inherit;
+	-o-transition: inherit;
+	-ms-transition: inherit;
+	transition: inherit;
+}
+
+#bx-panel a:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.bx-core-window input[type="text"], .bx-core-window input[type="password"], .bx-core-window input[type="date"], .bx-core-window input[type="datetime"], .bx-core-window input[type="email"], .bx-core-window input[type="number"], .bx-core-window input[type="search"], .bx-core-window input[type="tel"], .bx-core-window input[type="time"], .bx-core-window input[type="url"], .bx-core-window textarea, .bx-core-window select {
+	display: inline;
+	width: auto;
+}
+
+#bx-panel {
+	position: absolute !important;
+    width: 100% !important;
+}
+
+body #bx-panel, body #bx-panel * {
+	box-shadow: none !important;
+}
+
+#bx-panel #bx-panel-top .adm-header-notif-block {
+	display: none !important;
+}
+
+body .bx-core-adm-dialog, body .bx-core-adm-dialog a, body .bx-core-adm-dialog span, body .bx-core-adm-dialog div {
+	vertical-align: middle;
+	font-weight: normal !important;
+}
+
+.bx-core-window input[type="radio"]:enabled, .bx-core-window input[type="checkbox"]:enabled {
+	position: static;
+	opacity: 1;
+}
+
+.bx-core-window textarea {
+	min-height: 1px!important;
+	max-height: none!important;
+}
+
+.popup-wrap {
+	display: block;
+}
+
+.l-booking-rooms {
+	margin-bottom: 20px !important;
+}
+
+.b-nav__link-line {
+	display: none;
+}
+
+.b-nav__link.is-active::after {
+	width: 100%;
+}
+
+.b-feature__cnt:before, .b-feature__cnt:after {
+	position: inherit;
+}
+
+.b-btn_text_sise_2 {
+	font-size: 13px;
+}
