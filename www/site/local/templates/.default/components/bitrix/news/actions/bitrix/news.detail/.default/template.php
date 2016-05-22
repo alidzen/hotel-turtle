@@ -188,10 +188,12 @@ $this->setFrameMode(true);
 					</div>
 				</div>
 				<div class="l-stick-menu__popup_contacts">
-					<div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a><a
-							href="javascript:;" class="b-menu-contacts__map">
-							г. Санкт-Петербург,
-							ул. Достоевского, 19/21, лит. Б</a></div>
+					<div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a>
+						<div class="b-menu-contacts__map">
+							г. Санкт-Петербург, ул. Достоевского, 19/21, лит. Б
+						</div>
+						<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -297,10 +299,12 @@ $this->setFrameMode(true);
 					); ?>
 				</div>
 				<div class="l-menu__contacts">
-					<div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a><a
-							href="#" class="b-menu-contacts__map">
-							г. Санкт-Петербург
-							<br>ул. Достоевского, 19/21, лит. Б</a></div>
+					<div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a>
+						<div class="b-menu-contacts__map">
+							г. Санкт-Петербург, ул. Достоевского, 19/21, лит. Б
+						</div>
+						<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+					</div>
 				</div>
 				<div class="l-menu__lang">
 					<div class="b-menu-lang">
@@ -450,13 +454,15 @@ $this->setFrameMode(true);
 									Array(),
 									Array('MODE' => 'html')
 								);?>
-								<a href="/contacts/" class="b-menu-contacts__map">
+								<div class="b-menu-contacts__map">
 									<?$APPLICATION->IncludeFile(
-										'/local/area/' . LANGUAGE_ID . '/address-2.php',
-										Array(),
-										Array('MODE' => 'html')
+									'/local/area/' . LANGUAGE_ID . '/address-2.php',
+									Array(),
+									Array('MODE' => 'html')
 									);?>
 								</div>
+								<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+							</div>
 						</div>
 						<div class="l-footer__col">
 							<a href="http://brain-games.ru/" title="Игры Разума" class="b-mind-games"></a>

@@ -22,13 +22,15 @@
 										Array(),
 										Array('MODE' => 'html')
 									);?>
-									<a href="/contacts/" class="b-menu-contacts__map">
+									<div class="b-menu-contacts__map">
 										<?$APPLICATION->IncludeFile(
-											'/local/area/' . LANGUAGE_ID . '/address-2.php',
-											Array(),
-											Array('MODE' => 'html')
+										'/local/area/' . LANGUAGE_ID . '/address-2.php',
+										Array(),
+										Array('MODE' => 'html')
 										);?>
 									</div>
+									<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+								</div>
 							</div>
 							<div class="l-footer__col">
 								<a href="http://brain-games.ru/" title="Игры Разума" class="b-mind-games"></a>
@@ -42,6 +44,20 @@
 	<div class="l-preloader j-loader">
 		<div id="loader"></div>
 	</div>
+		<div id="popup-map-common" class="b-place-popup mfp-hide">
+			<div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-place-popup__map j-map">
+				<script>
+					window.map = {}
+					window.map['map'] = {
+						markers: [
+							{
+								coords: [59.923350, 30.346303],
+								image: '/img/markers/here.svg'
+							}]
+					}
+				</script>
+			</div>
+		</div>
 	<?$APPLICATION->IncludeFile(
 			"/local/area/counters.php",
 			Array(),

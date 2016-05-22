@@ -148,13 +148,14 @@
 								Array(),
 								Array('MODE' => 'html')
 							);?>
-							<a href="/contacts/#content" class="b-menu-contacts__map">
+							<div class="b-menu-contacts__map">
 								<?$APPLICATION->IncludeFile(
-									'/local/area/' . LANGUAGE_ID .'/address.php',
-									Array(),
-									Array('MODE' => 'html')
+								'/local/area/' . LANGUAGE_ID .'/address.php',
+								Array(),
+								Array('MODE' => 'html')
 								);?>
-							</a>
+							</div>
+							<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
 						</div>
 					</div>
 				</div>
@@ -243,13 +244,14 @@
 								Array(),
 								Array('MODE' => 'html')
 							);?>
-							<a href="/contacts/#content" class="b-menu-contacts__map">
+							<div class="b-menu-contacts__map">
 								<?$APPLICATION->IncludeFile(
-									'/local/area/' . LANGUAGE_ID .'/address.php',
-									Array(),
-									Array('MODE' => 'html')
+								'/local/area/' . LANGUAGE_ID .'/address.php',
+								Array(),
+								Array('MODE' => 'html')
 								);?>
-							</a>
+							</div>
+							<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
 						</div>
 					</div>
 					<div class="l-menu__lang">
