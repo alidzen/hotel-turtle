@@ -42,4 +42,12 @@
             background-color: $white;
         }
     }
+
+    .b-gallery__arrow_show_prev {
+        left: gutter(4.5);
+    }
+
+    .b-gallery__arrow_show_next {
+        right: gutter(4.5);
+    }
 }

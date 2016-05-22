@@ -3929,7 +3929,7 @@ blockquote {
         left: 0; } }
 
 .l-services__tile_numb_6 {
-  background-color: #f0eeeb; }
+  background-color: #d3d3d3; }
   .l-services__tile_numb_6 .b-service {
     padding-bottom: 225px; }
   @media only screen and (max-width: 640px) {
@@ -3958,7 +3958,7 @@ blockquote {
         height: 225px; } }
 
 .l-services__tile_numb_7 {
-  background-color: #f0eeeb; }
+  background-color: #d3d3d3; }
   .l-services__tile_numb_7 .b-service {
     padding-left: 20px; }
   .l-services__tile_numb_7 .b-service__cnt {
@@ -7120,6 +7120,10 @@ select {
     background-color: #fefefd; }
   .l-showcase_theme_img-bg .border-horizontal:before, .l-showcase_theme_img-bg .border-horizontal:after {
     background-color: #fefefd; }
+  .l-showcase_theme_img-bg .b-gallery__arrow_show_prev {
+    left: 45px; }
+  .l-showcase_theme_img-bg .b-gallery__arrow_show_next {
+    right: 45px; }
 
 .b-showcase {
   padding-top: 48px;

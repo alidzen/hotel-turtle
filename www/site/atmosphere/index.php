@@ -189,7 +189,7 @@ $APPLICATION->SetTitle("Атмосфера");
 			);?>
 		</div>
 		<div class="b-propose__btn">
- <a href="/rooms/" class="b-btn b-btn_width_auto">
+ <a href="/rooms/" class="b-btn b-btn_width_auto b-btn_text_sise_2">
 			<?$APPLICATION->IncludeFile(
 					'/local/area/' . LANGUAGE_ID . '/atmosphere-propose-btn-text.php',
 					Array(),
