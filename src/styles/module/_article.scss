@@ -26,6 +26,7 @@
     }
 
     @media #{$big-up} {
+        height: calc(100% - 96px); // - padding
         width: 60%;
         right: 50%;
         left: auto;
@@ -33,6 +34,7 @@
 
         img {
             min-width: inherit;
+            max-height: 100%;
         }
     }
 }

@@ -75,3 +75,8 @@ textarea {
     @include adjust-leading-to(1);
     min-height: rhythm($textarea-min-height);
 }
+
+// text error message
+.ws-po-box {
+    @extend %f-input;
+}
