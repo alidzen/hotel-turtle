@@ -121,6 +121,10 @@ $sticky-menu-height: 60px;
     }
 
     .b-logo__img {
+        @media #{$big-up} {
+            width: 225px;
+        }
+
         @media #{$large-up} {
             width: 300px;
         }

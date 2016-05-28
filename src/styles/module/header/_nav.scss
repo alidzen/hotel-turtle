@@ -84,6 +84,27 @@ $item-height-popup: 56px;
             top: 5px;
             bottom: 5px;
         };
+
+        @media #{$medium-up} {
+            padding: {
+                top: 10px;
+                bottom: 10px;
+            };
+        }
+
+        @media #{$large-up} {
+            padding: {
+                top: 13px;
+                bottom: 13px;
+            };
+        }
+
+        @media #{$xlarge-up} {
+            padding: {
+                top: 15px;
+                bottom: 15px;
+            };
+        }
     }
 
     .b-nav__link {
