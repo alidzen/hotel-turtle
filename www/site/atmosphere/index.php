@@ -20,6 +20,8 @@ $APPLICATION->SetTitle("Атмосфера");
 							Array(),
 							Array('MODE' => 'html')
 						);?>
+					<br>
+					<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
 				</div>
 			</div>
  <div class="b-card__gallery">

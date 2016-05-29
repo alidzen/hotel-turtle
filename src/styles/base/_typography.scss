@@ -185,17 +185,17 @@ h2 {
     font-family: $font;
 
     @media #{$medium-up} {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 24px;
     }
 
     @media #{$large-up} {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 30px;
     }
 
     @media #{$xlarge-up} {
-        font-size: 30px;
+        font-size: 26px;
         line-height: 32px;
     }
 }

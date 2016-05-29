@@ -569,17 +569,17 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   @media only screen and (min-width: 641px) {
     .b-nav_theme_popup .b-nav__link, .b-menu-lang_theme_popup .b-menu-lang__link,
     .f-nav-link-stick {
-      font-size: 22px;
+      font-size: 18px;
       line-height: 24px; } }
   @media only screen and (min-width: 1441px) {
     .b-nav_theme_popup .b-nav__link, .b-menu-lang_theme_popup .b-menu-lang__link,
     .f-nav-link-stick {
-      font-size: 28px;
+      font-size: 24px;
       line-height: 30px; } }
   @media only screen and (min-width: 1921px) {
     .b-nav_theme_popup .b-nav__link, .b-menu-lang_theme_popup .b-menu-lang__link,
     .f-nav-link-stick {
-      font-size: 30px;
+      font-size: 26px;
       line-height: 32px; } }
 
 .b-gallery__ttl,
@@ -4696,6 +4696,9 @@ blockquote {
 
 .b-mobile-logo {
   width: 50px; }
+
+.b-logo_is_main {
+  cursor: default; }
 
 .b-btn {
   transition-property: color, background-color, border-color;

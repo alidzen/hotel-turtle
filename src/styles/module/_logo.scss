@@ -21,3 +21,8 @@ $logo: 'logo' !default;
 .b-mobile-logo {
     width: 50px;
 }
+
+// STATE
+.b-logo_is_main {
+    cursor: default;
+}
