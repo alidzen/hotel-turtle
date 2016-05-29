@@ -22,20 +22,27 @@ $img-size: 85px;
 
 .b-feature__img-wrap {
     position: absolute;
-    top: -60px;
-    right: 17px;
+    top: 40px;
+    right: 0;
     z-index: z('default');
 
     img {
-        width: 304px;
+        width: 270px;
         height: 254px;
         opacity: .2;
     }
 
     @media #{$medium-up} {
+        top: -40px;
+        right: 35px;
+
         img {
             opacity: 1;
         }
+    }
+
+    @media #{$big-up} {
+        width: 375px;
     }
 }
 
@@ -52,13 +59,14 @@ $img-size: 85px;
     &:before,
     &:after {
         content: '';
+        display: none;
         position: absolute;
         background-color: $white;
         z-index: z('zero');
     }
 
     &:before {
-        top: -2px;
+        top: 46px;
         right: -2px;
         width: 2px;
         height: 113px;
@@ -67,8 +75,8 @@ $img-size: 85px;
     &:after {
         top: -2px;
         height: 2px;
-        width: 251px;
-        right: 0;
+        width: 230px;
+        right: 58px;
     }
 
     @media #{$medium-up} {
@@ -78,16 +86,17 @@ $img-size: 85px;
             left: gutter(4);
         };
 
-        &:before {
-            height: 102px;
-        }
-
         &:after {
-            width: 257px;
+            display: block;
+            width: 109px;
         }
     }
 
     @media #{$big-up} {
+        &:before {
+            height: 85px;
+        }
+
         &:after {
             width: 179px;
         }
