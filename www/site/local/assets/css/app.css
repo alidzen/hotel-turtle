@@ -6465,13 +6465,13 @@ select {
     bottom: 23.5px; } }
 
 .b-room__specials {
+  -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   position: absolute;
   top: 13.5px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
   width: 185px;
+  margin-left: -92.5px;
   font-family: "AGOpusHR-Bold", sans-serif;
   text-transform: uppercase;
   font-size: 12px;

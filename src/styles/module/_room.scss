@@ -187,11 +187,13 @@ $btns-pos-desk: 23.5px;
 }
 
 .b-room__specials {
+    $width: 185px;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
     position: absolute;
     top: $btns-pos;
     left: 50%;
-     transform: translateX(-50%);
-    width: 185px;
+    width: $width;
+    margin-left: - $width / 2;
     font-family: $font-roman-bold;
     text-transform: uppercase;
     font-size: 12px;
