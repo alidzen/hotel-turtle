@@ -42,7 +42,9 @@ $img-size: 85px;
     }
 
     @media #{$big-up} {
-        width: 375px;
+        img {
+            width: 375px;
+        }
     }
 }
 
@@ -94,6 +96,7 @@ $img-size: 85px;
 
     @media #{$big-up} {
         &:before {
+            display: block;
             height: 85px;
         }
 

@@ -273,5 +273,22 @@
                 height: 35px;
             }
         }
+
+        .b-article__img-wrap {
+            @media #{$medium-up} {
+                height: 100%;
+
+                img {
+                    max-height: 150%;
+                }
+            }
+
+            @media #{$big-up} {
+                top: -26%;
+                left: 57%;
+                height: 130%;
+                max-height: none;
+            }
+        }
     }
 }

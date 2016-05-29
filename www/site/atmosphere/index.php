@@ -112,6 +112,16 @@ $APPLICATION->SetTitle("Атмосфера");
 	</div>
 </section>
 <section class="l-showcase l-showcase_theme_img-bg border-vertical">
+<div class="l-showcase__gallery">
+	<?$APPLICATION->IncludeComponent(
+	"olympia:blank",
+	"show-case.gallery",
+	Array(
+	"CODE" => "atmosphere"
+	),
+	false
+	);?>
+</div>
 <div class="l-showcase__descr border-horizontal">
 	<div class="b-showcase b-showcase_theme_atmosphere">
 		<div class="b-showcase__cnt">
@@ -147,17 +157,7 @@ $APPLICATION->SetTitle("Атмосфера");
 		</div>
 	</div>
 </div>
-	<div class="l-showcase__gallery">
-		<?$APPLICATION->IncludeComponent(
-			"olympia:blank",
-			"show-case.gallery",
-			Array(
-				"CODE" => "atmosphere"
-			),
-			false
-		);?>
-	</div>
-</section> 
+</section>
 <section class="l-article l-limit-wrap no-padding">
 <div class="l-article__cnt">
 	<div class="b-article b-article__theme_atmosphere-page">
