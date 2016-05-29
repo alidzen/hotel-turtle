@@ -215,13 +215,14 @@
 								Array(),
 								Array('MODE' => 'html')
 							);?>
-							<a href="javascript:;" class="b-menu-contacts__map j-show-map">
+							<div class="b-menu-contacts__map">
 								<?$APPLICATION->IncludeFile(
 								'/local/area/' . LANGUAGE_ID .'/address.php',
 								Array(),
 								Array('MODE' => 'html')
 								);?>
-							</a>
+							</div>
+							<a href="javascript:;" class="b-btn b-btn_width_auto j-show-map">Посмотреть на карте</a>
 						</div>
 					</div>
 					<div class="l-menu__lang">

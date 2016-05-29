@@ -194,9 +194,9 @@ $this->setFrameMode(true);
 				</div>
 				<div class="l-menu__contacts">
 					<div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a>
-						<a href="javascript:;" class="b-menu-contacts__map j-show-map">
-							г. Санкт-Петербург
-							<br>ул. Достоевского, 19/21, лит. Б</a>
+						<div class="b-menu-contacts__map">
+							г. Санкт-Петербург <br>ул. Достоевского, 19/21, лит. Б </div>
+						<a href="javascript:;" class="b-btn b-btn_width_auto j-show-map">Посмотреть на карте</a>
 					</div>
 				</div>
 				<div class="l-menu__lang">
