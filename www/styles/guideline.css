@@ -3760,10 +3760,12 @@ blockquote {
     float: left;
     padding: 0; } }
 
-.l-services__tiles:after {
-  content: '';
-  display: block;
-  clear: both; }
+.l-services__tiles {
+  margin-bottom: 48px; }
+  .l-services__tiles:after {
+    content: '';
+    display: block;
+    clear: both; }
 
 .l-services__tile:after {
   content: '';
@@ -4446,6 +4448,9 @@ blockquote {
     @media only screen and (min-width: 641px) {
       .l-services__tile_numb_17 .b-service__img {
         height: 100%; } }
+
+.l-services__btn {
+  text-align: center; }
 
 .l-cafe-feature {
   position: relative;

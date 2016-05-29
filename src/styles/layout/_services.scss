@@ -28,6 +28,7 @@
 
 .l-services__tiles {
     @include grid-clearfix();
+    @include margin-trailer(2);
 }
 
 .l-services__tile {
@@ -990,4 +991,8 @@ $spectile-height-small: 350px;
             height: 100%;
         }
     }
+}
+
+.l-services__btn {
+    text-align: center;
 }
