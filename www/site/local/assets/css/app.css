@@ -3584,6 +3584,7 @@ blockquote:after {
 
 .l-stick-menu__popup-cnt-wrap {
   background: url("../img/menu-popup-bg.svg") 50% 50% no-repeat #fefefd;
+  background-size: cover;
   position: absolute;
   width: 100%;
   min-height: calc(100vh - 60px); }
@@ -7495,7 +7496,7 @@ select {
 @media only screen and (min-width: 1025px) {
   .l-room-item__gallery {
     margin-right: -41px;
-    margin-left: -40px; } }
+    margin-left: -40.5px; } }
 
 .l-room-item__footer {
   position: relative;
