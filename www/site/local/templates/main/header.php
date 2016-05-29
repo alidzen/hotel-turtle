@@ -215,14 +215,13 @@
 								Array(),
 								Array('MODE' => 'html')
 							);?>
-							<div class="b-menu-contacts__map">
+							<a href="javascript:;" class="b-menu-contacts__map j-show-map">
 								<?$APPLICATION->IncludeFile(
 								'/local/area/' . LANGUAGE_ID .'/address.php',
 								Array(),
 								Array('MODE' => 'html')
 								);?>
-							</div>
-							<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+							</a>
 						</div>
 					</div>
 					<div class="l-menu__lang">
@@ -249,6 +248,20 @@
 						</a>
 						<div class="b-menu-logo__txt">boutique hotel</div>
 					</div>
+				</div>
+				<div class="l-header__map">
+					<div class="l-header__map-wrapper j-show-map__map">
+						<div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-map__home j-map"></div>
+						<script>
+							window.map = {}
+							window.map['map'] = {
+								markers: [
+									{
+										coords: [59.923350, 30.346303],
+										image: '/img/markers/here.svg'
+									}]
+							}
+						</script><a href="javascript:;" class="b-map__close j-show-map__close-btn">×</a> </div>
 				</div>
 				<?$APPLICATION->IncludeComponent(
 					"olympia:blank",

@@ -487,5 +487,50 @@ define('app', [
         });
     })($('.j-map-popup'));
 
+    (function($showMap) {
+        if (!$showMap.length) {
+            return;
+        }
+
+        var $map = $header.find('.j-show-map__map');
+        var $closeBtn = $map.find('.j-show-map__close-btn');
+
+        $showMap.click(function() {
+            var $self = $(this);
+            var isActive =  $self.hasClass(ACTIVE);
+
+            if (isActive) {
+                $self.removeClass(ACTIVE);
+                $map.css({
+                    opacity: 0
+                });
+                setTimeout(function() {
+                    $map.css({
+                        'z-index': -1
+                    });
+                }, 300);
+            } else {
+                $self.addClass(ACTIVE);
+                $map.css({
+                    opacity: 1,
+                    'z-index': 1
+                });
+            }
+        });
+
+        $closeBtn.click(function() {
+            $showMap.removeClass(ACTIVE);
+            $map.css({
+                opacity: 0
+            });
+            setTimeout(function() {
+                $map.css({
+                    'z-index': -1
+                });
+            }, 300);
+        });
+
+    })($('.j-show-map'));
+
     return {};
 });

@@ -247,10 +247,9 @@ $this->setFrameMode(true);
 				</div>
 				<div class="l-menu__contacts">
 					<div class="b-menu-contacts"><a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a>
-						<div class="b-menu-contacts__map">
-							г. Санкт-Петербург, ул. Достоевского, 19/21, лит. Б
-						</div>
-						<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+						<a href="javascript:;" class="b-menu-contacts__map j-show-map">
+							г. Санкт-Петербург
+							<br>ул. Достоевского, 19/21, лит. Б</a>
 					</div>
 				</div>
 				<div class="l-menu__lang">
@@ -278,6 +277,20 @@ $this->setFrameMode(true);
 					</a>
 					<div class="b-menu-logo__txt">boutique hotel</div>
 				</div>
+			</div>
+			<div class="l-header__map">
+				<div class="l-header__map-wrapper j-show-map__map">
+					<div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-map__home j-map"></div>
+					<script>
+						window.map = {}
+						window.map['map'] = {
+							markers: [
+								{
+									coords: [59.923350, 30.346303],
+									image: '/img/markers/here.svg'
+								}]
+						}
+					</script><a href="javascript:;" class="b-map__close j-show-map__close-btn">×</a> </div>
 			</div>
 			<div class="l-header__gallery">
 				<div style="background-image: url('<?=$arResult['DETAIL_PICTURE']['SRC']?>');" class="b-cafe-gallery">

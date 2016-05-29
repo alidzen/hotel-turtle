@@ -18,7 +18,7 @@ require.config({
         select           : 'jquery-selectric/public/jquery.selectric.min',
         'jquery-ui'     : 'jquery.ui/ui',
 
-        'google-maps'    : 'async!https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry&signed_in=true',
+        'google-maps'    : 'async!https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry&signed_in=false',
         infobox          : 'google-infobox/google-infobox',
         async            : 'requirejs-plugins/src/async',
 

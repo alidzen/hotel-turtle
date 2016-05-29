@@ -62,3 +62,29 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.b-map__home {
+    display: none;
+
+    @media #{$big-up} {
+        display: block;
+        width: 100%;
+        height: calc(100vh - 60px);
+    }
+}
+
+.b-map__close {
+    $size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: $white;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    font-size: 30px;
+    color: $gold-2;
+    border: 2px solid $gold-2;
+    opacity: 1;
+}
