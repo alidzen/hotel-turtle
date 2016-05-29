@@ -46,7 +46,7 @@ $APPLICATION->SetTitle("Главная");
  </section> <section class="l-feature">
 <div class="l-feature__cnt">
 	<div class="b-feature">
-		<div class="b-feature__img-wrap"><img src="/img/inkpen.svg" alt="Пиьменные принадлежности"></div>
+		<div class="b-feature__img-wrap"><img src="/local/assets/img/inkpen.svg" alt="Пиьменные принадлежности"></div>
 		<div class="b-feature__cnt">
 			<div class="b-feature__header">
 				<h1 class="b-feature__ttl">
