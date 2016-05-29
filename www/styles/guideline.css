@@ -5545,7 +5545,7 @@ select {
 
 .b-map__home {
   display: none; }
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 641px) {
     .b-map__home {
       display: block;
       width: 100%;
