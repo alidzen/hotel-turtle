@@ -22,14 +22,13 @@
 										Array(),
 										Array('MODE' => 'html')
 									);?>
-									<div class="b-menu-contacts__map">
+									<a href="#popup-map-common" class="b-menu-contacts__map j-map-popup">
 										<?$APPLICATION->IncludeFile(
 										'/local/area/' . LANGUAGE_ID . '/address-2.php',
 										Array(),
 										Array('MODE' => 'html')
 										);?>
-									</div>
-									<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+									</a>
 								</div>
 							</div>
 							<div class="l-footer__col">
