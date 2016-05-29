@@ -75,10 +75,6 @@ body .bx-core-adm-dialog, body .bx-core-adm-dialog a, body .bx-core-adm-dialog s
 	width: 100%;
 }
 
-.b-feature__cnt:before, .b-feature__cnt:after {
-	position: inherit;
-}
-
 .b-btn_text_sise_2 {
 	font-size: 13px;
 }
