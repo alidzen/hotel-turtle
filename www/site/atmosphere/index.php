@@ -69,7 +69,7 @@ $APPLICATION->SetTitle("Атмосфера");
 <section class="l-services">
 	<div class="l-services__tiles l-limit-wrap no-padding">
 		<div class="l-services__tile l-services__tile_numb_9">
-			<div class="b-service">
+			<div class="b-service no-hover">
 				<div class="b-service__header">
 					<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Петербург уже давно<br/> описан, а что не описано,<br/> то надо видеть самому.</div>
 				</div>
@@ -80,7 +80,7 @@ $APPLICATION->SetTitle("Атмосфера");
 			</div>
 		</div>
 		<div class="l-services__tile l-services__tile_numb_10">
-			<div class="b-service has-lines">
+			<div class="b-service has-lines no-hover">
 				<div class="b-service__border">
 					<div class="b-service__header">
 						<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Пушкин. Тютчев. Некрасов. Блок.<br/>Ахматова. Мандельштам…<br/>Это всё — псевдонимы. <br/> Автор — Петербург..</div>
@@ -93,7 +93,7 @@ $APPLICATION->SetTitle("Атмосфера");
 			</div>
 		</div>
 		<div class="l-services__tile l-services__tile_numb_11 hide-on-tablet">
-			<div class="b-service">
+			<div class="b-service no-hover">
 				<div class="b-service__header">
 					<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Чего ловить в Петербурге — не очень  понятно. Это не скажешь словами. Это либо чувствуешь всей кожей, либо никогда не объяснишь, о чем речь.</div>
 				</div>
