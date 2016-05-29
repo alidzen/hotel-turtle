@@ -447,7 +447,7 @@ $this->setFrameMode(true);
 				markers: [
 					{
 						coords: [59.923350, 30.346303],
-						image: '/img/markers/here.svg'
+						image: '/local/assets/img/markers/here.svg'
 					}]
 			}
 		</script>
