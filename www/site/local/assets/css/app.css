@@ -201,7 +201,8 @@ img {
 
 .b-ruble {
   font-family: "ruble", sans-serif;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  font-size: 90%; }
 
 .b-menu-reviews__link, .b-card__link {
   transition-property: color;
@@ -7473,8 +7474,8 @@ select {
 
 .l-room-item__params {
   margin-bottom: 48px;
-  padding-top: 24px;
-  padding-bottom: 12px;
+  padding-top: 36px;
+  padding-bottom: 24px;
   background-color: #bca064;
   margin-right: -20px;
   margin-left: -20px;
@@ -7589,6 +7590,16 @@ select {
   .l-room-item__footer-propose {
     padding-top: 180px; } }
 
+.l-room-item__params_theme_price {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #005870;
+  margin-bottom: 0; }
+.l-room-item__params_theme_price .b-room-param__txt {
+  background-color: #005870; }
+.l-room-item__params_theme_price .b-room-param__data {
+  background-color: #005870; }
+
 .b-room-param {
   color: #fefefd;
   position: relative;
@@ -7684,59 +7695,34 @@ select {
   border-radius: 50%;
   margin-right: 10px; }
 
-.b-room-list__item-img_img_window {
+.b-room-list__item-img_img_window, .b-room-list__item-img_img_fan, .b-room-list__item-img_img_wi-fi {
   position: relative; }
+.b-room-list__item-img_img_window:after, .b-room-list__item-img_img_fan:after, .b-room-list__item-img_img_wi-fi:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 .b-room-list__item-img_img_window:after {
-  background-image: url("../img/sprites.png");
-  background-position: -266px -64px;
-  width: 63px;
-  height: 63px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -31.5px;
-  margin-left: -31.5px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-room-list__item-img_img_window:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
+  width: 53px;
+  height: 53px;
+  background-image: url("../img/icons/window.svg"); }
 
-.b-room-list__item-img_img_fan {
-  position: relative; }
 .b-room-list__item-img_img_fan:after {
-  background-image: url("../img/sprites.png");
-  background-position: -266px 0px;
-  width: 64px;
-  height: 63px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -31.5px;
-  margin-left: -32px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-room-list__item-img_img_fan:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/icons/fan.svg"); }
 
-.b-room-list__item-img_img_wi-fi {
-  position: relative; }
 .b-room-list__item-img_img_wi-fi:after {
-  background-image: url("../img/sprites.png");
-  background-position: -266px -128px;
-  width: 63px;
-  height: 63px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -31.5px;
-  margin-left: -31.5px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-  .b-room-list__item-img_img_wi-fi:after {
-    background-image: url("../img/sprites@2x.png");
-    background-size: 376px 311px; } }
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/icons/wi-fi.svg"); }
 
 .b-cafe-gallery {
   position: relative;

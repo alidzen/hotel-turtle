@@ -42,20 +42,47 @@
 }
 
 // STATE
-$images: 'window', 'fan', 'wi-fi';
-@each $image in $images {
-    .b-room-list__item-img_img_#{$image} {
-        position: relative;
+%b-room-icons {
+    position: relative;
 
-        &:after {
-            $img: 'i-#{$image}-small';
-            @include sprite($img);
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-top: - (sprite-height($img) / 2);
-            margin-left: - (sprite-width($img) / 2);
-        }
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.b-room-list__item-img_img_window {
+    @extend %b-room-icons;
+
+    &:after {
+        width: 53px;
+        height: 53px;
+        background-image: url('/img/icons/window.svg');
+    }
+}
+
+.b-room-list__item-img_img_fan {
+    @extend %b-room-icons;
+
+    &:after {
+        width: 48px;
+        height: 48px;
+        background-image: url('/img/icons/fan.svg');
+    }
+}
+
+.b-room-list__item-img_img_wi-fi {
+    @extend %b-room-icons;
+
+    &:after {
+        width: 45px;
+        height: 45px;
+        background-image: url('/img/icons/wi-fi.svg');
     }
 }

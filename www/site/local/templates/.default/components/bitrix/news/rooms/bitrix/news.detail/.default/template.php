@@ -329,6 +329,13 @@ $this->setFrameMode(true);
 										<?endforeach;?>
 									</div>
 									<?endif;?>
+									<!-- Блок для программинга-->
+									<div class="l-room-item__params l-room-item__params_theme_price">
+										<div class="b-room-param">
+											<div class="b-room-param__txt">Стоимость</div>
+											<div class="b-room-param__data">от 5 800 <span class="b-ruble">g</span> до 10 900 <span class="b-ruble">g</span></div>
+										</div>
+									</div>
 									<?if(count($arResult['galery'])>0):?>
 									<div class="l-room-item__gallery">
 										<div class="b-gallery b-gallery_theme_room j-gallery">

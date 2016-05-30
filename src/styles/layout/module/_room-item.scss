@@ -1,7 +1,7 @@
 .l-room-item__params {
     @include margin-trailer(2);
-    @include padding-leader(1);
-    @include padding-trailer(.5);
+    @include padding-leader(1.5);
+    @include padding-trailer(1);
     background-color: $gold-2;
 
     margin: {
@@ -162,5 +162,21 @@
 
     @media #{$big-up} {
         padding-top: 180px;
+    }
+}
+
+// STATE
+.l-room-item__params_theme_price {
+    @include padding-leader(1);
+    @include padding-trailer(1);
+    background-color: $green;
+    margin-bottom: 0;
+
+    .b-room-param__txt {
+        background-color: $green;
+    }
+
+    .b-room-param__data {
+        background-color: $green;
     }
 }
