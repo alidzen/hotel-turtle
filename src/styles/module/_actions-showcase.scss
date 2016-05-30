@@ -61,4 +61,9 @@
 .b-actions-showcase__link {
     @extend %stretch-black-link;
     @extend %f-card-link;
+    color: $white;
+
+    &:after {
+        background-color: $white;
+    }
 }
