@@ -1,8 +1,5 @@
 <div class="l-map">
 	<div class="b-map">
-		<!-- если на мобилке карту нужно показывать в попапе, то ничего не меняем-->
-		<!-- если карту нужно показывать всегда выпиливаем .b-map__mobile и все внутренности-->
-		<!-- с .b-btn убираем data-noinit-->
 		<div class="b-map__mobile">
 			<div class="b-map__img"></div>
 			<div class="b-map__btn"><a href="#popup-map" data-target="#map" data-theme="map" class="b-btn b-btn_bg_white j-popup">Развернуть карту</a></div>

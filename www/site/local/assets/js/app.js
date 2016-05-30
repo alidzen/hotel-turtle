@@ -171,7 +171,7 @@ define('app', [
             pos = element.top + offset;
 
         $('html, body').animate({scrollTop: pos}, duration);
-    }
+    };
 
     // smooth hide preloader, show link
     var hidePreloader = function() {
@@ -309,7 +309,7 @@ define('app', [
             return;
         }
 
-        if ($('.j-map-noinit')) {
+        if ($('.j-map-no-init')) {
             return;
         }
 
