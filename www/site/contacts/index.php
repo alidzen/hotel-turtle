@@ -60,6 +60,7 @@ $APPLICATION->SetTitle("Контакты");
 							</div>
 						</div>
 					</form>
+					<div class="j-callback-form__message"></div>
 				</div>
 			</div>
 		</div>

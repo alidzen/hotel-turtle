@@ -117,10 +117,22 @@ define('app/form', [
             }
         }
 
-        form.$cont.swapContent(errorTpl({
+        var $inputs = form.$cont.find('input, textarea, select')
+            .not(':input[type=submit]');
+
+        form.$cont.slideToggle();
+        $('.j-callback-form__message').html(errorTpl({
             header : 'Ошибка',
             message: data.message || form.opts.errorText
         }));
+
+        // Вновь показываем форму
+        setTimeout(function() {
+            // обнуляем значения инпутов
+            $inputs.val('');
+            form.$cont.slideToggle();
+            $('.j-callback-form__message').html('');
+        }, 5000)
     };
 
     /**
@@ -148,8 +160,19 @@ define('app/form', [
         }, data);
 
         var html = form.opts.successTpl(tplData);
+        var $inputs = form.$cont.find('input, textarea, select')
+            .not(':input[type=submit]');
 
-        form.$cont.swapContent(html);
+        form.$cont.slideToggle(html);
+        $('.j-callback-form__message').html(html);
+
+        // Вновь показываем форму
+        setTimeout(function() {
+            // обнуляем значения инпутов
+            $inputs.val('');
+            form.$cont.slideToggle(html);
+            $('.j-callback-form__message').html('');
+        }, 5000)
     };
 
     return Form;
