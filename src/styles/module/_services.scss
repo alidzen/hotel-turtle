@@ -175,6 +175,11 @@
     background-size: cover;
 }
 
+.b-service__link {
+    @extend %stretch-green-link;
+    @extend %f-article-special;
+}
+
 // STATE
 .b-service__ttl-note_font-size_small {
     @extend %f-cite-note;

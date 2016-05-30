@@ -101,6 +101,7 @@ $APPLICATION->SetTitle("Дополнительные услуги");
 								Array('MODE' => 'html')
 							);?>
 						</p>
+						<a href="http://brain-games.ru" target="_blank" class="b-service__link">brain-games.ru</a>
 					</div>
 					<div class="b-service__img-wrap">
 						<div class="b-service__img"></div>
@@ -137,5 +138,12 @@ $APPLICATION->SetTitle("Дополнительные услуги");
 		</div>
 	</div>
 </section>
+<!-- программинг -->
+<div class="l-propose">
+	<div class="b-propose">
+		<div class="b-propose__ttl">Наш отель к вашим услугам.</div>
+		<div class="b-propose__btn"><a href="#" class="b-btn b-btn_width_auto">Выбрать номер</a></div>
+	</div>
+</div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
