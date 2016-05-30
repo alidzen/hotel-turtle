@@ -11,8 +11,8 @@
 
     @media #{$medium-up} {
         padding: {
-            right: 40px;
-            left: 40px;
+            right: 60px;
+            left: 60px;
         };
     }
 
@@ -47,4 +47,26 @@
 
 .b-showcase__ttl {
     @extend %f-ttl;
+}
+
+// STATE
+
+.b-showcase_on_left-side {
+    @include padding-leader(2);
+    position: relative;
+    padding: {
+        right: 20px;
+        left: 20px;
+    };
+
+    @media #{$medium-up} {
+        padding: {
+            right: 40px;
+            left: 40px;
+        };
+    }
+
+    @media #{$big-up} {
+        @include padding-leader(2.5);
+    }
 }
