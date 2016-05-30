@@ -33,8 +33,8 @@ define('app/form', [
 
         this.opts = {
             successTpl    : successTpl,
-            successText   : 'Форма успешно отправлена',
-            successHeader : 'Заявка отправлена',
+            successText   : '',
+            successHeader : 'Ваш вопрос отправлен',
 
             errorText   : 'Внутренняя ошибка, пожалуйста, ' +
                           'повторите запрос позднее'
