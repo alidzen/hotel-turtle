@@ -447,7 +447,7 @@ $spectile-height-small: 350px;
 
 // Blocks from services page
 .l-services__tile_numb_9 {
-    background-color: $gray-3;
+    background-color: $white-3;
 
     @media #{$medium-only} {
         @include span(6);
