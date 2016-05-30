@@ -663,7 +663,7 @@ $spectile-height-small: 350px;
 .l-services__tile_numb_13 {
     @include span(full);
     overflow: hidden;
-    background-color: $gray-3;
+    background-color: $white-3;
 
     @media #{$custom-1024-up} {
         @include span(6);
@@ -858,7 +858,7 @@ $spectile-height-small: 350px;
 }
 
 .l-services__tile_numb_16 {
-    background-color: $gray-3;
+    background-color: $white-3;
 
     @media #{$medium-up} {
         @include span(full);

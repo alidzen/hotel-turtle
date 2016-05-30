@@ -71,16 +71,15 @@
 }
 
 .l-room-item__gallery {
-    margin: {
-        right: - 20px;
-        left: - 20px;
-    };
+    position: relative;
+    width: calc(100% + 40px);
+    left: -20px;
 
     @media #{$big-up} {
-        margin: {
-            right: - 41px; // small fix,  right side have space
-            left: - 40.5px;
-        };
+        // появляется мелкий зазор справа между галереей и рамкой
+        width: calc(100% + 80.4px);
+        left: -40px;
+        right: -40px;
     }
 }
 

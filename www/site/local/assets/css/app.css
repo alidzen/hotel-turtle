@@ -204,7 +204,7 @@ img {
   text-transform: lowercase;
   font-size: 90%; }
 
-.b-menu-reviews__link, .b-card__link {
+.b-menu-reviews__link, .b-service__link, .b-card__link {
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -212,14 +212,14 @@ img {
   color: #005870;
   position: relative; }
 @media only screen and (min-width: 1025px) {
-  .b-menu-reviews__link:hover, .b-card__link:hover {
+  .b-menu-reviews__link:hover, .b-service__link:hover, .b-card__link:hover {
     color: #bca064; }
-  .b-menu-reviews__link:hover:after, .b-card__link:hover:after {
+  .b-menu-reviews__link:hover:after, .b-service__link:hover:after, .b-card__link:hover:after {
     -webkit-transform: scaleX(0.3);
     -ms-transform: scaleX(0.3);
     transform: scaleX(0.3);
     background-color: #bca064; } }
-.b-menu-reviews__link:after, .b-card__link:after {
+.b-menu-reviews__link:after, .b-service__link:after, .b-card__link:after {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
@@ -693,13 +693,13 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
     font-size: 30px;
     line-height: 45px; } }
 
-.b-article__special,
+.b-article__special, .b-service__link,
 .f-article-special {
   font-size: 14px;
   line-height: 21px;
   font-family: "AGOpusHR-Bold", sans-serif; }
 @media only screen and (min-width: 641px) {
-  .b-article__special,
+  .b-article__special, .b-service__link,
   .f-article-special {
     font-size: 16px;
     line-height: 24px; } }
@@ -4216,7 +4216,7 @@ blockquote:after {
   width: 100%;
   float: left;
   overflow: hidden;
-  background-color: #e8e8e6; }
+  background-color: #d3d3d3; }
 @media only screen and (min-width: 1024px) {
   .l-services__tile_numb_13 {
     width: 50%;
@@ -4356,7 +4356,7 @@ blockquote:after {
     margin-left: 30px; } }
 
 .l-services__tile_numb_16 {
-  background-color: #e8e8e6; }
+  background-color: #d3d3d3; }
 @media only screen and (min-width: 641px) {
   .l-services__tile_numb_16 {
     width: 100%;
@@ -7337,6 +7337,7 @@ select {
   display: inline-block; }
 
 .b-actions-showcase__link {
+  margin-top: 24px;
   color: #fefefd; }
 .b-actions-showcase__link:after {
   background-color: #fefefd; }
@@ -7528,12 +7529,14 @@ select {
     float: left; } }
 
 .l-room-item__gallery {
-  margin-right: -20px;
-  margin-left: -20px; }
+  position: relative;
+  width: calc(100% + 40px);
+  left: -20px; }
 @media only screen and (min-width: 1025px) {
   .l-room-item__gallery {
-    margin-right: -41px;
-    margin-left: -40.5px; } }
+    width: calc(100% + 80.4px);
+    left: -40px;
+    right: -40px; } }
 
 .l-room-item__footer {
   position: relative;

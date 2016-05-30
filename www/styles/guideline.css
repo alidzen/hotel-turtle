@@ -4216,7 +4216,7 @@ blockquote {
   width: 100%;
   float: left;
   overflow: hidden;
-  background-color: #e8e8e6; }
+  background-color: #d3d3d3; }
   @media only screen and (min-width: 1024px) {
     .l-services__tile_numb_13 {
       width: 50%;
@@ -4356,7 +4356,7 @@ blockquote {
         margin-left: 30px; } }
 
 .l-services__tile_numb_16 {
-  background-color: #e8e8e6; }
+  background-color: #d3d3d3; }
   @media only screen and (min-width: 641px) {
     .l-services__tile_numb_16 {
       width: 100%;
@@ -7337,6 +7337,7 @@ select {
   display: inline-block; }
 
 .b-actions-showcase__link {
+  margin-top: 24px;
   color: #fefefd; }
   .b-actions-showcase__link:after {
     background-color: #fefefd; }
@@ -7528,12 +7529,14 @@ select {
     float: left; } }
 
 .l-room-item__gallery {
-  margin-right: -20px;
-  margin-left: -20px; }
+  position: relative;
+  width: calc(100% + 40px);
+  left: -20px; }
   @media only screen and (min-width: 1025px) {
     .l-room-item__gallery {
-      margin-right: -41px;
-      margin-left: -40.5px; } }
+      width: calc(100% + 80.4px);
+      left: -40px;
+      right: -40px; } }
 
 .l-room-item__footer {
   position: relative;
