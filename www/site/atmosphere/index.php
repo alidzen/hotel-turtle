@@ -112,51 +112,51 @@ $APPLICATION->SetTitle("Атмосфера");
 	</div>
 </section>
 <section class="l-showcase l-showcase_theme_img-bg border-vertical">
-<div class="l-showcase__gallery">
-	<?$APPLICATION->IncludeComponent(
-	"olympia:blank",
-	"show-case.gallery",
-	Array(
-	"CODE" => "atmosphere"
-	),
-	false
-	);?>
-</div>
-<div class="l-showcase__descr border-horizontal">
-	<div class="b-showcase b-showcase_theme_atmosphere">
-		<div class="b-showcase__cnt">
-			<div class="b-showcase__header">
-				<h1 class="b-showcase__ttl">
-				<?$APPLICATION->IncludeFile(
-							'/local/area/' . LANGUAGE_ID . '/atmosphere-showcase-ttl.php',
-							Array(),
-							Array('MODE' => 'html')
+	<div class="l-showcase__descr border-horizontal">
+		<div class="b-showcase b-showcase_theme_atmosphere">
+			<div class="b-showcase__cnt">
+				<div class="b-showcase__header">
+					<h1 class="b-showcase__ttl">
+						<?$APPLICATION->IncludeFile(
+						'/local/area/' . LANGUAGE_ID . '/atmosphere-showcase-ttl.php',
+						Array(),
+						Array('MODE' => 'html')
 						);?> </h1>
-				<div class="b-showcase__ttl-note">
-					 <?$APPLICATION->IncludeFile(
-							'/local/area/' . LANGUAGE_ID . '/atmosphere-showcase-ttl-ext.php',
-							Array(),
-							Array('MODE' => 'html')
+					<div class="b-showcase__ttl-note">
+						<?$APPLICATION->IncludeFile(
+						'/local/area/' . LANGUAGE_ID . '/atmosphere-showcase-ttl-ext.php',
+						Array(),
+						Array('MODE' => 'html')
 						);?>
+					</div>
 				</div>
-			</div>
-			<p>
-				 <?$APPLICATION->IncludeFile(
-						'/local/area/' . LANGUAGE_ID . '/atmosphere-showcase-text.php',
-						Array(),
-						Array('MODE' => 'html')
+				<p>
+					<?$APPLICATION->IncludeFile(
+					'/local/area/' . LANGUAGE_ID . '/atmosphere-showcase-text.php',
+					Array(),
+					Array('MODE' => 'html')
 					);?>
-			</p>
-			<div class="b-typo-reset">
-				 <?$APPLICATION->IncludeFile(
-						'/local/area/' . LANGUAGE_ID . '/atmosphere-showcase-list.php',
-						Array(),
-						Array('MODE' => 'html')
+				</p>
+				<div class="b-typo-reset">
+					<?$APPLICATION->IncludeFile(
+					'/local/area/' . LANGUAGE_ID . '/atmosphere-showcase-list.php',
+					Array(),
+					Array('MODE' => 'html')
 					);?>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	<div class="l-showcase__gallery">
+		<?$APPLICATION->IncludeComponent(
+		"olympia:blank",
+		"show-case.gallery",
+		Array(
+		"CODE" => "atmosphere"
+		),
+		false
+		);?>
+	</div>
 </section>
 <section class="l-article l-limit-wrap no-padding">
 <div class="l-article__cnt">
