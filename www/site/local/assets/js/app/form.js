@@ -59,11 +59,6 @@ define('app/form', [
         var $hidden = $('<input type="hidden" name="__s">');
         $hidden.val(window.__s || '');
 
-        // mask only for russians number
-        //form.$el.find('[type="tel"]').each(function() {
-        //    $(this).mask('+7 (999) 999-9999', {autoclear: false});
-        //});
-
         form.$el
             .append($hidden)
             .submit(function(e) {
