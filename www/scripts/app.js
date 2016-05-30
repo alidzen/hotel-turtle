@@ -309,6 +309,10 @@ define('app', [
             return;
         }
 
+        if ($('.j-map-noinit')) {
+            return;
+        }
+
         require(['app/map'], function(Map) {
             $maps.each(function() {
                 var $map = $(this);
@@ -494,10 +498,25 @@ define('app', [
 
         var $map = $header.find('.j-show-map__map');
         var $closeBtn = $map.find('.j-show-map__close-btn');
+        var $maps = $('.j-map');
+        var mapIsOpened = 0;
 
         $showMap.click(function() {
             var $self = $(this);
             var isActive =  $self.hasClass(ACTIVE);
+
+            // initiate map
+            if (mapIsOpened === 0) {
+                require(['app/map'], function(Map) {
+                    $maps.each(function() {
+                        var $map = $(this);
+                        return new Map($map);
+                    });
+                });
+            }
+
+            // Каждый раз карта не будет инициализироваться.
+            mapIsOpened = 1;
 
             if (isActive) {
                 $self.removeClass(ACTIVE);
