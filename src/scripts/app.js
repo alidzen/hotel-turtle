@@ -321,6 +321,20 @@ define('app', [
         });
     })($('.j-map'));
 
+    //Инициализация карты, отдельная на странице контактов.
+    (function($maps) {
+        if (!$maps.length) {
+            return;
+        }
+
+        require(['app/map'], function(Map) {
+            $maps.each(function() {
+                var $map = $(this);
+                return new Map($map);
+            });
+        });
+    })($('.j-map-contacts'));
+
     // подключаем datepicker для бронирования
     // example: http://jsfiddle.net/SirDerpington/h3wGx/4/
     (function($datepicker) {
