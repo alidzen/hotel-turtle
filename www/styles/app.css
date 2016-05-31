@@ -3518,6 +3518,8 @@ blockquote {
   transition-property: transform, -webkit-transform;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   background-color: #005870;
   position: fixed;
   top: 0;
@@ -3569,9 +3571,8 @@ blockquote {
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #fefefd;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%) translateZ(0);
+  transform: translateY(-100%) translateZ(0);
   position: fixed;
   width: 100%;
   top: 0;
@@ -3592,7 +3593,9 @@ blockquote {
 
 .l-stick-menu__popup-cnt {
   padding-top: 48px;
-  padding-bottom: 24px; }
+  padding-bottom: 24px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
   @media only screen and (max-width: 640px) {
     .l-stick-menu__popup-cnt {
       padding-right: 20px;

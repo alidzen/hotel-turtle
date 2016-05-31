@@ -7,6 +7,7 @@ $sticky-menu-height: 60px;
 
 .l-stick-menu__nav {
     @include transition(transform);
+    transform: translateZ(0); // flick on safari fix
     background-color: $green;
     position: fixed;
     top: 0;
@@ -54,7 +55,7 @@ $sticky-menu-height: 60px;
     @include transition(transform);
     @include rhythm-padding(2);
     background-color: $white;
-    transform: translateY(-100%);
+    transform: translateY(-100%) translateZ(0); // flick on safari fix;
     position: fixed;
     width: 100%;
     top: 0;
@@ -78,6 +79,7 @@ $sticky-menu-height: 60px;
 .l-stick-menu__popup-cnt {
     @include padding-leader(2);
     @include padding-trailer(1);
+    transform: translateZ(0); // flick on safari fix
 
     @media #{$small-only} {
         padding: {
