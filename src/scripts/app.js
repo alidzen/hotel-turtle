@@ -565,5 +565,26 @@ define('app', [
 
     })($('.j-show-map'));
 
+    // Open iframe with booking
+    (function($frame) {
+        if (!$frame.length) {
+            return;
+        }
+
+        require(['magnific-popup'], function() {
+            console.log(12);
+            $frame.magnificPopup({
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: true,
+                tClose: 'Закрыть',
+                closeMarkup: '<button title="%title%" type="button" ' +
+                'class="mfp-close">Закрыть</button>'
+            });
+        });
+    })($('.j-frame'));
+
     return {};
 });

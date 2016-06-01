@@ -4,7 +4,7 @@
 		<div class="b-booking-form__txt">забронировали сегодня</div>
 	</div>-->
 	<div class="b-booking-form__btn">
- <button type="submit" value="Номер" class="b-btn b-btn_width_auto b-btn_text_sise_2">Выбрать номер </button>
+ <button type="submit" value="Номер" href="https://wubook.net/wbkd/wbk/?lcode=1442495155&dfrom=15/06/2016&dto=23/06/2016" class="b-btn b-btn_width_auto b-btn_text_sise_2 j-frame">Выбрать номер </button>
 	</div>
 	 <!--<div class="b-booking-form__col">
 		<div class="b-booking-form__select"><select>

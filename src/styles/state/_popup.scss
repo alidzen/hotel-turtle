@@ -78,3 +78,84 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
     width: 100%;
     height: 100%;
 }
+
+// iframe style
+.mfp-iframe-holder {
+    margin-top: 44px;
+
+    @media #{$medium-up} {
+        margin-top: 0;
+    }
+}
+
+.mfp-iframe-scaler {
+    $btn-size: 32px;
+    $btn-line-width: 20px;
+    $btn-line-height: 2px;
+    $btn-line-margin: 6px;
+
+    .mfp-close {
+        @extend %f-btn;
+        @include btn-vertical-paddings($popop-btn-mobile-height);
+        color: $popup-btn-mobile-color;
+        background-color: $popup-btn-mobile-bg-color;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        opacity: 1;
+        margin-top: -4px;
+        left: 0;
+
+        @if($popup-btn-mobile-tt-up) {
+            @include text-transform();
+            padding: {
+                top: btn-vertical-paddings($popop-btn-mobile-height) + 1px;
+                bottom: btn-vertical-paddings($popop-btn-mobile-height) - 1px;
+            };
+        }
+
+        @media #{$small-only} {
+            border: {
+                top: 2px solid $gold-2;
+                right: 2px solid $gold-2;
+                left: 2px solid $gold-2;
+            };
+        }
+
+        @media #{$medium-up} {
+            @include squish-text;
+            background-color: transparent;
+            top:  - $btn-size - 10px;
+            right: 0;
+            padding: 0;
+
+            &:before,
+            &:after {
+                @include transition(transform, background-color);
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                display: block;
+                width: $btn-line-width;
+                height: $btn-line-height;
+                background-color: $gold-2;
+                margin: {
+                    top: - $btn-line-height / 2;
+                };
+            }
+
+            &:before {
+                transform: translate3d(0, 0, 0) rotate(45deg);
+            }
+
+            &:after {
+                transform: translate3d(0, 0, 0) rotate(-45deg);
+            }
+        }
+    }
+
+    .mfp-iframe {
+        border: 2px solid $gold-2;
+    }
+}
