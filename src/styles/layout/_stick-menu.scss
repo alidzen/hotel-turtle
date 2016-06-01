@@ -61,7 +61,6 @@ $sticky-menu-height: 60px;
     top: 0;
     bottom: 0;
     overflow-y: auto;
-    -webkit-backface-visibility: hidden; // fix flicker on safari
 
     &.is-active {
         transform: translateY(0);

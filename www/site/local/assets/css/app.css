@@ -3577,8 +3577,7 @@ blockquote:after {
     width: 100%;
     top: 0;
     bottom: 0;
-    overflow-y: auto;
-    -webkit-backface-visibility: hidden; }
+    overflow-y: auto; }
 .l-stick-menu__popup.is-active {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
