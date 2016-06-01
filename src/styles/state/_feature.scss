@@ -27,8 +27,8 @@
     @extend %b-feature-icons;
 
     &:after {
-        width: 45px;
-        height: 61px;
+        width: 56px;
+        height: 71px;
         background-image: url('/img/icons/eco.svg');
     }
 }
@@ -70,5 +70,15 @@
         width: 62px;
         height: 52px;
         background-image: url('/img/icons/wi-fi.svg');
+    }
+}
+
+.b-feature__item-img_img_furniture {
+    @extend %b-feature-icons;
+
+    &:after {
+        width: 62px;
+        height: 52px;
+        background-image: url('/img/icons/furniture.svg');
     }
 }
