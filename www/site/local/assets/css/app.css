@@ -334,6 +334,11 @@ img {
     src: url("../fonts/ruble/ruble-webfont.eot");
     src: url("../fonts/ruble/ruble-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ruble/ruble-webfont.ttf") format("truetype"), url("../fonts/ruble/ruble-webfont.woff") format("woff"); }
 
+@font-face {
+    font-family: "fontawesome";
+    src: url("../fonts/fontawesome/fontawesome.eot");
+    src: url("../fonts/fontawesome/fontawesome.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome.ttf") format("truetype"), url("../fonts/fontawesome/fontawesome.woff") format("woff"); }
+
 h1 {
     font-size: 24px;
     line-height: 36px;
@@ -5822,15 +5827,32 @@ select {
     text-align: center; }
 
 .b-menu-reviews__rate {
-    background-image: url("../img/sprites.png");
-    background-position: -63px -217px;
-    width: 119px;
-    height: 20px;
+    position: relative;
     display: inline-block; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-    .b-menu-reviews__rate {
-        background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+.b-menu-reviews__rate:after {
+    content: '';
+    display: block;
+    clear: both; }
+.b-menu-reviews__rate span {
+    position: relative;
+    float: left;
+    width: 19px;
+    height: 19px; }
+.b-menu-reviews__rate span:not(:last-child) {
+    margin-right: 6px; }
+.b-menu-reviews__rate span:after {
+    position: absolute;
+    content: '\f006';
+    font-family: "fontawesome", sans-serif;
+    font-size: 19px;
+    line-height: 19px;
+    top: 0;
+    left: 0;
+    color: #bca064; }
+.b-menu-reviews__rate .half-star:after {
+    content: '\f123'; }
+.b-menu-reviews__rate .star:after {
+    content: '\f005'; }
 
 .l-callback:after {
     content: '';

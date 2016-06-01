@@ -208,7 +208,7 @@
 					</div>
 					<div class="l-menu__reviews j-reviews">
 						<div class="b-menu-reviews">
-							<div class="b-menu-reviews__rate"></div>
+							<div class="b-menu-reviews__rate"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="half-star"></span></div>
 							<div class="b-menu-reviews__txt">по мнению tripadvisor.ru</div><a href="https://www.tripadvisor.ru/Hotel_Review-g298507-d9456388-Reviews-Akhilles_i_Cherepakha-St_Petersburg_Northwestern_District.html" class="b-menu-reviews__link">Посмотреть отзывы</a> </div>
 					</div>
 				</div>

@@ -4,8 +4,44 @@
 }
 
 .b-menu-reviews__rate {
-    @include sprite('mark-rate');
+    $size: 19px;
+    @include grid-clearfix();
+    position: relative;
     display: inline-block;
+
+    span {
+        position: relative;
+        float: left;
+        width: $size;
+        height: $size;
+
+        &:not(:last-child) {
+            margin-right: 6px;
+        }
+
+        &:after {
+            position: absolute;
+            content: '\f006';
+            font-family: $font-icons;
+            font-size: 19px;
+            line-height: 19px;
+            top: 0;
+            left: 0;
+            color: $gold-2;
+        }
+    }
+
+    .half-star {
+        &:after {
+            content: '\f123';
+        }
+    }
+
+    .star {
+        &:after {
+            content: '\f005';
+        }
+    }
 }
 
 .b-menu-reviews__txt {
