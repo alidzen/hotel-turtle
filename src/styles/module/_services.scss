@@ -59,6 +59,22 @@
         }
     }
 
+    &.hover-img {
+        @media #{$big-up} {
+            &:hover {
+                color: inherit;
+
+                .b-service__ttl-note {
+                    color: $green;
+                }
+
+                .b-service__header:after {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+
     &.has-lines {
         &:before,
         &:after {

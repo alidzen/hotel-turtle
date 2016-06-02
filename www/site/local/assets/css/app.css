@@ -6859,6 +6859,13 @@ select {
         transform: scale(1); }
     .b-service.no-hover:hover .b-service__header:after {
         background-color: #005870; } }
+@media only screen and (min-width: 1025px) {
+    .b-service.hover-img:hover {
+        color: inherit; }
+    .b-service.hover-img:hover .b-service__ttl-note {
+        color: #005870; }
+    .b-service.hover-img:hover .b-service__header:after {
+        background-color: #005870; } }
 .b-service.has-lines:before, .b-service.has-lines:after {
     content: '';
     position: absolute;
