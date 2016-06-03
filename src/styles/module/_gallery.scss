@@ -66,8 +66,8 @@ $gallery-dots-frame-height: 30px !default;
         content: '';
         position: absolute;
         top: 50%;
-        margin-top: - (sprite-height($gallery-arrow-prev) / 2);
         left: 50%;
+        margin-top: - (sprite-height($gallery-arrow-prev) / 2);
         margin-left: - (sprite-width($gallery-arrow-prev) / 2);
     }
 
@@ -81,7 +81,7 @@ $gallery-dots-frame-height: 30px !default;
 }
 
 .b-gallery__arrow_show_prev {
-    left: gutter(2);
+    left: gutter(4.5);
 
     &:before {
         @include sprite($gallery-arrow-prev);
@@ -89,7 +89,7 @@ $gallery-dots-frame-height: 30px !default;
 }
 
 .b-gallery__arrow_show_next {
-    right: gutter(2);
+    right: gutter(4.5);
 
     &:after {
         @include sprite($gallery-arrow-next);

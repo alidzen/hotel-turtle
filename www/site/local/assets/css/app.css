@@ -5345,8 +5345,8 @@ select {
     content: '';
     position: absolute;
     top: 50%;
-    margin-top: -6.5px;
     left: 50%;
+    margin-top: -6.5px;
     margin-left: -4px; }
 .b-gallery__arrow.is-disabled {
     display: none; }
@@ -5355,7 +5355,7 @@ select {
         display: block; } }
 
 .b-gallery__arrow_show_prev {
-    left: 20px; }
+    left: 45px; }
 .b-gallery__arrow_show_prev:before {
     background-image: url("../img/sprites.png");
     background-position: -365px -206px;
@@ -5367,7 +5367,7 @@ select {
         background-size: 376px 311px; } }
 
 .b-gallery__arrow_show_next {
-    right: 20px; }
+    right: 45px; }
 .b-gallery__arrow_show_next:after {
     background-image: url("../img/sprites.png");
     background-position: -365px -224px;
