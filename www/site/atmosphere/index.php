@@ -1,7 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Атмосфера");
-?><section class="l-article l-limit-wrap no-padding">
+?>
+<section class="l-article l-limit-wrap no-padding">
 <div class="l-article__cnt">
 	<div class="b-card b-card_theme_gallery">
 		<div class="b-card__border">
@@ -39,37 +40,11 @@ $APPLICATION->SetTitle("Атмосфера");
  </div>
 		</div>
 	</div>
-</div>
  </section>
-<!-- old variant-->
-<!--<section style="background-image: url('/local/assets/img/atmosphere-bg-3.jpg');" class="l-showcase-full">
-<div class="l-showcase-full__border">
-	<div class="l-showcase-full__row">
-		<div class="l-showcase-full__cnt">
-			<div class="b-showcase-full">
-				<div class="b-showcase-full__quotes">
-					 <?$APPLICATION->IncludeFile(
-							'/local/area/' . LANGUAGE_ID . '/atmosphere-quote-text.php',
-							Array(),
-							Array('MODE' => 'html')
-						);?>
-				</div>
-				<div class="b-showcase-full__author">
-					 <?$APPLICATION->IncludeFile(
-							'/local/area/' . LANGUAGE_ID . '/atmosphere-quote-author.php',
-							Array(),
-							Array('MODE' => 'html')
-						);?>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
- </section>-->
 <section class="l-services">
 	<div class="l-services__tiles l-limit-wrap no-padding">
 		<div class="l-services__tile l-services__tile_numb_9">
-			<div class="b-service hover-img">
+			<div class="b-service no-hover">
 				<div class="b-service__header">
 					<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Петербург уже давно<br/> описан, а что не описано,<br/> то надо видеть самому.</div>
 				</div>
@@ -80,7 +55,7 @@ $APPLICATION->SetTitle("Атмосфера");
 			</div>
 		</div>
 		<div class="l-services__tile l-services__tile_numb_10">
-			<div class="b-service has-lines hover-img">
+			<div class="b-service has-lines no-hover">
 				<div class="b-service__border">
 					<div class="b-service__header">
 						<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Пушкин. Тютчев. Некрасов. Блок.<br/>Ахматова. Мандельштам…<br/>Это всё — псевдонимы. <br/> Автор — Петербург..</div>
@@ -93,7 +68,7 @@ $APPLICATION->SetTitle("Атмосфера");
 			</div>
 		</div>
 		<div class="l-services__tile l-services__tile_numb_11 hide-on-tablet">
-			<div class="b-service hover-img">
+			<div class="b-service no-hover">
 				<div class="b-service__header">
 					<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Чего ловить в Петербурге — не очень  понятно. Это не скажешь словами. Это либо чувствуешь всей кожей, либо никогда не объяснишь, о чем речь.</div>
 				</div>
@@ -102,12 +77,6 @@ $APPLICATION->SetTitle("Атмосфера");
 					<div style="background-image: url('/local/assets/img/services/service-9.jpg');" class="b-service__img"></div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="l-services__btn">
-		<div class="b-propose">
-			<div class="b-propose__ttl">Вы хотите прочесть другие цитаты?</div>
-			<div class="b-propose__btn"><a href="javascript:;" class="b-btn b-btn_width_auto">Посмотреть еще</a></div>
 		</div>
 	</div>
 </section>
@@ -205,4 +174,6 @@ $APPLICATION->SetTitle("Атмосфера");
 				);?> </a>
 		</div>
 	</div>
-</div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+</div>
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
