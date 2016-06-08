@@ -224,7 +224,7 @@
 				</div>
 				<div class="l-header__map">
 					<div class="l-header__map-wrapper j-show-map__map">
-						<div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-map__home j-map j-map-no-init"></div>
+						<div id="map" data-noinit data-zoom="15" class="b-map__home j-map j-map-no-init"></div>
 						<script>
 							window.map = {}
 							window.map['map'] = {

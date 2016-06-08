@@ -173,9 +173,10 @@ img {
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 1px;
+        right: 1px;
         display: block;
-        width: 100%;
+        width: auto;
         height: 2px;
         background-color: $green;
     }
@@ -203,9 +204,10 @@ img {
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 1px;
+        right: 1px;
         display: block;
-        width: 100%;
+        width: auto;
         height: 2px;
         background-color: $black;
     }

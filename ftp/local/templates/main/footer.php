@@ -40,7 +40,7 @@
 			</div>
 		</footer>
 		<div id="popup-map-common" class="b-place-popup mfp-hide">
-			<div id="map" data-noinit data-zoom="15" data-scrollwheel="false" class="b-place-popup__map j-map">
+			<div id="map" data-noinit data-zoom="15"  class="b-place-popup__map j-map">
 				<script>
 					window.map = {}
 					window.map['map'] = {

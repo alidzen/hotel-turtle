@@ -34,19 +34,21 @@ $item-height-popup: 56px;
             text-decoration: none;
 
             &:after {
-                width: 100%;
-                left: 0;
+                width: auto;
+                left: 1px;
+                right: 1px;
             }
         }
     }
 
     &:after {
-        @include transition(width, left);
+        @include transition(width, left, right);
         content: '';
         position: absolute;
         top: 100%;
         width: 0;
         left: 50%;
+        right: 50%;
         height: 2px;
         background-color: $gold-2;
         margin-left: 0;
