@@ -1,0 +1,2 @@
+<?
+$MESS ['COMPONENT_MESSAGE1'] = "";

@@ -1,20 +1,14 @@
-define('app', [
-    'jquery',
-    'fastclick',
-    'jquery-ui/i18n/datepicker-ru',
-    'select'
-], function(
-    $,
-    FastClick
-) {
+'use strict';
+
+define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'], function ($, FastClick) {
     'use strict';
 
     FastClick.attach(document.body);
 
     // Глобальные переменные
-    var ACTIVE = ('is-active');
-    var mobileWidth = ($(window).width() < 641);
-    var touchWidth = ($(window).width() < 1024);
+    var ACTIVE = 'is-active';
+    var mobileWidth = $(window).width() < 641;
+    var touchWidth = $(window).width() < 1024;
     var $loader = $('.j-loader');
 
     // MENU
@@ -33,51 +27,47 @@ define('app', [
     var $selectMenu = $navMenu.find('select');
     var $datepickerHeader = $header.find('.j-date-inp');
     var $selectHeader = $header.find('select');
-	var $bookingForm = $('.b-booking-form__form');
+    var $bookingForm = $('.b-booking-form__form');
 
     var pos;
     // animated link after loading
     var $activeLink = $header.find('.b-nav__link.is-active');
 
-	$bookingForm.submit(function(e){
-		var BookingDfrom = $(this).find('.b-booking-form__inp').val() || null,
-			BookingDto = $(this).find('.b-booking-to__inp').val() || null;
+    $bookingForm.submit(function (e) {
+        var BookingDfrom = $(this).find('.b-booking-form__inp').val() || null,
+            BookingDto = $(this).find('.b-booking-to__inp').val() || null;
 
-		if(BookingDfrom != null && BookingDto != null)
-		{
-			var url = 'https://wubook.net/wbkd/wbk/?lcode=1442495155&dfrom='+BookingDfrom+'&dto='+BookingDto,
-				w = 800,
-			    h = 600,
-			    left = Number((screen.width/2)-(w/2)),
-			    tops = Number((screen.height/2)-(h/2));
+        if (BookingDfrom != null && BookingDto != null) {
+            var url = 'https://wubook.net/wbkd/wbk/?lcode=1442495155&dfrom=' + BookingDfrom + '&dto=' + BookingDto,
+                w = 800,
+                h = 600,
+                left = Number(screen.width / 2 - w / 2),
+                tops = Number(screen.height / 2 - h / 2);
 
-			var newwindow = window.open(url, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+tops+', left='+left);
+            var newwindow = window.open(url, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + tops + ', left=' + left);
 
-			if (window.focus)
-			{
-				newwindow.focus()
-			}
+            if (window.focus) {
+                newwindow.focus();
+            }
+        };
 
-		};
+        e.preventDefault();
+    });
 
-		e.preventDefault();
-	});
-
-    $burgerBtn.click(function() {
+    $burgerBtn.click(function () {
         var $self = $(this);
         var isActive = $self.hasClass(ACTIVE);
 
         if (isActive) {
             $menuCnt.fadeOut();
-            setTimeout(function() {
+            setTimeout(function () {
                 $self.removeClass(ACTIVE);
                 $menu.removeClass(ACTIVE);
                 $container.removeClass(ACTIVE);
                 $navMenu.removeClass('add-padding');
-                $('body').removeClass('add-padding')
-                    .css({
-                        top : ''
-                    });
+                $('body').removeClass('add-padding').css({
+                    top: ''
+                });
                 $(window).scrollTop(pos);
             }, 300);
         } else {
@@ -87,11 +77,11 @@ define('app', [
                 $bookBtn.text('Выбрать номер');
                 $bookingPopupCnt.fadeOut();
 
-                setTimeout(function() {
+                setTimeout(function () {
                     $bookingPopup.removeClass(ACTIVE);
                 }, 300);
 
-                setTimeout(function() {
+                setTimeout(function () {
                     $self.addClass(ACTIVE);
                     $menu.addClass(ACTIVE);
                     $menuCnt.fadeIn();
@@ -103,31 +93,29 @@ define('app', [
                 $container.addClass(ACTIVE);
                 $menuCnt.fadeIn();
                 $navMenu.addClass('add-padding');
-                $('body').addClass('add-padding')
-                    .css({
-                        top : -pos
-                    });
+                $('body').addClass('add-padding').css({
+                    top: -pos
+                });
             }
         }
     });
 
-    $bookBtn.click(function() {
+    $bookBtn.click(function () {
         var $self = $(this);
         var isActive = $self.hasClass(ACTIVE);
         var text = isActive ? 'Выбрать номер' : 'Закрыть';
 
         if (isActive) {
             $bookingPopupCnt.fadeOut();
-            setTimeout(function() {
+            setTimeout(function () {
                 $self.removeClass(ACTIVE);
                 $self.text(text);
                 $bookingPopup.removeClass(ACTIVE);
                 $container.removeClass(ACTIVE);
                 $navMenu.removeClass('add-padding');
-                $('body').removeClass('add-padding')
-                    .css({
-                        top : ''
-                    });
+                $('body').removeClass('add-padding').css({
+                    top: ''
+                });
                 $(window).scrollTop(pos);
             }, 300);
         } else {
@@ -136,11 +124,11 @@ define('app', [
                 $burgerBtn.removeClass(ACTIVE);
                 $menuCnt.fadeOut();
 
-                setTimeout(function() {
+                setTimeout(function () {
                     $menu.removeClass(ACTIVE);
                 }, 300);
 
-                setTimeout(function() {
+                setTimeout(function () {
                     $self.addClass(ACTIVE);
                     $self.text(text);
                     $bookingPopup.addClass(ACTIVE);
@@ -154,27 +142,25 @@ define('app', [
                 $container.addClass(ACTIVE);
                 $bookingPopupCnt.fadeIn();
                 $navMenu.addClass('add-padding');
-                $('body').addClass('add-padding')
-                    .css({
-                        top : -pos
-                    });
+                $('body').addClass('add-padding').css({
+                    top: -pos
+                });
             }
         }
     });
 
-    var scrollToBlock = function(el, offset) {
-        if (offset === undefined)
-        	offset = 0;
+    var scrollToBlock = function scrollToBlock(el, offset) {
+        if (offset === undefined) offset = 0;
 
         var duration = 600,
             element = $(el).offset(),
             pos = element.top + offset;
 
-        $('html, body').animate({scrollTop: pos}, duration);
+        $('html, body').animate({ scrollTop: pos }, duration);
     };
 
     // smooth hide preloader, show link
-    var hidePreloader = function() {
+    var hidePreloader = function hidePreloader() {
 
         // calculate animated line after loading page
         var bulgingPart = 80;
@@ -183,13 +169,13 @@ define('app', [
         var fullLinkWidth = linkWidth + insidePart + bulgingPart;
         var $activeLine = $activeLink.children('.b-nav__link-line');
         // hide loader
-        setTimeout(function() {
+        setTimeout(function () {
             $loader.addClass('is-hide');
         }, 300);
-        setTimeout(function() {
+        setTimeout(function () {
             $loader.hide();
         }, 600);
-        setTimeout(function() {
+        setTimeout(function () {
             $activeLine.css({
                 width: fullLinkWidth
             });
@@ -200,12 +186,12 @@ define('app', [
     var cntHeight = $(window).height(); // высота блока
     // меняется в зависимотси от высоты экрана
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         cntHeight = $(window).height();
     });
 
     // show/hide sticky nav
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if (touchWidth) {
             return;
         }
@@ -229,13 +215,13 @@ define('app', [
         }
     });
 
-    (function($forms) {
+    (function ($forms) {
         if (!$forms.length) {
             return;
         }
 
         var initForms = function initForms(Form) {
-            $forms.each(function() {
+            $forms.each(function () {
                 var form = new Form($(this));
                 form.init();
             });
@@ -245,15 +231,15 @@ define('app', [
     })($('form').filter(':not([data-noinit])'));
 
     //Подключение попапа
-    (function($popupLinks) {
+    (function ($popupLinks) {
         if (!$popupLinks.length) {
             return;
         }
 
         var hash = window.location.hash;
 
-        require(['app/popup'], function(Popup) {
-            $popupLinks.each(function() {
+        require(['app/popup'], function (Popup) {
+            $popupLinks.each(function () {
                 var popup = new Popup($(this));
                 popup.initPopup();
 
@@ -265,25 +251,25 @@ define('app', [
     })($('.j-popup'));
 
     // Подключение галерей
-    (function($gallerys) {
+    (function ($gallerys) {
         if (!$gallerys.length) {
             return;
         }
 
-        require(['app/gallery'], function(Gallery) {
-            $gallerys.each(function() {
+        require(['app/gallery'], function (Gallery) {
+            $gallerys.each(function () {
                 return new Gallery($(this));
             });
         });
     })($('.j-gallery'));
 
     // Стилизация селекта
-    (function($selects) {
+    (function ($selects) {
         if (!$selects.length) {
             return;
         }
 
-        $selects.each(function() {
+        $selects.each(function () {
             var $select = $(this);
             $select.selectric({
                 disableOnMobile: false,
@@ -293,18 +279,18 @@ define('app', [
     })($('select'));
 
     // Табы
-    (function($tabContainer) {
+    (function ($tabContainer) {
         if (!$tabContainer.length) {
             return;
         }
 
-        require(['app/tabs'], function(Tabs) {
+        require(['app/tabs'], function (Tabs) {
             return new Tabs($tabContainer);
         });
     })($('.j-tabs'));
 
     //Инициализация карты
-    (function($maps) {
+    (function ($maps) {
         if (!$maps.length) {
             return;
         }
@@ -313,8 +299,8 @@ define('app', [
             return;
         }
 
-        require(['app/map'], function(Map) {
-            $maps.each(function() {
+        require(['app/map'], function (Map) {
+            $maps.each(function () {
                 var $map = $(this);
                 return new Map($map);
             });
@@ -322,13 +308,13 @@ define('app', [
     })($('.j-map'));
 
     //Инициализация карты, отдельная на странице контактов.
-    (function($maps) {
+    (function ($maps) {
         if (!$maps.length) {
             return;
         }
 
-        require(['app/map'], function(Map) {
-            $maps.each(function() {
+        require(['app/map'], function (Map) {
+            $maps.each(function () {
                 var $map = $(this);
                 return new Map($map);
             });
@@ -337,12 +323,12 @@ define('app', [
 
     // подключаем datepicker для бронирования
     // example: http://jsfiddle.net/SirDerpington/h3wGx/4/
-    (function($datepicker) {
+    (function ($datepicker) {
         if (!$datepicker.length) {
             return;
         }
 
-        $datepicker.each(function() {
+        $datepicker.each(function () {
             var $self = $(this);
             var $startDate = $self.find('.j-date-from');
             var $endDate = $self.find('.j-date-to');
@@ -352,44 +338,44 @@ define('app', [
                 minDate: 0,
                 firstDay: 0,
                 dateFormat: 'dd/mm/yy',
-                numberOfMonths: 1,
-                /*onClose: function() {
-                    var minDate = $(this).datepicker('getDate');
-                    if (minDate === null) {
-                        return;
-                    }
-                    var newMin = new Date(minDate.setDate(minDate
-                            .getDate() + 1));
-                    $endDate.datepicker('option', 'minDate', newMin);
-                }*/
+                numberOfMonths: 1
             });
 
+            /*onClose: function() {
+                var minDate = $(this).datepicker('getDate');
+                if (minDate === null) {
+                    return;
+                }
+                var newMin = new Date(minDate.setDate(minDate
+                        .getDate() + 1));
+                $endDate.datepicker('option', 'minDate', newMin);
+            }*/
             $endDate.datepicker({
                 defaultDate: '+1w',
                 minDate: '+1d',
                 firstDay: 0,
                 dateFormat: 'dd/mm/yy',
-                numberOfMonths: 1,
-                /*onClose: function() {
-                    var maxDate = $(this).datepicker('getDate');
-                    if (maxDate === null) {
-                        return;
-                    }
-                    var newMax  = new Date(maxDate.setDate(maxDate
-                            .getDate() - 1));
-                    $startDate.datepicker('option', 'maxDate',  newMax);
-                }*/
+                numberOfMonths: 1
             });
         });
-    })($('.j-date-booking'));
+    })( /*onClose: function() {
+            var maxDate = $(this).datepicker('getDate');
+            if (maxDate === null) {
+                return;
+            }
+            var newMax  = new Date(maxDate.setDate(maxDate
+                    .getDate() - 1));
+            $startDate.datepicker('option', 'maxDate',  newMax);
+        }*/
+    $('.j-date-booking'));
 
     // resize header-menu
-    (function($headerMenu) {
+    (function ($headerMenu) {
         if (!$headerMenu.length || mobileWidth) {
             return;
         }
 
-        var transformMenu = function() {
+        var transformMenu = function transformMenu() {
             var cntHeight = $headerMenu.outerHeight(true);
             var screenHeight = $(window).height();
             var $reviewsBlock = $headerMenu.find('.j-reviews');
@@ -404,11 +390,11 @@ define('app', [
                 if (cntHeight > screenHeight) {
                     $reviewsBlock.hide();
                     $headerMenu.addClass('is-smaller');
-                // del block
+                    // del block
                 } else {
-                    $reviewsBlock.hide();
-                    $headerMenu.removeClass('is-smaller');
-                }
+                        $reviewsBlock.hide();
+                        $headerMenu.removeClass('is-smaller');
+                    }
             }
 
             // set opacity to 1, after show / hide  block
@@ -418,14 +404,13 @@ define('app', [
         transformMenu();
         hidePreloader();
 
-        $(window).on('resize', function() {
+        $(window).on('resize', function () {
             transformMenu();
         });
-
     })($('.j-header-menu'));
 
     // Change gallery param
-    (function($gallery) {
+    (function ($gallery) {
         if (!$gallery.length) {
             return;
         }
@@ -435,64 +420,56 @@ define('app', [
         if (matchMedia('only screen and (max-width: 640px)').matches) {
 
             $param.data('height', 400);
-        } else if ($gallery.hasClass('j-gallery_theme_tablet') &&
-            matchMedia('only screen and (max-width: 1024px)').matches)
-        {
+        } else if ($gallery.hasClass('j-gallery_theme_tablet') && matchMedia('only screen and (max-width: 1024px)').matches) {
             $param.data('height', 600);
         }
     })($('.j-gallery_theme_mobile'));
 
     // Плавный скроллинг
-    (function($slowScroll) {
+    (function ($slowScroll) {
         if (!$slowScroll.length) {
             return;
         }
 
-        $slowScroll.click(function() {
-            $('body, html').animate({scrollTop: cntHeight}, 'slow');
+        $slowScroll.click(function () {
+            $('body, html').animate({ scrollTop: cntHeight }, 'slow');
         });
     })($('.j-scroll-down'));
 
-    window.onload = function() {
+    window.onload = function () {
         if (window.location.hash != '') {
             setTimeout(function () {
                 window.scrollTo(0, 0);
 
-                if(window.location.hash == '#content')
-                    $('.j-scroll-down').trigger('click');
+                if (window.location.hash == '#content') $('.j-scroll-down').trigger('click');
             }, 1);
         }
     };
 
     //Подключение попапа с картой
     //Инициализация карты при открытие попапа
-    (function($popup) {
+    (function ($popup) {
         if (!$popup.length) {
             return;
         }
 
-        require(['magnific-popup'], function() {
-            $popup.each(function() {
+        require(['magnific-popup'], function () {
+            $popup.each(function () {
                 var $popup = $(this);
                 var isOpened = 0;
 
                 $popup.magnificPopup({
                     type: 'inline',
                     callbacks: {
-                        beforeOpen: function() {
+                        beforeOpen: function beforeOpen() {
                             if (isOpened > 0) {
                                 return;
                             }
-                            require(['app/map'], function(Map) {
+                            require(['app/map'], function (Map) {
                                 var $map = $('.j-map');
-                                var id   = $map.attr('id');
+                                var id = $map.attr('id');
 
-                                var data =
-                                    (id &&
-                                    window.map &&
-                                    window.map[id]) ?
-                                        window.map[id] :
-                                    {};
+                                var data = id && window.map && window.map[id] ? window.map[id] : {};
 
                                 return new Map($map, data);
                             });
@@ -505,7 +482,7 @@ define('app', [
         });
     })($('.j-map-popup'));
 
-    (function($showMap) {
+    (function ($showMap) {
         if (!$showMap.length) {
             return;
         }
@@ -515,14 +492,14 @@ define('app', [
         var $maps = $('.j-map');
         var mapIsOpened = 0;
 
-        $showMap.click(function() {
+        $showMap.click(function () {
             var $self = $(this);
-            var isActive =  $self.hasClass(ACTIVE);
+            var isActive = $self.hasClass(ACTIVE);
 
             // initiate map
             if (mapIsOpened === 0) {
-                require(['app/map'], function(Map) {
-                    $maps.each(function() {
+                require(['app/map'], function (Map) {
+                    $maps.each(function () {
                         var $map = $(this);
                         return new Map($map);
                     });
@@ -537,7 +514,7 @@ define('app', [
                 $map.css({
                     opacity: 0
                 });
-                setTimeout(function() {
+                setTimeout(function () {
                     $map.css({
                         'z-index': -1
                     });
@@ -551,28 +528,26 @@ define('app', [
             }
         });
 
-        $closeBtn.click(function() {
+        $closeBtn.click(function () {
             $showMap.removeClass(ACTIVE);
             $map.css({
                 opacity: 0
             });
-            setTimeout(function() {
+            setTimeout(function () {
                 $map.css({
                     'z-index': -1
                 });
             }, 300);
         });
-
     })($('.j-show-map'));
 
     // Open iframe with booking
-    (function($frame) {
+    (function ($frame) {
         if (!$frame.length) {
             return;
         }
 
-        require(['magnific-popup'], function() {
-            console.log(12);
+        require(['magnific-popup'], function () {
             $frame.magnificPopup({
                 type: 'iframe',
                 mainClass: 'mfp-fade',
@@ -580,8 +555,7 @@ define('app', [
                 preloader: false,
                 fixedContentPos: true,
                 tClose: 'Закрыть',
-                closeMarkup: '<button title="%title%" type="button" ' +
-                'class="mfp-close">Закрыть</button>'
+                closeMarkup: '<button title="%title%" type="button" ' + 'class="mfp-close">Закрыть</button>'
             });
         });
     })($('.j-frame'));

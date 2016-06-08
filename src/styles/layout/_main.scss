@@ -44,6 +44,13 @@
                 left: gutter(2);
             };
         }
+
+        @media #{$big-up} {
+            padding: {
+                right: 0;
+                left: 0;
+            };
+        }
     }
 }
 

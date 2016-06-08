@@ -31,14 +31,11 @@
 .l-header__booking-info {
     position: relative;
 
-    @media #{$medium-up} {
-        height: 100vh;
-    }
-
     @media #{$custom-1024-up} {
         @include span(9.5 last);
         position: relative;
         padding: 0;
+        height: 100vh;
     }
 }
 

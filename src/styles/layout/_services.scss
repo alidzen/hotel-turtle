@@ -26,6 +26,13 @@
     }
 }
 
+.l-services__tiles-row {
+    @media #{$custom-1024-up} {
+        @include span(10 center);
+        padding: 0;
+    }
+}
+
 .l-services__tiles {
     @include grid-clearfix();
     @include margin-trailer(2);

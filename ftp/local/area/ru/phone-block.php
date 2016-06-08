@@ -1,0 +1,1 @@
+<a href="tel: +78126702575" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670–25–75</a>

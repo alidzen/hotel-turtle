@@ -36,6 +36,9 @@ var gulpif       = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var spritesmith  = require('gulp.spritesmith');
 var prettify     = require('gulp-prettify');
+var typograf     = require('gulp-typograf');
+var babel        = require('gulp-babel');
+var connect      = require('gulp-connect');
 
 /**
  * Error function for plumber
@@ -62,27 +65,23 @@ paths.src.jade        = paths.src.jadeBase + '/**/*.jade';
 paths.src.sprites     = paths.srcBase + '/sprites/1x/*.png';
 paths.src.sprites2x   = paths.srcBase + '/sprites/2x/*.png';
 
-paths.buildBase       = 'www';
-paths.build           = {};
-paths.build.scripts   = paths.buildBase + '/scripts';
-paths.build.styles    = paths.buildBase + '/styles';
-paths.build.tpl       = paths.build.scripts;
-paths.build.jade      = paths.buildBase + '/html';
+paths.buildBase     = 'www';
+paths.build         = {};
+paths.build.scripts = paths.buildBase + '/scripts';
+paths.build.styles  = paths.buildBase + '/styles';
+paths.build.tpl     = paths.build.scripts;
+paths.build.jade    = paths.buildBase + '/html';
 
-paths.html            = paths.buildBase + '/**/*.html';
+paths.html = paths.buildBase + '/**/*.html';
 
 var buildCss = function() {
     return gulp.src(paths.src.styles)
-        .pipe(sass({
-            includePaths: [
-                'node_modules/compass-mixins/lib/'
-            ]
-        }))
+        .pipe(sass())
         .on('error', notify.onError({
-            message : 'Line: <%= error.lineNumber %>:' +
+            message: 'Line: <%= error.lineNumber %>:' +
             ' <%= error.message %>' +
             '\n<%= error.fileName %>',
-            title   : '<%= error.plugin %>'
+            title: '<%= error.plugin %>'
         }))
         .on('error', function() {
             this.emit('end');
@@ -92,7 +91,7 @@ var buildCss = function() {
             cascade: false
         }))
         .pipe(gulp.dest(paths.build.styles))
-        .pipe(livereload());
+        .pipe(connect.reload());
 };
 
 /**
@@ -112,35 +111,35 @@ gulp.task('build', [
 gulp.task('sprites', function() {
     return gulp.src(paths.src.sprites)
         .pipe(spritesmith({
-            imgName     : 'sprites.png',
-            cssName     : '_sprites.scss',
-            imgPath     : '/img/sprites.png',
-            padding     : 1,
-            cssTemplate : 'sprites.handlebars'
+            imgName: 'sprites.png',
+            cssName: '_sprites.scss',
+            imgPath: '/img/sprites.png',
+            padding: 1,
+            cssTemplate: 'sprites.handlebars'
         }))
         .pipe(gulpif(
             '*.png',
             gulp.dest(paths.buildBase + '/img'),
             gulp.dest(paths.src.stylesBase + '/base')
         ))
-        .pipe(livereload());
+        .pipe(connect.reload());
 });
 
 gulp.task('sprites2x', function() {
     return gulp.src(paths.src.sprites2x)
         .pipe(spritesmith({
-            imgName     : 'sprites@2x.png',
-            imgPath     : '/img/sprites@2x.png',
-            cssName     : '_sprites@2x.scss',
-            padding     : 2,
-            cssTemplate : 'sprites@2x.handlebars'
+            imgName: 'sprites@2x.png',
+            imgPath: '/img/sprites@2x.png',
+            cssName: '_sprites@2x.scss',
+            padding: 2,
+            cssTemplate: 'sprites@2x.handlebars'
         }))
         .pipe(gulpif(
             '*.png',
             gulp.dest(paths.buildBase + '/img'),
             gulp.dest(paths.src.stylesBase + '/base')
         ))
-        .pipe(livereload());
+        .pipe(connect.reload());
 });
 
 gulp.task('styles', ['sprites', 'sprites2x'], function() {
@@ -158,18 +157,18 @@ gulp.task('js-uglify', function jsTask() {
         .pipe(changed(paths.build.scripts))
         .pipe(plumber({
             errorHandler: notify.onError({
-                message : 'Line: <%= error.lineNumber %>:' +
+                message: 'Line: <%= error.lineNumber %>:' +
                 ' <%= error.message %>' +
                 '\n<%= error.fileName %>',
-                title   : '<%= error.plugin %>'
+                title: '<%= error.plugin %>'
             })
         }))
-        // .pipe(uglify({
-        //     outSourceMap: false
-        // }))
+        .pipe(babel({
+            presets: ['es2015']
+        }))
         .pipe(plumber.stop())
         .pipe(gulp.dest(paths.build.scripts))
-        .pipe(livereload());
+        .pipe(connect.reload());
 });
 
 gulp.task('vendor', function vendorTask() {
@@ -200,20 +199,20 @@ gulp.task('templates', function templatesTask() {
         }))
         .pipe(plumber({
             errorHandler: notify.onError({
-                message : function() {
+                message: function() {
                     return errorTpl + '\n\n' + fileName;
                 },
-                title   : 'Handlebars'
+                title: 'Handlebars'
             })
         }))
         .pipe(handlebars())
         .pipe(plumber.stop())
         .pipe(defineModule('amd'))
         .pipe(uglify({
-            outSourceMap : false
+            outSourceMap: false
         }))
         .pipe(gulp.dest(paths.build.tpl))
-        .pipe(livereload());
+        .pipe(connect.reload());
 });
 
 gulp.task('jade', function() {
@@ -223,9 +222,13 @@ gulp.task('jade', function() {
         .pipe(jade({
             pretty: true
         }))
+        .pipe(typograf({
+            lang: 'ru',
+            disable: ['ru/nbsp/centuries', 'common/number/fraction']
+        }))
         .on('error', notify.onError({
-            message : 'Failed to compile html',
-            title   : 'Jade'
+            message: 'Failed to compile html',
+            title: 'Jade'
         }))
         .on('error', function() {
             this.emit('end');
@@ -233,9 +236,9 @@ gulp.task('jade', function() {
         .pipe(prettify({
             indent_size: 4
         }))
-        .pipe(gulp.dest(paths.build.jade));
+        .pipe(gulp.dest(paths.build.jade))
+        .pipe(connect.reload());
 });
-
 
 
 /**
@@ -243,12 +246,12 @@ gulp.task('jade', function() {
  */
 
 // Main lint task
-gulp.task('lint', ['jscs', 'jshint', 'scss-lint']);
+gulp.task('lint', ['jscs', 'jshint']);
 
 gulp.task('scss-lint', function sassLintTask() {
     return gulp.src(paths.src.styles)
         .pipe(scsslint({
-            config : '.scss-lint.yml',
+            config: '.scss-lint.yml',
             'bundleExec': true
         }))
         .pipe(scsslint.failReporter());
@@ -293,31 +296,29 @@ gulp.task('hooks', function() {
  s */
 gulp.task('pre-commit-notify', function() {
     notifier.notify({
-        message : 'Fix errors first',
-        title   : 'Commit failed'
+        message: 'Fix errors first',
+        title: 'Commit failed'
+    });
+});
+
+gulp.task('connect', function() {
+    connect.server({
+        root: 'www',
+        livereload: true,
+        port: 8080
     });
 });
 
 /**
  * Watch task
  */
-gulp.task('watch', ['build'], function watch() {
-    livereload.listen(function(err) {
-        if (err) {
-            return console.log('Livereload start failed');
-        }
-
-        gulp.watch(paths.src.sprites, ['sprites']);
-        gulp.watch(paths.src.sprites2x, ['sprites2x']);
-        gulp.watch(paths.src.styles,  ['css']);
-        gulp.watch(paths.src.scripts, ['js-uglify']);
-        gulp.watch(paths.src.tpl,     ['templates']);
-        gulp.watch(paths.src.jade,    ['jade']);
-
-        gulp.watch(paths.html).on('change', function(file) {
-            livereload.changed(file.path);
-        });
-    });
+gulp.task('watch', ['build', 'connect'], function watch() {
+    gulp.watch(paths.src.sprites, ['sprites']);
+    gulp.watch(paths.src.sprites2x, ['sprites2x']);
+    gulp.watch(paths.src.styles, ['css']);
+    gulp.watch(paths.src.scripts, ['js-uglify']);
+    gulp.watch(paths.src.tpl, ['templates']);
+    gulp.watch(paths.src.jade, ['jade']);
 });
 
 // Run

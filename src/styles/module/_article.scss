@@ -204,7 +204,7 @@
             content: '';
             position: absolute;
             top: - 2px;
-            right: - 2px;
+            right: 2px;
             background-color: $green;
             width: 2px;
             height: 100px;
@@ -224,7 +224,7 @@
             content: '';
             position: absolute;
             top: - 2px;
-            left: - 2px;
+            left: 0;
             background-color: $gold;
             width: 2px;
             height: 130px;

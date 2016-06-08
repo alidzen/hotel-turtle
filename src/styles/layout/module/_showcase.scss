@@ -11,6 +11,13 @@
     }
 }
 
+.l-showcase__row {
+    @media #{$custom-1024-up} {
+        @include span(10 center);
+        padding: 0;
+    }
+}
+
 .l-showcase__gallery {
     @media #{$big-up} {
         @include span(7.5);

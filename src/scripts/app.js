@@ -572,7 +572,6 @@ define('app', [
         }
 
         require(['magnific-popup'], function() {
-            console.log(12);
             $frame.magnificPopup({
                 type: 'iframe',
                 mainClass: 'mfp-fade',

@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Атмосфера", 
+		"/atmosphere/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Номера", 
+		"/rooms/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Спецпредложения", 
+		"/actions/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Дополнительные услуги", 
+		"/services/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Ресторан", 
+		"/restaurant/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
