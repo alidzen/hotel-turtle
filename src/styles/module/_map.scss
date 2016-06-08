@@ -13,6 +13,13 @@
     }
 }
 
+.b-map {
+    @media #{$custom-1024-up} {
+        @include span(10 center);
+        padding: 0;
+    }
+}
+
 //MODULE
 .b-map__base {
     width: 100%;

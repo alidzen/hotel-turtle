@@ -184,7 +184,7 @@ $APPLICATION->SetTitle("Главная");
 	</div>
 </div>
  </section> <section class="l-services">
-<div class="l-services__header l-limit-wrap">
+<div class="l-services__header l-limit-wrap no-padding">
 	<div class="l-services__row">
 		<div class="b-article">
 			<div class="b-feature__header">
@@ -206,11 +206,14 @@ $APPLICATION->SetTitle("Главная");
 	</div>
 </div>
 <div class="l-services__tiles l-limit-wrap no-padding">
+	<div class="l-services__tiles-row">
 	<?$APPLICATION->IncludeFile(
 		'/local/area/' . LANGUAGE_ID . '/main-services-list.php',
 		Array(),
 		Array('MODE' => 'html')
 	);?>
+	</div>
+</div>
  </section> <section class="l-article l-limit-wrap no-padding">
 <div class="l-article__cnt">
 	<div class="b-card">

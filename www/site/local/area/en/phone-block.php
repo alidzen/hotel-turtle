@@ -1,1 +1,0 @@
-<a href="tel: +78126708683" class="b-menu-contacts__tel">+7&nbsp;(812)&nbsp;670&ndash;86&ndash;83</a>

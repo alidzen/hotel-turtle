@@ -1,9 +1,17 @@
-.l-showcase {
+.l-showcase__inner-row {
     @extend %l-row;
+}
+
+.l-showcase {
     @include grid-clearfix();
     @include margin-trailer(2);
     position: relative;
     background-color: $gold;
+
+    @media #{$custom-1024-up} {
+        @include span(10 center);
+        padding: 0;
+    }
 
     @media #{$big-up} {
         @include margin-trailer(3);
@@ -11,16 +19,9 @@
     }
 }
 
-.l-showcase__row {
-    @media #{$custom-1024-up} {
-        @include span(10 center);
-        padding: 0;
-    }
-}
-
 .l-showcase__gallery {
     @media #{$big-up} {
-        @include span(7.5);
+        @include span(6.5);
     }
 }
 
@@ -28,7 +29,7 @@
     @include padding-trailer(1);
 
     @media #{$big-up} {
-        @include span(4.5);
+        @include span(5.5);
         height: 100%;
     }
 }
