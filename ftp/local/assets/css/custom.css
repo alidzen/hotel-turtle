@@ -72,7 +72,9 @@ body .bx-core-adm-dialog, body .bx-core-adm-dialog a, body .bx-core-adm-dialog s
 }
 
 .b-nav__link.is-active::after {
-	width: 100%;
+	width: auto;
+	left: 1px;
+	right: 1px;
 }
 
 .b-btn_text_sise_2 {
