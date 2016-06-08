@@ -3166,11 +3166,11 @@ blockquote:after {
     -webkit-animation-name: slideOutUp;
     animation-name: slideOutUp; }
 
-.l-limit-wrap, .l-feature, .l-booking-rooms, .l-cafe-feature, .l-room-feature, .l-action, .l-map, .l-callback, .l-showcase__inner-row, .l-actions-showcase, .l-showcase-full {
+.l-limit-wrap, .l-feature, .l-booking-rooms, .l-cafe-feature, .l-room-feature__inner-wrap, .l-action, .l-map, .l-callback, .l-showcase__inner-row, .l-actions-showcase, .l-showcase-full {
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto; }
-.l-limit-wrap:after, .l-feature:after, .l-booking-rooms:after, .l-cafe-feature:after, .l-room-feature:after, .l-action:after, .l-map:after, .l-callback:after, .l-showcase__inner-row:after, .l-actions-showcase:after, .l-showcase-full:after {
+.l-limit-wrap:after, .l-feature:after, .l-booking-rooms:after, .l-cafe-feature:after, .l-room-feature__inner-wrap:after, .l-action:after, .l-map:after, .l-callback:after, .l-showcase__inner-row:after, .l-actions-showcase:after, .l-showcase-full:after {
     content: '';
     display: block;
     clear: both; }
@@ -4548,6 +4548,11 @@ blockquote:after {
         margin-left: 12.5%;
         margin-right: 12.5%;
         float: left; } }
+
+.l-room-feature__inner-wrap:after {
+    content: '';
+    display: block;
+    clear: both; }
 
 .l-room-feature {
     margin-bottom: 48px;
