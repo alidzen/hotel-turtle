@@ -3166,11 +3166,11 @@ blockquote:after {
     -webkit-animation-name: slideOutUp;
     animation-name: slideOutUp; }
 
-.l-limit-wrap, .l-feature, .l-booking-rooms, .l-cafe-feature, .l-room-feature, .l-action, .l-map, .l-callback, .l-showcase, .l-actions-showcase, .l-showcase-full {
+.l-limit-wrap, .l-feature, .l-booking-rooms, .l-cafe-feature, .l-room-feature, .l-action, .l-map, .l-callback, .l-showcase__inner-row, .l-actions-showcase, .l-showcase-full {
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto; }
-.l-limit-wrap:after, .l-feature:after, .l-booking-rooms:after, .l-cafe-feature:after, .l-room-feature:after, .l-action:after, .l-map:after, .l-callback:after, .l-showcase:after, .l-actions-showcase:after, .l-showcase-full:after {
+.l-limit-wrap:after, .l-feature:after, .l-booking-rooms:after, .l-cafe-feature:after, .l-room-feature:after, .l-action:after, .l-map:after, .l-callback:after, .l-showcase__inner-row:after, .l-actions-showcase:after, .l-showcase-full:after {
     content: '';
     display: block;
     clear: both; }
@@ -3210,6 +3210,10 @@ blockquote:after {
     .l-limit-wrap.has-border {
         padding-right: 20px;
         padding-left: 20px; } }
+@media only screen and (min-width: 1025px) {
+    .l-limit-wrap.has-border {
+        padding-right: 0;
+        padding-left: 0; } }
 
 .l-limit-wrap-full {
     max-width: 2560px;
@@ -3321,15 +3325,13 @@ blockquote:after {
 
 .l-header__booking-info {
     position: relative; }
-@media only screen and (min-width: 641px) {
-    .l-header__booking-info {
-        height: 100vh; } }
 @media only screen and (min-width: 1024px) {
     .l-header__booking-info {
         width: 79.16667%;
         float: right;
         position: relative;
-        padding: 0; } }
+        padding: 0;
+        height: 100vh; } }
 
 .l-header__gallery {
     position: relative;
@@ -3763,6 +3765,14 @@ blockquote:after {
 
 @media only screen and (min-width: 641px) {
     .l-services__row {
+        width: 83.33333%;
+        margin-left: 8.33333%;
+        margin-right: 8.33333%;
+        float: left;
+        padding: 0; } }
+
+@media only screen and (min-width: 1024px) {
+    .l-services__tiles-row {
         width: 83.33333%;
         margin-left: 8.33333%;
         margin-right: 8.33333%;
@@ -4522,7 +4532,7 @@ blockquote:after {
     .l-cafe-feature__border:before {
         content: '';
         position: absolute;
-        left: -2px;
+        left: 0;
         top: -2px;
         width: 2px;
         height: 50px;
@@ -4547,6 +4557,13 @@ blockquote:after {
 @media only screen and (min-width: 641px) {
     .l-room-feature {
         margin-bottom: 72px; } }
+@media only screen and (min-width: 1024px) {
+    .l-room-feature {
+        width: 83.33333%;
+        margin-left: 8.33333%;
+        margin-right: 8.33333%;
+        float: left;
+        padding: 0; } }
 @media only screen and (min-width: 1025px) {
     .l-room-feature {
         margin-bottom: 120px;
@@ -5574,6 +5591,14 @@ select {
     .l-map {
         margin-bottom: 84px; } }
 
+@media only screen and (min-width: 1024px) {
+    .b-map {
+        width: 83.33333%;
+        margin-left: 8.33333%;
+        margin-right: 8.33333%;
+        float: left;
+        padding: 0; } }
+
 .b-map__base {
     width: 100%; }
 @media only screen and (min-width: 641px) {
@@ -5921,12 +5946,9 @@ select {
         margin-right: 8.33333%;
         float: left; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
     .l-callback__cnt {
-        width: 66.66667%;
-        margin-left: 16.66667%;
-        margin-right: 16.66667%;
-        float: left; } }
+        padding: 0; } }
 
 .b-callback {
     padding: 10px 10px;
@@ -6754,7 +6776,7 @@ select {
         content: '';
         position: absolute;
         top: -2px;
-        right: -2px;
+        right: 2px;
         background-color: #005870;
         width: 2px;
         height: 100px; } }
@@ -6769,7 +6791,7 @@ select {
         content: '';
         position: absolute;
         top: -2px;
-        left: -2px;
+        left: 0;
         background-color: #b17d0c;
         width: 2px;
         height: 130px; } }
@@ -7222,6 +7244,13 @@ select {
     content: '';
     display: block;
     clear: both; }
+@media only screen and (min-width: 1024px) {
+    .l-showcase {
+        width: 83.33333%;
+        margin-left: 8.33333%;
+        margin-right: 8.33333%;
+        float: left;
+        padding: 0; } }
 @media only screen and (min-width: 1025px) {
     .l-showcase {
         margin-bottom: 72px;
@@ -7229,14 +7258,14 @@ select {
 
 @media only screen and (min-width: 1025px) {
     .l-showcase__gallery {
-        width: 62.5%;
+        width: 54.16667%;
         float: left; } }
 
 .l-showcase__descr {
     padding-bottom: 24px; }
 @media only screen and (min-width: 1025px) {
     .l-showcase__descr {
-        width: 37.5%;
+        width: 45.83333%;
         float: left;
         height: 100%; } }
 
