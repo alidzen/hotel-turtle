@@ -189,23 +189,25 @@ $APPLICATION->SetTitle("Номера");
 	),
 	false
 );?>
-<section class="l-room-feature border-vertical">
-	<div class="l-room-feature__border border-horizontal">
-		<div class="l-room-feature__cnt">
-			<h2>
-				<?$APPLICATION->IncludeFile(
+<section class="l-room-feature__inner-wrap">
+	<div class="l-room-feature border-vertical">
+		<div class="l-room-feature__border border-horizontal">
+			<div class="l-room-feature__cnt">
+				<h2>
+					<?$APPLICATION->IncludeFile(
 					'/local/area/' . LANGUAGE_ID . '/rooms-cleaning-block-ttl.php',
 					Array(),
 					Array('MODE' => 'html')
-				);?>
-			</h2>
-			<p>
-				<?$APPLICATION->IncludeFile(
+					);?>
+				</h2>
+				<p>
+					<?$APPLICATION->IncludeFile(
 					'/local/area/' . LANGUAGE_ID . '/rooms-cleaning-block-txt.php',
 					Array(),
 					Array('MODE' => 'html')
-				);?>
-			</p>
+					);?>
+				</p>
+			</div>
 		</div>
 	</div>
 </section>

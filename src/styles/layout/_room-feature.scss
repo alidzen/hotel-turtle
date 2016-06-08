@@ -1,5 +1,9 @@
-.l-room-feature {
+.l-room-feature__inner-wrap {
     @extend %l-row;
+    @include grid-clearfix();
+}
+
+.l-room-feature {
     @include margin-trailer(2);
     position: relative;
     background: url('/img/room-bg-2.jpg') 50% 50% no-repeat;
