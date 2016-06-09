@@ -21,7 +21,7 @@
 	</li>
 	<li class="b-feature__item">
 		<div class="b-feature__item-img b-feature__item-img_img_wi-fi"></div>
-		<div class="b-feature__item-txt">Высокоскоростной Wi-Fi</div>
+		<div class="b-feature__item-txt">Бесплатный Wi-Fi</div>
 	</li>
 	<li class="b-feature__item">
 		<div class="b-feature__item-img b-feature__item-img_img_eco"></div>
