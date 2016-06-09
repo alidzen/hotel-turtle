@@ -16,47 +16,43 @@ $this->setFrameMode(true);
 <?if(count($arResult['ITEMS'])):?>
 	<?foreach($arResult['ITEMS'] as $i => $arItem):?>
 		<?if($i%2):?>
-		<section class="l-actions-showcase">
-			<div style="background-color: #b17d0c;" class="l-actions-showcase__row l-actions-showcase__row_theme_big-img">
-				<a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="l-actions-showcase__img border-vertical">
-					<img src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>" alt="<?=$arItem['NAME'];?>">
-					<div class="l-actions-showcase__img-wrap border-horizontal"></div>
-				</a>
-				<div class="l-actions-showcase__cnt">
-					<div class="b-actions-showcase">
-						<div class="b-actions-showcase__cnt">
-							<div class="b-actions-showcase__header">
-								<div class="b-actions-showcase__ttl"><?=$arItem['NAME'];?></div>
-								<div class="b-actions-showcase__ttl-note"><?=$arItem['PROPERTIES']['SUB_NAME']['VALUE'];?></div>
+		<section class="l-article l-limit-wrap no-padding">
+			<div class="l-article__cnt">
+				<div class="b-card">
+					<div class="b-card__border">
+						<div class="b-card__cnt">
+							<div class="b-card__header">
+								<div class="b-card__ttl-note"><?=$arItem['PROPERTIES']['SUB_NAME']['VALUE'];?></div>
+								<h1 class="b-card__ttl"><?=$arItem['NAME'];?></h1>
 							</div>
-							<div class="b-actions-showcase__descr">
+							<div class="b-card__descr">
 								<p><?=$arItem['PREVIEW_TEXT'];?></p>
-							</div><a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="b-actions-showcase__link">Подробнее</a> </div>
+							</div><a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="b-card__link">Подробнее</a> </div>
+						<a href="/html/action.html" class="b-card__gallery">
+							<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>')" class="b-card__gallery-img"></div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<?else:?>
-		<section class="l-actions-showcase">
-			<div class="l-actions-showcase__row">
-				<div class="l-actions-showcase__cnt">
-					<div class="b-actions-showcase">
-						<div class="b-actions-showcase__cnt">
-							<div class="b-actions-showcase__header">
-								<div class="b-actions-showcase__ttl"><?=$arItem['NAME'];?></div>
-								<div class="b-actions-showcase__ttl-note"><?=$arItem['PROPERTIES']['SUB_NAME']['VALUE'];?></div>
+		<section class="l-article l-limit-wrap no-padding">
+			<div class="l-article__cnt">
+				<div class="b-card">
+					<div class="b-card__border">
+						<div class="b-card__cnt">
+							<div class="b-card__header">
+								<div class="b-card__ttl-note"><?=$arItem['PROPERTIES']['SUB_NAME']['VALUE'];?></div>
+								<h1 class="b-card__ttl"><?=$arItem['NAME'];?></h1>
 							</div>
-							<div class="b-actions-showcase__descr">
-								<?=$arItem['PREVIEW_TEXT'];?>
-							</div>
-							<a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="b-actions-showcase__link">Подробнее</a>
-						</div>
+							<div class="b-card__descr">
+								<p><?=$arItem['PREVIEW_TEXT'];?></p>
+							</div><a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="b-card__link">Подробнее</a> </div>
+						<a href="/html/action.html" class="b-card__gallery">
+							<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>')" class="b-card__gallery-img"></div>
+						</a>
 					</div>
 				</div>
-				<a href="<?=$arItem['DETAIL_PAGE_URL'];?>" class="l-actions-showcase__img border-vertical">
-					<img src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>" alt="<?=$arItem['NAME'];?>">
-					<div class="l-actions-showcase__img-wrap border-horizontal"></div>
-				</a>
 			</div>
 		</section>
 		<?endif;?>
