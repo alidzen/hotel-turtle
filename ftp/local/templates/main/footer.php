@@ -55,7 +55,9 @@
 		</div>
 	</div>
 	<div class="l-preloader j-loader">
-		<div class="b-loader"></div>
+		<div class="b-loader">
+			<div class="b-loader__load"></div>
+		</div>
 	</div>
 	<?$APPLICATION->IncludeFile(
 			"/local/area/counters.php",
