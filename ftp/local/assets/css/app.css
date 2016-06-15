@@ -142,10 +142,10 @@ img {
 .show {
     display: block; }
 
-.b-menu-logo__txt, .b-menu-contacts__map {
+.b-menu-contacts__map {
     position: relative;
     padding-top: 12px; }
-.b-menu-logo__txt:before, .b-menu-contacts__map:before {
+.b-menu-contacts__map:before {
     content: '';
     position: absolute;
     top: 0;
@@ -5878,7 +5878,8 @@ select {
     margin-left: auto; }
 
 .b-menu-logo__txt {
-    color: #463f32; }
+    color: #463f32;
+    padding-top: 12px; }
 
 .b-menu-contacts {
     text-align: center; }
