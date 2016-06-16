@@ -1,2 +1,1 @@
-Весной 2016 года ожидается открытие ресторанного комплекса, где разместятся кафе, ресторан, закрытый сигарный клуб и небольшой банкетный зал. Меню ресторана, в котором безупречно сочетаются блюда европейской
-							кухни и авторские задумки шеф-повара, придется по вкусу даже самому искушенному гурману. Уже сейчас для гостей отеля готовит вкусные завтраки шеф-повар ресторана Алексей Ермаков.
+The restaurant complex that includes the café, restaurant, lounge, and a banqueting hall is opening its doors in summer 2016. The menu of the restaurant, which is a combination of European cuisine and the Chef’s personal ideas, will be to all the gourmets taste. Already now the restaurant’s Chef Alexey Ermakov is preparing tasty breakfasts for hotel guests.

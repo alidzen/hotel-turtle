@@ -4511,9 +4511,9 @@ blockquote {
       bottom: 0; } }
   @media only screen and (min-width: 1024px) {
     .l-cafe-feature__img-wrap {
-      width: 420px;
+      width: 370px;
       opacity: 1;
-      left: -40px; } }
+      left: 0; } }
 
 .l-cafe-feature__border {
   padding-top: 48px;
@@ -4548,7 +4548,7 @@ blockquote {
       left: 0;
       top: -2px;
       width: 2px;
-      height: 50px;
+      height: 118px;
       background-color: #bca064; } }
 
 .l-cafe-feature__cnt {
@@ -7233,7 +7233,7 @@ select {
     padding-bottom: 0; }
     .b-card_theme_gallery .b-card__cnt {
       float: left;
-      padding-top: 100px; } }
+      padding-top: 80px; } }
 
 .b-card_theme_gallery .b-card__gallery {
   height: 400px; }

@@ -1,1 +1,1 @@
-&laquo;Симпозиум&raquo;
+&laquo; Simposium&raquo;

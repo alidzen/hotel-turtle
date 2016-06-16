@@ -1,1 +1,1 @@
-В каждой детали
+in every detail&nbsp;

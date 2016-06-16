@@ -22,20 +22,22 @@ $APPLICATION->SetTitle("Атмосфера");
 							Array('MODE' => 'html')
 						);?>
 					<br>
-					<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+					<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">
+						<?$APPLICATION->IncludeFile(
+							'/local/area/' . LANGUAGE_ID .'/global-look-on-the-map-text.php',
+							Array(),
+							Array('MODE' => 'text')
+						);?>
+					</a>
 				</div>
 			</div>
  <div class="b-card__gallery">
-	 <div class="b-gallery j-gallery j-gallery_theme_mobile j-gallery_theme_tablet">
-		 <div data-height="800" data-width="100%" data-arrows="false" data-nav="dots" data-fit="cover" data-loop="true" data-autoplay="false" data-transition="dissolve" data-transitionduration="600" data-margin="-1"
-			  class="b-gallery__base">
-			 <a href="/local/assets/img/card/card-2.jpg"></a>
-			 <a href="/local/assets/img/card/card-3.jpg"></a>
-			 <a href="/local/assets/img/card/card-4.jpg"></a>
-			 <a href="/local/assets/img/card/card-5.jpg"></a>
-			 <a href="/local/assets/img/card/card-6.jpg"></a>
-		 </div><a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать предыдущий слайд</a><a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать следущий слайд</a>
-	 </div>
+		<?$APPLICATION->IncludeComponent("olympia:blank", "b-galery", Array(
+	"CODE" => "atmosphere",
+			"HEIGHT" => "750"
+	),
+	false
+);?>
 </div>
  </div>
 		</div>

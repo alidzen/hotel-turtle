@@ -1,1 +1,1 @@
-Ресторан
+The restaurant

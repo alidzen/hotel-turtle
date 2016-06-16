@@ -71,7 +71,7 @@
 	<div class="b-service__border">
 		<div class="b-service__header">
 			<div class="b-service__ttl-note">
-				 Бизнес центр
+				Visa support document
 			</div>
 		</div>
 		<p>

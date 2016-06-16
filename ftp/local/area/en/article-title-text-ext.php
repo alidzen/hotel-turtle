@@ -1,1 +1,1 @@
-особенно нравится:
+especially like about our hotel?

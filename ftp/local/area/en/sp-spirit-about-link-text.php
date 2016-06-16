@@ -1,1 +1,1 @@
-Ощутить вдохновение
+To feel the inspiration

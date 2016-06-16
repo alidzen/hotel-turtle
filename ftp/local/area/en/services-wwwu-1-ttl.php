@@ -1,1 +1,1 @@
-Типография «Трактат»
+Printing house “Tractat”

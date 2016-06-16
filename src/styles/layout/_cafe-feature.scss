@@ -32,9 +32,9 @@
     }
 
     @media #{$custom-1024-up} {
-        width: 420px;
+        width: 370px;
         opacity: 1;
-        left: -40px;
+        left: 0;
     }
 }
 
@@ -69,7 +69,7 @@
             left: 0;
             top: -2px;
             width: 2px;
-            height: 50px;
+            height: 118px;
             background-color: $gold-2;
         }
     }
