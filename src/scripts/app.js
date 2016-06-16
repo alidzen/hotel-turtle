@@ -590,14 +590,25 @@ define('app', [
             return;
         }
 
-        require(['bxSlider'], function() {
-            $slider.bxSlider({
-                mode: 'fade',
-                captions: false,
-                minSlides: 2,
-                maxSlides: 4,
-                slideWidth: 360
+        require(['owlCarousel'], function() {
+            $slider.owlCarousel({
+                items : 3,
+                itemsDesktopSmall  : [1023, 2],
+                itemsMobile : [640, 1],
+                mouseDrag: false,
+                touchDrag: false,
+                transitionStyle : "fade",
+                lazyLoad : false,
+                lazyFollow : true,
+                lazyEffect : "fade",
+                addClassActive : true,
+                slideSpeed: 0,
+                rewindSpeed : 0
             });
+
+            $(".j-next-cite").click(function(){
+                $slider.trigger('owl.next');
+            })
         });
     })($('.j-slider'));
 

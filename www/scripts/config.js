@@ -29,7 +29,7 @@ require.config({
         scaleraphael: 'scaleraphael/scaleraphael',
         eve: 'eve-adobe/eve.min',
         raphael: 'raphael/raphael-min',
-        bxSlider: 'bxslider-4/dist/jquery.bxslider.min'
+        owlCarousel: 'owl/owl-carousel/owl.carousel.min'
     },
     shim: {
         'jquery.cookie': {
@@ -56,8 +56,8 @@ require.config({
             exports: 'selectric',
             deps: ['jquery']
         },
-        bxSlider: {
-            exports: 'bxSlider',
+        owlCarousel: {
+            exports: 'owlCarousel',
             deps: ['jquery']
         }
 

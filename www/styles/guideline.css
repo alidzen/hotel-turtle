@@ -7885,6 +7885,18 @@ select {
   height: 45px;
   background-image: url("/img/icons/wi-fi.svg"); }
 
+.owl-carousel .l-services__tile {
+  width: 100%; }
+
+.owl-item {
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-duration: 600ms;
+  opacity: 0; }
+  .owl-item.active {
+    opacity: 1; }
+
 .b-cafe-gallery {
   position: relative;
   height: calc(100vh - 60px);

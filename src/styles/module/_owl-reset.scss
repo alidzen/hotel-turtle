@@ -1,0 +1,17 @@
+.owl-carousel {
+    .l-services__tile {
+        width: 100%;
+    }
+}
+
+.owl-item {
+    @include transition(opacity);
+    transition-duration: 600ms;
+    opacity: 0;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+
