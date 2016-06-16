@@ -3540,7 +3540,7 @@ blockquote:after {
     transition-timing-function: ease;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    background-color: #005870;
+    background-color: #004f69;
     position: fixed;
     top: 0;
     left: 0;
@@ -3574,6 +3574,8 @@ blockquote:after {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+.l-stick-menu__cnt .b-booking-form__form {
+    background-image: url("../img/form-bg-1.jpg"); }
 .l-stick-menu__cnt .b-booking-form__form:after {
     content: '';
     display: block;
@@ -3654,7 +3656,7 @@ blockquote:after {
         width: 225px; } }
 @media only screen and (min-width: 1441px) {
     .l-stick-menu__logo .b-logo__img {
-        width: 330px; } }
+        width: 300px; } }
 
 @media only screen and (max-width: 640px) {
     .l-stick-menu__popup-cnt_theme_booking {
@@ -4723,7 +4725,7 @@ blockquote:after {
     display: block; }
 
 .b-logo__img {
-    width: 162px; }
+    width: 180px; }
 
 .b-mind-games {
     background-image: url("../img/sprites.png");

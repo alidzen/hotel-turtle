@@ -8,7 +8,7 @@ $sticky-menu-height: 60px;
 .l-stick-menu__nav {
     @include transition(transform);
     transform: translateZ(0); // flick on safari fix
-    background-color: $green;
+    background-color: $green-4;
     position: fixed;
     top: 0;
     left: 0;
@@ -43,6 +43,7 @@ $sticky-menu-height: 60px;
     align-items: center;
 
     .b-booking-form__form {
+        background-image: url('/img/form-bg-1.jpg');
         @include grid-clearfix();
 
         @media #{$custom-1024-up} {
