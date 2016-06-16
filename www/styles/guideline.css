@@ -7892,7 +7892,6 @@ select {
   transition-property: opacity;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-duration: 600ms;
   opacity: 0; }
   .owl-item.active {
     opacity: 1; }

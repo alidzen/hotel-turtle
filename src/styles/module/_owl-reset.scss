@@ -6,7 +6,6 @@
 
 .owl-item {
     @include transition(opacity);
-    transition-duration: 600ms;
     opacity: 0;
 
     &.active {
