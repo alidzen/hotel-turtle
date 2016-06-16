@@ -26,7 +26,8 @@ require.config({
         sammy                   : 'sammy/lib/min/sammy-latest.min',
         scaleraphael            : 'scaleraphael/scaleraphael',
         eve                     : 'eve-adobe/eve.min',
-        raphael                 : 'raphael/raphael-min'
+        raphael                 : 'raphael/raphael-min',
+        bxSlider                 : 'bxslider-4/dist/jquery.bxslider.min'
     },
     shim : {
         'jquery.cookie' : {
@@ -52,7 +53,12 @@ require.config({
         select: {
             exports: 'selectric',
             deps: ['jquery']
+        },
+        bxSlider: {
+            exports: 'bxSlider',
+            deps: ['jquery']
         }
+
     },
     /* Launch app.js after config */
     deps: ['app']

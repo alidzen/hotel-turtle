@@ -65,10 +65,6 @@ define('app/gallery', ['jquery', 'fotorama', 'app/tpl/gallery/labels'], function
             fotorama.show('<');
         });
 
-        if (this.$gallery.closest('.b-gallery').hasClass('b-gallery_theme_services')) {
-            this.$next = $('.j-next-cite');
-        }
-
         this.$next.click(function () {
             fotorama.show('>');
         });

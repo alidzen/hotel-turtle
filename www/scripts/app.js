@@ -560,5 +560,21 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
         });
     })($('.j-frame'));
 
+    (function ($slider) {
+        if (!$slider.length) {
+            return;
+        }
+
+        require(['bxSlider'], function () {
+            $slider.bxSlider({
+                mode: 'fade',
+                captions: false,
+                minSlides: 2,
+                maxSlides: 4,
+                slideWidth: 360
+            });
+        });
+    })($('.j-slider'));
+
     return {};
 });
