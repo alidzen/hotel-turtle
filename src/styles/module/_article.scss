@@ -249,7 +249,7 @@
             bottom: rhythm(2) - 2px;
             left: 0;
             background-color: $gold;
-            width: 55%;
+            width: 78%;
             height: 2px;
         }
     }
@@ -270,7 +270,7 @@
                 right: - 2px;
                 background-color: $gold;
                 width: 2px;
-                height: 35px;
+                height: 65px;
             }
         }
 
@@ -284,9 +284,9 @@
             }
 
             @media #{$big-up} {
-                top: -26%;
-                left: 57%;
-                height: 130%;
+                top: 10%;
+                left: 75%;
+                height: 500px;
                 max-height: none;
             }
         }

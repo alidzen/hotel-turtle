@@ -6,7 +6,7 @@ $APPLICATION->SetTitle("Номера");
 	<div class="l-article__cnt">
 		<div class="b-article b-article_theme_gold b-article_theme_border-scheme_4">
 			<div class="b-article__border">
-				<div class="b-article__img-wrap"><img src="/local/assets/img/books.svg" alt="Книги"></div>
+				<div class="b-article__img-wrap"><img src="/local/assets/img/fruits.svg" alt="Фрукты"></div>
 				<div class="b-article__cnt b-typo-reset">
 					<?$APPLICATION->IncludeFile(
 						'/local/area/' . LANGUAGE_ID . '/rooms-about_rooms-txt.php',

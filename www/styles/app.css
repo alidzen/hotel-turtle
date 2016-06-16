@@ -6833,7 +6833,7 @@ select {
       bottom: 46px;
       left: 0;
       background-color: #b17d0c;
-      width: 55%;
+      width: 78%;
       height: 2px; } }
   .b-article_theme_border-scheme_4 .b-article__border {
     border-color: #b17d0c; }
@@ -6849,7 +6849,7 @@ select {
         right: -2px;
         background-color: #b17d0c;
         width: 2px;
-        height: 35px; } }
+        height: 65px; } }
     @media only screen and (min-width: 641px) {
       .b-article_theme_border-scheme_4 .b-article__border .b-article__img-wrap {
         height: 100%; }
@@ -6857,9 +6857,9 @@ select {
           max-height: 150%; } }
     @media only screen and (min-width: 1025px) {
       .b-article_theme_border-scheme_4 .b-article__border .b-article__img-wrap {
-        top: -26%;
-        left: 57%;
-        height: 130%;
+        top: 10%;
+        left: 75%;
+        height: 500px;
         max-height: none; } }
 
 .b-service {
