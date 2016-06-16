@@ -67,6 +67,10 @@ define('app/gallery', [
         this.$prev.click(function() {
             fotorama.show('<');
         });
+        
+        if (this.$gallery.closest('.b-gallery').hasClass('b-gallery_theme_services')) {
+            this.$next = $('.j-next-cite');
+        }
 
         this.$next.click(function() {
             fotorama.show('>');

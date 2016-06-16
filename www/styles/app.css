@@ -4484,6 +4484,13 @@ blockquote {
 
 .l-services__btn {
   text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .l-services__btn {
+      width: 83.33333%;
+      margin-left: 8.33333%;
+      margin-right: 8.33333%;
+      float: left;
+      padding: 0; } }
 
 .l-cafe-feature {
   position: relative;
