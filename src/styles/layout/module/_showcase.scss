@@ -61,3 +61,19 @@
         background-size: contain;
     }
 }
+
+.l-showcase_white_borders {
+    &.border-vertical {
+        &:before,
+        &:after {
+            background-color: $white;
+        }
+    }
+
+    .border-horizontal {
+        &:before,
+        &:after {
+            background-color: $white;
+        }
+    }
+}

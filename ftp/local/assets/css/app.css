@@ -7308,6 +7308,12 @@ select {
     background: url("../img/feature-2-bg.svg") 100% 100% no-repeat #005870;
     background-size: contain; }
 
+.l-showcase_white_borders.border-vertical:before, .l-showcase_white_borders.border-vertical:after {
+    background-color: #fefefd; }
+
+.l-showcase_white_borders .border-horizontal:before, .l-showcase_white_borders .border-horizontal:after {
+    background-color: #fefefd; }
+
 .b-showcase {
     padding-top: 48px;
     position: relative;

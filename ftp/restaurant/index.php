@@ -30,8 +30,8 @@ $APPLICATION->SetTitle("Ресторанный комплекс “Симпоз�
 	</div>
 </section>
 <section class="l-showcase__inner-row">
-	<div class="l-showcase">
-		<div class="l-showcase__descr">
+	<div class="l-showcase l-showcase_white_borders border-vertical">
+		<div class="l-showcase__descr border-horizontal">
 			<div class="b-showcase">
 				<div class="b-showcase__cnt">
 					<div class="b-showcase__header">
