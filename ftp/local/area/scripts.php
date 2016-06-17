@@ -8,6 +8,8 @@ $assetManager->addCss('/local/assets/js/lib/jquery-selectric/public/selectric.cs
 $assetManager->addCss('/local/assets/js/lib/magnific-popup/dist/magnific-popup.css');
 $assetManager->addCss('/local/assets/js/lib/fotorama/fotorama.css');
 $assetManager->addCss('/local/assets/js/lib/jquery.ui/themes/base/datepicker.css');
+$assetManager->addCss('/local/assets/js/lib/slick-carousel/slick/slick.css');
+$assetManager->addCss('/local/assets/js/lib/slick-carousel/slick/slick-theme.css');
 $assetManager->addCss('/local/assets/css/app.css');
 $assetManager->addString('<script src="/local/assets/js/lib/requirejs/require.min.js" data-main="/local/assets/js/config.js"></script>');
 $assetManager->addCss('/local/assets/css/custom.css');

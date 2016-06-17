@@ -5,10 +5,10 @@ block title
     title Ресторан
 block gallery
     .b-cafe-gallery(style="background-image: url('/img/atmosphere-bg-1.jpg');")
-         .b-cafe-gallery__border
-             .b-cafe-gallery__cnt
-                 h2.b-cafe-gallery__ttl Дух Петербурга <br>в каждой детали
-                 .b-cafe-gallery__txt Атмосфера складывается из многих деталей: внешнее окружение отеля, внутренние интерьеры и дизайн номеров, отношение персонала. Каждая из этих составляющих бутик-отеля наполнена духом Санкт-Петербурга, а все вместе они погружают гостей в петербургский мир.
+        .b-cafe-gallery__border
+            .b-cafe-gallery__cnt
+                h2.b-cafe-gallery__ttl Дух Петербурга <br>в каждой детали
+                .b-cafe-gallery__txt Атмосфера складывается из многих деталей: внешнее окружение отеля, внутренние интерьеры и дизайн номеров, отношение персонала. Каждая из этих составляющих бутик-отеля наполнена духом Санкт-Петербурга, а все вместе они погружают гостей в петербургский мир.
 
 block content
     .l-main-wrap
@@ -19,7 +19,6 @@ block content
                         .b-card__cnt
                             .b-card__header
                                 h1.b-card__ttl Расположение
-                                .b-card__ttl-note отеля
                             .b-card__descr
                                 p Отель "Ахиллес и Черепаха" расположен в историческом центре Петербурга, полном своих историй и легенд. Улица Достоевского –  одно из тихих мест центрального района города – берет свое начало у Владимирского собора, являющегося архитектурным памятником второй половины XVIII века. На собор выходят окна квартиры Ф.М. Достоевского – именно тут было написано последнее произведение автора – роман "Братья Карамазовы". Сейчас в этом здании находится литературно-мемориальный музей писателя.
                                 p На улице Достоевского можно увидеть множество старинных домов, построенных еще в XIX веке. В одном из них и разместился бутик-отель "Ахиллес и Черепаха".
@@ -82,7 +81,7 @@ block content
 
         section.l-services
             .l-services__tiles.l-limit-wrap.no-padding
-                .l-services__tiles-row
+                .l-services__tiles-row.j-slider
                     .l-services__tile.l-services__tile_numb_9
                         .b-service.hover-img
                             .b-service__header
@@ -105,6 +104,34 @@ block content
                             p И. Стогoff
                             .b-service__img-wrap
                                 .b-service__img(style="background-image: url('/img/services/service-9.jpg');")
+
+                    .l-services__tile.l-services__tile_numb_11.hide-on-tablet
+                        .b-service.hover-img
+                            .b-service__header
+                                .b-service__ttl-note.b-service__ttl-note_font-size_small Чего ловить в Петербурге — не очень  понятно. Это не скажешь словами. Это либо чувствуешь всей кожей, либо никогда не объяснишь, о чем речь.
+                            p И. Стогoff
+                            .b-service__img-wrap
+                                .b-service__img(style="background-image: url('/img/services/service-9.jpg');")
+                    .l-services__tile.l-services__tile_numb_10
+                        .b-service.has-lines.hover-img
+                            .b-service__border
+                                .b-service__header
+                                    .b-service__ttl-note.b-service__ttl-note_font-size_small Пушкин. Тютчев. Некрасов. Блок.<br/>Ахматова. Мандельштам…<br/>Это всё — псевдонимы. <br/> Автор — Петербург..
+                                p Л. Чуковская
+                            .b-service__img-wrap
+                                .b-service__img(style="background-image: url('/img/services/service-8.jpg');")
+                    .l-services__tile.l-services__tile_numb_9
+                        .b-service.hover-img
+                            .b-service__header
+                                .b-service__ttl-note.b-service__ttl-note_font-size_small Петербург уже давно<br/> описан, а что не описано,<br/> то надо видеть самому.
+                            p И. Гончаров
+                            .b-service__img-wrap
+                                .b-service__img(style="background-image: url('/img/services/service-7.jpg');")
+
+            .l-services__btn
+                .b-propose
+                    .b-propose__btn
+                        a(href="javascript:;").b-btn.b-btn_width_auto.j-next-cite Другие цитаты
 
         section.l-article.l-limit-wrap.no-padding
             .l-article__cnt

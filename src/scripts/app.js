@@ -585,5 +585,49 @@ define('app', [
         });
     })($('.j-frame'));
 
+    // slider with cites
+    (function($slider) {
+        if (!$slider.length) {
+            return;
+        }
+
+        require(['slick'], function() {
+            $slider.slick({
+                dots: false,
+                draggable: false,
+                swipe: false,
+                touchMove: false,
+                infinite: true,
+                speed: 300,
+                arrows: false,
+                cssEase: 'linear',
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                
+                responsive: [
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 640,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            adaptiveHeight: true
+                        }
+                    }
+                ]
+            });
+
+            $('.j-next-cite').click(function () {
+                $slider.slick('slickNext')
+            })
+        });
+    })($('.j-slider'));
+
     return {};
 });

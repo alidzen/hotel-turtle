@@ -26,7 +26,8 @@ require.config({
         sammy                   : 'sammy/lib/min/sammy-latest.min',
         scaleraphael            : 'scaleraphael/scaleraphael',
         eve                     : 'eve-adobe/eve.min',
-        raphael                 : 'raphael/raphael-min'
+        raphael                 : 'raphael/raphael-min',
+        slick: 'slick-carousel/slick/slick.min'
     },
     shim : {
         'jquery.cookie' : {
@@ -51,6 +52,10 @@ require.config({
         },
         select: {
             exports: 'selectric',
+            deps: ['jquery']
+        },
+        slick: {
+            exports: 'slick',
             deps: ['jquery']
         }
     },

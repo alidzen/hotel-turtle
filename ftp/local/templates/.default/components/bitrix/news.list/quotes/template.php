@@ -16,7 +16,7 @@ $this->setFrameMode(true);
 <?if(count($arResult['ITEMS'])):?>
 <section class="l-services">
 	<div class="l-services__tiles l-limit-wrap no-padding">
-		<div class="l-services__tiles-row">
+		<div class="l-services__tiles-row j-slider">
 			<?foreach($arResult['ITEMS'] as $i => $arItem):?>
 				<?if($i == 0):?>
 					<div class="l-services__tile l-services__tile_numb_9">
@@ -73,6 +73,11 @@ $this->setFrameMode(true);
 					</div>
 				<?endif;?>
 			<?endforeach;?>
+		</div>
+	</div>
+	<div class="l-services__btn">
+		<div class="b-propose">
+			<div class="b-propose__btn"><a href="javascript:;" class="b-btn b-btn_width_auto j-next-cite">Другие цитаты</a></div>
 		</div>
 	</div>
 </section>

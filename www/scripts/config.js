@@ -1,38 +1,41 @@
+'use strict';
+
 /* jshint ignore:start */
 require.config({
     baseUrl: '/scripts/lib',
 
-    paths : {
-        app             : '../app',
-        tpl             : '../tpl',
+    paths: {
+        app: '../app',
+        tpl: '../tpl',
 
-        jquery          : 'jquery/dist/jquery.min',
-        'jquery.cookie' : 'jquery.cookie',
-        fastclick       : 'fastclick/lib/fastclick',
-        modernizr       : 'modernizr/modernizr',
-        handlebars      : 'handlebars/handlebars.runtime.min',
-        polyfiller       : 'webshim/js-webshim/dev/polyfiller',
-        fotorama        : 'fotorama/fotorama',
-        'masked-inputs'  : 'jquery.maskedinput/dist/jquery.maskedinput.min',
-        'magnific-popup' : 'magnific-popup/dist/jquery.magnific-popup.min',
-        select           : 'jquery-selectric/public/jquery.selectric.min',
-        'jquery-ui'     : 'jquery.ui/ui',
+        jquery: 'jquery/dist/jquery.min',
+        'jquery.cookie': 'jquery.cookie',
+        fastclick: 'fastclick/lib/fastclick',
+        modernizr: 'modernizr/modernizr',
+        handlebars: 'handlebars/handlebars.runtime.min',
+        polyfiller: 'webshim/js-webshim/dev/polyfiller',
+        fotorama: 'fotorama/fotorama',
+        'masked-inputs': 'jquery.maskedinput/dist/jquery.maskedinput.min',
+        'magnific-popup': 'magnific-popup/dist/jquery.magnific-popup.min',
+        select: 'jquery-selectric/public/jquery.selectric.min',
+        'jquery-ui': 'jquery.ui/ui',
 
-        'google-maps'    : 'async!https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry&signed_in=false',
-        infobox          : 'google-infobox/google-infobox',
-        async            : 'requirejs-plugins/src/async',
+        'google-maps': 'async!https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry&signed_in=false',
+        infobox: 'google-infobox/google-infobox',
+        async: 'requirejs-plugins/src/async',
 
-        videojs                 : 'videojs/dist/video-js/video',
-        sammy                   : 'sammy/lib/min/sammy-latest.min',
-        scaleraphael            : 'scaleraphael/scaleraphael',
-        eve                     : 'eve-adobe/eve.min',
-        raphael                 : 'raphael/raphael-min'
+        videojs: 'videojs/dist/video-js/video',
+        sammy: 'sammy/lib/min/sammy-latest.min',
+        scaleraphael: 'scaleraphael/scaleraphael',
+        eve: 'eve-adobe/eve.min',
+        raphael: 'raphael/raphael-min',
+        slick: 'slick-carousel/slick/slick.min'
     },
-    shim : {
-        'jquery.cookie' : {
-            deps   : ['jquery']
+    shim: {
+        'jquery.cookie': {
+            deps: ['jquery']
         },
-        fastclick : {
+        fastclick: {
             exports: 'FastClick'
         },
         modernizr: {
@@ -47,10 +50,14 @@ require.config({
         },
         infobox: {
             exports: 'InfoBox',
-            deps   : ['app/google-map']
+            deps: ['app/google-map']
         },
         select: {
             exports: 'selectric',
+            deps: ['jquery']
+        },
+        slick: {
+            exports: 'slick',
             deps: ['jquery']
         }
     },

@@ -26,10 +26,12 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="../scripts/lib/jquery-selectric/public/selectric.css">
-        <link rel="stylesheet" href="../scripts/lib/magnific-popup/dist/magnific-popup.css">
-        <link rel="stylesheet" href="../scripts/lib/fotorama/fotorama.css">
-        <link rel="stylesheet" href="../scripts/lib/jquery.ui/themes/base/datepicker.css">
+        <link rel="stylesheet" href="/scripts/lib/jquery-selectric/public/selectric.css">
+        <link rel="stylesheet" href="/scripts/lib/magnific-popup/dist/magnific-popup.css">
+        <link rel="stylesheet" href="/scripts/lib/fotorama/fotorama.css">
+        <link rel="stylesheet" href="/scripts/lib/jquery.ui/themes/base/datepicker.css">
+        <link rel="stylesheet" href="/scripts/lib/slick-carousel/slick/slick.css">
+        <link rel="stylesheet" href="/scripts/lib/slick-carousel/slick/slick-theme.css">
         <link rel="stylesheet" href="/styles/app.css">
         <title>Ресторан</title>
         <!--[if lte IE 9]>
@@ -237,9 +239,7 @@
                                     <div class="b-card__border">
                                         <div class="b-card__cnt">
                                             <div class="b-card__header">
-                                                <h1 class="b-card__ttl">Расположение</h1>
-                                                <div class="b-card__ttl-note">отеля</div>
-                                            </div>
+                                                <h1 class="b-card__ttl">Расположение</h1> </div>
                                             <div class="b-card__descr">
                                                 <p>Отель «Ахиллес и Черепаха» расположен в историческом центре Петербурга, полном своих историй и легенд. Улица Достоевского — одно из тихих мест центрального района города — берет свое начало у Владимирского
                                                     собора, являющегося архитектурным памятником второй половины XVIII века. На собор выходят окна квартиры Ф. М. Достоевского — именно тут было написано последнее произведение автора — роман «Братья Карамазовы».
@@ -293,7 +293,7 @@
                         </section>
                         <section class="l-services">
                             <div class="l-services__tiles l-limit-wrap no-padding">
-                                <div class="l-services__tiles-row">
+                                <div class="l-services__tiles-row j-slider">
                                     <div class="l-services__tile l-services__tile_numb_9">
                                         <div class="b-service hover-img">
                                             <div class="b-service__header">
@@ -329,6 +329,46 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="l-services__tile l-services__tile_numb_11 hide-on-tablet">
+                                        <div class="b-service hover-img">
+                                            <div class="b-service__header">
+                                                <div class="b-service__ttl-note b-service__ttl-note_font-size_small">Чего ловить в Петербурге — не очень понятно. Это не скажешь словами. Это либо чувствуешь всей кожей, либо никогда не объяснишь, о чем речь.</div>
+                                            </div>
+                                            <p>И. Стогoff</p>
+                                            <div class="b-service__img-wrap">
+                                                <div style="background-image: url('/img/services/service-9.jpg');" class="b-service__img"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="l-services__tile l-services__tile_numb_10">
+                                        <div class="b-service has-lines hover-img">
+                                            <div class="b-service__border">
+                                                <div class="b-service__header">
+                                                    <div class="b-service__ttl-note b-service__ttl-note_font-size_small">Пушкин. Тютчев. Некрасов. Блок.<br/>Ахматова. Мандельштам…<br/>Это всё — псевдонимы. <br/> Автор — Петербург.</div>
+                                                </div>
+                                                <p>Л. Чуковская</p>
+                                            </div>
+                                            <div class="b-service__img-wrap">
+                                                <div style="background-image: url('/img/services/service-8.jpg');" class="b-service__img"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="l-services__tile l-services__tile_numb_9">
+                                        <div class="b-service hover-img">
+                                            <div class="b-service__header">
+                                                <div class="b-service__ttl-note b-service__ttl-note_font-size_small">Петербург уже давно<br/> описан, а что не описано,<br/> то надо видеть самому.</div>
+                                            </div>
+                                            <p>И. Гончаров</p>
+                                            <div class="b-service__img-wrap">
+                                                <div style="background-image: url('/img/services/service-7.jpg');" class="b-service__img"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-services__btn">
+                                <div class="b-propose">
+                                    <div class="b-propose__btn"><a href="javascript:;" class="b-btn b-btn_width_auto j-next-cite">Другие цитаты</a></div>
                                 </div>
                             </div>
                         </section>
