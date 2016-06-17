@@ -6300,9 +6300,11 @@ select {
       top: 0;
       right: 35px; } }
   @media only screen and (min-width: 1025px) {
-    .b-feature__img-wrap img {
-      width: 440px;
-      opacity: 1; } }
+    .b-feature__img-wrap {
+      width: auto; }
+      .b-feature__img-wrap img {
+        width: 440px;
+        opacity: 1; } }
 
 .b-feature__cnt {
   padding-top: 36px;

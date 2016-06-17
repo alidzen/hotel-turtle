@@ -38,6 +38,8 @@ $img-size: 85px;
     }
 
     @media #{$big-up} {
+        width: auto;
+
         img {
             width: 440px;
             opacity: 1;
