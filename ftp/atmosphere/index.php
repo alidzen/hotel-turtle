@@ -46,7 +46,7 @@ $APPLICATION->SetTitle("Атмосфера");
  </section>
 <section class="l-services">
 	<div class="l-services__tiles l-limit-wrap no-padding">
-		<div class="l-services__tiles-row">
+		<div class="l-services__tiles-row j-slider">
 			<div class="l-services__tile l-services__tile_numb_9">
 				<div class="b-service no-hover">
 					<div class="b-service__header">
@@ -82,6 +82,11 @@ $APPLICATION->SetTitle("Атмосфера");
 				</div>
 			</div>
 		</div>
+		</div>
+	</div>
+	<div class="l-services__btn">
+		<div class="b-propose">
+			<div class="b-propose__btn"><a href="javascript:;" class="b-btn b-btn_width_auto j-next-cite">Другие цитаты</a></div>
 		</div>
 	</div>
 </section>
