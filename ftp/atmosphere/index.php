@@ -14,6 +14,7 @@ $APPLICATION->SetTitle("Атмосфера");
 								Array(),
 								Array('MODE' => 'html')
 							);?> </h1>
+					<div class="b-card__ttl-note">отеля</div>
 				</div>
 				<div class="b-card__descr">
 					 <?$APPLICATION->IncludeFile(
