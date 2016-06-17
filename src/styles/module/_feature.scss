@@ -24,26 +24,23 @@ $img-size: 85px;
     position: absolute;
     top: 40px;
     right: 0;
+    width: 95%;
     z-index: z('default');
 
     img {
-        width: 270px;
-        height: 254px;
+        width: 100%;
         opacity: .2;
     }
 
     @media #{$medium-up} {
-        top: -40px;
+        top: 0;
         right: 35px;
-
-        img {
-            opacity: 1;
-        }
     }
 
     @media #{$big-up} {
         img {
-            width: 375px;
+            width: 440px;
+            opacity: 1;
         }
     }
 }
@@ -68,7 +65,7 @@ $img-size: 85px;
     }
 
     &:before {
-        top: 46px;
+        top: -2px;
         right: -2px;
         width: 2px;
         height: 113px;
@@ -78,7 +75,7 @@ $img-size: 85px;
         top: -2px;
         height: 2px;
         width: 230px;
-        right: 58px;
+        right: 0;
     }
 
     @media #{$medium-up} {
@@ -89,7 +86,6 @@ $img-size: 85px;
         };
 
         &:after {
-            display: block;
             width: 109px;
         }
     }
@@ -97,11 +93,12 @@ $img-size: 85px;
     @media #{$big-up} {
         &:before {
             display: block;
-            height: 85px;
+            height: 69px;
         }
 
         &:after {
-            width: 179px;
+            display: block;
+            width: 409px;
         }
     }
 
