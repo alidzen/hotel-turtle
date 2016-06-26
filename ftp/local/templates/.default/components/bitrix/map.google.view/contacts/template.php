@@ -18,7 +18,7 @@
 		lang: '<?=LANGUAGE_ID;?>',
 		markers: [
 		{
-			coords: [59.9234247, 30.3461359],
+			coords: [59.9234703, 30.346603],
 			image: '/local/assets/img/markers/here.svg'
 		}]
 	}

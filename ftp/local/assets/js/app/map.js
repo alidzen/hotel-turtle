@@ -33,8 +33,8 @@ define([
 
         this.options = {
             center: {
-                lat: 59.923325,
-                lng: 30.346303
+                lat: 59.9234703,
+                lng: 30.346603
             },
             zoom: 12,
             zoomControlOptions: {
