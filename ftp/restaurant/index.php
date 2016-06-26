@@ -31,6 +31,18 @@ $APPLICATION->SetTitle("Ресторанный комплекс “Симпоз�
 </section>
 <section class="l-showcase__inner-row">
 	<div class="l-showcase l-showcase_white_borders border-vertical">
+		<div class="l-showcase__gallery">
+			<? $APPLICATION->IncludeComponent(
+			"olympia:blank",
+			"show-case.gallery",
+			Array("CODE" => "rest"
+			),
+			false); ?>
+			<a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать
+				предыдущий слайд</a>
+			<a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать
+				следущий слайд</a>
+		</div>
 		<div class="l-showcase__descr border-horizontal">
 			<div class="b-showcase">
 				<div class="b-showcase__cnt">
@@ -54,18 +66,6 @@ $APPLICATION->SetTitle("Ресторанный комплекс “Симпоз�
 					Array('MODE' => 'html')); ?>
 				</div>
 			</div>
-		</div>
-		<div class="l-showcase__gallery">
-			<? $APPLICATION->IncludeComponent(
-			"olympia:blank",
-			"show-case.gallery",
-			Array("CODE" => "rest"
-			),
-			false); ?>
-			<a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать
-				предыдущий слайд</a>
-			<a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать
-				следущий слайд</a>
 		</div>
 	</div>
 </section>
