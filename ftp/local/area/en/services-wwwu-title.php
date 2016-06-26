@@ -1,1 +1,1 @@
-Кто работает вместе с нами?
+Who is working with us?

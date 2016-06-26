@@ -1,27 +1,24 @@
 <?
+use Bitrix\Main\Application;
 
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 $eventManager->addEventHandler("main", "OnEndBufferContent", "getTripper");
 
 function getTripper(&$buffer)
 {
-	if(preg_match('/#TRIPPER_STARS#/', $buffer))
+	$request = Application::getInstance()->getContext()->getRequest();
+
+	if (preg_match('/#TRIPPER_STARS#/', $buffer) && !$request->isAjaxRequest())
 	{
-		$stars['STARS_HTML'] = 	'<div class="b-menu-reviews__rate">' .
-									'<span></span>' .
-									'<span></span>' .
-									'<span></span>' .
-									'<span></span>' .
-									'<span></span>' .
-								'</div>';
+		$stars['STARS_HTML'] = '<div class="b-menu-reviews__rate">'.'<span></span>'.'<span></span>'.'<span></span>'.'<span></span>'.'<span></span>'.'</div>';
 
 		$cache = \Bitrix\Main\Data\Cache::createInstance();
 
-		if($cache->initCache(86400, 'tripadvisorstars', '/olympia/tripadvisor/stars/'))
+		if ($cache->initCache(86400, 'tripadvisorstars', '/olympia/tripadvisor/stars/'))
 		{
-			$res = $cache->GetVars();
+			$res = $cache->getVars();
 
-			$stars = $res['STARS_HTML'];
+			$stars['STARS_HTML'] = $res;
 		}
 		else
 		{
@@ -36,13 +33,13 @@ function getTripper(&$buffer)
 
 			$stars['STARS_HTML'] = '<div class="b-menu-reviews__rate">';
 
-			for($i = 1; $i <= 5; $i++)
-				$stars['STARS_HTML'] .= ($i <= $digits[0] ? '<span class="star"></span>' : ($i > $digits[0] && $i < $digits[0]+2 && isset($digits[1])? '<span class="half-star"></span>' : '<span></span>') );
+			for ($i = 1; $i <= 5; $i++)
+				$stars['STARS_HTML'] .= ($i <= $digits[0] ? '<span class="star"></span>' : ($i > $digits[0] && $i < $digits[0] + 2 && isset($digits[1]) ? '<span class="half-star"></span>' : '<span></span>'));
 
 			$stars['STARS_HTML'] .= '</div>';
 
 			if ($cache->startDataCache())
-				$cache->endDataCache($stars);
+				$cache->endDataCache($stars['STARS_HTML']);
 		}
 
 		$buffer = str_replace('#TRIPPER_STARS#', $stars['STARS_HTML'], $buffer);

@@ -1,1 +1,1 @@
-Чистота и порядок занимают важное место в нашем отеле
+Cleanliness of the rooms plays a significant role in our hotel

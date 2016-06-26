@@ -18,7 +18,7 @@ require.config({
         select           : 'jquery-selectric/public/jquery.selectric.min',
         'jquery-ui'     : 'jquery.ui/ui',
 
-        'google-maps'    : 'async!https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry&signed_in=true',
+        'google-maps': 'async!https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry&signed_in=false&language=' + window.app.lang,
         infobox          : 'google-infobox/google-infobox',
         async            : 'requirejs-plugins/src/async',
 
@@ -26,7 +26,7 @@ require.config({
         sammy                   : 'sammy/lib/min/sammy-latest.min',
         scaleraphael            : 'scaleraphael/scaleraphael',
         eve                     : 'eve-adobe/eve.min',
-        raphael                 : 'raphael/raphael-min',
+        raphael: 'raphael/raphael-min',
         slick: 'slick-carousel/slick/slick.min'
     },
     shim : {

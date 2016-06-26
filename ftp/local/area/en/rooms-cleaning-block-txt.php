@@ -1,2 +1,1 @@
-Каждый день в номерах производится текущая уборка со сменой полотенец, а каждые два дня – смена постельного белья. Мы бережно относимся к здоровью наших гостей: при уборке используется только органическая бытовая химия,
-				не вызывающая аллергической реакции. Кроме этого, при создании интерьера отеля использовались только натуральные материалы.
+Every day the rooms are cleaned with the change of towels and every two days – bed linen. We are thinking of health of our guests so we use only organic products in cleaning that do not cause allergic reactions. In addition, only natural materials were used in the interior of the hotel.

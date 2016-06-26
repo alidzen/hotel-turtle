@@ -28,22 +28,17 @@ $APPLICATION->SetTitle("Дополнительные услуги");
 	</div>
 	<div class="l-services__tiles l-limit-wrap no-padding">
 		<div class="l-services__tiles-row">
-			<div class="l-services__tile l-services__tile_numb_14">
+			<div class="l-services__tile l-services__tile_numb_14" id="camobscura">
 				<div class="b-service has-lines">
 					<div class="b-service__border">
 						<div class="b-service__cnt">
 							<div class="b-service__header">
 								<div class="b-service__ttl-note">
-									<?$APPLICATION->IncludeFile(
-										'/local/area/' . LANGUAGE_ID . '/services-wwwu-0-ttl.php',
-										Array(),
-										Array('MODE' => 'html')
-									);?>
+									<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/services-wwwu-0-ttl.php', Array(), Array('MODE' => 'html')); ?>
 								</div>
 							</div>
 							<p>
-								<?$APPLICATION->IncludeFile(
-									'/local/area/' . LANGUAGE_ID . '/services-wwwu-0-txt.php',
+								<?$APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/services-wwwu-0-txt.php',
 									Array(),
 									Array('MODE' => 'html')
 								);?>
@@ -55,22 +50,17 @@ $APPLICATION->SetTitle("Дополнительные услуги");
 					</div>
 				</div>
 			</div>
-			<div class="l-services__tile l-services__tile_numb_15">
+			<div class="l-services__tile l-services__tile_numb_15" id="traktat">
 				<div class="b-service has-lines">
 					<div class="b-service__border">
 						<div class="b-service__cnt">
 							<div class="b-service__header">
 								<div class="b-service__ttl-note">
-									<?$APPLICATION->IncludeFile(
-										'/local/area/' . LANGUAGE_ID . '/services-wwwu-1-ttl.php',
-										Array(),
-										Array('MODE' => 'html')
-									);?>
+									<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/services-wwwu-1-ttl.php', Array(), Array('MODE' => 'html')); ?>
 								</div>
 							</div>
 							<p>
-								<?$APPLICATION->IncludeFile(
-									'/local/area/' . LANGUAGE_ID . '/services-wwwu-1-txt.php',
+								<?$APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/services-wwwu-1-txt.php',
 									Array(),
 									Array('MODE' => 'html')
 								);?>
@@ -82,22 +72,17 @@ $APPLICATION->SetTitle("Дополнительные услуги");
 					</div>
 				</div>
 			</div>
-			<div class="l-services__tile l-services__tile_numb_16">
+			<div class="l-services__tile l-services__tile_numb_16" id="places">
 				<div class="b-service">
 					<div class="b-service__border">
 						<div class="b-service__cnt">
 							<div class="b-service__header">
 								<div class="b-service__ttl-note">
-									<?$APPLICATION->IncludeFile(
-										'/local/area/' . LANGUAGE_ID . '/services-wwwu-2-ttl.php',
-										Array(),
-										Array('MODE' => 'html')
-									);?>
+									<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/services-wwwu-2-ttl.php', Array(), Array('MODE' => 'html')); ?>
 								</div>
 							</div>
 							<p>
-								<?$APPLICATION->IncludeFile(
-									'/local/area/' . LANGUAGE_ID . '/services-wwwu-2-txt.php',
+								<?$APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/services-wwwu-2-txt.php',
 									Array(),
 									Array('MODE' => 'html')
 								);?>
@@ -110,40 +95,19 @@ $APPLICATION->SetTitle("Дополнительные услуги");
 					</div>
 				</div>
 			</div>
-			<div class="l-services__tile l-services__tile_numb_17">
-			<div class="b-service has-lines">
-				<div class="b-service__border">
-					<div class="b-service__cnt">
-						<div class="b-service__header">
-							<div class="b-service__ttl-note">
-								<?$APPLICATION->IncludeFile(
-									'/local/area/' . LANGUAGE_ID . '/services-wwwu-3-ttl.php',
-									Array(),
-									Array('MODE' => 'html')
-								);?>
-							</div>
-						</div>
-						<p>
-							<?$APPLICATION->IncludeFile(
-								'/local/area/' . LANGUAGE_ID . '/services-wwwu-3-txt.php',
-								Array(),
-								Array('MODE' => 'html')
-							);?>
-						</p>
-					</div>
-				</div>
-				<div class="b-service__img-wrap">
-					<div class="b-service__img"></div>
-				</div>
-			</div>
-		</div>
 		</div>
 	</div>
 </section>
 <div class="l-propose">
 	<div class="b-propose">
-		<div class="b-propose__ttl">Наш отель к вашим услугам.</div>
-		<div class="b-propose__btn"><a href="/rooms/" class="b-btn b-btn_width_auto">Выбрать номер</a></div>
+		<div class="b-propose__ttl">
+			<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/services-propose__ttl.php', Array(), Array('MODE' => 'html')); ?>
+		</div>
+		<div class="b-propose__btn">
+			<a href="/rooms/" class="b-btn b-btn_width_auto">
+				<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/global-choose-room-text.php', Array(), Array('MODE' => 'html')); ?>
+			</a>
+		</div>
 	</div>
 </div>
 

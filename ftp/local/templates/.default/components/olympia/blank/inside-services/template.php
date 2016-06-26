@@ -17,39 +17,42 @@
 	</div>
 	<div class="l-services__tiles l-limit-wrap no-padding">
 		<div class="l-services__tiles-row">
-			<?for($i = 0; $i < count($arResult['ITEMS']); $i++):?>
-				<div class="l-services__tile <?=$arResult['ITEMS'][$i]['BLOCK_TYPE']['VALUE'];?>">
-					<div class="b-service<?if($arResult['ITEMS'][$i]['BLOCK_TYPE']['BORDER']):?> has-lines<?endif;?>">
-						<?if($arResult['ITEMS'][$i]['BLOCK_TYPE']['BORDER']):?>
+			<? for ($i = 0; $i < count($arResult['ITEMS']); $i++): ?>
+				<div class="l-services__tile <?=$arResult['ITEMS'][$i]['BLOCK_TYPE']['VALUE'];?>"
+					 id="<?=$arResult['ITEMS'][$i]['CODE'];?>">
+					<div
+						class="b-service<? if ($arResult['ITEMS'][$i]['BLOCK_TYPE']['BORDER']): ?> has-lines<? endif; ?>">
+						<? if ($arResult['ITEMS'][$i]['BLOCK_TYPE']['BORDER']): ?>
 						<div class='b-service__border'>
 						<?endif;?>
-						<?if($i >= 3):?>
-						<div class="b-service__cnt">
-						<?endif;?>
-							<div class="b-service__header">
-								<div class="b-service__ttl-note"><?=$arResult['ITEMS'][$i]['NAME'];?></div>
+							<? if ($i >= 3): ?>
+							<div class="b-service__cnt">
+								<? endif; ?>
+								<div class="b-service__header">
+									<div class="b-service__ttl-note"><?=$arResult['ITEMS'][$i]['NAME'];?></div>
 							</div>
-							<p><?=$arResult['ITEMS'][$i]['PREVIEW_TEXT'];?></p>
-						<?if($i >= 3):?>
+								<p><?=$arResult['ITEMS'][$i]['PREVIEW_TEXT'];?></p>
+								<? if ($i >= 3): ?>
 						</div>
 						<?endif;?>
-							<?if($i < 3):?>
+							<? if ($i < 3 || $arResult['ITEMS'][$i]['BLOCK_TYPE']['VALUE'] == 'l-services__tile_numb_17'): ?>
 							<div class="b-service__img-wrap">
-							<?endif;?>
+								<? endif; ?>
 								<div class="b-service__img">
-									<?if($arResult['ITEMS'][$i]['IMAGE'] !== NULL):?>
-										<img src="<?=$arResult['ITEMS'][$i]['IMAGE'];?>" alt="<?=$arResult['ITEMS'][$i]['NAME'];?>">
-									<?endif;?>
+									<? if ($arResult['ITEMS'][$i]['IMAGE'] !== null): ?>
+										<img src="<?=$arResult['ITEMS'][$i]['IMAGE'];?>"
+											 alt="<?=$arResult['ITEMS'][$i]['NAME'];?>">
+									<? endif; ?>
 								</div>
-							<?if($i < 3):?>
+								<? if ($i < 3 || $arResult['ITEMS'][$i]['BLOCK_TYPE']['VALUE'] == 'l-services__tile_numb_17'): ?>
 							</div>
-							<?endif;?>
-						<?if($arResult['ITEMS'][$i]['BLOCK_TYPE']['BORDER']):?>
+						<? endif; ?>
+							<? if ($arResult['ITEMS'][$i]['BLOCK_TYPE']['BORDER']): ?>
 						</div>
-						<?endif;?>
+					<? endif; ?>
 					</div>
 				</div>
-			<?endfor;?>
+			<? endfor; ?>
 		</div>
 	</div>
 </section>

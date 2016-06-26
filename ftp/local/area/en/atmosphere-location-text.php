@@ -1,6 +1,7 @@
 <p>
-	Отель "Ахиллес и Черепаха" расположен в историческом центре Петербурга, полном своих историй и легенд. Улица Достоевского – одно из тихих мест центрального района города – берет свое начало у Владимирского собора, являющегося архитектурным памятником второй половины XVIII века. На собор выходят окна квартиры Ф.М. Достоевского – именно тут было написано последнее произведение автора – роман "Братья Карамазовы". Сейчас в этом здании находится литературно-мемориальный музей писателя.
-</p>
-<p>
-	На улице Достоевского можно увидеть множество старинных домов, построенных еще в XIX веке. В одном из них и разместился бутик-отель "Ахиллес и Черепаха".
+	Hotel "Akhilles i Cherepakha" is located in the historic center of St. Petersburg, that is full of history and
+	legends. Dostoevsky street is one of the quietest places in the central area and it runs from the Our Lady of
+	Vladimir Church that was built to Pietro Antonio Trezzini designs from 1761-1769. The church can be seen out of the
+	windows of the Fyodor Dostoevsky’s flat where the author's last work - the novel "Bratia Karamazovi" was written.
+	Nowadays, in this building you can find the museum dedicated to the famous Russian novelist, Dostoyevsky.
 </p>

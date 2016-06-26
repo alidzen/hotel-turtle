@@ -1,1 +1,2 @@
-Для вашей безопасности – доступ на этаж отеля только для гостей. Для безопасности ваших вещей – сейф в каждом номере.
+For your safety the access to the hotel floor is available for guests only.
+For a safety of your belongings there is a safe in each room. 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="<?=LANG_CHARSET ?>">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title><?$APPLICATION->ShowTitle()?></title>
+	<title><? $APPLICATION->ShowTitle(); ?> &mdash; A&T boutique hotel</title>
 	<?$APPLICATION->ShowMeta("keywords")?>
 	<?$APPLICATION->ShowMeta("description")?>
 	<?$APPLICATION->ShowCSS();?>
@@ -66,8 +66,11 @@
 			  <path d="M412.6 80.4c-5.2 2.3-9.6 6.1-12.6 11-.4.7 1 1.3 1.4.7 2.9-4.7 7-8.3 12.1-10.6.9-.4-.2-1.4-.9-1.1z"></path>
 			</g>
 		  </svg> </div>
-					<!-- show booking popup on click-->
-					<div class="l-stick-menu__btn show-on-touch"><a href="javascript:;" class="b-btn b-btn_width_146 j-booking-btn">Выбрать номер</a></div>
+					<div class="l-stick-menu__btn show-on-touch">
+						<a href="javascript:;" class="b-btn b-btn_width_146 j-booking-btn">
+							<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/global-choose-room-text.php', Array(), Array('MODE' => 'html')); ?>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -95,8 +98,7 @@
 								),
 								"MENU_CACHE_TIME" => "3600",
 								"MENU_CACHE_TYPE" => "A",
-								"MENU_CACHE_USE_GROUPS" => "Y",
-								"ROOT_MENU_TYPE" => "top-" . LANGUAGE_ID,
+								"MENU_CACHE_USE_GROUPS" => "Y", "ROOT_MENU_TYPE" => "top".LANGUAGE_ID,
 								"USE_EXT" => "N",
 								"POPUP" => "Y"
 							),
@@ -126,7 +128,9 @@
 								Array('MODE' => 'html')
 								);?>
 							</div>
-							<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">Посмотреть на карте</a>
+							<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">
+								<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/global-look-on-the-map-text.php', Array(), Array('MODE' => 'text')); ?>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -173,8 +177,7 @@
 								),
 								"MENU_CACHE_TIME" => "3600",
 								"MENU_CACHE_TYPE" => "A",
-								"MENU_CACHE_USE_GROUPS" => "Y",
-								"ROOT_MENU_TYPE" => "top-" . LANGUAGE_ID,
+								"MENU_CACHE_USE_GROUPS" => "Y", "ROOT_MENU_TYPE" => "top".LANGUAGE_ID,
 								"USE_EXT" => "N"
 							),
 							false
@@ -194,7 +197,9 @@
 								Array('MODE' => 'html')
 								);?>
 							</div>
-							<a href="javascript:;" class="b-btn b-btn_width_auto j-show-map">Посмотреть на карте</a>
+							<a href="javascript:;" class="b-btn b-btn_width_auto j-show-map">
+								<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/global-look-on-the-map-text.php', Array(), Array('MODE' => 'text')); ?>
+							</a>
 						</div>
 					</div>
 					<div class="l-menu__lang">
@@ -207,9 +212,7 @@
 						</div>
 					</div>
 					<div class="l-menu__reviews j-reviews">
-						<div class="b-menu-reviews">
-							#TRIPPER_STARS#
-							<div class="b-menu-reviews__txt">по мнению tripadvisor.ru</div><a href="https://www.tripadvisor.ru/Hotel_Review-g298507-d9456388-Reviews-Akhilles_i_Cherepakha-St_Petersburg_Northwestern_District.html" class="b-menu-reviews__link">Посмотреть отзывы</a> </div>
+						<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/global-tripadvisor.php', Array(), Array('MODE' => 'html')); ?>
 					</div>
 				</div>
 			</div>
@@ -226,22 +229,23 @@
 					<div class="l-header__map-wrapper j-show-map__map">
 						<div id="map" data-noinit data-zoom="15" class="b-map__home j-map j-map-no-init"></div>
 						<script>
-							window.map = {}
+							window.map = {};
 							window.map['map'] = {
 								markers: [
 									{
-										coords: [59.923350, 30.346303],
+										coords: [59.9234247, 30.3461359],
 										image: '/img/markers/here.svg'
 									}]
 							}
 						</script><a href="javascript:;" class="b-map__close j-show-map__close-btn">×</a> </div>
 				</div>
-				<?$APPLICATION->IncludeComponent(
+				<? /*$APPLICATION->IncludeComponent(
 					"olympia:blank",
 					"top-image",
-					Array(
-					),
+					Array(),
 					false
+				);*/ ?>
+				<? $APPLICATION->IncludeFile('/local/area/top-images-block.php', Array(), Array('MODE' => 'html')
 				);?>
 				<div class="l-header__booking">
 					<div class="b-booking-form">

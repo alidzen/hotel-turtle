@@ -1,1 +1,1 @@
-Студия красоты премиум-класса Camera Obscura
+High class beauty studio &laquo;Сamera obscura&raquo;

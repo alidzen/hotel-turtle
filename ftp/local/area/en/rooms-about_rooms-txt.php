@@ -1,1 +1,2 @@
-В каждом номере вас ждут комфортные спальные места с ортопедическими матрацами и подушками, тапочки, халаты, 3 комплекта полотенец на каждого гостя, большие вместительные шкафы, а также:
+The cozy rooms of our boutique hotel are decorated in a classic style with the use of molding, decorative stucco, wooden table-tops in bathrooms, classic furnishing, and ornamental fireplaces.
+Each room offers comfortable beds with orthopedic and hypoallergenic mattresses and pillows, slippers, robes, 3 sets of towels per each guest, large spacious closets, as well as:

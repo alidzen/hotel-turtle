@@ -9,12 +9,11 @@ $APPLICATION->SetTitle("Атмосфера");
 			<div class="b-card__cnt">
 				<div class="b-card__header">
 					<h1 class="b-card__ttl">
-					<?$APPLICATION->IncludeFile(
-								'/local/area/' . LANGUAGE_ID . '/atmosphere-location-title.php',
-								Array(),
-								Array('MODE' => 'html')
-							);?> </h1>
-					<div class="b-card__ttl-note">отеля</div>
+					<?$APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/atmosphere-location-title.php', Array(), Array('MODE' => 'html')); ?>
+					</h1>
+					<div class="b-card__ttl-note">
+						<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/atmosphere-location-sub-title.php', Array(), Array('MODE' => 'html')); ?>
+					</div>
 				</div>
 				<div class="b-card__descr">
 					 <?$APPLICATION->IncludeFile(
@@ -24,72 +23,18 @@ $APPLICATION->SetTitle("Атмосфера");
 						);?>
 					<br>
 					<a href="#popup-map-common" class="b-btn b-btn_width_auto j-map-popup">
-						<?$APPLICATION->IncludeFile(
-							'/local/area/' . LANGUAGE_ID .'/global-look-on-the-map-text.php',
-							Array(),
-							Array('MODE' => 'text')
-						);?>
+						<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/global-look-on-the-map-text.php', Array(), Array('MODE' => 'text')); ?>
 					</a>
 				</div>
 			</div>
  <div class="b-card__gallery">
-		<?$APPLICATION->IncludeComponent("olympia:blank", "b-galery", Array(
-	"CODE" => "atmosphere",
-			"HEIGHT" => "750"
-	),
-	false
-);?>
+	 <? $APPLICATION->IncludeComponent("olympia:blank", "b-galery", Array("CODE" => "atmosphere", "HEIGHT" => "750"), false); ?>
 </div>
  </div>
 		</div>
 	</div>
  </section>
-<section class="l-services">
-	<div class="l-services__tiles l-limit-wrap no-padding">
-		<div class="l-services__tiles-row j-slider">
-			<div class="l-services__tile l-services__tile_numb_9">
-				<div class="b-service no-hover">
-					<div class="b-service__header">
-						<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Петербург уже давно<br/> описан, а что не описано,<br/> то надо видеть самому.</div>
-					</div>
-					<p>И. Гончаров</p>
-					<div class="b-service__img-wrap">
-						<div style="background-image: url('/local/assets/img/services/service-7.jpg');" class="b-service__img"></div>
-					</div>
-				</div>
-			</div>
-			<div class="l-services__tile l-services__tile_numb_10">
-				<div class="b-service has-lines no-hover">
-					<div class="b-service__border">
-						<div class="b-service__header">
-							<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Пушкин. Тютчев. Некрасов. Блок.<br/>Ахматова. Мандельштам…<br/>Это всё — псевдонимы. <br/> Автор — Петербург..</div>
-						</div>
-						<p>Л. Чуковская</p>
-					</div>
-					<div class="b-service__img-wrap">
-						<div style="background-image: url('/local/assets/img/services/service-8.jpg');" class="b-service__img"></div>
-					</div>
-				</div>
-			</div>
-			<div class="l-services__tile l-services__tile_numb_11 hide-on-tablet">
-			<div class="b-service no-hover">
-				<div class="b-service__header">
-					<div class="b-service__ttl-note b-service__ttl-note_font-size_small">Чего ловить в Петербурге — не очень  понятно. Это не скажешь словами. Это либо чувствуешь всей кожей, либо никогда не объяснишь, о чем речь.</div>
-				</div>
-				<p>И. Стогoff</p>
-				<div class="b-service__img-wrap">
-					<div style="background-image: url('/local/assets/img/services/service-9.jpg');" class="b-service__img"></div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</div>
-	<div class="l-services__btn">
-		<div class="b-propose">
-			<div class="b-propose__btn"><a href="javascript:;" class="b-btn b-btn_width_auto j-next-cite">Другие цитаты</a></div>
-		</div>
-	</div>
-</section>
+<? $APPLICATION->IncludeComponent("bitrix:news.list", "quotes", Array("ACTIVE_DATE_FORMAT" => "d.m.Y", "ADD_SECTIONS_CHAIN" => "N", "AJAX_MODE" => "N", "AJAX_OPTION_ADDITIONAL" => "", "AJAX_OPTION_HISTORY" => "N", "AJAX_OPTION_JUMP" => "N", "AJAX_OPTION_STYLE" => "Y", "CACHE_FILTER" => "N", "CACHE_GROUPS" => "Y", "CACHE_TIME" => "36000000", "CACHE_TYPE" => "A", "CHECK_DATES" => "Y", "DETAIL_URL" => "", "DISPLAY_BOTTOM_PAGER" => "N", "DISPLAY_DATE" => "N", "DISPLAY_NAME" => "N", "DISPLAY_PICTURE" => "N", "DISPLAY_PREVIEW_TEXT" => "N", "DISPLAY_TOP_PAGER" => "N", "FIELD_CODE" => array("", ""), "FILTER_NAME" => "", "HIDE_LINK_WHEN_NO_DETAIL" => "N", "IBLOCK_ID" => "7", "IBLOCK_TYPE" => "CONTENT", "INCLUDE_IBLOCK_INTO_CHAIN" => "N", "INCLUDE_SUBSECTIONS" => "N", "MESSAGE_404" => "", "NEWS_COUNT" => "20", "PAGER_BASE_LINK_ENABLE" => "N", "PAGER_DESC_NUMBERING" => "N", "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000", "PAGER_SHOW_ALL" => "N", "PAGER_SHOW_ALWAYS" => "N", "PAGER_TEMPLATE" => ".default", "PAGER_TITLE" => "Новости", "PARENT_SECTION" => "", "PARENT_SECTION_CODE" => "", "PREVIEW_TRUNCATE_LEN" => "", "PROPERTY_CODE" => array("", ""), "SET_BROWSER_TITLE" => "N", "SET_LAST_MODIFIED" => "N", "SET_META_DESCRIPTION" => "N", "SET_META_KEYWORDS" => "N", "SET_STATUS_404" => "N", "SET_TITLE" => "N", "SHOW_404" => "N", "SORT_BY1" => "SORT", "SORT_BY2" => "ACTIVE_FROM", "SORT_ORDER1" => "ASC", "SORT_ORDER2" => "DESC")); ?>
 <section class="l-showcase__inner-row">
 	<div class="l-showcase l-showcase_theme_img-bg border-vertical">
 	<div class="l-showcase__descr border-horizontal">
@@ -131,13 +76,12 @@ $APPLICATION->SetTitle("Атмосфера");
 		<?$APPLICATION->IncludeComponent(
 		"olympia:blank",
 		"show-case.gallery",
-		Array(
-		"CODE" => "atmosphere"
+		Array("CODE" => "atmosphere-bottom"
 		),
 		false
 		);?>
 	</div>
-</div>
+	</div>
 </section>
 <section class="l-article l-limit-wrap no-padding">
 <div class="l-article__cnt">

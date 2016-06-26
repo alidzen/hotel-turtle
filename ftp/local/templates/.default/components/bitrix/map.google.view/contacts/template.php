@@ -5,7 +5,7 @@
 			<div class="b-map__btn"><a href="#popup-map" data-target="#map" data-theme="map" class="b-btn b-btn_bg_white j-popup">Развернуть карту</a></div>
 		</div>
 		<div class="b-map__cnt">
-			<div id="map" data-noinit data-zoom="15"  class="j-map-contacts b-map__base"></div>
+			<div id="map" data-noinit data-zoom="15" class="j-map-contacts b-map__base"></div>
 		</div>
 	</div>
 </div>
@@ -15,9 +15,10 @@
 <script>
 	window.map = {};
 	window.map['map'] = {
+		lang: '<?=LANGUAGE_ID;?>',
 		markers: [
 		{
-			coords: [59.923350, 30.346303],
+			coords: [59.9234247, 30.3461359],
 			image: '/local/assets/img/markers/here.svg'
 		}]
 	}

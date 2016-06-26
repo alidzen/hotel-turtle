@@ -1,4 +1,7 @@
-<p>Классический стиль, дополненный лофтовыми элементами. Кирпичные стены первого этажа, который займут кафе и кулинария, будут окрашены в разные цвета, как и яркие венские стулья. Необычная мебель и декор: пространство
-					украсят библиотечные картотеки и античные бюсты.</p>
-				<p>Ресторан расположится на двух верхних этажах, обладающих своими особенностями: колонны, камины, роспись на потолке, множество книг на полках, фрески на стенах, декор из античных бюстов, а также плитка на полу, повторяющая
-					рисунки древних храмов.</p>
+<p>The interior of the restaurant complex will be made in a classic style, complemented with loft elements. Brick walls
+	on the ground floor where the café and gastronomy will take place will be colored into different colors as well as
+	bright Viennese chairs.</p>
+<p>The restaurant is located on the two top floors that have their own features and interesting details: columns,
+	fireplaces, and ceiling paintings. A diversity of books on shelves, frescoes on the walls, décor out of antique
+	busts, as well as various tiles on the floor with images of ancient churches will perfectly supplement the
+	atmosphere. </p>

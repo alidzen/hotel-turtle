@@ -11,6 +11,7 @@ $assetManager->addCss('/local/assets/js/lib/jquery.ui/themes/base/datepicker.css
 $assetManager->addCss('/local/assets/js/lib/slick-carousel/slick/slick.css');
 $assetManager->addCss('/local/assets/js/lib/slick-carousel/slick/slick-theme.css');
 $assetManager->addCss('/local/assets/css/app.css');
+$assetManager->addString('<script>window.app = {lang: "'.LANGUAGE_ID.'"};</script>');
 $assetManager->addString('<script src="/local/assets/js/lib/requirejs/require.min.js" data-main="/local/assets/js/config.js"></script>');
 $assetManager->addCss('/local/assets/css/custom.css');
 

@@ -1,5 +1,5 @@
 <ul>
-	<li>Авторские интерьеры, выполненные в классическом стиле.</li>
-	<li>Мансардные окна с видом на петербургское небо.</li>
-	<li>Натуральные материалы и необычные архитектурные элементы в дизайне.</li>
+	<li>Author’s interiors, implemented in a classic style.</li>
+	<li>Roof windows with the view of St. Petersburg sky.</li>
+	<li>Natural materials and unusual architectural elements in the design.</li>
 </ul>

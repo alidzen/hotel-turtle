@@ -10,6 +10,8 @@ if (isset($_REQUEST['ajax']) || isset($_REQUEST['ajax_basket']) || (isset($_REQU
 	define('PERFMON_STOP', true);
 }
 
+// подключение констант
+include_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/constants.php');
 // подключение сторонних функций
 include_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/functions.php');
 // подключение событий

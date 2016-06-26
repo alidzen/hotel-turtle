@@ -36,40 +36,37 @@ $APPLICATION->SetTitle("Ресторанный комплекс “Симпоз�
 				<div class="b-showcase__cnt">
 					<div class="b-showcase__header">
 						<h1 class="b-showcase__ttl">
-							<?$APPLICATION->IncludeFile(
+							<? $APPLICATION->IncludeFile(
 							'/local/area/' . LANGUAGE_ID . '/restaurant-ttl-1.php',
 							Array(),
-							Array('MODE' => 'html')
-							);?>
+							Array('MODE' => 'html')); ?>
 						</h1>
 						<div class="b-showcase__ttl-note">
-							<?$APPLICATION->IncludeFile(
+							<? $APPLICATION->IncludeFile(
 							'/local/area/' . LANGUAGE_ID . '/restaurant-ttl-1-ext.php',
 							Array(),
-							Array('MODE' => 'html')
-							);?>
+							Array('MODE' => 'html')); ?>
 						</div>
 					</div>
-					<?$APPLICATION->IncludeFile(
+					<? $APPLICATION->IncludeFile(
 					'/local/area/' . LANGUAGE_ID . '/restaurant-text-1.php',
 					Array(),
-					Array('MODE' => 'html')
-					);?>
+					Array('MODE' => 'html')); ?>
 				</div>
 			</div>
 		</div>
 		<div class="l-showcase__gallery">
 			<div class="b-gallery j-gallery j-gallery_theme_mobile">
-				<?$APPLICATION->IncludeComponent(
+				<? $APPLICATION->IncludeComponent(
 				"olympia:blank",
 				"show-case.gallery",
-				Array(
-				"CODE" => "rest"
+				Array("CODE" => "rest"
 				),
-				false
-				);?>
-				<a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать предыдущий слайд</a>
-				<a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать следущий слайд</a>
+				false); ?>
+				<a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать
+					предыдущий слайд</a>
+				<a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать
+					следущий слайд</a>
 			</div>
 		</div>
 	</div>

@@ -1,1 +1,1 @@
-Уютное пространство отеля не позволит чувству настоящего Петербурга покинуть вас. Каждый из номеров обладает своим характером и историей, но объединяет их общая атмосфера – которой пронизана каждая деталь.
+The cozy atmosphere of the hotel will help you to feel the real spirit of St. Petersburg. Each room has its own features and history, but altogether they form the unique and distinct hotel with its special atmosphere, “Akhilles i Cherepakha”.

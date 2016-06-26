@@ -1,2 +1,4 @@
-<p>В меню ресторана будут представлены как традиционные блюда европейской кухни, так и авторские задумки шеф-повара Алексея Ермакова. Помимо этого, гости комплекса смогут познакомиться с «книжным меню»: пока вы отдыхаете
-					в ресторане, мы напечатаем для вас выбранную книгу.</p>
+<p>In the restaurant menu traditional dishes of the European cuisine will be presented together with author’s edible
+	masterpieces made by our Chef – Aleksei Ermakov. Besides, guests of our complex will have an opportunity to get
+	acquainted with our “book menu”: while you are resting in the restaurant we will print out a book for you that you
+	have chosen. </p>

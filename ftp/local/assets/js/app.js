@@ -163,14 +163,16 @@ define('app', [
     });
 
     var scrollToBlock = function(el, offset) {
-        if (offset === undefined)
-        	offset = 0;
+        $('html, body').animate({scrollTop: 0}, 1, false, function () {
+            if (offset === undefined)
+                offset = 0;
 
-        var duration = 600,
-            element = $(el).offset(),
-            pos = element.top + offset;
+            var duration = 1000,
+                element = $(el).offset(),
+                pos = element.top - offset;
 
-        $('html, body').animate({scrollTop: pos}, duration);
+            $('html, body').animate({scrollTop: pos}, duration);
+        });
     };
 
     // smooth hide preloader, show link
@@ -194,6 +196,9 @@ define('app', [
                 width: fullLinkWidth
             });
         }, 600);
+
+        if (window.location.hash != '')
+            scrollToBlock(window.location.hash, 60);
     };
 
     //Sticky nav
@@ -451,17 +456,6 @@ define('app', [
         });
     })($('.j-scroll-down'));
 
-    window.onload = function() {
-        if (window.location.hash != '') {
-            setTimeout(function () {
-                window.scrollTo(0, 0);
-
-                if(window.location.hash == '#content')
-                    $('.j-scroll-down').trigger('click');
-            }, 1);
-        }
-    };
-
     //Подключение попапа с картой
     //Инициализация карты при открытие попапа
     (function($popup) {
@@ -584,12 +578,12 @@ define('app', [
     })($('.j-frame'));
 
     // slider with cites
-    (function($slider) {
+    (function ($slider) {
         if (!$slider.length) {
             return;
         }
 
-        require(['slick'], function() {
+        require(['slick'], function () {
             $slider.slick({
                 dots: false,
                 draggable: false,

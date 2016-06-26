@@ -6,15 +6,16 @@
 				<div class="b-service__header">
 					<div class="b-service__ttl-note b-service__ttl-note_font-size_small">
 						Петербург уже давно<br>
-						 описан, а что не описано,<br>
-						 то надо видеть самому.
+						описан, а что не описано,<br>
+						то надо видеть самому.
 					</div>
 				</div>
 				<p>
 					И. Гончаров
 				</p>
 				<div class="b-service__img-wrap">
-					<div style="background-image: url('/local/assets/img/services/service-7.jpg');" class="b-service__img">
+					<div style="background-image: url('/local/assets/img/services/service-7.jpg');"
+						 class="b-service__img">
 					</div>
 				</div>
 			</div>
@@ -27,7 +28,7 @@
 							Пушкин. Тютчев. Некрасов. Блок.<br>
 							Ахматова. Мандельштам…<br>
 							Это всё — псевдонимы. <br>
-							 Автор — Петербург..
+							Автор — Петербург..
 						</div>
 					</div>
 					<p>
@@ -35,7 +36,8 @@
 					</p>
 				</div>
 				<div class="b-service__img-wrap">
-					<div style="background-image: url('/local/assets/img/services/service-8.jpg');" class="b-service__img">
+					<div style="background-image: url('/local/assets/img/services/service-8.jpg');"
+						 class="b-service__img">
 					</div>
 				</div>
 			</div>

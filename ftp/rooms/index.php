@@ -8,6 +8,13 @@ $APPLICATION->SetTitle("Номера");
 			<div class="b-article__border">
 				<div class="b-article__img-wrap"><img src="/local/assets/img/fruits.svg" alt="Фрукты"></div>
 				<div class="b-article__cnt b-typo-reset">
+					<div class="b-article__header">
+						<h1 class="b-article__ttl">
+							<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/rooms-title-text.php', Array(), Array('MODE' => 'html')); ?> </h1>
+						<div class="b-article__ttl-note">
+							<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/rooms-title-text-ext.php', Array(), Array('MODE' => 'html')); ?>
+						</div>
+					</div>
 					<?$APPLICATION->IncludeFile(
 						'/local/area/' . LANGUAGE_ID . '/rooms-about_rooms-txt.php',
 						Array(),
@@ -194,18 +201,16 @@ $APPLICATION->SetTitle("Номера");
 		<div class="l-room-feature__border border-horizontal">
 			<div class="l-room-feature__cnt">
 				<h2>
-					<?$APPLICATION->IncludeFile(
+					<? $APPLICATION->IncludeFile(
 					'/local/area/' . LANGUAGE_ID . '/rooms-cleaning-block-ttl.php',
 					Array(),
-					Array('MODE' => 'html')
-					);?>
+					Array('MODE' => 'html')); ?>
 				</h2>
 				<p>
-					<?$APPLICATION->IncludeFile(
+					<? $APPLICATION->IncludeFile(
 					'/local/area/' . LANGUAGE_ID . '/rooms-cleaning-block-txt.php',
 					Array(),
-					Array('MODE' => 'html')
-					);?>
+					Array('MODE' => 'html')); ?>
 				</p>
 			</div>
 		</div>

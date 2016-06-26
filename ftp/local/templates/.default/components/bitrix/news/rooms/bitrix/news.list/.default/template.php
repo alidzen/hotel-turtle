@@ -11,7 +11,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 			<div class="l-services__row">
 				<div class="b-article">
 					<div class="b-feature__header">
-						<h1 class="b-feature__ttl">Наши номера</h1> </div>
+						<h1 class="b-feature__ttl"><?=GetMessage('H1_ROOMS');?></h1></div>
 				</div>
 			</div>
 		</div>
@@ -34,12 +34,16 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 							<div class="b-room__descr"><?=$arItem['PROPERTIES']['SUB_NAME']['VALUE'];?></div>
 							<div class="b-room__booking">
 								<?if($arItem['PROPERTIES']['NOT_VACANT']['VALUE'] == 'Y'):?>
-								<div class="b-room__message">Нет свободных номеров</div>
+									<div class="b-room__message"><?=GetMessage('NO_ROOMS');?></div>
 								<?else:?>
 									<?if($arItem['PROPERTIES']['PRICE_FROM']['VALUE'] != ''):?>
 										<?if($arItem['PROPERTIES']['PRICE_TO']['VALUE'] != ''):?>
-											<span class="b-room__time">от</span>&nbsp; <span class="b-room__price"><?=$arItem['PROPERTIES']['PRICE_FROM']['VALUE'];?> <span class="b-ruble">g</span></span>&nbsp;
-											<span class="b-room__time">до</span>&nbsp;<span class="b-room__price"><?=$arItem['PROPERTIES']['PRICE_TO']['VALUE'];?> <span class="b-ruble">g</span></span>
+											<span class="b-room__time"><?=GetMessage('FROM');?></span>&nbsp; <span
+												class="b-room__price"><?=$arItem['PROPERTIES']['PRICE_FROM']['VALUE'];?>
+												<span class="b-ruble">g</span></span>&nbsp;
+											<span class="b-room__time"><?=GetMessage('TO');?></span>&nbsp;<span
+												class="b-room__price"><?=$arItem['PROPERTIES']['PRICE_TO']['VALUE'];?>
+												<span class="b-ruble">g</span></span>
 											<?if($arItem['PROPERTIES']['FOR']['VALUE'] != ''):?>
 												<span class="b-room__time">&nbsp;<?=$arItem['PROPERTIES']['FOR']['VALUE'];?></span>
 											<?endif;?>

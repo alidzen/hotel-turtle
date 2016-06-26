@@ -1,6 +1,6 @@
 <?php
 
-use \Bitrix\Main;
+use Bitrix\Main;
 
 $arResult['ITEMS'] = null;
 
@@ -27,13 +27,14 @@ if(Main\Loader::includeModule('iblock'))
 		while($arItem = $rsItems->Fetch())
 		{
 			$action = ($arItem['PROPERTY_ACTION_TPE'] != '' ? ['TYPE' => $arItem['PROPERTY_ACTION_TPE_VALUE'], 'TITLE' => $arItem['PROPERTY_ACTION_TTL'], 'TEXT' => $arItem['PROPERTY_ACTION_TXT']] : null);
+			$arPreviewText = explode('####', $arItem['PREVIEW_TEXT']);
+
+			$arButtons = \CIBlock::GetPanelButtons($arItem["IBLOCK_ID"], $arItem["ID"], 0, ["SECTION_BUTTONS" => false, "SESSID" => false]);
 
 			$arResult['ITEMS'][] = [
 				'ID' 		=> $arItem['ID'],
 				'IMAGE' 	=> ($arItem['PREVIEW_PICTURE'] > 0 ? \CFile::GetPath($arItem['PREVIEW_PICTURE']) : null),
-				'ACTION' 	=> $action,
-				'PREVIEW_TEXT' => $arItem['PREVIEW_TEXT'],
-				'THEME_BLACK'  => ($arItem['PROPERTY_BLACK_VALUE'] == 'Y')
+				'ACTION' 	=> $action, 'PREVIEW_TEXT' => (LANGUAGE_ID == 'ru' ? $arPreviewText[0] : (isset($arPreviewText[1]) ? $arPreviewText[1] : $arPreviewText[0])), 'THEME_BLACK' => ($arItem['PROPERTY_BLACK_VALUE'] == 'Y'), 'EDIT_LINK' => $arButtons["edit"]["edit_element"]["ACTION_URL"], 'DELETE_LINK' => $arButtons["edit"]["delete_element"]["ACTION_URL"]
 			];
 		}
 	}

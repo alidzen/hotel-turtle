@@ -1,1 +1,1 @@
-г. Санкт-Петербург, ул. Достоевского, 19/21, лит. Б
+Saint-Petersburg, Russia, Dostoevsky st, 19/21, lit. B

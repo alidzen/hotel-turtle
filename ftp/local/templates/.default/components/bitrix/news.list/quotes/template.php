@@ -17,8 +17,9 @@ $this->setFrameMode(true);
 <section class="l-services">
 	<div class="l-services__tiles l-limit-wrap no-padding">
 		<div class="l-services__tiles-row j-slider">
-			<?foreach($arResult['ITEMS'] as $i => $arItem):?>
-				<?if($i == 0):?>
+			<? $i = 0; ?>
+			<? foreach ($arResult['ITEMS'] as $arItem): ?>
+				<? if ($i == 0): ?>
 					<div class="l-services__tile l-services__tile_numb_9">
 						<div class="b-service">
 							<div class="b-service__header">
@@ -30,12 +31,13 @@ $this->setFrameMode(true);
 								<?=$arItem['NAME'];?>
 							</p>
 							<div class="b-service__img-wrap">
-								<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>');" class="b-service__img">
+								<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>');"
+									 class="b-service__img">
 								</div>
 							</div>
 						</div>
 					</div>
-				<?elseif($i == 1):?>
+				<? elseif ($i == 1): ?>
 					<div class="l-services__tile l-services__tile_numb_10">
 						<div class="b-service has-lines">
 							<div class="b-service__border">
@@ -49,12 +51,13 @@ $this->setFrameMode(true);
 								</p>
 							</div>
 							<div class="b-service__img-wrap">
-								<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>');" class="b-service__img">
+								<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>');"
+									 class="b-service__img">
 								</div>
 							</div>
 						</div>
 					</div>
-				<?else:?>
+				<? elseif ($i == 2): ?>
 					<div class="l-services__tile l-services__tile_numb_11 hide-on-tablet">
 						<div class="b-service">
 							<div class="b-service__header">
@@ -66,18 +69,26 @@ $this->setFrameMode(true);
 								<?=$arItem['NAME'];?>
 							</p>
 							<div class="b-service__img-wrap">
-								<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>');" class="b-service__img">
+								<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>');"
+									 class="b-service__img">
 								</div>
 							</div>
 						</div>
 					</div>
-				<?endif;?>
-			<?endforeach;?>
+				<? endif; ?>
+				<? if ($i == 2)
+					$i = 0; ?>
+				<? $i++; ?>
+			<? endforeach; ?>
 		</div>
 	</div>
 	<div class="l-services__btn">
 		<div class="b-propose">
-			<div class="b-propose__btn"><a href="javascript:;" class="b-btn b-btn_width_auto j-next-cite">Другие цитаты</a></div>
+			<div class="b-propose__btn">
+				<a href="javascript:;" class="b-btn b-btn_width_auto j-next-cite">
+					<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/global-other-quotes-text.php', Array(), Array('MODE' => 'html')); ?>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>

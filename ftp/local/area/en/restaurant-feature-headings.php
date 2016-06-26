@@ -1,1 +1,1 @@
-Мы создаем клубную атмосферу интеллектуальной элитарности и творческой открытости для встреч с друзьями и новых знакомств!
+We are creating the atmosphere of an intellectual elitism and creative openness for meetings with friends and new acquaintances!  

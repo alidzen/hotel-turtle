@@ -10,7 +10,7 @@
 	<div class="b-feature__item-img b-feature__item-img_img_bed">
 	</div>
 	<div class="b-feature__item-txt">
-		 Уютная обстановка
+		 Уютные интерьеры&nbsp;
 	</div>
  </li>
 	<li class="b-feature__item">
@@ -21,27 +21,13 @@
 	</div>
  </li>
 	<li class="b-feature__item">
-	<div class="b-feature__item-img b-feature__item-img_img_fan">
-	</div>
-	<div class="b-feature__item-txt">
-		 Кондиционер
-	</div>
- </li>
-	<li class="b-feature__item">
 	<div class="b-feature__item-img b-feature__item-img_img_eat">
 	</div>
 	<div class="b-feature__item-txt">
 		 &nbsp;Завтраки&nbsp;
 	</div>
 	<div class="b-feature__item-txt">
-		от шеф-повара
-	</div>
- </li>
-	<li class="b-feature__item">
-	<div class="b-feature__item-img b-feature__item-img_img_wi-fi">
-	</div>
-	<div class="b-feature__item-txt">
-		 Бесплатный Wi-Fi
+		 от шеф-повара
 	</div>
  </li>
 	<li class="b-feature__item">
@@ -51,7 +37,25 @@
 		 Халаты&nbsp;
 	</div>
 	<div class="b-feature__item-txt">
-		и тапочки
+		 и тапочки
 	</div>
+ </li>
+	<li class="b-feature__item">
+	<div class="b-feature__item-img b-feature__item-img_img_fan">
+	</div>
+	<div class="b-feature__item-txt">
+		 Кондиционер
+	</div>
+ </li>
+	<li class="b-feature__item">
+	<div class="b-feature__item-img b-feature__item-img_img_wi-fi">
+	</div>
+	<div class="b-feature__item-txt">
+		 Бесплатный&nbsp;
+	</div>
+	<div class="b-feature__item-txt">
+		Wi-Fi
+	</div>
+
  </li>
 </ul>

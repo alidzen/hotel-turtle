@@ -1,6 +1,8 @@
 <?if($arResult['ITEMS'] !== NULL):?>
-<div class="b-gallery j-gallery j-gallery_theme_mobile">
-	<div data-height="650" data-width="100%" data-arrows="false" data-nav="dots" data-fit="cover"
+	<div
+		class="<?=(isset($arParams['CLASS_LIST']) ? $arParams['CLASS_LIST'] : 'b-gallery j-gallery j-gallery_theme_mobile');?>">
+		<div data-height="<?=(isset($arParams['HEIGHT']) ? $arParams['HEIGHT'] : '650');?>" data-width="100%"
+			 data-arrows="false" data-nav="dots" data-fit="cover"
 		 data-loop="true" data-autoplay="false" data-transition="dissolve" data-transitionduration="600"
 		 data-margin="-1" class="b-gallery__base">
 		<?foreach($arResult['ITEMS'] as $arImage):?>

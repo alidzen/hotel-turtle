@@ -81,4 +81,22 @@ body .bx-core-adm-dialog, body .bx-core-adm-dialog a, body .bx-core-adm-dialog s
 	font-size: 13px;
 }
 
-.fotorama__nav.fotorama__nav--dots { bottom: 60px; }
+.fotorama__nav.fotorama__nav--dots {
+	bottom: 60px;
+}
+
+.b-btn_width_146 {
+	width: 150px;
+}
+
+.l-services__tile_numb_17 .b-service__img {
+	width: 110%;
+}
+
+.b-menu-contacts__map {
+	font-size: 16px;
+}
+
+.l-services__tile_numb_4 .b-service__img {
+	background-image: url(/upload/iblock/89c/aaeaaqaaaaaaaakwaaaajdg1nteznzliltm4nzatngy1zs05m2eylwiwnzgzowy5ownhma.jpg);
+}

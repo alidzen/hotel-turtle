@@ -1,1 +1,1 @@
-Мы всегда на связи
+We are always in touch
