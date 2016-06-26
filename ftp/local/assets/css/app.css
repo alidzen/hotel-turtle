@@ -6651,7 +6651,6 @@ select {
 
 @media only screen and (min-width: 1024px) {
     .b-article {
-        padding-top: 48px;
         padding-bottom: 48px; } }
 
 .b-article__border {
