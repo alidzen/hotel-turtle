@@ -56,16 +56,18 @@ $APPLICATION->SetTitle("Ресторанный комплекс “Симпоз�
 			</div>
 		</div>
 		<div class="l-showcase__gallery">
-			<? $APPLICATION->IncludeComponent(
-			"olympia:blank",
-			"show-case.gallery",
-			Array("CODE" => "rest"
-			),
-			false); ?>
-			<a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать
-				предыдущий слайд</a>
-			<a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать
-				следущий слайд</a>
+			<div class="b-gallery j-gallery j-gallery_theme_mobile">
+				<? $APPLICATION->IncludeComponent(
+				"olympia:blank",
+				"show-case.gallery",
+				Array("CODE" => "rest"
+				),
+				false); ?>
+				<a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать
+					предыдущий слайд</a>
+				<a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать
+					следущий слайд</a>
+			</div>
 		</div>
 	</div>
 </section>
