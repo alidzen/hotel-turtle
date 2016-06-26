@@ -48,6 +48,9 @@
 
 //STATE
 .l-showcase_theme_img-bg {
+    background: url('/img/feature-2-bg.svg') 100% 100% no-repeat $green;
+    background-size: contain;
+
     &:before,
     &:after {
         background-color: $gold;
@@ -66,11 +69,6 @@
 
     .b-gallery__arrow_show_next {
         right: gutter(4.5);
-    }
-
-    .l-showcase__descr {
-        background: url('/img/feature-2-bg.svg') 100% 100% no-repeat $green;
-        background-size: contain;
     }
 }
 
