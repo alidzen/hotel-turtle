@@ -25,6 +25,7 @@ define('app/gallery', [
         this.eventShow();
         this.eventReady();
         this.initGallery();
+        this.setHeightParam();
     };
 
     /**
@@ -127,6 +128,15 @@ define('app/gallery', [
 
             $container.append(tplLabels(data));
         }
+    };
+
+    // Set height of gallery like parent div
+
+    Gallery.prototype.setHeightParam = function() {
+        var parentHeight = this.$gallery.parent('div').height();
+        var $param = this.$gallery;
+        console.log($param.data());
+        $param.data('height', parentHeight);
     };
 
     return Gallery;
