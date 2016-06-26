@@ -301,4 +301,29 @@ $gallery-dots-frame-height: 30px !default;
             background-color: rgba($red, .6);
         }
     }
+
+    .b-gallery__arrow {
+        border: none;
+        background-color: transparent;
+        height: sprite-height($gallery-arrow-prev-simple);
+        width: sprite-width($gallery-arrow-prev-simple) * 2;
+
+        &:before,
+        &:after {
+            margin-left: - sprite-width($gallery-arrow-prev-simple) / 2;
+            margin-top: - sprite-height($gallery-arrow-prev-simple) / 2;
+        }
+    }
+
+    .b-gallery__arrow_show_prev {
+        &:before {
+            @include sprite($gallery-arrow-prev-simple);
+        }
+    }
+
+    .b-gallery__arrow_show_next {
+        &:after {
+            @include sprite($gallery-arrow-next-simple);
+        }
+    }
 }

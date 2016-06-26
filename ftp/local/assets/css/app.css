@@ -4941,7 +4941,7 @@ label {
     padding-left: 30px; }
 .b-form__checkbox label:after {
     background-image: url("../img/sprites.png");
-    background-position: -331px -131px;
+    background-position: -308px -192px;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -4955,7 +4955,7 @@ label {
         background-size: 376px 311px; } }
 .b-form__checkbox input:checked + label:after {
     background-image: url("../img/sprites.png");
-    background-position: -331px -152px;
+    background-position: -235px -122px;
     width: 20px;
     height: 20px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -4966,7 +4966,7 @@ label {
 @media only screen and (min-width: 1025px) {
     .b-form__checkbox:hover label:after {
         background-image: url("../img/sprites.png");
-        background-position: -352px -131px;
+        background-position: -331px -247px;
         width: 20px;
         height: 20px; } }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1025px) and (min-device-pixel-ratio: 1.5) {
@@ -4985,7 +4985,7 @@ label {
 .b-form__checkbox input:disabled + label:after,
 .b-form__checkbox input[readonly="readonly"] + label:after {
     background-image: url("../img/sprites.png");
-    background-position: -352px -152px;
+    background-position: -352px -247px;
     width: 20px;
     height: 20px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -5004,7 +5004,7 @@ label {
     padding-left: 26px; }
 .b-form__radio label:after {
     background-image: url("../img/sprites.png");
-    background-position: -331px -206px;
+    background-position: -359px -177px;
     width: 16px;
     height: 17px;
     position: absolute;
@@ -5018,7 +5018,7 @@ label {
         background-size: 376px 311px; } }
 .b-form__radio input:checked + label:after {
     background-image: url("../img/sprites.png");
-    background-position: -348px -206px;
+    background-position: -359px -107px;
     width: 16px;
     height: 17px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -5029,7 +5029,7 @@ label {
 @media only screen and (min-width: 1025px) {
     .b-form__radio:hover label:after {
         background-image: url("../img/sprites.png");
-        background-position: -331px -224px;
+        background-position: -359px -143px;
         width: 16px;
         height: 17px; } }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1025px) and (min-device-pixel-ratio: 1.5) {
@@ -5048,7 +5048,7 @@ label {
 .b-form__radio input:disabled + label:after,
 .b-form__radio input[readonly="readonly"] + label:after {
     background-image: url("../img/sprites.png");
-    background-position: -348px -224px;
+    background-position: -359px -125px;
     width: 16px;
     height: 17px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -5395,7 +5395,7 @@ select {
     left: 45px; }
 .b-gallery__arrow_show_prev:before {
     background-image: url("../img/sprites.png");
-    background-position: -365px -206px;
+    background-position: -359px -207px;
     width: 8px;
     height: 13px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -5407,7 +5407,7 @@ select {
     right: 45px; }
 .b-gallery__arrow_show_next:after {
     background-image: url("../img/sprites.png");
-    background-position: -365px -224px;
+    background-position: -368px -207px;
     width: 8px;
     height: 13px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
@@ -5551,6 +5551,35 @@ select {
 
 .b-gallery_theme_home .fotorama__nav__frame--dot:nth-child(5) .fotorama__dot {
     background-color: rgba(218, 54, 54, 0.6); }
+
+.b-gallery_theme_home .b-gallery__arrow {
+    border: none;
+    background-color: transparent;
+    height: 69px;
+    width: 54px; }
+.b-gallery_theme_home .b-gallery__arrow:before, .b-gallery_theme_home .b-gallery__arrow:after {
+    margin-left: -13.5px;
+    margin-top: -34.5px; }
+
+.b-gallery_theme_home .b-gallery__arrow_show_prev:before {
+    background-image: url("../img/sprites.png");
+    background-position: -331px -107px;
+    width: 27px;
+    height: 69px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+    .b-gallery_theme_home .b-gallery__arrow_show_prev:before {
+        background-image: url("../img/sprites@2x.png");
+        background-size: 376px 311px; } }
+
+.b-gallery_theme_home .b-gallery__arrow_show_next:after {
+    background-image: url("../img/sprites.png");
+    background-position: -331px -177px;
+    width: 27px;
+    height: 69px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+    .b-gallery_theme_home .b-gallery__arrow_show_next:after {
+        background-image: url("../img/sprites@2x.png");
+        background-size: 376px 311px; } }
 
 .b-tabs {
     display: inline-block; }
@@ -6222,7 +6251,7 @@ select {
     cursor: pointer; }
 .ui-datepicker .ui-datepicker-prev:after {
     background-image: url("../img/sprites.png");
-    background-position: -365px -206px;
+    background-position: -359px -207px;
     width: 8px;
     height: 13px;
     content: '';
@@ -6244,7 +6273,7 @@ select {
     cursor: pointer; }
 .ui-datepicker .ui-datepicker-next:after {
     background-image: url("../img/sprites.png");
-    background-position: -365px -224px;
+    background-position: -368px -207px;
     width: 8px;
     height: 13px;
     content: '';
