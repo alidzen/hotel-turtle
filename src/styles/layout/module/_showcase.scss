@@ -25,9 +25,6 @@
 
     @media #{$big-up} {
         @include span(6.5);
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: stretch;
     }
 
     .b-gallery {
@@ -48,8 +45,7 @@
 
 //STATE
 .l-showcase_theme_img-bg {
-    background: url('/img/feature-2-bg.svg') 100% 100% no-repeat $green;
-    background-size: contain;
+    background-color: $green;
 
     &:before,
     &:after {
@@ -61,6 +57,11 @@
         &:after {
             background-color: $gold;
         }
+    }
+
+    .l-showcase__descr {
+        background: url('/img/feature-2-bg.svg') 100% 100% no-repeat $green;
+        background-size: contain;
     }
 
     .b-gallery__arrow_show_prev {
