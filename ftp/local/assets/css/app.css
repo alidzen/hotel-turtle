@@ -3623,7 +3623,7 @@ blockquote:after {
         padding-left: 20px; } }
 @media only screen and (min-width: 641px) {
     .l-stick-menu__popup-cnt {
-        padding-top: 84px;
+        padding-top: 132px;
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%) translateX(-50%);

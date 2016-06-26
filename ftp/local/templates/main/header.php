@@ -82,6 +82,7 @@
 							<a href="/" title="Отель Ахиллес и Черепаха" class="b-logo">
 								<img src="/local/assets/img/logo.svg" alt="Отель Ахиллес и Черепаха" class="b-logo__img" />
 							</a>
+							<div class="b-menu-logo__txt">boutique hotel</div>
 						</div>
 					</div>
 					<div class="l-stick-menu__popup-nav">
