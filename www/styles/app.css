@@ -6649,11 +6649,6 @@ select {
       background-color: #005870;
       border-color: #005870; } }
 
-@media only screen and (min-width: 1024px) {
-  .b-article {
-    padding-top: 48px;
-    padding-bottom: 48px; } }
-
 .b-article__border {
   padding-top: 48px;
   padding-bottom: 48px;

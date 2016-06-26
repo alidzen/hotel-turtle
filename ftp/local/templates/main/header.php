@@ -267,4 +267,4 @@
 		</section>
 		<section class="l-content" id="content">
 			<main class="l-main">
-				<div class="l-main-wrap <?=(defined('WRAP_CLASS') ? WRAP_CLASS : '');?>">
+				<div class="l-main-wrap">

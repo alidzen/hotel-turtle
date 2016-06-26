@@ -1,6 +1,6 @@
 .b-article {
     @media #{$custom-1024-up} {
-        @include rhythm-padding(2);
+        //@include rhythm-padding(2);
     }
 }
 
