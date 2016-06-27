@@ -91,7 +91,7 @@ $APPLICATION->SetTitle("Главная");
 </section>
 <section class="l-article l-limit-wrap no-padding">
 	<div class="l-article__cnt">
-		<div class="b-card">
+		<div class="b-card j-gallery-container">
 			<div class="b-card__border">
 				<div class="b-card__bg-img">
 					<img src="/local/assets/img/card/card-1.svg" alt="Кувшин">
