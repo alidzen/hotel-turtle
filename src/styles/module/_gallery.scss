@@ -44,21 +44,16 @@ $gallery-dots-frame-height: 30px !default;
 
 // Arrows
 .b-gallery__arrow {
-    @include transition(background-color);
     @include squish-text;
     position: absolute;
     display: none;
-    width: $arrow-size;
-    height: $arrow-size;
+    width: sprite-width($gallery-arrow-prev-simple);
+    height: sprite-height($gallery-arrow-prev-simple);
     top: 50%; // dots
-    margin-top: - ($arrow-size / 2);
-    background: rgba($white, .3);
-    border: 2px solid $gold-2;
+    margin-top: - (sprite-width($gallery-arrow-prev-simple) / 2);
 
     @media #{$big-up} {
-        &:hover {
-            background: rgba($white, .7);
-        }
+        display: block;
     }
 
     &:before,
@@ -67,16 +62,12 @@ $gallery-dots-frame-height: 30px !default;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: - (sprite-height($gallery-arrow-prev) / 2);
-        margin-left: - (sprite-width($gallery-arrow-prev) / 2);
+        margin-left: - sprite-width($gallery-arrow-prev-simple) / 2;
+        margin-top: - sprite-height($gallery-arrow-prev-simple) / 2;
     }
 
     &.is-disabled {
         display: none;
-    }
-
-    @media #{$big-up} {
-        display: block;
     }
 }
 
@@ -84,7 +75,7 @@ $gallery-dots-frame-height: 30px !default;
     left: gutter(4.5);
 
     &:before {
-        @include sprite($gallery-arrow-prev);
+        @include sprite($gallery-arrow-prev-simple);
     }
 }
 
@@ -92,7 +83,7 @@ $gallery-dots-frame-height: 30px !default;
     right: gutter(4.5);
 
     &:after {
-        @include sprite($gallery-arrow-next);
+        @include sprite($gallery-arrow-next-simple);
     }
 }
 
@@ -299,31 +290,6 @@ $gallery-dots-frame-height: 30px !default;
     .fotorama__nav__frame--dot:nth-child(5) {
         .fotorama__dot {
             background-color: rgba($red, .6);
-        }
-    }
-
-    .b-gallery__arrow {
-        border: none;
-        background-color: transparent;
-        height: sprite-height($gallery-arrow-prev-simple);
-        width: sprite-width($gallery-arrow-prev-simple) * 2;
-
-        &:before,
-        &:after {
-            margin-left: - sprite-width($gallery-arrow-prev-simple) / 2;
-            margin-top: - sprite-height($gallery-arrow-prev-simple) / 2;
-        }
-    }
-
-    .b-gallery__arrow_show_prev {
-        &:before {
-            @include sprite($gallery-arrow-prev-simple);
-        }
-    }
-
-    .b-gallery__arrow_show_next {
-        &:after {
-            @include sprite($gallery-arrow-next-simple);
         }
     }
 }
