@@ -5,26 +5,27 @@ $APPLICATION->SetPageProperty("description", "Ресторанный компл�
 $APPLICATION->SetPageProperty("keywords", "отель, бутик-отель, мини-отель, петербург, отели в классическом стиле, отели 3*, делюкс, комфорт, номера стандарт, акции отель, скидки отель");
 $APPLICATION->SetTitle("Ресторанный комплекс “Симпозиум”");
 ?>
-
-<section class="l-cafe-feature">
-	<div class="l-cafe-feature__img-wrap"><img src="/local/assets/img/card/card-2.svg" alt="Кувшин"></div>
-	<div class="l-cafe-feature__border">
-		<div class="l-cafe-feature__cnt">
-			<div class="l-cafe-feature__txt">
-				<?$APPLICATION->IncludeFile(
-					'/local/area/' . LANGUAGE_ID . '/restaurant-feature-txt.php',
-					Array(),
-					Array('MODE' => 'html')
-				);?>
-			</div>
-			<div class="l-cafe-feature__headings">
-				<h2>
+<section class="l-article l-limit-wrap has-border">
+	<div class="l-article__cnt">
+		<div class="b-article">
+			<div class="b-article__border b-article__border_scheme_2">
+				<div class="b-article__img-wrap"><img src="/local/assets/img/card/card-2.svg" alt="Кувшин"></div>
+				<article class="b-article__cnt">
+					<div class="b-article__header">
+						<div class="b-article__ttl-note">
+							<?$APPLICATION->IncludeFile(
+							'/local/area/' . LANGUAGE_ID . '/restaurant-feature-headings.php',
+							Array(),
+							Array('MODE' => 'html')
+							);?>
+						</div>
+					</div>
 					<?$APPLICATION->IncludeFile(
-						'/local/area/' . LANGUAGE_ID . '/restaurant-feature-headings.php',
+						'/local/area/' . LANGUAGE_ID . '/restaurant-feature-txt.php',
 						Array(),
 						Array('MODE' => 'html')
-					);?>
-				</h2>
+						);?>
+				</article>
 			</div>
 		</div>
 	</div>
