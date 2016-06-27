@@ -30,7 +30,7 @@ $APPLICATION->SetTitle("Ресторанный комплекс “Симпоз�
 	</div>
 </section>
 <section class="l-showcase__inner-row">
-	<div class="l-showcase l-showcase_white_borders border-vertical">
+	<div class="l-showcase l-showcase_white_borders border-vertical j-gallery-container">
 		<div class="l-showcase__gallery">
 			<? $APPLICATION->IncludeComponent(
 			"olympia:blank",

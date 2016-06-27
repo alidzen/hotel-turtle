@@ -12,6 +12,7 @@ define('app/gallery', ['jquery', 'fotorama', 'app/tpl/gallery/labels'], function
      */
 
     var Gallery = function Gallery($galleryWrap) {
+        this.$galleryWrap = $galleryWrap;
         this.$gallery = $galleryWrap.find('.b-gallery__base');
         this.$prev = $galleryWrap.find('.j-gallery__prev');
         this.$next = $galleryWrap.find('.j-gallery__next');
@@ -48,11 +49,18 @@ define('app/gallery', ['jquery', 'fotorama', 'app/tpl/gallery/labels'], function
      */
     Gallery.prototype.eventReady = function () {
         var self = this;
+        var cntHeight = self.$galleryWrap.closest('.j-gallery-container').height();
 
         this.$gallery.on('fotorama:ready', function (e, fotorama) {
             self.bindArrowClick(fotorama);
             self.arrowView(fotorama);
             self.labelsCreate(fotorama);
+
+            if (matchMedia('only screen and (min-width: 1024px)').matches && cntHeight !== null) {
+                fotorama.resize({
+                    height: cntHeight
+                });
+            }
         });
     };
 

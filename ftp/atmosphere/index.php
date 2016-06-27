@@ -4,7 +4,7 @@ $APPLICATION->SetTitle("Атмосфера");
 ?>
 <section class="l-article l-limit-wrap no-padding">
 <div class="l-article__cnt">
-	<div class="b-card b-card_theme_gallery">
+	<div class="b-card b-card_theme_gallery j-gallery-container">
 		<div class="b-card__border">
 			<div class="b-card__cnt">
 				<div class="b-card__header">
@@ -27,16 +27,16 @@ $APPLICATION->SetTitle("Атмосфера");
 					</a>
 				</div>
 			</div>
- <div class="b-card__gallery">
-	 <? $APPLICATION->IncludeComponent("olympia:blank", "b-galery", Array("CODE" => "atmosphere", "HEIGHT" => "750"), false); ?>
-</div>
- </div>
+				 <div class="b-card__gallery">
+					 <? $APPLICATION->IncludeComponent("olympia:blank", "b-galery", Array("CODE" => "atmosphere", "HEIGHT" => "750"), false); ?>
+				</div>
+			 </div>
 		</div>
 	</div>
  </section>
 <? $APPLICATION->IncludeComponent("bitrix:news.list", "quotes", Array("ACTIVE_DATE_FORMAT" => "d.m.Y", "ADD_SECTIONS_CHAIN" => "N", "AJAX_MODE" => "N", "AJAX_OPTION_ADDITIONAL" => "", "AJAX_OPTION_HISTORY" => "N", "AJAX_OPTION_JUMP" => "N", "AJAX_OPTION_STYLE" => "Y", "CACHE_FILTER" => "N", "CACHE_GROUPS" => "Y", "CACHE_TIME" => "36000000", "CACHE_TYPE" => "A", "CHECK_DATES" => "Y", "DETAIL_URL" => "", "DISPLAY_BOTTOM_PAGER" => "N", "DISPLAY_DATE" => "N", "DISPLAY_NAME" => "N", "DISPLAY_PICTURE" => "N", "DISPLAY_PREVIEW_TEXT" => "N", "DISPLAY_TOP_PAGER" => "N", "FIELD_CODE" => array("", ""), "FILTER_NAME" => "", "HIDE_LINK_WHEN_NO_DETAIL" => "N", "IBLOCK_ID" => "7", "IBLOCK_TYPE" => "CONTENT", "INCLUDE_IBLOCK_INTO_CHAIN" => "N", "INCLUDE_SUBSECTIONS" => "N", "MESSAGE_404" => "", "NEWS_COUNT" => "20", "PAGER_BASE_LINK_ENABLE" => "N", "PAGER_DESC_NUMBERING" => "N", "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000", "PAGER_SHOW_ALL" => "N", "PAGER_SHOW_ALWAYS" => "N", "PAGER_TEMPLATE" => ".default", "PAGER_TITLE" => "Новости", "PARENT_SECTION" => "", "PARENT_SECTION_CODE" => "", "PREVIEW_TRUNCATE_LEN" => "", "PROPERTY_CODE" => array("", ""), "SET_BROWSER_TITLE" => "N", "SET_LAST_MODIFIED" => "N", "SET_META_DESCRIPTION" => "N", "SET_META_KEYWORDS" => "N", "SET_STATUS_404" => "N", "SET_TITLE" => "N", "SHOW_404" => "N", "SORT_BY1" => "SORT", "SORT_BY2" => "ACTIVE_FROM", "SORT_ORDER1" => "ASC", "SORT_ORDER2" => "DESC")); ?>
 <section class="l-showcase__inner-row">
-	<div class="l-showcase l-showcase_theme_img-bg border-vertical">
+	<div class="l-showcase l-showcase_theme_img-bg border-vertical j-gallery-container">
 	<div class="l-showcase__descr border-horizontal">
 		<div class="b-showcase b-showcase_theme_atmosphere">
 			<div class="b-showcase__cnt">

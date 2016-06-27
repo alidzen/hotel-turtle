@@ -4725,7 +4725,7 @@ blockquote:after {
     display: block; }
 
 .b-logo__img {
-    width: 180px; }
+    width: 200px; }
 
 .b-mind-games {
     background-image: url("../img/sprites.png");
@@ -5361,43 +5361,35 @@ select {
     position: relative; }
 
 .b-gallery__arrow {
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
     font: 0/0 serif;
     text-shadow: none;
     color: transparent;
     position: absolute;
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 27px;
+    height: 69px;
     top: 50%;
-    margin-top: -25px;
-    background: rgba(254, 254, 253, 0.3);
-    border: 2px solid #bca064; }
+    margin-top: -13.5px; }
 @media only screen and (min-width: 1025px) {
-    .b-gallery__arrow:hover {
-        background: rgba(254, 254, 253, 0.7); } }
+    .b-gallery__arrow {
+        display: block; } }
 .b-gallery__arrow:before, .b-gallery__arrow:after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -6.5px;
-    margin-left: -4px; }
+    margin-left: -13.5px;
+    margin-top: -34.5px; }
 .b-gallery__arrow.is-disabled {
     display: none; }
-@media only screen and (min-width: 1025px) {
-    .b-gallery__arrow {
-        display: block; } }
 
 .b-gallery__arrow_show_prev {
     left: 45px; }
 .b-gallery__arrow_show_prev:before {
     background-image: url("../img/sprites.png");
-    background-position: -359px -207px;
-    width: 8px;
-    height: 13px; }
+    background-position: -331px -107px;
+    width: 27px;
+    height: 69px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-gallery__arrow_show_prev:before {
         background-image: url("../img/sprites@2x.png");
@@ -5407,9 +5399,9 @@ select {
     right: 45px; }
 .b-gallery__arrow_show_next:after {
     background-image: url("../img/sprites.png");
-    background-position: -368px -207px;
-    width: 8px;
-    height: 13px; }
+    background-position: -331px -177px;
+    width: 27px;
+    height: 69px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-gallery__arrow_show_next:after {
         background-image: url("../img/sprites@2x.png");
@@ -5551,35 +5543,6 @@ select {
 
 .b-gallery_theme_home .fotorama__nav__frame--dot:nth-child(5) .fotorama__dot {
     background-color: rgba(218, 54, 54, 0.6); }
-
-.b-gallery_theme_home .b-gallery__arrow {
-    border: none;
-    background-color: transparent;
-    height: 69px;
-    width: 54px; }
-.b-gallery_theme_home .b-gallery__arrow:before, .b-gallery_theme_home .b-gallery__arrow:after {
-    margin-left: -13.5px;
-    margin-top: -34.5px; }
-
-.b-gallery_theme_home .b-gallery__arrow_show_prev:before {
-    background-image: url("../img/sprites.png");
-    background-position: -331px -107px;
-    width: 27px;
-    height: 69px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-    .b-gallery_theme_home .b-gallery__arrow_show_prev:before {
-        background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
-
-.b-gallery_theme_home .b-gallery__arrow_show_next:after {
-    background-image: url("../img/sprites.png");
-    background-position: -331px -177px;
-    width: 27px;
-    height: 69px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
-    .b-gallery_theme_home .b-gallery__arrow_show_next:after {
-        background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
 
 .b-tabs {
     display: inline-block; }
@@ -5904,7 +5867,6 @@ select {
 .b-menu-logo {
     text-align: center; }
 .b-menu-logo .b-logo {
-    margin-bottom: 12px;
     margin-right: auto;
     margin-left: auto; }
 
@@ -7186,7 +7148,9 @@ select {
 @media only screen and (min-width: 1025px) {
     .b-card__cnt {
         width: 50%;
-        padding: 0; } }
+        padding-right: 0;
+        padding-bottom: 48px;
+        padding-left: 0; } }
 
 .b-card__header {
     padding-bottom: 24px;

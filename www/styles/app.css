@@ -4725,7 +4725,7 @@ blockquote {
   display: block; }
 
 .b-logo__img {
-  width: 180px; }
+  width: 200px; }
 
 .b-mind-games {
   background-image: url("/img/sprites.png");
@@ -5867,7 +5867,6 @@ select {
 .b-menu-logo {
   text-align: center; }
   .b-menu-logo .b-logo {
-    margin-bottom: 12px;
     margin-right: auto;
     margin-left: auto; }
 
@@ -7149,7 +7148,9 @@ select {
   @media only screen and (min-width: 1025px) {
     .b-card__cnt {
       width: 50%;
-      padding: 0; } }
+      padding-right: 0;
+      padding-bottom: 48px;
+      padding-left: 0; } }
 
 .b-card__header {
   padding-bottom: 24px;
