@@ -104,9 +104,8 @@ define('app/popup', ['magnific-popup'], function() {
             this.$link.offset().top;
 
         this.$body.css({
-            position: 'fixed'
-            // don't work with fullpage pagepiling
-            //top     : -this.scrollPosition
+            position: 'fixed',
+            top     : -this.scrollPosition
         });
 
         this.popupTargetOpen();

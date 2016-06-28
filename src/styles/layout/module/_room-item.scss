@@ -32,9 +32,6 @@
 
     @media #{$big-up} {
         @include margin-trailer(2);
-    }
-
-    @media #{$big-up} {
         margin: {
             right: gutter(4);
             left: gutter(4);

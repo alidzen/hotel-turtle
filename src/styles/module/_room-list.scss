@@ -18,11 +18,10 @@
     align-items: center;
 
     @media #{$medium-up} {
-        margin-right: gutter(2);
+        flex-flow: column nowrap;
     }
 
     @media #{$custom-1024-up} {
-        @include margin-trailer(0);
         margin-right: gutter(4);
     }
 }
@@ -35,6 +34,11 @@
     background-color: $gray-3;
     border-radius: 50%;
     margin-right: gutter(1);
+
+    @media #{$medium-up} {
+        @include margin-trailer(.5);
+        margin-right: 0;
+    }
 }
 
 .b-room-list__item-txt {

@@ -1,0 +1,104 @@
+.l-room-popup {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100vh;
+}
+
+.l-room-popup__gallery {
+    flex: 0 1 50%;
+
+    @media #{$big-up} {
+        max-width: 50%;
+    }
+}
+
+.l-room-popup__cnt {
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: rhythm(2.5) gutter(2) 0;
+
+    @media #{$big-up} {
+        max-width: 50%;
+    }
+}
+
+.l-room-popup__header {
+    @include margin-trailer(1);
+
+    h1 {
+        @include margin-trailer(.5);
+    }
+}
+
+.l-room-popup__param {
+    @include margin-trailer(2);
+    @include padding-leader(1.5);
+    @include padding-trailer(1);
+    background-color: $gold-2;
+
+    margin: {
+        right: - gutter(2);
+        left: - gutter(2);
+    };
+
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
+    };
+
+    @media #{$big-up} {
+        @include margin-trailer(2);
+    }
+}
+
+.l-room-popup__feature {
+    @include margin-trailer(1);
+
+    @media #{$big-up} {
+        @include margin-trailer(2);
+    }
+}
+
+.l-room-popup__list-row {
+    @include margin-trailer(1);
+    @include grid-clearfix();
+
+    @media #{$big-up} {
+        @include margin-trailer(1.5);
+    }
+}
+
+.l-room-popup__list-col {
+    @media #{$small-only} {
+        &:first-child {
+            ul {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media #{$medium-up} {
+        @include span(6);
+    }
+}
+
+// STATE
+.l-room-popup__param_theme_price {
+    @include padding-leader(1);
+    @include padding-trailer(1);
+    background-color: $green;
+    margin-bottom: 0;
+
+    .b-room-param__txt {
+        background-color: $green;
+    }
+
+    .b-room-param__data {
+        background-color: $green;
+    }
+
+    @media #{$big-up} {
+        margin-top: auto;
+    }
+}

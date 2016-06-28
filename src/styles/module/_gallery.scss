@@ -145,6 +145,16 @@ $gallery-dots-frame-height: 30px !default;
     }
 }
 
+.b-gallery__fs {
+    $img: 'fs-btn';
+    @include squish-text();
+    @include sprite($img);
+    @include transition(transform, opacity);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .b-gallery__ttl {
     @extend %f-special;
 }

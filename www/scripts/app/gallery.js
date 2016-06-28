@@ -50,6 +50,7 @@ define('app/gallery', ['jquery', 'fotorama', 'app/tpl/gallery/labels'], function
     Gallery.prototype.eventReady = function () {
         var self = this;
         var cntHeight = self.$galleryWrap.closest('.j-gallery-container').outerHeight();
+        var screenHeight = $(window).height();
 
         this.$gallery.on('fotorama:ready', function (e, fotorama) {
             self.bindArrowClick(fotorama);
@@ -61,6 +62,14 @@ define('app/gallery', ['jquery', 'fotorama', 'app/tpl/gallery/labels'], function
                     height: cntHeight
                 });
             }
+
+            // full size fotorama in popup
+            // if (self.$galleryWrap.hasClass('b-gallery__fs') &&
+            //     matchMedia('only screen and (min-width: 1280px)').matches) {
+            //     fotorama.resize({
+            //         height: screenHeight
+            //     });
+            // }
         });
     };
 

@@ -39,64 +39,21 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
 
 // Close button mobile
 .b-popup__close {
-    @extend %f-btn;
-    @include btn-vertical-paddings($popop-btn-mobile-height);
-    color: $popup-btn-mobile-color;
-    background-color: $popup-btn-mobile-bg-color;
-    text-decoration: none;
-    display: block;
+    $size: 50px;
+    $bd-size: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
     text-align: center;
-
-    @if($popup-btn-mobile-tt-up) {
-        @include text-transform();
-        padding: {
-            top: btn-vertical-paddings($popop-btn-mobile-height) + 1px;
-            bottom: btn-vertical-paddings($popop-btn-mobile-height) - 1px;
-        };
-    }
-
-    &:active {
-        color: lighten($popup-btn-mobile-color, 10%);
-        background-color: lighten($popup-btn-mobile-bg-color, 10%);
-    }
-}
-
-// Close button desktop
-@media #{$medium-up} {
-    .b-popup__close {
-        @include sprite($popup-btn-close-image);
-        @include transition(opacity);
-        @include squish-text;
-        background-color: transparent;
-        position: fixed;
-        top: 50px;
-        right: 50px;
-        opacity: $popup-btn-opacity;
-        padding: 0;
-    }
-
-    .b-popup__close:active {
-        background-color: transparent;
-    }
-
-    // Close button desktop - hover state
-    .b-popup__close:hover {
-        opacity: 1 !important;
-    }
-
-    .mfp-container:hover {
-        cursor: pointer; //overlay state click
-
-        .b-popup__close {
-            opacity: 1;
-        }
-    }
-
-    .mfp-content:hover {
-        .b-popup__close {
-            opacity: $popup-btn-opacity;
-        }
-    }
+    background-color: $white;
+    width: $size;
+    height: $size;
+    line-height: $size - $bd-size * 2;
+    font-size: 30px;
+    color: $gold-2;
+    border: $bd-size solid $gold-2;
+    opacity: 1;
+    z-index: z('default');
 }
 
 // Popup content
