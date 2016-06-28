@@ -69,6 +69,8 @@ define('app/gallery', [
             // full size fotorama in popup
             // if (self.$galleryWrap.hasClass('b-gallery__fs') &&
             //     matchMedia('only screen and (min-width: 1280px)').matches) {
+            //     console.log('work');
+            //     console.log(screenHeight);
             //     fotorama.resize({
             //         height: screenHeight
             //     });
