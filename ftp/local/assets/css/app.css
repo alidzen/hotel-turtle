@@ -437,7 +437,7 @@ html, body, .b-typo-reset ul li,
         font-size: 16px;
         line-height: 24px; } }
 
-.b-btn, .b-popup__close, .mfp-iframe-scaler .mfp-close,
+.b-btn, .mfp-iframe-scaler .mfp-close,
 .f-btn {
     font-size: 11px;
     line-height: 24px;
@@ -636,6 +636,28 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
         font-size: 50px;
         line-height: 45px; } }
 
+
+.f-ttl-smaller {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "AGOpusHR-Bold", sans-serif; }
+@media only screen and (min-width: 1025px) {
+
+    .f-ttl-smaller {
+        font-size: 40px;
+        line-height: 45px; } }
+
+
+.f-ttl-caption {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "ArnoPro-BoldItalic", sans-serif; }
+@media only screen and (min-width: 1025px) {
+
+    .f-ttl-caption {
+        font-size: 32px;
+        line-height: 38px; } }
+
 .b-room__ttl,
 .f-room-ttl {
     font-size: 14px;
@@ -766,13 +788,13 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
 .b-room-param__data,
 .f-param-data {
     font-family: "ArnoPro-BoldItalic", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px; }
 @media only screen and (min-width: 641px) {
     .b-room-param__data,
     .f-param-data {
-        font-size: 35px;
-        line-height: 35px; } }
+        font-size: 24px;
+        line-height: 24px; } }
 
 .b-room-list__item-txt,
 .f-room-list {
@@ -936,7 +958,7 @@ blockquote:after {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     blockquote:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 .animated {
     -webkit-animation-duration: 0.5s;
@@ -4721,6 +4743,109 @@ blockquote:after {
 .l-action_theme_room-item .l-action__cnt {
     padding-bottom: 0px; }
 
+.l-room-popup {
+    min-height: 100vh; }
+@media only screen and (min-width: 1280px) {
+    .l-room-popup {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap; } }
+
+@media only screen and (min-width: 1280px) {
+    .l-room-popup__gallery {
+        max-width: 50%;
+        -webkit-flex: 0 1 50%;
+        -ms-flex: 0 1 50%;
+        flex: 0 1 50%; } }
+
+@media only screen and (min-width: 1441px) {
+    .l-room-popup__gallery {
+        -webkit-flex: 0 1 65%;
+        -ms-flex: 0 1 65%;
+        flex: 0 1 65%;
+        max-width: 65%; } }
+
+.l-room-popup__cnt {
+    padding: 60px 20px 0; }
+@media only screen and (min-width: 1280px) {
+    .l-room-popup__cnt {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        max-width: 50%;
+        -webkit-flex: 0 1 50%;
+        -ms-flex: 0 1 50%;
+        flex: 0 1 50%;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2; } }
+@media only screen and (min-width: 1441px) {
+    .l-room-popup__cnt {
+        -webkit-flex: 0 1 35%;
+        -ms-flex: 0 1 35%;
+        flex: 0 1 35%;
+        max-width: 35%;
+        padding-top: 96px; } }
+
+.l-room-popup__header {
+    margin-bottom: 24px; }
+.l-room-popup__header h2 {
+    margin-bottom: 12px; }
+
+.l-room-popup__param {
+    margin-bottom: 48px;
+    padding-top: 36px;
+    padding-bottom: 24px;
+    background-color: #bca064;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding-right: 20px;
+    padding-left: 20px; }
+@media only screen and (min-width: 1025px) {
+    .l-room-popup__param {
+        margin-bottom: 48px; } }
+
+.l-room-popup__feature {
+    margin-bottom: 24px; }
+@media only screen and (min-width: 1025px) {
+    .l-room-popup__feature {
+        margin-bottom: 48px; } }
+
+.l-room-popup__list-row {
+    margin-bottom: 24px; }
+.l-room-popup__list-row:after {
+    content: '';
+    display: block;
+    clear: both; }
+@media only screen and (min-width: 1025px) {
+    .l-room-popup__list-row {
+        margin-bottom: 36px; } }
+
+@media only screen and (max-width: 640px) {
+    .l-room-popup__list-col:first-child ul {
+        margin-bottom: 0; } }
+
+@media only screen and (min-width: 641px) {
+    .l-room-popup__list-col {
+        width: 50%;
+        float: left; } }
+
+.l-room-popup__param_theme_price {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #005870;
+    margin-bottom: 0; }
+.l-room-popup__param_theme_price .b-room-param__txt {
+    background-color: #005870; }
+.l-room-popup__param_theme_price .b-room-param__data {
+    background-color: #005870; }
+
 .b-logo {
     display: block; }
 
@@ -4739,7 +4864,7 @@ blockquote:after {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-mind-games {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 @media only screen and (min-width: 641px) {
     .b-mind-games {
         float: right; } }
@@ -4941,7 +5066,7 @@ label {
     padding-left: 30px; }
 .b-form__checkbox label:after {
     background-image: url("../img/sprites.png");
-    background-position: -308px -192px;
+    background-position: -377px -112px;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -4952,27 +5077,27 @@ label {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__checkbox label:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 .b-form__checkbox input:checked + label:after {
     background-image: url("../img/sprites.png");
-    background-position: -235px -122px;
+    background-position: -377px -133px;
     width: 20px;
     height: 20px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__checkbox input:checked + label:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 @media only screen and (min-width: 1025px) {
     .b-form__checkbox:hover label:after {
         background-image: url("../img/sprites.png");
-        background-position: -331px -247px;
+        background-position: -377px -91px;
         width: 20px;
         height: 20px; } }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1025px) and (min-device-pixel-ratio: 1.5) {
     .b-form__checkbox:hover label:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 @media only screen and (min-width: 1025px) {
     .b-form__checkbox:hover input:checked + label:after {
@@ -4985,14 +5110,14 @@ label {
 .b-form__checkbox input:disabled + label:after,
 .b-form__checkbox input[readonly="readonly"] + label:after {
     background-image: url("../img/sprites.png");
-    background-position: -352px -247px;
+    background-position: -377px -70px;
     width: 20px;
     height: 20px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__checkbox input:disabled + label:after,
     .b-form__checkbox input[readonly="readonly"] + label:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 .b-form__radio {
     display: inline-block; }
@@ -5004,7 +5129,7 @@ label {
     padding-left: 26px; }
 .b-form__radio label:after {
     background-image: url("../img/sprites.png");
-    background-position: -359px -177px;
+    background-position: -377px -255px;
     width: 16px;
     height: 17px;
     position: absolute;
@@ -5015,27 +5140,27 @@ label {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__radio label:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 .b-form__radio input:checked + label:after {
     background-image: url("../img/sprites.png");
-    background-position: -359px -107px;
+    background-position: -377px -201px;
     width: 16px;
     height: 17px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__radio input:checked + label:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 @media only screen and (min-width: 1025px) {
     .b-form__radio:hover label:after {
         background-image: url("../img/sprites.png");
-        background-position: -359px -143px;
+        background-position: -377px -237px;
         width: 16px;
         height: 17px; } }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1025px) and (min-device-pixel-ratio: 1.5) {
     .b-form__radio:hover label:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 @media only screen and (min-width: 1025px) {
     .b-form__radio:hover input:checked + label:after {
@@ -5048,14 +5173,14 @@ label {
 .b-form__radio input:disabled + label:after,
 .b-form__radio input[readonly="readonly"] + label:after {
     background-image: url("../img/sprites.png");
-    background-position: -359px -125px;
+    background-position: -377px -219px;
     width: 16px;
     height: 17px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-form__radio input:disabled + label:after,
     .b-form__radio input[readonly="readonly"] + label:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 select {
     opacity: 0; }
@@ -5152,51 +5277,19 @@ select {
         min-height: inherit; } }
 
 .b-popup__close {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    color: #b17d0c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
     background-color: #fefefd;
-    text-decoration: none;
-    display: block;
-    text-align: center; }
-.b-popup__close:active {
-    color: #e19f0f;
-    background-color: white; }
-
-@media only screen and (min-width: 641px) {
-    .b-popup__close {
-        background-image: url("../img/sprites.png");
-        background-position: -331px -62px;
-        width: 43px;
-        height: 44px;
-        transition-property: opacity;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-        font: 0/0 serif;
-        text-shadow: none;
-        color: transparent;
-        background-color: transparent;
-        position: fixed;
-        top: 50px;
-        right: 50px;
-        opacity: 0.5;
-        padding: 0; } }
-@media only screen and (min-width: 641px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 641px) and (min-device-pixel-ratio: 1.5) {
-    .b-popup__close {
-        background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
-
-@media only screen and (min-width: 641px) {
-    .b-popup__close:active {
-        background-color: transparent; }
-    .b-popup__close:hover {
-        opacity: 1 !important; }
-    .mfp-container:hover {
-        cursor: pointer; }
-    .mfp-container:hover .b-popup__close {
-        opacity: 1; }
-    .mfp-content:hover .b-popup__close {
-        opacity: 0.5; } }
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    font-size: 30px;
+    color: #bca064;
+    border: 2px solid #bca064;
+    opacity: 1;
+    z-index: 1; }
 
 .b-popup__cnt {
     padding-top: 72px;
@@ -5252,10 +5345,17 @@ select {
 .b-popup_full_size .mfp-inline-holder .mfp-content,
 .b-popup_full_size .mfp-ajax-holder .mfp-content {
     max-width: none;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
 
 .b-popup_full_size .b-popup {
     min-height: 100%; }
+
+.b-popup_full_size .b-popup__cnt {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fefefd;
+    padding: 0; }
 
 .b-popup_theme_toggle.mfp-bg {
     transition-property: opacity;
@@ -5387,25 +5487,25 @@ select {
     left: 45px; }
 .b-gallery__arrow_show_prev:before {
     background-image: url("../img/sprites.png");
-    background-position: -331px -107px;
+    background-position: -331px -153px;
     width: 27px;
     height: 69px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-gallery__arrow_show_prev:before {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 .b-gallery__arrow_show_next {
     right: 45px; }
 .b-gallery__arrow_show_next:after {
     background-image: url("../img/sprites.png");
-    background-position: -331px -177px;
+    background-position: -377px 0px;
     width: 27px;
     height: 69px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-gallery__arrow_show_next:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 
 .b-gallery__cnt-wrap {
     position: relative;
@@ -5456,6 +5556,27 @@ select {
     .b-gallery__btn:hover {
         background-color: #da3636;
         border-color: #da3636; } }
+
+.b-gallery__fs {
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-image: url("../img/sprites.png");
+    background-position: -331px -62px;
+    width: 44px;
+    height: 45px;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    position: absolute;
+    top: 0;
+    right: 0; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+    .b-gallery__fs {
+        background-image: url("../img/sprites@2x.png");
+        background-size: 404px 311px; } }
 
 .fotorama__nav--thumbs {
     text-align: center; }
@@ -6213,7 +6334,7 @@ select {
     cursor: pointer; }
 .ui-datepicker .ui-datepicker-prev:after {
     background-image: url("../img/sprites.png");
-    background-position: -359px -207px;
+    background-position: -394px -201px;
     width: 8px;
     height: 13px;
     content: '';
@@ -6225,7 +6346,7 @@ select {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .ui-datepicker .ui-datepicker-prev:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
     top: 0;
     left: 2px; }
@@ -6235,7 +6356,7 @@ select {
     cursor: pointer; }
 .ui-datepicker .ui-datepicker-next:after {
     background-image: url("../img/sprites.png");
-    background-position: -368px -207px;
+    background-position: -394px -219px;
     width: 8px;
     height: 13px;
     content: '';
@@ -6247,7 +6368,7 @@ select {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .ui-datepicker .ui-datepicker-next:after {
         background-image: url("../img/sprites@2x.png");
-        background-size: 376px 311px; } }
+        background-size: 404px 311px; } }
 .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
     right: 2px;
     top: 0; }
@@ -7652,9 +7773,7 @@ select {
     margin-bottom: 24px; }
 @media only screen and (min-width: 1025px) {
     .l-room__feature {
-        margin-bottom: 48px; } }
-@media only screen and (min-width: 1025px) {
-    .l-room__feature {
+        margin-bottom: 48px;
         margin-right: 40px;
         margin-left: 40px; } }
 
@@ -7840,10 +7959,11 @@ select {
     align-items: center; }
 @media only screen and (min-width: 641px) {
     .b-room-list__item {
-        margin-right: 20px; } }
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; } }
 @media only screen and (min-width: 1024px) {
     .b-room-list__item {
-        margin-bottom: 0px;
         margin-right: 40px; } }
 
 .b-room-list__item-img {
@@ -7855,6 +7975,10 @@ select {
     background-color: #e8e8e6;
     border-radius: 50%;
     margin-right: 10px; }
+@media only screen and (min-width: 641px) {
+    .b-room-list__item-img {
+        margin-bottom: 12px;
+        margin-right: 0; } }
 
 .b-room-list__item-img_img_window, .b-room-list__item-img_img_fan, .b-room-list__item-img_img_wi-fi {
     position: relative; }

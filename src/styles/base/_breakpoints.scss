@@ -34,6 +34,7 @@ $custom-1960-up: '#{$screen} and (min-width: 1960px)';
 $custom-1360-up: '#{$screen} and (min-width: 1360px)';
 $custom-2560-up: '#{$screen} and (min-width: 2560px)';
 $custom-1024-up: '#{$screen} and (min-width: 1024px)';
+$custom-1280-up: '#{$screen} and (min-width: 1280px)';
 
 $hidpi: '#{$screen} and (-webkit-min-device-pixel-ratio: 1.5),
     #{screen} and (min-device-pixel-ratio: 1.5),

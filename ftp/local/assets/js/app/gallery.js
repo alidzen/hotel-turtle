@@ -60,7 +60,7 @@ define('app/gallery', [
             self.arrowView(fotorama);
             self.labelsCreate(fotorama);
 
-            if (matchMedia('only screen and (min-width: 1024px)').matches && cntHeight !== null) {
+            if (matchMedia('only screen and (min-width: 1280px)').matches && cntHeight !== null) {
                 fotorama.resize({
                     height: cntHeight
                 });

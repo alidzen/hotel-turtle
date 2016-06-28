@@ -251,6 +251,30 @@ h2 {
     }
 }
 
+%f-ttl-smaller,
+.f-ttl-smaller {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: $font-roman-bold;
+
+    @media #{$big-up} {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
+%f-ttl-caption,
+.f-ttl-caption {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $font-bold-italic;
+
+    @media #{$big-up} {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
 %f-room-ttl,
 .f-room-ttl {
     font-size: 14px;
@@ -393,7 +417,7 @@ h2 {
 %f-param-data,
 .f-param-data {
     font-family: $font-bold-italic;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 20px;
 
     @media #{$medium-up} {

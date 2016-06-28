@@ -2,12 +2,10 @@
     a(href="javascript:;" title="Закрыть").b-popup__close ×
     .b-popup__cnt
         .l-room-popup.j-gallery-container
-            .l-room-popup__gallery
-                include _gallery-room
             .l-room-popup__cnt
                 .l-room-popup__header
-                    h1.f-ttl Стандартный одноместный номер
-                    div.f-ttl-note Идеально для путешественника
+                    h2.f-ttl-smaller Стандартный одноместный номер
+                    div.f-ttl-caption Идеально для путешественника
                 .l-room-popup__param
                     .b-room-param
                         .b-room-param__txt Площадь номера
@@ -44,3 +42,5 @@
                     .b-room-param
                         .b-room-param__txt Стоимость
                         .b-room-param__data от 5 800 <span class="b-ruble">g</span> до 10 900 <span class="b-ruble">g</span>
+            .l-room-popup__gallery
+                include _gallery-room
