@@ -40,8 +40,8 @@ $APPLICATION->SetTitle("Номера");
 	</div>
 </section>
 <?$APPLICATION->IncludeComponent(
-	"bitrix:news",
-	"rooms",
+	"bitrix:news", 
+	"rooms", 
 	array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -54,7 +54,7 @@ $APPLICATION->SetTitle("Номера");
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CHECK_DATES" => "Y",
 		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "N",

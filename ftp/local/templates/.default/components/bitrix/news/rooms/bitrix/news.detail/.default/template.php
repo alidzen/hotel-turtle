@@ -10,7 +10,7 @@
 /** @var string $templateFolder */
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
-$this->setFrameMode(true);
+$this->setFrameMode(false);
 ?>
 <section class="l-action l-action_theme_room-item">
 	<div class="l-action__row">
