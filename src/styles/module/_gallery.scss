@@ -308,3 +308,9 @@ $gallery-dots-frame-height: 30px !default;
         }
     }
 }
+
+.l-showcase__gallery_dots_lower {
+    .fotorama__nav.fotorama__nav--dots {
+        bottom: 30px;
+    }
+}

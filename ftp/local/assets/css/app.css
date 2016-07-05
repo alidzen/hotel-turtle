@@ -5673,6 +5673,9 @@ select {
 .b-gallery_theme_home .fotorama__nav__frame--dot:nth-child(5) .fotorama__dot {
     background-color: rgba(218, 54, 54, 0.6); }
 
+.l-showcase__gallery_dots_lower .fotorama__nav.fotorama__nav--dots {
+    bottom: 30px; }
+
 .b-tabs {
     display: inline-block; }
 
