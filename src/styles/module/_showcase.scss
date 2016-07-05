@@ -17,7 +17,7 @@
     }
 
     @media #{$big-up} {
-        @include padding-leader(2.5);
+        padding-top: 80px;
     }
 }
 

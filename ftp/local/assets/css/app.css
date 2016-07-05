@@ -7358,7 +7358,8 @@ select {
         padding-bottom: 0; }
     .b-card_theme_gallery .b-card__cnt {
         float: left;
-        padding-top: 80px; } }
+        padding-top: 80px;
+        padding-bottom: 80px; } }
 
 .b-card_theme_gallery .b-card__gallery {
     height: 400px; }
@@ -7422,6 +7423,7 @@ select {
     .l-showcase__descr {
         width: 45.83333%;
         float: left;
+        padding-bottom: 24px;
         height: 100%; } }
 
 .l-showcase_theme_img-bg {
@@ -7455,7 +7457,7 @@ select {
         padding-left: 60px; } }
 @media only screen and (min-width: 1025px) {
     .b-showcase {
-        padding-top: 60px; } }
+        padding-top: 80px; } }
 
 .b-showcase__cnt {
     color: #fefefd; }
