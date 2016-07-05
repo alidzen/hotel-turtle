@@ -49,7 +49,8 @@ define('app/gallery', ['jquery', 'fotorama', 'app/tpl/gallery/labels'], function
      */
     Gallery.prototype.eventReady = function () {
         var self = this;
-        var cntHeight = self.$galleryWrap.closest('.j-gallery-container').outerHeight();
+        var $cnt = self.$galleryWrap.closest('.j-gallery-container');
+        var cntHeight = $cnt.outerHeight();
         var screenHeight = $(window).height();
 
         this.$gallery.on('fotorama:ready', function (e, fotorama) {
@@ -58,7 +59,10 @@ define('app/gallery', ['jquery', 'fotorama', 'app/tpl/gallery/labels'], function
             self.labelsCreate(fotorama);
 
             if (matchMedia('only screen and (min-width: 1280px)').matches && cntHeight !== null) {
-                cntHeight = cntHeight > screenHeight ? screenHeight : cntHeight;
+
+                if ($cnt.hasClass('j-gallery-container__full')) {
+                    cntHeight = cntHeight > screenHeight ? screenHeight : cntHeight;
+                }
 
                 fotorama.resize({
                     height: cntHeight

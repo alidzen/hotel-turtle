@@ -113,7 +113,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 	</div>
 	<div id="room-popup" class="mfp-hide b-popup"><a href="javascript:;" title="Закрыть" class="b-popup__close">×</a>
 		<div class="b-popup__cnt">
-			<div class="l-room-popup j-gallery-container">
+			<div class="l-room-popup j-gallery-container j-gallery-container__full">
 				<div class="l-room-popup__cnt">
 					<div class="l-room-popup__header">
 						<h2 class="f-ttl-smaller">Стандартный одноместный номер</h2> </div>

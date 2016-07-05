@@ -1,12 +1,8 @@
-define('app/gallery', [
-    'jquery',
-    'fotorama',
-    'app/tpl/gallery/labels'
-], function(
-    $,
-    fotorama,
-    tplLabels
-) {
+'use strict';
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+define('app/gallery', ['jquery', 'fotorama', 'app/tpl/gallery/labels'], function ($, fotorama, tplLabels) {
     'use strict';
 
     /**
@@ -14,7 +10,8 @@ define('app/gallery', [
      * @param {Object} $galleryWrap - jQery object
      * @constructor
      */
-    var Gallery = function($galleryWrap) {
+
+    var Gallery = function Gallery($galleryWrap) {
         this.$galleryWrap = $galleryWrap;
         this.$gallery = $galleryWrap.find('.b-gallery__base');
         this.$prev = $galleryWrap.find('.j-gallery__prev');
@@ -31,17 +28,17 @@ define('app/gallery', [
     /**
      * Инициализация галереи, подключение фоторамы
      */
-    Gallery.prototype.initGallery = function() {
+    Gallery.prototype.initGallery = function () {
         this.$gallery.fotorama();
     };
 
     /**
      * Кастомное событие фоторамы - show - срабатывает при каждом показе слайда
      */
-    Gallery.prototype.eventShow = function() {
+    Gallery.prototype.eventShow = function () {
         var self = this;
 
-        this.$gallery.on('fotorama:show', function(e, fotorama) {
+        this.$gallery.on('fotorama:show', function (e, fotorama) {
             self.toggleArrowView(fotorama);
         });
     };
@@ -50,18 +47,22 @@ define('app/gallery', [
      * Кастомное событие фоторамы - ready - срабатывает, когда фоторама
      * полностью загружена
      */
-    Gallery.prototype.eventReady = function() {
+    Gallery.prototype.eventReady = function () {
         var self = this;
-        var cntHeight = self.$galleryWrap.closest('.j-gallery-container').outerHeight();
+        var $cnt = self.$galleryWrap.closest('.j-gallery-container');
+        var cntHeight = $cnt.outerHeight();
         var screenHeight = $(window).height();
 
-        this.$gallery.on('fotorama:ready', function(e, fotorama) {
+        this.$gallery.on('fotorama:ready', function (e, fotorama) {
             self.bindArrowClick(fotorama);
             self.arrowView(fotorama);
             self.labelsCreate(fotorama);
 
             if (matchMedia('only screen and (min-width: 1280px)').matches && cntHeight !== null) {
-                cntHeight = cntHeight > screenHeight ? screenHeight : cntHeight;
+
+                if ($cnt.hasClass('j-gallery-container__full')) {
+                    cntHeight = cntHeight > screenHeight ? screenHeight : cntHeight;
+                }
 
                 fotorama.resize({
                     height: cntHeight
@@ -74,12 +75,12 @@ define('app/gallery', [
      * Обработка клика по стрелкам
      * @param {Object} fotorama
      */
-    Gallery.prototype.bindArrowClick = function(fotorama) {
-        this.$prev.click(function() {
+    Gallery.prototype.bindArrowClick = function (fotorama) {
+        this.$prev.click(function () {
             fotorama.show('<');
         });
 
-        this.$next.click(function() {
+        this.$next.click(function () {
             fotorama.show('>');
         });
     };
@@ -88,7 +89,7 @@ define('app/gallery', [
      * Показ стрелок, только когда есть слайды и их больше одного
      * @param {Object} fotorama
      */
-    Gallery.prototype.arrowView = function(fotorama) {
+    Gallery.prototype.arrowView = function (fotorama) {
         if (fotorama.size === 1) {
             this.$prev.addClass(this.disabled);
             this.$next.addClass(this.disabled);
@@ -99,15 +100,10 @@ define('app/gallery', [
      * Смена вида у стрелок, у первого и последнего слайда
      * @param {Object} fotorama
      */
-    Gallery.prototype.toggleArrowView = function(fotorama) {
-        var prevMethod = fotorama.activeIndex === 0 ?
-            'addClass' :
-            'removeClass';
+    Gallery.prototype.toggleArrowView = function (fotorama) {
+        var prevMethod = fotorama.activeIndex === 0 ? 'addClass' : 'removeClass';
 
-        var nextMethod = fotorama.size -
-        fotorama.activeIndex === 1 ?
-            'addClass' :
-            'removeClass';
+        var nextMethod = fotorama.size - fotorama.activeIndex === 1 ? 'addClass' : 'removeClass';
 
         if (!this.isLoop) {
             this.$prev[prevMethod](this.disabled);
@@ -118,8 +114,8 @@ define('app/gallery', [
     /**
      * Создание леблов у тумбочек
      */
-    Gallery.prototype.labelsCreate = function() {
-        if (this.labels && typeof this.labels === 'object') {
+    Gallery.prototype.labelsCreate = function () {
+        if (this.labels && _typeof(this.labels) === 'object') {
             var $container = this.$gallery.find('.fotorama__nav__shaft');
             var $thumbWidth = this.$gallery.data('thumbwidth');
             var thumbMargin = this.$gallery.data('thumbmargin') || 2;
@@ -127,13 +123,11 @@ define('app/gallery', [
                 elements: []
             };
 
-            $.each(this.labels, function(item, text) {
-                data.elements.push(
-                    {
-                        position: (parseInt($thumbWidth) + thumbMargin) * item,
-                        text: text
-                    }
-                );
+            $.each(this.labels, function (item, text) {
+                data.elements.push({
+                    position: (parseInt($thumbWidth) + thumbMargin) * item,
+                    text: text
+                });
             });
 
             $container.append(tplLabels(data));
