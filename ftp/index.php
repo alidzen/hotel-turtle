@@ -92,29 +92,27 @@ $APPLICATION->SetTitle("Главная");
 <section class="l-article l-limit-wrap no-padding">
 	<div class="l-article__cnt">
 		<div class="b-card j-gallery-container">
-			<div class="b-card__border">
-				<div class="b-card__bg-img">
-					<img src="/local/assets/img/card/card-1.svg" alt="Кувшин">
-				</div>
-				<div class="b-card__cnt">
-					<div class="b-card__header">
-						<div class="b-card__ttl-note">
-							<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/restaurant-title-text.php', Array(), Array('MODE' => 'html')); ?>
-						</div>
-						<h1 class="b-card__ttl">
-							<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/restaurant-title-text-ext.php', Array(), Array('MODE' => 'html')); ?> </h1>
+			<div class="b-card__bg-img">
+				<img src="/local/assets/img/card/card-1.svg" alt="Кувшин">
+			</div>
+			<div class="b-card__cnt">
+				<div class="b-card__header">
+					<div class="b-card__ttl-note">
+						<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/restaurant-title-text.php', Array(), Array('MODE' => 'html')); ?>
 					</div>
-					<div class="b-card__descr">
-						<p>
-							<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/restaurant-content-text.php', Array(), Array('MODE' => 'html')); ?>
-						</p>
-					</div>
-					<a href="/restaurant/" class="b-card__link">
-						<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/restaurant-more-link-text.php', Array(), Array('MODE' => 'html')); ?> </a>
+					<h1 class="b-card__ttl">
+						<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/restaurant-title-text-ext.php', Array(), Array('MODE' => 'html')); ?> </h1>
 				</div>
-				<div class="b-card__gallery">
-					<? $APPLICATION->IncludeComponent("olympia:blank", "show-case.gallery", Array("CODE" => "rest", "HEIGHT" => "700"), false); ?>
+				<div class="b-card__descr">
+					<p>
+						<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/restaurant-content-text.php', Array(), Array('MODE' => 'html')); ?>
+					</p>
 				</div>
+				<a href="/restaurant/" class="b-card__link">
+					<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/restaurant-more-link-text.php', Array(), Array('MODE' => 'html')); ?> </a>
+			</div>
+			<div class="b-card__gallery">
+				<? $APPLICATION->IncludeComponent("olympia:blank", "show-case.gallery", Array("CODE" => "rest", "HEIGHT" => "700"), false); ?>
 			</div>
 		</div>
 	</div>
