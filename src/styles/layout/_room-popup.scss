@@ -21,7 +21,15 @@
 }
 
 .l-room-popup__cnt {
-    padding: rhythm(2.5) gutter(2) 0;
+    padding: {
+        top: rhythm(2);
+        left: gutter(2);
+        right: gutter(2);
+    };
+
+    @media #{$medium-up} {
+        padding-top: rhythm(1);
+    }
 
     @media #{$custom-1280-up} {
         display: flex;
@@ -36,6 +44,12 @@
         max-width: 35%;
         padding-top: rhythm(4);
     }
+
+    h2 {
+        @media #{$medium-up} {
+            padding-right: 46px; // close btn
+        }
+    }
 }
 
 .l-room-popup__header {
@@ -47,7 +61,6 @@
 }
 
 .l-room-popup__param {
-    @include margin-trailer(2);
     @include padding-leader(1.5);
     @include padding-trailer(1);
     background-color: $gold-2;
@@ -61,16 +74,12 @@
         right: gutter(2);
         left: gutter(2);
     };
-
-    @media #{$big-up} {
-        @include margin-trailer(2);
-    }
 }
 
 .l-room-popup__feature {
     @include margin-trailer(1);
 
-    @media #{$big-up} {
+    @media #{$large-up} {
         @include margin-trailer(2);
     }
 }
@@ -79,7 +88,7 @@
     @include margin-trailer(1);
     @include grid-clearfix();
 
-    @media #{$big-up} {
+    @media #{$large-up} {
         @include margin-trailer(1.5);
     }
 }
@@ -100,10 +109,10 @@
 
 // STATE
 .l-room-popup__param_theme_price {
+    @include margin-trailer(2);
     @include padding-leader(1);
     @include padding-trailer(1);
     background-color: $green;
-    margin-bottom: 0;
 
     .b-room-param__txt {
         background-color: $green;

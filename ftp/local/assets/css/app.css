@@ -4769,7 +4769,12 @@ blockquote:after {
         max-width: 65%; } }
 
 .l-room-popup__cnt {
-    padding: 60px 20px 0; }
+    padding-top: 48px;
+    padding-left: 20px;
+    padding-right: 20px; }
+@media only screen and (min-width: 641px) {
+    .l-room-popup__cnt {
+        padding-top: 24px; } }
 @media only screen and (min-width: 1280px) {
     .l-room-popup__cnt {
         display: -webkit-flex;
@@ -4792,6 +4797,9 @@ blockquote:after {
         flex: 0 1 35%;
         max-width: 35%;
         padding-top: 96px; } }
+@media only screen and (min-width: 641px) {
+    .l-room-popup__cnt h2 {
+        padding-right: 46px; } }
 
 .l-room-popup__header {
     margin-bottom: 24px; }
@@ -4799,7 +4807,6 @@ blockquote:after {
     margin-bottom: 12px; }
 
 .l-room-popup__param {
-    margin-bottom: 48px;
     padding-top: 36px;
     padding-bottom: 24px;
     background-color: #bca064;
@@ -4807,13 +4814,10 @@ blockquote:after {
     margin-left: -20px;
     padding-right: 20px;
     padding-left: 20px; }
-@media only screen and (min-width: 1025px) {
-    .l-room-popup__param {
-        margin-bottom: 48px; } }
 
 .l-room-popup__feature {
     margin-bottom: 24px; }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1441px) {
     .l-room-popup__feature {
         margin-bottom: 48px; } }
 
@@ -4823,7 +4827,7 @@ blockquote:after {
     content: '';
     display: block;
     clear: both; }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1441px) {
     .l-room-popup__list-row {
         margin-bottom: 36px; } }
 
@@ -4837,10 +4841,10 @@ blockquote:after {
         float: left; } }
 
 .l-room-popup__param_theme_price {
+    margin-bottom: 48px;
     padding-top: 24px;
     padding-bottom: 24px;
-    background-color: #005870;
-    margin-bottom: 0; }
+    background-color: #005870; }
 .l-room-popup__param_theme_price .b-room-param__txt {
     background-color: #005870; }
 .l-room-popup__param_theme_price .b-room-param__data {
@@ -5572,11 +5576,15 @@ select {
     transition-timing-function: ease;
     position: absolute;
     top: 0;
-    right: 0; }
+    right: 0;
+    display: none; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
     .b-gallery__fs {
         background-image: url("../img/sprites@2x.png");
         background-size: 404px 311px; } }
+@media only screen and (min-width: 1025px) {
+    .b-gallery__fs {
+        display: block; } }
 
 .fotorama__nav--thumbs {
     text-align: center; }

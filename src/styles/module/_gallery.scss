@@ -153,6 +153,11 @@ $gallery-dots-frame-height: 30px !default;
     position: absolute;
     top: 0;
     right: 0;
+    display: none;
+
+    @media #{$big-up} {
+        display: block;
+    }
 }
 
 .b-gallery__ttl {
