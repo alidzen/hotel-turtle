@@ -129,8 +129,8 @@ gulp.task('sprites2x', function() {
     return gulp.src(paths.src.sprites2x)
         .pipe(spritesmith({
             imgName: 'sprites@2x.png',
-            imgPath: '/img/sprites@2x.png',
             cssName: '_sprites@2x.scss',
+            imgPath: '/img/sprites@2x.png',
             padding: 2,
             cssTemplate: 'sprites@2x.handlebars'
         }))
