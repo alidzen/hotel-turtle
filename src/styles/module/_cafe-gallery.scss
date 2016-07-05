@@ -1,5 +1,4 @@
 .b-cafe-gallery {
-    @extend %border-horizontal;
     position: relative;
     height: calc(100vh - #{$booking-height}); // booking form
     width: 100%;
@@ -8,7 +7,6 @@
 }
 
 .b-cafe-gallery__border {
-    @extend %border-vertical;
     @include grid-clearfix();
 }
 

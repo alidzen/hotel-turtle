@@ -1,4 +1,5 @@
-<div class="l-map">
+<!-- Убрать карты, правки от 7.6.2016-->
+<!--<div class="l-map">
 	<div class="b-map">
 		<div class="b-map__mobile">
 			<div class="b-map__img"></div>
@@ -22,4 +23,4 @@
 			image: '/local/assets/img/markers/here.svg'
 		}]
 	}
-</script>
+</script>-->

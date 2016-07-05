@@ -3,6 +3,7 @@
     @extend %l-row;
     @include margin-trailer(1.5);
     position: relative;
+    display: none;
 
     @media #{$medium-up} {
         @include margin-trailer(2.5);
