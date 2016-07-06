@@ -19,7 +19,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 	<div class="l-booking-rooms__row">
 		<div class="l-booking-rooms__item">
 			<div class="b-room">
-				<a href="#room-popup" data-fullsize data-toggle-time="300" class="b-room__cnt-link j-popup"></a>
+				<a href="#room-popup" data-toggle-time="300" class="b-room__cnt-link j-popup"></a>
 				<div class="b-room__border">
 					<div class="b-room__img-wrap">
 						<div style="background-image: url('/local/assets/img/room-1.jpg')" class="b-room__img"></div>
@@ -32,7 +32,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
                             до</span> <span class="b-room__price">7 400 <span class="b-ruble">g</span></span>
 							</div>
 							<div class="b-room__btn">
-								<a href="#room-popup" data-fullsize data-toggle-time="300" class="b-btn b-btn_width_auto b-btn_bg_white j-popup">Забронировать</a></div>
+								<a href="#room-popup" data-toggle-time="300" class="b-btn b-btn_width_auto b-btn_bg_white j-popup">Забронировать</a></div>
 						</div>
 					</div>
 				</div>
@@ -40,7 +40,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 		</div>
 		<div class="l-booking-rooms__item">
 			<div class="b-room">
-				<a href="#room-popup" data-fullsize data-toggle-time="300" class="b-room__cnt-link j-popup"></a>
+				<a href="#room-popup" data-toggle-time="300" class="b-room__cnt-link j-popup"></a>
 				<div class="b-room__border">
 					<div class="b-room__img-wrap">
 						<div style="background-image: url('/local/assets/img/room-1.jpg')" class="b-room__img"></div>
@@ -53,7 +53,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
                             до</span> <span class="b-room__price">7 400 <span class="b-ruble">g</span></span>
 							</div>
 							<div class="b-room__btn">
-								<a href="#room-popup" data-fullsize data-toggle-time="300" class="b-btn b-btn_width_auto b-btn_bg_white j-popup">Забронировать</a></div>
+								<a href="#room-popup" data-toggle-time="300" class="b-btn b-btn_width_auto b-btn_bg_white j-popup">Забронировать</a></div>
 						</div>
 					</div>
 				</div>

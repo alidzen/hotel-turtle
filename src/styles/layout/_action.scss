@@ -92,7 +92,18 @@
 
 // STATE
 .l-action_theme_room-item {
+    .l-action__row {
+        @include span(full);
+        margin: 0;
+    }
+
     .l-action__ttl {
+        @include margin-trailer(0);
+
+        @media #{$medium-up} {
+            @include margin-trailer(.5);
+        }
+
         @media #{$big-up} {
             margin: {
                 right: gutter(4);

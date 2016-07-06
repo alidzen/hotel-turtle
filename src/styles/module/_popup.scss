@@ -54,7 +54,7 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
     opacity: 1;
     z-index: z('default');
 
-    @media #{$large-up} {
+    @media #{$big-up} {
         top: rhythm(1);
         right: rhythm(1);
     }
@@ -62,7 +62,7 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
 
 // Popup content
 .b-popup__cnt {
-    @include padding-leader(3);
+    padding-top: 0;
     background-color: $gray-4;
 
     // Если мало контента, то он будет прижиматься к низу
@@ -73,12 +73,19 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
     }
 
     @media #{$medium-up} {
-        @include padding-leader(9);
         width: 700px;
         margin: {
             right: auto;
             left: auto;
         };
+    }
+
+    @media #{$big-up} {
+        width: 900px;
+    }
+
+    @media #{$large-up} {
+        width: 1200px;
     }
 }
 
@@ -100,7 +107,7 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
 
     @media #{$medium-up} {
         width: auto;
-        max-width: 960px;
+        max-width: 1200px;
     }
 }
 
