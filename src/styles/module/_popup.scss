@@ -25,7 +25,7 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
 
 .b-popup {
     color: $popup-color;
-    background-color: transparent;
+    background-color: rgba($white, .7);
     min-height: 100%;
     border-radius: $popup-border-radius;
 
@@ -51,9 +51,13 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
     line-height: $size - $bd-size * 2;
     font-size: 30px;
     color: $gold-2;
-    border: $bd-size solid $gold-2;
     opacity: 1;
     z-index: z('default');
+
+    @media #{$large-up} {
+        top: rhythm(1);
+        right: rhythm(1);
+    }
 }
 
 // Popup content

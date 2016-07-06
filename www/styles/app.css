@@ -4745,7 +4745,11 @@ blockquote {
   display: none; }
 
 .l-action_theme_room-item .l-action__cnt {
+  padding-top: 48px;
   padding-bottom: 0px; }
+  @media only screen and (min-width: 641px) {
+    .l-action_theme_room-item .l-action__cnt {
+      padding-top: 72px; } }
 
 .l-room-popup {
   min-height: 100vh; }
@@ -5274,7 +5278,7 @@ select {
 
 .b-popup {
   color: #333333;
-  background-color: transparent;
+  background-color: rgba(254, 254, 253, 0.7);
   min-height: 100%;
   border-radius: 0; }
   @media only screen and (min-width: 641px) {
@@ -5295,9 +5299,12 @@ select {
   line-height: 46px;
   font-size: 30px;
   color: #bca064;
-  border: 2px solid #bca064;
   opacity: 1;
   z-index: 1; }
+  @media only screen and (min-width: 1441px) {
+    .b-popup__close {
+      top: 24px;
+      right: 24px; } }
 
 .b-popup__cnt {
   padding-top: 72px;
@@ -5362,7 +5369,7 @@ select {
 .b-popup_full_size .b-popup__cnt {
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(254, 254, 253, 0.7);
+  background-color: transparent;
   padding: 0; }
 
 .b-popup_theme_toggle.mfp-bg {
@@ -7734,7 +7741,9 @@ select {
   padding-left: 20px; }
   @media only screen and (min-width: 1025px) {
     .l-room-item__params {
-      margin-bottom: 84px; } }
+      margin-bottom: 84px;
+      padding-right: 40px;
+      padding-left: 40px; } }
 
 .l-room__feature {
   margin-bottom: 24px;

@@ -11,6 +11,10 @@
 
     @media #{$big-up} {
         @include margin-trailer(3.5);
+        padding: {
+            right: gutter(4);
+            left: gutter(4);
+        };
     }
 }
 
