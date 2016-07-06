@@ -1,45 +1,50 @@
 #room-popup.mfp-hide.b-popup
     a(href="javascript:;" title="Закрыть").b-popup__close ×
     .b-popup__cnt
-        .l-room-popup.j-gallery-container.j-gallery-container__full
-            .l-room-popup__cnt
-                .l-room-popup__header
-                    h2.f-ttl-smaller Стандартный одноместный номер
-                .l-room-popup__param
-                    .b-room-param
-                        .b-room-param__txt Площадь номера
-                        .b-room-param__data 13 м<sup>2</sup>
-                    .b-room-param
-                        .b-room-param__txt Кровати
-                        .b-room-param__data 1 односпальная кровать
-                    .b-room-param
-                        .b-room-param__txt Максимальное количество гостей
-                        .b-room-param__data 1
-                .l-room-popup__param.l-room-popup__param_theme_price
-                    .b-room-param
-                        .b-room-param__txt Стоимость
-                        .b-room-param__data от 5 800 <span class="b-ruble">g</span> до 10 900 <span class="b-ruble">g</span>
-                .l-room-popup__feature
-                    ul.b-room-list
-                        li.b-room-list__item
-                            .b-room-list__item-img.b-room-list__item-img_img_window
-                            .b-room-list__item-txt Мансардные окна
-                        li.b-room-list__item
-                            .b-room-list__item-img.b-room-list__item-img_img_fan
-                            .b-room-list__item-txt Кондиционер
-                        li.b-room-list__item
-                            .b-room-list__item-img.b-room-list__item-img_img_wi-fi
-                            .b-room-list__item-txt Бесплатный Wi-Fi
-                .l-room-popup__list-row.b-typo-reset
-                    .l-room-popup__list-col
-                        ul
-                            li Мини-бар
-                            li Тапочки,халат и полотенце
-                            li Сейф
-                    .l-room-popup__list-col
-                        ul
-                            li Фен
-                            li Телефон
-                            li Услуга «звонок-будильник»
-            .l-room-popup__gallery
-                include _gallery-room
+        section.l-action.l-action_theme_room-item
+            .l-action__row
+                .l-action__border
+                    .l-action__cnt
+                        .l-action__ttl
+                            .f-ttl-note.b-bottom-dash-pos-left Стандартный одноместный номер
+                            p Если вы предпочитаете наслаждаться видами Санкт-Петербурга в одиночестве – этот номер для вас. Удобная кровать с ортопедическими подушками и матрацем поможет отдохнуть после долгой дороги, а наш персонал разбудит вовремя, чтобы вы не опоздали на экскурсию.
+
+                        .l-room-item
+                            .l-room-item__params.l-room-item__params_theme_price
+                                .b-room-param
+                                    .b-room-param__txt Стоимость
+                                    .b-room-param__data от 5 800 <span class="b-ruble">g</span> до 10 900 <span class="b-ruble">g</span>
+                            .l-room-item__gallery
+                                include _gallery-room
+                            .l-room-item__params
+                                .b-room-param
+                                    .b-room-param__txt Площадь номера
+                                    .b-room-param__data 13 м<sup>2</sup>
+                                .b-room-param
+                                    .b-room-param__txt Кровати
+                                    .b-room-param__data 1 односпальная кровать
+                                .b-room-param
+                                    .b-room-param__txt Максимальное количество гостей
+                                    .b-room-param__data 1
+                            .l-room__feature
+                                ul.b-room-list
+                                    li.b-room-list__item
+                                        .b-room-list__item-img.b-room-list__item-img_img_window
+                                        .b-room-list__item-txt Мансардные окна
+                                    li.b-room-list__item
+                                        .b-room-list__item-img.b-room-list__item-img_img_fan
+                                        .b-room-list__item-txt Кондиционер
+                                    li.b-room-list__item
+                                        .b-room-list__item-img.b-room-list__item-img_img_wi-fi
+                                        .b-room-list__item-txt Бесплатный Wi-Fi
+                            .l-room-item__list-row.b-typo-reset
+                                .l-room-item__list-col
+                                    ul
+                                        li Мини-бар
+                                        li Тапочки,халат и полотенце
+                                        li Сейф
+                                .l-room-item__list-col
+                                    ul
+                                        li Фен
+                                        li Телефон
+                                        li Услуга «звонок-будильник»

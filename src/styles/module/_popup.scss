@@ -25,7 +25,7 @@ $popup-btn-height: (btn-vertical-paddings($popop-btn-mobile-height) * 2) + $popu
 
 .b-popup {
     color: $popup-color;
-    background-color: $popup-bg-color;
+    background-color: transparent;
     min-height: 100%;
     border-radius: $popup-border-radius;
 

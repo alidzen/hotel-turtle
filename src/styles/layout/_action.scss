@@ -38,10 +38,7 @@
     @include rhythm-padding(2);
     @include grid-clearfix();
     border: 2px solid $gold-2;
-    padding: {
-        right: gutter(2);
-        left: gutter(2);
-    };
+
 
     @media #{$medium-up} {
         @include rhythm-padding(3);
@@ -49,10 +46,6 @@
 
     @media #{$big-up} {
         @include padding-leader(5);
-        padding: {
-            right: gutter(4);
-            left: gutter(4);
-        };
     }
 }
 
@@ -83,8 +76,17 @@
 
 .l-action__ttl {
     @extend %b-bottom-dash-pos-left;
+    margin: {
+        right: gutter(2);
+        left: gutter(2);
+    };
+
     @media #{$big-up} {
         @include margin-trailer(2);
+        margin: {
+            right: gutter(4);
+            left: gutter(4);
+        };
     }
 }
 
@@ -96,6 +98,10 @@
                 right: gutter(4);
                 left: gutter(4);
             };
+        }
+
+        &:after {
+            display: none;
         }
     }
 

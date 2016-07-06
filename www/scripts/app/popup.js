@@ -106,8 +106,7 @@ define('app/popup', ['magnific-popup'], function () {
         this.scrollPosition = $(window).scrollTop() || this.$link.offset().top;
 
         this.$body.css({
-            position: 'fixed',
-            top: -this.scrollPosition
+            position: 'fixed'
         });
 
         this.popupTargetOpen();

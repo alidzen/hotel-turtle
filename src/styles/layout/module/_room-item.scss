@@ -2,12 +2,7 @@
     @include margin-trailer(2);
     @include padding-leader(1.5);
     @include padding-trailer(1);
-    background-color: $gold-2;
-
-    margin: {
-        right: - gutter(2);
-        left: - gutter(2);
-    };
+    background-color: $green;
 
     padding: {
         right: gutter(2);
@@ -16,22 +11,22 @@
 
     @media #{$big-up} {
         @include margin-trailer(3.5);
-        margin: {
-            right: - gutter(4);
-            left: - gutter(4);
-        };
-        padding: {
-            right: gutter(8);
-            left: gutter(8);
-        };
     }
 }
 
 .l-room__feature {
     @include margin-trailer(1);
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
+    };
 
     @media #{$big-up} {
         @include margin-trailer(2);
+        padding: {
+            right: gutter(4);
+            left: gutter(4);
+        };
         margin: {
             right: gutter(4);
             left: gutter(4);
@@ -42,9 +37,17 @@
 .l-room-item__list-row {
     @include margin-trailer(1);
     @include grid-clearfix();
+    padding: {
+        right: gutter(2);
+        left: gutter(2);
+    };
 
     @media #{$big-up} {
         @include margin-trailer(3.5);
+        padding: {
+            right: gutter(4);
+            left: gutter(4);
+        };
         margin: {
             right: gutter(4);
             left: gutter(4);
@@ -69,15 +72,6 @@
 
 .l-room-item__gallery {
     position: relative;
-    width: calc(100% + 40px);
-    left: -20px;
-
-    @media #{$big-up} {
-        // появляется мелкий зазор справа между галереей и рамкой
-        width: calc(100% + 80.4px);
-        left: -40px;
-        right: -40px;
-    }
 }
 
 .l-room-item__footer {
@@ -165,14 +159,14 @@
 .l-room-item__params_theme_price {
     @include padding-leader(1);
     @include padding-trailer(1);
-    background-color: $green;
+    background-color: $gold-2;
     margin-bottom: 0;
 
     .b-room-param__txt {
-        background-color: $green;
+        background-color: $gold-2;
     }
 
     .b-room-param__data {
-        background-color: $green;
+        background-color: $gold-2;
     }
 }
