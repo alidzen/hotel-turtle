@@ -98,5 +98,9 @@ body .bx-core-adm-dialog, body .bx-core-adm-dialog a, body .bx-core-adm-dialog s
 }
 
 .l-services__tile_numb_4 .b-service__img {
-	background-image: url(/upload/iblock/89c/aaeaaqaaaaaaaakwaaaajdg1nteznzliltm4nzatngy1zs05m2eylwiwnzgzowy5ownhma.jpg);
+	background-image: url('/upload/iblock/89c/aaeaaqaaaaaaaakwaaaajdg1nteznzliltm4nzatngy1zs05m2eylwiwnzgzowy5ownhma.jpg');
+}
+
+.l-services__tile_numb_16 .b-service__img {
+	background-image: url('/upload/medialibrary/6d0/prem.png');
 }

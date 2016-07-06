@@ -22,7 +22,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 				<a href="#room-popup" data-fullsize data-toggle-time="300" class="b-room__cnt-link j-popup"></a>
 				<div class="b-room__border">
 					<div class="b-room__img-wrap">
-						<div style="background-image: url('/img/room-1.jpg')" class="b-room__img"></div>
+						<div style="background-image: url('/local/assets/img/room-1.jpg')" class="b-room__img"></div>
 					</div>
 					<div class="b-room__cnt">
 						<div class="b-room__cnt-wrap">
@@ -43,7 +43,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 				<a href="#room-popup" data-fullsize data-toggle-time="300" class="b-room__cnt-link j-popup"></a>
 				<div class="b-room__border">
 					<div class="b-room__img-wrap">
-						<div style="background-image: url('/img/room-1.jpg')" class="b-room__img"></div>
+						<div style="background-image: url('/local/assets/img/room-1.jpg')" class="b-room__img"></div>
 					</div>
 					<div class="b-room__cnt">
 						<div class="b-room__cnt-wrap">
@@ -173,10 +173,10 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 				<div class="l-room-popup__gallery">
 					<div class="b-gallery b-gallery_theme_room j-gallery j-gallery_theme_mobile j-gallery_theme_tablet">
 						<div data-height="700" data-width="100%" data-arrows="false" data-nav="thumbs" data-fit="cover" data-loop="true" data-autoplay="false" data-transition="dissolve" data-transitionduration="600" data-thumbwidth="100" class="b-gallery__base">
-							<a href="/img/home-gallery/gallery-1.jpg"></a>
-							<a href="/img/home-gallery/IMG_8779ready.jpg"></a>
-							<a href="/img/home-gallery/IMG_8828ready.jpg"></a>
-							<a href="/img/home-gallery/IMG_8892ready.jpg"></a>
+							<a href="/local/assets/img/home-gallery/gallery-1.jpg"></a>
+							<a href="/local/assets/img/home-gallery/IMG_8779ready.jpg"></a>
+							<a href="/local/assets/img/home-gallery/IMG_8828ready.jpg"></a>
+							<a href="/local/assets/img/home-gallery/IMG_8892ready.jpg"></a>
 						</div><a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать предыдущий слайд</a><a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать следущий слайд</a>
 						<a
 								href="#gallery-popup-fs" class="b-gallery__fs j-popup"></a>
@@ -185,10 +185,10 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 						<div class="b-popup__cnt">
 							<div class="b-gallery j-gallery">
 								<div data-height="100%" data-width="100%" data-arrows="false" data-nav="thumbs" data-fit="cover" data-loop="true" data-autoplay="false" data-transition="dissolve" data-transitionduration="600" data-thumbwidth="100" class="b-gallery__base">
-									<a href="/img/home-gallery/gallery-1.jpg"></a>
-									<a href="/img/home-gallery/IMG_8779ready.jpg"></a>
-									<a href="/img/home-gallery/IMG_8828ready.jpg"></a>
-									<a href="/img/home-gallery/IMG_8892ready.jpg"></a>
+									<a href="/local/assets/img/home-gallery/gallery-1.jpg"></a>
+									<a href="/local/assets/img/home-gallery/IMG_8779ready.jpg"></a>
+									<a href="/local/assets/img/home-gallery/IMG_8828ready.jpg"></a>
+									<a href="/local/assets/img/home-gallery/IMG_8892ready.jpg"></a>
 								</div><a href="javascript:;" class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать предыдущий слайд</a><a href="javascript:;" class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать следущий слайд</a>                            </div>
 						</div>
 					</div>

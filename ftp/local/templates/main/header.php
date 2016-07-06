@@ -159,7 +159,7 @@
 					<div class="l-menu__logo">
 						<div class="b-menu-logo">
 							<a href="/" title="Отель Ахиллес и Черепаха" class="b-logo">
-								<img src="/local/assets/img/logo-header-<?=LANGUAGE_ID;?>.svg" alt="Отель Ахиллес и Черепаха" class="b-logo__img" />
+								<img src="/local/assets/img/logo-<?=LANGUAGE_ID;?>.svg" alt="Отель Ахиллес и Черепаха" class="b-logo__img" />
 							</a>
 							<div class="b-menu-logo__txt">boutique hotel</div>
 						</div>
@@ -221,7 +221,7 @@
 				<div class="l-header__logo">
 					<div class="b-menu-logo">
 						<a href="/" title="Отель Ахиллес и Черепаха" class="b-logo">
-							<img src="/local/assets/img/logo.svg" alt="Отель Ахиллес и Черепаха" class="b-logo__img" />
+							<img src="/local/assets/img/logo-<?=LANGUAGE_ID;?>.svg" alt="Отель Ахиллес и Черепаха" class="b-logo__img" />
 						</a>
 						<div class="b-menu-logo__txt">boutique hotel</div>
 					</div>
