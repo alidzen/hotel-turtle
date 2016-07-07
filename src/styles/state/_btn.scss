@@ -56,3 +56,33 @@ $btn-list-height:
 .b-btn_bg_gray {
     background-color: $white-2;
 }
+
+.b-btn_icon_rotate {
+    $size: 15px;
+    position: relative;
+    padding-left: gutter(2) + $size;
+
+    svg {
+        @include transition(transform);
+        position: absolute;
+        top: 50%;
+        left: gutter(1);
+        margin-top: - $size / 2;
+        width: $size;
+        height: $size;
+    }
+
+    path {
+        @include transition(fill);
+    }
+
+    &:hover {
+        svg {
+            transform: rotate(180deg);
+        }
+
+        path {
+            fill: $white;
+        }
+    }
+}
