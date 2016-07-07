@@ -78,9 +78,9 @@ $this->setFrameMode(false);
 							<div class="b-room-param__data">
 								<? if ($arResult['PROPERTIES']['PRICE_FROM']['VALUE'] != ''): ?>
 									<? if ($arResult['PROPERTIES']['PRICE_TO']['VALUE'] != ''): ?>
-										от <?=$arResult['PROPERTIES']['PRICE_FROM']['VALUE'];?> <span
+										<?=GetMessage('FROM');?> <?=$arResult['PROPERTIES']['PRICE_FROM']['VALUE'];?> <span
 											class="b-ruble">g</span>
-										до <?=$arResult['PROPERTIES']['PRICE_TO']['VALUE'];?>  <span
+										<?=GetMessage('TO');?> <?=$arResult['PROPERTIES']['PRICE_TO']['VALUE'];?>  <span
 											class="b-ruble">g</span>
 									<? else: ?>
 										<?=$arResult['PROPERTIES']['PRICE_FROM']['VALUE'];?> <span
