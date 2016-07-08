@@ -85,7 +85,7 @@ $this->setFrameMode(true);
 	<div class="l-services__btn">
 		<div class="b-propose">
 			<div class="b-propose__btn">
-				<a href="javascript:;" class="b-btn b-btn_width_auto j-next-cite">
+				<a href="javascript:;" class="b-btn b-btn_width_auto b-btn_icon_rotate j-next-cite">
 					<? $APPLICATION->IncludeFile('/local/area/'.LANGUAGE_ID.'/global-other-quotes-text.php', Array(), Array('MODE' => 'html')); ?>
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve" width="512px" height="512px">
                         <g>
