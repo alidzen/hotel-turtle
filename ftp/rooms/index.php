@@ -1,6 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Номера");
+$APPLICATION->SetPageProperty("description", "Уютные номера нашего бутик-отеля оформлены в классическом стиле. Авторский дизайн, мансардные окна и необычные архитектурные элементы дополняют атмосферу античности.");
+$APPLICATION->SetPageProperty("title", "Номера | Бутик-отель \"Ахиллес и Черепаха\"");
+$APPLICATION->SetTitle("Номера | Бутик-отель \"Ахиллес и Черепаха\"");
 ?>
 <section class="l-article l-limit-wrap has-border">
 	<div class="l-article__cnt">

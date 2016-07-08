@@ -1,6 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Атмосфера");
+$APPLICATION->SetPageProperty("description", "Уютное пространство отеля не позволит чувству настоящего Петербурга покинуть вас. Каждый из номеров обладает своим характером, но объединяет их общая атмосфера — которой пронизана каждая деталь.");
+$APPLICATION->SetPageProperty("title", "Атмосфера | Бутик-отель \"Ахиллес и Черепаха\"");
+$APPLICATION->SetTitle("Атмосфера | Бутик-отель \"Ахиллес и Черепаха\"");
 ?>
 <section class="l-article l-limit-wrap no-padding">
 	<div class="l-article__cnt">
