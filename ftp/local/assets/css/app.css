@@ -5581,7 +5581,8 @@ select {
         background-color: rgba(254, 254, 253, 0.95); } }
 @media only screen and (min-width: 1024px) {
     .b-gallery__cnt {
-        top: 0;
+        top: 40px;
+        width: 330px;
         bottom: auto;
         right: 70px;
         margin-right: 0; } }
@@ -5723,7 +5724,9 @@ select {
 .b-gallery_theme_home .fotorama__nav__frame--dot:nth-child(5) .fotorama__dot {
     background-color: rgba(218, 54, 54, 0.6); }
 
-.l-showcase__gallery_dots_lower .fotorama__nav.fotorama__nav--dots {
+.l-showcase__gallery_dots_lower .fotorama__nav.fotorama__nav--dots,
+.b-card__gallery .fotorama__nav.fotorama__nav--dots,
+.l-showcase__gallery .fotorama__nav.fotorama__nav--dots {
     bottom: 30px; }
 
 .b-tabs {
@@ -7313,7 +7316,6 @@ select {
 
 .b-card__gallery {
     display: block;
-    height: 250px;
     overflow: hidden; }
 @media only screen and (min-width: 641px) {
     .b-card__gallery {
@@ -7325,8 +7327,6 @@ select {
         left: 50%;
         width: 50%;
         height: 100%; } }
-.b-card__gallery .fotorama__nav.fotorama__nav--dots {
-    bottom: 30px; }
 
 .b-card__gallery-img {
     transition-property: -webkit-transform;
@@ -8048,6 +8048,9 @@ select {
     left: 30px;
     right: 30px;
     color: #fefefd; }
+@media only screen and (max-width: 640px) {
+    .b-cafe-gallery__cnt {
+        margin-top: 50px; } }
 @media only screen and (min-width: 641px) {
     .b-cafe-gallery__cnt {
         left: 20%;

@@ -109,7 +109,8 @@ $gallery-dots-frame-height: 30px !default;
     }
 
     @media #{$custom-1024-up} {
-        top: 0;
+        top: 40px;
+        width: 330px;
         bottom: auto;
         right: 20px + 50px;
         margin-right: 0;
@@ -309,7 +310,9 @@ $gallery-dots-frame-height: 30px !default;
     }
 }
 
-.l-showcase__gallery_dots_lower {
+.l-showcase__gallery_dots_lower,
+.b-card__gallery,
+.l-showcase__gallery {
     .fotorama__nav.fotorama__nav--dots {
         bottom: 30px;
     }

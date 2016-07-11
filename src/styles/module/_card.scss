@@ -81,7 +81,6 @@
 
 .b-card__gallery {
     display: block;
-    height: 250px;
     overflow: hidden;
 
     @media #{$medium-up} {
@@ -94,10 +93,6 @@
         left: 50%;
         width: 50%;
         height: 100%;
-    }
-
-    .fotorama__nav.fotorama__nav--dots {
-        bottom: 30px;
     }
 }
 
