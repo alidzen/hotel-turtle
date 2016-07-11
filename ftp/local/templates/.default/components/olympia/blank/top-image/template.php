@@ -5,8 +5,7 @@
 		<div data-height="100%" data-width="100%" data-arrows="false" data-nav="dots" data-fit="cover" data-loop="true" data-autoplay="false" data-transition="dissolve" data-transitionduration="600" data-margin="-1" class="b-gallery__base">
 			<?foreach($arResult['ITEMS'] as $arItem):?>
 				<?if($arItem['ACTION'] !== NULL):?>
-					<div data-img="<?=$arItem['IMAGE']?>" class="b-gallery__cnt-wrap"
-						 id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+					<div data-img="<?=$arItem['IMAGE']?>" class="b-gallery__cnt-wrap" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 					<div class="b-gallery__cnt">
 						<div class="b-gallery__propose">
 							<div class="b-gallery__btn b-btn"><?=$arItem['ACTION']['TYPE'];?></div>

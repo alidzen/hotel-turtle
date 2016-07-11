@@ -5413,13 +5413,12 @@ select {
   padding: 0; }
 
 .b-popup_theme_toggle.mfp-bg {
-  transition-property: opacity;
   transition-timing-function: ease;
-  opacity: 0; }
+  opacity: 1; }
   .b-popup_theme_toggle.mfp-bg.mfp-ready {
     opacity: 1; }
   .b-popup_theme_toggle.mfp-bg.mfp-removing {
-    opacity: 0; }
+    opacity: 1; }
 
 .b-popup_theme_toggle.mfp-wrap {
   transition-property: opacity;

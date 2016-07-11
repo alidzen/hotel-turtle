@@ -104,3 +104,10 @@ body .bx-core-adm-dialog, body .bx-core-adm-dialog a, body .bx-core-adm-dialog s
 .l-services__tile_numb_16 .b-service__img {
 	background-image: url('/upload/medialibrary/6d0/prem.png');
 }
+
+@media only screen and (min-width: 641px) {
+	.b-gallery__cnt {
+		top: 39px;
+		width: 330px;
+	}
+}

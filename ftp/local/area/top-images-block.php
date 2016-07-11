@@ -1,6 +1,6 @@
 <?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
-use \Bitrix\Main;
+use Bitrix\Main;
 
 $arResult['ITEMS'] = null;
 
@@ -21,34 +21,38 @@ if(Main\Loader::includeModule('iblock'))
 			['IBLOCK_ID' => 5, 'ACTIVE' => 'Y', 'SECTION_ID' => $arElement['PROPERTY_IMAGES_VALUE']],
 			false,
 			false,
-			['IBLOCK_ID', 'ID', 'PROPERTY_ACTION_TPE', 'PROPERTY_ACTION_TTL', 'PROPERTY_ACTION_TXT', 'PREVIEW_PICTURE', 'PREVIEW_TEXT', 'PROPERTY_BLACK']
+			['IBLOCK_ID', 'ID', 'PROPERTY_ACTION_LINK', 'PROPERTY_ACTION_TPE', 'PROPERTY_ACTION_TTL', 'PROPERTY_ACTION_TXT', 'PREVIEW_PICTURE', 'PREVIEW_TEXT', 'PROPERTY_BLACK']
 		);
 
 		while($arItem = $rsItems->Fetch())
 		{
-			$action = ($arItem['PROPERTY_ACTION_TPE'] != '' ? ['TYPE' => $arItem['PROPERTY_ACTION_TPE_VALUE'], 'TITLE' => $arItem['PROPERTY_ACTION_TTL'], 'TEXT' => $arItem['PROPERTY_ACTION_TXT']] : null);
+			$action = ($arItem['PROPERTY_ACTION_TPE_VALUE'] != '' ? ['LINK' => $arItem['PROPERTY_ACTION_LINK_VALUE'], 'TYPE'  => $arItem['PROPERTY_ACTION_TPE_VALUE'], 'TITLE' => $arItem['PROPERTY_ACTION_TTL_VALUE'], 'TEXT'  => $arItem['PROPERTY_ACTION_TXT_VALUE'] ] : null);
 			$arPreviewText = explode('####', $arItem['PREVIEW_TEXT']);
 
 			$arButtons = \CIBlock::GetPanelButtons(
 				$arItem["IBLOCK_ID"],
 				$arItem["ID"],
 				0,
-				["SECTION_BUTTONS" => false, "SESSID" => false]
+				[
+					"SECTION_BUTTONS" => false,
+					"SESSID"          => false
+				]
 			);
 
 			$arResult['ITEMS'][] = [
-				'ID' 		=> $arItem['ID'],
-				'IMAGE' 	=> ($arItem['PREVIEW_PICTURE'] > 0 ? \CFile::GetPath($arItem['PREVIEW_PICTURE']) : null),
-				'ACTION' 	=> $action,
+				'ID'           => $arItem['ID'],
+				'IMAGE'        => ($arItem['PREVIEW_PICTURE'] > 0 ? \CFile::GetPath($arItem['PREVIEW_PICTURE']) : null),
+				'ACTION'       => $action,
 				'PREVIEW_TEXT' => (LANGUAGE_ID == 'ru' ? $arPreviewText[0] : (isset($arPreviewText[1]) ? $arPreviewText[1] : $arPreviewText[0])),
 				'THEME_BLACK'  => ($arItem['PROPERTY_BLACK_VALUE'] == 'Y'),
-				'EDIT_LINK'	   => $arButtons["edit"]["edit_element"]["ACTION_URL"],
+				'EDIT_LINK'    => $arButtons["edit"]["edit_element"]["ACTION_URL"],
 				'DELETE_LINK'  => $arButtons["edit"]["delete_element"]["ACTION_URL"]
 			];
 		}
 	}
 }
 ?>
+
 
 <?if($arResult['ITEMS'] != NULL):?>
 <div class="l-header__gallery">
@@ -57,16 +61,16 @@ if(Main\Loader::includeModule('iblock'))
 		<div data-height="100%" data-width="100%" data-arrows="false" data-nav="dots" data-fit="cover" data-loop="true" data-autoplay="false" data-transition="dissolve" data-transitionduration="600" data-margin="-1" class="b-gallery__base">
 			<?foreach($arResult['ITEMS'] as $arItem):?>
 				<?if($arItem['ACTION'] !== NULL):?>
-				<div data-img="<?=$arItem['IMAGE']?>" class="b-gallery__cnt-wrap" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-					<div class="b-gallery__cnt">
+				<div data-img="<?=$arItem['IMAGE']?>" class="b-gallery__cnt-wrap">
+					<a href="<?=$arItem['ACTION']['LINK'];?>" class="b-gallery__cnt">
 						<div class="b-gallery__propose">
 							<div class="b-gallery__btn b-btn"><?=$arItem['ACTION']['TYPE'];?></div>
 							<div class="b-gallery__propose-cnt">
-								<div class="b-gallery__ttl"><?=$arItem['ACTION']['TTL'];?></div>
-								<div class="b-gallery__txt"><?=$arItem['ACTION']['TXT'];?></div>
+								<div class="b-gallery__ttl"><?=$arItem['ACTION']['TITLE'];?></div>
+								<div class="b-gallery__txt"><?=$arItem['ACTION']['TEXT'];?></div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<?else:?>
 					<?if($arItem['PREVIEW_TEXT'] != ''):?>
@@ -98,4 +102,5 @@ if(Main\Loader::includeModule('iblock'))
 </div>
 <?else:?>
 	<?php $APPLICATION->ShowViewContent('header_element_logo'); ?>
+
 <?endif;?>
