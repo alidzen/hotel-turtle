@@ -19,6 +19,7 @@
 				<?else:?>
 					<?if($arItem['PREVIEW_TEXT'] != ''):?>
 						<div<?if($arItem['IMAGE'] !== null):?> style="background-image: url('<?=$arItem['IMAGE'];?>');"<?endif;?> class="b-cafe-gallery">
+							<img src="<?=$arItem['IMAGE'];?>" style="display: none">
 							<div class="b-cafe-gallery__border">
 								<div class="b-cafe-gallery__cnt<?=($arItem['THEME_BLACK'] ? ' b-cafe-gallery__cnt_theme_black' : '');?>">
 									<?=$arItem['PREVIEW_TEXT'];?>
