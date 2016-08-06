@@ -411,6 +411,7 @@ define('app', [
 
         $(window).on('resize', function() {
             transformMenu();
+
         });
 
     })($('.j-header-menu'));
