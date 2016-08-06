@@ -5581,7 +5581,7 @@ select {
       background-color: rgba(254, 254, 253, 0.95); } }
   @media only screen and (min-width: 1024px) {
     .b-gallery__cnt {
-      top: 40px;
+      top: 0;
       width: 330px;
       bottom: auto;
       right: 70px;

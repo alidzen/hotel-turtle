@@ -109,7 +109,7 @@ $gallery-dots-frame-height: 30px !default;
     }
 
     @media #{$custom-1024-up} {
-        top: 40px;
+        top: 0;
         width: 330px;
         bottom: auto;
         right: 20px + 50px;
