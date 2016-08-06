@@ -175,24 +175,12 @@ define('app', [
 
     // smooth hide preloader, show link
     var hidePreloader = function() {
-
-        // calculate animated line after loading page
-        var bulgingPart = 80;
-        var linkWidth = $activeLink.width();
-        var insidePart = ($('.j-header-menu').outerWidth() - linkWidth) / 2;
-        var fullLinkWidth = linkWidth + insidePart + bulgingPart;
-        var $activeLine = $activeLink.children('.b-nav__link-line');
         // hide loader
         setTimeout(function() {
             $loader.addClass('is-hide');
         }, 300);
         setTimeout(function() {
             $loader.hide();
-        }, 600);
-        setTimeout(function() {
-            $activeLine.css({
-                width: fullLinkWidth
-            });
         }, 600);
     };
 
