@@ -189,11 +189,6 @@ define('app', [
             scrollToBlock(window.location.hash, 60);
     };
 
-    // Hide preloader, than all is loading
-    $(window).load(function() {
-        hidePreloader();
-    });
-
     //Sticky nav
     var cntHeight = $(window).height(); // высота блока
     // меняется в зависимотси от высоты экрана
@@ -412,6 +407,7 @@ define('app', [
         };
 
         transformMenu();
+        hidePreloader();
 
         $(window).on('resize', function() {
             transformMenu();
