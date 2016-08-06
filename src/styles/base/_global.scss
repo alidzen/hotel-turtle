@@ -143,6 +143,10 @@ img {
         height: 4px;
         background-color: $gold-2;
     }
+    
+    &.has_margin-small {
+        @include margin-trailer(.5);
+    }
 }
 
 .b-ruble {
@@ -265,4 +269,10 @@ img {
     @media #{$custom-1024-up} {
         display: block;
     }
+}
+
+.b-price {
+    @extend %f-param-data;
+    color: $gold-2;
+    float: right;
 }

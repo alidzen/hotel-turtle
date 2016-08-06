@@ -14,30 +14,17 @@
     &:not(:last-child) {
         @include margin-trailer(.5);
     }
-
-    &:after {
-        position: absolute;
-        bottom: 7px;
-        left: 0;
-        width: 100%;
-        border-bottom: 1px dotted;
-
-        @media #{$medium-up} {
-            bottom: 8px;
-        }
-    }
 }
 
 .b-room-param__txt {
+    @extend %f-room-txt;
+    display: inline-block;
     position: relative;
-    z-index: z('default');
-    background-color: $green;
+    color: $black;
 }
 
 .b-room-param__data {
-    @extend %f-param-data;
-    margin-left: auto;
-    position: relative;
-    z-index: z('default');
-    background-color: $green;
+    @extend %f-room-list;
+    display: inline-block;
+    color: $black;
 }

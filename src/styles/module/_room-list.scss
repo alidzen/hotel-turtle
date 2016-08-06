@@ -1,44 +1,31 @@
 .b-room-list {
     display: flex;
     justify-content: space-between;
-
-    @media #{$small-only} {
-        flex-flow: column wrap;
-    }
-
-    @media #{$medium-up} {
-        align-items: center;
-        flex-flow: row wrap;
-    }
+    flex-flow: column nowrap;
 }
 
 .b-room-list__item {
-    @include margin-trailer(1);
+    @include margin-trailer(.5);
     display: flex;
     align-items: center;
 
     @media #{$medium-up} {
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
     }
-
-    @media #{$custom-1024-up} {
-        margin-right: gutter(4);
+    
+    &:last-child {
+        @include margin-trailer(0);
     }
 }
 
 .b-room-list__item-img {
-    $img-size: 60px;
+    $img-size: 30px;
     flex: 0 1 $img-size;
     width: $img-size;
     height: $img-size;
     background-color: $gray-3;
     border-radius: 50%;
     margin-right: gutter(1);
-
-    @media #{$medium-up} {
-        @include margin-trailer(.5);
-        margin-right: 0;
-    }
 }
 
 .b-room-list__item-txt {
@@ -65,8 +52,8 @@
     @extend %b-room-icons;
 
     &:after {
-        width: 53px;
-        height: 53px;
+        width: 27px;
+        height: 27px;
         background-image: url('/img/icons/window.svg');
     }
 }
@@ -75,8 +62,8 @@
     @extend %b-room-icons;
 
     &:after {
-        width: 48px;
-        height: 48px;
+        width: 26px;
+        height: 26px;
         background-image: url('/img/icons/fan.svg');
     }
 }
@@ -85,8 +72,8 @@
     @extend %b-room-icons;
 
     &:after {
-        width: 45px;
-        height: 45px;
+        width: 26px;
+        height: 26px;
         background-image: url('/img/icons/wi-fi.svg');
     }
 }

@@ -1,0 +1,16 @@
+.b-room-hang {
+    li {
+        @extend %f-room-txt;
+        @include margin-trailer(.25);
+        position: relative;
+        padding-left: gutter(2.5);
+        
+        &:before {
+            position: absolute;
+            left: gutter(1);
+            content: '•';
+            color: $list-color;
+            transform: scale(2) translateY(1px); // centered
+        }
+    }
+}
