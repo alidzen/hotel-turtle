@@ -1,9 +1,0 @@
-.idea/*
-bitrix/*
-upload/*
-*.txt
-.DS_Store
-*.zip
-*.log
-test*
-1.php

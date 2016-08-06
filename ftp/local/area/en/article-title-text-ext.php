@@ -1,1 +1,0 @@
-especially like about our hotel?

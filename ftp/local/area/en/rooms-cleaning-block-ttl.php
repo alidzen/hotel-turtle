@@ -1,1 +1,0 @@
-Cleanliness of the rooms plays a significant role in our hotel

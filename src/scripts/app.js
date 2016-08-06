@@ -625,7 +625,7 @@ define('app', [
 
             $('.j-next-cite').click(function () {
                 $slider.slick('slickNext')
-            })
+            });
         });
     })($('.j-slider'));
 
