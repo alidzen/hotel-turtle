@@ -170,6 +170,11 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
         }, 600);
     };
 
+    // Hide preloader, than all is loading
+    $(window).load(function () {
+        console.log('done');
+    });
+
     //Sticky nav
     var cntHeight = $(window).height(); // высота блока
     // меняется в зависимотси от высоты экрана
