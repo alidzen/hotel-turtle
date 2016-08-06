@@ -102,14 +102,13 @@ $arResult['ITEMS'][] = [
         следущий слайд</a>
 </div>
 <?else:?>
-<div
-<?if($arResult['ITEMS'][0]['IMAGE'] !== null):?> style="background-image: url('<?=$arResult['ITEMS'][0]['IMAGE'];?>');"<?endif;?> class="b-cafe-gallery">
-<div class="b-cafe-gallery__border">
+<div<?if($arResult['ITEMS'][0]['IMAGE'] !== null):?> style="background-image: url('<?=$arResult['ITEMS'][0]['IMAGE'];?>');"<?endif;?> class="b-cafe-gallery">
+    <div class="b-cafe-gallery__border">
     <div class="b-cafe-gallery__cnt<?=($arResult['ITEMS'][0]['THEME_BLACK'] ? ' b-cafe-gallery__cnt_theme_black' : '');?>">
         <?=$arResult['ITEMS'][0]['PREVIEW_TEXT'];?>
     </div>
-</div>
-</div>
+    </div>
+    </div>
 <?endif;?>
 </div>
 <?else:?>
