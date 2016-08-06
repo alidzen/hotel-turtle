@@ -5563,7 +5563,8 @@ select {
 
 .b-gallery__cnt-wrap {
     position: relative;
-    height: 100%; }
+    height: 100%;
+    z-index: 1; }
 
 .b-gallery__cnt {
     position: absolute;
@@ -5572,7 +5573,8 @@ select {
     background: url("../img/propose-bg-1.png") no-repeat 50% 50% rgba(254, 254, 253, 0.8);
     bottom: 60px;
     right: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    z-index: 1; }
 @media only screen and (min-width: 641px) {
     .b-gallery__cnt {
         padding: 15px 20px;
@@ -5854,11 +5856,13 @@ select {
     background-color: #fefefd;
     width: 50px;
     height: 50px;
-    line-height: 46px;
+    line-height: 30px;
     font-size: 30px;
     color: #bca064;
     border: 2px solid #bca064;
-    opacity: 1; }
+    opacity: 1;
+    padding-top: 7px;
+    padding-bottom: 9px; }
 
 .b-map-tooltip {
     border: 2px solid #ff0000;

@@ -90,6 +90,7 @@ $gallery-dots-frame-height: 30px !default;
 .b-gallery__cnt-wrap {
     position: relative;
     height: 100%;
+    z-index: z('default');
 }
 
 .b-gallery__cnt {
@@ -100,6 +101,7 @@ $gallery-dots-frame-height: 30px !default;
     bottom: 60px;
     right: 0;
     margin-right: 0;
+    z-index: z('default');
 
     @media #{$medium-up} {
         padding: 15px 20px;

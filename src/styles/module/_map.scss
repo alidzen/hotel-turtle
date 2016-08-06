@@ -84,6 +84,7 @@
 .b-map__close {
     $size: 50px;
     $bd-size: 2px;
+    $fsz: $size - 20px;
     position: absolute;
     top: 0;
     right: 0;
@@ -91,9 +92,13 @@
     background-color: $white;
     width: $size;
     height: $size;
-    line-height: $size - $bd-size * 2;
-    font-size: 30px;
+    line-height: $fsz;
+    font-size: $fsz;
     color: $gold-2;
     border: $bd-size solid $gold-2;
     opacity: 1;
+    padding: {
+        top: ($size - $bd-size * 2 - $fsz) / 2 - 1px;
+        bottom: ($size - $bd-size * 2 - $fsz) / 2 + 1px;
+    };
 }
