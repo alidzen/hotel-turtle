@@ -307,6 +307,7 @@ img {
         display: block; } }
 
 @font-face {
+
     font-family: "Geometria";
     src: url("../fonts/Geometria/Geometria.eot");
     src: url("../fonts/Geometria/Geometria.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria/Geometria.ttf") format("truetype"), url("../fonts/Geometria/Geometria.woff") format("woff"); }
