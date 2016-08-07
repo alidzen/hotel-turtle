@@ -140,31 +140,31 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 													</div>
 												<?endif;?>
 											</div>
+											<div class="l-room-item__feature">
+												<ul class="b-room-list">
+													<li class="b-room-list__item">
+														<div class="b-room-list__item-img b-room-list__item-img_img_window"></div>
+														<div class="b-room-list__item-txt"><?=GetMessage('MANSARDA');?></div>
+													</li>
+													<li class="b-room-list__item">
+														<div class="b-room-list__item-img b-room-list__item-img_img_fan"></div>
+														<div class="b-room-list__item-txt"><?=GetMessage('COND');?></div>
+													</li>
+													<li class="b-room-list__item">
+														<div class="b-room-list__item-img b-room-list__item-img_img_wi-fi"></div>
+														<div class="b-room-list__item-txt"><?=GetMessage('FREE_WIFI');?></div>
+													</li>
+												</ul>
+											</div>
+											<div class="l-room-item__hang">
+												<ul class="b-room-hang">
+													<? foreach ($arCol as $strSname): ?>
+													<li><?=$strSname;?></li>
+													<? endforeach; ?>
+												</ul>
+											</div>
+											<div class="l-room-item__btn"><a href="#" class="b-btn b-btn_width_auto">Забронировать</a></div>
 										</div>
-										<div class="l-room-item__feature">
-											<ul class="b-room-list">
-												<li class="b-room-list__item">
-													<div class="b-room-list__item-img b-room-list__item-img_img_window"></div>
-													<div class="b-room-list__item-txt"><?=GetMessage('MANSARDA');?></div>
-												</li>
-												<li class="b-room-list__item">
-													<div class="b-room-list__item-img b-room-list__item-img_img_fan"></div>
-													<div class="b-room-list__item-txt"><?=GetMessage('COND');?></div>
-												</li>
-												<li class="b-room-list__item">
-													<div class="b-room-list__item-img b-room-list__item-img_img_wi-fi"></div>
-													<div class="b-room-list__item-txt"><?=GetMessage('FREE_WIFI');?></div>
-												</li>
-											</ul>
-										</div>
-										<div class="l-room-item__hang">
-											<ul class="b-room-hang">
-												<? foreach ($arCol as $strSname): ?>
-												<li><?=$strSname;?></li>
-												<? endforeach; ?>
-											</ul>
-										</div>
-										<div class="l-room-item__btn"><a href="#" class="b-btn b-btn_width_auto">Забронировать</a></div>
 									</div>
 								</div>
 							</div>
