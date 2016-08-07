@@ -157,6 +157,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 												</ul>
 											</div>
 											<div class="l-room-item__hang">
+
 												<ul class="b-room-hang">
 													<? foreach ($arItem['services'] as $strSname): ?>
 														<li><?=$strSname;?></li>
