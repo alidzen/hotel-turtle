@@ -163,7 +163,9 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 													<? endforeach; ?>
 												</ul>
 											</div>
-											<div class="l-room-item__btn"><a href="#" class="b-btn b-btn_width_auto">Забронировать</a></div>
+											<div class="l-room-item__btn">
+												<a href="#" class="b-btn b-btn_width_auto">Забронировать</a>
+											</div>
 										</div>
 									</div>
 								</div>
