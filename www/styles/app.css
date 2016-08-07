@@ -810,7 +810,7 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
   font-family: "Geometria-Bold", sans-serif;
   letter-spacing: 0.025em; }
 
-.b-room-hang li, .b-room-param__txt,
+.b-room-hang li, .b-room-param,
 .f-room-txt {
   font-size: 13px;
   line-height: 21px; }
@@ -5727,11 +5727,12 @@ select {
   margin-top: 15px;
   margin-bottom: 15px; }
 
-.b-gallery_theme_room .fotorama {
-  overflow: inherit; }
-
-.b-gallery_theme_room .fotorama__nav {
-  bottom: -80px; }
+.b-gallery_theme_room {
+  margin-bottom: 104px; }
+  .b-gallery_theme_room .fotorama {
+    overflow: inherit; }
+  .b-gallery_theme_room .fotorama__nav {
+    bottom: -80px; }
 
 .b-gallery_theme_home .fotorama__nav__frame--dot:nth-child(5) .fotorama__dot {
   background-color: rgba(218, 54, 54, 0.6); }
@@ -7898,40 +7899,10 @@ select {
   margin-bottom: 24px; }
 
 .b-room-param {
-  color: #fefefd;
   position: relative;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline; }
-  .b-room-param:after {
-    content: '';
-    display: block;
-    clear: both; }
-  @media only screen and (min-width: 641px) {
-    .b-room-param {
-      -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; } }
+  color: #333333; }
   .b-room-param:not(:last-child) {
     margin-bottom: 12px; }
-
-.b-room-param__txt {
-  display: inline-block;
-  position: relative;
-  color: #333333; }
-
-.b-room-param__data {
-  display: inline-block;
-  color: #333333; }
 
 .b-room-list {
   display: -webkit-flex;

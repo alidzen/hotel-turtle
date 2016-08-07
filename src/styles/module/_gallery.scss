@@ -298,6 +298,8 @@ $gallery-dots-frame-height: 30px !default;
 
 // STATE
 .b-gallery_theme_room {
+    margin-bottom: 80px + rhythm(1);
+    
     .fotorama {
         overflow: inherit;
     }
