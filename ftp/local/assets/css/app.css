@@ -3650,7 +3650,7 @@ blockquote:after {
     .l-stick-menu__popup-cnt {
         padding-right: 20px;
         padding-left: 20px; } }
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 737px) {
     .l-stick-menu__popup-cnt {
         padding-top: 132px;
         position: absolute;
@@ -3807,6 +3807,9 @@ blockquote:after {
 .l-services__header .b-article {
     padding: 0; }
 
+.l-services__row {
+    width: 100%;
+    float: left; }
 @media only screen and (min-width: 641px) {
     .l-services__row {
         width: 83.33333%;

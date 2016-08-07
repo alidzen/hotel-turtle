@@ -20,6 +20,8 @@
 }
 
 .l-services__row {
+    @include span(full);
+    
     @media #{$medium-up} {
         @include span(10 center);
         padding: 0;

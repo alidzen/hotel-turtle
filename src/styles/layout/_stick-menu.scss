@@ -87,7 +87,7 @@ $sticky-menu-height: 60px;
             left: gutter(2);
         };
     }
-    @media #{$medium-up} {
+    @media #{$custom-737-up} {
         padding-top: rhythm(3) + $sticky-menu-height;
         position: absolute;
         top: 50%;
