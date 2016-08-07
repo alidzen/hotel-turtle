@@ -376,11 +376,15 @@ define('app', [
 
     // resize header-menu
     (function($headerMenu) {
-        if (!$headerMenu.length || mobileWidth) {
+        if (!$headerMenu.length) {
             return;
         }
 
         var transformMenu = function() {
+            if ($(window).width() < 1024) {
+                return;
+            }
+
             var cntHeight = $headerMenu.outerHeight(true);
             var screenHeight = $(window).height();
             var $reviewsBlock = $headerMenu.find('.j-reviews');

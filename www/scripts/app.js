@@ -7,7 +7,6 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
 
     // Глобальные переменные
     var ACTIVE = 'is-active';
-    var mobileWidth = $(window).width() < 641;
     var touchWidth = $(window).width() < 1024;
     var $loader = $('.j-loader');
 
@@ -169,11 +168,6 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
             $loader.hide();
         }, 600);
     };
-
-    // Hide preloader, than all is loading
-    $(window).load(function () {
-        console.log('done');
-    });
 
     //Sticky nav
     var cntHeight = $(window).height(); // высота блока
@@ -364,11 +358,15 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
 
     // resize header-menu
     (function ($headerMenu) {
-        if (!$headerMenu.length || mobileWidth) {
+        if (!$headerMenu.length) {
             return;
         }
 
         var transformMenu = function transformMenu() {
+            if ($(window).width() < 1024) {
+                return;
+            }
+
             var cntHeight = $headerMenu.outerHeight(true);
             var screenHeight = $(window).height();
             var $reviewsBlock = $headerMenu.find('.j-reviews');

@@ -1,17 +1,18 @@
 .l-menu {
-    @include transition(opacity);
-    @include padding-leader(1);
-    @include padding-trailer(1);
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    padding: {
-        right: gutter(1);
-        left: gutter(1);
-    };
+    display: none;
 
     @media #{$custom-1024-up} {
+        @include transition(opacity);
+        @include padding-leader(1);
+        @include padding-trailer(1);
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        padding: {
+            right: gutter(1);
+            left: gutter(1);
+        };
         opacity: 0;
 
         &.is-transformed {

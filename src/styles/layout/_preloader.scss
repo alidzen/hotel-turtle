@@ -11,9 +11,10 @@ $loader-size: 100px;
     left: 0;
     background-color: $white;
     z-index: z('preloader');
-
-    @media #{$small-only} {
-        display: none;
+    display: none;
+    
+    @media #{$custom-1024-up} {
+        display: block;
     }
 
     &.is-hide {
