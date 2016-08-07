@@ -75,37 +75,41 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 								<div class="l-action__cnt">
 									<div class="l-action__ttl">
 										<h2 class="f-callback-note b-bottom-dash-pos-left has_margin-small"><?=$arItem['FIELDS']['NAME'];?></h2>
-										<div class="f-adaptive-txt">Идеально для путешественника
+										<div class="f-adaptive-txt"><?=$arItem['FIELDS']['DETAIL_TEXT'];?>
 											<span class="b-price">
-												<? if ($arResult['PROPERTIES']['PRICE_FROM']['VALUE'] != ''): ?>
-													<? if ($arResult['PROPERTIES']['PRICE_TO']['VALUE'] != ''): ?>
-													<?=GetMessage('FROM');?> <?=$arResult['PROPERTIES']['PRICE_FROM']['VALUE'];?> <span
-														class="b-ruble">g</span>
-													<?=GetMessage('TO');?> <?=$arResult['PROPERTIES']['PRICE_TO']['VALUE'];?>  <span
-														class="b-ruble">g</span>
-													<? else: ?>
-													<?=$arResult['PROPERTIES']['PRICE_FROM']['VALUE'];?> <span
-														class="b-ruble">g</span>
-													<? if ($arResult['PROPERTIES']['OLD_PRICE']['VALUE'] != ''): ?>
-													<span
-															class="b-room__old-price"><?=$arResult['PROPERTIES']['OLD_PRICE']['VALUE'];?>
-														<span class="b-ruble">g</span></span>
-													<? endif; ?>
-													<?endif;?>
+												<? if ($arItem['PROPERTIES']['PRICE_FROM']['VALUE'] != ''): ?>
+												<? if ($arItem['PROPERTIES']['PRICE_TO']['VALUE'] != ''): ?>
+												<?=GetMessage(
+																'FROM'
+															);?> <?=$arItem['PROPERTIES']['PRICE_FROM']['VALUE'];?><span
+													class="b-ruble">g</span>
+												<?=GetMessage(
+																'TO'
+															);?> <?=$arItem['PROPERTIES']['PRICE_TO']['VALUE'];?>  <span
+													class="b-ruble">g</span>
+												<? else: ?>
+												<?=$arItem['PROPERTIES']['PRICE_FROM']['VALUE'];?> <span
+													class="b-ruble">g</span>
+												<? if ($arItem['PROPERTIES']['OLD_PRICE']['VALUE'] != ''): ?>
+												<span
+														class="b-room__old-price"><?=$arItem['PROPERTIES']['OLD_PRICE']['VALUE'];?>
+													<span class="b-ruble">g</span></span>
+												<? endif; ?>
+												<? endif; ?>
 												<? endif; ?>
 											</span>
 										</div>
-										<p><?=$arItem['FIELDS']['DETAIL_TEXT'];?></p>
 									</div>
+
 									<div class="l-room-item">
-										<? if (count($arResult['galery']) > 0): ?>
+										<? if (count($arItem['galery']) > 0): ?>
 										<div class="l-room-item__gallery">
 											<div class="b-gallery b-gallery_theme_room j-gallery j-gallery_theme_mobile">
 												<div data-ratio="16/9" data-width="100%" data-arrows="false" data-nav="thumbs"
 													 data-fit="cover" data-loop="true" data-autoplay="false" data-transition="dissolve"
 													 data-transitionduration="600" data-allowfullscreen="native" data-thumbwidth="100"
 													 data-margin="-1" class="b-gallery__base">
-													<? foreach ($arResult['galery'] as $arImage): ?>
+													<? foreach ($arItem['galery'] as $arImage): ?>
 													<a href="<?=$arImage['SRC']?>"></a>
 													<? endforeach; ?>
 												</div>
@@ -113,57 +117,54 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 												   class="j-gallery__prev b-gallery__arrow b-gallery__arrow_show_prev">Показать
 													предыдущий слайд</a>
 												<a href="javascript:;"
-												   class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать следущий
+												   class="j-gallery__next b-gallery__arrow b-gallery__arrow_show_next">Показать
+													следущий
 													слайд</a></div>
 										</div>
 										<? endif; ?>
 										<div class="l-room-item__descr">
 											<div class="l-room-item__params">
-												<? if ($arResult['PROPERTIES']['R_SIZE']['VALUE'] != ''): ?>
-												<div class="b-room-param"><?=GetMessage('ROOM_SIZE_TEXT');?>: 
-													<span class="b-room-param__data"><?=$arResult['PROPERTIES']['R_SIZE']['VALUE'];?> м<sup>2</sup></span>
-												</div>
-												<? endif; ?>
-												<? if ($arResult['PROPERTIES']['BED']['VALUE'] != ''): ?>
-												<div class="b-room-param"><?=GetMessage('NUM_OF_BED');?>: 
-													<span class="b-room-param__data"><?=$arResult['PROPERTIES']['BED']['VALUE'];?></span>
-												</div>
-												<? endif; ?>
-												<? if ($arResult['PROPERTIES']['P_MAX']['VALUE'] != ''): ?>
-												<div class="b-room-param"><?=GetMessage('NUM_OF_GUESTS');?>: 
-													<span class="b-room-param__data"><?=$arResult['PROPERTIES']['P_MAX']['VALUE'];?></span>
-												</div>
-												<? endif; ?>
-											</div>
-											<div class="l-room-item__feature">
-												<ul class="b-room-list">
-													<li class="b-room-list__item">
-														<div class="b-room-list__item-img b-room-list__item-img_img_window"></div>
-														<div class="b-room-list__item-txt"><?=GetMessage('MANSARDA');?></div>
-													</li>
-													<li class="b-room-list__item">
-														<div class="b-room-list__item-img b-room-list__item-img_img_fan"></div>
-														<div class="b-room-list__item-txt"><?=GetMessage('COND');?></div>
-													</li>
-													<li class="b-room-list__item">
-														<div class="b-room-list__item-img b-room-list__item-img_img_wi-fi"></div>
-														<div class="b-room-list__item-txt"><?=GetMessage('FREE_WIFI');?></div>
-													</li>
-												</ul>
-											</div>
-											<? if (count($arResult['services'])): ?>
-											<div class="l-room-item__hang">
-												<ul class="b-room-hang">
-													<? foreach ($arCol as $strSname): ?>
-													<li><?=$strSname;?></li>
-													<? endforeach; ?>
-												</ul>
-											</div>
-											<? endif; ?>
-											<div class="l-room-item__btn">
-												<a href="#" class="b-btn b-btn_width_auto">Забронировать</a>
+												<? if ($arItem['PROPERTIES']['R_SIZE']['VALUE'] != ''): ?>
+													<div class="b-room-param"><?=GetMessage('ROOM_SIZE_TEXT');?>: 
+														<span class="b-room-param__data"><?=$arItem['PROPERTIES']['R_SIZE']['VALUE'];?> м<sup>2</sup></span>
+													</div>
+												<?endif;?>
+												<? if ($arItem['PROPERTIES']['BED']['VALUE'] != ''): ?>
+													<div class="b-room-param"><?=GetMessage('NUM_OF_BED');?>: 
+														<span class="b-room-param__data"><?=$arItem['PROPERTIES']['BED']['VALUE'];?></span>
+													</div>
+												<?endif;?>
+												<? if ($arItem['PROPERTIES']['P_MAX']['VALUE'] != ''): ?>
+													<div class="b-room-param"><?=GetMessage('NUM_OF_GUESTS');?>: 
+														<span class="b-room-param__data"><?=$arItem['PROPERTIES']['P_MAX']['VALUE'];?></span>
+													</div>
+												<?endif;?>
 											</div>
 										</div>
+										<div class="l-room-item__feature">
+											<ul class="b-room-list">
+												<li class="b-room-list__item">
+													<div class="b-room-list__item-img b-room-list__item-img_img_window"></div>
+													<div class="b-room-list__item-txt"><?=GetMessage('MANSARDA');?></div>
+												</li>
+												<li class="b-room-list__item">
+													<div class="b-room-list__item-img b-room-list__item-img_img_fan"></div>
+													<div class="b-room-list__item-txt"><?=GetMessage('COND');?></div>
+												</li>
+												<li class="b-room-list__item">
+													<div class="b-room-list__item-img b-room-list__item-img_img_wi-fi"></div>
+													<div class="b-room-list__item-txt"><?=GetMessage('FREE_WIFI');?></div>
+												</li>
+											</ul>
+										</div>
+										<div class="l-room-item__hang">
+											<ul class="b-room-hang">
+												<? foreach ($arCol as $strSname): ?>
+												<li><?=$strSname;?></li>
+												<? endforeach; ?>
+											</ul>
+										</div>
+										<div class="l-room-item__btn"><a href="#" class="b-btn b-btn_width_auto">Забронировать</a></div>
 									</div>
 								</div>
 							</div>
