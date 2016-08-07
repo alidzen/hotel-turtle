@@ -20,7 +20,7 @@
 }
 
 .l-services__row {
-    @include span(full);
+    @include padding-x(gutter(2));
     
     @media #{$medium-up} {
         @include span(10 center);
