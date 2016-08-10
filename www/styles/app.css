@@ -831,6 +831,17 @@ input[type='text'], input[type="password"], input[type="tel"], input[type="email
       font-size: 22px;
       line-height: 24px; } }
 
+
+.f-room-caption {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Geometria", sans-serif; }
+  @media only screen and (min-width: 641px) {
+    
+    .f-room-caption {
+      font-size: 16px;
+      line-height: 24px; } }
+
 small {
   font-size: 14px; }
 
@@ -7818,7 +7829,8 @@ select {
   @media only screen and (min-width: 641px) {
     .l-room-item__gallery {
       width: 66.66667%;
-      float: left; } }
+      float: left;
+      padding-right: 10px; } }
 
 .l-room-item__descr {
   padding-right: 10px;

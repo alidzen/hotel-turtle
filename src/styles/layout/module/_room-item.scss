@@ -11,6 +11,7 @@
     
     @media #{$medium-up} {
         @include span(8);
+        padding-right: gutter(1);
     }
 }
 

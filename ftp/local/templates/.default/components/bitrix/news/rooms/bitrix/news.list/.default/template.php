@@ -75,7 +75,7 @@ $isRoomsDir = ($APPLICATION->GetCurDir() == '/rooms/');
 								<div class="l-action__cnt">
 									<div class="l-action__ttl">
 										<h2 class="f-callback-note b-bottom-dash-pos-left has_margin-small"><?=$arItem['FIELDS']['NAME'];?></h2>
-										<div class="f-adaptive-txt"><?=$arItem['FIELDS']['DETAIL_TEXT'];?>
+										<div class="f-room-caption"><?=$arItem['FIELDS']['DETAIL_TEXT'];?>
 											<span class="b-price">
 												<? if ($arItem['PROPERTIES']['PRICE_FROM']['VALUE'] != ''): ?>
 												<? if ($arItem['PROPERTIES']['PRICE_TO']['VALUE'] != ''): ?>

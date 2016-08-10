@@ -457,6 +457,18 @@ h2 {
     }
 }
 
+%f-room-caption,
+.f-room-caption {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $font;
+    
+    @media #{$medium-up} {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 // SMALL
 $small-font-size: $base-font-size - 2 !default;
 
