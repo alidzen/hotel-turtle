@@ -167,6 +167,10 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
         setTimeout(function () {
             $loader.hide();
         }, 600);
+        setTimeout(function () {
+            // создать кастомное событие.
+            $(window).triggerHandler('scrollToAction');
+        }, 600);
     };
 
     //Sticky nav
@@ -328,15 +332,6 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
                 numberOfMonths: 1
             });
 
-            /*onClose: function() {
-                var minDate = $(this).datepicker('getDate');
-                if (minDate === null) {
-                    return;
-                }
-                var newMin = new Date(minDate.setDate(minDate
-                        .getDate() + 1));
-                $endDate.datepicker('option', 'minDate', newMin);
-            }*/
             $endDate.datepicker({
                 defaultDate: '+1w',
                 minDate: '+1d',
@@ -345,16 +340,7 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
                 numberOfMonths: 1
             });
         });
-    })( /*onClose: function() {
-            var maxDate = $(this).datepicker('getDate');
-            if (maxDate === null) {
-                return;
-            }
-            var newMax  = new Date(maxDate.setDate(maxDate
-                    .getDate() - 1));
-            $startDate.datepicker('option', 'maxDate',  newMax);
-        }*/
-    $('.j-date-booking'));
+    })($('.j-date-booking'));
 
     // resize header-menu
     (function ($headerMenu) {
@@ -591,6 +577,15 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
             });
         });
     })($('.j-slider'));
+
+    // Плавный скролл к акции с id = actions-block, если приходим по ссылке
+    if (window.location.hash === '#actions') {
+        $(window).one('scrollToAction', function () {
+            $('html, body').animate({
+                scrollTop: $('#actions-block').offset().top - 80
+            }, 500, 'swing');
+        });
+    }
 
     return {};
 });

@@ -162,19 +162,6 @@ define('app', [
         }
     });
 
-    var scrollToBlock = function(el, offset) {
-        $('html, body').animate({scrollTop: 0}, 1, false, function () {
-            if (offset === undefined)
-                offset = 0;
-
-            var duration = 1000,
-                element = $(el).offset(),
-                pos = element.top - offset;
-
-            $('html, body').animate({scrollTop: pos}, duration);
-        });
-    };
-
     // smooth hide preloader, show link
     var hidePreloader = function() {
         // hide loader
@@ -184,9 +171,10 @@ define('app', [
         setTimeout(function() {
             $loader.hide();
         }, 600);
-
-        if (window.location.hash != '')
-            scrollToBlock(window.location.hash, 60);
+        setTimeout(function() {
+            // создать кастомное событие.
+            $(window).triggerHandler('scrollToAction');
+        }, 600);
     };
 
     //Sticky nav
@@ -613,6 +601,15 @@ define('app', [
             })
         });
     })($('.j-slider'));
+
+    // Плавный скролл к акции с id = actions-block, если приходим по ссылке
+    if(window.location.hash === '#actions') {
+        $(window).one('scrollToAction', function() {
+            $('html, body').animate({
+                scrollTop: $('#actions-block').offset().top - 80
+            }, 500, 'swing');
+        });
+    }
 
     return {};
 });

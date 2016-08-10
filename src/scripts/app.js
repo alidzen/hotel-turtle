@@ -181,6 +181,10 @@ define('app', [
         setTimeout(function() {
             $loader.hide();
         }, 600);
+        setTimeout(function() {
+            // создать кастомное событие.
+            $(window).triggerHandler('scrollToAction');
+        }, 600);
     };
 
     //Sticky nav
@@ -339,16 +343,7 @@ define('app', [
                 minDate: 0,
                 firstDay: 0,
                 dateFormat: 'dd/mm/yy',
-                numberOfMonths: 1,
-                /*onClose: function() {
-                    var minDate = $(this).datepicker('getDate');
-                    if (minDate === null) {
-                        return;
-                    }
-                    var newMin = new Date(minDate.setDate(minDate
-                            .getDate() + 1));
-                    $endDate.datepicker('option', 'minDate', newMin);
-                }*/
+                numberOfMonths: 1
             });
 
             $endDate.datepicker({
@@ -356,16 +351,7 @@ define('app', [
                 minDate: '+1d',
                 firstDay: 0,
                 dateFormat: 'dd/mm/yy',
-                numberOfMonths: 1,
-                /*onClose: function() {
-                    var maxDate = $(this).datepicker('getDate');
-                    if (maxDate === null) {
-                        return;
-                    }
-                    var newMax  = new Date(maxDate.setDate(maxDate
-                            .getDate() - 1));
-                    $startDate.datepicker('option', 'maxDate',  newMax);
-                }*/
+                numberOfMonths: 1
             });
         });
     })($('.j-date-booking'));
@@ -619,6 +605,15 @@ define('app', [
             });
         });
     })($('.j-slider'));
+
+    // Плавный скролл к акции с id = actions-block, если приходим по ссылке
+    if(window.location.hash === '#actions') {
+        $(window).one('scrollToAction', function() {
+            $('html, body').animate({
+                scrollTop: $('#actions-block').offset().top - 80
+            }, 500, 'swing');
+        });
+    }
 
     return {};
 });
