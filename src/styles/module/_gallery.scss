@@ -315,7 +315,7 @@ $gallery-dots-frame-height: 30px !default;
 
 .b-gallery_theme_home {
     // Custom style for slide with special propose
-    .fotorama__nav__frame--dot:nth-child(5) {
+    .fotorama__nav__frame--dot:nth-child(2) {
         .fotorama__dot {
             background-color: rgba($red, .6);
         }

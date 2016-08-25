@@ -5757,7 +5757,7 @@ select {
   .b-gallery_theme_room .fotorama__nav {
     bottom: -80px; }
 
-.b-gallery_theme_home .fotorama__nav__frame--dot:nth-child(5) .fotorama__dot {
+.b-gallery_theme_home .fotorama__nav__frame--dot:nth-child(2) .fotorama__dot {
   background-color: rgba(218, 54, 54, 0.6); }
 
 .l-showcase__gallery_dots_lower .fotorama__nav.fotorama__nav--dots,
