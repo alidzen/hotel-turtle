@@ -16,7 +16,7 @@ $this->setFrameMode(true);
 <?if(count($arResult['ITEMS'])):?>
 	<?foreach($arResult['ITEMS'] as $i => $arItem):?>
 		<?if($i%2):?>
-			<section class="l-article l-limit-wrap no-padding">
+			<section class="l-article l-limit-wrap no-padding" id="actions-block">
 				<div class="l-article__cnt">
 					<div class="b-card">
 						<div class="b-card__border">
@@ -39,7 +39,7 @@ $this->setFrameMode(true);
 			</div>
 		</section>
 		<?else:?>
-			<section class="l-article l-limit-wrap no-padding">
+			<section class="l-article l-limit-wrap no-padding" id="actions-block">
 				<div class="l-article__cnt">
 					<div class="b-card">
 						<div class="b-card__border">

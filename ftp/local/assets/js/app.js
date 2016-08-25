@@ -33,19 +33,25 @@ define('app', [
     var $selectMenu = $navMenu.find('select');
     var $datepickerHeader = $header.find('.j-date-inp');
     var $selectHeader = $header.find('select');
-	var $bookingForm = $('.b-booking-form__form');
+	//var $bookingForm = $('.b-booking-form__form');
+    var $bookPopup = $('.b-popup .b-btn.b-btn_width_auto');
 
     var pos;
     // animated link after loading
     var $activeLink = $header.find('.b-nav__link.is-active');
 
-	$bookingForm.submit(function(e){
+	/*$bookingForm.submit(function(e){
 		var BookingDfrom = $(this).find('.b-booking-form__inp').val() || null,
 			BookingDto = $(this).find('.b-booking-to__inp').val() || null;
 
+        var date1 = new Date(BookingDfrom);
+        var date2 = new Date(BookingDto);
+        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+        var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
 		if(BookingDfrom != null && BookingDto != null)
 		{
-			var url = 'https://wubook.net/wbkd/wbk/?lcode=1442495155&dfrom='+BookingDfrom+'&dto='+BookingDto,
+			var url = 'https://wubook.net/wbkd/wbk/?lcode=1442495155&dfrom='+BookingDfrom+'&nights='+diffDays,
 				w = 800,
 			    h = 600,
 			    left = Number((screen.width/2)-(w/2)),
@@ -61,7 +67,7 @@ define('app', [
 		};
 
 		e.preventDefault();
-	});
+	});*/
 
     $burgerBtn.click(function() {
         var $self = $(this);
@@ -162,6 +168,20 @@ define('app', [
         }
     });
 
+    $bookPopup.click(function (e) {
+        var url = 'https://wubook.net/wbkd/wbk/?lcode=1442495155',
+            w = 800,
+            h = 600,
+            left = Number((screen.width/2)-(w/2)),
+            tops = Number((screen.height/2)-(h/2));
+
+        var newwindow = window.open(url, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + tops + ', left=' + left);
+
+        if (window.focus)
+            newwindow.focus()
+
+        e.preventDefault();
+    });
     // smooth hide preloader, show link
     var hidePreloader = function() {
         // hide loader
@@ -549,11 +569,24 @@ define('app', [
                 type: 'iframe',
                 mainClass: 'mfp-fade',
                 removalDelay: 160,
-                preloader: false,
+                preloader: true,
                 fixedContentPos: true,
                 tClose: 'Закрыть',
-                closeMarkup: '<button title="%title%" type="button" ' +
-                'class="mfp-close">Закрыть</button>'
+                tLoading: 'Загрузка...',
+                closeMarkup: '<button title="%title%" type="button" ' + 'class="mfp-close">Закрыть</button>',
+                callbacks: {
+                    elementParse: function(item) {
+                        var element         = item.el,
+                            form            = element.parents('.main-book'),
+                            BookingDfrom    = form.find('.b-booking-from__inp').datepicker('getDate'),
+                            BookingDto      = form.find('.b-booking-to__inp').datepicker('getDate');
+
+                        var timeDiff = Math.abs(BookingDto.getTime() - BookingDfrom.getTime()),
+                            nights = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+                        item.src = 'https://wubook.net/wbkd/wbk/?lcode=1442495155&dfrom='+$.datepicker.formatDate('dd/mm/yy', BookingDfrom)+'&dto='+$.datepicker.formatDate('dd/mm/yy', BookingDto);
+                    }
+                }
             });
         });
     })($('.j-frame'));

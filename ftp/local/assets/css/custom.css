@@ -111,3 +111,26 @@ body .bx-core-adm-dialog, body .bx-core-adm-dialog a, body .bx-core-adm-dialog s
 		width: 330px;
 	}
 }
+
+.b-gallery__propose .b-gallery__ttl {
+	text-transform: uppercase !important;
+	line-height: 38px !important;
+}
+.b-gallery__txt { line-height: 20px !important; }
+.b-map__close {
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+.b-price {  float: inherit !important; }
+
+.b-cafe-gallery__txt.contacts > a {
+	font-size: 30px;
+	line-height: 45px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	font-family: "Geometria", sans-serif;
+}
+
+.b-cafe-gallery__txt.contacts .b-cafe-gallery__tel:after { height: 0; }
+.b-feature__cnt:before { height: 185px; }

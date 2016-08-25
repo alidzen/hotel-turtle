@@ -56,6 +56,35 @@ $APPLICATION->SetTitle("Атмосфера | Бутик-отель \"Ахилл�
 		</div>
 	</div>
 </section>
+<section class="l-article l-limit-wrap no-padding">
+	<div class="l-article__cnt">
+		<div class="b-article b-article__theme_atmosphere-page">
+			<div class="b-article__border b-article__border_scheme_3">
+				<div class="b-article__img-wrap">
+					<img alt="Зарисовка часов" src="/local/assets/img/atmosphere-bg-1.svg">
+				</div>
+				<article class="b-article__cnt">
+					<div class="b-article__header">
+						<div class="b-article__ttl-note">
+							<? $APPLICATION->IncludeFile(
+								'/local/area/'.LANGUAGE_ID.'/atmosphere-always-ttl.php',
+								[],
+								['MODE' => 'html']
+							); ?>
+						</div>
+					</div>
+					<p>
+						<? $APPLICATION->IncludeFile(
+							'/local/area/'.LANGUAGE_ID.'/atmosphere-always-text.php',
+							[],
+							['MODE' => 'html']
+						); ?>
+					</p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
 <section class="l-showcase__inner-row">
 	<div class="l-showcase l-showcase_theme_img-bg j-gallery-container">
 		<div class="l-showcase__descr">
@@ -100,35 +129,6 @@ $APPLICATION->SetTitle("Атмосфера | Бутик-отель \"Ахилл�
 				["CODE" => "atmosphere-bottom"],
 				false
 			); ?>
-		</div>
-	</div>
-</section>
-<section class="l-article l-limit-wrap no-padding">
-	<div class="l-article__cnt">
-		<div class="b-article b-article__theme_atmosphere-page">
-			<div class="b-article__border b-article__border_scheme_3">
-				<div class="b-article__img-wrap">
-					<img alt="Зарисовка часов" src="/local/assets/img/atmosphere-bg-1.svg">
-				</div>
-				<article class="b-article__cnt">
-					<div class="b-article__header">
-						<div class="b-article__ttl-note">
-							<? $APPLICATION->IncludeFile(
-								'/local/area/'.LANGUAGE_ID.'/atmosphere-always-ttl.php',
-								[],
-								['MODE' => 'html']
-							); ?>
-						</div>
-					</div>
-					<p>
-						<? $APPLICATION->IncludeFile(
-							'/local/area/'.LANGUAGE_ID.'/atmosphere-always-text.php',
-							[],
-							['MODE' => 'html']
-						); ?>
-					</p>
-				</article>
-			</div>
 		</div>
 	</div>
 </section>

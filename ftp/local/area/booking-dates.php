@@ -1,4 +1,4 @@
-<form action="" data-noinit="" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form j-date-booking">
+<form action="" data-noinit="" data-message="Спасибо, что воспользовались данной услугой. Наш менеджер перезвонит в удобное для вас время." class="b-booking-form__form j-date-booking main-book">
 	 <!--<div class="b-booking-form__info">
 		<div class="b-booking-form__info-ttl">14 номеров</div>
 		<div class="b-booking-form__txt">забронировали сегодня</div>
@@ -31,6 +31,6 @@
 	</div>
 	<div class="b-booking-form__col">
 		<input type="text" placeholder="<?=(LANGUAGE_ID == 'ru' ? 'Дата заезда' : 'Check-in date');?>"
-			   class="b-booking-form__inp j-date-inp j-date-from">
+			   class="b-booking-from__inp j-date-inp j-date-from">
 	</div>
 </form>
