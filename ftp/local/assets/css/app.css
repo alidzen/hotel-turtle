@@ -5594,13 +5594,15 @@ select {
     padding: 10px;
     width: 170px;
     background: url("../img/propose-bg-1.png") no-repeat 50% 50% rgba(254, 254, 253, 0.8);
-    bottom: 60px;
+    top: 107px;
+    bottom: auto;
     right: 0;
     margin-right: 0;
     z-index: 1; }
 @media only screen and (min-width: 641px) {
     .b-gallery__cnt {
         padding: 15px 20px;
+        top: auto;
         bottom: 84px;
         width: 240px;
         background-color: rgba(254, 254, 253, 0.95); } }
@@ -5662,6 +5664,10 @@ select {
     .b-gallery__fs {
         display: block; } }
 
+.b-gallery__ttl {
+    margin-bottom: 6px;
+    text-transform: uppercase; }
+
 .fotorama__nav--thumbs {
     text-align: center; }
 
@@ -5686,7 +5692,12 @@ select {
     bottom: 0px; }
 
 .fotorama__nav {
-    background-color: transparent; }
+    background-color: transparent;
+    position: absolute;
+    bottom: 30px; }
+@media only screen and (min-width: 1024px) {
+    .fotorama__nav {
+        bottom: 60px; } }
 
 .fotorama__nav__shaft {
     margin-bottom: 0px; }
@@ -5713,10 +5724,6 @@ select {
     text-align: center;
     padding: 0 0;
     background-color: transparent; }
-
-.fotorama__nav {
-    position: absolute;
-    bottom: 30px; }
 
 .fotorama__nav--dots .fotorama__nav__frame {
     width: 18px;
@@ -5749,6 +5756,9 @@ select {
     overflow: inherit; }
 .b-gallery_theme_room .fotorama__nav {
     bottom: -80px; }
+
+.b-gallery_theme_home .fotorama__nav__frame--dot:nth-child(5) .fotorama__dot {
+    background-color: rgba(218, 54, 54, 0.6); }
 
 .l-showcase__gallery_dots_lower .fotorama__nav.fotorama__nav--dots,
 .b-card__gallery .fotorama__nav.fotorama__nav--dots,
@@ -7357,10 +7367,11 @@ select {
 
 .b-card__gallery {
     display: block;
-    overflow: hidden; }
-@media only screen and (min-width: 50px) {
+    overflow: hidden;
+    height: 400px; }
+@media only screen and (min-width: 641px) {
     .b-card__gallery {
-        height: 400px; } }
+        height: 600px; } }
 @media only screen and (min-width: 1025px) {
     .b-card__gallery {
         position: absolute;

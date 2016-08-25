@@ -82,9 +82,10 @@
 .b-card__gallery {
     display: block;
     overflow: hidden;
+    height: 400px;
 
     @media #{$medium-up} {
-        height: 400px;
+        height: 600px;
     }
 
     @media #{$big-up} {

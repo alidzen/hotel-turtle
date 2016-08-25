@@ -28,12 +28,13 @@ $this->setFrameMode(true);
 								<div class="b-card__descr">
 								<p><?=$arItem['PREVIEW_TEXT'];?></p>
 								</div>
-								<a href="<?=$arItem['DETAIL_PAGE_URL'];?>"
-								   class="b-card__link"><?=GetMessage('READ_MORE');?></a></div>
-							<a href="/html/action.html" class="b-card__gallery">
+								<!--<a href="<?=$arItem['DETAIL_PAGE_URL'];?>"
+								   class="b-card__link"><?=GetMessage('READ_MORE');?></a>-->
+							</div>
+							<div class="b-card__gallery">
 								<div style="background-image: url('<?=$arItem['PREVIEW_PICTURE']['SRC'];?>')"
 									 class="b-card__gallery-img"></div>
-							</a>
+							</div>
 					</div>
 				</div>
 			</div>

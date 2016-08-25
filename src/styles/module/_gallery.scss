@@ -98,13 +98,15 @@ $gallery-dots-frame-height: 30px !default;
     padding: 10px;
     width: 170px;
     background: url('/img/propose-bg-1.png') no-repeat 50% 50% rgba($white, .8);
-    bottom: 60px;
+    top: 83px + rhythm(1);
+    bottom: auto;
     right: 0;
     margin-right: 0;
     z-index: z('default');
 
     @media #{$medium-up} {
         padding: 15px 20px;
+        top: auto;
         bottom: 60px + rhythm(1);
         width: 240px;
         background-color: rgba($white, .95);
@@ -165,6 +167,8 @@ $gallery-dots-frame-height: 30px !default;
 
 .b-gallery__ttl {
     @extend %f-special;
+    @include margin-trailer(.25);
+    text-transform: uppercase;
 }
 
 .b-gallery__txt {
@@ -208,6 +212,12 @@ $gallery-dots-frame-height: 30px !default;
 
 .fotorama__nav {
     background-color: $gallery-image-container-bg-color;
+    position: absolute;
+    bottom: 30px;
+    
+    @media #{$custom-1024-up} {
+        bottom: 60px;
+    }
 }
 
 .fotorama__nav__shaft {
@@ -242,12 +252,6 @@ $gallery-dots-frame-height: 30px !default;
     text-align: $gallery-dots-position;
     padding: 0 $gallery-dots-horizontal-paddings;
     background-color: $gallery-dots-background-color;
-}
-
-// scss-lint:disable MergeableSelector
-.fotorama__nav {
-    position: absolute;
-    bottom: 30px;
 }
 
 .fotorama__nav--dots .fotorama__nav__frame {

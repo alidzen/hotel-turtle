@@ -44,62 +44,41 @@ define([
             mapTypeControl: false,
             styles:[
                 {
-                    "featureType": "administrative.land_parcel",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape.man_made",
+                    "featureType": "landscape",
                     "elementType": "geometry",
                     "stylers": [
                         {
-                            "visibility": "on"
+                            "hue": "#ff9900"
                         },
                         {
-                            "hue": "#caff00"
+                            "saturation": "22"
                         },
                         {
-                            "lightness": "80"
+                            "lightness": "12"
                         },
                         {
-                            "saturation": "30"
+                            "gamma": "0.81"
                         },
                         {
-                            "weight": "5.39"
-                        },
-                        {
-                            "gamma": "0.30"
+                            "weight": "0.76"
                         }
                     ]
                 },
                 {
-                    "featureType": "landscape.natural",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape.natural",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "color": "#eeeeee"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape.natural",
+                    "featureType": "landscape",
                     "elementType": "geometry.stroke",
                     "stylers": [
                         {
-                            "visibility": "on"
+                            "gamma": "0.32"
+                        },
+                        {
+                            "lightness": "34"
+                        },
+                        {
+                            "weight": "0.33"
+                        },
+                        {
+                            "saturation": "29"
                         }
                     ]
                 },
@@ -108,28 +87,19 @@ define([
                     "elementType": "geometry",
                     "stylers": [
                         {
-                            "visibility": "on"
+                            "hue": "#ff9900"
                         }
                     ]
                 },
                 {
                     "featureType": "poi",
-                    "elementType": "geometry.fill",
+                    "elementType": "labels.text",
                     "stylers": [
                         {
-                            "visibility": "on"
+                            "hue": "#008fff"
                         },
                         {
-                            "color": "#ded1b4"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "geometry.stroke",
-                    "stylers": [
-                        {
-                            "visibility": "off"
+                            "visibility": "on"
                         }
                     ]
                 },
@@ -138,13 +108,22 @@ define([
                     "elementType": "all",
                     "stylers": [
                         {
-                            "visibility": "on"
+                            "visibility": "off"
                         }
                     ]
                 },
                 {
                     "featureType": "poi.business",
                     "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.business",
+                    "elementType": "labels.text",
                     "stylers": [
                         {
                             "visibility": "off"
@@ -170,56 +149,11 @@ define([
                     ]
                 },
                 {
-                    "featureType": "poi.park",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.park",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "color": "#ded1b4"
-                        }
-                    ]
-                },
-                {
                     "featureType": "poi.place_of_worship",
                     "elementType": "all",
                     "stylers": [
                         {
                             "visibility": "on"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.place_of_worship",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#ded1b4"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.place_of_worship",
-                    "elementType": "labels.text.stroke",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.school",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "off"
                         }
                     ]
                 },
@@ -228,7 +162,7 @@ define([
                     "elementType": "all",
                     "stylers": [
                         {
-                            "visibility": "off"
+                            "visibility": "on"
                         }
                     ]
                 },
@@ -237,46 +171,76 @@ define([
                     "elementType": "geometry.fill",
                     "stylers": [
                         {
-                            "color": "#fefefd"
+                            "color": "#ffffff"
                         }
                     ]
                 },
                 {
                     "featureType": "road",
-                    "elementType": "geometry.stroke",
+                    "elementType": "labels.text",
                     "stylers": [
                         {
-                            "visibility": "off"
+                            "saturation": "-16"
+                        },
+                        {
+                            "lightness": "-38"
+                        },
+                        {
+                            "gamma": "6.81"
                         }
                     ]
                 },
                 {
-                    "featureType": "transit.station",
+                    "featureType": "road",
                     "elementType": "labels.text.fill",
                     "stylers": [
                         {
-                            "color": "#1e1e1f"
+                            "color": "#343434"
+                        },
+                        {
+                            "lightness": "8"
                         }
                     ]
                 },
                 {
-                    "featureType": "transit.station",
+                    "featureType": "road",
                     "elementType": "labels.icon",
                     "stylers": [
                         {
-                            "lightness": "16"
+                            "hue": "#ffac00"
                         },
                         {
-                            "saturation": "93"
+                            "saturation": "-100"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "labels.text",
+                    "stylers": [
+                        {
+                            "hue": "#ff7300"
                         },
                         {
-                            "hue": "#009cff"
+                            "gamma": "0.00"
                         },
                         {
-                            "gamma": "0.54"
+                            "lightness": "0"
                         },
                         {
-                            "weight": "9.43"
+                            "saturation": "-95"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "weight": "0.01"
+                        },
+                        {
+                            "hue": "#ffb200"
                         }
                     ]
                 },
@@ -291,22 +255,10 @@ define([
                 },
                 {
                     "featureType": "water",
-                    "elementType": "labels.text.fill",
+                    "elementType": "labels.text",
                     "stylers": [
                         {
                             "color": "#ffffff"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "labels.text.stroke",
-                    "stylers": [
-                        {
-                            "color": "#ff0000"
-                        },
-                        {
-                            "visibility": "off"
                         }
                     ]
                 }

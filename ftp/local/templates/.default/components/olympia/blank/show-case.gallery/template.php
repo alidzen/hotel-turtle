@@ -1,6 +1,6 @@
 <?if($arResult['ITEMS'] !== NULL):?>
 	<div
-		class="<?=(isset($arParams['CLASS_LIST']) ? $arParams['CLASS_LIST'] : 'b-gallery j-gallery j-gallery_theme_mobile');?>">
+		class="<?=(isset($arParams['CLASS_LIST']) ? $arParams['CLASS_LIST'] : 'b-gallery j-gallery j-gallery_theme_mobile j-gallery_theme_tablet');?>">
 		<div data-height="100%" data-minwidth="100%"
 			 data-arrows="false" data-nav="dots" data-fit="cover"
 		 data-loop="true" data-autoplay="false" data-transition="dissolve" data-transitionduration="600"
