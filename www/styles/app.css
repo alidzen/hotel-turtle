@@ -3387,10 +3387,15 @@ blockquote {
 .l-header__gallery {
   position: relative;
   background-color: #fefefd;
-  margin-top: 60px; }
+  margin-top: 30px; }
   @media only screen and (min-width: 1024px) {
     .l-header__gallery {
       margin-top: 0; } }
+  .l-header__gallery .b-gallery {
+    min-height: 400px; }
+    @media only screen and (min-width: 1025px) {
+      .l-header__gallery .b-gallery {
+        min-height: 600px; } }
 
 .l-header__booking {
   position: absolute;
