@@ -12,16 +12,6 @@ $btn-line-margin: 6px;
     background-color: transparent;
     border: 2px solid $gold-2;
 
-    @media #{$big-up} {
-        &:hover {
-            background-color: $gold-2;
-
-            .b-closed-btn__line {
-                background-color: $white;
-            }
-        }
-    }
-
     &.is-active {
         .b-closed-btn__line_numb_1 {
             transform: translate3d(0, 0, 0) rotate(45deg);
@@ -62,4 +52,16 @@ $btn-line-margin: 6px;
 
 .b-closed-btn__line_numb_3 {
     transform: translate3d(0, $btn-line-margin, 0);
+}
+
+
+//state
+.no-touch {
+    &:hover {
+        background-color: $gold-2;
+        
+        .b-closed-btn__line {
+            background-color: $white;
+        }
+    }
 }

@@ -42,7 +42,11 @@
 .l-header__gallery {
     position: relative;
     background-color: $white;
-    margin-top: 30px; // menu height
+    margin-top: $booking-height; // menu height
+    
+    @media #{$medium-up} {
+        margin-top: 30px; // menu height
+    }
 
     @media #{$custom-1024-up} {
         margin-top: 0;

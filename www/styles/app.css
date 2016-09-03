@@ -3387,7 +3387,10 @@ blockquote {
 .l-header__gallery {
   position: relative;
   background-color: #fefefd;
-  margin-top: 30px; }
+  margin-top: 60px; }
+  @media only screen and (min-width: 641px) {
+    .l-header__gallery {
+      margin-top: 30px; } }
   @media only screen and (min-width: 1024px) {
     .l-header__gallery {
       margin-top: 0; } }
@@ -3585,7 +3588,7 @@ blockquote {
   animation: ball-scale-ripple 1s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8); }
 
 .l-stick-menu {
-  position: fixed;
+  position: absolute;
   z-index: 3; }
 
 .l-stick-menu__nav {
@@ -3655,7 +3658,8 @@ blockquote {
   width: 100%;
   top: 0;
   bottom: 0;
-  overflow-y: auto; }
+  overflow-y: auto;
+  height: 100vh; }
   .l-stick-menu__popup.is-active {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -3666,26 +3670,26 @@ blockquote {
   background-size: cover;
   position: absolute;
   width: 100%;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100% - 60px); }
 
 .l-stick-menu__popup-cnt {
   padding-top: 48px;
-  padding-bottom: 24px;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0); }
+  padding-bottom: 24px; }
   @media only screen and (max-width: 640px) {
     .l-stick-menu__popup-cnt {
       padding-right: 20px;
       padding-left: 20px; } }
   @media only screen and (min-width: 737px) {
     .l-stick-menu__popup-cnt {
-      padding-top: 132px;
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%) translateX(-50%);
       -ms-transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%);
       left: 50%; } }
+  @media only screen and (min-width: 1025px) {
+    .l-stick-menu__popup-cnt {
+      padding-top: 132px; } }
 
 .l-stick-menu__popup-nav {
   margin-bottom: 24px; }
@@ -7288,11 +7292,6 @@ select {
   height: 32px;
   background-color: transparent;
   border: 2px solid #bca064; }
-  @media only screen and (min-width: 1025px) {
-    .b-closed-btn:hover {
-      background-color: #bca064; }
-      .b-closed-btn:hover .b-closed-btn__line {
-        background-color: #fefefd; } }
   .b-closed-btn.is-active .b-closed-btn__line_numb_1 {
     -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
     transform: translate3d(0, 0, 0) rotate(45deg); }
@@ -7330,6 +7329,11 @@ select {
 .b-closed-btn__line_numb_3 {
   -webkit-transform: translate3d(0, 6px, 0);
   transform: translate3d(0, 6px, 0); }
+
+.no-touch:hover {
+  background-color: #bca064; }
+  .no-touch:hover .b-closed-btn__line {
+    background-color: #fefefd; }
 
 .b-card {
   position: relative;

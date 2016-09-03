@@ -183,10 +183,6 @@ define('app', ['jquery', 'fastclick', 'modernizr', 'jquery-ui/i18n/datepicker-ru
 
     // show/hide sticky nav
     $(window).scroll(function () {
-        if (touchWidth) {
-            return;
-        }
-
         var scrollPosition = $(window).scrollTop();
 
         if (scrollPosition >= cntHeight) {
