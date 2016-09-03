@@ -1,8 +1,6 @@
 .b-olympia {
     @include grid-clearfix();
     color: $white;
-    display: flex;
-    flex-flow: column nowrap;
 }
 
 .b-olympia__txt {
@@ -14,9 +12,17 @@
 
 .b-olympia__logo-wrap {
     display: block;
+    height: 45px;
 }
 
 .b-olympia__logo {
     display: block;
     width: 90px;
+}
+
+.flexboxlegacy {
+    .b-olympia {
+        display: flex;
+        flex-flow: column nowrap;
+    }
 }

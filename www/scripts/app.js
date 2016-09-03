@@ -1,6 +1,6 @@
 'use strict';
 
-define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'], function ($, FastClick) {
+define('app', ['jquery', 'fastclick', 'modernizr', 'jquery-ui/i18n/datepicker-ru', 'select'], function ($, FastClick, Modernizr) {
     'use strict';
 
     FastClick.attach(document.body);
@@ -369,9 +369,9 @@ define('app', ['jquery', 'fastclick', 'jquery-ui/i18n/datepicker-ru', 'select'],
                     $headerMenu.addClass('is-smaller');
                     // del block
                 } else {
-                        $reviewsBlock.hide();
-                        $headerMenu.removeClass('is-smaller');
-                    }
+                    $reviewsBlock.hide();
+                    $headerMenu.removeClass('is-smaller');
+                }
             }
 
             // set opacity to 1, after show / hide  block

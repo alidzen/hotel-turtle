@@ -3266,57 +3266,6 @@ blockquote {
     display: block;
     clear: both; }
 
-.l-footer__cnt {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background: url("/img/footer-bg.svg") no-repeat 50% 90% #005870;
-  background-size: cover; }
-  @media only screen and (min-width: 1025px) {
-    .l-footer__cnt {
-      padding-top: 36px;
-      padding-bottom: 36px; } }
-
-.l-footer__row {
-  color: #fefefd;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  @media only screen and (min-width: 641px) {
-    .l-footer__row {
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-      -ms-grid-row-align: flex-end;
-      align-items: flex-end;
-      -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-      padding-right: 20px;
-      padding-left: 20px; } }
-
-.l-footer__col {
-  margin-bottom: 36px; }
-  .l-footer__col:after {
-    content: '';
-    display: block;
-    clear: both; }
-  @media only screen and (min-width: 641px) {
-    .l-footer__col {
-      margin-bottom: 0px;
-      -webkit-flex: 0 1 200px;
-      -ms-flex: 0 1 200px;
-      flex: 0 1 200px; } }
-  .l-footer__col:last-child {
-    margin-bottom: 0px; }
-
 .l-main-wrap {
   padding-bottom: 36px;
   overflow: hidden;
@@ -3336,6 +3285,66 @@ blockquote {
   @media only screen and (min-width: 1025px) {
     .l-main-wrap.is-stick {
       padding-top: 60px; } }
+
+.l-footer__cnt {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: url("/img/footer-bg.svg") no-repeat 50% 90% #005870;
+  background-size: cover; }
+  @media only screen and (min-width: 1025px) {
+    .l-footer__cnt {
+      padding-top: 36px;
+      padding-bottom: 36px; } }
+
+.l-footer__row {
+  color: #fefefd; }
+  .l-footer__row:after {
+    content: '';
+    display: block;
+    clear: both; }
+  @media only screen and (min-width: 641px) {
+    .l-footer__row {
+      padding-right: 20px;
+      padding-left: 20px; } }
+
+.l-footer__col {
+  margin-bottom: 36px; }
+  .l-footer__col:after {
+    content: '';
+    display: block;
+    clear: both; }
+  @media only screen and (min-width: 641px) {
+    .l-footer__col {
+      margin-bottom: 0px;
+      width: 33.33333%;
+      float: left; }
+      .l-footer__col:nth-child(2) {
+        margin-bottom: -12px; } }
+  .l-footer__col:last-child {
+    margin-bottom: 0px; }
+
+.flexboxlegacy .l-footer__row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media only screen and (min-width: 641px) {
+    .flexboxlegacy .l-footer__row {
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end;
+      -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap; } }
 
 .l-header:after {
   content: '';
@@ -7236,13 +7245,7 @@ select {
   background-size: cover; }
 
 .b-olympia {
-  color: #fefefd;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap; }
+  color: #fefefd; }
   .b-olympia:after {
     content: '';
     display: block;
@@ -7255,11 +7258,20 @@ select {
   margin-right: 5px; }
 
 .b-olympia__logo-wrap {
-  display: block; }
+  display: block;
+  height: 45px; }
 
 .b-olympia__logo {
   display: block;
   width: 90px; }
+
+.flexboxlegacy .b-olympia {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
 
 .b-closed-btn {
   transition-property: background-color;

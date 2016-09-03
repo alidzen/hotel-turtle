@@ -1,11 +1,13 @@
 define('app', [
     'jquery',
     'fastclick',
+    'modernizr',
     'jquery-ui/i18n/datepicker-ru',
     'select'
 ], function(
     $,
-    FastClick
+    FastClick,
+    Modernizr
 ) {
     'use strict';
 

@@ -61,27 +61,49 @@
     margin-right: auto;
 }
 
+.l-main-wrap {
+    @include padding-trailer(1.5);
+    overflow: hidden;
+    position: relative;
+    padding-top: $booking-height + rhythm(1);
+    z-index: z('default');
+    
+    @media #{$medium-up} {
+        @include padding-trailer(2.5);
+        padding-top: $booking-height + rhythm(2);
+    }
+    
+    @media #{$big-up} {
+        @include padding-trailer(2);
+        padding-top: $booking-height + rhythm(3);
+        background: url('/img/logo-bg.svg') repeat-y 0 0;
+        background-size: cover;
+    }
+    
+    // Прилипает к меню на десктопах
+    &.is-stick {
+        @media #{$big-up} {
+            padding-top: $booking-height;
+        }
+    }
+}
+
+// footer
 .l-footer__cnt {
     @include rhythm-padding(.5);
     background: url('/img/footer-bg.svg') no-repeat 50% 90% $green;
     background-size: cover;
-
+    
     @media #{$big-up} {
         @include rhythm-padding(1.5);
     }
-
 }
 
 .l-footer__row {
+    @include grid-clearfix();
     color: $white;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
 
     @media #{$medium-up} {
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-flow: row nowrap;
         padding: {
             right: gutter(2);
             left: gutter(2);
@@ -95,40 +117,28 @@
 
     @media #{$medium-up} {
         @include margin-trailer(0);
-        flex: 0 1 200px; //set all elem one width for centering
+        @include span(4);
+        
+        &:nth-child(2) {
+            margin-bottom: - rhythm(.5);
+        }
     }
 
     &:last-child {
         @include margin-trailer(0);
     }
-
 }
 
-.l-main-wrap {
-    @include padding-trailer(1.5);
-    overflow: hidden;
-    position: relative;
-    padding-top: $booking-height + rhythm(1);
-    z-index: z('default');
-
-    @media #{$medium-up} {
-        @include padding-trailer(2.5);
-        padding-top: $booking-height + rhythm(2);
-    }
-
-    @media #{$big-up} {
-        @include padding-trailer(2);
-        padding-top: $booking-height + rhythm(3);
-        background: url('/img/logo-bg.svg') repeat-y 0 0;
-        background-size: cover;
-    }
-
-    // Прилипает к меню на десктопах
-    &.is-stick {
-        @media #{$big-up} {
-            padding-top: $booking-height;
+.flexboxlegacy {
+    .l-footer__row {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    
+        @media #{$medium-up} {
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-flow: row nowrap;
         }
     }
 }
-
-
