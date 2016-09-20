@@ -66,3 +66,36 @@
         display: none;
     }
 }
+
+
+.l-stick-menu__form__logo{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    z-index: -1;
+}
+.b-logo__img {
+    width: 240px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+@media(max-width: 650px){
+    .l-stick-menu__form__logo {
+        left: 80px;
+        right: auto;
+    }
+}
+@media(max-width: 500px){
+    .b-logo__img {
+        width: 150px!important;
+    }
+}
+@media(max-width: 430px){
+    .l-stick-menu__form__logo{
+        display: none;
+    }
+}

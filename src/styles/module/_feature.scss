@@ -107,6 +107,8 @@ $img-size: 85px;
 }
 
 .b-feature__header {
+    position: relative;
+    z-index: 50;
     @include margin-trailer(1.5);
 }
 
@@ -138,11 +140,18 @@ $img-size: 85px;
     flex: 0 1 100%;
 
     @media #{$small-only} {
-        flex-flow: column nowrap;
+        flex: 0 1 (100% / 3);
+
+        &:last-of-type{
+            flex: 0 1 100%;
+        }
     }
 
     @media #{$medium-up} {
-        flex: 0 1 50%;
+        flex: 0 1 (100% / 4);
+    }
+    @media #{$small-phone-up-media} {
+        flex: 0 1 49%;
     }
 
     @media #{$big-up} {
@@ -179,8 +188,6 @@ $img-size: 85px;
     @media #{$small-only} {
         position: relative;
         z-index: z('default');
-        top: 50%;
-        transform: translateY(-50%);
     }
 }
 

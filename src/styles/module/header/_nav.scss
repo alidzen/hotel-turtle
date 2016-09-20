@@ -26,6 +26,10 @@ $item-height-popup: 56px;
     position: relative;
     color: $nav-color;
     text-decoration: none;
+    display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 0px;
+
 
     @media #{$big-up} {
         &:hover {
@@ -45,7 +49,7 @@ $item-height-popup: 56px;
         @include transition(width, left, right);
         content: '';
         position: absolute;
-        top: 100%;
+        bottom: 0;
         width: 0;
         left: 50%;
         right: 50%;

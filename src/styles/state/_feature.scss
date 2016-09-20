@@ -82,3 +82,9 @@
         background-image: url('/img/icons/furniture.svg');
     }
 }
+
+@media #{$medium-down} {
+    .b-feature__item-img {
+        margin-bottom: 8px;
+    }
+}

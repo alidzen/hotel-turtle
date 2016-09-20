@@ -75,10 +75,10 @@
         }
     }
 
-    img {
+    img {/*
         height: 100%;
         max-width: none;
-        min-width: 100%;
+        min-width: 100%;*/
 
         @media #{$medium-up} {
             position: absolute;

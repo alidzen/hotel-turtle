@@ -54,7 +54,6 @@ $sticky-menu-height: 60px;
 
 .l-stick-menu__popup {
     @include transition(transform);
-    @include rhythm-padding(2);
     background-color: $white;
     transform: translateY(-100%) translateZ(0); // flick on safari fix;
     position: fixed;
@@ -70,11 +69,14 @@ $sticky-menu-height: 60px;
 }
 
 .l-stick-menu__popup-cnt-wrap {
+    @include rhythm-padding(2);
     background: url('/img/menu-popup-bg.svg') 50% 50% no-repeat $white;
     background-size: cover;
     position: absolute;
     width: 100%;
+    max-height: 100%;
     min-height: calc(100% - #{$sticky-menu-height});
+    overflow-y: auto;
 }
 
 .l-stick-menu__popup-cnt {
@@ -144,5 +146,27 @@ $sticky-menu-height: 60px;
         top: 50%;
         transform: translateY(-50%) translateX(-50%);
         left: 50%;
+    }
+}
+
+@media #{$small-phone-up-media} {
+    .l-stick-menu__popup .b-logo__img {
+        width: 100px;
+    }
+    .l-stick-menu__popup .b-nav_theme_popup .b-nav__link{
+        line-height: 1;
+        font-size: 14px;
+    }
+    .l-stick-menu__popup .l-stick-menu__popup-cnt {
+        padding-top: 20px;
+    }
+    .l-stick-menu__popup .b-menu-logo__txt{
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 450px){
+    .l-stick-menu__form-logo{
+        display: none;
     }
 }

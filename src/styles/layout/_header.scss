@@ -96,8 +96,8 @@
     background-color: rgba($white, .6);
     text-align: center;
 
-    @media #{$small-only} {
-        @include padding-leader(.5);
+    @media #{$medium-down} {
+        @include padding-leader(1.5);
         @include padding-trailer(0);
         background-color: rgba($white, .8);
 
@@ -108,6 +108,9 @@
         .b-menu-logo__txt {
             display: none;
         }
+    }
+    @media #{$small-only} {
+        @include padding-leader(.5);
     }
 
     @media #{$custom-1024-up} {
