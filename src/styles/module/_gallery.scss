@@ -103,13 +103,23 @@ $gallery-dots-frame-height: 30px !default;
     right: 0;
     margin-right: 0;
     z-index: z('default');
+    transition-property: all!important;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 
     @media #{$medium-up} {
         padding: 15px 20px;
-        top: auto;
-        bottom: 60px + rhythm(1);
+        top: 150px;
+        bottom: auto;
         width: 240px;
         background-color: rgba($white, .95);
+    }
+    @media #{$phone-landscape} {
+        top: 120px;
+        padding: 15px;
+        width: 320px;
     }
 
     @media #{$custom-1024-up} {
@@ -137,6 +147,7 @@ $gallery-dots-frame-height: 30px !default;
     position: absolute;
     top: 0;
     left: 50%;
+    white-space: nowrap;
     transform: translateX(-50%);
     background-color: $red;
     border-color: $red;
@@ -327,5 +338,28 @@ $gallery-dots-frame-height: 30px !default;
 .l-showcase__gallery {
     .fotorama__nav.fotorama__nav--dots {
         bottom: 30px;
+    }
+}
+
+
+.fotorama__wrap--css3 .fotorama__html,
+.fotorama__wrap--css3 .fotorama__stage .fotorama__img{
+    border: none;
+}
+
+@media(max-width: 480px){
+    .l-action_theme_room-item .b-price{
+        display: block;
+    }
+    .b-cafe-gallery__txt.contacts > a{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+
+.fotorama__nav.fotorama__nav--dots {
+    @media #{$phone-landscape} {
+        bottom: 0px;
     }
 }

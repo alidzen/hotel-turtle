@@ -16,7 +16,7 @@
 }
 
 .l-room-item__descr {
-    @include padding-x(gutter(1));
+    @include padding-x(gutter(1.5));
     
     @media #{$medium-up} {
         @include span(4);

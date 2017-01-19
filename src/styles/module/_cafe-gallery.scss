@@ -4,6 +4,10 @@
     width: 100%;
     background: url('/img/cafe-bg-1.jpg') no-repeat 50% 50% $white;
     background-size: cover;
+
+    @media #{$phone-landscape-max}{
+        height: calc(100vh + #{$booking-height});
+    }
 }
 
 .b-cafe-gallery__border {
@@ -18,15 +22,11 @@
     left: 30px;
     right: 30px;
     color: $white;
-    
-    @media #{$small-only} {
-        margin-top: 50px;
-    }
 
     @media #{$medium-up} {
-        left: 20%;
+        left: 23%;
         right: auto;
-        width: 60%;
+        width: 54%;
     }
 
     @media #{$big-up} {
@@ -40,6 +40,7 @@
     @media #{$large-up} {
         max-width: 50%;
     }
+
 }
 
 .b-cafe-gallery__ttl {
@@ -111,5 +112,12 @@
         &:after {
             background-color: $black;
         }
+    }
+}
+
+@media #{$small-phone-up-media}{
+    .b-cafe-gallery__txt.contacts > a {
+        font-size: 22px!important;
+        line-height: 30px!important;
     }
 }

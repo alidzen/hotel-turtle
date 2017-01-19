@@ -124,4 +124,9 @@
             @include padding-leader(3);
         }
     }
+    @media #{$small-phone-up-media}{
+        .b-price {
+            display: block;
+        }
+    }
 }

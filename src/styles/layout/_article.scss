@@ -12,7 +12,6 @@
 }
 
 .l-article__cnt {
-
     @media #{$custom-1024-up} {
         @include span(10 center);
         padding: 0;
